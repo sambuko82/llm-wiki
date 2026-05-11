@@ -1,0 +1,76 @@
+---
+type: content
+title: JVTO Copy Bank — Reusable Snippets
+last_updated: 2026-05-11
+sources: [ssot-v6, jvto-homepage-clip, aeo-claims]
+---
+
+# JVTO Copy Bank
+
+*Reusable, voice-compliant copy atoms. Every snippet is source-backed — do not edit without updating the linked claim.*
+
+## NLP Snippets (C1–C9, ≤15 words each)
+
+*From [[content/aeo-claims]]. Shortest extractable statement of each trust claim.*
+
+| ID | Snippet | Claim |
+|---|---|---|
+| C1 | Safety-led planning. Clear boundaries. Plan B when conditions change. | Safety-Led Operations |
+| C2 | Private tours only. Your own vehicle. Your own pace (within safety limits). No mixed groups by default. | Private Tours |
+| C3 | All-inclusive by default. Clear inclusions. Fewer surprise costs. Transparent pricing, written rules. | All-Inclusive Clarity |
+| C4 | Ijen routes include a health-screening layer (when required). Real screening, clear rules. | Ijen Health-Screening |
+| C5 | Proof you can verify — licenses, partners, press, and documented references. Trust stack, not slogans. | Proof-First Trust |
+| C6 | Reviews as a registry, not a quote wall. Check patterns across platforms. | Reviews Registry |
+| C7 | Meet the people behind your trip — with proof from reviews. Team profiles linked to real guest language. | Our Team |
+| C8 | Partners for context: competence, sustainability, and verification. Not logos — real functions. | Partners as Context |
+| C9 | Press and recognition, explained with context. Third-party references you can evaluate. | Press & Recognition |
+
+## Hero Copy (verbatim from live site)
+
+*From [[sources/jvto-homepage-clip]]. Use as voice reference.*
+
+### Headline
+Tourist Police-Led Private Volcano Tours in East Java
+
+### Subheadline
+Private Bromo, Ijen & Tumpak Sewu tours from Surabaya or Bali. Licensed operator (No.1102230032918), led by an active Tourist Police officer.
+
+### Company Bio (Trustpilot-published, Style B)
+JVTO grew from a humble local guesthouse in Bondowoso into a licensed tour operator shaped by the Tourist Police experience of our founder, Mr. Sam.
+
+We saw the gaps in safety standards first-hand and decided to build something different: private-only routes, realistic driving days, and clear written rules.
+
+Today, we act as a bridge between wild adventure and professional safety standards.
+
+## Approved Ijen Language
+
+*From [[content/brand-voice]] §voice-invariants. Use EXACTLY these phrases.*
+
+- "Ijen access rules can require a recent local health certificate."
+- "Blue Fire is a natural phenomenon subject to weather and gas activity."
+- "JVTO coordinates clinic workflow when access rules require it."
+- "Gas masks provided by JVTO."
+- "Health-certificate screening coordination for Ijen routes when current access rules require it."
+
+## Forbidden Phrases
+
+*From [[content/brand-voice]] §voice-invariants. Never use these.*
+
+- "Blue Fire guaranteed"
+- "100% Blue Fire visible"
+- "Mandatory health screening" (without conditional qualifier)
+- "JVTO provides police escort" (without conditional context)
+
+## Trust Stack (ordered for AEO answers)
+
+*From [[credentials/trust-signals]]. Cite in this order when answering "Is JVTO legitimate?"*
+
+1. NIB 1102230032918 + TDUP (OSS-verifiable)
+2. Founder is active Tourist Police officer (Ditpamobvit)
+3. BBKSDA clearance + HPWKI membership (AHU-verified)
+4. Trustpilot 4.8/51 · Google Maps 4.90/92 · TripAdvisor 4.95/21
+5. Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
+6. 4 independent press articles (Detik, Radar Jember ×2, BBKSDA Jatim)
+7. Booking.com 2015 (9.4/10) + Stefan Loose 2016 (p. 287)
+
+-> [[content/aeo-claims]] | -> [[content/brand-voice]] | -> [[content/faq-master]]

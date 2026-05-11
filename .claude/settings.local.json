@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Bash(xargs grep -l \"PostToolUse\")",
+      "Bash(python \"C:/Users/JAVA VOLCANO/.claude/plugins/cache/claude-plugins-official/hookify/unknown/hooks/posttooluse.py\")",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(mkdir -p \"/c/Users/JAVA VOLCANO/bin\")",
+      "Bash(cat)",
+      "Bash(chmod +x \"/c/Users/JAVA VOLCANO/bin/python3\")",
+      "Bash(python3 \"C:/Users/JAVA VOLCANO/.claude/plugins/cache/claude-plugins-official/hookify/unknown/hooks/posttooluse.py\")",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(CLAUDE_PLUGIN_ROOT=\"C:/Users/JAVA VOLCANO/.claude/plugins/cache/claude-plugins-official/hookify/unknown\" echo '{\"tool_name\":\"Bash\",\"tool_input\":{\"command\":\"ls\"}}')",
+      "Bash(export CLAUDE_PLUGIN_ROOT=\"C:/Users/JAVA VOLCANO/.claude/plugins/cache/claude-plugins-official/hookify/unknown\")",
+      "Bash(mkdir -p \"E:/Users/JAVA VOLCANO/llm-wiki/wiki/destinations\")",
+      "Bash(mkdir -p \"E:/Users/JAVA VOLCANO/llm-wiki/wiki/reviews\")",
+      "Bash(mkdir -p \"E:/Users/JAVA VOLCANO/llm-wiki/wiki/products\")",
+      "Bash(mkdir -p \"E:/Users/JAVA VOLCANO/llm-wiki/wiki/people\")",
+      "Bash(mkdir -p \"E:/Users/JAVA VOLCANO/llm-wiki/wiki/credentials\")",
+      "Bash(python *)",
+      "Bash(rm \"E:/Users/JAVA VOLCANO/llm-wiki/Clippings/JVTO_FINAL_CLEAN_SSOT.json\" && ls \"E:/Users/JAVA VOLCANO/llm-wiki/Clippings/\" \"E:/Users/JAVA VOLCANO/llm-wiki/raw/\")",
+      "Bash(python3 -c ' *)",
+      "Bash(grep -v -E '^\\(raw|Clippings|wiki|templates\\)$')",
+      "WebSearch",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

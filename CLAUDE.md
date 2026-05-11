@@ -1,0 +1,112 @@
+# JVTO LLM Wiki — Schema & Workflows
+
+This vault is a persistent, compounding knowledge base for **Java Volcano Tour Operator (JVTO)**.
+**Primary use**: content production — website copy, FAQs, AEO material, marketing content.
+The LLM writes and maintains all `wiki/` files. You source and explore; the LLM files and cross-references.
+
+---
+
+## About JVTO
+
+| Field | Value |
+|-------|-------|
+| Full legal name | PT Java Volcano Rendezvous |
+| Brand name | Java Volcano Tour Operator (JVTO) |
+| Founded | 2015 (guesthouse era), PT formal 2023 |
+| Founder | Agung "Mr. Sam" Sambuko — active Tourist Police officer |
+| Products | Private tours: Kawah Ijen, Mount Bromo, Tumpak Sewu, Madakaripura |
+| Website | javavolcano-touroperator.com |
+| NIB | 1102230032918 |
+| Office | Jl. Khairil Anwar No.102A, Bondowoso, East Java 68214 |
+| WhatsApp | +62 822 4478 8833 |
+| Email | hello@javavolcano-touroperator.com |
+
+**Core differentiators** (always reference in content):
+1. **Police-Led** — Founder is an active Tourist Police officer. No other East Java operator has this.
+2. **100% Private** — Every tour: dedicated vehicle, driver, guide. No shared groups, ever.
+3. **Medical Screening** — Mandatory Ijen health check by Dr. Ahmad Irwandanu, included in price.
+4. **Verifiable Licenses** — NIB, TDUP, HPWKI, POLPAR, BBKSDA, ISIC. All checkable.
+5. **No Hidden Costs** — Transport, accommodation+breakfast, entrance fees, Bromo jeep, screening+gear, water, T-shirt.
+6. **Transparency-First** — "Read the Rulebook Before You Book." Policies published upfront.
+
+---
+
+## Directory Structure
+
+    llm-wiki/
+    raw/                  # Immutable source docs. LLM reads, NEVER writes here.
+    Clippings/            # Web clips from Obsidian Web Clipper. Treat as sources.
+    templates/            # Obsidian page templates
+    output/               # LLM-generated artifacts: website copy drafts, FAQ pages,
+                          # AEO snippets, slide content, etc. Never canonical — derived
+                          # from wiki/content/ on demand. Safe to delete and regenerate.
+    wiki/
+        overview.md       # Master synthesis
+        index.md          # Content catalog — AI entry point
+        log.md            # Append-only operations log
+        destinations/     # One page per destination
+        reviews/          # Review compilations + pattern analysis
+        products/         # Tour packages, pricing, itineraries
+        people/           # Founder, doctor, guides, drivers
+        credentials/      # Licenses, safety compliance, trust signals
+        content/          # Brand voice, FAQ master, AEO claims, copy bank
+        sources/          # One summary page per ingested raw source
+    CLAUDE.md             # This file
+
+---
+
+## Frontmatter Conventions
+
+Every wiki page starts with:
+
+    ---
+    type: destination|reviews|product|person|credential|content|source|overview
+    title: Human-readable title
+    last_updated: YYYY-MM-DD
+    sources: [slug1, slug2]
+    ---
+
+---
+
+## Workflow 1: Ingest
+
+1. **Read** the source fully
+2. **Discuss** key takeaways with user
+3. **Write** wiki/sources/[slug].md — key facts, quotes, content angles
+4. **Update** relevant domain pages (may touch 5-15 pages)
+5. **Update** wiki/index.md
+6. **Append** to wiki/log.md:
+
+    ## [YYYY-MM-DD] ingest | Source Title
+    Pages updated: [list]. Key additions: [brief].
+
+## Workflow 2: Query
+
+1. Read wiki/index.md to find relevant pages
+2. Read identified pages
+3. Synthesize with citations e.g. -> [[reviews/trustpilot-compilation]]
+4. File back valuable answers as new pages in wiki/content/
+
+## Workflow 3: Lint
+
+1. Scan for contradictions — flag with > Contradiction with [[other-page]]
+2. Find orphan pages (no inbound links)
+3. Flag stale claims with > [stale?]
+4. Identify gap pages — concepts without their own page
+5. Suggest new sources to fill gaps
+
+---
+
+## Content Production Guidelines
+
+- **Voice**: Direct, evidence-led. "Tourist Police officer" not "safety-focused guide."
+- **Language**: English for tourist copy; Bahasa Indonesia fine for internal notes
+- **Claims**: Always cite a wiki source. Never invent credentials or statistics.
+- **AEO format**: Structure FAQ answers as direct, quotable statements
+- **Trust signals**: NIB 1102230032918, POLPAR, BBKSDA, Trustpilot Excellent, Dr. Irwandanu SIP, founded 2015
+
+## Cross-Reference Conventions
+
+- Link wiki pages: [[folder/page-name]]
+- In prose, use -> before links: -> [[destinations/kawah-ijen]]
+- Always update wiki/index.md after changes
