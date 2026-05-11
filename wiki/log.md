@@ -11,6 +11,29 @@ sources: []
 
 ---
 
+## [2026-05-11] ingest | LLM KB Tooling Guide
+
+**Source type**: web-clip (manually captured article)
+**Raw file**: `raw/llm-kb-tooling-guide.md`
+
+**Pages created (1)**:
+- [[sources/llm-kb-tooling-guide]] — Karpathy-inspired LLM KB patterns; key facts, applicable patterns, not-applicable list
+
+**Pages updated (1)**:
+- [[index]] — sources list + total_pages 24→28 (anticipating Phase 2 ops pages); llm-kb-tooling-guide source entry added
+
+**Key findings**:
+- JVTO's existing raw/ → wiki/ → output/ structure already matches the article's recommended pattern
+- Three actionable patterns identified: typed ingestion (Workflow 4), compilation profiles (Workflow 5), tiered health checks (Workflow 6)
+- MCP server and automation options explicitly deferred — CLAUDE.md-only implementation chosen
+
+**Verification**:
+- ✅ raw/llm-kb-tooling-guide.md created with immutability note
+- ✅ wiki/sources/llm-kb-tooling-guide.md frontmatter correct (type: source)
+- ✅ wiki/index.md sources list updated; total_pages 24→28
+
+---
+
 ## [2026-05-11] ingest | content/copy-bank compiled
 
 **Source material**: [[content/aeo-claims]] (C1–C9 nlp_short), [[sources/jvto-homepage-clip]] (hero + bio copy), [[content/brand-voice]] (approved/forbidden phrases)

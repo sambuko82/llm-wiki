@@ -2,8 +2,8 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-11
-total_pages: 24
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021]
+total_pages: 28
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide]
 ---
 
 # JVTO Wiki — Content Index
@@ -24,6 +24,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/jvto-homepage-clip]] — javavolcano-touroperator.com homepage clip (2026-05-06). Authority for voice/tone exemplars + verbatim review quotes.
 - [[sources/trustpilot-reviews-2026]] — Trustpilot page clip (2026-05-09). 51 reviews, 4.8/5. Confirms 2 new unregistered crew (Derry, Sulis) + Pras in company bio.
 - [[sources/detik-polpar-2021]] — Detik.com article (2021-03-14). Independent national media confirmation of Bripka Agung Sambuko as active Polpar. Direct quotes in Bahasa Indonesia.
+- [[sources/llm-kb-tooling-guide]] — LLM KB Tooling Guide (2026-05-11). Karpathy-inspired patterns: typed ingestion, compilation profiles, health check tiers. Basis for Workflows 4–6.
 
 ## Destinations
 
