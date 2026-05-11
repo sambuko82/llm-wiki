@@ -51,6 +51,7 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
         credentials/      # Licenses, safety compliance, trust signals
         content/          # Brand voice, FAQ master, AEO claims, copy bank
         sources/          # One summary page per ingested raw source
+        ops/              # Operational workflow detail pages (Workflows 4–6)
     CLAUDE.md             # This file
 
 ---
@@ -60,7 +61,7 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
 Every wiki page starts with:
 
     ---
-    type: destination|reviews|product|person|credential|content|source|overview
+    type: destination|reviews|product|person|credential|content|source|overview|ops
     title: Human-readable title
     last_updated: YYYY-MM-DD
     sources: [slug1, slug2]
@@ -80,6 +81,8 @@ Every wiki page starts with:
     ## [YYYY-MM-DD] ingest | Source Title
     Pages updated: [list]. Key additions: [brief].
 
+7. **Commit**: `git add -A && git commit -m "ingest | Source Title"`
+
 ## Workflow 2: Query
 
 1. Read wiki/index.md to find relevant pages
@@ -94,6 +97,23 @@ Every wiki page starts with:
 3. Flag stale claims with > [stale?]
 4. Identify gap pages — concepts without their own page
 5. Suggest new sources to fill gaps
+
+## Workflow 4: Typed Ingest
+
+Before beginning Workflow 1, declare source type from [[ops/ingestion-profiles]].
+The profile supplies type-specific extraction targets and the wiki pages most likely to need updating.
+
+## Workflow 5: Compilation Profile
+
+Before generating output, select a profile from [[ops/compilation-profiles]].
+State "Use the [profile] profile" to activate it. Save result to output/ using
+the profile's filename convention.
+
+## Workflow 6: Health Check
+
+Tiered audit procedure — see [[ops/health-checks]] for full checklists.
+Triggers: "Run health check" (on-demand), "Run weekly health check",
+"Run monthly health check". Append report to wiki/log.md after each run.
 
 ---
 

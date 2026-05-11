@@ -11,6 +11,29 @@ sources: []
 
 ---
 
+## [2026-05-11] build | Wiki Ops System — Workflows 4–6
+
+**Spec**: `docs/superpowers/specs/2026-05-11-wiki-ops-system-design.md`
+
+**Pages created (3)**:
+- [[ops/ingestion-profiles]] — Workflow 4: 5 source type handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip)
+- [[ops/compilation-profiles]] — Workflow 5: 5 named profiles (aeo, website-copy, faq, social, slide-deck) with draw-from lists, format constraints, forbidden patterns, output filename conventions
+- [[ops/health-checks]] — Workflow 6: 3-tier audit (on-demand replaces Workflow 3/Lint, weekly adds stale sweep + completeness checks, monthly adds credential web-verification)
+
+**Files modified (2)**:
+- [[index]] — Ops section added; total_pages confirmed at 28
+- `CLAUDE.md` — `wiki/ops/` added to dir structure; `ops` added to frontmatter type list; Workflows 4–6 stubs added after Workflow 3
+
+**Verification**:
+- ✅ 3 ops pages created with correct frontmatter (type: ops)
+- ✅ All 5 ingestion profiles present in ingestion-profiles.md
+- ✅ All 5 compilation profiles present in compilation-profiles.md
+- ✅ All 3 health check tiers present in health-checks.md
+- ✅ wiki/index.md Ops section links all 3 pages
+- ✅ CLAUDE.md Workflows 4–6 wired; ops/ in directory structure; ops added to frontmatter type list
+
+---
+
 ## [2026-05-11] ingest | LLM KB Tooling Guide
 
 **Source type**: web-clip (manually captured article)

@@ -61,6 +61,12 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[content/aeo-claims]] — 9 canonical claim blocks (C1–C9) with NLP snippets, customer-service replies, evidence chains
 - [[content/copy-bank]] — Reusable snippets: NLP atoms (C1–C9), hero copy, approved/forbidden Ijen language, trust stack order
 
+## Ops
+
+- [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip)
+- [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck)
+- [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
+
 ## Open Gaps (no page yet — flagged by Lint)
 
 - `credentials/medical-screening` — Ijen health-screening protocol with BBKSDA SE.1658/KSA.9/2024 + doctor verification: covered in [[people/dr-ahmad-irwandanu]] + [[destinations/kawah-ijen]], deserves its own consolidated page
