@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] ingest | JVTO Website Sitemap — May 2026
+Profile: pdf-doc (structured XML document). Pages updated: sources/sitemap-2026-05 (created), products/packages-overview, credentials/trust-signals, index. Key additions: 44-URL sitemap reveals 16 live tour pages (12 Surabaya + 4 Bali); resolves package-count contradiction in favor of SSOT §9_1/§13 (was disputed as 15 vs 16); `taman-safari-prigen-bromo-madakaripura-3d2n` confirmed as active 12th Surabaya package; Verify JVTO trust verification hub documented (4 sub-pages: legal, press-recognition, history-artifacts, police-safety); ISIC student package confirmed as dedicated /isic/ path; `/travel-guide/best-time-to-visit` identified as most recently updated page (2026-05-12).
+
+---
+
 ## [2026-05-12] output | aeo — Why JVTO
 Profile: aeo. Output: `output/aeo-2026-05-12-why-jvto.md`. 22 Q&A blocks across 9 sections covering full C1–C9 claim set. Sections: Legitimacy/Licensing (3Q), Tourist Police (4Q), Private Tours (2Q), All-Inclusive (3Q), Ijen Screening (3Q), Reviews (2Q), Team (2Q), Partners (3Q), Press (3Q). All answers ≤40 words, citation-first, no hedging. Sources: aeo-claims, faq-master, legal-licenses, trust-signals.
 

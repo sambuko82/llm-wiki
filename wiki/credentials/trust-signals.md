@@ -1,13 +1,26 @@
 ---
 type: credential
 title: JVTO Trust Signals — Reviews, Press, Partners, Historical
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip]
+last_updated: 2026-05-12
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05]
 ---
 
 # JVTO Trust Signals
 
 Third-party evidence. Use in content to **prove claims, not assert them**. All entries below are independently verifiable.
+
+## Verify JVTO — On-Site Verification Hub
+
+The website has a dedicated trust verification section at `/verify-jvto` (confirmed live 2026-05-08 via [[sources/sitemap-2026-05]]):
+
+| Page | URL | Purpose |
+|---|---|---|
+| Legal | `/verify-jvto/legal` | NIB, TDUP, license verification |
+| Press Recognition | `/verify-jvto/press-recognition` | Media mentions, guidebook coverage |
+| History & Artifacts | `/verify-jvto/history-artifacts` | Founding story, historical evidence |
+| Police Safety | `/verify-jvto/police-safety` | POLPAR credentials, SPRIN documentation |
+
+This section operationalizes the "Transparency-First" differentiator — prospects can verify credentials without asking. Content for these pages has not been ingested; use [[credentials/legal-licenses]] and [[people/agung-sambuko]] as the canonical sources for the underlying facts.
 
 ## Live Review Platforms (verified 2026-05-09)
 

@@ -1,23 +1,23 @@
 ---
 type: product
 title: JVTO Tour Packages Overview
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip]
-canonical_package_count: 15
+last_updated: 2026-05-12
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05]
+canonical_package_count: 16
 ---
 
 # JVTO Tour Packages Overview
 
 All packages are **100% private**. No shared groups, no join-in tours. Each booking receives dedicated vehicle, driver, and crew.
 
-**Origins**: Surabaya (11 packages) · Bali (4 packages).
-**Total**: 15 canonical packages (per [[sources/ssot-v6]] §6_1 package_registry).
+**Origins**: Surabaya (12 packages) · Bali (4 packages).
+**Total**: 16 canonical packages.
 
-> Contradiction note: SSOT §9_1 and §13 reference "16 packages (12 from Surabaya · 4 from Bali)". §meta and §6_1 are canonical at 15 (11+4). Treat 15 as ground truth. See [[overview]] for the full reconciliation note.
+> Contradiction resolved (2026-05-12): SSOT §meta/§6_1 said 15 (11+4); SSOT §9_1/§13 said 16 (12+4). The live sitemap [[sources/sitemap-2026-05]] independently confirms 12 Surabaya tour pages + 4 Bali tour pages = 16 live packages. The 12th Surabaya package is `taman-safari-prigen-bromo-madakaripura-3d2n`. SSOT §9_1/§13 were correct; §meta/§6_1 appear to reflect an older count. Update [[overview]] to remove the reconciliation note.
 
 ## Package Registry
 
-### Surabaya origin (11 packages)
+### Surabaya origin (12 packages)
 
 | # | Slug | Name | Duration | Ijen-relevant |
 |---|---|---|---|---|
@@ -32,17 +32,20 @@ All packages are **100% private**. No shared groups, no join-in tours. Each book
 | 9 | `ijen-papuma-tumpak-sewu-bromo-5d4n` | 5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Nature Trip from Surabaya | 5D4N | Y |
 | 10 | `ijen-bromo-madakaripura-malang-5d4n` | 5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya | 5D4N | Y |
 | 11 | `ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | 6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya | 6D5N | Y |
+| 12 | `taman-safari-prigen-bromo-madakaripura-3d2n` | 3 Day Taman Safari Prigen, Bromo & Madakaripura from Surabaya | 3D2N | N |
+
+*Package 12 confirmed via sitemap 2026-05-12; full pricing and itinerary not yet ingested. Taman Safari Prigen is a wildlife/safari park in Prigen, East Java (near Pasuruan). -> [[sources/sitemap-2026-05]]*
 
 ### Bali origin (4 packages)
 
 | # | Slug | Name | Duration | Ijen-relevant |
 |---|---|---|---|---|
-| 12 | `bali/bromo-ijen-3d2n` | 3 Day Bromo & Ijen Volcano Discovery from Bali | 3D2N | Y |
-| 13 | `bali/ijen-bromo-madakaripura-3d2n` | 3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya | 3D2N | Y |
-| 14 | `bali/ijen-papuma-tumpak-sewu-bromo-4d3n` | 4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya | 4D3N | Y |
-| 15 | `bali/ijen-papuma-tumpak-sewu-bromo-5d4n` | 5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya | 5D4N | Y |
+| 13 | `bali/bromo-ijen-3d2n` | 3 Day Bromo & Ijen Volcano Discovery from Bali | 3D2N | Y |
+| 14 | `bali/ijen-bromo-madakaripura-3d2n` | 3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya | 3D2N | Y |
+| 15 | `bali/ijen-papuma-tumpak-sewu-bromo-4d3n` | 4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya | 4D3N | Y |
+| 16 | `bali/ijen-papuma-tumpak-sewu-bromo-5d4n` | 5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya | 5D4N | Y |
 
-**Summary**: 12 of 15 packages are Ijen-relevant → trigger health-screening coordination per [[destinations/kawah-ijen]] when BBKSDA SE.1658/KSA.9/2024 thresholds apply. Only `bromo-1d1n` and `bromo-2d1n` (and `bali/bromo-ijen-3d2n` if Ijen is excluded — but it isn't) operate without conditional health-screening workflow.
+**Summary**: 12 of 16 packages are Ijen-relevant → trigger health-screening coordination per [[destinations/kawah-ijen]] when BBKSDA SE.1658/KSA.9/2024 thresholds apply. Only `bromo-1d1n`, `bromo-2d1n`, and `taman-safari-prigen-bromo-madakaripura-3d2n` operate without Ijen health-screening workflow.
 
 ## Pricing Structure
 
@@ -56,7 +59,7 @@ All pricing follows **per-person tiered rates by group size**, in IDR. Larger gr
 
 Some packages also have a `1 pax` solo tier (single-occupancy supplement).
 
-### Hero benchmarks (sampling 4 of 15 packages)
+### Hero benchmarks (sampling 4 of 16 packages)
 
 **`bromo-1d1n`** (Surabaya, 1D1N, no Ijen):
 

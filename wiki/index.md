@@ -1,9 +1,9 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-05-11
-total_pages: 36
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05]
+last_updated: 2026-05-12
+total_pages: 37
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05]
 ---
 
 # JVTO Wiki — Content Index
@@ -28,6 +28,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/jvto-policy-pack-v6]] — Customer-facing policy pack v2026-01-17 (3 policies: Booking/Payment/Cancellation, Inclusions/Exclusions, Privacy). Vehicle allocation specs, Bromo jeep capacity, bank transfer details, FOC scheme, Travel Credit terms.
 - [[sources/jvto-travel-guide-en]] — Travel Guide EN publishable copy + SSOT JSON (2026-01-19). 7 routes: booking info, FAQ, Ijen screening, safety, packing, weather, police escort. Silver jewelry warning, fitness levels per destination, My Booking Portal details.
 - [[sources/db-export-2026-05]] — Live DB export (2026-05). 14 categories: 22 packages with full pricing, 99 itinerary days, 157 reviews (Google+TripAdvisor+Trustpilot), 14 crew members, 23 hotels, 38 knowledge base articles.
+- [[sources/sitemap-2026-05]] — Live XML sitemap (2026-05-12). 44 URLs. Confirms 16 live tour pages (12 Surabaya + 4 Bali), resolves package count contradiction, reveals Verify JVTO trust hub structure, confirms `taman-safari-prigen-bromo-madakaripura-3d2n` as active package.
 
 ## Destinations
 
