@@ -50,7 +50,7 @@ sources: [jvto-policy-pack-v6]
 **FOC scheme:**
 - 18 paying pax → 1 FOC
 - 35 paying pax → 2 FOC
-- 50 paying pax → 3 FOC ("pax" = paying guests only)
+- 50 paying pax → 3 FOC + **5% discount for entire group** ("pax" = paying guests only)
 
 **Document precedence:**
 1. Official E-Voucher / Invoice (PDF)

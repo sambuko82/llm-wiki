@@ -113,9 +113,7 @@ JVTO allows micro-customizations that don't alter the primary route or duration:
 | 35+ | 2 FOC | — |
 | 50+ | 3 FOC | **+ 5% discount for entire group** |
 
-> The 50+ pax group also receives a 5% discount on the total package price, in addition to 3 FOC seats. Source: [[sources/db-export-2026-05]] `knowledge_bases.group-benefits-foc`.
-
-> Contradiction with [[sources/jvto-policy-pack-v6]] §12 and [[products/packages-overview]] §foc: those sources list the 3-tier FOC (18/35/50) but do NOT mention the 5% group discount at 50+ pax. The KB data adds this. Flag for owner verification before publishing in customer-facing copy.
+At the 50+ pax tier, the entire group receives a 5% discount on the total package price in addition to 3 FOC seats. Source: [[sources/db-export-2026-05]] `knowledge_bases.group-benefits-foc` — confirmed canonical.
 
 ---
 

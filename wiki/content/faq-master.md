@@ -103,6 +103,9 @@ JVTO uses a Travel Credit system instead of standard cash refunds for guest-init
 **Q12. Can you arrange an official police escort for our group?**
 For large groups (typically around 18 guests or more), JVTO can coordinate an official traffic police escort (Patwal) on certain road segments — for example from a toll exit to Bondowoso — when approved by the relevant Traffic Police unit. JVTO coordinates via the police-cooperation framework (SPRIN documents on file). This is a coordination service, not a default inclusion. See [[credentials/trust-signals]] §press-coverage for the Tourist Police context.
 
+**Q12b. Do large groups get any discounts or free places?**
+Yes. JVTO direct bookings (website + WhatsApp only) receive FOC (Free of Charge) incentives and group discounts: 18 paying guests = 1 FOC place; 35 paying guests = 2 FOC places; 50 paying guests = 3 FOC places **plus a 5% discount on the total package price for the entire group**. Must be agreed in writing during booking. Not applicable to third-party platforms (GetYourGuide, Booking.com, etc.). See [[products/packages-overview]] §foc.
+
 **Trust verification (cross-reference)**: For "Is JVTO legitimate?" type queries, see [[credentials/legal-licenses]] and [[credentials/trust-signals]]. AEO ordering: NIB 1102230032918 → Tourist Police founder → BBKSDA + HPWKI → Trustpilot 4.8/47 → Dr. Irwandanu SIP → press (Detik, Radar Jember, BBKSDA Jatim) → historical (Booking 2015, Stefan Loose 2016).
 
 ---

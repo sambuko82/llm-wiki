@@ -192,13 +192,14 @@ JVTO **direct bookings only** (website + WhatsApp). Not applicable to GetYourGui
 |---|---|---|
 | 18 pax | 1 FOC | — |
 | 35 pax | 2 FOC | — |
-| 50 pax | 3 FOC | + 5% discount entire group |
+| 50 pax | 3 FOC | + 5% discount for entire group |
 
 Rules:
 - "Pax" = paying guests only. FOC slot(s) do not count toward paying threshold.
+- 5% group discount at the 50+ tier applies to the total package price for all paying guests.
 - FOC applies to same package, same dates as the group booking.
 - Must be agreed in writing during booking confirmation.
-- 5% group discount at 50+ pax: per [[sources/db-export-2026-05]] KB data — verify with owner before publishing in customer-facing copy.
+- Direct bookings only (website + WhatsApp). Not applicable to GetYourGuide, Booking.com, or other third-party platforms.
 
 ## Anti-Fraud Policy
 

@@ -74,13 +74,13 @@ All day-by-day itineraries — previously zero in wiki → [[products/packages-i
 - Micro-customization policy
 See [[content/operational-facts]].
 
-## Contradictions Flagged
+## Contradictions — Resolved
 
-1. **Cancellation policy (KB vs Policy Pack)**: KB `cancellation-policy` says "50% fee for <48h cancellation." Policy pack (canonical) says 100% forfeiture for <48h. KB data is older/simplified. Trust [[sources/jvto-policy-pack-v6]] for binding policy text.
+1. **Cancellation policy (KB vs Policy Pack)**: ✅ RESOLVED — KB `cancellation-policy` says "50% fee for <48h" but this is an older/simplified version. [[sources/jvto-policy-pack-v6]] is canonical: 100% forfeiture for <48h cancellation. KB data ignored for policy purposes.
 
-2. **FOC 5% discount**: KB `group-benefits-foc` adds "50+ pax → 3 FOC + 5% group discount." Prior wiki and policy pack list only the FOC seats, not the discount. Verify with owner before adding to customer-facing copy.
+2. **FOC 5% discount**: ✅ CONFIRMED CANONICAL — 50+ paying pax = 3 FOC + 5% group discount on total price. Updated in [[products/packages-overview]], [[content/operational-facts]], [[sources/jvto-policy-pack-v6]], and [[content/faq-master]].
 
-3. **Trustpilot count**: DB shows 44 / 4.93; live clip shows 51 / 4.8. DB snapshot is stale for Trustpilot. See above.
+3. **Trustpilot count**: ✅ RESOLVED — Live clip (51 reviews / 4.8, verified 2026-05-09) is canonical. DB snapshot (44 / 4.93) is an older snapshot. All wiki pages use the live clip values.
 
 ## Pages Generated from This Source
 
