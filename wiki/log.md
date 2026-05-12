@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] query | Hero claim for price-skeptical solo traveler
+Query: "What single trust claim should anchor homepage hero copy for a price-skeptical first-time solo traveler?" Pages read: [[reviews/review-patterns]], [[content/aeo-claims]], [[credentials/trust-signals]], [[products/packages-overview]]. Answer: C3 (All-inclusive clarity, no surprise costs) leads — T5 review pattern (unprompted "no unexpected costs" mentions) is the strongest third-party corroboration for price-skeptics. C1/C5 follows to justify the premium through the verifiable police-credentials chain. Headline option A (C3-first departure from live site) and option B (C1+C3 combined, closer to live site) provided. Pages created: [[content/query-hero-claim]]. Pages updated: [[index]] (entry added; total_pages 40→41). Caveat: "price-skeptical" is inferred by claim/pattern alignment, not behavioral segmentation data.
+
+---
+
 ## [2026-05-12] ingest | 3 press source pages
 Sources ingested: Radar Jember 2021-03-24 (Polpar + Geopark) — paywalled; Radar Jember 2021-05-27 (bau menyengat) — paywalled; BBKSDA Jatim 2024-05-24 (pelatihan pemandu) — full access. Pages created: [[sources/radar-jember-polpar-geopark-2021]], [[sources/radar-jember-bau-menyengat-2021]], [[sources/bbksda-pelatihan-pemandu-2024]]. Key BBKSDA findings: 3-day training (May 20–22, 2024) at Paltuding; 250 HPWKI-affiliated guides targeted; curriculum: conservation awareness, guide responsibilities, SAR, PPGD (emergency medical); government-hosted — validates HPWKI training chain as BBKSDA-supervised, not self-certified. Pages updated: [[credentials/trust-signals]] (Source page column added to press table), [[people/agung-sambuko]] (Radar Jember sources linked in proof chain), [[index]] (3 new entries; total_pages 37→40).
 

@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-12
-total_pages: 40
+total_pages: 41
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024]
 ---
 
@@ -71,6 +71,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[content/aeo-claims]] — 9 canonical claim blocks (C1–C9) with NLP snippets, customer-service replies, evidence chains
 - [[content/copy-bank]] — Reusable snippets: NLP atoms (C1–C9), hero copy, approved/forbidden Ijen language, trust stack order
 - [[content/operational-facts]] — Temperatures (Bromo/Ijen), travel times, support hours, Ijen closure schedule, trolley ojek, micro-customization policy, FOC 5% discount
+- [[content/query-hero-claim]] — Query output: C3 (all-inclusive, no surprise costs) is the lead hero claim for price-skeptical solo travelers; C1/C5 justifies the premium. Evidence chain, 2 headline options, ranked secondary claims.
 - [[content/hotels]] — 23 hotel partners registry; organized by itinerary phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu, Malang, Surabaya finish)
 
 ## Ops
