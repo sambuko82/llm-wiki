@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | aeo — Why JVTO
+Profile: aeo. Output: `output/aeo-2026-05-12-why-jvto.md`. 22 Q&A blocks across 9 sections covering full C1–C9 claim set. Sections: Legitimacy/Licensing (3Q), Tourist Police (4Q), Private Tours (2Q), All-Inclusive (3Q), Ijen Screening (3Q), Reviews (2Q), Team (2Q), Partners (3Q), Press (3Q). All answers ≤40 words, citation-first, no hedging. Sources: aeo-claims, faq-master, legal-licenses, trust-signals.
+
+---
+
 ## [2026-05-12] output | faq — Madakaripura FAQ
 Profile: faq. Output: `output/faq-2026-05-12-madakaripura.md`. 20 questions across 7 sections: About Madakaripura (incl. height reconciliation + Gajah Mada history), The Visit (approach, timing, wetness, horse), Safety & Equipment (helmets attributed to local site mgmt), Packages (6 packages with pricing), Fitness/Suitability, Weather, Booking. health_wording_mode: none. Sources: madakaripura, faq-master, operational-facts, packages-overview, packages-full-pricing, credentials.
 
