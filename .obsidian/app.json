@@ -1,4 +1,5 @@
 {
   "showUnsupportedFiles": true,
-  "trashOption": "none"
+  "trashOption": "none",
+  "alwaysUpdateLinks": true
 }
