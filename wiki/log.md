@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | website-copy — Surabaya Landing Page
+Profile: website-copy. Output: `output/copy-2026-05-12-surabaya-landing.md`. Sections: Hero, 11 packages with per-person pricing (2 pax + 11+ pax), inclusions, Why JVTO (4 differentiators), trust signals table, booking steps. Sources: packages-overview, packages-full-pricing, copy-bank, brand-voice, aeo-claims, credentials.
+
+---
+
 ## [2026-05-12] health-check | Weekly (2nd run — post DB ingest)
 
 **Vault state**: 36 wiki pages · 12 raw files · 2 Clippings (already ingested)
