@@ -3,16 +3,18 @@ type: person
 title: JVTO Crew Registry — 11 KTA-Credentialed Members
 last_updated: 2026-05-11
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026]
-total_crew: 11
+total_crew: 14
 guides: 7
-drivers: 4
+drivers: 7
 ---
 
 # JVTO Crew Registry
 
-11-member field team — **7 guides + 4 drivers** — all KTA-credentialed (2024 issuance). KTA codes run KTA-G-2024-001 through KTA-G-2024-008 for guides (with gaps) and KTA-D-2024-003 through KTA-D-2024-011 for drivers.
+**14-member field team — 7 guides + 7 drivers** — confirmed via [[sources/db-export-2026-05]] `crew_members` table (live DB, 2026-05). KTA registration covers 11 members (per SSOT v6.0 §4_2); 3 additional drivers (Yusuf, Dika, Pras) confirmed in DB without KTA codes recorded — pending SSOT update.
 
-> Contradiction note: [[sources/ssot-v6]] §13_why_jvto_trust_summary.team_block claims `total_crew: 14 · guides: 7 · drivers: 7`. §4_2 records 11 (7+4). Treating §4_2 as canonical — see [[overview]].
+> Prior SSOT v6.0 §4_2 recorded 11 (7+4). DB export confirms 14 (7+7), matching the §13 figure. The §13 driver count of 7 is now corroborated by live DB data. Updated canonical: **14 members total**.
+
+> KTA status for Yusuf, Dika, Pras: not yet recorded in SSOT §4_2. They appear in active DB with ssot_id assigned. Treat as active crew — KTA codes pending verification with owner.
 
 ## Why a Named Crew Matters (Trust Function)
 
@@ -37,12 +39,24 @@ Per SSOT §4_3, this is enforced by INDECON membership: "INDECON listing explici
 | **Fauzi** | KTA-G-2024-010 | ID | Friendly & fun · Knowledgeable · Great logistics · Great photos · Safety-first |
 | **Boy (Ahboy)** | KTA-G-2024-004 | EN · ID | Friendly & fun · Knowledgeable · Safety-first · Great logistics · Always on time · Great photos |
 
+### Guide self-quotes (from DB profile)
+
+- **Anjas** — "I'm a chill guy and nerdy enough to talk about brainrot memes. Love playing games and listening to any kind of music. Let's take the best photos on your trip."
+- **Taufik** — "Reliable and organized individual with strong communication skills. I thrive in dynamic environments and enjoy taking on challenges that require careful planning."
+- **Rendi** — "Love meeting people from different backgrounds and making every trip feel easy and enjoyable."
+- **Kiki** — "It is He who made the earth manageable for you — so walk among its slopes and eat of His provision." (Quran 67:15)
+- **Gufron** — "I'm someone who enjoys meaningful conversations on virtually any topic. In my professional life, I place the highest priority on safety and client satisfaction."
+- **Fauzi** — "I'm a friendly guide who loves taking photos for guests and quickly connects with people. I enjoy making trips fun, relaxed, and full of great memories."
+- **Boy (Ahboy)** — "I am a local resident who enjoys welcoming visitors and sharing stories about this area. I'm happy to help travelers explore Java's landscapes."
+
 ### Guide review-quote excerpts (verified guest-authored)
 
 - **Anjas** — "Creative at taking fun photos... Anjas was the highlight for the trip." — Wang Zhe, Google Reviews
 - **Rendi** — "When we went down the steep crater, he held our hands to prevent us from falling." — Wing Shan Lui, Google Reviews
 - **Gufron** — "Always willing to help you get your best photo." — Adrián Martínez, Google Reviews
 - **Boy (Ahboy)** — "Incredibly knowledgeable and went out of his way to make sure everything we needed was sorted." — Jason Li, Trustpilot
+- **Taufik** — "Organized, always briefing done prior to all trips and flexible with timing." — Kevin Foo, Trustpilot
+- **Fauzi** — "Very attentive, went the extra mile, photo documentation, safety-first." — multiple Trustpilot reviewers
 
 Full review compilation: [[reviews/trustpilot-compilation]].
 
@@ -56,19 +70,23 @@ Full review compilation: [[reviews/trustpilot-compilation]].
 - Fauzi: instagram.com/srjdnfauzi_
 - Boy: instagram.com/trisbalii · facebook.com/muhammad.trezzakuzha
 
-## Drivers (4)
+## Drivers (7)
 
-| Name | KTA | Languages | Strengths |
+| Name | KTA | Languages | Self-quote / About |
 |---|---|---|---|
-| **Yandi** | KTA-D-2024-003 | EN · ID | Friendly & fun · Great logistics · Knowledgeable · Always on time · Safety-first · Great photos |
-| **Fredi** | KTA-D-2024-005 | EN · ID | Friendly & fun · Great logistics · Always on time · Safety-first · Knowledgeable · Great photos |
-| **Holili** | KTA-D-2024-009 | ID | Friendly & fun · Safety-first · Great logistics |
-| **Joyo** | KTA-D-2024-011 | ID | Friendly & fun · Safety-first · Great logistics · Knowledgeable |
+| **Yandi** | KTA-D-2024-003 | EN · ID | "Love meeting people from different backgrounds and making every trip feel easy and enjoyable." |
+| **Fredi** | KTA-D-2024-005 | EN · ID | "Experienced Tour Driver committed to making your travels memorable. I combine safe driving skills with a friendly, helpful attitude." |
+| **Holili** | KTA-D-2024-009 | ID | "I am a Java Volcano driver who dedicates myself to serving all Java Volcano customers wholeheartedly." |
+| **Joyo** | KTA-D-2024-011 | ID | "I'm a professional driver who combines speed with precision and care. I drive fast, but always cleanly, smoothly, and safely." |
+| **Yusuf** | KTA pending | ID | Reliable Operator archetype |
+| **Dika** | KTA pending | ID | Reliable Operator archetype — confirmed Driver (soft-data resolved) |
+| **Pras** | KTA pending | EN · ID | "Strong English and impeccable safety record" (per JVTO Trustpilot bio) |
 
 ### Driver review-quote excerpts
 
 - **Fredi** — "Always on time no matter what time of the day. Exceptional driving skills." — Pooja Prakash, Google Reviews
 - **Yandi** — "Our driver Yandi was really reliable and friendly. He briefed us on what to expect." — Divya_Stri, Trustpilot
+- **Fredi + Gufron** — "Fredi and Gufron are the best drivers and guides, respectively. Both were very entertaining, helpful, and extremely professional." — Pablo Rodríguez Toledano, Google Reviews
 
 ## HPWKI KTA → BBKSDA Training Chain (SSOT §4_4)
 
@@ -118,19 +136,20 @@ Owns claim **C7** (Our Team — personality economy + operational credibility). 
 
 ## Soft-Data Notes
 
-Review excerpts reference crew not currently in the SSOT v6.0 §4_2 KTA registry:
+Status updates after [[sources/db-export-2026-05]] ingest:
 
-| Name | Source | Context |
+| Name | Status | Context |
 |---|---|---|
-| **Eboy / Oboy** | Older reviews | Likely Boy/Ahboy spelling variants |
-| **Joyo / Goyo** | Older reviews | Joyo variants |
-| **Dika** | Older reviews | Described as caring, informative |
-| **Johan** | Older reviews | "Went above and beyond" |
-| **Nur** | Older reviews | Paired with Kiki |
-| **Derry / Darry / Terry** | May 2026 reviews | Three spelling variants of one person; paired with Kiki across 3 consecutive-day reviews. Likely driver or assistant guide. |
-| **Sulis** | April 2026 reviews | Waterfall-day guide (Tumpak Sewu); filmed and edited guest video. Guide specialty. |
-| **Pras** | JVTO Trustpilot bio (company-authored) | Named as a driver with strong English and impeccable safety record. Not yet in guest reviews. |
+| **Dika** | ✅ Confirmed Driver (DB id=72) | Was "soft-data, older reviews." Now confirmed active driver in DB. KTA pending. |
+| **Pras** | ✅ Confirmed Driver (DB id=77) | Was in Trustpilot bio only. Now confirmed active driver in DB. KTA pending. |
+| **Yusuf** | ✅ New confirmed Driver (DB id=62) | Not in prior wiki or SSOT. Active driver in DB. KTA pending. |
+| **Eboy / Oboy** | ➡ Spelling variants | Likely Boy/Ahboy (KTA-G-2024-004) spelling variants from older reviews |
+| **Joyo / Goyo** | ➡ Spelling variants | Joyo (KTA-D-2024-011) variants |
+| **Johan** | ❓ Unresolved | "Went above and beyond" — older reviews; no DB match |
+| **Nur** | ❓ Unresolved | Paired with Kiki in older reviews; no DB match |
+| **Derry / Darry / Terry** | ❓ Unresolved | Three spellings of one person, May 2026 reviews, paired with Kiki. Not in DB. Likely active rotation driver. |
+| **Sulis** | ❓ Unresolved | Waterfall-day guide (Tumpak Sewu), filmed/edited guest video. Not in DB. Likely active rotation guide. |
 
-Treat all unregistered names as rotation or unlisted crew until cross-referenced to a KTA code. Source: [[sources/jvto-homepage-clip]] (older names) + [[sources/trustpilot-reviews-2026]] (Derry/Sulis/Pras).
+Source: [[sources/trustpilot-reviews-2026]] + [[sources/db-export-2026-05]].
 
 -> [[people/agung-sambuko]] | -> [[people/dr-ahmad-irwandanu]] | -> [[credentials/trust-signals]] | -> [[reviews/trustpilot-compilation]] | -> [[products/packages-overview]]

@@ -125,7 +125,7 @@ Approved language for Ijen content:
 
 ## Crew
 
-- **Total**: 11 members (7 guides + 4 drivers) per [[sources/ssot-v6]] §4_2
+- **Total**: 14 members (7 guides + 7 drivers) per [[sources/db-export-2026-05]] — 11 KTA-confirmed + 3 DB-confirmed drivers (Yusuf, Dika, Pras)
 - **All KTA-credentialed**: 2024 issuance, KTA-G/D-2024-001 → -011
 - **5 confirmed HPWKI KTA-holders** (Ijen specialist competence)
 - **English-speaking guides on all tours**

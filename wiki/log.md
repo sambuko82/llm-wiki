@@ -10,6 +10,41 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] ingest | DB Export — Live Database Snapshot
+
+**Source type**: ssot-update (Workflow 4) — structured DB export covering 14 data categories
+**Raw file**: `raw/db_export_raw.json`
+
+**Pages created (8)**:
+- [[sources/db-export-2026-05]] — source summary; contradictions flagged; cross-reference map
+- [[products/packages-full-pricing]] — complete pricing for all 22 packages (all pax tiers)
+- [[products/packages-itineraries]] — all 99 day-by-day itinerary entries; recurring patterns; hotel allocation per phase
+- [[reviews/google-tripadvisor-2026]] — 92 Google reviews (4.90/5) + 21 TripAdvisor reviews (4.95/5); crew mentions; themes mapped
+- [[content/hotels]] — 23 hotel partners by phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu/Jember, Malang, Surabaya finish)
+- [[content/operational-facts]] — temperatures, travel times, support hours, Ijen monthly closure, trolley ojek, micro-customization policy, FOC 5% discount
+
+**Pages updated (5)**:
+- [[people/crew-registry]] — total_crew 11→14 (7+7); Yusuf/Dika/Pras confirmed as active drivers; self-quotes for all 14; soft-data table revised; Dika + Pras resolved from soft-data
+- [[products/packages-overview]] — FOC table updated with 5% group discount at 50+ pax
+- [[overview]] — crew count updated to 14 (7+7)
+- [[index]] — total_pages 30→38; db-export-2026-05 source added; 5 new pages registered
+- [[log]] — this entry
+
+**Key new data vs prior wiki state**:
+- **Full pricing**: was 4 sample tables → now 22 complete tables (143 price rows)
+- **Itineraries**: was zero → now 99 day entries covering all packages
+- **Reviews**: was 51 Trustpilot only → now 164 total (44 TP + 92 Google + 21 TripAdvisor)
+- **Crew**: was 11 KTA → now 14 confirmed (3 new drivers: Yusuf, Dika, Pras)
+- **Hotels**: was unnamed → now 23 named partners with area and itinerary phase mapping
+- **Operational facts**: NEW — temperatures, travel times, Ijen closure schedule, support hours
+
+**Contradictions flagged**:
+1. `kb.cancellation-policy` says "50% fee <48h" vs policy pack canonical "100% forfeiture" — KB is stale
+2. `kb.group-benefits-foc` adds 5% discount at 50+ pax — not in prior wiki sources; verify with owner
+3. DB Trustpilot = 44 reviews / 4.93 avg vs live clip = 51 reviews / 4.8 — DB snapshot is older
+
+---
+
 ## [2026-05-12] health-check | Weekly
 
 **Vault state**: 30 wiki pages · 11 raw files · 5 output files
