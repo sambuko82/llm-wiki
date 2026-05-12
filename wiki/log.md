@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | faq — Madakaripura FAQ
+Profile: faq. Output: `output/faq-2026-05-12-madakaripura.md`. 20 questions across 7 sections: About Madakaripura (incl. height reconciliation + Gajah Mada history), The Visit (approach, timing, wetness, horse), Safety & Equipment (helmets attributed to local site mgmt), Packages (6 packages with pricing), Fitness/Suitability, Weather, Booking. health_wording_mode: none. Sources: madakaripura, faq-master, operational-facts, packages-overview, packages-full-pricing, credentials.
+
+---
+
 ## [2026-05-12] output | faq — Tumpak Sewu FAQ
 Profile: faq. Output: `output/faq-2026-05-12-tumpak-sewu.md`. 19 questions across 7 sections: About Tumpak Sewu, Two Vantage Points (rim vs canyon), Safety & Equipment (helmets attributed to local site mgmt, water shoes, wetness), Packages (6 packages listed; no standalone tour noted), Fitness/Suitability, Weather/Conditions, Booking. health_wording_mode: none. Sources: tumpak-sewu, faq-master, operational-facts, packages-overview, packages-full-pricing, credentials.
 
