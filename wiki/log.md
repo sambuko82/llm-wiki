@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | faq — Tumpak Sewu FAQ
+Profile: faq. Output: `output/faq-2026-05-12-tumpak-sewu.md`. 19 questions across 7 sections: About Tumpak Sewu, Two Vantage Points (rim vs canyon), Safety & Equipment (helmets attributed to local site mgmt, water shoes, wetness), Packages (6 packages listed; no standalone tour noted), Fitness/Suitability, Weather/Conditions, Booking. health_wording_mode: none. Sources: tumpak-sewu, faq-master, operational-facts, packages-overview, packages-full-pricing, credentials.
+
+---
+
 ## [2026-05-12] output | faq — Bromo FAQ
 Profile: faq. Output: `output/faq-2026-05-12-bromo.md`. 24 questions across 8 sections: About Bromo, Sunrise Experience, Jeep & Caldera Floor (5 Qs), Milky Way, Packages (pricing both origins + combos), Fitness/Packing, Closures/Kasada/Plan B, Booking. No health screening section (health_wording_mode: none). Sources: mount-bromo, faq-master, operational-facts, packages-overview, packages-full-pricing, packages-itineraries, credentials.
 
