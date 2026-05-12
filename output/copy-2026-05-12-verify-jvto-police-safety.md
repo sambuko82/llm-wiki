@@ -63,7 +63,7 @@ This coordination is subject to approval by the relevant authority and is not a 
 
 ## What This Means Operationally
 
-Visitor safety at Kawah Ijen falls within the professional jurisdiction of Ditpamobvit. A founder assigned to that unit brings institutional training, police-grade operational discipline, and formal accountability — not a self-described "safety-focused" approach. The three independent press articles confirm the role is active field work: overnight crater deployments, sulfur-condition monitoring, and enforcement operations — not a ceremonial title.
+Visitor safety at Kawah Ijen falls within the professional jurisdiction of Ditpamobvit. A founder assigned to that unit brings institutional training, institutional training standards, and formal accountability as a serving Polri officer — not a self-described "safety-focused" approach. The three independent press articles confirm the role is active field work: overnight crater deployments, sulfur-condition monitoring, and enforcement operations — not a ceremonial title.
 
 No other East Java volcano tour operator is led by a serving officer of the Tourist Police.
 
