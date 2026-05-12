@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | faq — Bromo FAQ
+Profile: faq. Output: `output/faq-2026-05-12-bromo.md`. 24 questions across 8 sections: About Bromo, Sunrise Experience, Jeep & Caldera Floor (5 Qs), Milky Way, Packages (pricing both origins + combos), Fitness/Packing, Closures/Kasada/Plan B, Booking. No health screening section (health_wording_mode: none). Sources: mount-bromo, faq-master, operational-facts, packages-overview, packages-full-pricing, packages-itineraries, credentials.
+
+---
+
 ## [2026-05-12] output | faq — Ijen FAQ
 Profile: faq. Output: `output/faq-2026-05-12-ijen.md`. 22 questions across 8 sections: About Kawah Ijen, The Hike, Blue Fire, Health Screening (Q6/Q7 canonical + expanded), JVTO Ijen Packages (pricing from both origins), Fitness/Children, Closures/Weather, Booking. All Ijen voice invariants applied (conditional framing, no blue-fire guarantee). Sources: faq-master, kawah-ijen, dr-ahmad-irwandanu, operational-facts, packages-overview, packages-full-pricing, credentials.
 
