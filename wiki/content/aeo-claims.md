@@ -133,7 +133,7 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 
 **CS reply**: *"You can check reviews by platform and by theme at /why-jvto/reviews. It's organized so you can see patterns, not random quotes."*
 
-**Aggregate**: Trustpilot 4.8/5 (47 reviews, verified 2026-04-19) · Google Maps 4.90/5 (92 reviews) · TripAdvisor 4.95/5 (21 reviews).
+**Aggregate**: Trustpilot 4.8/5 (51 reviews, verified 2026-05-09) · Google Maps 4.90/5 (92 reviews) · TripAdvisor 4.95/5 (21 reviews).
 
 **Evidence**: `trustpilot-live-profile`, `tripadvisor-live-profile`, `google-maps-live-cid`, `getyourguide-live-supplier`, `booking-2015-award`. See [[reviews/trustpilot-compilation]] · [[reviews/review-patterns]].
 

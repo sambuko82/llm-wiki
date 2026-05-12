@@ -2,8 +2,8 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-11
-total_pages: 28
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide]
+total_pages: 30
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en]
 ---
 
 # JVTO Wiki — Content Index
@@ -25,6 +25,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/trustpilot-reviews-2026]] — Trustpilot page clip (2026-05-09). 51 reviews, 4.8/5. Confirms 2 new unregistered crew (Derry, Sulis) + Pras in company bio.
 - [[sources/detik-polpar-2021]] — Detik.com article (2021-03-14). Independent national media confirmation of Bripka Agung Sambuko as active Polpar. Direct quotes in Bahasa Indonesia.
 - [[sources/llm-kb-tooling-guide]] — LLM KB Tooling Guide (2026-05-11). Karpathy-inspired patterns: typed ingestion, compilation profiles, health check tiers. Basis for Workflows 4–6.
+- [[sources/jvto-policy-pack-v6]] — Customer-facing policy pack v2026-01-17 (3 policies: Booking/Payment/Cancellation, Inclusions/Exclusions, Privacy). Vehicle allocation specs, Bromo jeep capacity, bank transfer details, FOC scheme, Travel Credit terms.
+- [[sources/jvto-travel-guide-en]] — Travel Guide EN publishable copy + SSOT JSON (2026-01-19). 7 routes: booking info, FAQ, Ijen screening, safety, packing, weather, police escort. Silver jewelry warning, fitness levels per destination, My Booking Portal details.
 
 ## Destinations
 
@@ -51,7 +53,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 ## Reviews
 
-- [[reviews/trustpilot-compilation]] — 47 reviews, 4.8/5 (verified 2026-04-19), guide/driver name index, verbatim excerpts
+- [[reviews/trustpilot-compilation]] — 51 reviews, 4.8/5 (verified 2026-05-09), guide/driver name index, verbatim excerpts
 - [[reviews/review-patterns]] — Themes extracted: 5 SSOT-canonical + 10 derived patterns for content/AEO use
 
 ## Content Production

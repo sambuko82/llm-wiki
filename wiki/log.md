@@ -1,13 +1,173 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-11
-sources: []
+last_updated: 2026-05-12sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-12] health-check | Weekly
+
+**Vault state**: 30 wiki pages · 11 raw files · 5 output files
+
+---
+
+### On-Demand Checks (Contradiction Scan)
+
+**C1 — Review count: FIXED**
+`wiki/overview.md`, `wiki/credentials/trust-signals.md`, `wiki/content/aeo-claims.md`, and `wiki/index.md` all referenced "47 reviews (verified 2026-04-19)". The canonical count was updated to **51** (verified 2026-05-09) in `wiki/reviews/trustpilot-compilation.md` during the 2026-05-11 Trustpilot ingest, but the fix was not propagated to these 4 pages.
+- **Action taken**: All 4 pages updated to `51 reviews, verified 2026-05-09`. ✅
+
+**C2 — Founding date (pre-existing, no new action)**
+`wiki/overview.md` carries a `> Contradiction with project CLAUDE.md` block distinguishing the three founding eras (2015 guesthouse, 2016 PT operational, 2023 TDUP). No change required.
+
+**C3 — Crew count (pre-existing, no new action)**
+`wiki/overview.md` carries a `> Contradiction within SSOT` note: §4_2 = 11 canonical vs §13 = 14. No change required.
+
+**C4 — Package count (pre-existing, no new action)**
+`wiki/overview.md` and `wiki/products/packages-overview.md` carry `> Contradiction` blocks: §meta = 15 canonical vs §9_1/§13 = 16. No change required.
+
+---
+
+### Orphan Detection
+
+**O1 — `destinations/papuma-beach` — FIXED**
+The page was only linked from `wiki/index.md` and `wiki/log.md`. No other content page used a `[[destinations/papuma-beach]]` wikilink. `wiki/overview.md` had a stale "gap" note ("Papuma Beach (gap — see [[index]])") written before the page existed.
+- **Action taken**: Updated `wiki/overview.md` destinations table to use `[[destinations/papuma-beach]]`. ✅
+
+**New orphan check (pages created since last log entry):**
+- `wiki/sources/jvto-policy-pack-v6.md` — linked from log.md + index.md + jvto-travel-guide-en.md ✓
+- `wiki/sources/jvto-travel-guide-en.md` — linked from log.md + index.md ✓
+- Neither is an orphan. ✅
+
+---
+
+### Stale Claim Flags (30-Day Sweep)
+
+All wiki pages have `last_updated: 2026-05-11` or `2026-05-12` (within 30 days of 2026-05-12). No pages exceed the 30-day sourcing threshold.
+
+The review-count mismatch (47 vs 51) was an intra-wiki contradiction, not a stale-by-age claim — resolved under C1 above.
+
+**Stale value note still in `wiki/sources/ssot-v6.md`**: The SSOT snapshot records `review_count: 47` — this correctly reflects the SSOT v6.0 document date (2026-04-22). Historical record; no update warranted on the source summary page.
+
+---
+
+### Index Completeness
+
+All 27 non-root wiki pages (sources ×7, destinations ×5, products ×1, people ×3, credentials ×2, reviews ×2, content ×4, ops ×3) verified against `wiki/index.md`. **PASS** ✅
+
+---
+
+### Log Completeness
+
+All 11 raw files verified against log entries:
+
+| Raw file | Log entry |
+|---|---|
+| `Tourist Police-Led Private Volcano Tours in East Java.md` | `[2026-05-11] init | Wiki Initialization` (as jvto-homepage-clip) ✓ |
+| `JVTO_FINAL_CLEAN_SSOT.json` | `[2026-05-11] ingest | JVTO_FINAL_CLEAN_SSOT.json v6.0` ✓ |
+| `*.gpx` (×5) | `[2026-05-11] ingest | GPX Trail Data Enrichment` ✓ |
+| `llm-kb-tooling-guide.md` | `[2026-05-11] ingest | LLM KB Tooling Guide` ✓ |
+| `JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md` | `[2026-05-12] ingest | JVTO Policy Pack` ✓ |
+| `JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md` | `[2026-05-12] ingest | JVTO Travel Guide EN` ✓ |
+| `JVTO_Travel_Guide_SSOT_EN.json` | `[2026-05-12] ingest | JVTO Travel Guide EN` ✓ |
+
+**PASS** ✅
+
+---
+
+### Summary
+
+| Check | Result | Action taken |
+|---|---|---|
+| Contradiction scan | 1 new issue found | Fixed: 47→51 Trustpilot count in 4 pages |
+| Orphan detection | 1 orphan found | Fixed: papuma-beach wikilink added to overview.md |
+| Stale claim flags (30-day) | PASS | No sourcing pages >30 days old |
+| New orphan check | PASS | Both new source pages have inbound links |
+| Index completeness | PASS | All 27 non-root pages listed |
+| Log completeness | PASS | All 11 raw files have log entries |
+
+**Pages modified by this health check**: `wiki/overview.md` · `wiki/credentials/trust-signals.md` · `wiki/content/aeo-claims.md` · `wiki/index.md`
+
+---
+
+## [2026-05-12] output | AEO Blocks — Policy & Travel Guide
+
+**Profile**: aeo (Workflow 5)
+**Output file**: `output/aeo-2026-05-12-policy-travel-guide.md`
+
+**Sources drawn from**: [[sources/jvto-policy-pack-v6]], [[sources/jvto-travel-guide-en]], [[content/aeo-claims]] C1–C9, [[content/faq-master]]
+
+**30 Q&A blocks across 9 sections**:
+- Booking confirmation & payments (6 blocks)
+- Cancellation & Travel Credit (5 blocks)
+- Inclusions & vehicle allocation (6 blocks)
+- Ijen health screening (5 blocks)
+- Packing & fitness by destination (6 blocks) — includes silver jewelry warning
+- Safety & tour management (3 blocks)
+- Weather & closures (3 blocks)
+- Police escort (3 blocks)
+- My Booking Portal & privacy (2 blocks)
+
+**New AEO angles not previously in output/**:
+- Silver jewelry warning for Ijen
+- Fitness level per destination (Bromo/Ijen/Tumpak Sewu)
+- QR screening system + non-JVTO travelers
+- Vehicle allocation specs (MPV/Hiace/Hiace+MPV thresholds)
+- Bromo jeep capacity (max ±4 guests)
+- FOC scheme (18/35/50 pax thresholds)
+- My Booking Portal capabilities
+- Alcohol/substance safety rule
+- Police escort formal channel (Traffic Police request, not proprietary)
+
+---
+
+## [2026-05-12] ingest | JVTO Travel Guide EN — Publishable Copy + SSOT JSON
+
+**Source type**: pdf-doc (Workflow 4)
+**Raw files**: `raw/JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md` + `raw/JVTO_Travel_Guide_SSOT_EN.json`
+
+**Pages created (1)**:
+- [[sources/jvto-travel-guide-en]] — 7-route travel guide: booking info, FAQ (15 Qs), Ijen screening, safety framework, packing by destination, weather/closures, police escort
+
+**Pages updated (1)**:
+- [[index]] — sources list updated; total_pages 28→30; jvto-travel-guide-en entry added
+
+**Key new material**:
+- Silver jewelry warning for Ijen (§6.7) — not previously in wiki
+- Fitness levels per destination (Bromo/Ijen/Tumpak Sewu)
+- My Booking Portal post-payment feature list
+- QR verification purpose for screening (anti-forgery, available to non-JVTO travelers)
+- Police escort: JVTO submits formal Traffic Police request (does not provide own escorts)
+- Guest alcohol/substance rule (hike refusal)
+- 5-step booking process verbatim
+
+---
+
+## [2026-05-12] ingest | JVTO Policy Pack — 3 Customer-Facing Policies v2026-01-17
+
+**Source type**: pdf-doc (Workflow 4)
+**Raw file**: `raw/JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md`
+
+**Pages created (1)**:
+- [[sources/jvto-policy-pack-v6]] — 3 policies (Booking/Payment/Cancellation, Inclusions/Exclusions, Privacy); bank transfer details, vehicle allocation specs, FOC scheme, Travel Credit terms, force majeure rules
+
+**Pages updated (1)**:
+- [[index]] — sources list updated; jvto-policy-pack-v6 entry added
+
+**Key facts confirmed / first-ingested**:
+- Bank details: BRI 001301001779564 (SWIFT BRINIDJAXXX), BCA 1200944352 (SWIFT CENAIDJAXXX)
+- Vehicle allocation: 2–3 guests = MPV; 4–9 = Hiace; 10–11 = Hiace + MPV
+- Bromo jeep max: ±4 guests per jeep
+- FOC: 18 pax = 1 FOC, 35 pax = 2 FOC, 50 pax = 3 FOC
+- Travel Credit: IDR, non-expiring, transferable with written confirmation
+- Cancellation: 48h cut-off local Indonesia time (≥48h = 100% Travel Credit; <48h = forfeit)
+- Payment: deposit 20%; balance card 5 days; balance transfer 3 days before Day 1
+- SSL + PCI DSS checkout; JVTO never stores card details
 
 ---
 

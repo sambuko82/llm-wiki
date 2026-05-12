@@ -9,11 +9,11 @@ sources: [ssot-v6, jvto-homepage-clip]
 
 Third-party evidence. Use in content to **prove claims, not assert them**. All entries below are independently verifiable.
 
-## Live Review Platforms (verified 2026-04-19)
+## Live Review Platforms (verified 2026-05-09)
 
 | Platform | Rating | Count | URL |
 |---|---|---|---|
-| **Trustpilot** (primary) | **4.8 / 5** | 47 | https://trustpilot.com/review/javavolcano-touroperator.com |
+| **Trustpilot** (primary) | **4.8 / 5** | 51 | https://trustpilot.com/review/javavolcano-touroperator.com |
 | **Google Maps** | 4.90 / 5 | 92 | https://www.google.com/maps?cid=1266403973589689021 |
 | **TripAdvisor** | 4.95 / 5 | 21 | https://www.tripadvisor.com/Attraction_Review-g297715-d19983165-Reviews-Java_Volcano_Tour_Operator-Surabaya_East_Java_Java.html |
 | **GetYourGuide** | — | — | https://www.getyourguide.com/java-volcano-tour-operator-s260697/ |

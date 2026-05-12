@@ -76,7 +76,7 @@ See [[people/agung-sambuko]] for the full evidence chain.
 | [[destinations/mount-bromo]] | 2,329 m | Probolinggo (Tengger caldera) | no |
 | [[destinations/tumpak-sewu]] | ~120 m (waterfall) | Lumajang | no |
 | [[destinations/madakaripura]] | tallest in Java; height under reconciliation | Probolinggo | no |
-| Papuma Beach (gap — see [[index]]) | sea-level | Jember | no (coastal supporting destination) |
+| [[destinations/papuma-beach]] | sea-level | Jember | no (coastal supporting destination) |
 
 ## Packages (15 total)
 
@@ -91,7 +91,7 @@ See [[products/packages-overview]] for full list.
 
 ## Aggregate Rating (verified 2026-04-19)
 
-- **Primary platform**: Trustpilot — **4.8 / 5** from **47 reviews**
+- **Primary platform**: Trustpilot — **4.8 / 5** from **51 reviews**
 - **Profile**: https://trustpilot.com/review/javavolcano-touroperator.com
 - **Schema status**: AggregateRating ACTIVE on Organization schema. Individual Review schema DEFERRED.
 
