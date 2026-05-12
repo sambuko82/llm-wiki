@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | website-copy — Bali Landing Page
+Profile: website-copy. Output: `output/copy-2026-05-12-bali-landing.md`. Sections: Hero, route overview (Bali→Bali vs Bali→SUB distinction), 4 packages with day-by-day itinerary tables + pricing (solo/2 pax/11+ pax), inclusions (ferry noted), Why JVTO, trust signals, booking. Sources: packages-overview, packages-full-pricing, packages-itineraries, copy-bank, brand-voice, aeo-claims, credentials.
+
+---
+
 ## [2026-05-12] output | website-copy — Surabaya Landing Page
 Profile: website-copy. Output: `output/copy-2026-05-12-surabaya-landing.md`. Sections: Hero, 11 packages with per-person pricing (2 pax + 11+ pax), inclusions, Why JVTO (4 differentiators), trust signals table, booking steps. Sources: packages-overview, packages-full-pricing, copy-bank, brand-voice, aeo-claims, credentials.
 
