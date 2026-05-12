@@ -22,13 +22,13 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 ### 2015 — The Guesthouse
 
-Agung Sambuko — Mr. Sam — grew up in Bondowoso, the town closest to Kawah Ijen. In 2015 he opened the Ijen Bondowoso Homestay on Jl. Khairil Anwar No.102, the same address where JVTO operates today. Booking.com guests rated the property 9.4 / 10 — an award that was shipped to the Bondowoso address that year.
+Agung Sambuko — Mr. Sam — grew up in Bondowoso, the town closest to Kawah Ijen. In 2015 he opened the Ijen Bondowoso Homestay on Jl. Khairil Anwar No.102 (the current office address is No.102A — the 'A' suffix was added after the PT registration in 2016), the same address where JVTO operates today. Booking.com guests rated the property 9.4 / 10 — an award that was shipped to the Bondowoso address that year.
 
 He was already an active officer in the Indonesian National Police, assigned to Ditpamobvit — the directorate responsible for security at vital tourist objects including the Ijen Crater area. Managing the guesthouse meant he saw both sides of East Java volcano tourism: the visitor experience and the operational safety gaps.
 
 ### 2016 — PT Java Volcano Rendezvous
 
-Mr. Sam incorporated PT Java Volcano Rendezvous on 2016-01-01. That same year, Stefan Loose Indonesia Travel Guidebook (4th Edition, 2016, ISBN 9783770167654, p. 287) named "Agung" as the operator of the Ijen Bondowoso Homestay with tour arrangements. An independent German travel publisher — not a JVTO-authored reference — listing the same name at the same address.
+Mr. Sam incorporated PT Java Volcano Rendezvous on 2016-01-01. That same year, Stefan Loose Reiseführer Indonesien (4th Edition, 2016, ISBN 9783770167654, p. 287) named "Agung" as the operator of the Ijen Bondowoso Homestay with tour arrangements. An independent German travel publisher — not a JVTO-authored reference — listing the same name at the same address.
 
 ### 2023 — TDUP Formalization
 

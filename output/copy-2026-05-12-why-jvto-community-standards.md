@@ -49,7 +49,7 @@ JVTO recruits guides and drivers from local Bondowoso and Banyuwangi communities
 
 This commitment is validated by INDECON membership — the Indonesian Ecotourism Network. INDECON listing explicitly validates JVTO's Local Boys employment policy and confirms community-based tourism practices. Verifiable at https://www.indecon.id/spotlight-networks/java-volcano-tour-operator.
 
-14 field crew members appear in the current roster — all with names, photos, and languages listed at /why-jvto/our-team.
+14 field crew members appear in the current roster — all with names, photos, and languages listed on the team roster page.
 
 ---
 
@@ -57,7 +57,7 @@ This commitment is validated by INDECON membership — the Indonesian Ecotourism
 
 From the customer-facing policies and operational standards documented in the wiki:
 
-- We do not collect full card numbers, CVV codes, or online banking passwords via chat or email. Payment is through a secure, PCI DSS-compliant gateway.
+- We do not collect full card numbers, CVV codes, or online banking passwords via chat or email. Payment is through a secure, compliant payment gateway.
 - We do not make verbal promises that override the written voucher. If it is not on the E-Voucher, it is not included.
 - We do not source crew from freelance marketplaces. Every guide and driver is a named, registered team member.
 - We do not guarantee natural phenomena. Blue Fire is a natural phenomenon subject to weather and gas activity. We plan around the viewing window — we do not promise outcomes that depend on volcanic gas conditions.

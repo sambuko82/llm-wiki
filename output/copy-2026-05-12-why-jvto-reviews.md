@@ -67,6 +67,10 @@ Guests note that costs were as described before booking — no unexpected fees a
 > "Fauzi was very attentive to our needs, ensured we were comfortable and safe at all times, and always went the extra mile to help us."
 — **Han Waye**, Trustpilot May 2026 (guide: Fauzi, driver: Fredi — 4D3N Ijen-Papuma-Tumpak Sewu-Bromo)
 
+**T2 — Steep-terrain safety / named guide**
+> "When we went down the steep crater, he held our hands to prevent us from falling."
+— **Wing Shan Lui**, Google Reviews (guide: Rendi, KTA-G-2024-002)
+
 **T3 — Ijen route, safety focus**
 > "Ahboy was a phenomenal Ijen guide — knowledgeable, went out of his way for safety, logistics, equipment."
 — **Jason Li**, Trustpilot (guide: Ahboy / Boy, KTA-G-2024-004)

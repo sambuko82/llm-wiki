@@ -20,6 +20,8 @@ No other East Java volcano tour operator is led by an active Tourist Police offi
 
 **Verifiable credential**: SPRIN WAL TRAVEL 2024-02-12 (SHA256: 179b061a…) · SPRIN POLPAR (SHA256: 03c8578d…) · Press archive at /verify-jvto/police-safety
 
+*(POLPAR is a police unit designation — it appears here under Police-Led rather than in the Licenses list below.)*
+
 ---
 
 ## 2. 100% Private Tours
