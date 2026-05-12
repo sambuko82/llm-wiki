@@ -121,4 +121,4 @@ Yes. JVTO direct bookings (website + WhatsApp only) receive FOC (Free of Charge)
 
 Supports claims **C1, C2, C3, C4, C5, C6, C8** depending on FAQ. Q19 + voice invariants protect C4 (Ijen health screening) and the unguaranteed-natural-phenomena positioning.
 
--> [[content/brand-voice]] | -> [[content/aeo-claims]] | -> [[products/packages-overview]] | -> [[credentials/legal-licenses]] | -> [[people/dr-ahmad-irwandanu]]
+-> [[content/brand-voice]] | -> [[content/aeo-claims]] | -> [[content/operational-facts]] | -> [[products/packages-overview]] | -> [[credentials/legal-licenses]] | -> [[people/dr-ahmad-irwandanu]]

@@ -98,4 +98,4 @@ See [[content/brand-voice]] and [[sources/ssot-v6]] §2_4 voice invariants.
 
 Owns claim **C6** (Reviews registry — independent validation). Supports **C7** (Our Team) via named-crew attribution. See [[content/aeo-claims]] and [[sources/ssot-v6]] §12.
 
--> [[reviews/review-patterns]] | -> [[people/crew-registry]] | -> [[credentials/trust-signals]] | -> [[content/aeo-claims]]
+-> [[reviews/google-tripadvisor-2026]] | -> [[reviews/review-patterns]] | -> [[people/crew-registry]] | -> [[credentials/trust-signals]] | -> [[content/aeo-claims]]

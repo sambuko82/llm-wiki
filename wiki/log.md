@@ -10,6 +10,90 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] health-check | Weekly (2nd run — post DB ingest)
+
+**Vault state**: 36 wiki pages · 12 raw files · 2 Clippings (already ingested)
+
+---
+
+### Stale Claims (30-Day Sweep)
+
+All 36 wiki pages carry `last_updated: 2026-05-11` or `2026-05-12`. No sourcing pages exceed the 30-day threshold. **PASS** ✅
+
+---
+
+### New Orphan Detection (pages created since last health check)
+
+Six pages were created by the [2026-05-12] DB Export ingest, after the prior health check ran. Inbound-link status (excluding index.md and log.md):
+
+| Page | Inbound links (non-index/log) | Status |
+|---|---|---|
+| sources/db-export-2026-05 | overview, crew-registry, operational-facts, hotels, google-tripadvisor-2026, packages-full-pricing, packages-itineraries | ✅ Well-connected |
+| products/packages-full-pricing | db-export-2026-05, packages-itineraries | ✅ Connected |
+| products/packages-itineraries | db-export-2026-05, packages-full-pricing, hotels | ✅ Connected |
+| reviews/google-tripadvisor-2026 | db-export-2026-05 only | ⚠ Soft orphan |
+| content/hotels | db-export-2026-05, packages-itineraries | ✅ Connected |
+| content/operational-facts | db-export-2026-05 only | ⚠ Soft orphan |
+
+**Two soft orphans flagged (no fix without instruction):**
+
+- **O1 — `reviews/google-tripadvisor-2026`**: Only non-index inbound link is the DB source page. Not cross-referenced from [[reviews/trustpilot-compilation]] or [[reviews/review-patterns]] — the two pages in the same cluster. A reader navigating the reviews cluster has no in-cluster path to the Google/TripAdvisor data.
+- **O2 — `content/operational-facts`**: Only non-index inbound link is the DB source page. Not referenced from [[content/faq-master]], [[content/aeo-claims]], or [[content/copy-bank]], despite being the authoritative source for temperatures, travel times, and closure data those pages draw on.
+
+**Navigation gap flagged (not a true orphan, no fix without instruction):**
+
+- **G1 — `products/packages-overview` has no forward links to `packages-full-pricing` or `packages-itineraries`**: The overview is the natural entry point for the products section. Both detailed pages link back to the overview (correct), but the overview does not link forward to them. A reader following the Products section of the index hits the overview and has no in-page path to the pricing tables or itineraries.
+
+---
+
+### Index Completeness
+
+All 36 wiki pages verified against [[index]] section listings. No missing entries. **PASS** ✅
+
+**Index frontmatter count — CORRECTED:**
+
+`wiki/index.md` frontmatter read `total_pages: 38`. Actual page count (directory listing): **36**. Root cause: the [2026-05-12] DB ingest log entry stated "Pages created (8)" but listed only 6 pages, producing a +2 overcounting that propagated into the index frontmatter (`30→38` instead of `30+6=36`). The log entry itself is append-only and unchanged; the index frontmatter has been corrected.
+
+- **Action taken**: `wiki/index.md` `total_pages: 38 → 36`. ✅
+
+---
+
+### Log Completeness
+
+12 raw files audited:
+
+| Raw file | Log entry |
+|---|---|
+| `Tourist Police-Led Private Volcano Tours in East Java.md` | [2026-05-11] init (jvto-homepage-clip) ✓ |
+| `JVTO_FINAL_CLEAN_SSOT.json` | [2026-05-11] ingest \| SSOT v6.0 ✓ |
+| `*.gpx` (×5) | [2026-05-11] ingest \| GPX Trail Data Enrichment ✓ |
+| `llm-kb-tooling-guide.md` | [2026-05-11] ingest \| LLM KB Tooling Guide ✓ |
+| `JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md` | [2026-05-12] ingest \| JVTO Policy Pack ✓ |
+| `JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md` | [2026-05-12] ingest \| JVTO Travel Guide EN ✓ |
+| `JVTO_Travel_Guide_SSOT_EN.json` | [2026-05-12] ingest \| JVTO Travel Guide EN ✓ |
+| `db_export_raw.json` | [2026-05-12] ingest \| DB Export ✓ |
+
+**PASS** ✅
+
+**Clippings**: 2 files present, both already ingested ([2026-05-11] Clippings ingest). No uningested Clippings. ✅
+
+---
+
+### Summary
+
+| Check | Result | Action taken |
+|---|---|---|
+| Stale claims (30-day) | PASS | None |
+| New orphan detection | 2 soft orphans (O1, O2) | Flagged — no fix without instruction |
+| Navigation gap | 1 gap G1 (packages-overview ↛ pricing/itineraries) | Flagged — no fix without instruction |
+| Index completeness (listing) | PASS | None |
+| Index total_pages count | FAIL → FIXED | `total_pages: 38 → 36` in [[index]] |
+| Log completeness | PASS | None |
+
+**Pages modified by this health check**: [[index]] (frontmatter count only).
+
+---
+
 ## [2026-05-12] ingest | DB Export — Live Database Snapshot
 
 **Source type**: ssot-update (Workflow 4) — structured DB export covering 14 data categories

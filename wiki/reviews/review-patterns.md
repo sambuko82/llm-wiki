@@ -61,4 +61,4 @@ When citing reviews in answer copy:
 
 Supports claims **C1, C2, C3, C4, C6, C7** across all 5 canonical themes. See [[content/aeo-claims]].
 
--> [[reviews/trustpilot-compilation]] | -> [[people/crew-registry]] | -> [[content/aeo-claims]] | -> [[content/brand-voice]]
+-> [[reviews/trustpilot-compilation]] | -> [[reviews/google-tripadvisor-2026]] | -> [[people/crew-registry]] | -> [[content/aeo-claims]] | -> [[content/brand-voice]]

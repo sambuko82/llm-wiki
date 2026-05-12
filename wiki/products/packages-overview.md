@@ -103,7 +103,7 @@ Some packages also have a `1 pax` solo tier (single-occupancy supplement).
 | 8–10 pax | IDR 3,625,000 |
 | 11+ pax | IDR 3,475,000 |
 
-**Full pricing tables for all 15 packages**: see [[sources/ssot-v6]] §6_2 `pricing_logic` (canonical).
+**Full pricing tables for all 22 packages**: see [[products/packages-full-pricing]] (all pax tiers, all group sizes) · [[sources/ssot-v6]] §6_2 `pricing_logic` (15-package canonical).
 
 ## Standard Inclusions (all 15 packages)
 
@@ -220,4 +220,4 @@ JVTO is an official ISIC provider (ID 259268 — verifiable at https://www.isic.
 
 See [[content/aeo-claims]] for full claim-evidence chains.
 
--> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[destinations/tumpak-sewu]] | -> [[destinations/madakaripura]] | -> [[credentials/legal-licenses]] | -> [[content/faq-master]]
+-> [[products/packages-full-pricing]] | -> [[products/packages-itineraries]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[destinations/tumpak-sewu]] | -> [[destinations/madakaripura]] | -> [[credentials/legal-licenses]] | -> [[content/faq-master]]
