@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | website-copy — Homepage
+Profile: website-copy. Output: `output/copy-2026-05-12-homepage.md`. Style B voice with Style A fact inserts. 9 sections: Hero, Why JVTO (6 differentiators), Destinations (4), Tour Packages (Surabaya 12 + Bali 4), Reviews (3-platform counts), Trust & Verification (5-item trust stack), Our Story, CTA, Footer. All claims source-cited inline. Voice invariants enforced: conditional Ijen health-screening language, conditional Blue Fire language, no forbidden phrases. Production notes included (package count, Bali finish warning, review date freshness). Sources: copy-bank, brand-voice, aeo-claims C1–C9, packages-overview, kawah-ijen, mount-bromo, legal-licenses, trust-signals, agung-sambuko, sitemap-2026-05.
+
+---
+
 ## [2026-05-12] ingest | JVTO Website Sitemap — May 2026
 Profile: pdf-doc (structured XML document). Pages updated: sources/sitemap-2026-05 (created), products/packages-overview, credentials/trust-signals, index. Key additions: 44-URL sitemap reveals 16 live tour pages (12 Surabaya + 4 Bali); resolves package-count contradiction in favor of SSOT §9_1/§13 (was disputed as 15 vs 16); `taman-safari-prigen-bromo-madakaripura-3d2n` confirmed as active 12th Surabaya package; Verify JVTO trust verification hub documented (4 sub-pages: legal, press-recognition, history-artifacts, police-safety); ISIC student package confirmed as dedicated /isic/ path; `/travel-guide/best-time-to-visit` identified as most recently updated page (2026-05-12).
 
