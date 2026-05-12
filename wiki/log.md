@@ -10,6 +10,11 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] output | faq — Ijen FAQ
+Profile: faq. Output: `output/faq-2026-05-12-ijen.md`. 22 questions across 8 sections: About Kawah Ijen, The Hike, Blue Fire, Health Screening (Q6/Q7 canonical + expanded), JVTO Ijen Packages (pricing from both origins), Fitness/Children, Closures/Weather, Booking. All Ijen voice invariants applied (conditional framing, no blue-fire guarantee). Sources: faq-master, kawah-ijen, dr-ahmad-irwandanu, operational-facts, packages-overview, packages-full-pricing, credentials.
+
+---
+
 ## [2026-05-12] output | website-copy — Bali Landing Page
 Profile: website-copy. Output: `output/copy-2026-05-12-bali-landing.md`. Sections: Hero, route overview (Bali→Bali vs Bali→SUB distinction), 4 packages with day-by-day itinerary tables + pricing (solo/2 pax/11+ pax), inclusions (ferry noted), Why JVTO, trust signals, booking. Sources: packages-overview, packages-full-pricing, packages-itineraries, copy-bank, brand-voice, aeo-claims, credentials.
 
