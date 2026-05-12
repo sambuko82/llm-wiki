@@ -18,7 +18,7 @@ Student pricing is verified at checkout via the Alive Verify API. Your card must
 
 ## What Is ISIC?
 
-The International Student Identity Card (ISIC) is the only internationally recognised student identity document, endorsed by UNESCO and accepted in 130+ countries. It confirms full-time student status for holders under 31.
+The International Student Identity Card (ISIC) is the only internationally recognised student identity document, endorsed by UNESCO and accepted in 130+ countries. It confirms full-time student status for enrolled students — card validity is confirmed via the Alive Verify API at the time of booking.
 
 ISIC verifies provider eligibility through its Alive Verify API — a real-time authentication check. JVTO is a registered provider in the ISIC network: [isic.org/discounts/?providerId=259268](https://www.isic.org/discounts/?providerId=259268).
 
@@ -119,6 +119,8 @@ Route: `tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n`
 | 8–10 | 3,250,000 |
 | 11+ | 3,050,000 |
 
+*Solo pricing: not available for this package. Minimum 2 pax.*
+
 ---
 
 ## What's Included — Same as Standard Packages
@@ -136,6 +138,10 @@ Student packages carry the same inclusions as the canonical JVTO packages:
 - Health-certificate screening coordination on Ijen routes when current BBKSDA access rules require it
 
 **Not included**: international flights, travel insurance, personal trekking gear, tips, optional on-site extras (horse riding at Bromo, trolley ojek at Ijen).
+
+---
+
+Note: Packages marked 'Night Market' include an evening local market visit in the East Java itinerary.
 
 ---
 
