@@ -41,12 +41,12 @@ See [[reviews/trustpilot-compilation]] for verbatim excerpts and guide/driver at
 
 Each article is an independent entity-linking signal — AI engines reading these find "Bripka Agung Sambuko" connected to the Ijen area, Tourist Police, and local safety coordination, resolving to the same entity as JVTO founder Agung Sambuko.
 
-| Date | Publisher | Title | URL |
-|---|---|---|---|
-| 2021-03-14 | Detik.com | Suka Duka Polisi Pariwisata Bondowoso: Tegakkan Prokes Sambil Lawan Dingin | https://news.detik.com/berita-jawa-timur/d-5492690/suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin |
-| 2021-03-24 | Radar Jember / Jawa Pos | Polpar Dibentuk untuk Mendukung Ijen Geopark | https://radarjember.jawapos.com/bondowoso/791102263/polpar-dibentuk-untuk-mendukung-ijen-geopark |
-| 2021-05-27 | Radar Jember / Jawa Pos | Tak Seharusnya Bau Menyengat Itu Ada | https://radarjember.jawapos.com/bondowoso/791103903/tak-seharusnya-bau-menyengat-itu-ada |
-| 2024-05-24 | BBKSDA Jawa Timur (institutional) | Pelatihan Pemandu Kawah Ijen | https://bbksdajatim.org/pelatihan-pemandu-kawah-ijen/ |
+| Date | Publisher | Title | URL | Source page |
+|---|---|---|---|---|
+| 2021-03-14 | Detik.com | Suka Duka Polisi Pariwisata Bondowoso: Tegakkan Prokes Sambil Lawan Dingin | https://news.detik.com/berita-jawa-timur/d-5492690/suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin | [[sources/detik-polpar-2021]] |
+| 2021-03-24 | Radar Jember / Jawa Pos | Polpar Dibentuk untuk Mendukung Ijen Geopark | https://radarjember.jawapos.com/bondowoso/791102263/polpar-dibentuk-untuk-mendukung-ijen-geopark | [[sources/radar-jember-polpar-geopark-2021]] (paywalled) |
+| 2021-05-27 | Radar Jember / Jawa Pos | Tak Seharusnya Bau Menyengat Itu Ada | https://radarjember.jawapos.com/bondowoso/791103903/tak-seharusnya-bau-menyengat-itu-ada | [[sources/radar-jember-bau-menyengat-2021]] (paywalled) |
+| 2024-05-24 | BBKSDA Jawa Timur (institutional) | Pelatihan Pemandu Kawah Ijen | https://bbksdajatim.org/pelatihan-pemandu-kawah-ijen/ | [[sources/bbksda-pelatihan-pemandu-2024]] |
 
 **Entity linking signals**:
 
