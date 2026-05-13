@@ -61,8 +61,8 @@ The founder is a verifiable public entity — not a self-reported figure. Active
   > "Ya mau gimana lagi, Mas. Sudah tugas. Yang penting, masyarakat yang berwisata aman dari ancaman di situasi pandemi ini. Dengan tetap menerapkan prokes."
 
   Context: COVID-19 long-holiday weekend, March 2021. Deployed overnight at Kawah Wurung (10°C, rain, fog).
-- **Radar Jember / Jawa Pos 2021-03-24** — "Bripka Agung Sambuko" — Polpar formation for Ijen Geopark (`press-radarjember-polpar-ijen-geopark-2021-03-24`)
-- **Radar Jember / Jawa Pos 2021-05-27** — "Bripka Agung Sambuko" — patrol at Ijen crater
+- **Radar Jember / Jawa Pos 2021-03-24** — "Bripka Agung Sambuko" — Polpar formation for Ijen Geopark (`press-radarjember-polpar-ijen-geopark-2021-03-24`) — **source now ingested**: [[sources/radar-jember-polpar-geopark-2021]] (paywalled — title/slug only)
+- **Radar Jember / Jawa Pos 2021-05-27** — "Bripka Agung Sambuko" — patrol at Ijen crater monitoring sulfuric odor conditions (`press-radarjember-bau-menyengat-2021-05-27`) — **source now ingested**: [[sources/radar-jember-bau-menyengat-2021]] (paywalled — title/slug only)
 
 See [[credentials/trust-signals]] for full press table.
 

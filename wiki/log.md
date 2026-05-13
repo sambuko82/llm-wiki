@@ -10,6 +10,26 @@ last_updated: 2026-05-12sources: []
 
 ---
 
+## [2026-05-12] query | Hero claim for price-skeptical solo traveler
+Query: "What single trust claim should anchor homepage hero copy for a price-skeptical first-time solo traveler?" Pages read: [[reviews/review-patterns]], [[content/aeo-claims]], [[credentials/trust-signals]], [[products/packages-overview]]. Answer: C3 (All-inclusive clarity, no surprise costs) leads — T5 review pattern (unprompted "no unexpected costs" mentions) is the strongest third-party corroboration for price-skeptics. C1/C5 follows to justify the premium through the verifiable police-credentials chain. Headline option A (C3-first departure from live site) and option B (C1+C3 combined, closer to live site) provided. Pages created: [[content/query-hero-claim]]. Pages updated: [[index]] (entry added; total_pages 40→41). Caveat: "price-skeptical" is inferred by claim/pattern alignment, not behavioral segmentation data.
+
+---
+
+## [2026-05-12] ingest | 3 press source pages
+Sources ingested: Radar Jember 2021-03-24 (Polpar + Geopark) — paywalled; Radar Jember 2021-05-27 (bau menyengat) — paywalled; BBKSDA Jatim 2024-05-24 (pelatihan pemandu) — full access. Pages created: [[sources/radar-jember-polpar-geopark-2021]], [[sources/radar-jember-bau-menyengat-2021]], [[sources/bbksda-pelatihan-pemandu-2024]]. Key BBKSDA findings: 3-day training (May 20–22, 2024) at Paltuding; 250 HPWKI-affiliated guides targeted; curriculum: conservation awareness, guide responsibilities, SAR, PPGD (emergency medical); government-hosted — validates HPWKI training chain as BBKSDA-supervised, not self-certified. Pages updated: [[credentials/trust-signals]] (Source page column added to press table), [[people/agung-sambuko]] (Radar Jember sources linked in proof chain), [[index]] (3 new entries; total_pages 37→40).
+
+---
+
+## [2026-05-12] output | website-copy — Homepage
+Profile: website-copy. Output: `output/copy-2026-05-12-homepage.md`. Style B voice with Style A fact inserts. 9 sections: Hero, Why JVTO (6 differentiators), Destinations (4), Tour Packages (Surabaya 12 + Bali 4), Reviews (3-platform counts), Trust & Verification (5-item trust stack), Our Story, CTA, Footer. All claims source-cited inline. Voice invariants enforced: conditional Ijen health-screening language, conditional Blue Fire language, no forbidden phrases. Production notes included (package count, Bali finish warning, review date freshness). Sources: copy-bank, brand-voice, aeo-claims C1–C9, packages-overview, kawah-ijen, mount-bromo, legal-licenses, trust-signals, agung-sambuko, sitemap-2026-05.
+
+---
+
+## [2026-05-12] ingest | JVTO Website Sitemap — May 2026
+Profile: pdf-doc (structured XML document). Pages updated: sources/sitemap-2026-05 (created), products/packages-overview, credentials/trust-signals, index. Key additions: 44-URL sitemap reveals 16 live tour pages (12 Surabaya + 4 Bali); resolves package-count contradiction in favor of SSOT §9_1/§13 (was disputed as 15 vs 16); `taman-safari-prigen-bromo-madakaripura-3d2n` confirmed as active 12th Surabaya package; Verify JVTO trust verification hub documented (4 sub-pages: legal, press-recognition, history-artifacts, police-safety); ISIC student package confirmed as dedicated /isic/ path; `/travel-guide/best-time-to-visit` identified as most recently updated page (2026-05-12).
+
+---
+
 ## [2026-05-12] output | aeo — Why JVTO
 Profile: aeo. Output: `output/aeo-2026-05-12-why-jvto.md`. 22 Q&A blocks across 9 sections covering full C1–C9 claim set. Sections: Legitimacy/Licensing (3Q), Tourist Police (4Q), Private Tours (2Q), All-Inclusive (3Q), Ijen Screening (3Q), Reviews (2Q), Team (2Q), Partners (3Q), Press (3Q). All answers ≤40 words, citation-first, no hedging. Sources: aeo-claims, faq-master, legal-licenses, trust-signals.
 
