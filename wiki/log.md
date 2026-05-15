@@ -1,12 +1,23 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-12sources: []
+last_updated: 2026-05-14
+sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-14] output | WhatsApp Rules Engine + Playbook expansion
+Pages created: [[ops/2026-05-14-whatsapp-rules-engine]] — companion document to playbook, contains pure execution logic for AI/system consumption. Structure: 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute), master action table with confidence+risk routing, intent taxonomy seed (35+ intents across 5 channels), template examples (multi-language), 12 hard rules (never-cross), escalation destinations, fallback behavior, drift detection thresholds. Pages updated: [[ops/2026-05-14-whatsapp-operations-playbook]] — added Section 7.5 (multi-number setup with 3-SIM concept: customer / B2B partner / internal ops; migration path; routing rules; risks), added companion reference in frontmatter and intro. [[index]] — entry for rules engine added under Ops section. Trigger context: user requested (1) more systematic flow that AI/anyone can follow without interpretation, (2) explanation of why Window B2B = manual (answered in chat), (3) multi-number concept (added to playbook §7.5), (4) simple DB password rotation guidance (answered in chat — delegated to David).
+
+---
+
+## [2026-05-14] output | WhatsApp Operations Playbook
+Profile: ops-playbook (operational design doc, non-technical). Pages created: [[ops/2026-05-14-whatsapp-operations-playbook]]. Scope: 5 WhatsApp channels (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew) mapped as funnels with stages, entry/exit triggers, system vs human actions, and per-stage AI automation eligibility. Includes: inventory of existing assets (people, tech, content, workflows), 13-item pin-point diagnosis (strategic/operational/risk), unified customer state machine, channel resolution rules, escalation/authority paths, brand voice matrix per audience, SLA matrix, success metrics (response time + automation ratio + business outcome), risk register, 8-phase roadmap from inbox visibility through strategic migration. Pages updated: [[index]] (entry added under Ops section). Source dependencies: [[content/brand-voice]], [[content/faq-master]], [[content/operational-facts]], [[products/packages-full-pricing]], [[products/packages-itineraries]], [[sources/jvto-policy-pack-v6]], [[people/dr-ahmad-irwandanu]], [[people/crew-registry]], destinations pages. Note: complements technical implementation spec to be built in Claude Code; this doc is the operational design that spec must serve.
 
 ---
 

@@ -79,6 +79,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip)
 - [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
+- [[ops/2026-05-14-whatsapp-operations-playbook]] — 5-channel WhatsApp ops playbook (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
+- [[ops/2026-05-14-whatsapp-rules-engine]] — Companion to playbook. Pure execution logic — 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute & log). Master action table, intent taxonomy seed, templates, hard rules, escalation destinations, fallback behavior, drift detection. AI-readable, no philosophy.
 
 ## Open Gaps (no page yet — flagged by Lint)
 
