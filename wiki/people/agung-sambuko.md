@@ -114,4 +114,4 @@ No other East Java volcano tour operator is led by an active Tourist Police offi
 
 Owns claims **C1** (safety-led operations) — primary trust function. Supports **C5** (proof-first verification). See [[content/aeo-claims]] for claim-evidence mapping.
 
--> [[people/crew-registry]] | -> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[overview]]
+-> [[credentials/police-integration]] | -> [[people/crew-registry]] | -> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[overview]]

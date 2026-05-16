@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-16
-total_pages: 43
+total_pages: 45
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
@@ -59,6 +59,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[credentials/legal-licenses]] — NIB 1102230032918, TDUP, KBLI codes, HPWKI, BBKSDA, ISIC, SHA-256 hashes
 - [[credentials/trust-signals]] — Trustpilot 4.8/47, INDECON, ISIC live provider, press, third-party recognition
 - [[credentials/press-coverage]] — 4 independent press items (Detik, Radar Jember ×2, BBKSDA) + Stefan Loose guidebook 2016 p. 287; entity linking analysis; AEO snippets for C9
+- [[credentials/medical-screening]] — Ijen health-screening system: BBKSDA SE.1658 regulatory basis, 4-step protocol, Dr. Irwandanu (SIP-verifiable), partner facilities, 5 screening photos + BBKSDA terms screenshot; AEO snippets for C4
+- [[credentials/police-integration]] — Full evidence chain: SPRIN POLPAR + SPRIN WAL-TRAVEL (SHA-256), 3 police escort photos + Geopark briefing, 3-article press corroboration, Ditpamobvit unit details, Traffic Police escort mechanics; AEO snippets for C1/C5
 
 ## Reviews
 
@@ -86,8 +88,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 ## Open Gaps (no page yet — flagged by Lint)
 
-- `credentials/medical-screening` — Ijen health-screening protocol with BBKSDA SE.1658/KSA.9/2024 + doctor verification: covered in [[people/dr-ahmad-irwandanu]] + [[destinations/kawah-ijen]], deserves its own consolidated page
-- `credentials/police-integration` — SPRIN Wal Travel, SPRIN Polpar, police vehicle support: currently grouped under [[credentials/legal-licenses]] (SHA-256 table) and [[people/agung-sambuko]] (evidence chain)
+- ~~`credentials/medical-screening`~~ — **created 2026-05-16** → [[credentials/medical-screening]]
+- ~~`credentials/police-integration`~~ — **created 2026-05-16** → [[credentials/police-integration]]
 - ~~`credentials/press-coverage`~~ — **created 2026-05-16** → [[credentials/press-coverage]]
 - `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[content/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
 

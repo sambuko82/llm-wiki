@@ -11,6 +11,26 @@ sources: []
 
 ---
 
+## [2026-05-16] output | credentials/medical-screening + credentials/police-integration — 2 gap pages created
+
+**Trigger**: user request. Both were tracked Open Gaps since [[log]] `2026-05-11` lint pass.
+
+**Pages created (2)**:
+- [[credentials/medical-screening]] — Consolidated Ijen health-screening reference: BBKSDA SE.1658/KSA.9/2024 regulatory basis, 4-step protocol (health.mountijen.com digital system), Dr. Ahmad Irwandanu details + verification URLs, 3 partner facilities, 5 screening photos + BBKSDA terms screenshot (recategorized from `uncertain`), voice invariant table (approved/forbidden), 5 content angles, 3 AEO Q&A blocks for C4.
+- [[credentials/police-integration]] — Full 4-layer evidence chain for police-led claim: (1) SPRIN POLPAR + SPRIN WAL-TRAVEL with SHA-256 and image URLs; (2) 3 escort photos + Geopark briefing photo from field ops; (3) 3-article press cross-corroboration (Detik + Radar Jember ×2); (4) Ditpamobvit unit institutional detail. Traffic Police escort mechanics explained. 6 content angles, 3 AEO Q&A blocks for C1/C5.
+
+**Pages updated (6)**:
+- [[people/dr-ahmad-irwandanu]] — backlink to medical-screening added to footer
+- [[people/agung-sambuko]] — backlink to police-integration added to footer
+- [[credentials/legal-licenses]] — backlinks to police-integration + medical-screening added
+- [[credentials/trust-signals]] — backlinks to police-integration + medical-screening added
+- [[index]] — both pages added to Credentials section; Open Gap entries struck through; total_pages 43→45
+- [[log]] — this entry
+
+**Open Gaps status**: all 3 credential gap pages now resolved. Only `content/voice-invariants` remains in Open Gaps (intentionally deferred — currently canonical in brand-voice).
+
+---
+
 ## [2026-05-16] output | credentials/press-coverage — gap page created
 
 **Trigger**: user request. Was an Open Gap since [[log]] `2026-05-11` lint pass.
