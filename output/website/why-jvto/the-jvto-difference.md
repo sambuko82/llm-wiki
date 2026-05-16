@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /why-jvto/the-jvto-difference
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [wiki/content/aeo-claims.md, wiki/content/copy-bank.md, wiki/people/agung-sambuko.md, wiki/credentials/trust-signals.md, wiki/people/dr-ahmad-irwandanu.md]
+sources: [wiki/content/aeo-claims.md, wiki/content/copy-bank.md, wiki/people/agung-sambuko.md, wiki/credentials/trust-signals.md, wiki/credentials/police-integration.md, wiki/credentials/medical-screening.md, wiki/people/dr-ahmad-irwandanu.md, sources/ssot-image-asset-map]
 voice: Style B
 ---
 
@@ -19,7 +19,7 @@ JVTO's founder, Bripka Agung Sambuko, is an active officer in Ditpamobvit — th
 
 No other East Java volcano tour operator is led by an active Tourist Police officer. Three independent press articles (Detik.com 2021-03-14, Radar Jember 2021-03-24, Radar Jember 2021-05-27) name Bripka Agung Sambuko in operational Tourist Police duties at Ijen — this is not self-reported.
 
-**Verifiable credential**: SPRIN WAL TRAVEL 2024-02-12 (SHA256: 179b061a…) · SPRIN POLPAR (SHA256: 03c8578d…) · Press archive at /verify-jvto/police-safety
+**Verifiable credential**: SPRIN WAL TRAVEL 2024-02-12 (SHA256: 179b061a…) [image](https://javavolcano-touroperator.com/legal/SPRIN-WAL-TRAVEL-2024-02-12.png) · SPRIN POLPAR (SHA256: 03c8578d…) [image](https://javavolcano-touroperator.com/legal/SPRIN-POLPAR.png) · Press archive + field photos at /verify-jvto/police-safety
 
 *(POLPAR is a police unit designation — it appears here under Police-Led rather than in the Licenses list below.)*
 
@@ -51,7 +51,7 @@ On itineraries that include Mount Ijen, JVTO coordinates a health-screening step
 
 JVTO coordinates the clinic workflow through Dr. Ahmad Irwandanu (SIP-licensed, Kemenkes RI, independently verifiable at satusehat.kemkes.go.id/sdmk). The process issues a QR-verified surat sehat (health certificate) required at the crater access gate. Oxygen saturation, blood pressure, heart rate, and respiratory history are recorded. No valid QR code means no access to the crater zone — that rule is BBKSDA's, not ours.
 
-**Verifiable credential**: BBKSDA SE.1658/KSA.9/2024 · Dr. Ahmad Irwandanu SIP at satusehat.kemkes.go.id/sdmk/nakes/QN00001073380217
+**Verifiable credential**: BBKSDA SE.1658/KSA.9/2024 · Dr. Ahmad Irwandanu SIP at satusehat.kemkes.go.id/sdmk/nakes/QN00001073380217 · Full protocol at /travel-guide/ijen-health-screening
 
 ---
 

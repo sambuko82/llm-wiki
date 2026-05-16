@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /travel-guide/police-escort-for-groups
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [jvto-travel-guide-en, people/agung-sambuko, content/faq-master, content/brand-voice, jvto-policy-pack-v6]
+sources: [jvto-travel-guide-en, people/agung-sambuko, credentials/police-integration, content/faq-master, content/brand-voice, jvto-policy-pack-v6, sources/ssot-image-asset-map]
 voice: Style B
 ---
 
@@ -56,6 +56,20 @@ If your group meets the qualifying size (typically 18 guests or more), raise the
 Escort costs are listed explicitly in the programme and invoice — no post-booking additions.
 
 Contact us via WhatsApp: +62 822 4478 8833
+
+---
+
+## Police Escort Photos
+
+Visual evidence of Traffic Police escort on actual JVTO tours:
+
+| Scene | Image |
+|---|---|
+| Escorted arrival at Bondowoso hotel — day (patrol car + officer visible) | https://javavolcano-touroperator.com/ops/jvto-police-escort-arrival-hotel-bondowoso-day.jpg |
+| Escorted arrival at Bondowoso hotel — night (same pattern, different tour) | https://javavolcano-touroperator.com/ops/jvto-police-escort-arrival-hotel-bondowoso-night.jpg |
+| Police support vehicle with group prior to tour departure | https://javavolcano-touroperator.com/ops/police-vehicle-support.jpg |
+
+Day and night escort photos demonstrate this is a recurring operational pattern, not a one-off event.
 
 ---
 

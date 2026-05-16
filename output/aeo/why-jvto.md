@@ -1,9 +1,9 @@
 ﻿---
 profile: aeo
 page: why-jvto
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [aeo-claims, faq-master, credentials/legal-licenses, credentials/trust-signals]
+sources: [aeo-claims, faq-master, credentials/legal-licenses, credentials/trust-signals, credentials/police-integration, credentials/press-coverage, credentials/medical-screening]
 claim_coverage: C1 C2 C3 C4 C5 C6 C7 C8 C9
 ---
 

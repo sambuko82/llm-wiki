@@ -1,4 +1,4 @@
-# Output Index
+﻿# Output Index
 
 *Master map of all output files → website URL → wiki sources → status.*
 *Updated: 2026-05-16. Regenerate after any wiki update that changes source pages.*
@@ -19,7 +19,7 @@
 
 | File | Website target | Output date | Status | Key sources |
 |---|---|---|---|---|
-| `aeo/why-jvto.md` | `/why-jvto` (AEO overlay) | 2026-05-12 | draft | aeo-claims C1–C9, faq-master, legal-licenses, trust-signals |
+| `aeo/why-jvto.md` | `/why-jvto` (AEO overlay) | 2026-05-16 | draft | aeo-claims C1–C9, faq-master, legal-licenses, trust-signals |
 | `aeo/policy-travel-guide.md` | `/policy` + `/travel-guide` (AEO overlay) | 2026-05-12 | draft | jvto-policy-pack-v6, jvto-travel-guide-en, faq-master |
 
 ---
@@ -28,7 +28,7 @@
 
 | File | Website target | Output date | Status | Key sources |
 |---|---|---|---|---|
-| `faq/ijen.md` | `/travel-guide/faq` (Ijen section) | 2026-05-12 | draft | faq-master, kawah-ijen, dr-ahmad-irwandanu, packages-overview |
+| `faq/ijen.md` | `/travel-guide/faq` (Ijen section) | 2026-05-16 | draft | faq-master, kawah-ijen, dr-ahmad-irwandanu, packages-overview |
 | `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-12 | draft | faq-master, mount-bromo, operational-facts, packages-overview |
 | `faq/tumpak-sewu.md` | `/travel-guide/faq` (Tumpak Sewu section) | 2026-05-12 | draft | faq-master, tumpak-sewu, packages-overview |
 | `faq/madakaripura.md` | `/travel-guide/faq` (Madakaripura section) | 2026-05-12 | draft | faq-master, madakaripura, packages-overview |
@@ -54,7 +54,7 @@
 | File | URL | Output date | Status |
 |---|---|---|---|
 | `website/destinations/hub.md` | `/destinations` | 2026-05-12 | draft |
-| `website/destinations/ijen-crater.md` | `/destinations/ijen-crater` | 2026-05-12 | draft |
+| `website/destinations/ijen-crater.md` | `/destinations/ijen-crater` | 2026-05-16 | draft |
 | `website/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-12 | draft |
 | `website/destinations/tumpak-sewu-waterfall.md` | `/destinations/tumpak-sewu-waterfall` | 2026-05-12 | draft |
 | `website/destinations/madakaripura-waterfall.md` | `/destinations/madakaripura-waterfall` | 2026-05-12 | draft |
@@ -102,7 +102,7 @@
 | `website/travel-guide/faq.md` | `/travel-guide/faq` | 2026-05-12 | draft |
 | `website/travel-guide/ijen-health-screening.md` | `/travel-guide/ijen-health-screening` | 2026-05-16 | draft |
 | `website/travel-guide/packing-and-fitness.md` | `/travel-guide/packing-and-fitness` | 2026-05-12 | draft |
-| `website/travel-guide/police-escort-for-groups.md` | `/travel-guide/police-escort-for-groups` | 2026-05-12 | draft |
+| `website/travel-guide/police-escort-for-groups.md` | `/travel-guide/police-escort-for-groups` | 2026-05-16 | draft |
 | `website/travel-guide/safety-on-tours.md` | `/travel-guide/safety-on-tours` | 2026-05-12 | draft |
 | `website/travel-guide/weather-and-closures.md` | `/travel-guide/weather-and-closures` | 2026-05-12 | draft |
 
@@ -114,10 +114,10 @@
 |---|---|---|---|
 | `website/why-jvto/hub.md` | `/why-jvto` | 2026-05-12 | draft |
 | `website/why-jvto/community-standards.md` | `/why-jvto/community-standards` | 2026-05-12 | draft |
-| `website/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-12 | draft |
+| `website/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-16 | draft |
 | `website/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-16 | draft |
 | `website/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-12 | draft |
-| `website/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-12 | draft |
+| `website/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-16 | draft |
 
 ---
 
@@ -125,9 +125,9 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/verify-jvto/hub.md` | `/verify-jvto` | 2026-05-12 | draft |
-| `website/verify-jvto/legal.md` | `/verify-jvto/legal` | 2026-05-12 | draft |
-| `website/verify-jvto/history-artifacts.md` | `/verify-jvto/history-artifacts` | 2026-05-12 | draft |
+| `website/verify-jvto/hub.md` | `/verify-jvto` | 2026-05-16 | draft |
+| `website/verify-jvto/legal.md` | `/verify-jvto/legal` | 2026-05-16 | draft |
+| `website/verify-jvto/history-artifacts.md` | `/verify-jvto/history-artifacts` | 2026-05-16 | draft |
 | `website/verify-jvto/police-safety.md` | `/verify-jvto/police-safety` | 2026-05-16 | draft |
 | `website/verify-jvto/press-recognition.md` | `/verify-jvto/press-recognition` | 2026-05-16 | draft |
 

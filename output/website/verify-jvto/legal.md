@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /verify-jvto/legal
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [credentials/legal-licenses, credentials/trust-signals, people/agung-sambuko]
+sources: [credentials/legal-licenses, credentials/trust-signals, credentials/police-integration, people/agung-sambuko, sources/ssot-image-asset-map]
 voice: Style A
 ---
 
@@ -59,15 +59,15 @@ All registration records and credentials listed below are independently verifiab
 
 Hashes published in `public/llms.txt` on the JVTO website. Each hash allows independent verification that the credential document presented matches the original file.
 
-| Asset | SHA-256 Hash |
-|---|---|
-| NIB 1102230032918 | `fa20dde31bb75e46b061ed14cc6d003f6960c02a9a82c20d8603b0cbf6f7b1b7` |
-| TDUP 1102230032918 | `27252d512ddfa74de22a3e3ec10aa3dd40ef88da3eb57349fcd2137411551ee3` |
-| HPWKI Approval | `ca1fb1a48b550a7748d400f165899f12a356e6941aacdde9c043427698aaf63b` |
-| SPRIN POLPAR | `03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab` |
-| SPRIN WAL TRAVEL 2024-02-12 | `179b061eae558943fdccc51d2ea3c8233a704b61f03ca3d212433f3e8d6f3bd3` |
-| Press — Detik.com 2021-03-14 | `b257b75b3d2b9edebf07c9af89a6c6aa9a4e01d6a716ef3f7c4ca75deda64b77` |
-| Press — Radar Jember 2021-03-24 | `2a60eb168274004283b2b9939ccbf5982c12a7db854fda014308a2494ee2abf4` |
+| Asset | SHA-256 Hash | Image |
+|---|---|---|
+| NIB 1102230032918 | `fa20dde31bb75e46b061ed14cc6d003f6960c02a9a82c20d8603b0cbf6f7b1b7` | https://javavolcano-touroperator.com/legal/NIB-1102230032918-preview.png |
+| TDUP 1102230032918 | `27252d512ddfa74de22a3e3ec10aa3dd40ef88da3eb57349fcd2137411551ee3` | https://javavolcano-touroperator.com/legal/TDUP-1102230032918-preview.png |
+| HPWKI Approval | `ca1fb1a48b550a7748d400f165899f12a356e6941aacdde9c043427698aaf63b` | https://javavolcano-touroperator.com/legal/HPWKI-approval-preview.png |
+| SPRIN POLPAR | `03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab` | https://javavolcano-touroperator.com/legal/SPRIN-POLPAR.png |
+| SPRIN WAL TRAVEL 2024-02-12 | `179b061eae558943fdccc51d2ea3c8233a704b61f03ca3d212433f3e8d6f3bd3` | https://javavolcano-touroperator.com/legal/SPRIN-WAL-TRAVEL-2024-02-12.png |
+| Press — Detik.com 2021-03-14 | `b257b75b3d2b9edebf07c9af89a6c6aa9a4e01d6a716ef3f7c4ca75deda64b77` | https://javavolcano-touroperator.com/press/screencapture-news-detik-berita-jawa-timur-d-5492690-suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin-2026-01-14-02_48_41.png |
+| Press — Radar Jember 2021-03-24 | `2a60eb168274004283b2b9939ccbf5982c12a7db854fda014308a2494ee2abf4` | https://javavolcano-touroperator.com/press/screenshot-radarjember.jawapos.com-polpar-dibentuk-untuk-mendukung-ijen-geopark.png |
 
 ---
 

@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /verify-jvto
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [credentials/legal-licenses, credentials/trust-signals, people/agung-sambuko, content/copy-bank]
+sources: [credentials/legal-licenses, credentials/trust-signals, credentials/police-integration, credentials/press-coverage, credentials/medical-screening, people/agung-sambuko, content/copy-bank]
 voice: Style A
 ---
 
@@ -44,6 +44,14 @@ Operational continuity is documented from 2015 to the present. Ijen Bondowoso Ho
 Founder Agung Sambuko holds the police rank of Bripka and serves in Ditpamobvit (Direktorat Pengamanan Objek Vital) — the East Java Tourist Police unit. Two official police documents (SPRIN POLPAR and SPRIN WAL TRAVEL 2024-02-12) are on file, each with a published SHA-256 hash. Three independent press articles corroborate the active police role. Ditpamobvit's statutory scope covers tourist safety at designated vital objects, including the Ijen Crater area. No other East Java volcano tour operator is led by a serving Tourist Police officer.
 
 [→ /verify-jvto/police-safety]
+
+---
+
+### Health Screening
+
+Ijen crater access can require a recent health certificate when BBKSDA SE.1658/KSA.9/2024 thresholds apply. JVTO coordinates the clinic workflow via Dr. Ahmad Irwandanu (SIP-licensed, Kemenkes RI). The process, partner facilities, and screening photos are documented at:
+
+[→ /travel-guide/ijen-health-screening]
 
 ---
 

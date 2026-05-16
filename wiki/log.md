@@ -22,6 +22,30 @@ sources: []
 
 ---
 
+## [2026-05-16] output | 9 output files refreshed — secondary wave
+
+**Trigger**: user request to update all output files not yet updated.
+
+**Triage result**: 55 files at 2026-05-12 audited. 9 had meaningful new content from 2026-05-16 wiki changes. 46 files (tour pages ×16, policy ×4, FAQ bromo/madakaripura/tumpak-sewu ×3, non-Ijen destinations ×4, misc) had no material source changes — left untouched.
+
+**Files updated (9)**:
+
+| File | What was added |
+|---|---|
+| `website/verify-jvto/hub.md` | Health Screening sub-section added (pointer to /travel-guide/ijen-health-screening); sources updated |
+| `website/verify-jvto/legal.md` | Image column added to SHA-256 table (7 document image URLs: NIB, TDUP, HPWKI, SPRIN ×2, Press ×2); sources updated |
+| `website/verify-jvto/history-artifacts.md` | Asset slug references replaced with live image URLs (Booking.com plaque + label, Stefan Loose page + crop + Mr. Sam photo); sources updated |
+| `website/destinations/ijen-crater.md` | Health Screening schema updated: doctor reference now links to /travel-guide/ijen-health-screening; `credentials/medical-screening` added to sources |
+| `website/why-jvto/our-story.md` | Asset slug references replaced with live image URLs (Booking.com, Stefan Loose, founder-with-guests); sources updated |
+| `website/why-jvto/the-jvto-difference.md` | SPRIN document image URLs added inline; section 4 now links to /travel-guide/ijen-health-screening; sources updated |
+| `website/travel-guide/police-escort-for-groups.md` | Police Escort Photos section added (3 image URLs: day/night escort, vehicle); sources updated |
+| `aeo/why-jvto.md` | Sources updated to include credentials/police-integration, credentials/press-coverage, credentials/medical-screening |
+| `faq/ijen.md` | Sources updated to include credentials/medical-screening |
+
+**output/INDEX.md**: output_date updated for all 9 files (2026-05-12 → 2026-05-16).
+
+---
+
 ## [2026-05-16] output | 4 stale output files refreshed
 
 **Trigger**: user request after Phase 2 identified 4 stale candidates in INDEX.md.

@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /destinations/ijen-crater
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [kawah-ijen, packages-overview, ssot-v6]
+sources: [kawah-ijen, packages-overview, ssot-v6, credentials/medical-screening]
 content_source: DB
 type: data-structure-spec
 ---
@@ -85,7 +85,8 @@ Display as: icon-labelled key-value list or compact table. 6 rows max.
 | Section heading | Static: "Health Certificate Coordination" | H2 | YES — render only if `destinations.ijen_relevant = true` |
 | Regulatory reference | `destinations.health_reg_reference` | Plain text: "BBKSDA SE.1658/KSA.9/2024" | YES — same condition |
 | Approved framing copy | `destinations.health_screening_copy` | Paragraph. Must use conditional framing: "Ijen access rules can require a recent local health certificate. JVTO coordinates clinic workflow when access rules require it." | YES — same condition |
-| Doctor reference | `people.dr_irwandanu_display_name` + `people.sip_number` | Inline text link to /people/dr-ahmad-irwandanu or similar | YES — same condition |
+| Doctor reference | `people.dr_irwandanu_display_name` + `people.sip_number` | Inline text link to /travel-guide/ijen-health-screening for full protocol details | YES — same condition |
+| Full screening details | Static | "See: [How Ijen Health Screening Works →](/travel-guide/ijen-health-screening)" | YES — same condition |
 
 > Forbidden text: "mandatory health screening" without conditional qualifier. The screening is conditional on BBKSDA rules, not unilaterally imposed by JVTO.
 

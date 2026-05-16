@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /why-jvto/our-story
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [wiki/people/agung-sambuko.md, wiki/content/copy-bank.md, wiki/credentials/trust-signals.md]
+sources: [wiki/people/agung-sambuko.md, wiki/content/copy-bank.md, wiki/credentials/trust-signals.md, wiki/credentials/press-coverage.md, sources/ssot-image-asset-map]
 voice: Style B
 ---
 
@@ -49,8 +49,8 @@ Private structure removes the coordination failures that come with mixed groups.
 
 These are third-party records that establish operational continuity at the same Bondowoso address from 2015 to today:
 
-- **Booking.com 2015 Guest Review Award** — shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso." Physical award on file (`booking-2015-plaque`).
-- **Stefan Loose Reiseführer Indonesien, 4th Edition, 2016, p. 287** — ISBN 9783770167654. "Agung" named as operator, independent German-language guidebook. Image on file (`stefan-loose-guidebook-page-287`).
+- **Booking.com 2015 Guest Review Award** — shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso." Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg
+- **Stefan Loose Reiseführer Indonesien, 4th Edition, 2016, p. 287** — ISBN 9783770167654. "Agung" named as operator, independent German-language guidebook. Page image: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Mr. Sam holding the book with guests: https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg
 - **Detik.com 2021-03-14** — "Bripka Agung Sambuko" named in Tourist Police duties at Ijen. Independent news coverage.
 - **Radar Jember 2021-03-24** — Tourist Police formation for Ijen Geopark. "Bripka Agung Sambuko" named.
 - **PT Java Volcano Rendezvous incorporation** — 2016-01-01. NIB 1102230032918.

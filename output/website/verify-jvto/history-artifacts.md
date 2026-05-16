@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /verify-jvto/history-artifacts
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [people/agung-sambuko, credentials/trust-signals, credentials/legal-licenses]
+sources: [people/agung-sambuko, credentials/trust-signals, credentials/legal-licenses, credentials/press-coverage, sources/ssot-image-asset-map]
 voice: Style A
 ---
 
@@ -17,8 +17,8 @@ Eleven years of documented operational presence at the same Bondowoso address. R
 
 | Year | Event | Evidence |
 |---|---|---|
-| **2015** | Agung Sambuko operates Ijen Bondowoso Homestay at Jl. Khairil Anwar No.102, Bondowoso. Receives Booking.com Guest Review Award: 9.4 / 10. | Booking.com award plaque shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso" — asset slug: `booking-2015-plaque` |
-| **2016** | PT Java Volcano Rendezvous incorporated at AHU on 2016-01-01. Stefan Loose Reiseführer Indonesien, 4th Edition, p. 287 (ISBN 9783770167654) names "Agung" as operator of Ijen Bondowoso Homestay with tour arrangement referenced. | AHU registry: https://ahu.go.id/pencarian/perseroan · Asset slug: `stefan-loose-guidebook-page-287` |
+| **2015** | Agung Sambuko operates Ijen Bondowoso Homestay at Jl. Khairil Anwar No.102, Bondowoso. Receives Booking.com Guest Review Award: 9.4 / 10. | Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
+| **2016** | PT Java Volcano Rendezvous incorporated at AHU on 2016-01-01. Stefan Loose Reiseführer Indonesien, 4th Edition, p. 287 (ISBN 9783770167654) names "Agung" as operator of Ijen Bondowoso Homestay with tour arrangement referenced. | AHU registry: https://ahu.go.id/pencarian/perseroan · Guidebook page: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Cropped view: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
 | **2023** | TDUP 1102230032918 formalized via OSS on 2023-02-11. | oss.go.id — Dinas Pariwisata record, SHA-256: `27252d512ddfa74de22a3e3ec10aa3dd40ef88da3eb57349fcd2137411551ee3` |
 
 ---
@@ -46,7 +46,12 @@ Published: 2016
 ISBN: 9783770167654
 Page: 287
 
-"Agung" is named as the operator of Ijen Bondowoso Homestay, with tour arrangement referenced. Stefan Loose is an independent German travel publisher — no commercial relationship to JVTO. Publication in 2016 confirms the operator was sufficiently established by that date to be cited in a major international travel guide. Asset slug: `stefan-loose-guidebook-page-287`. Visual confirmation exists: founder holding the guidebook with guests (`founder-with-guests-stefan-loose`).
+"Agung" is named as the operator of Ijen Bondowoso Homestay, with tour arrangement referenced. Stefan Loose is an independent German travel publisher — no commercial relationship to JVTO. Publication in 2016 confirms the operator was sufficiently established by that date to be cited in a major international travel guide.
+
+**Image assets**:
+- Guidebook page (full): https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png
+- Cropped/enhanced for readability: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg
+- Mr. Sam + guests holding the book: https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg
 
 ---
 
