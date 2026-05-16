@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /verify-jvto/police-safety
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [people/agung-sambuko, credentials/legal-licenses, credentials/trust-signals, sources/detik-polpar-2021, sources/radar-jember-polpar-geopark-2021, sources/radar-jember-bau-menyengat-2021]
+sources: [people/agung-sambuko, credentials/legal-licenses, credentials/trust-signals, credentials/police-integration, sources/detik-polpar-2021, sources/radar-jember-polpar-geopark-2021, sources/radar-jember-bau-menyengat-2021, sources/ssot-image-asset-map]
 voice: Style A
 ---
 
@@ -31,12 +31,12 @@ Ditpamobvit's mandate covers tourist safety at designated vital objects, which i
 
 Both documents are on file at JVTO. SHA-256 hashes are published in `public/llms.txt` on the JVTO website.
 
-| Document | Date | SHA-256 Hash |
-|---|---|---|
-| **SPRIN POLPAR** | On file | `03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab` |
-| **SPRIN WAL TRAVEL** | 2024-02-12 | `179b061eae558943fdccc51d2ea3c8233a704b61f03ca3d212433f3e8d6f3bd3` |
+| Document | Date | SHA-256 Hash | Image |
+|---|---|---|---|
+| **SPRIN POLPAR** | On file | `03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab` | [PNG](https://javavolcano-touroperator.com/legal/SPRIN-POLPAR.png) · [WebP](https://javavolcano-touroperator.com/legal/SPRIN-POLPAR.webp) |
+| **SPRIN WAL TRAVEL** | 2024-02-12 | `179b061eae558943fdccc51d2ea3c8233a704b61f03ca3d212433f3e8d6f3bd3` | [PNG](https://javavolcano-touroperator.com/legal/SPRIN-WAL-TRAVEL-2024-02-12.png) · [WebP](https://javavolcano-touroperator.com/legal/SPRIN-WAL-TRAVEL-2024-02-12.webp) |
 
-Source: -> [[credentials/legal-licenses]] §sha256-forensic-anchors | -> [[people/agung-sambuko]] §proof-1-official-police-documents
+Source: -> [[credentials/legal-licenses]] §sha256-forensic-anchors | -> [[people/agung-sambuko]] §proof-1-official-police-documents | -> [[credentials/police-integration]]
 
 ---
 
@@ -59,6 +59,24 @@ Source: -> [[sources/detik-polpar-2021]] | -> [[sources/radar-jember-polpar-geop
 For large groups — typically around 18 guests or more — JVTO can coordinate an official traffic police escort on certain road segments, when approved by the relevant Traffic Police unit.
 
 This coordination is subject to approval by the relevant authority and is not a standard feature of every tour.
+
+---
+
+## Field Operations Photos
+
+Visual evidence of police presence on active JVTO tours:
+
+| Scene | Image |
+|---|---|
+| Traffic Police escort — Bondowoso hotel arrival (day) | https://javavolcano-touroperator.com/ops/jvto-police-escort-arrival-hotel-bondowoso-day.jpg |
+| Traffic Police escort — Bondowoso hotel arrival (night) | https://javavolcano-touroperator.com/ops/jvto-police-escort-arrival-hotel-bondowoso-night.jpg |
+| Police support vehicle prior to tour departure | https://javavolcano-touroperator.com/ops/police-vehicle-support.jpg |
+| Tourist Police briefing at Ijen Geopark Information Center | https://javavolcano-touroperator.com/ops/ijen-geopark-briefing.png |
+| Pre-ascent lineup at Baratha Hotel with Tourist Police support vehicle | https://javavolcano-touroperator.com/ops/baratha-hotel-departure-team.jpg |
+
+Day and night escort photos show the same institutional pattern across different tours — not a one-off event. The Geopark briefing photo shows Mr. Sam coordinating with local miners, demonstrating active Polpar field work beyond guest escort.
+
+Source: [[sources/ssot-image-asset-map]] `field_operations` + `police_authority_documents` groups.
 
 ---
 

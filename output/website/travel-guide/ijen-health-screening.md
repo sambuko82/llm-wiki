@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /travel-guide/ijen-health-screening
-output_date: 2026-05-12
+output_date: 2026-05-16
 status: draft
-sources: [destinations/kawah-ijen, content/faq-master, jvto-travel-guide-en, content/brand-voice, content/operational-facts, sources/bbksda-pelatihan-pemandu-2024]
+sources: [destinations/kawah-ijen, content/faq-master, jvto-travel-guide-en, content/brand-voice, content/operational-facts, sources/bbksda-pelatihan-pemandu-2024, credentials/medical-screening, sources/ssot-image-asset-map]
 voice: Style B
 ---
 
@@ -38,7 +38,7 @@ The QR system is available beyond JVTO guests: participating clinics and hotels 
 
 ## The Process — How JVTO Coordinates It
 
-When access rules require health-certificate screening, JVTO arranges the following sequence:
+When access rules require health-certificate screening, JVTO arranges the following sequence via the **Ijen Digital Health Security System** (https://health.mountijen.com):
 
 1. **The nurse visits your hotel** the evening before the Ijen hike — in the Bondowoso or Banyuwangi area.
 2. **Vitals are checked** at your accommodation. No travel to a clinic is required.
@@ -46,6 +46,16 @@ When access rules require health-certificate screening, JVTO arranges the follow
 4. **At the Paltuding trailhead**, BBKSDA checkpoint staff scan the QR code before permitting crater zone access.
 
 The entire session takes place at your hotel before departure, not on the trail.
+
+### Where screening takes place
+
+Screening can be arranged at three locations depending on your itinerary:
+
+| Facility | Location | Type |
+|---|---|---|
+| **Klinik Bakti Husada** | Bondowoso | Certified medical clinic (Kemenkes RI) — physical clinic |
+| **Puskesmas Licin** | Banyuwangi | Government health centre (Dinkes Banyuwangi) |
+| **Hotel / JVTO office session** | Your accommodation | Mobile session by Dr. Irwandanu before departure |
 
 ---
 
@@ -72,6 +82,23 @@ This outcome protects the individual guest and other guests on the trail. The sc
 Health-certificate screening is a pre-hike assessment, not a guarantee. Conditions on the mountain can still change after screening is completed. JVTO may still cancel the hike after screening if volcanic gas, weather, or BBKSDA closures make the route unsafe. The certificate is a condition of access — it does not remove the operational risks of an active volcano environment.
 
 Guests with heart, lung, or circulation conditions are advised to consult their own doctor before booking, regardless of whether screening is required.
+
+---
+
+## Screening Photos
+
+Evidence of the actual screening process conducted at hotels and the JVTO office:
+
+| Scene | Image |
+|---|---|
+| Blood pressure check at hotel lobby | https://javavolcano-touroperator.com/screening/ijen-screening-hotel-01.jpeg |
+| Vitals recorded at hotel table before night ascent | https://javavolcano-touroperator.com/screening/ijen-screening-hotel-02.jpg |
+| Blood pressure check at JVTO office | https://javavolcano-touroperator.com/screening/jvto-office-screening-1.JPG |
+| Oxygen saturation check at JVTO office | https://javavolcano-touroperator.com/screening/jvto-office-screening-2.jpg |
+| Sample surat sehat (health clearance) printout | https://javavolcano-touroperator.com/screening/print-surat-sehat-preview.png |
+| BBKSDA ticket terms — health certificate requirement | https://javavolcano-touroperator.com/screening/bbksda/bbksda-ticket-terms-screenshot.jpeg |
+
+Source: [[sources/ssot-image-asset-map]] `health_screening` group + `uncertain` group.
 
 ---
 

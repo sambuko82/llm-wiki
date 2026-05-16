@@ -22,6 +22,23 @@ sources: []
 
 ---
 
+## [2026-05-16] output | 4 stale output files refreshed
+
+**Trigger**: user request after Phase 2 identified 4 stale candidates in INDEX.md.
+
+**Files updated (4)**:
+
+| File | What was added |
+|---|---|
+| `output/website/travel-guide/ijen-health-screening.md` | Partner facilities table (Klinik Bakti Husada, Puskesmas Licin, hotel session); digital system URL (health.mountijen.com); 6 screening photo URLs; sources updated to include `credentials/medical-screening` |
+| `output/website/verify-jvto/police-safety.md` | Image URLs for SPRIN POLPAR + SPRIN WAL-TRAVEL (PNG/WebP); field operations photos section (5 images: 2 escort, vehicle, Geopark briefing, Baratha Hotel); sources updated to include `credentials/police-integration` |
+| `output/website/verify-jvto/press-recognition.md` | Screenshot column added to press table (3 URLs); entity linking paragraph; historical recognition table expanded with 5 image URLs; sources updated to include `credentials/press-coverage` |
+| `output/website/why-jvto/our-team.md` | Portrait URL added to all 11 crew members; KTA card URL added to 5 KTA-credentialed guides (Anjas, Taufik, Rendi, Kiki, Gufron); sources updated to include `sources/ssot-image-asset-map` |
+
+**output/INDEX.md updated**: output_date 2026-05-12 → 2026-05-16 for all 4 files; stale candidates note resolved.
+
+---
+
 ## [2026-05-16] ops | output/ Phase 2 — rename, frontmatter, INDEX.md
 
 **Trigger**: user request (Phase 2 after Option B reorganisation).

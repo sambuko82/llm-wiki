@@ -100,7 +100,7 @@
 | `website/travel-guide/best-time-to-visit.md` | `/travel-guide/best-time-to-visit` | 2026-05-12 | draft |
 | `website/travel-guide/booking-information.md` | `/travel-guide/booking-information` | 2026-05-12 | draft |
 | `website/travel-guide/faq.md` | `/travel-guide/faq` | 2026-05-12 | draft |
-| `website/travel-guide/ijen-health-screening.md` | `/travel-guide/ijen-health-screening` | 2026-05-12 | draft |
+| `website/travel-guide/ijen-health-screening.md` | `/travel-guide/ijen-health-screening` | 2026-05-16 | draft |
 | `website/travel-guide/packing-and-fitness.md` | `/travel-guide/packing-and-fitness` | 2026-05-12 | draft |
 | `website/travel-guide/police-escort-for-groups.md` | `/travel-guide/police-escort-for-groups` | 2026-05-12 | draft |
 | `website/travel-guide/safety-on-tours.md` | `/travel-guide/safety-on-tours` | 2026-05-12 | draft |
@@ -115,7 +115,7 @@
 | `website/why-jvto/hub.md` | `/why-jvto` | 2026-05-12 | draft |
 | `website/why-jvto/community-standards.md` | `/why-jvto/community-standards` | 2026-05-12 | draft |
 | `website/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-12 | draft |
-| `website/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-12 | draft |
+| `website/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-16 | draft |
 | `website/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-12 | draft |
 | `website/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-12 | draft |
 
@@ -128,8 +128,8 @@
 | `website/verify-jvto/hub.md` | `/verify-jvto` | 2026-05-12 | draft |
 | `website/verify-jvto/legal.md` | `/verify-jvto/legal` | 2026-05-12 | draft |
 | `website/verify-jvto/history-artifacts.md` | `/verify-jvto/history-artifacts` | 2026-05-12 | draft |
-| `website/verify-jvto/police-safety.md` | `/verify-jvto/police-safety` | 2026-05-12 | draft |
-| `website/verify-jvto/press-recognition.md` | `/verify-jvto/press-recognition` | 2026-05-12 | draft |
+| `website/verify-jvto/police-safety.md` | `/verify-jvto/police-safety` | 2026-05-16 | draft |
+| `website/verify-jvto/press-recognition.md` | `/verify-jvto/press-recognition` | 2026-05-16 | draft |
 
 ---
 
@@ -167,4 +167,4 @@ Outputs not yet generated for these website pages / content formats:
 | `website/verify-jvto/press-recognition.md` wiki refresh | Source `credentials/press-coverage` created 2026-05-16 → **stale candidate** |
 | `website/why-jvto/our-team.md` wiki refresh | Source `people/crew-registry` updated 2026-05-16 (image assets added) → **stale candidate** |
 
-> **Stale candidates**: 4 output files were generated on 2026-05-12 from wiki pages that have since been updated (2026-05-16). Flag `status: stale` on these when their sources are materially changed; regenerate before publish.
+> ~~**Stale candidates** (resolved 2026-05-16)~~: All 4 previously stale files have been refreshed with content from the new wiki credential pages.
