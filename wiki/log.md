@@ -22,6 +22,23 @@ sources: []
 
 ---
 
+## [2026-05-16] health-check | On-Demand (3rd run)
+
+**Vault state**: 45 wiki pages · 16 raw files · session end-of-day check
+
+| Check | Result | Notes |
+|---|---|---|
+| Contradiction scan | ✅ PASS | No new contradictions. Pre-existing blocks (founding date, package count, review count, mandatory-screening framing) all correctly documented. |
+| Orphan detection | ✅ PASS | Zero true orphans. Low-count pages (llm-kb-tooling-guide=2, ops cluster=3 each) all confirmed linked from content pages. |
+| Stale claims (>90 days) | ✅ PASS | All 47 files last_updated 2026-05-11 → 2026-05-16. Max age: 5 days. |
+| Gap page identification | ✅ PASS | All 3 credential gaps resolved. `content/voice-invariants` remains deferred (intentional). No new gaps. |
+| Index completeness | ✅ PASS | 47 files = 45 pages + index + log. `total_pages: 45` ✓ |
+| Raw/log completeness | ✅ PASS | 16/16 raw files have log entries (confirmed from weekly check). |
+
+**No pages modified. Vault is clean.**
+
+---
+
 ## [2026-05-16] output | 9 output files refreshed — secondary wave
 
 **Trigger**: user request to update all output files not yet updated.
