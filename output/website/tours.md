@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /tours
 voice: Style B

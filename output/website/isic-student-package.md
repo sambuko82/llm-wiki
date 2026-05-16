@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /isic/student-package
 output_date: 2026-05-12

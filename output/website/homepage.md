@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: homepage
 output_date: 2026-05-12
