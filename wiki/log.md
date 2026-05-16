@@ -22,6 +22,100 @@ sources: []
 
 ---
 
+## [2026-05-16] health-check | Weekly
+
+**Vault state**: 45 wiki pages · 16 raw files · last weekly: first run
+
+---
+
+### On-Demand Checks (carried from 2nd on-demand run, same session)
+
+| Check | Result |
+|---|---|
+| Contradiction scan | ✅ PASS |
+| Orphan detection | ✅ PASS — zero true orphans |
+| Stale claims (>90 days) | ✅ PASS — oldest page: 2026-05-11 (5 days) |
+| Gap page identification | ✅ PASS — all gaps resolved |
+
+---
+
+### Weekly Check 1 — 30-Day Stale Sweep
+
+All 45 wiki pages have `last_updated` between 2026-05-11 and 2026-05-16. No page or its sourcing page exceeds the 30-day threshold. Canonical Trustpilot count (51 reviews, verified 2026-05-09) sourced from `sources/trustpilot-reviews-2026.md` (last_updated: 2026-05-11 — 5 days old).
+
+**PASS** ✅
+
+---
+
+### Weekly Check 2 — New Orphan Detection
+
+Pages created since the last log entry ([2026-05-16] fix | G1 navigation gap resolved):
+- None — G1 fix was an edit to an existing page only.
+
+Pages created earlier today, all confirmed with strong inbound links:
+
+| Page | Inbound count (non-index/log) |
+|---|---|
+| [[sources/ssot-image-asset-map]] | 11 |
+| [[credentials/press-coverage]] | 8 |
+| [[credentials/medical-screening]] | 8 |
+| [[credentials/police-integration]] | 8 |
+
+**PASS** ✅
+
+---
+
+### Weekly Check 3 — Index Completeness
+
+**Method**: `find wiki/ -name "*.md"` → 47 files. Excluding `index.md` and `log.md` → 45 content pages. `index.md` `total_pages: 45`. ✓
+
+Cross-reference verified manually against index sections:
+- Sources (13) · Destinations (5) · Products (3) · People (3) · Credentials (5) · Reviews (3) · Content (7) · Ops (5) · Root infrastructure (overview + index + log = 3)
+- Total: 13+5+3+3+5+3+7+5+3 = **47 files = 45 pages + index + log** ✓
+
+> Note: automated `comm` diff produced false positives — some pages are wikilinked twice in index.md (once in frontmatter `sources:` list, once in body), causing them to appear in "in index but not in wiki." Root-level pages (overview) lack a subfolder prefix and don't match the grep pattern. Both are tooling artefacts; no real gaps exist.
+
+**PASS** ✅
+
+---
+
+### Weekly Check 4 — Log Completeness
+
+16 raw files audited — all confirmed with log entries:
+
+| Raw file | Log entry |
+|---|---|
+| `Tourist Police-Led Private Volcano Tours in East Java.md` | [2026-05-11] init ✓ |
+| `JVTO_FINAL_CLEAN_SSOT.json` | [2026-05-11] ingest \| SSOT v6.0 ✓ |
+| `Air_Terjun_Tumpak_Sewu.gpx` · `Gunung_Bromo.gpx` · `Kawah_Ijen_Volcano.gpx` · `Madakaripura_Waterfalls.gpx` · `Pantai_dan_Tanjung_Papuma.gpx` | [2026-05-11] ingest \| GPX Trail Data ✓ |
+| `llm-kb-tooling-guide.md` | [2026-05-11] ingest \| LLM KB Tooling Guide ✓ |
+| `JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md` | [2026-05-12] ingest \| JVTO Policy Pack ✓ |
+| `JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md` + `JVTO_Travel_Guide_SSOT_EN.json` | [2026-05-12] ingest \| JVTO Travel Guide EN ✓ |
+| `db_export_raw.json` | [2026-05-12] ingest \| DB Export ✓ |
+| `sitemap.xml` | [2026-05-12] ingest \| JVTO Website Sitemap ✓ |
+| `JVTO SSOT Image Asset Map.md` · `JVTO SSOT Image Inventory.md` · `jvto_image_asset_map.json` | [2026-05-16] ingest \| JVTO Image Asset Map ✓ |
+
+**PASS** ✅
+
+---
+
+### Summary
+
+| Check | Result | Action taken |
+|---|---|---|
+| Contradiction scan | ✅ PASS | None |
+| Orphan detection | ✅ PASS | None |
+| Stale claims (>90 days) | ✅ PASS | None |
+| Gap page identification | ✅ PASS | None |
+| 30-day stale sweep | ✅ PASS | None |
+| New orphan detection | ✅ PASS | None |
+| Index completeness | ✅ PASS (45 pages, 47 files) | None |
+| Log completeness | ✅ PASS (16/16 raw files) | None |
+
+**No pages modified by this health check. Vault is clean.**
+
+---
+
 ## [2026-05-16] health-check | On-Demand (2nd run)
 
 **Vault state**: 45 wiki pages · 16 raw files

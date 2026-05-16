@@ -27,7 +27,10 @@
       "Bash(git commit -m ' *)",
       "Bash(git commit *)",
       "Bash(git *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(sort -t: -k2)",
+      "Bash(grep -v \"^./index.md$\")",
+      "Bash(grep -v \"^./log.md$\")"
     ]
   }
 }
