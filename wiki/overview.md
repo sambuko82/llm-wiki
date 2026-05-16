@@ -1,7 +1,7 @@
 ---
 type: overview
 title: JVTO Master Overview
-last_updated: 2026-05-11
+last_updated: 2026-05-16
 sources: [ssot-v6, jvto-homepage-clip]
 ---
 
@@ -66,7 +66,7 @@ See [[content/aeo-claims]] for NLP snippets, customer-service replies, and full 
 - **Full unit name**: Direktorat Pengamanan Objek Vital Nasional (Directorate of Vital Object Security)
 - **Trust function**: Founder's active police status validates safety claims C1, C2, C4, and underwrites JVTO's police-integration credentials.
 
-See [[people/agung-sambuko]] for the full evidence chain.
+See [[people/agung-sambuko]] for the full evidence chain. Full police integration evidence (SPRIN docs, field photos, press): [[credentials/police-integration]].
 
 ## Destinations (5)
 
@@ -83,7 +83,7 @@ See [[people/agung-sambuko]] for the full evidence chain.
 - **11 from Surabaya** + **4 from Bali origin**
 - Durations: 1D1N → 6D5N
 - All packages: private vehicle, dedicated guide & driver, full inclusions per [[products/packages-overview]]
-- 12 packages include Ijen and therefore require health-screening coordination per [[people/dr-ahmad-irwandanu]] when BBKSDA SE.1658/KSA.9/2024 thresholds apply
+- 12 packages include Ijen and therefore require health-screening coordination per [[credentials/medical-screening]] (protocol, doctor, facilities) when BBKSDA SE.1658/KSA.9/2024 thresholds apply
 
 > Contradiction within SSOT: §meta records `canonical_package_count: 15`. §9_1 homepage block and §13 AI surfaces reference `16 (12 from Surabaya · 4 from Bali)`. The Surabaya count discrepancy (11 vs 12) is unresolved in SSOT. Treat **15** as canonical (matches §6_1 package_registry table) and flag any "16" usage for review.
 
@@ -132,7 +132,7 @@ Approved language for Ijen content:
 
 Named individuals from review quotes (soft data — not cross-referenced to KTA codes): Anjas, Ahboy/Boy, Taufik, Gufron, Kiki, Rendi, Fredy (guides); Holili, Yandi, Joyo/Goyo, Dika, Johan, Nur (drivers). See [[reviews/trustpilot-compilation]].
 
-> Contradiction within SSOT: §13_why_jvto_trust_summary.team_block claims `total_crew: 14 · guides: 7 · drivers: 7`. §4_2 records `11 members — 7 guides + 4 drivers`. Treat **11 / 7+4** as canonical (matches §4_2 crew_registry _table) and flag the §13 figure for SSOT revision.
+> Resolved (2026-05-12, [[sources/db-export-2026-05]]): §4_2 recorded 11 (7+4); §13 claimed 14 (7+7). DB export confirmed **14 total — 7 guides + 7 drivers**. Canonical is now **14**. See [[people/crew-registry]].
 
 ## Partnerships (institutional context)
 
@@ -150,7 +150,7 @@ See [[credentials/trust-signals]].
 - **BBKSDA Jatim** (2024-05-24) — Ijen guide training coverage
 - **Stefan Loose Indonesia Travel Guidebook 4th Edition** (ISBN 9783770167654, p. 287) — lists Agung Sambuko
 
-See [[credentials/trust-signals]].
+See [[credentials/press-coverage]] for full analysis (entity linking, content angles, AEO snippets). Summary also in [[credentials/trust-signals]].
 
 ## Standard Inclusions (all packages)
 

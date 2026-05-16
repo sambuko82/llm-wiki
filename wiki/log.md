@@ -11,6 +11,82 @@ sources: []
 
 ---
 
+## [2026-05-16] health-check | On-Demand
+
+**Vault state**: 45 wiki pages · 15 raw files · 3 new credential pages created this session
+
+---
+
+### Contradiction Scan
+
+**C1 — Crew count stale canonical instruction — FIXED**
+`overview.md` line 135 carried the stale instruction "Treat 11/7+4 as canonical" — written before the 2026-05-12 DB export resolved the crew count to 14 (7+7). `people/crew-registry.md` correctly says "Updated canonical: 14 members total." The overview contradiction block was updated to reflect the resolved state.
+- **Action taken**: `overview.md` crew contradiction block updated: stale "Treat 11 as canonical" → "Resolved 2026-05-12: DB confirmed 14 (7+7)." ✅
+
+Pre-existing contradictions still correctly documented (no action needed):
+- Package count: §meta=15 vs §9_1=16 (partially resolved by sitemap confirming 16 live — flag preserved)
+- Founding date: three-era framing — preserved in overview.md
+- CLAUDE.md "mandatory screening" vs SSOT conditional framing — preserved in overview.md
+
+---
+
+### Orphan Detection
+
+**O1 — `content/query-hero-claim` — TRUE ORPHAN**
+Grep confirms zero inbound links from any content page (excluding index.md and log.md). Page was created 2026-05-12; only index and log reference it.
+- **Action**: flagged. No fix without instruction.
+
+Previously flagged orphans (2026-05-12 health check) now resolved:
+- O1 `reviews/google-tripadvisor-2026` — now linked from review-patterns + trustpilot-compilation + db-export source ✅
+- O2 `content/operational-facts` — now linked from faq-master + whatsapp-playbook + db-export source ✅
+
+---
+
+### Stale Claim Flags (>90 days)
+
+All 45 wiki pages have `last_updated` between 2026-05-11 and 2026-05-16. No page exceeds the 90-day threshold. **PASS** ✅
+
+---
+
+### Navigation Gaps (overview.md forward-link deficits) — FIXED
+
+Three new credential pages (created today) were not linked from `overview.md`. Fixed by adding targeted forward links:
+- Press Recognition section → now links to [[credentials/press-coverage]] (in addition to trust-signals)
+- Founder section → now links to [[credentials/police-integration]]
+- Packages section (health-screening reference) → now links to [[credentials/medical-screening]]
+
+---
+
+### Gap Page Identification
+
+All 3 credential gap pages created this session. Open Gaps status:
+
+| Gap | Status |
+|---|---|
+| `credentials/press-coverage` | ✅ Created 2026-05-16 |
+| `credentials/medical-screening` | ✅ Created 2026-05-16 |
+| `credentials/police-integration` | ✅ Created 2026-05-16 |
+| `content/voice-invariants` | ⏸ Intentionally deferred — canonical in [[content/brand-voice]] |
+
+No new gaps identified.
+
+---
+
+### Summary
+
+| Check | Result | Action taken |
+|---|---|---|
+| Contradiction scan | 1 stale instruction found | Fixed: overview.md crew block updated |
+| Orphan detection | 1 true orphan found (query-hero-claim) | Flagged — no fix without instruction |
+| Previous orphans (O1/O2) | Both resolved | No action needed |
+| Stale claims (>90 days) | PASS | None |
+| Navigation gaps | 3 gaps in overview.md | Fixed: forward links to 3 new credential pages |
+| Gap page identification | No new gaps | All 3 credential gaps resolved |
+
+**Pages modified by this health check**: [[overview]] (crew block + forward links).
+
+---
+
 ## [2026-05-16] output | credentials/medical-screening + credentials/police-integration — 2 gap pages created
 
 **Trigger**: user request. Both were tracked Open Gaps since [[log]] `2026-05-11` lint pass.
