@@ -22,6 +22,85 @@ sources: []
 
 ---
 
+## [2026-05-16] health-check | Monthly (1st run)
+
+**Vault state**: 45 wiki pages · 16 raw files · first monthly run
+
+---
+
+### Weekly Checks (carried from 2nd weekly run)
+
+All 8 weekly checks PASS — see [2026-05-16] health-check | Weekly (2nd run).
+
+---
+
+### Monthly Check 1 — Credential Web Verification
+
+| Credential | Method | Result |
+|---|---|---|
+| **Trustpilot 4.8/51** | Fetched JVTO homepage widget | **4.8/5 · 51 reviews** — matches wiki canonical exactly ✅ |
+| **Bripka Agung Sambuko Polpar** | Fetched Detik.com article (2021-03-14) | Article live, Bripka Agung Sambuko named as active Tourist Police officer, verbatim quotes present ✅ |
+| **NIB 1102230032918 (OSS)** | WebFetch oss.go.id → 404; `public/llms.txt` → 404 | **Inconclusive** — OSS portal and llms.txt inaccessible via WebFetch. SHA-256 `fa20dde31bb75e46b061ed14cc6d003f6960c02a9a82c20d8603b0cbf6f7b1b7` on file, no external signal of status change. |
+
+> NIB web-check note: OSS.go.id appears to require direct browser navigation or login. Flag for next monthly run — consider manual verification at oss.go.id. No action required now; SHA-256 anchor unchanged.
+
+**Net result**: 2/3 verified ✅ · 1/3 inconclusive (OSS inaccessible via tool)
+
+---
+
+### Monthly Check 2 — Trustpilot New Review Sweep
+
+- **Wiki canonical**: 51 reviews, 4.8/5 (verified 2026-05-09, 7 days ago)
+- **Live count (JVTO homepage widget)**: 51 reviews, 4.8/5
+- **Delta**: 0 new reviews since last ingest
+- **Threshold**: >2 new reviews required to flag for ingestion
+
+**PASS** ✅ — no new reviews to ingest.
+
+---
+
+### Monthly Check 3 — Gap Page Audit
+
+| Gap | Status |
+|---|---|
+| `credentials/medical-screening` | ✅ Created 2026-05-16 |
+| `credentials/police-integration` | ✅ Created 2026-05-16 |
+| `credentials/press-coverage` | ✅ Created 2026-05-16 |
+| `content/voice-invariants` | ⏸ Intentionally deferred — canonical in [[content/brand-voice]] |
+
+No unfilled gaps remain. **PASS** ✅
+
+---
+
+### Monthly Check 4 — Output Staleness (>90 days)
+
+Phase 2 (2026-05-16) removed all date-based filenames from `output/`. Files now carry `output_date:` in frontmatter only.
+
+| output_date value | File count | Age | Status |
+|---|---:|---|---|
+| `2026-05-16` | 13 files | 0 days | ✅ Current |
+| `2026-05-12` | 46 files | 4 days | ✅ Current |
+
+No output file exceeds 90 days. **PASS** ✅
+
+---
+
+### Summary
+
+| Check | Result | Notes |
+|---|---|---|
+| All 8 weekly checks | ✅ PASS | Carried forward |
+| Trustpilot web-check | ✅ PASS | 4.8/51 confirmed live |
+| Polpar status web-check | ✅ PASS | Detik.com article live, name confirmed |
+| NIB OSS web-check | ⚠ Inconclusive | OSS portal not accessible via WebFetch — manual check recommended |
+| Trustpilot new review sweep | ✅ PASS | 0 new reviews (delta below threshold) |
+| Gap page audit | ✅ PASS | All 3 credential gaps resolved |
+| Output staleness (>90 days) | ✅ PASS | Newest: 0 days, oldest: 4 days |
+
+**One action item**: Verify NIB 1102230032918 manually at oss.go.id when browser access is available — OSS portal blocks automated fetch.
+
+---
+
 ## [2026-05-16] health-check | Weekly (2nd run)
 
 **Vault state**: 45 wiki pages · 16 raw files

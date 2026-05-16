@@ -32,7 +32,11 @@
       "Bash(grep -v \"^./index.md$\")",
       "Bash(grep -v \"^./log.md$\")",
       "Bash(ls -la)",
-      "Bash(dir /b)"
+      "Bash(dir /b)",
+      "WebFetch(domain:news.detik.com)",
+      "WebFetch(domain:oss.go.id)",
+      "WebFetch(domain:www.trustpilot.com)",
+      "WebFetch(domain:javavolcano-touroperator.com)"
     ]
   }
 }
