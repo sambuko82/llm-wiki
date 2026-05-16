@@ -22,6 +22,38 @@ sources: []
 
 ---
 
+## [2026-05-16] ops | output/ folder reorganisation — incremental (Option B)
+
+**Trigger**: user request after output folder analysis.
+
+**What changed**: 60 output files moved from flat root into subfolders mirroring website structure. No files renamed, no content modified.
+
+**New structure**:
+
+```
+output/
+  _archive/   (2)  — legacy pre-convention files, superseded
+  aeo/        (2)  — AEO Q&A block outputs
+  faq/        (4)  — FAQ per destination
+  website/    (7)  — sitewide & misc (homepage, landings, blog, contact, tours hub, isic)
+    destinations/  (6)  — hub + 5 destination pages
+    tours/
+      surabaya/   (12)  — all 12 Surabaya tour pages
+      bali/        (4)  — all 4 Bali tour pages
+    travel-guide/  (9)  — hub + 8 travel guide sub-pages
+    why-jvto/      (6)  — hub + 5 why-jvto sub-pages
+    verify-jvto/   (5)  — hub + 4 verify-jvto sub-pages
+    policy/        (4)  — hub + 3 policy pages
+```
+
+**Pain points identified but deferred** (Phase 2 optimizations):
+- Tanggal di filename (akan dihapus batch berikutnya — tanggal ke frontmatter saja)
+- `status` frontmatter field (`draft | reviewed | published | stale`) belum ditambahkan
+- `output/INDEX.md` mapping file → URL → wiki sources → status belum dibuat
+- Staleness check di Workflow 6 (flag output yang source wiki-nya sudah diupdate) belum diimplementasi
+
+---
+
 ## [2026-05-16] health-check | Weekly
 
 **Vault state**: 45 wiki pages · 16 raw files · last weekly: first run

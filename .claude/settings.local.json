@@ -30,7 +30,9 @@
       "Bash(python3 *)",
       "Bash(sort -t: -k2)",
       "Bash(grep -v \"^./index.md$\")",
-      "Bash(grep -v \"^./log.md$\")"
+      "Bash(grep -v \"^./log.md$\")",
+      "Bash(ls -la)",
+      "Bash(dir /b)"
     ]
   }
 }
