@@ -1,7 +1,7 @@
 ---
 type: product
 title: JVTO Tour Packages Overview
-last_updated: 2026-05-12
+last_updated: 2026-05-16
 sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05]
 canonical_package_count: 16
 ---
@@ -107,6 +107,8 @@ Some packages also have a `1 pax` solo tier (single-occupancy supplement).
 | 11+ pax | IDR 3,475,000 |
 
 **Full pricing tables for all 22 packages**: see [[products/packages-full-pricing]] (all pax tiers, all group sizes) · [[sources/ssot-v6]] §6_2 `pricing_logic` (15-package canonical).
+
+**Day-by-day itineraries for all packages**: see [[products/packages-itineraries]] (99 itinerary days, hotel allocation per phase, recurring route patterns).
 
 ## Standard Inclusions (all 15 packages)
 

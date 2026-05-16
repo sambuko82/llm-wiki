@@ -11,6 +11,17 @@ sources: []
 
 ---
 
+## [2026-05-16] fix | G1 navigation gap resolved
+
+**Trigger**: health check G1 flag — `products/packages-overview` had no in-body forward link to `products/packages-itineraries` (link to `packages-full-pricing` was already present at line 109).
+
+**Pages updated (1)**:
+- [[products/packages-overview]] — added "Day-by-day itineraries for all packages: see [[products/packages-itineraries]]" immediately after the existing full-pricing reference. Both detail pages now linked from the body, not just the footer.
+
+**G1 status**: resolved ✅
+
+---
+
 ## [2026-05-16] health-check | On-Demand (2nd run)
 
 **Vault state**: 45 wiki pages · 16 raw files
