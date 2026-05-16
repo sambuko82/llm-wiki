@@ -22,6 +22,27 @@ sources: []
 
 ---
 
+## [2026-05-16] ops | output/ Phase 2 — rename, frontmatter, INDEX.md
+
+**Trigger**: user request (Phase 2 after Option B reorganisation).
+
+**Changes**:
+
+1. **58 files renamed** — date stripped from all filenames; redundant section prefix/suffix stripped; hub pages renamed to `hub.md`:
+   - `aeo-YYYY-MM-DD-*` → `*` (2 files)
+   - `faq-YYYY-MM-DD-*` → `*` (4 files)
+   - `copy-YYYY-MM-DD-*` → `*` (52 files, with section prefix + origin suffix removed where folder already encodes that info)
+
+2. **Frontmatter standardised** across all 59 non-archive files:
+   - `generated:` → `output_date:` (8 files: all aeo/, faq/, landing pages)
+   - `status: draft` added to all files that lacked it (59 files)
+
+3. **`output/INDEX.md` created** — master map of all 59 output files → URL → output_date → status. Includes "Missing Outputs" section flagging: AEO per destination, social posts, slide decks, and 4 stale candidates (outputs pre-dating 2026-05-16 wiki updates to medical-screening, police-integration, press-coverage, crew-registry image assets).
+
+**Net result**: output/ folder is now navigable by folder, searchable by URL slug, and status-trackable via frontmatter grep.
+
+---
+
 ## [2026-05-16] ops | output/ folder reorganisation — incremental (Option B)
 
 **Trigger**: user request after output folder analysis.

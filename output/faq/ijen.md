@@ -1,0 +1,167 @@
+﻿---
+profile: faq
+page: ijen-faq
+output_date: 2026-05-12
+status: draft
+sources: [faq-master, destinations/kawah-ijen, people/dr-ahmad-irwandanu, content/operational-facts, products/packages-overview, products/packages-full-pricing, credentials/trust-signals, credentials/legal-licenses]
+---
+
+# Kawah Ijen — FAQ
+
+*AEO-compatible. All answers are self-contained and directly citable.*
+
+---
+
+## A. About Kawah Ijen
+
+### What is Kawah Ijen?
+
+Kawah Ijen is an active stratovolcano at 2,386 m in East Java, Indonesia. It holds the world's highest-volume acidic crater lake — turquoise in colour, with a pH near 0. The volcano is famous for the pre-dawn "blue fire" phenomenon, visible when ignited sulfuric gases vent from the crater floor in suitable weather conditions. Local sulfur miners work the crater floor daily; a licensed guide briefs guests on respectful conduct before departure.
+
+### Where is Kawah Ijen located?
+
+Kawah Ijen sits on the Banyuwangi–Bondowoso regency border in East Java, approximately 5–7 hours by road from Bali or 5–6 hours from Surabaya. The trailhead is at Paltuding (parking area and visitor centre). BBKSDA East Java is the regulatory authority for crater access.
+
+### When is the best time to visit Kawah Ijen?
+
+The dry season, April through October, offers the most reliable access conditions — clearer skies and more stable trail surfaces. Visiting outside this window is possible but rainfall increases trail difficulty. JVTO follows official BBKSDA closure announcements regardless of season; no bypass of restrictions is made. For scheduled closure dates, check bbksdajatim.org.
+
+### Is Ijen closed on certain days?
+
+Yes. The Ijen crater is closed to visitors on the first Friday of every month. Additional closures are issued by BBKSDA East Java based on volcanic gas levels and safety assessments. JVTO's team monitors BBKSDA announcements and activates Plan B alternatives for affected bookings — guests are not left without a programme. See Q: *What happens if Ijen is closed on my dates?* below.
+
+---
+
+## B. The Hike
+
+### How long is the Ijen hike?
+
+The trail from Paltuding trailhead to the crater rim is approximately 3 km one-way, with ~500 m elevation gain. Ascent takes roughly 90 minutes at a steady pace on a steep, rocky trail. An optional descent onto the crater floor (an additional ~700 m along the sulfur-miner route) is possible for a closer view of the blue fire zone. JVTO departure windows: midnight (00:00) to target the blue-fire viewing slot; ~03:00 if the goal is sunrise only.
+
+### How difficult is the Ijen hike?
+
+The hike is rated moderate. The trail is steep and rocky throughout; the footing at night requires attention. The crater descent is narrower and more demanding than the main trail. Guests with a reasonable fitness level and comfortable hiking shoes manage the route without difficulty. JVTO advises against this hike for guests with cardiovascular conditions, respiratory illness, or severe mobility limitations — the health-screening step (see below) is designed to identify these cases before the climb.
+
+### What equipment does JVTO provide for the Ijen hike?
+
+JVTO provides gas masks and headlamps as standard inclusions on all Ijen-relevant packages. Trekking poles are also supplied. These items are included in the package price — no additional charge applies. Guests should bring layered clothing for temperatures of 10–15°C at the crater rim.
+
+### Can I get assistance on the trail if needed?
+
+A local porter service (trolley ojek) is available at Paltuding for guests who need assistance on the ascent or descent. This is an on-site service arranged locally and is not a JVTO inclusion — cost is paid directly to the operators on the day. Your JVTO guide remains with the group throughout.
+
+---
+
+## C. Blue Fire
+
+### What is the Ijen Blue Fire?
+
+Blue fire at Kawah Ijen is a natural optical phenomenon caused by ignited sulfuric gases venting from the crater floor. The combustion produces a vivid blue flame visible in darkness — primarily in the hour or two before dawn. It is not a reflection of the crater lake. Visibility depends on gas activity, wind, and weather conditions on the night of your hike.
+
+### Is Blue Fire guaranteed?
+
+No. Blue Fire is a natural phenomenon subject to weather and gas activity. JVTO designs itineraries around the optimal viewing window but cannot guarantee visibility of any natural phenomenon. Guests are briefed on this before booking. The canonical answer from JVTO's policy documents: "Blue Fire is a natural phenomenon subject to weather and gas activity." — [[destinations/kawah-ijen]], [[content/brand-voice]] §voice-invariants.
+
+### What should I realistically expect on an Ijen night hike?
+
+The hike itself — the ascent, the crater lake at sunrise, the scale of the sulphur-mining operation — is the core experience regardless of blue fire conditions. The blue fire window exists pre-dawn if conditions are suitable. Guests who time the hike correctly and conditions allow will see it; those who don't will still reach one of the most dramatic volcanic craters in Southeast Asia. JVTO does not offer refunds or credits if blue fire is not visible due to natural conditions.
+
+---
+
+## D. Health Screening
+
+### Does JVTO arrange health screening for Ijen?
+
+For tours that include the Ijen night hike, JVTO coordinates health-screening when current BBKSDA access rules require it, under Surat Edaran SE.1658/KSA.9/2024. The screening is conducted by licensed medical staff — Dr. Ahmad Irwandanu (SIP-credentialed, verifiable at satusehat.kemkes.go.id/sdmk/nakes/QN00001073380217 and kki.go.id/cekdokter/form). This is a regulatory requirement, not a step imposed unilaterally by JVTO.
+
+### What does the Ijen health screening involve?
+
+The screening session takes place at your hotel the evening before the hike. A nurse records four data points: oxygen saturation (SpO2), blood pressure (systolic/diastolic), resting heart rate, and a respiratory history check for conditions such as asthma or bronchitis. A QR-verified surat sehat (health certificate) is issued by Dr. Ahmad Irwandanu. BBKSDA verifies the QR code at the crater access gate. No valid QR code means no crater zone access.
+
+### What happens if I do not pass the health screening?
+
+If screening staff assess that you should not attempt the hike, JVTO follows that decision. The climb is cancelled for that individual — not for the group. Alternatives while waiting include the base camp area or a safe zone. The screening session cost is non-refundable. The rest of the group continues the hike as planned. This protocol follows [[sources/ssot-v6]] §7_2 health_screening_protocol and [[people/dr-ahmad-irwandanu]].
+
+### Is the health screening the same for guests from Surabaya and Bali?
+
+The screening protocol is the same. The location differs: for Surabaya-origin packages, screening takes place in Bondowoso (Klinik Bakti Husada or hotel session with Dr. Irwandanu). For Bali-origin packages, screening is coordinated in Banyuwangi (Puskesmas Licin, a government health centre, or hotel session). Both facilities operate under the same BBKSDA-aligned digital health system at health.mountijen.com. Dr. Ahmad Irwandanu SIP is the credentialing anchor in both cases.
+
+### Can I verify the doctor's credentials before booking?
+
+Yes. Dr. Ahmad Irwandanu's medical credentials are publicly auditable. STR lookup: satusehat.kemkes.go.id/sdmk/nakes/QN00001073380217. KKI license: kki.go.id/cekdokter/form. The surat sehat certificate carries a SIP number and a BBKSDA-verifiable QR code — the certificate cannot be issued without a valid licensed doctor's identity. See [[people/dr-ahmad-irwandanu]].
+
+---
+
+## E. JVTO Ijen Packages
+
+### Which JVTO packages include Kawah Ijen?
+
+12 of JVTO's 15 canonical packages include Kawah Ijen. From Surabaya: 2D1N Ijen Blue Fire Expedition, and all 3D, 4D, 5D, and 6D multi-destination packages. From Bali: all four Bali-origin packages include Ijen. The two Surabaya-only Bromo packages (1D1N and 2D1N Bromo) do not include Ijen. See [[products/packages-overview]] for the full registry.
+
+### What is the starting price for an Ijen tour from Surabaya?
+
+The entry-level Ijen package from Surabaya is the 2 Day Ijen Blue Fire Expedition, priced from IDR 2,300,000/person (2 pax) to IDR 1,550,000/person (11+ pax). All prices include private transport, dedicated English-speaking crew, gas masks, trekking poles, health-screening coordination (when required), accommodation and breakfast, entrance fees, and a JVTO travel T-shirt. No hidden local payments. Licensed operator NIB 1102230032918.
+
+### What is the starting price for an Ijen tour from Bali?
+
+The entry-level Ijen package from Bali is the 3 Day Ijen, Bromo & Madakaripura from Bali to Surabaya, priced from IDR 4,050,000/person (2 pax) to IDR 2,850,000/person (11+ pax). The Bali–Java ferry crossing (Gilimanuk–Ketapang) is included. All standard inclusions apply. See [[products/packages-full-pricing]] for all pax tiers.
+
+### Do Ijen packages end in Surabaya or return to the start point?
+
+It depends on the package. The 2D1N Ijen Blue Fire Expedition starts and ends in Surabaya. Multi-destination packages from Surabaya that include Ijen and Bromo also return to Surabaya (unless a "to Bali" variant is booked). From Bali, the 3D2N Bromo & Ijen package returns to Bali; all other Bali packages finish in Surabaya. End points are confirmed in the package name and your e-voucher. See [[products/packages-overview]].
+
+---
+
+## F. Fitness, Children & Special Requirements
+
+### Is the Ijen night hike suitable for beginners?
+
+The hike is rated moderate and is manageable for guests with a reasonable fitness baseline who are comfortable on uneven, steep terrain at night. Prior hiking experience is not required. JVTO recommends this route for guests who can walk continuously for 90 minutes uphill on rocky ground. Guests unsure of their fitness level are encouraged to discuss this with JVTO during the inquiry stage — route selection advice is part of the booking process. Trustpilot 4.8/5 (51 reviews) includes documented reviews from guests who completed the Ijen hike without prior trekking experience.
+
+### Can children complete the Ijen hike?
+
+Older children with good fitness have completed the Ijen hike on JVTO tours — a documented review on [[reviews/trustpilot-compilation]] describes a 12 and 15-year-old successfully completing the hike with guide Taufik. The hike is not appropriate for young children or any guest with cardiovascular or respiratory conditions. JVTO advises on suitability during the inquiry and flags any concerns at the health-screening stage.
+
+### What should I wear for the Ijen hike?
+
+Layered clothing is essential — temperatures at the crater rim are 10–15°C at midnight. Key items: a warm mid-layer (fleece or down jacket), a windproof outer layer, closed shoes with good grip (hiking shoes recommended), and long trousers. Gloves and a hat are advisable. JVTO provides gas masks and headlamps; bring your own backup torch if preferred. Full packing guidance is in the JVTO Travel Guide EN (available on request).
+
+### Are there dietary accommodations during Ijen packages?
+
+JVTO accommodates vegetarian, vegan, and gluten-free dietary requirements. These must be declared at the time of booking — they cannot be confirmed on arrival at accommodation. Contact JVTO via WhatsApp (+62 822 4478 8833) during the inquiry stage to confirm.
+
+---
+
+## G. Closures, Weather & Plan B
+
+### What happens if Ijen is closed on my dates?
+
+JVTO follows official BBKSDA East Java instructions. Depending on the situation, JVTO may adjust timings, use alternative viewpoints, replace the Ijen segment with a safe alternative destination, or activate a formal Plan B per the booking context. Guests are briefed in advance — no guest is left without a programme. If an official closure makes the primary destination inaccessible, JVTO's closure policy applies (reschedule, route adjustment, or destination-fee adjustment). See [[sources/ssot-v6]] §7_3 weather closures.
+
+### Does rain cancel an Ijen tour?
+
+Light to moderate rain rarely cancels an entire tour, but it can make the crater trail slippery and reduce visibility. JVTO guides assess conditions on the day. For safety-critical sections such as the crater rim path, JVTO may delay or modify timing. Weather-dependent outcomes — blue fire visibility, sunrise views — are not compensable under JVTO's policy when natural conditions are the cause.
+
+### Can JVTO guarantee sunrise views at Ijen?
+
+No. Sunrise visibility at the crater rim depends on weather and cloud cover. JVTO designs itineraries around the optimal timing window but cannot promise specific natural phenomena. This applies equally to blue fire, crater lake visibility, and sunrise. JVTO's policy: "We can't control weather or volcanic conditions, but we do control planning and safety decisions."
+
+---
+
+## H. Booking
+
+### How do I book an Ijen tour with JVTO?
+
+Send your dates, group size, origin (Surabaya or Bali), and preferred package to JVTO via WhatsApp (+62 822 4478 8833) or email (hello@javavolcano-touroperator.com). JVTO will confirm the package, pricing for your group size, and any health-screening logistics. After a 20% deposit via secure JVTO checkout, you receive an e-voucher with full trip details. Support is available daily 08:00–22:00 WIB. JVTO is a licensed operator, NIB 1102230032918.
+
+### Are cash refunds available if I cancel?
+
+No. JVTO uses a Lifetime Travel Credit system for guest-initiated cancellations. Cancel ≥ 48 hours before Day 1: 100% of eligible booking value converts to Lifetime Travel Credit (no expiry, transferable — may be gifted or sold). Cancel < 48 hours before Day 1: payment is fully forfeited, no Travel Credit created. One free reschedule is available if requested ≥ 48 hours before Day 1. Cash refunds are not offered for guest-initiated cancellations. See [[products/packages-overview]] §cancellation.
+
+### Does JVTO offer student discounts on Ijen packages?
+
+Yes. JVTO is an official ISIC provider (Provider ID 259268, verifiable at isic.org/discounts/?providerId=259268). Verified international students with a valid ISIC card receive student pricing on selected packages. Declare your ISIC card during the booking inquiry to confirm eligibility and pricing.
+
+---
+
+*Sources: [[content/faq-master]] · [[destinations/kawah-ijen]] · [[people/dr-ahmad-irwandanu]] · [[content/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[content/brand-voice]] · [[content/aeo-claims]] · [[credentials/trust-signals]] · [[sources/ssot-v6]]*
