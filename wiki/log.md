@@ -11,6 +11,28 @@ sources: []
 
 ---
 
+## [2026-05-16] output | credentials/press-coverage — gap page created
+
+**Trigger**: user request. Was an Open Gap since [[log]] `2026-05-11` lint pass.
+
+**Pages created (1)**:
+- [[credentials/press-coverage]] — consolidated press intelligence: 4 independent press items (Detik.com 2021-03-14 full + Radar Jember ×2 paywalled + BBKSDA Jatim 2024 full), Stefan Loose guidebook 2016 p. 287, entity linking analysis, content angles, AEO-ready snippets for C9. Screenshot image URLs from [[sources/ssot-image-asset-map]].
+
+**Pages updated (3)**:
+- [[credentials/trust-signals]] — backlink to press-coverage added to navigation footer
+- [[index]] — press-coverage added to Credentials section; Open Gap entry struck through; total_pages 42→43
+- [[log]] — this entry
+
+**Sources drawn from**: [[sources/detik-polpar-2021]], [[sources/radar-jember-polpar-geopark-2021]], [[sources/radar-jember-bau-menyengat-2021]], [[sources/bbksda-pelatihan-pemandu-2024]], [[sources/ssot-v6]], [[sources/ssot-image-asset-map]]
+
+**Content value added**:
+- Entity linking table: maps each source → entity named → independence level — synthesizes the 3-article cross-corroboration argument in one place
+- Stefan Loose guidebook page now has 3 image URLs for content production use
+- 5 named content angles with placement guidance
+- 2 AEO-ready Q&A blocks for C9 claim
+
+---
+
 ## [2026-05-16] ingest | JVTO Image Asset Map — 54 Images Across 14 Groups
 
 **Source type**: ssot-update (Workflow 4 — structured image SSOT, closest existing profile)

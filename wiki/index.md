@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-16
-total_pages: 42
+total_pages: 43
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
@@ -58,6 +58,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 - [[credentials/legal-licenses]] — NIB 1102230032918, TDUP, KBLI codes, HPWKI, BBKSDA, ISIC, SHA-256 hashes
 - [[credentials/trust-signals]] — Trustpilot 4.8/47, INDECON, ISIC live provider, press, third-party recognition
+- [[credentials/press-coverage]] — 4 independent press items (Detik, Radar Jember ×2, BBKSDA) + Stefan Loose guidebook 2016 p. 287; entity linking analysis; AEO snippets for C9
 
 ## Reviews
 
@@ -87,7 +88,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 - `credentials/medical-screening` — Ijen health-screening protocol with BBKSDA SE.1658/KSA.9/2024 + doctor verification: covered in [[people/dr-ahmad-irwandanu]] + [[destinations/kawah-ijen]], deserves its own consolidated page
 - `credentials/police-integration` — SPRIN Wal Travel, SPRIN Polpar, police vehicle support: currently grouped under [[credentials/legal-licenses]] (SHA-256 table) and [[people/agung-sambuko]] (evidence chain)
-- `credentials/press-coverage` — 4 cataloged press items + Stefan Loose guidebook: currently a section in [[credentials/trust-signals]]
+- ~~`credentials/press-coverage`~~ — **created 2026-05-16** → [[credentials/press-coverage]]
 - `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[content/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
 
 ## Lookup Conventions
