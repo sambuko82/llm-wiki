@@ -22,6 +22,52 @@ sources: []
 
 ---
 
+## [2026-05-16] health-check | Weekly (2nd run)
+
+**Vault state**: 45 wiki pages · 16 raw files
+
+### On-Demand Checks (carried from 3rd on-demand run)
+
+| Check | Result |
+|---|---|
+| Contradiction scan | ✅ PASS |
+| Orphan detection | ✅ PASS — zero true orphans |
+| Stale claims (>90 days) | ✅ PASS |
+| Gap page identification | ✅ PASS |
+
+### Weekly Check 1 — 30-Day Stale Sweep
+
+No `last_updated` date outside the 2026-05 range found across all 47 files. All pages between 2026-05-11 and 2026-05-16. **PASS** ✅
+
+### Weekly Check 2 — New Orphan Detection
+
+`git log --diff-filter=A` confirms zero new wiki pages created since the last log entry ([2026-05-16] health-check | On-Demand 3rd run). **PASS** ✅
+
+### Weekly Check 3 — Index Completeness
+
+`find wiki/ -name "*.md"` → 45 content pages (47 total - index.md - log.md). `comm -23` against index.md wikilinks → zero files missing from index. **PASS** ✅
+
+### Weekly Check 4 — Log Completeness
+
+16/16 raw files confirmed with log entries (slug grep against log.md). **PASS** ✅
+
+### Summary
+
+| Check | Result | Action |
+|---|---|---|
+| Contradiction scan | ✅ PASS | None |
+| Orphan detection | ✅ PASS | None |
+| Stale claims (>90 days) | ✅ PASS | None |
+| Gap page identification | ✅ PASS | None |
+| 30-day stale sweep | ✅ PASS | None |
+| New orphan detection | ✅ PASS | None |
+| Index completeness | ✅ PASS (45 pages) | None |
+| Log completeness | ✅ PASS (16/16) | None |
+
+**No pages modified. Vault is clean.**
+
+---
+
 ## [2026-05-16] health-check | On-Demand (3rd run)
 
 **Vault state**: 45 wiki pages · 16 raw files · session end-of-day check
