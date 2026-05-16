@@ -11,6 +11,19 @@ sources: []
 
 ---
 
+## [2026-05-16] fix | content/query-hero-claim orphan resolved
+
+**Trigger**: health check O1 flag — `content/query-hero-claim` had zero inbound links from content pages.
+
+**Pages updated (1)**:
+- [[content/copy-bank]] — added "Alternate Headlines (query-derived)" subsection under Hero Copy, embedding the two headline options from query-hero-claim with source attribution. Added footer link `-> [[content/query-hero-claim]]`.
+
+**Why copy-bank is the right parent**: query-hero-claim's primary output is alternate hero headlines for price-skeptical travelers — a direct extension of copy-bank's Hero Copy section. Content producers browsing copy-bank now have a path to the deeper analysis.
+
+**O1 status**: resolved ✅
+
+---
+
 ## [2026-05-16] health-check | On-Demand
 
 **Vault state**: 45 wiki pages · 15 raw files · 3 new credential pages created this session

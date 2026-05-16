@@ -42,6 +42,19 @@ We saw the gaps in safety standards first-hand and decided to build something di
 
 Today, we act as a bridge between wild adventure and professional safety standards.
 
+### Alternate Headlines (query-derived)
+
+*From [[content/query-hero-claim]] — analysis of optimal hero claim for price-skeptical solo travelers. C3-first strategy is the key finding.*
+
+**Option A (C3 opener — recommended for price-skeptics):**
+> Everything included. Written in the booking. No surprises on the road.
+
+**Option B (C1/C3 combined — closer to live site):**
+> Tourist Police-Led Private Tours — Everything Included, All Credentials Verifiable.
+
+**Supporting subheadline (works under either):**
+> Private Bromo, Ijen & Tumpak Sewu tours from Surabaya or Bali. Entrance fees, accommodation, and transfers bundled. Licensed operator (NIB 1102230032918) — led by an active Tourist Police officer. Credentials checkable before you pay.
+
 ## Approved Ijen Language
 
 *From [[content/brand-voice]] §voice-invariants. Use EXACTLY these phrases.*
@@ -73,4 +86,4 @@ Today, we act as a bridge between wild adventure and professional safety standar
 6. 4 independent press articles (Detik, Radar Jember ×2, BBKSDA Jatim)
 7. Booking.com 2015 (9.4/10) + Stefan Loose 2016 (p. 287)
 
--> [[content/aeo-claims]] | -> [[content/brand-voice]] | -> [[content/faq-master]]
+-> [[content/aeo-claims]] | -> [[content/brand-voice]] | -> [[content/faq-master]] | -> [[content/query-hero-claim]]
