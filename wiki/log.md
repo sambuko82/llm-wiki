@@ -11,6 +11,82 @@ sources: []
 
 ---
 
+## [2026-05-16] health-check | On-Demand (2nd run)
+
+**Vault state**: 45 wiki pages · 16 raw files
+
+---
+
+### Contradiction Scan
+
+No new contradictions found. All pre-existing contradictions remain correctly documented:
+
+| Contradiction | Location | Status |
+|---|---|---|
+| Founding date (2015 vs 2016 vs 2023) | [[overview]] | Documented — three-era framing ✓ |
+| Package count (§meta=15 vs §9_1=16) | [[overview]], [[products/packages-overview]] | Documented — 15 canonical ✓ |
+| SSOT v4.0 review count (47) vs live (51) | [[credentials/trust-signals]] stale-value note | Documented ✓ |
+| CLAUDE.md "mandatory screening" vs SSOT conditional | [[overview]] | Documented — conditional framing ✓ |
+| Crew count §4_2=11 vs DB=14 | [[overview]] | **Resolved last run** — block updated to DB-confirmed 14 ✓ |
+
+**PASS** ✅
+
+---
+
+### Orphan Detection
+
+No true orphans. All 45 wiki pages have ≥1 inbound link from a non-index/log page.
+
+Previous orphan `content/query-hero-claim` resolved via [[content/copy-bank]] — now has 5 inbound links. ✅
+
+**Isolated cluster flagged (not orphans — informational):**
+
+`ops/ingestion-profiles`, `ops/health-checks`, `ops/compilation-profiles`, and `sources/llm-kb-tooling-guide` form a closed cluster. They link to each other but have no inbound links from the main content graph (destinations, products, people, credentials, reviews, content pages). They are reachable only via [[index]] and [[log]].
+
+- **Action**: no fix needed. Ops pages are infrastructure, not content — index + log is appropriate. Flagged for awareness.
+
+**PASS** ✅
+
+---
+
+### Stale Claim Flags (>90 days)
+
+All 45 wiki pages have `last_updated` between 2026-05-11 and 2026-05-16. No page exceeds the 90-day threshold.
+
+**PASS** ✅
+
+---
+
+### Gap Page Identification
+
+No new gaps identified. Open Gaps status:
+
+| Gap | Status |
+|---|---|
+| `credentials/press-coverage` | ✅ Created 2026-05-16 |
+| `credentials/medical-screening` | ✅ Created 2026-05-16 |
+| `credentials/police-integration` | ✅ Created 2026-05-16 |
+| `content/voice-invariants` | ⏸ Intentionally deferred — canonical in [[content/brand-voice]] |
+
+Pre-existing navigation gap (carried from 2026-05-12 health check, no instruction to fix):
+- **G1** — `products/packages-overview` has no forward links to `products/packages-full-pricing` or `products/packages-itineraries`. Both detail pages link back to overview but overview does not link forward.
+
+---
+
+### Summary
+
+| Check | Result | Action taken |
+|---|---|---|
+| Contradiction scan | PASS | None |
+| Orphan detection | PASS | None (previous O1 resolved) |
+| Isolated cluster | Informational | Ops cluster flagged — no fix needed |
+| Stale claims (>90 days) | PASS | None |
+| Gap page identification | PASS | All 3 credential gaps resolved |
+
+**No pages modified by this health check.**
+
+---
+
 ## [2026-05-16] fix | content/query-hero-claim orphan resolved
 
 **Trigger**: health check O1 flag — `content/query-hero-claim` had zero inbound links from content pages.
