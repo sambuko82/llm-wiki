@@ -11,6 +11,38 @@ sources: []
 
 ---
 
+## [2026-05-16] ingest | JVTO Image Asset Map — 54 Images Across 14 Groups
+
+**Source type**: ssot-update (Workflow 4 — structured image SSOT, closest existing profile)
+**Raw files**: `raw/JVTO SSOT Image Asset Map.md` · `raw/JVTO SSOT Image Inventory.md` · `raw/jvto_image_asset_map.json`
+
+**Pages created (1)**:
+- [[sources/ssot-image-asset-map]] — full catalog: 54 images, 14 groups, every URL + caption + alt text + recommended_filename + recommended_pages
+
+**Pages updated (4)**:
+- [[people/crew-registry]] — added `## Image Assets` section: 11 portrait URLs (all named KTA crew) + 5 KTA card image URLs (Kiki, Anjas, Taufik, Gufron, Rendi)
+- [[people/agung-sambuko]] — expanded `## Image` → `## Image Assets`: 3 founder images (formal portrait, Tourist Police portrait, Wikipedia copy) with captions and alt text
+- [[credentials/legal-licenses]] — added `## Document Image Assets`: NIB, TDUP, HPWKI, SPRIN POLPAR, SPRIN WAL-TRAVEL — all in PNG + WebP; office photo URL added
+- [[credentials/trust-signals]] — expanded historical recognition table (5 rows, now with direct image URLs); added press screenshot image table (3 images: Detik, BBKSDA, Radar Jember)
+- [[index]] — ssot-image-asset-map added to sources; total_pages 41→42
+
+**Key findings**:
+- 54 live images confirmed on javavolcano-touroperator.com — full visual evidence library now catalogued in wiki
+- Police presence visually documented across 8 field operations photos (escort day/night, vehicle, Geopark briefing, Baratha Hotel departure)
+- 5 health screening images exist — enough for a complete "How Ijen Screening Works" visual section
+- Booking.com 2015 shipping label image is an address continuity proof (Jl. Khairil Anwar No.102 = same address as today's PT office)
+- 1 uncertain image: BBKSDA ticket T&C screenshot — likely `health_screening` but needs manual categorization
+- 1 external-hosted image: Mr. Sam on Wikimedia Commons (only asset not on JVTO server)
+
+**Inventory discrepancy noted**: Image Inventory counts 55 URLs; Asset Map and JSON count 54. Inventory misclassifies Stefan Loose history photos and BBKSDA screenshot into `crew` group. JSON is authoritative at 54.
+
+**Gap pages strengthened by this ingest** (not yet created — see Open Gaps in [[index]]):
+- `credentials/medical-screening` — now has 5 photo URLs ready to embed
+- `credentials/police-integration` — now has 4 SPRIN document images + 3 field operations police photos
+- `credentials/press-coverage` — now has 3 press screenshot URLs
+
+---
+
 ## [2026-05-14] output | WhatsApp Rules Engine + Playbook expansion
 Pages created: [[ops/2026-05-14-whatsapp-rules-engine]] — companion document to playbook, contains pure execution logic for AI/system consumption. Structure: 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute), master action table with confidence+risk routing, intent taxonomy seed (35+ intents across 5 channels), template examples (multi-language), 12 hard rules (never-cross), escalation destinations, fallback behavior, drift detection thresholds. Pages updated: [[ops/2026-05-14-whatsapp-operations-playbook]] — added Section 7.5 (multi-number setup with 3-SIM concept: customer / B2B partner / internal ops; migration path; routing rules; risks), added companion reference in frontmatter and intro. [[index]] — entry for rules engine added under Ops section. Trigger context: user requested (1) more systematic flow that AI/anyone can follow without interpretation, (2) explanation of why Window B2B = manual (answered in chat), (3) multi-number concept (added to playbook §7.5), (4) simple DB password rotation guidance (answered in chat — delegated to David).
 

@@ -1,8 +1,8 @@
 ---
 type: person
 title: JVTO Crew Registry — 11 KTA-Credentialed Members
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026]
+last_updated: 2026-05-16
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, ssot-image-asset-map]
 total_crew: 14
 guides: 7
 drivers: 7
@@ -129,6 +129,40 @@ JVTO Guide
 ## Vehicle & Crew Allocation (cross-reference)
 
 See [[products/packages-overview]] §vehicle-and-crew-allocation for which crew configuration applies to each group-size tier.
+
+## Image Assets
+
+Source: [[sources/ssot-image-asset-map]]. All URLs are live on javavolcano-touroperator.com. Use `alt_text` from the source page for accessibility.
+
+### Crew Portraits (11)
+
+| Name | Role | Portrait URL |
+|---|---|---|
+| Gufron | Guide | https://javavolcano-touroperator.com/uploads/1768225567764-405955176-gufron.png |
+| Fauzi | Guide | https://javavolcano-touroperator.com/uploads/1768226003889-338819579-fauzi.png |
+| Taufik | Guide | https://javavolcano-touroperator.com/uploads/1768228083285-919198019-taufik_1_.png |
+| Boy (Ahboy) | Guide | https://javavolcano-touroperator.com/uploads/1768228191022-893381041-boy.png |
+| Rendi | Guide | https://javavolcano-touroperator.com/uploads/1768228514527-518051332-rendi.png |
+| Anjas | Guide | https://javavolcano-touroperator.com/uploads/1768270423657-690185912-anjas.png |
+| Kiki | Guide | https://javavolcano-touroperator.com/uploads/1768271545598-834784538-kiki.png |
+| Yandi | Driver | https://javavolcano-touroperator.com/uploads/1768270364125-144711646-yandi.png |
+| Fredi | Driver | https://javavolcano-touroperator.com/uploads/1768276791622-262250680-freddy.png |
+| Holili | Driver | https://javavolcano-touroperator.com/uploads/1768277053384-470130286-holili.jpg |
+| Joyo | Driver | https://javavolcano-touroperator.com/uploads/1768277336049-911840775-joyo.png |
+
+KTA-pending crew (Yusuf, Dika, Pras) have no portrait in the current image set.
+
+### KTA Card Images (5 — guides only)
+
+| Guide | KTA | Card image URL |
+|---|---|---|
+| Kiki | KTA-G-2024-008 | https://javavolcano-touroperator.com/uploads/1771428489070-55145932-kta_kiki.jpg |
+| Anjas | KTA-G-2024-006 | https://javavolcano-touroperator.com/uploads/1771428583288-513992233-kta_anjas.jpg |
+| Taufik | KTA-G-2024-007 | https://javavolcano-touroperator.com/uploads/1771428704448-911506028-kta_taufik.jpg |
+| Gufron | KTA-G-2024-001 | https://javavolcano-touroperator.com/uploads/1771428741674-842615436-kta_gufron.jpg |
+| Rendi | KTA-G-2024-002 | https://javavolcano-touroperator.com/uploads/1771428760524-516116110-kta_rendi.jpg |
+
+KTA card images for Boy, Fauzi, and all drivers are not in the published image set (physical cards may exist).
 
 ## Trust Anchors
 

@@ -1,9 +1,9 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-05-12
-total_pages: 41
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024]
+last_updated: 2026-05-16
+total_pages: 42
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
 # JVTO Wiki — Content Index
@@ -32,6 +32,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/radar-jember-polpar-geopark-2021]] — Radar Jember 2021-03-24. Polpar formation for Ijen Geopark support. Institutional role confirmation. Paywalled — title/slug only.
 - [[sources/radar-jember-bau-menyengat-2021]] — Radar Jember 2021-05-27. Tourist Police patrol at Ijen crater, sulfur odor monitoring. Operational-presence proof. Paywalled — title/slug only.
 - [[sources/bbksda-pelatihan-pemandu-2024]] — BBKSDA Jatim 2024-05-24. Official guide training report: 250 HPWKI guides, SAR + PPGD curriculum, 3 days at Paltuding. Validates HPWKI training chain. Full access.
+- [[sources/ssot-image-asset-map]] — JVTO image asset SSOT (2026-05-16). 54 live images across 14 groups: crew portraits (11), field operations (8), crew credentials (5), health screening (5), history/heritage (5), police docs (4), founder (3), press (3), legal docs (6), partner (1), uncertain (1). All URLs live on javavolcano-touroperator.com.
 
 ## Destinations
 

@@ -1,8 +1,8 @@
 ---
 type: person
 title: Agung "Mr. Sam" Sambuko — Founder
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip, detik-polpar-2021]
+last_updated: 2026-05-16
+sources: [ssot-v6, jvto-homepage-clip, detik-polpar-2021, ssot-image-asset-map]
 role: Founder & Active Tourist Police Officer
 schema_id: "/#agung-sambuko"
 schema_type: Person
@@ -76,9 +76,17 @@ See [[credentials/trust-signals]] for full press table.
 - Founder portrait in uniform (`founder-portrait-uniform`) — high-fidelity institutional photo
 - Founder + guests holding Stefan Loose guidebook (`founder-with-guests-stefan-loose`)
 
-## Image
+## Image Assets
 
-`https://javavolcano-touroperator.com/founder/agung_sambuko.jpg`
+Source: [[sources/ssot-image-asset-map]] `founder_leadership` group.
+
+| Asset | Caption | URL |
+|---|---|---|
+| Formal founder portrait (primary) | Founder of JVTO and active member of the East Java Tourist Police Unit (Ditpamobvit) | https://javavolcano-touroperator.com/founder/agung_sambuko.jpg |
+| Tourist Police portrait | Active Tourist Police leadership behind every JVTO trip | https://javavolcano-touroperator.com/founder/mr-sam-tourist-police-portrait.png |
+| Wikipedia copy | Mr. Sam, active Tourist Police officer and founder of JVTO | https://upload.wikimedia.org/wikipedia/commons/b/bf/Agung_Sambuko.jpg |
+
+Note: The Wikipedia-hosted image is the only asset in the JVTO image set not served from javavolcano-touroperator.com.
 
 ## Schema
 

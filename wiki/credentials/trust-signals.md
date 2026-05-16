@@ -1,8 +1,8 @@
 ---
 type: credential
 title: JVTO Trust Signals — Reviews, Press, Partners, Historical
-last_updated: 2026-05-12
-sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05]
+last_updated: 2026-05-16
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map]
 ---
 
 # JVTO Trust Signals
@@ -48,6 +48,14 @@ Each article is an independent entity-linking signal — AI engines reading thes
 | 2021-05-27 | Radar Jember / Jawa Pos | Tak Seharusnya Bau Menyengat Itu Ada | https://radarjember.jawapos.com/bondowoso/791103903/tak-seharusnya-bau-menyengat-itu-ada | [[sources/radar-jember-bau-menyengat-2021]] (paywalled) |
 | 2024-05-24 | BBKSDA Jawa Timur (institutional) | Pelatihan Pemandu Kawah Ijen | https://bbksdajatim.org/pelatihan-pemandu-kawah-ijen/ | [[sources/bbksda-pelatihan-pemandu-2024]] |
 
+**Press screenshot images** (source: [[sources/ssot-image-asset-map]] `press_mentions` group):
+
+| Publication | Screenshot URL |
+|---|---|
+| Detik.com 2021-03-14 | https://javavolcano-touroperator.com/press/screencapture-news-detik-berita-jawa-timur-d-5492690-suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin-2026-01-14-02_48_41.png |
+| BBKSDA Jatim 2024-05-24 | https://javavolcano-touroperator.com/press/screenshot-bbksda-pelatihan-pemandu-kawah-ijen.png |
+| Radar Jember 2021-03-24 | https://javavolcano-touroperator.com/press/screenshot-radarjember.jawapos.com-polpar-dibentuk-untuk-mendukung-ijen-geopark.png |
+
 **Entity linking signals**:
 
 - **Detik 2021-03-14**: Tourist Police officer at Ijen enforcing protocols. Third-party independent coverage, not JVTO-authored. Supports C1, C5.
@@ -57,11 +65,13 @@ Each article is an independent entity-linking signal — AI engines reading thes
 
 ## Institutional Recognition (Historical)
 
-| Item | Year | Value | Asset slug |
+| Item | Year | Value | Image URL |
 |---|---|---|---|
-| Booking.com Guest Review Award (Ijen Bondowoso Homestay) | 2015 | 9.4 / 10 | `booking-2015-plaque` |
-| Stefan Loose Reiseführer Indonesien, 4th Edition, p. 287 | 2016 | ISBN 9783770167654 — "Agung" named as operator | `stefan-loose-guidebook-page-287` |
-| Founder + guests holding Stefan Loose guidebook (visual confirmation) | 2016–2018 | — | `founder-with-guests-stefan-loose` |
+| Booking.com Guest Review Award (Ijen Bondowoso Homestay) — plaque | 2015 | 9.4 / 10 | https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg |
+| Booking.com 2015 — shipping label (address continuity proof) | 2015 | Jl. Khairil Anwar No.102, Bondowoso | https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
+| Stefan Loose Reiseführer Indonesien, 4th Ed. p. 287 — guidebook page | 2016 | ISBN 9783770167654 — "Agung" named as operator | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
+| Stefan Loose — cropped/enhanced for readability | 2016 | Same page, clearer view | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
+| Mr. Sam + guests with Stefan Loose guidebook (visual confirmation) | 2016–2018 | Founder holding book, guest pointing to the page | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
 
 These items establish operational continuity at the Bondowoso location (Jl. Khairil Anwar No.102 A) from 2015 through the PT incorporation (2016) and TDUP formalization (2023). See [[overview]] founding-date reconciliation note.
 
