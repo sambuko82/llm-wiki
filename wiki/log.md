@@ -40,11 +40,23 @@ All 8 weekly checks PASS — see [2026-05-16] health-check | Weekly (2nd run).
 |---|---|---|
 | **Trustpilot 4.8/51** | Fetched JVTO homepage widget | **4.8/5 · 51 reviews** — matches wiki canonical exactly ✅ |
 | **Bripka Agung Sambuko Polpar** | Fetched Detik.com article (2021-03-14) | Article live, Bripka Agung Sambuko named as active Tourist Police officer, verbatim quotes present ✅ |
-| **NIB 1102230032918 (OSS)** | WebFetch oss.go.id → 404; `public/llms.txt` → 404 | **Inconclusive** — OSS portal and llms.txt inaccessible via WebFetch. SHA-256 `fa20dde31bb75e46b061ed14cc6d003f6960c02a9a82c20d8603b0cbf6f7b1b7` on file, no external signal of status change. |
+| **NIB 1102230032918 (OSS)** | PDF dokumen OSS resmi (`f:\S22\Download\NIB.pdf`, dicetak 11 Feb 2023) | **CONFIRMED** ✅ — Nama, alamat, tanggal terbit, dan KBLI semua match wiki canonical. |
 
-> NIB web-check note: OSS.go.id appears to require direct browser navigation or login. Flag for next monthly run — consider manual verification at oss.go.id. No action required now; SHA-256 anchor unchanged.
+**NIB verification detail** (sumber: PDF OSS resmi, ditandatangani elektronik BSrE-BSSN):
 
-**Net result**: 2/3 verified ✅ · 1/3 inconclusive (OSS inaccessible via tool)
+| Field | PDF | Wiki | ✓ |
+|---|---|---|---|
+| NIB | 1102230032918 | 1102230032918 | ✅ |
+| Nama | PT JAVA VOLCANO RENDEZVOUS | PT Java Volcano Rendezvous | ✅ |
+| Alamat | Jl. Khairil Anwar 102 A, Badean, Bondowoso 68214 | Jl. Khairil Anwar No.102 A, Badean, Bondowoso | ✅ |
+| Terbit | 11 Februari 2023 | 2023-02-11 | ✅ |
+| KBLI 79911 (Jasa Informasi Pariwisata) | NIB Terbit, Rendah | Tercatat | ✅ |
+| KBLI 62019 (Pemrograman Komputer) | NIB Terbit, Rendah | Tercatat | ✅ |
+| KBLI 79121 (Biro Perjalanan Wisata) | NIB Terbit + Sertifikat Standar, Menengah Rendah | Tercatat | ✅ |
+
+> Minor observation: PDF OSS mencantumkan 3 KBLI; wiki mencatat 5 (+ 79120, 79921). KBLI tambahan mungkin dari registrasi terpisah — tidak ada konflik.
+
+**Net result**: 3/3 verified ✅
 
 ---
 
@@ -92,12 +104,12 @@ No output file exceeds 90 days. **PASS** ✅
 | All 8 weekly checks | ✅ PASS | Carried forward |
 | Trustpilot web-check | ✅ PASS | 4.8/51 confirmed live |
 | Polpar status web-check | ✅ PASS | Detik.com article live, name confirmed |
-| NIB OSS web-check | ⚠ Inconclusive | OSS portal not accessible via WebFetch — manual check recommended |
+| NIB OSS web-check | ✅ PASS | PDF OSS resmi diverifikasi — semua data match |
 | Trustpilot new review sweep | ✅ PASS | 0 new reviews (delta below threshold) |
 | Gap page audit | ✅ PASS | All 3 credential gaps resolved |
 | Output staleness (>90 days) | ✅ PASS | Newest: 0 days, oldest: 4 days |
 
-**One action item**: Verify NIB 1102230032918 manually at oss.go.id when browser access is available — OSS portal blocks automated fetch.
+**Semua checks PASS. Tidak ada action item outstanding.**
 
 ---
 

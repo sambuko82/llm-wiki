@@ -36,7 +36,8 @@
       "WebFetch(domain:news.detik.com)",
       "WebFetch(domain:oss.go.id)",
       "WebFetch(domain:www.trustpilot.com)",
-      "WebFetch(domain:javavolcano-touroperator.com)"
+      "WebFetch(domain:javavolcano-touroperator.com)",
+      "Skill(browse)"
     ]
   }
 }
