@@ -11,6 +11,36 @@ sources: []
 
 ---
 
+## [2026-05-17] ingest | SEO Audit 2026-05-17 + Schema Profile + Trust Signals Update
+
+**Source type**: seo-audit (new Workflow 4 profile — see [[ops/ingestion-profiles]])
+**Raw file**: `Uploads/c2bb0489-jvtoseoaudit20260517.md`
+**Scope**: Full site SEO audit — technical, on-page, schema, keywords, competitors, content gaps, action plan
+
+**Pages created (4)**:
+- [[sources/seo-audit-2026-05]] — Source summary: critical findings, data discrepancies (D1–D5), schema requirements, quick-win references
+- [[ops/seo-strategy]] — 15 keyword targets, 4 content silos with readiness map, title tag rewrites (10 pages), QW action tracker (14 items), 90-day targets
+- [[ops/competitors]] — 3-tier competitor registry (OTAs + 3 dominant + 7 mid-tier + 9 EMD), JVTO differentiator map, monitoring protocol
+- [[ops/redirect-map]] — 13 legacy → SSOT URL redirect table; subdomain decisions; implementation notes for dev
+
+**Pages updated (6)**:
+- [[credentials/trust-signals]] — Fixed stale Trustpilot count (47→51); added social media URL registry (Facebook, Instagram, Twitter, 8 platforms total); added Schema Canonical Values section; added seo-audit-2026-05 to sources
+- [[content/brand-voice]] — Added Meta Description Formula section (3-part structure, examples, rules); added seo-audit-2026-05 to sources
+- [[ops/compilation-profiles]] — Added `schema` profile (6th profile: generates JSON-LD, mandatory numeric verification step, 5 output types); added meta description formula cross-reference to website-copy profile
+- [[ops/ingestion-profiles]] — Added `seo-audit` profile spec (extraction targets: keywords, competitors, schema, action items)
+- [[index]] — Added 4 new pages (sources + 3 ops); updated ops section with all 7 profiles; total_pages 46→49
+- [[log]] — This entry
+
+**Data discrepancies resolved**:
+- D1: `reviewCount: 47` in audit TouristTrip example → wiki canonical is 51 (trust-signals updated, schema profile warns against hardcoding)
+- D2: Ambiguous `ratingValue: 4.9` → schema canonical values section establishes Trustpilot 4.8 as conservative cross-platform value
+- D3: Package count 15 vs 16 → will resolve in favor of 16 (sitemap-confirmed) on next SSOT update
+- D4: Placeholder INDECON URL → schema profile directs to legal-licenses for the verified URL
+
+**Key insight**: Bromo Level II status (from Step 0) is the live data feed for Silo 3's `bromo-ijen-status-today` page — the audit identified this as a high-value opportunity and JVTO already has the source infrastructure for it.
+
+---
+
 ## [2026-05-17] ingest | MAGMA Volcano Activity Reports — Bromo & Ijen (2026-05-16)
 
 **Source type**: magma-report (new Workflow 4 profile — see [[ops/ingestion-profiles]])

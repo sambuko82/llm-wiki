@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-17
-total_pages: 46
+total_pages: 49
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
@@ -32,7 +32,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/radar-jember-polpar-geopark-2021]] — Radar Jember 2021-03-24. Polpar formation for Ijen Geopark support. Institutional role confirmation. Paywalled — title/slug only.
 - [[sources/radar-jember-bau-menyengat-2021]] — Radar Jember 2021-05-27. Tourist Police patrol at Ijen crater, sulfur odor monitoring. Operational-presence proof. Paywalled — title/slug only.
 - [[sources/bbksda-pelatihan-pemandu-2024]] — BBKSDA Jatim 2024-05-24. Official guide training report: 250 HPWKI guides, SAR + PPGD curriculum, 3 days at Paltuding. Validates HPWKI training chain. Full access.
-- [[sources/ssot-image-asset-map]] — JVTO image asset SSOT (2026-05-16). 54 live images across 14 groups: crew portraits (11), field operations (8), crew credentials (5), health screening (5), history/heritage (5), police docs (4), founder (3), press (3), legal docs (6), partner (1), uncertain (1). All URLs live on javavolcano-touroperator.com.
+- [[sources/ssot-image-asset-map]] — JVTO image asset SSOT (2026-05-16). 54 live images across 14 groups
+- [[sources/seo-audit-2026-05]] — SEO audit (2026-05-17). Dual-URL issue, keyword strategy (15 targets), competitor map (3 tiers), schema requirements (7 page types), 14 QW + 14 SI action items. Ahrefs data unavailable — volumes estimated.: crew portraits (11), field operations (8), crew credentials (5), health screening (5), history/heritage (5), police docs (4), founder (3), press (3), legal docs (6), partner (1), uncertain (1). All URLs live on javavolcano-touroperator.com.
 
 ## Destinations
 
@@ -81,9 +82,12 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 ## Ops
 
 - [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, magma-report, seo-audit)
-- [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck)
-- [[ops/volcano-status]] — Live volcano alert level tracker (Bromo + Ijen); updated each MAGMA report ingest. **Bromo currently Level II Waspada as of 2026-05-16.**
+- [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
+- [[ops/volcano-status]] — Live volcano alert level tracker (Bromo + Ijen); updated each MAGMA report ingest. **Bromo currently Level II Waspada as of 2026-05-16.**
+- [[ops/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items). Source: 2026-05-17 audit.
+- [[ops/competitors]] — Tiered competitor registry (3 tiers + OTAs). Monitoring protocol.
+- [[ops/redirect-map]] — 301 redirect table: 13 legacy Laravel routes → canonical SSOT URLs. Dev handoff for `jvto-web`.
 - [[ops/2026-05-14-whatsapp-operations-playbook]] — 5-channel WhatsApp ops playbook (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
 - [[ops/2026-05-14-whatsapp-rules-engine]] — Companion to playbook. Pure execution logic — 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute & log). Master action table, intent taxonomy seed, templates, hard rules, escalation destinations, fallback behavior, drift detection. AI-readable, no philosophy.
 

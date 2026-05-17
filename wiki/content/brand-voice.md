@@ -1,8 +1,8 @@
 ---
 type: content
 title: JVTO Brand Voice Guide
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip]
+last_updated: 2026-05-17
+sources: [ssot-v6, jvto-homepage-clip, seo-audit-2026-05]
 ---
 
 # JVTO Brand Voice Guide
@@ -103,6 +103,28 @@ These rules are **non-negotiable** across all JVTO content. Any generated copy m
 | Historical (2015–2016 era) | Agung (e.g., as cited in Booking.com 2015 shipping label, Stefan Loose 2016 p.287) |
 
 See [[people/agung-sambuko]] for full entity-resolution table.
+
+## Meta Description Formula (SEO — website-copy profile)
+
+Use this 3-part structure for all commercial page meta descriptions (≤160 characters):
+
+**`[Format + Duration + Highlights] · [Differentiator] · [Trust signal or price hook]`**
+
+Examples:
+- **Tour page (3D2N)**: *"Private 3D2N Bromo sunrise + Madakaripura + Ijen blue fire from Surabaya, ending in Bali. Tourist Police-led. 4.8★ Trustpilot. IDR 2.45M/pax."*
+- **Destination page (Ijen)**: *"Plan your Mount Ijen blue fire hike. BBKSDA health screening, permits, gear, midnight start — full guide from a licensed East Java operator."*
+- **Homepage**: *"Private volcano tours from Surabaya & Bali. Tourist Police-led. No shared groups. 4.8★ Trustpilot. From IDR 1.65M/pax."*
+
+**Rules**:
+- Lead with the format/destination, not the brand name
+- Include at least one trust signal (rating, NIB, police credential) per page
+- Price hook optional — include if JVTO price is competitive vs. market
+- Do NOT use "we", "our", or first-person in meta descriptions
+- Keep under 160 characters; 120–155 is the ideal range for SERP display
+
+Source: [[sources/seo-audit-2026-05]] §2.4
+
+---
 
 ## Trust Anchors
 

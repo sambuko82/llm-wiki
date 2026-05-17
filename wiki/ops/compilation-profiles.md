@@ -1,8 +1,8 @@
 ---
 type: ops
 title: Compilation Profiles — Workflow 5
-last_updated: 2026-05-11
-sources: [llm-kb-tooling-guide]
+last_updated: 2026-05-17
+sources: [llm-kb-tooling-guide, seo-audit-2026-05]
 ---
 
 # Compilation Profiles
@@ -45,6 +45,8 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Forbidden:** invented statistics, passive voice in hero copy, "safety-focused guide" (use "Tourist Police officer"), superlatives without evidence
 
+**Meta description**: Use the 3-part formula from [[content/brand-voice]] §Meta Description Formula: `[Format + Duration + Highlights] · [Differentiator] · [Trust signal or price hook]`. Max 160 characters. No first-person. For SEO-optimized title tags, see [[ops/seo-strategy]] §Title Tag Rewrites.
+
 **Output filename:** `output/copy-YYYY-MM-DD-[page].md`
 
 ---
@@ -83,6 +85,42 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 **Forbidden:** invented quotes, hashtag spam (≤3 hashtags per post)
 
 **Output filename:** `output/social-YYYY-MM-DD-[topic].md`
+
+---
+
+## schema
+
+**Purpose:** Generate validated JSON-LD structured data blocks for use in the live website. The wiki is the source of truth for all numeric values — never hardcode from memory or prior examples.
+
+**Draw from:** `credentials/legal-licenses`, `credentials/trust-signals` (§Schema Canonical Values), `content/faq-master`, `products/packages-overview`, `products/packages-full-pricing`, `reviews/trustpilot-compilation`, `reviews/google-tripadvisor-2026`, `ops/volcano-status` (for current alert level if needed)
+
+**Output types** (select the type requested):
+
+| Type | Use for | Required draw-from fields |
+|---|---|---|
+| `Organization` / `TravelAgency` | Global header on every page | legal-licenses (NAP, NIB, HPWKI, ISIC), trust-signals (review counts, sameAs URLs) |
+| `TouristTrip` + `AggregateRating` | Per tour page | packages-full-pricing (price, currency), faq-master (for FAQ block), trust-signals (reviewCount, ratingValue) |
+| `FAQPage` | Per tour page or destination page | faq-master (draw relevant questions for that page) |
+| `TouristAttraction` | Per destination page | destinations/{slug} (elevation, location, description) |
+| `BreadcrumbList` | All sub-pages | sitemap-2026-05 (URL structure) |
+
+**Verification step** (mandatory — run Grep before finalizing):
+
+1. Extract every numeric value from the generated JSON-LD
+2. Grep `wiki/credentials/trust-signals.md` §Schema Canonical Values for each numeric field
+3. Confirm: `reviewCount` matches current canonical, `ratingValue` matches platform specified, credential IDs are exact
+4. If any value doesn't match the wiki canonical: fix before writing output
+
+**Forbidden:**
+- Hardcoded `reviewCount` values not verified against [[reviews/trustpilot-compilation]]
+- `ratingValue: 4.9` without specifying which platform (Google Maps is 4.90, Trustpilot is 4.8 — they are not interchangeable in schema)
+- Placeholder URLs like `https://ahu.go.id/...` — use the verified URL from [[credentials/legal-licenses]]
+
+**Currency format**: `"priceCurrency": "IDR"`, price in full integer (e.g. `2450000` not `2.45M`)
+
+**Review count refresh trigger**: Schema output becomes stale whenever the health check detects new reviews. Re-generate affected schema files after any `review-feed` ingest.
+
+**Output filename convention:** `output/schema/[page-slug]-schema.json`
 
 ---
 

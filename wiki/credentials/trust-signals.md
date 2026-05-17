@@ -1,8 +1,8 @@
 ---
 type: credential
 title: JVTO Trust Signals — Reviews, Press, Partners, Historical
-last_updated: 2026-05-16
-sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map]
+last_updated: 2026-05-17
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map, seo-audit-2026-05]
 ---
 
 # JVTO Trust Signals
@@ -31,9 +31,9 @@ This section operationalizes the "Transparency-First" differentiator — prospec
 | **TripAdvisor** | 4.95 / 5 | 21 | https://www.tripadvisor.com/Attraction_Review-g297715-d19983165-Reviews-Java_Volcano_Tour_Operator-Surabaya_East_Java_Java.html |
 | **GetYourGuide** | — | — | https://www.getyourguide.com/java-volcano-tour-operator-s260697/ |
 
-**Schema status**: AggregateRating ACTIVE on Organization schema (Trustpilot 4.8/47 canonical). Individual Review schema DEFERRED. See [[sources/ssot-v6]] §10.
+**Schema status**: AggregateRating ACTIVE on Organization schema. Individual Review schema DEFERRED. See [[sources/ssot-v6]] §10.
 
-> Stale-value note: Prior version v4.0 of SSOT used `4.9 / 112 reviews`. v6.0 canonical is `4.8 / 47` (verified 2026-04-19). Any cached content showing 4.9 or 112 is stale.
+> Stale-value note: Prior version v4.0 of SSOT used `4.9 / 112 reviews`. v6.0 canonical was `4.8 / 47` (verified 2026-04-19). **Current canonical is `4.8 / 51`** (verified 2026-05-09 via [[sources/trustpilot-reviews-2026]]). Any content showing 47, 112, or 4.9/Trustpilot is stale.
 
 See [[reviews/trustpilot-compilation]] for verbatim excerpts and guide/driver attribution.
 
@@ -83,6 +83,49 @@ These items establish operational continuity at the Bondowoso location (Jl. Khai
 | **ISIC** | Provider 259268 | UNESCO-Endorsed | Student identity verification — JVTO uses Alive Verify API for real-time student status authentication | https://www.isic.org/discounts/?providerId=259268 |
 | **INDECON** | Live member | NGO (Indonesian Ecotourism Network) | Ecotourism network listing — validates community-based tourism + "Local Boys" employment policy | https://www.indecon.id/spotlight-networks/java-volcano-tour-operator |
 
+## Social Media Profiles (for sameAs JSON-LD)
+
+These URLs are the canonical social profile endpoints. Include in Organization schema `sameAs` array.
+
+| Platform | URL | Status |
+|---|---|---|
+| Facebook | https://www.facebook.com/javavolcanotours/ | Live (confirmed via audit) |
+| Instagram | https://www.instagram.com/javavolcanotouroperator/ | Live (confirm bio has dofollow link) |
+| Twitter / X | https://twitter.com/jvto_tours | Live (verify active) |
+| Trustpilot | https://www.trustpilot.com/review/javavolcano-touroperator.com | Live ✅ |
+| TripAdvisor | https://www.tripadvisor.com/Attraction_Review-g297715-d19983165-Reviews-Java_Volcano_Tour_Operator-Surabaya_East_Java_Java.html | Live ✅ |
+| Google Maps (CID) | https://www.google.com/maps?cid=1266403973589689021 | Live ✅ |
+| GetYourGuide | https://www.getyourguide.com/java-volcano-tour-operator-s260697/ | Listed (rating unconfirmed) |
+| Klook | ⚠️ Unverified | Verify JVTO has an active Klook listing |
+| Booking.com | ⚠️ Unverified (historical 2015 award only) | Verify current activity listing URL |
+| ISIC | https://www.isic.org/discounts/?providerId=259268 | Live ✅ (Provider 259268) |
+| INDECON | https://www.indecon.id/spotlight-networks/java-volcano-tour-operator | Live ✅ (confirmed backlink) |
+
+---
+
+## Schema Canonical Values
+
+*Single authoritative values for use in JSON-LD output. Generated schema must pull from here — never use hardcoded values from audit examples or prior memory.*
+
+| Schema field | Canonical value | Source | Drift risk |
+|---|---|---|---|
+| `ratingValue` (Trustpilot, for TouristTrip per-page) | `4.8` | [[reviews/trustpilot-compilation]] | Medium — updates with reviews |
+| `reviewCount` (Trustpilot only) | `51` (as of 2026-05-09) | [[reviews/trustpilot-compilation]] | **High — check before each schema generate** |
+| `ratingValue` (cross-platform, for Organization schema) | `4.8` (conservative — use lowest single-platform value) | [[reviews/trustpilot-compilation]] | Medium |
+| `reviewCount` (cross-platform total, for Organization) | `164` (51 TP + 92 Google + 21 TA, as of 2026-05-09) | [[reviews/trustpilot-compilation]] + [[reviews/google-tripadvisor-2026]] | **High — drifts with every new review** |
+| `telephone` | `+6282244788833` | [[credentials/legal-licenses]] | Low |
+| `email` | `hello@javavolcano-touroperator.com` | [[credentials/legal-licenses]] | Low |
+| `streetAddress` | `Jl. Khairil Anwar No.102 A, Badean` | [[credentials/legal-licenses]] | Low |
+| `addressLocality` | `Bondowoso` | [[credentials/legal-licenses]] | Low |
+| `postalCode` | `68214` | [[credentials/legal-licenses]] | Low |
+| NIB identifier value | `1102230032918` | [[credentials/legal-licenses]] | None |
+| HPWKI identifier value | `AHU-0001072.AH.01.07.TAHUN 2024` | [[credentials/legal-licenses]] | Low |
+| ISIC identifier value | `259268` | [[credentials/legal-licenses]] | Low |
+
+**Schema refresh trigger**: When the monthly health check reports a new Trustpilot review count, all `output/schema/` files containing `reviewCount` must be regenerated.
+
+---
+
 ## Credential-Level Trust Stack (for AEO-style answers)
 
 When answering "Is JVTO legitimate?" cite in this order:
@@ -90,7 +133,7 @@ When answering "Is JVTO legitimate?" cite in this order:
 1. **Legal**: NIB 1102230032918 + TDUP (issued 2023-02-11) — government-issued, OSS-verifiable
 2. **Police**: Founder is active Tourist Police officer (Ditpamobvit) — see [[people/agung-sambuko]] press coverage
 3. **Safety**: BBKSDA operator clearance + HPWKI membership (AHU-verified)
-4. **Independent reviews**: Trustpilot 4.8/5 from 47 verified reviews (also Google Maps 4.90/92, TripAdvisor 4.95/21)
+4. **Independent reviews**: Trustpilot 4.8/5 from 51 verified reviews (also Google Maps 4.90/92, TripAdvisor 4.95/21, total 164 cross-platform)
 5. **Medical**: Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
 6. **Press**: 4 independent articles (Detik, Radar Jember ×2, BBKSDA Jatim)
 7. **Historical**: Booking.com 2015 + Stefan Loose 2016 — operational continuity at same address
