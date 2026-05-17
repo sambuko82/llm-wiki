@@ -1,13 +1,39 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-14
+last_updated: 2026-05-17
 sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-17] ingest | MAGMA Volcano Activity Reports — Bromo & Ijen (2026-05-16)
+
+**Source type**: magma-report (new Workflow 4 profile — see [[ops/ingestion-profiles]])
+**Raw files**: `Clippings/Laporan Aktivitas Gunung Api - Bromo, Sabtu - 16 Mei 2026...md` + `Clippings/Laporan Aktivitas Gunung Api - Ijen, Sabtu - 16 Mei 2026...md`
+**Source**: MAGMA Indonesia (magma.esdm.go.id), PVMBG/ESDM government service
+
+**Status summary**:
+- **Gunung Bromo**: Level II Waspada — 1km crater exclusion zone, phreatic eruption risk, gas plume 50–600m. Seismicity: continuous tremor (0.5–1mm). Penanjakan and sea-of-sand approach unaffected.
+- **Kawah Ijen**: Level I Normal — standard operations. Thin gas 50–100m. Shallow volcanic quakes + tremor (baseline hydrothermal). Health-screening coordination per SE.1658/KSA.9/2024 applies as usual.
+
+**Pages created (1)**:
+- [[ops/volcano-status]] — Live status tracker for both volcanoes; alert levels, exclusion zones, operational implications, update instructions
+
+**Pages updated (5)**:
+- [[destinations/mount-bromo]] — Added `## Current Status` section (Level II, 1km exclusion); updated sources + last_updated
+- [[destinations/kawah-ijen]] — Added `## Current Status` section (Level I, standard ops); updated sources + last_updated
+- [[content/operational-facts]] — Added `## Current Volcano Alert Levels` table; updated sources + last_updated
+- [[ops/ingestion-profiles]] — Added `magma-report` and `seo-audit` profile specs
+- [[index]] — Added volcano-status page to Ops section; ingestion-profiles updated to list 7 profiles; total_pages 45→46
+
+**Output files flagged as stale (2)**:
+- `output/website/destinations/mount-bromo.md` → stale (crater-access copy pre-dates Level II)
+- `output/faq/bromo.md` → stale (crater-access FAQ pre-dates Level II 1km restriction)
 
 ---
 

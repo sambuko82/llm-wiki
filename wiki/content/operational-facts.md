@@ -1,13 +1,26 @@
 ---
 type: content
 title: JVTO Operational Facts — Temperatures, Travel Times, Practical Info
-last_updated: 2026-05-12
-sources: [db-export-2026-05]
+last_updated: 2026-05-17
+sources: [db-export-2026-05, magma-bromo-2026-05-16, magma-ijen-2026-05-16]
 ---
 
 # JVTO Operational Facts
 
 *Practical, citable facts from the live knowledge base ([[sources/db-export-2026-05]]). Use in AEO answers, FAQ copy, and chatbot responses.*
+
+---
+
+## Current Volcano Alert Levels
+
+> Last verified: 2026-05-16 via MAGMA Indonesia. Update whenever a new `magma-report` is ingested.
+
+| Volcano | Alert Level | As of | JVTO operational note |
+|---|---|---|---|
+| Gunung Bromo | **Level II — Waspada** | 2026-05-16 | 1 km crater exclusion zone active. Penanjakan/sea-of-sand unaffected. Plan-B SOP applies to crater-access segments. |
+| Kawah Ijen | **Level I — Normal** | 2026-05-16 | Standard operations. Health-screening coordination per SE.1658/KSA.9/2024 applies regardless of alert level. |
+
+For full detail and update history: [[ops/volcano-status]]
 
 ---
 

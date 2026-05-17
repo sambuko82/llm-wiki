@@ -86,3 +86,45 @@ Select the profile matching your source. The profile supplies type-specific extr
 - Whether it is independent or paid placement
 
 **Wiki pages to update:** `sources/[slug]`, `credentials/trust-signals`, `credentials/press-coverage` (create this page if it does not exist — it is a tracked gap page)
+
+---
+
+## magma-report
+
+**What it is:** Daily volcanic activity report from MAGMA Indonesia (magma.esdm.go.id) — official ESDM government volcano monitoring service. One report per volcano per 24-hour period.
+
+**Raw slug:** `magma-[volcano]-YYYY-MM-DD.md` (e.g., `magma-bromo-2026-05-16.md`)
+
+**Extract:**
+- Alert level: Level I Normal / Level II Waspada / Level III Siaga / Level IV Awas
+- Report date and 24-hour period (WIB timezone)
+- Visual observation summary (gas/steam color, plume height, wind direction)
+- Seismic summary (quake types and count, tremor amplitude range)
+- Official recommendations verbatim (exclusion zones, visitor restrictions)
+- Source URL with signature parameter (for auditability)
+- VONA code if present (aviation alert level)
+
+**Wiki pages to update:** `wiki/ops/volcano-status.md` (primary tracker — always update), `destinations/[volcano]` (update `## Current Status` section), `content/operational-facts` (alert level fields)
+
+**Do NOT extract:** Raw hourly seismic tables, individual tremor timestamps, or amplitude-by-minute data — wiki holds operational summaries only.
+
+**Operational trigger rule:** If alert level is Level II or higher, flag all output/ files covering that volcano's crater-access details as `> [stale?] Bromo/Ijen alert level changed — verify crater access rules before publishing`.
+
+---
+
+## seo-audit
+
+**What it is:** Structured SEO audit document with keyword data, technical findings, competitor analysis, schema requirements, and action items.
+
+**Raw slug:** `seo-audit-YYYY-MM.md` (e.g., `seo-audit-2026-05.md`)
+
+**Extract:**
+- Technical issues (severity, fix description, responsible party: wiki vs dev)
+- Keyword targets (term, difficulty, opportunity score, recommended page)
+- Competitor intelligence (tier, domain, key strengths)
+- Content gaps (topic, format, priority, recommended URL)
+- Schema requirements (page type, required JSON-LD fields)
+- Action items (QW quick-wins and SI strategic investments, numbered)
+- Data discrepancies found (audit values vs wiki canonicals)
+
+**Wiki pages to update:** `sources/[slug]`, `ops/seo-strategy` (create if not exists), `ops/competitors` (create if not exists), `ops/redirect-map` (create if not exists), `ops/compilation-profiles` (add schema profile), `content/brand-voice` (add meta description formula), `credentials/trust-signals` (add social URLs)

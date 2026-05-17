@@ -29,7 +29,7 @@
 | File | Website target | Output date | Status | Key sources |
 |---|---|---|---|---|
 | `faq/ijen.md` | `/travel-guide/faq` (Ijen section) | 2026-05-16 | draft | faq-master, kawah-ijen, dr-ahmad-irwandanu, packages-overview |
-| `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-12 | draft | faq-master, mount-bromo, operational-facts, packages-overview |
+| `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-12 | **stale** — Bromo Level II Waspada (2026-05-16): crater-access FAQ answers may not reflect 1km exclusion zone. Regenerate before publishing. | faq-master, mount-bromo, operational-facts, packages-overview |
 | `faq/tumpak-sewu.md` | `/travel-guide/faq` (Tumpak Sewu section) | 2026-05-12 | draft | faq-master, tumpak-sewu, packages-overview |
 | `faq/madakaripura.md` | `/travel-guide/faq` (Madakaripura section) | 2026-05-12 | draft | faq-master, madakaripura, packages-overview |
 
@@ -55,7 +55,7 @@
 |---|---|---|---|
 | `website/destinations/hub.md` | `/destinations` | 2026-05-12 | draft |
 | `website/destinations/ijen-crater.md` | `/destinations/ijen-crater` | 2026-05-16 | draft |
-| `website/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-12 | draft |
+| `website/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-12 | **stale** — Bromo Level II Waspada (2026-05-16): crater-access copy may not reflect 1km exclusion zone. Regenerate before publishing. |
 | `website/destinations/tumpak-sewu-waterfall.md` | `/destinations/tumpak-sewu-waterfall` | 2026-05-12 | draft |
 | `website/destinations/madakaripura-waterfall.md` | `/destinations/madakaripura-waterfall` | 2026-05-12 | draft |
 | `website/destinations/papuma-beach.md` | `/destinations/papuma-beach` | 2026-05-12 | draft |
