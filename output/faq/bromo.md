@@ -1,12 +1,14 @@
 ﻿---
 profile: faq
 page: bromo-faq
-output_date: 2026-05-12
+output_date: 2026-05-17
 status: draft
 sources: [faq-master, destinations/mount-bromo, content/operational-facts, products/packages-overview, products/packages-full-pricing, products/packages-itineraries, credentials/trust-signals, credentials/legal-licenses]
 ---
 
 # Mount Bromo — FAQ
+
+> **Current Alert Status — 2026-05-16**: Mount Bromo is at **Level II Waspada (Elevated)**. Official PVMBG restriction: do not enter within **1 km of the active crater**. The Penanjakan sunrise viewpoint (~5 km from the crater) is **not affected**. The crater rim staircase is within the exclusion zone — JVTO will not take guests to the crater lip while Level II is active. Plan-B segments apply for affected itinerary portions. Source: MAGMA Indonesia.
 
 *AEO-compatible. All answers are self-contained and directly citable.*
 
@@ -64,11 +66,15 @@ The Sea of Sand (Pasir Berbisik) is the caldera floor surrounding the Bromo crat
 
 ### Can I ride a horse to the Bromo crater rim?
 
-Yes. Horse riding from the jeep drop-off point to the crater stairs is available on-site. This is an optional, locally arranged service, paid directly to the horse handlers — it is not a JVTO inclusion and is not priced into any package. Guests who prefer to walk the short distance from the drop-off to the crater stairs can do so on foot. JVTO guides accompany guests either way.
+Under normal conditions (Level I), horse riding from the jeep drop-off to the crater stairs is available on-site — an optional, locally arranged service paid directly to horse handlers, not priced into JVTO packages. Guests who prefer to walk the short flat distance can do so on foot.
+
+**Current Level II restriction**: The crater stairs and rim approach fall within the 1 km exclusion zone active from 2026-05-16. JVTO will not take guests to the crater lip while Level II is in effect. The jeep drop-off area and caldera floor remain accessible — the restriction targets the final ascent to the rim. JVTO confirms the applicable itinerary before your arrival.
 
 ### What is at the Bromo crater?
 
-The Bromo crater is an active volcanic vent with a visible smoke plume. A short staircase leads from the jeep drop-off to the crater rim, where guests look directly into the smoking caldera. The temple at the caldera floor — Pura Luhur Poten — is a Tengger Hindu site passed during the jeep sequence. JVTO guides brief guests on respectful conduct at the temple.
+The Bromo crater is an active volcanic vent with a visible smoke plume. Under normal conditions (Level I), a short staircase leads from the jeep drop-off to the crater rim, where guests look directly into the smoking caldera. The temple at the caldera floor — Pura Luhur Poten — is a Tengger Hindu site passed during the jeep sequence. JVTO guides brief guests on respectful conduct at the temple.
+
+**Current Level II restriction (from 2026-05-16)**: The crater rim staircase falls within the PVMBG-mandated 1 km exclusion zone. JVTO does not take guests to the crater lip while Level II Waspada is active. The caldera floor, Sea of Sand, and Penanjakan viewpoint are all accessible. JVTO will confirm the current status and adjusted itinerary before your arrival.
 
 ---
 
@@ -128,7 +134,11 @@ Yadnya Kasada is the annual Tengger Hindu ceremony held at Pura Luhur Poten on t
 
 ### What happens if Mount Bromo closes for volcanic activity?
 
-JVTO follows official BBKSDA and National Park management instructions on closures. If Bromo's crater zone or approach is restricted, JVTO may adjust to available alternative viewpoints (the caldera can often still be entered for sunrise even when the crater stairs are closed), reschedule, or replace the Bromo segment with a confirmed safe alternative per the booking context. Guests are never left without a programme. The Plan-B framework is a written policy, not a verbal promise — see [[products/packages-overview]] §closure-policy and [[sources/ssot-v6]] §7_3 weather closures.
+JVTO follows official PVMBG, BBKSDA, and National Park management instructions on closures. If Bromo's crater zone or approach is restricted, JVTO adjusts to available alternative viewpoints (the caldera can often still be entered for sunrise even when the crater stairs are closed), reschedules affected segments, or replaces them with a confirmed safe alternative. Guests are never left without a programme.
+
+**Current status**: Bromo is at Level II Waspada from 2026-05-16. The 1 km crater exclusion zone is in effect. Penanjakan sunrise and the Sea of Sand are unaffected. JVTO has activated Plan-B for the crater rim segment. If you have a confirmed booking that includes the crater approach, JVTO will contact you before your arrival to confirm the adjusted itinerary.
+
+The Plan-B framework is a written policy, not a verbal promise — see [[products/packages-overview]] §closure-policy and [[sources/ssot-v6]] §7_3 weather closures.
 
 ### Can rain cancel a Bromo tour?
 

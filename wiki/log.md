@@ -11,6 +11,33 @@ sources: []
 
 ---
 
+## [2026-05-17] fix | stale output files — Level II Waspada update
+
+**Trigger**: Two output files flagged stale after MAGMA report ingest (2026-05-16) — crater-access copy pre-dated Level II restriction.
+
+**Files updated (2)**:
+- `output/faq/bromo.md` — Added Level II status banner; updated "Can I ride a horse to the Bromo crater rim?", "What is at the Bromo crater?", and "What happens if Mount Bromo closes for volcanic activity?" to reflect 1 km exclusion zone and active Plan-B.
+- `output/website/destinations/mount-bromo.md` — Added `Alert Status Banner` section to data structure spec (conditional: Level II+); added crater restriction note to Crater Walk section; updated Closure & Plan B condition from manual flag to `alert_level >= 2`.
+
+**Also committed**: `output/website/travel-guide/bromo-ijen-status-today.md` (generated in previous session, was untracked); deleted `llm-wiki/.obsidian/` artifact files (empty Obsidian default vault).
+
+---
+
+## [2026-05-17] output | bromo-ijen-status-today travel guide page
+
+**Profile**: website-copy (Style B)
+**Output file**: `output/website/travel-guide/bromo-ijen-status-today.md`
+**SEO target**: keyword #7 "is bromo open today" / "bromo status" (500–2,000/mo)
+**Sources drawn**: [[ops/volcano-status]], [[destinations/mount-bromo]], [[destinations/kawah-ijen]], [[content/brand-voice]], [[content/operational-facts]]
+
+**Content**: Current status table (Bromo Level II Waspada, Ijen Level I Normal), per-zone access breakdown, 4-level alert reference, Plan-B and Travel Credit guidance, update cadence note, official MAGMA source link.
+
+**Maintenance note**: Re-generate this file after each MAGMA report ingest. See [[ops/volcano-status]] Update Instructions.
+
+Also deleted `llm-wiki/llm-wiki/` — empty Obsidian default vault (Welcome.md artifact, no JVTO content).
+
+---
+
 ## [2026-05-17] ingest | SEO Audit 2026-05-17 + Schema Profile + Trust Signals Update
 
 **Source type**: seo-audit (new Workflow 4 profile — see [[ops/ingestion-profiles]])

@@ -1,9 +1,9 @@
 ﻿---
 profile: website-copy
 page: /destinations/mount-bromo
-output_date: 2026-05-12
+output_date: 2026-05-17
 status: draft
-sources: [mount-bromo, packages-overview, ssot-v6]
+sources: [mount-bromo, packages-overview, ssot-v6, ops/volcano-status]
 content_source: DB
 type: data-structure-spec
 ---
@@ -14,19 +14,38 @@ type: data-structure-spec
 
 ## Section Order
 
-1. Hero
-2. Quick Facts
-3. Penanjakan Sunrise
-4. Sea of Sand
-5. Crater Walk
-6. BBKSDA Clearance + Bromo 4WD Jeep Included
-7. Closure & Plan B
-8. Packages That Include This Destination
-9. CTA
+1. **Alert Status Banner** (conditional — render when Level II+)
+2. Hero
+3. Quick Facts
+4. Penanjakan Sunrise
+5. Sea of Sand
+6. Crater Walk
+7. BBKSDA Clearance + Bromo 4WD Jeep Included
+8. Closure & Plan B
+9. Packages That Include This Destination
+10. CTA
 
 ---
 
 ## Section Definitions
+
+### Alert Status Banner
+
+**Condition**: Render only when `destinations.alert_level >= 2` (Level II Waspada or above)  
+**Current state (2026-05-16)**: ACTIVE — Level II Waspada
+
+| Field | DB source hint | Display format | Conditional? |
+|---|---|---|---|
+| Alert level label | `destinations.alert_level_label` | e.g. "Level II — Waspada (Elevated)" | Yes — Level II+ only |
+| Exclusion zone summary | `destinations.exclusion_zone_copy` | Plain text: "1 km crater exclusion zone active — crater rim approach restricted" | Yes |
+| What is open | `destinations.open_areas_copy` | Plain text: "Penanjakan sunrise viewpoint and Sea of Sand are not affected" | Yes |
+| Plan-B note | `destinations.plan_b_active_copy` | Plain text: "JVTO has activated Plan-B for crater rim segments — your guide will confirm the adjusted itinerary before arrival" | Yes |
+| MAGMA source link | `destinations.magma_source_url` | Text link: "Official MAGMA Indonesia report" → magma.esdm.go.id | Yes |
+| As-of date | `destinations.status_as_of_date` | "As of YYYY-MM-DD" | Yes |
+
+Display as: yellow/amber full-width banner at top of page, above hero.
+
+---
 
 ### Hero
 
@@ -83,6 +102,9 @@ Display as: icon-labelled key-value list or compact table. 6 rows max.
 | Section heading | Static: "Crater Walk" | H2 | No |
 | Description body | `destinations.crater_walk_description` | Rich text / paragraphs — covers short walk or horse-ride from jeep drop-off to crater rim, active smoking vent visible from rim | No |
 | Horse option note | `destinations.horse_option_note` | Inline note: horse available for guests preferring not to walk the crater approach | No |
+| Level II restriction note | `destinations.crater_restriction_copy` | Amber inline callout: "⚠️ Level II active — crater rim approach restricted to 1 km exclusion zone. JVTO will not take guests to the crater lip while Level II is in effect. JVTO contacts you before arrival to confirm adjusted itinerary." | YES — render only when `alert_level >= 2` |
+
+**Current state**: Level II active from 2026-05-16. Restriction note MUST render.
 
 ---
 
@@ -105,8 +127,11 @@ Display as: icon-labelled key-value list or compact table. 6 rows max.
 | Closure SOP copy | `destinations.closure_plan_b_copy` | Plain text: describes alternative-route SOP — guests briefed in advance, no day lost | YES — same condition |
 | Policy link | Static | Text link to /policy or /travel-guide/weather-and-closures page | YES — same condition |
 
-Condition logic: `IF destinations.closure_plan_b_enabled = true THEN render section ELSE skip`
-Note: The Plan-B framework exists per wiki data. Flag recommended — surface this section when there is active volcanic alert for Bromo (Level II+).
+Condition logic: `IF destinations.alert_level >= 2 THEN render section ELSE skip`
+
+**Current state (2026-05-16)**: RENDER — Level II Waspada is active. This section must display on the live page.
+
+Implementation note: `closure_plan_b_enabled` may be used as a manual override flag; however, triggering on `alert_level >= 2` (sourced from ops/volcano-status) is preferred as it ties directly to MAGMA data rather than a manual toggle.
 
 ---
 
