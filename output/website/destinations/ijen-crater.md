@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /destinations/ijen-crater
 output_date: 2026-05-16

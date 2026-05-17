@@ -1,0 +1,15 @@
+{
+  "name": "jvto-magma-feed",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Server-side MAGMA Indonesia collector, JVTO advisory API, and MCP tool endpoint.",
+  "scripts": {
+    "start": "node src/server.js",
+    "collect": "node src/collect.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
