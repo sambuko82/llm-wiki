@@ -1,155 +1,106 @@
-﻿---
+---
 profile: website-copy
-page: /destinations/mount-bromo
-output_date: 2026-05-17
+output_date: 2026-05-18
 status: draft
-sources: [mount-bromo, packages-overview, ssot-v6, ops/volcano-status]
-content_source: DB
-type: data-structure-spec
+sources: [mount-bromo, copy-bank, brand-voice, packages-overview, operational-facts]
+verification: PASS
+note: Refreshed 2026-05-18 — Level II Waspada status, 1km crater exclusion zone. Standard Bromo tour unaffected.
 ---
 
-# Page Data Structure: /destinations/mount-bromo
+# Mount Bromo — East Java's Most Iconic Volcano
 
-> Data fetched from DB at runtime. This file defines display schema only.
-
-## Section Order
-
-1. **Alert Status Banner** (conditional — render when Level II+)
-2. Hero
-3. Quick Facts
-4. Penanjakan Sunrise
-5. Sea of Sand
-6. Crater Walk
-7. BBKSDA Clearance + Bromo 4WD Jeep Included
-8. Closure & Plan B
-9. Packages That Include This Destination
-10. CTA
+**Meta description:**
+Private Bromo sunrise tours from Surabaya. Penanjakan viewpoint, sea-of-sand 4WD jeep, overnight option. Tourist Police-led. Licensed operator NIB 1102230032918. From IDR 1,550,000/person.
 
 ---
 
-## Section Definitions
+## Hero
 
-### Alert Status Banner
+**Headline:**
+The Sea of Sand, the Smoking Crater, the Sunrise That Justifies a 03:00 Start.
 
-**Condition**: Render only when `destinations.alert_level >= 2` (Level II Waspada or above)  
-**Current state (2026-05-16)**: ACTIVE — Level II Waspada
-
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Alert level label | `destinations.alert_level_label` | e.g. "Level II — Waspada (Elevated)" | Yes — Level II+ only |
-| Exclusion zone summary | `destinations.exclusion_zone_copy` | Plain text: "1 km crater exclusion zone active — crater rim approach restricted" | Yes |
-| What is open | `destinations.open_areas_copy` | Plain text: "Penanjakan sunrise viewpoint and Sea of Sand are not affected" | Yes |
-| Plan-B note | `destinations.plan_b_active_copy` | Plain text: "JVTO has activated Plan-B for crater rim segments — your guide will confirm the adjusted itinerary before arrival" | Yes |
-| MAGMA source link | `destinations.magma_source_url` | Text link: "Official MAGMA Indonesia report" → magma.esdm.go.id | Yes |
-| As-of date | `destinations.status_as_of_date` | "As of YYYY-MM-DD" | Yes |
-
-Display as: yellow/amber full-width banner at top of page, above hero.
+**Credibility sentence:**
+JVTO holds BBKSDA national-park operator clearance and a POLPAR licence issued to a serving Tourist Police officer — every piece of documentation is publicly verifiable before you pay.
 
 ---
 
-### Hero
+## Destination Overview
 
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Destination name | `destinations.name` | H1 heading | No |
-| Tagline | `destinations.tagline` | Subtitle/deck text below H1 | No |
-| Hero image | `destinations.hero_image_url` | Full-width background image, lazy-loaded | No |
-| Hero image alt text | `destinations.hero_image_alt` | `alt` attribute on img element | No |
+Mount Bromo (2,329 m) sits inside the vast Tengger Caldera in Probolinggo Regency, East Java — one of the most recognisable volcanic landscapes on earth. The caldera floor is a ~10 km² expanse of grey volcanic sand that gives the "Sea of Sand" its name. Across this open plain, Bromo's crater vents a near-constant smoke plume while the higher rim of the caldera frames the horizon.
 
----
+The draw is three-layered: the **Penanjakan viewpoint** at 2,770 m delivers the signature pre-dawn panorama over the entire caldera system; the **4WD jeep traverse** across the sea of sand is not an access road but the experience itself — a 20-minute crossing through volcanic silence; and the **crater approach** offers a close view of an actively smoking vent. Most guests come for the sunrise. Many say the crater walk is the moment they remember.
 
-### Quick Facts
-
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Elevation | `destinations.elevation_m` | "2,329 m" — display with unit label | No |
-| Location | `destinations.location_text` | Plain text, e.g. "Tengger Caldera, Probolinggo Regency, East Java" | No |
-| National park | `destinations.national_park_name` | Plain text: "Bromo Tengger Semeru National Park" | No |
-| Best season | `destinations.best_season` | Plain text, e.g. "Dry season: April–October" | No |
-| Best time of day | `destinations.best_time_of_day` | Plain text, e.g. "Pre-dawn 03:00–05:00 for sunrise" | No |
-| Access mode | `destinations.access_mode` | Plain text, e.g. "4WD jeep from Cemoro Lawang — Penanjakan viewpoint; horse or walk to crater rim" | No |
-
-Display as: icon-labelled key-value list or compact table. 6 rows max.
+The optimal window is narrow: 03:00 departure from accommodation, on the road to Penanjakan before first light, in position for the colour transition at sunrise, then down to the caldera floor by 07:00. JVTO pre-arranges the 4WD jeep so guests arrive at the parking area and transfer directly — no on-the-day negotiation.
 
 ---
 
-### Penanjakan Sunrise
+## 2026 Volcanic Status — Important Notice for Current Travellers
 
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Section heading | Static: "Penanjakan Sunrise" | H2 | No |
-| Viewpoint elevation | `destinations.penanjakan_elevation_m` | "2,770 m" — inline within body copy | No |
-| Departure timing | `destinations.penanjakan_departure_time` | Plain text: "03:00 departure from accommodation — jeep pre-arranged" | No |
-| Description body | `destinations.penanjakan_description` | Rich text / paragraphs — covers panoramic view over caldera, sunrise light, sea of sand below | No |
-| Access note | Static or `destinations.penanjakan_access_note` | Note that Penanjakan viewpoint is reached by 4WD jeep on separate access road — not the crater-floor walking trail | No |
+**Current alert level: Level II — Waspada (Elevated), effective 2026-05-16.**
 
----
+PVMBG (Indonesian Centre for Volcanology and Geological Hazard Mitigation) raised Mount Bromo to Level II Waspada on 16 May 2026, establishing a 1 km exclusion zone around the crater rim. This means the trail to the crater lip is currently restricted.
 
-### Sea of Sand
+**What remains fully accessible:** The Penanjakan sunrise viewpoint (2,770 m) is outside the exclusion zone and operates as normal. The sea-of-sand jeep traverse and the Pura Luhur Poten temple area on the caldera floor are also outside the 1 km radius and remain open to visitors.
 
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Section heading | Static: "Sea of Sand (Pasir Berbisik)" | H2 | No |
-| Description body | `destinations.sea_of_sand_description` | Rich text / paragraphs — covers caldera floor extent (~10 km²), volcanic sand, 4WD jeep traverse as experience not logistics | No |
-| Temple note | `destinations.pura_luhur_poten_note` | Optional inline text: "Pura Luhur Poten — Hindu temple on the caldera floor, passed on all guided routes" | No |
+**What is currently restricted:** The final approach to the crater rim itself — the viewpoint directly over the active vent — falls within the 1 km exclusion zone. JVTO will not take guests to the crater lip while Level II is in effect.
+
+**Effect on JVTO's standard Bromo itinerary:** Minimal. The Penanjakan sunrise, sea-of-sand crossing, and caldera floor exploration are the primary experiences of a JVTO Bromo tour and are unaffected. JVTO's Plan-B framework is active: your guide contacts you before arrival to confirm the adjusted itinerary. No day is lost.
+
+Source: MAGMA Indonesia (magma.esdm.go.id). Status checked 2026-05-18.
 
 ---
 
-### Crater Walk
+## Why JVTO for Bromo
 
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Section heading | Static: "Crater Walk" | H2 | No |
-| Description body | `destinations.crater_walk_description` | Rich text / paragraphs — covers short walk or horse-ride from jeep drop-off to crater rim, active smoking vent visible from rim | No |
-| Horse option note | `destinations.horse_option_note` | Inline note: horse available for guests preferring not to walk the crater approach | No |
-| Level II restriction note | `destinations.crater_restriction_copy` | Amber inline callout: "⚠️ Level II active — crater rim approach restricted to 1 km exclusion zone. JVTO will not take guests to the crater lip while Level II is in effect. JVTO contacts you before arrival to confirm adjusted itinerary." | YES — render only when `alert_level >= 2` |
+JVTO's founder, Mr. Sam (Bripka Agung Sambuko), is an active officer of the Indonesian Tourist Police (Ditpamobvit East Java). No other licensed East Java tour operator has this structure at its head. The consequence for guests: route decisions are made by someone who answers to police protocol, not marketing metrics.
 
-**Current state**: Level II active from 2026-05-16. Restriction note MUST render.
+Every JVTO Bromo tour is 100% private. Your group receives its own vehicle, driver, and dedicated crew — no shared jeeps, no strangers, no compromise on timing. JVTO holds BBKSDA national-park operator authorisation: guests enter Bromo Tengger Semeru National Park without paperwork friction or queuing at a separate permit counter.
 
----
+All-inclusive means all-inclusive. Private transport, entrance fees, the Bromo 4WD jeep, accommodation and breakfast, mineral water, and a JVTO travel T-shirt are bundled. There are no surprise local payments. The written inclusions and exclusions are published on the booking page — read them before you pay.
 
-### BBKSDA Clearance + Bromo 4WD Jeep Included
-
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Section heading | Static: "What's Already Arranged" | H2 | No |
-| BBKSDA clearance note | `destinations.bbksda_clearance_copy` | Plain text: JVTO holds national-park operator authorization — guests enter without paperwork friction | No |
-| Jeep inclusion note | `destinations.jeep_inclusion_copy` | Plain text: Bromo 4WD jeep pre-arranged, no on-the-day haggling; max ~4 guests per jeep, additional jeeps for larger groups | No |
-| Credentials link | Static | Text link to /verify or /credentials page | No |
+NIB 1102230032918 is checkable at the OSS portal. POLPAR, BBKSDA, and HPWKI credentials are listed on the credentials page. Trustpilot rating: 4.8/5 from 51 verified reviews.
 
 ---
 
-### Closure & Plan B
+## Bromo Tour Packages
 
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Section heading | Static: "If Bromo Closes" | H2 | YES — render only if `destinations.closure_plan_b_enabled = true` |
-| Closure SOP copy | `destinations.closure_plan_b_copy` | Plain text: describes alternative-route SOP — guests briefed in advance, no day lost | YES — same condition |
-| Policy link | Static | Text link to /policy or /travel-guide/weather-and-closures page | YES — same condition |
+All packages depart from Surabaya unless stated. Pricing is per-person; lower rates apply to larger groups.
 
-Condition logic: `IF destinations.alert_level >= 2 THEN render section ELSE skip`
+**1 Day Bromo Midnight Experience** (`bromo-1d1n`)
+Midnight departure, Penanjakan sunrise, sea-of-sand jeep, crater area, return to Surabaya same day.
+From IDR 1,000,000/person (11+ pax) · IDR 1,550,000/person (2 pax)
 
-**Current state (2026-05-16)**: RENDER — Level II Waspada is active. This section must display on the live page.
+**2 Day Bromo Sunrise Adventure** (`bromo-2d1n`)
+Overnight in Cemoro Lawang, extended caldera time, milky-way stargazing on clear nights (weather permitting).
+Pricing available on the package page.
 
-Implementation note: `closure_plan_b_enabled` may be used as a manual override flag; however, triggering on `alert_level >= 2` (sourced from ops/volcano-status) is preferred as it ties directly to MAGMA data rather than a manual toggle.
-
----
-
-### Packages That Include This Destination
-
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Package list | `packages WHERE destinations_array CONTAINS 'mount-bromo'` | Grid of package cards | No — if 0 results show fallback |
-| Package card: name | `packages.name` | Plain text link | — |
-| Package card: duration | `packages.duration_label` | Badge or tag, e.g. "2D1N" | — |
-| Package card: origin | `packages.origin_city` | Plain text, e.g. "Surabaya" or "Bali" | — |
-| Package card: price-from | `packages.price_from_idr` | "From IDR X,XXX,XXX/person" — Rupiah only, comma thousand separators | — |
+**Multi-destination packages (Bromo + Ijen and/or Madakaripura)**
+JVTO offers eleven additional packages combining Bromo with Kawah Ijen, Madakaripura Waterfall, Tumpak Sewu, and Bali transfer — ranging from 3D2N to 6D5N. See the full package list for pricing by group size.
 
 ---
 
-### CTA
+## Practical Information
 
-| Field | DB source hint | Display format | Conditional? |
-|---|---|---|---|
-| Primary CTA | Static | Button: "View Bromo Packages" → links to filtered /tours?destination=mount-bromo | No |
-| Secondary CTA | Static | Text link: "Contact us on WhatsApp" → `https://wa.me/6282244788833` | No |
+**Best season:** Dry season, April–October. Clear skies and firm volcanic sand. Wet season brings mist and muddy access roads — sunrise views may be obstructed.
+
+**Temperature at Penanjakan (pre-dawn):** 5–15°C (41–59°F). Warm layers are required — wind chill at the viewpoint is significant regardless of daytime temperature at lower elevation.
+
+**Travel time from Surabaya:** Approximately 3 hours to Cemoro Lawang. Standard departure from Surabaya is around midnight to reach Penanjakan before first light.
+
+**Physical requirements:** The crater approach (currently restricted under Level II Waspada) involves a short walk or optional horse ride on uneven volcanic terrain. The Penanjakan viewpoint and sea-of-sand jeep portion have no significant physical demands beyond normal mobility.
+
+**What's included on all Bromo-inclusive JVTO packages:**
+Private transport (AC vehicle, fuel, tolls, parking) · Dedicated driver and guide · BBKSDA national-park entrance fees · Bromo 4WD private jeep · Accommodation and breakfast (overnight packages) · Mineral water (daily) · JVTO travel T-shirt
+
+**What's not included:** International or domestic flights · Gratuities (guest discretion) · Horse riding at the crater (optional, arranged on-site, extra cost) · Personal expenses
+
+---
+
+## Book a Bromo Tour
+
+Private Bromo tours depart year-round. Availability is confirmed directly via WhatsApp.
+
+WhatsApp: +62 822-4478-8833
+Email: hello@javavolcano-touroperator.com
+
+Inquiry process: message with your dates, group size, and preferred package. JVTO confirms availability and sends a price quotation based on your group size. A 20% deposit secures the booking.
