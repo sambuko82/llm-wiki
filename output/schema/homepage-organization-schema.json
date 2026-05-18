@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["TravelAgency", "LocalBusiness"],
+  "name": "Java Volcano Tour Operator",
+  "alternateName": "JVTO",
+  "legalName": "PT Java Volcano Rendezvous",
+  "url": "https://javavolcano-touroperator.com",
+  "logo": "https://javavolcano-touroperator.com/assets/img/jvto-color.png",
+  "image": "https://javavolcano-touroperator.com/legal/office-photo.jpg",
+  "telephone": "+6282244788833",
+  "email": "hello@javavolcano-touroperator.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Khairil Anwar No.102 A, Badean",
+    "addressLocality": "Bondowoso",
+    "addressRegion": "Jawa Timur",
+    "postalCode": "68214",
+    "addressCountry": "ID"
+  },
+  "hasMap": "https://www.google.com/maps?cid=1266403973589689021",
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "name": "NIB",
+      "description": "Nomor Induk Berusaha — Indonesian business registration (OSS-verifiable)",
+      "value": "1102230032918",
+      "url": "https://oss.go.id"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HPWKI",
+      "description": "Himpunan Pelaku Wisata Khusus Ijen — state-recognized Ijen specialist guide association (AHU-registered); membership requires BBKSDA-supervised volcanic safety training",
+      "value": "AHU-0001072.AH.01.07.TAHUN 2024",
+      "url": "https://ahu.go.id/sabh/perkumpulan/qrcode/?kode=NjAyNDAxMjczNTEwMTM2MV8wXzA3IEZlYnJ1YXJpIDIwMjRfMjcgSmFudWFyeSAyMDI0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISIC",
+      "description": "International Student Identity Card — UNESCO-endorsed student discount provider",
+      "value": "259268",
+      "url": "https://www.isic.org/discounts/?providerId=259268"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "164",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Surabaya" },
+    { "@type": "City", "name": "Bondowoso" },
+    { "@type": "AdministrativeArea", "name": "East Java", "containedInPlace": { "@type": "Country", "name": "Indonesia" } }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/javavolcanotours/",
+    "https://www.instagram.com/javavolcanotouroperator/",
+    "https://twitter.com/jvto_tours",
+    "https://www.trustpilot.com/review/javavolcano-touroperator.com",
+    "https://www.tripadvisor.com/Attraction_Review-g297715-d19983165-Reviews-Java_Volcano_Tour_Operator-Surabaya_East_Java_Java.html",
+    "https://www.google.com/maps?cid=1266403973589689021",
+    "https://www.isic.org/discounts/?providerId=259268",
+    "https://www.indecon.id/spotlight-networks/java-volcano-tour-operator"
+  ]
+}

@@ -45,7 +45,12 @@
       "Read(//c/Users/JAVA VOLCANO/.claude/**)",
       "Read(//c/Users/JAVA VOLCANO/.claude/plugins/**)",
       "Skill(seo-live-audit)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Skill(skill-creator:skill-creator)",
+      "Bash(Get-ChildItem -Path \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\" -Recurse -Filter \"output*\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -First 20)",
+      "Skill(jvto-verified-output)",
+      "Skill(caveman:caveman-commit)"
     ]
   }
 }

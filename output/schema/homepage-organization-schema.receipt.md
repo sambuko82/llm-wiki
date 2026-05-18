@@ -1,0 +1,33 @@
+---
+output_date: 2026-05-18
+schema_file: homepage-organization-schema.json
+profile: schema (Organization + TravelAgency)
+---
+
+# Verification Receipt — homepage-organization-schema.json
+
+| Claim | Value used | SSOT source | Last verified | Drift risk |
+|---|---|---|---|---|
+| `logo` | `https://javavolcano-touroperator.com/assets/img/jvto-color.png` | trust-signals.md:116 (ssot-image-asset-map) | 2026-05-18 | Low |
+| `ratingValue` (Organization) | `4.8` | trust-signals.md:114 §Schema Canonical Values | 2026-05-09 | Medium |
+| `reviewCount` (cross-platform) | `164` (51 TP + 92 Google + 21 TA) | trust-signals.md:115 §Schema Canonical Values | 2026-05-09 | **High** |
+| `telephone` | `+6282244788833` | trust-signals.md:117 | — | Low |
+| `email` | `hello@javavolcano-touroperator.com` | trust-signals.md:118 | — | Low |
+| `streetAddress` | `Jl. Khairil Anwar No.102 A, Badean` | trust-signals.md:119 | — | Low |
+| `postalCode` | `68214` | trust-signals.md:121 | — | None |
+| NIB identifier | `1102230032918` | trust-signals.md:122 | — | None |
+| HPWKI identifier | `AHU-0001072.AH.01.07.TAHUN 2024` | trust-signals.md:123 | — | Low |
+| ISIC identifier | `259268` | trust-signals.md:124 | — | Low |
+| `sameAs` (8 URLs) | All confirmed Live ✅ | trust-signals.md §Social Media Profiles | 2026-05-09 | Low |
+
+## Drift status
+
+- `reviewCount=164` last verified **2026-05-09** (9 days ago) — within 30-day window. ✓
+- No stale flags triggered.
+- Next recommended live check: before **2026-06-09**.
+
+## Omissions (not invented)
+
+- `foundingDate` — known contradiction in wiki (2016 AHU vs 2023 TDUP). Omitted pending resolution in [[wiki/overview.md]].
+- `priceRange` — not verified from packages-full-pricing.md in this pass. Add separately if needed.
+- Klook / Booking.com `sameAs` entries — marked ⚠️ Unverified in trust-signals.md. Excluded.
