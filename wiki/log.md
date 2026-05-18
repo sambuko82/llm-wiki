@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-18] verify | Trustpilot live scrape — 4.8/51 confirmed
+
+Pages updated: [[reviews/trustpilot-compilation]]. Key additions: live firecrawl scrape confirmed 4.8/51 unchanged. Added rating distribution (94% 5-star, 6% 4-star, 0% other). Added 13 new review excerpts from Jan–Sep 2025 and Jan–May 2026. Updated last_verified to 2026-05-18.
+
+---
+
 ## [2026-05-18] health-check | Monthly
 
 **Triggered**: Manual — "run monthly health check"
