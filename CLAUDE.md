@@ -135,7 +135,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Bulk compilation — 4 profiles (website-copy, social, aeo, faq) via 4 parallel agents. 8 new/refreshed output files, 0 voice-invariant violations. First-ever social profile output (10 posts). First per-destination AEO files (5 files, 53 Q&As). Bromo Level II Waspada reflected in faq/bromo + website/destinations/mount-bromo. faq/papuma new (⚠ pricing unverified — check packages-full-pricing.md before publishing).
+**Last completed:** Repo hygiene pass — MAGMA feed removal cleanup. Removed magma-report ingestion profile, fixed 4 downstream wiki refs, added stale flags to 3 output files, fixed dead volcano-status.md ref in jvto-verified-output skill. Committed dirty files. Open Gaps updated. System internally consistent.
 **Completed date:** 2026-05-18
 **Next task:** Verify faq/papuma.md pricing figures (IDR 5,100,000 / 4,900,000) against wiki/products/packages-full-pricing.md, then ingest full itinerary for taman-safari-prigen-bromo-madakaripura-3d2n into wiki/products/packages-itineraries.md and regenerate its stub schema.
 **Build status:** — no code changes
@@ -144,3 +144,6 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 - `taman-safari-prigen-bromo-madakaripura-3d2n` schema stub — needs full day-by-day itinerary ingested into `wiki/products/packages-itineraries.md`
 - `priceRange` not yet added to homepage Organization schema — needs packages-full-pricing.md pass
 - Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
+- `raw/routes.csv` + `raw/route_details.csv` — unclassified; verify overlap with db-export before ingesting
+- `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
+- TouristAttraction + BreadcrumbList schemas not yet generated (5 destination pages)

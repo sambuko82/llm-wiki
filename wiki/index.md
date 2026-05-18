@@ -96,6 +96,9 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - ~~`credentials/police-integration`~~ — **created 2026-05-16** → [[credentials/police-integration]]
 - ~~`credentials/press-coverage`~~ — **created 2026-05-16** → [[credentials/press-coverage]]
 - `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[content/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
+- `content/schema-templates` — Referenced in [[sources/seo-audit-2026-05]] §schema as "(to be created)". Would centralize JSON-LD templates per page type. Low urgency — [[ops/compilation-profiles]] §schema profile covers the same function operationally.
+- `bromo-ijen-status-today` page — Silo 3 SEO target (keyword #7). Needs replacement live source for PVMBG/BBKSDA status; MAGMA feed not active. See [[ops/seo-strategy]] §Silo 3.
+- `raw/routes.csv` + `raw/route_details.csv` — Unclassified DB exports in raw/. May overlap with [[sources/db-export-2026-05]] itinerary_days data. Review before ingesting as separate source.
 
 ## Lookup Conventions
 

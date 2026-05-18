@@ -11,6 +11,38 @@ sources: []
 
 ---
 
+## [2026-05-18] cleanup | MAGMA removal + repo hygiene pass
+
+**Trigger**: MAGMA feed permanently removed. Full repo cleanup to remove active workflow dependencies.
+
+**Files changed (9)**:
+- [[ops/ingestion-profiles]] — Removed `magma-report` profile (6 profiles remain: web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
+- [[index]] — Removed `magma-report` from ingestion-profiles description; added 4 Open Gaps entries (schema-templates, bromo-ijen-status-today, CSV files)
+- [[ops/seo-strategy]] — Replaced 2 MAGMA-as-source refs: `bromo-ijen-status-today` now noted as "needs replacement live source"
+- [[sources/seo-audit-2026-05]] — Same replacement (1 ref)
+- `output/faq/bromo.md` — Added top-level `[stale?]` warning for Level II Waspada data
+- `output/aeo/bromo.md` — Added `[stale?]` markers on 2 status Q&A blocks
+- `output/website/destinations/mount-bromo.md` — Converted alert section to conditional block; removed "Source: MAGMA Indonesia" attribution
+- `.claude/settings.local.json` — Added 2 allowlist entries (committed separately)
+- `output/website/tours/surabaya/ijen-2d1n.md` — BOM removal (committed separately)
+
+**Skill updated (outside repo)**:
+- `.claude/skills/jvto-verified-output/SKILL.md` — Volcano row now points to `destinations/*.md` instead of deleted `wiki/ops/volcano-status.md`
+
+**Dead references confirmed resolved**:
+- `[[ops/volcano-status]]` referenced in log entries below — that page was deleted in prior commit `a416d86`. Log entries are historical (append-only); dead wikilinks in log are acceptable.
+- `magma-report` profile — removed from all active workflow docs
+
+**Not changed (intentional)**:
+- Schema JSON `"JVTO monitors MAGMA Indonesia / PVMBG"` — factual operational claim, NOT a workflow dependency. Kept.
+- `output/INDEX.md` line 182 stale-resolved note — harmless historical marker. Kept.
+
+**Raw files needs-review**:
+- `raw/routes.csv` + `raw/route_details.csv` — unclassified; may overlap with db-export-2026-05. Added to Open Gaps.
+- GPX files — already integrated inline in destination pages. No source pages required.
+
+---
+
 ## [2026-05-18] output | bulk compilation — 4 profiles, all missing gaps filled
 
 Profiles: website-copy, social, aeo, faq. Parallel 4-agent run. All files pass voice-invariant verification (0 violations).
