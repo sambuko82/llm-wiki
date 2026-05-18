@@ -101,7 +101,7 @@ NEW: /destinations/cemoro-lawang (Bromo village)
 | `bbksda-regulations-ijen` | [[credentials/medical-screening]] + [[sources/bbksda-pelatihan-pemandu-2024]] | ✅ Generate output |
 | `ijen-gas-mask-equipment` | [[content/faq-master]] Q14 + [[products/packages-overview]] | ✅ Generate output |
 | `permit-requirements-east-java` | [[credentials/legal-licenses]] (partial) | ⚠️ Needs more permit detail |
-| `bromo-ijen-status-today` | [[ops/volcano-status]] + MAGMA reports | ✅ Generate output — update weekly |
+| `bromo-ijen-status-today` | [[destinations/mount-bromo]] + [[destinations/kawah-ijen]] | ⚠️ Needs live MAGMA source — generate when fresh data available |
 | `yadnya-kasada-2026` | ❌ No source | Ingest needed |
 | `sulfur-mining-cultural-guide` | [[destinations/kawah-ijen]] (brief) | ⚠️ Needs expansion |
 | `bbksda-regulations-bromo` | [[destinations/mount-bromo]] + [[credentials/legal-licenses]] | ⚠️ Partial — BBKSDA Bromo detail thin |
@@ -203,4 +203,4 @@ If QW-1 through QW-14 are executed in Weeks 1–2:
 
 ## Related Ops Pages
 
--> [[ops/competitors]] | -> [[ops/redirect-map]] | -> [[ops/volcano-status]] | -> [[ops/compilation-profiles]] | -> [[sources/seo-audit-2026-05]]
+-> [[ops/competitors]] | -> [[ops/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[sources/seo-audit-2026-05]]

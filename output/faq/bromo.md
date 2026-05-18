@@ -6,14 +6,6 @@ status: draft
 sources: [faq-master, destinations/mount-bromo, content/operational-facts, products/packages-overview, products/packages-full-pricing, products/packages-itineraries, credentials/trust-signals, credentials/legal-licenses]
 ---
 
-# Mount Bromo — FAQ
-
-> **Current Alert Status — 2026-05-16**: Mount Bromo is at **Level II Waspada (Elevated)**. Official PVMBG restriction: do not enter within **1 km of the active crater**. The Penanjakan sunrise viewpoint (~5 km from the crater) is **not affected**. The crater rim staircase is within the exclusion zone — JVTO will not take guests to the crater lip while Level II is active. Plan-B segments apply for affected itinerary portions. Source: MAGMA Indonesia.
-
-*AEO-compatible. All answers are self-contained and directly citable.*
-
----
-
 ## A. About Mount Bromo
 
 ### What is Mount Bromo?

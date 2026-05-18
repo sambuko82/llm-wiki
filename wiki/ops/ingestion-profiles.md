@@ -104,7 +104,7 @@ Select the profile matching your source. The profile supplies type-specific extr
 - Source URL with signature parameter (for auditability)
 - VONA code if present (aviation alert level)
 
-**Wiki pages to update:** `wiki/ops/volcano-status.md` (primary tracker — always update), `destinations/[volcano]` (update `## Current Status` section), `content/operational-facts` (alert level fields)
+**Wiki pages to update:** `destinations/[volcano]` (add or update `## Current Status` section), `content/operational-facts` (alert level fields)
 
 **Do NOT extract:** Raw hourly seismic tables, individual tremor timestamps, or amplitude-by-minute data — wiki holds operational summaries only.
 

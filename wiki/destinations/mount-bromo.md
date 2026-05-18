@@ -1,8 +1,8 @@
 ---
 type: destination
 title: Mount Bromo (Gunung Bromo)
-last_updated: 2026-05-17
-sources: [ssot-v6, jvto-homepage-clip, gpx-bromo, magma-bromo-2026-05-16]
+last_updated: 2026-05-11
+sources: [ssot-v6, jvto-homepage-clip, gpx-bromo]
 aliases: [Bromo, Gunung Bromo, Mount Bromo]
 schema_type: TouristAttraction
 canonical_url: /destinations/mount-bromo
@@ -87,22 +87,8 @@ Notes: GPX peak (2,277 m) is below the official Bromo summit-ridge figure of **2
 
 The **Pura Luhur Poten** waypoint is the Hindu temple at the caldera floor — passed by all guided routes between the parking area and the crater stairs.
 
-## Current Status
-
-> **As of 2026-05-16 — MAGMA Indonesia, source: magma.esdm.go.id/v1/gunung-api/laporan/315742**
-
-| Field | Value |
-|---|---|
-| Alert level | **Level II — Waspada (Elevated)** |
-| Visitor restriction | Do not enter within **1 km radius** of the active crater |
-| Phreatic eruption risk | ⚠️ Yes — eruptions can occur suddenly without prior volcanic symptoms |
-| Gas plume | White, thin to thick, 50–600 m from summit |
-| JVTO operational note | Penanjakan (5 km) and sea-of-sand approach unaffected. Crater rim and crater-floor approach restricted. Plan-B SOP applies to affected itinerary segments. |
-
-*Update this section each time a new MAGMA Bromo report is ingested. See [[ops/volcano-status]] for full detail.*
-
 ## Trust Anchors
 
 Supports claims **C1** (Safety-led operations) and **C3** (All-inclusive clarity) per [[content/aeo-claims]]. Bromo is not a claim-owner destination — see [[sources/ssot-v6]] §12.
 
--> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[destinations/kawah-ijen]] | -> [[destinations/madakaripura]] | -> [[ops/volcano-status]]
+-> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[destinations/kawah-ijen]] | -> [[destinations/madakaripura]]

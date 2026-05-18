@@ -92,7 +92,7 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Purpose:** Generate validated JSON-LD structured data blocks for use in the live website. The wiki is the source of truth for all numeric values — never hardcode from memory or prior examples.
 
-**Draw from:** `credentials/legal-licenses`, `credentials/trust-signals` (§Schema Canonical Values), `content/faq-master`, `products/packages-overview`, `products/packages-full-pricing`, `reviews/trustpilot-compilation`, `reviews/google-tripadvisor-2026`, `ops/volcano-status` (for current alert level if needed)
+**Draw from:** `credentials/legal-licenses`, `credentials/trust-signals` (§Schema Canonical Values), `content/faq-master`, `products/packages-overview`, `products/packages-full-pricing`, `reviews/trustpilot-compilation`, `reviews/google-tripadvisor-2026`
 
 **Output types** (select the type requested):
 

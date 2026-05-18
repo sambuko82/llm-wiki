@@ -1,8 +1,8 @@
 ---
 type: destination
 title: Kawah Ijen (Ijen Crater)
-last_updated: 2026-05-17
-sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, magma-ijen-2026-05-16]
+last_updated: 2026-05-11
+sources: [ssot-v6, jvto-homepage-clip, gpx-ijen]
 aliases: [Ijen, Ijen Crater, Kawah Ijen]
 schema_type: TouristAttraction
 canonical_url: /destinations/ijen-crater
@@ -103,23 +103,8 @@ Community-recorded trail data — not an official JVTO route trace. Useful for g
 
 Notes: GPX peak elevation (2,380 m) is slightly under the official crater-rim figure of **2,386 m** — recorded track did not quite reach the literal high point. The 797 m cumulative ascent exceeds the ~500 m rim-only gain because the trace includes the optional crater-floor descent toward the blue-fire viewing area.
 
-## Current Status
-
-> **As of 2026-05-16 — MAGMA Indonesia, source: magma.esdm.go.id/v1/gunung-api/laporan/315786**
-
-| Field | Value |
-|---|---|
-| Alert level | **Level I — Normal** |
-| Visitor restriction | None (500 m overnight/camping restriction applies at all times) |
-| Gas advisory | Beware toxic gas around crater and CO2 flow along Banyupait–Banyuputih river (permanent baseline) |
-| Gas plume | White thin, 50–100 m from summit |
-| Air temp | 22–26°C, humidity 62–77% |
-| JVTO operational note | Standard operations. BBKSDA health-screening coordination applies per SE.1658/KSA.9/2024 (regulatory, not alert-driven). Gas masks included. |
-
-*Update this section each time a new MAGMA Ijen report is ingested. See [[ops/volcano-status]] for full detail.*
-
 ## Trust Anchors
 
 Owns claim **C4** (Ijen Health Screening) and contributes to **C1** (Safety-led operations) per [[content/aeo-claims]] and [[sources/ssot-v6]] §12.
 
--> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[content/aeo-claims]] | -> [[ops/volcano-status]]
+-> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[content/aeo-claims]]
