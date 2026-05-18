@@ -66,7 +66,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 ## Reviews
 
-- [[reviews/trustpilot-compilation]] — 51 reviews, 4.8/5 (verified 2026-05-09), guide/driver name index, verbatim excerpts
+- [[reviews/trustpilot-compilation]] — 51 reviews, 4.8/5 (verified 2026-05-18), guide/driver name index, verbatim excerpts, rating distribution (94% 5-star)
+- [[reviews/trustpilot-all-reviews]] — **Full structured catalog**: all 49 Trustpilot reviews with reviewer name, country, date, stars, verbatim body, inferred package, and crew tags. Live-scraped 2026-05-18.
 - [[reviews/google-tripadvisor-2026]] — Google Maps 92 reviews 4.90/5 + TripAdvisor 21 reviews 4.95/5; crew mentions, themes mapped to C1–C7
 - [[reviews/review-patterns]] — Themes extracted: 5 SSOT-canonical + 10 derived patterns for content/AEO use
 

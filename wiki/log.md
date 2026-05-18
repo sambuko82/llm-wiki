@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-18] ingest | Trustpilot full structured catalog — all 49 reviews
+
+Pages updated: [[reviews/trustpilot-all-reviews]] (new), [[reviews/trustpilot-compilation]] (cross-ref added), [[index]] (entry added). Key additions: 49 reviews fully structured with reviewer name, country flag, date, stars, verbatim body, inferred package, guide tags, driver tags. Source: live firecrawl scrape across 3 pages. 2 reviews platform-side without text body not captured. Country breakdown: ID 24, SG 11, US 3, DE 3, GB 2, HK 2, MY 1, AU 1, TH 1, IN 1, PL 1.
+
+---
+
 ## [2026-05-18] verify | Trustpilot live scrape — 4.8/51 confirmed
 
 Pages updated: [[reviews/trustpilot-compilation]]. Key additions: live firecrawl scrape confirmed 4.8/51 unchanged. Added rating distribution (94% 5-star, 6% 4-star, 0% other). Added 13 new review excerpts from Jan–Sep 2025 and Jan–May 2026. Updated last_verified to 2026-05-18.
