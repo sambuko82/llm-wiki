@@ -8,7 +8,8 @@ profile: schema (Organization + TravelAgency)
 
 | Claim | Value used | SSOT source | Last verified | Drift risk |
 |---|---|---|---|---|
-| `logo` | `https://javavolcano-touroperator.com/assets/img/jvto-color.png` | trust-signals.md:116 (ssot-image-asset-map) | 2026-05-18 | Low |
+| `logo` | `https://javavolcano-touroperator.com/assets/img/jvto-color.png` | trust-signals.md (ssot-image-asset-map) | 2026-05-18 | Low |
+| `foundingDate` | `2016` (PT incorporation, AHU registry) | legal-licenses.md §Business Registration | — | None |
 | `ratingValue` (Organization) | `4.8` | trust-signals.md:114 §Schema Canonical Values | 2026-05-18 | Medium |
 | `reviewCount` (cross-platform) | `164` (51 TP + 92 Google + 21 TA) | trust-signals.md:115 §Schema Canonical Values | 2026-05-18 | **High** |
 | `telephone` | `+6282244788833` | trust-signals.md:117 | — | Low |
@@ -28,6 +29,6 @@ profile: schema (Organization + TravelAgency)
 
 ## Omissions (not invented)
 
-- `foundingDate` — known contradiction in wiki (2016 AHU vs 2023 TDUP). Omitted pending resolution in [[wiki/overview.md]].
+- `foundingDate` — resolved 2026-05-18: `2016` = PT incorporation (AHU). `2015` = guesthouse era. `2023` = TDUP license. Schema uses 2016 (legal entity founding).
 - `priceRange` — not verified from packages-full-pricing.md in this pass. Add separately if needed.
 - Klook / Booking.com `sameAs` entries — marked ⚠️ Unverified in trust-signals.md. Excluded.

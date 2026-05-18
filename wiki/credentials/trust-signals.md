@@ -114,6 +114,7 @@ These URLs are the canonical social profile endpoints. Include in Organization s
 | `ratingValue` (cross-platform, for Organization schema) | `4.8` (conservative — use lowest single-platform value) | [[reviews/trustpilot-compilation]] | Medium |
 | `reviewCount` (cross-platform total, for Organization) | `164` (51 TP + 92 Google + 21 TA, as of 2026-05-18) | [[reviews/trustpilot-compilation]] + [[reviews/google-tripadvisor-2026]] | **High — drifts with every new review** |
 | `logo` | `https://javavolcano-touroperator.com/assets/img/jvto-color.png` | [[sources/ssot-image-asset-map]] | Low |
+| `foundingDate` | `2016` (PT incorporation per AHU registry) | [[credentials/legal-licenses]] §Business Registration | None |
 | `telephone` | `+6282244788833` | [[credentials/legal-licenses]] | Low |
 | `email` | `hello@javavolcano-touroperator.com` | [[credentials/legal-licenses]] | Low |
 | `streetAddress` | `Jl. Khairil Anwar No.102 A, Badean` | [[credentials/legal-licenses]] | Low |

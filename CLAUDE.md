@@ -12,7 +12,7 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
 |-------|-------|
 | Full legal name | PT Java Volcano Rendezvous |
 | Brand name | Java Volcano Tour Operator (JVTO) |
-| Founded | 2015 (guesthouse era), PT formal 2023 |
+| Founded | 2015 (guesthouse era) · PT incorporated 2016-01-01 (AHU) · TDUP issued 2023-02-11 |
 | Founder | Agung "Mr. Sam" Sambuko — active Tourist Police officer |
 | Products | Private tours: Kawah Ijen, Mount Bromo, Tumpak Sewu, Madakaripura |
 | Website | javavolcano-touroperator.com |
@@ -141,5 +141,5 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 **Build status:** — no code changes
 **Open items:**
 - `magma-feed/` permanently removed (local + remote, confirmed 2026-05-18)
-- `foundingDate` contradiction in wiki (2016 AHU vs 2023 TDUP) — unresolved, schema omits it pending [[wiki/overview.md]] clarification
+- `foundingDate` resolved: `2016` (PT incorporation, AHU) · `2015` (guesthouse) · `2023` (TDUP). Schema uses `2016`. CLAUDE.md corrected.
 - `priceRange` not yet added to homepage schema — needs packages-full-pricing.md pass
