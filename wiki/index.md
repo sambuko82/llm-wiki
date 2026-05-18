@@ -81,7 +81,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 ## Ops
 
-- [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, magma-report, seo-audit)
+- [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
 - [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
 - [[ops/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items). Source: 2026-05-17 audit.

@@ -89,29 +89,6 @@ Select the profile matching your source. The profile supplies type-specific extr
 
 ---
 
-## magma-report
-
-**What it is:** Daily volcanic activity report from MAGMA Indonesia (magma.esdm.go.id) — official ESDM government volcano monitoring service. One report per volcano per 24-hour period.
-
-**Raw slug:** `magma-[volcano]-YYYY-MM-DD.md` (e.g., `magma-bromo-2026-05-16.md`)
-
-**Extract:**
-- Alert level: Level I Normal / Level II Waspada / Level III Siaga / Level IV Awas
-- Report date and 24-hour period (WIB timezone)
-- Visual observation summary (gas/steam color, plume height, wind direction)
-- Seismic summary (quake types and count, tremor amplitude range)
-- Official recommendations verbatim (exclusion zones, visitor restrictions)
-- Source URL with signature parameter (for auditability)
-- VONA code if present (aviation alert level)
-
-**Wiki pages to update:** `destinations/[volcano]` (add or update `## Current Status` section), `content/operational-facts` (alert level fields)
-
-**Do NOT extract:** Raw hourly seismic tables, individual tremor timestamps, or amplitude-by-minute data — wiki holds operational summaries only.
-
-**Operational trigger rule:** If alert level is Level II or higher, flag all output/ files covering that volcano's crater-access details as `> [stale?] Bromo/Ijen alert level changed — verify crater access rules before publishing`.
-
----
-
 ## seo-audit
 
 **What it is:** Structured SEO audit document with keyword data, technical findings, competitor analysis, schema requirements, and action items.

@@ -99,7 +99,7 @@ Full silo + gap table: [[ops/seo-strategy]].
 
 ### Silo 3 (Regulatory + Safety — uncontested moat):
 - Most pages already have wiki source material
-- `bromo-ijen-status-today` needs a live MAGMA source before generating output
+- `bromo-ijen-status-today` needs a replacement live source — MAGMA feed not active; consider PVMBG/BBKSDA direct monitoring
 - `yadnya-kasada-2026` and `permit-requirements-east-java` still need source ingest
 
 ### Silo 4 (Pre-purchase planning):

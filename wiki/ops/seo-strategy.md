@@ -88,7 +88,7 @@ NEW: /destinations/cemoro-lawang (Bromo village)
 /travel-guide/bbksda-regulations-bromo (NEW)
 /travel-guide/ijen-gas-mask-equipment (NEW)
 /travel-guide/permit-requirements-east-java (NEW — partial source)
-/travel-guide/bromo-ijen-status-today (NEW — SOURCED via MAGMA reports)
+/travel-guide/bromo-ijen-status-today (NEW — needs replacement live source)
 /travel-guide/yadnya-kasada-2026 (NEW — needs ingest)
 /travel-guide/sulfur-mining-cultural-guide (NEW — partial source)
 ```
@@ -101,7 +101,7 @@ NEW: /destinations/cemoro-lawang (Bromo village)
 | `bbksda-regulations-ijen` | [[credentials/medical-screening]] + [[sources/bbksda-pelatihan-pemandu-2024]] | ✅ Generate output |
 | `ijen-gas-mask-equipment` | [[content/faq-master]] Q14 + [[products/packages-overview]] | ✅ Generate output |
 | `permit-requirements-east-java` | [[credentials/legal-licenses]] (partial) | ⚠️ Needs more permit detail |
-| `bromo-ijen-status-today` | [[destinations/mount-bromo]] + [[destinations/kawah-ijen]] | ⚠️ Needs live MAGMA source — generate when fresh data available |
+| `bromo-ijen-status-today` | [[destinations/mount-bromo]] + [[destinations/kawah-ijen]] | ⚠️ Needs replacement live source (MAGMA feed not active) |
 | `yadnya-kasada-2026` | ❌ No source | Ingest needed |
 | `sulfur-mining-cultural-guide` | [[destinations/kawah-ijen]] (brief) | ⚠️ Needs expansion |
 | `bbksda-regulations-bromo` | [[destinations/mount-bromo]] + [[credentials/legal-licenses]] | ⚠️ Partial — BBKSDA Bromo detail thin |
