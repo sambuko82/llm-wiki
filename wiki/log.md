@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-17
+last_updated: 2026-05-18
 sources: []
 ---
 
@@ -10,6 +10,31 @@ sources: []
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
 
 ---
+
+## [2026-05-18] output | bulk compilation — 4 profiles, all missing gaps filled
+
+Profiles: website-copy, social, aeo, faq. Parallel 4-agent run. All files pass voice-invariant verification (0 violations).
+
+**website-copy:**
+- `output/website/destinations/mount-bromo.md` refreshed with Level II Waspada framing (1km exclusion zone, Penanjakan unaffected). Sources: mount-bromo, copy-bank, brand-voice, packages-overview, operational-facts.
+
+**social (first output ever for this profile):**
+- `output/social/batch-2026-05-18.md` — 10 posts, 14 caption units. Topics: C1–C9 differentiators (police, medical screening, reviews, Ijen, Bromo, pricing, founding story, private tours, Tumpak Sewu, Madakaripura). Platforms: Instagram + Twitter/X. Sources: brand-voice, copy-bank, trustpilot-compilation, agung-sambuko, police-integration, medical-screening.
+
+**aeo (per-destination — first output for this sub-type):**
+- `output/aeo/ijen.md` — 12 Q&A blocks. 4E Ijen conditional: PASS.
+- `output/aeo/bromo.md` — 11 Q&A blocks. Level II Waspada reflected.
+- `output/aeo/tumpak-sewu.md` — 10 Q&A blocks.
+- `output/aeo/madakaripura.md` — 10 Q&A blocks.
+- `output/aeo/papuma.md` — 10 Q&A blocks.
+Sources: aeo-claims, faq-master, legal-licenses, trust-signals, destinations/*.
+
+**faq:**
+- `output/faq/papuma.md` new — 12 Q&As. ⚠ Pricing figures need verification vs packages-full-pricing.md before publishing.
+- `output/faq/bromo.md` refreshed — 20 Q&As (was 53 words stale). Level II Waspada dedicated Q&As added. Sources: faq-master, mount-bromo, operational-facts, packages-overview, brand-voice.
+
+Voice invariant verification: PASS across all 8 new/refreshed files (0 total violations).
+Output INDEX updated. Missing Outputs section resolved for AEO per-destination and Social profile.
 
 ## [2026-05-17] fix | stale output files — Level II Waspada update
 

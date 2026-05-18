@@ -21,6 +21,11 @@
 |---|---|---|---|---|
 | `aeo/why-jvto.md` | `/why-jvto` (AEO overlay) | 2026-05-16 | draft | aeo-claims C1–C9, faq-master, legal-licenses, trust-signals |
 | `aeo/policy-travel-guide.md` | `/policy` + `/travel-guide` (AEO overlay) | 2026-05-12 | draft | jvto-policy-pack-v6, jvto-travel-guide-en, faq-master |
+| `aeo/ijen.md` | `/destinations/ijen-crater` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, kawah-ijen |
+| `aeo/bromo.md` | `/destinations/mount-bromo` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, mount-bromo |
+| `aeo/tumpak-sewu.md` | `/destinations/tumpak-sewu-waterfall` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, tumpak-sewu |
+| `aeo/madakaripura.md` | `/destinations/madakaripura-waterfall` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, madakaripura |
+| `aeo/papuma.md` | `/destinations/papuma-beach` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, papuma-beach |
 
 ---
 
@@ -29,9 +34,10 @@
 | File | Website target | Output date | Status | Key sources |
 |---|---|---|---|---|
 | `faq/ijen.md` | `/travel-guide/faq` (Ijen section) | 2026-05-16 | draft | faq-master, kawah-ijen, dr-ahmad-irwandanu, packages-overview |
-| `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-12 | **stale** — Bromo Level II Waspada (2026-05-16): crater-access FAQ answers may not reflect 1km exclusion zone. Regenerate before publishing. | faq-master, mount-bromo, operational-facts, packages-overview |
+| `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-18 | draft | faq-master, mount-bromo, operational-facts, packages-overview |
 | `faq/tumpak-sewu.md` | `/travel-guide/faq` (Tumpak Sewu section) | 2026-05-12 | draft | faq-master, tumpak-sewu, packages-overview |
 | `faq/madakaripura.md` | `/travel-guide/faq` (Madakaripura section) | 2026-05-12 | draft | faq-master, madakaripura, packages-overview |
+| `faq/papuma.md` | `/travel-guide/faq` (Papuma section) | 2026-05-18 | draft ⚠ pricing unverified | faq-master, papuma-beach, packages-overview, brand-voice |
 
 ---
 
@@ -55,7 +61,7 @@
 |---|---|---|---|
 | `website/destinations/hub.md` | `/destinations` | 2026-05-12 | draft |
 | `website/destinations/ijen-crater.md` | `/destinations/ijen-crater` | 2026-05-16 | draft |
-| `website/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-12 | **stale** — Bromo Level II Waspada (2026-05-16): crater-access copy may not reflect 1km exclusion zone. Regenerate before publishing. |
+| `website/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-18 | draft |
 | `website/destinations/tumpak-sewu-waterfall.md` | `/destinations/tumpak-sewu-waterfall` | 2026-05-12 | draft |
 | `website/destinations/madakaripura-waterfall.md` | `/destinations/madakaripura-waterfall` | 2026-05-12 | draft |
 | `website/destinations/papuma-beach.md` | `/destinations/papuma-beach` | 2026-05-12 | draft |
@@ -153,18 +159,24 @@
 
 ---
 
+## Social Media Posts
+
+| File | Topics | Output date | Status |
+|---|---|---|---|
+| `social/batch-2026-05-18.md` | C1–C9 differentiators: police, medical screening, reviews, Ijen, Bromo, pricing, founding story, private tours, Tumpak Sewu, Madakaripura | 2026-05-18 | draft |
+
+---
+
 ## Missing Outputs (no file yet)
 
 Outputs not yet generated for these website pages / content formats:
 
 | Target | Notes |
 |---|---|
-| AEO blocks — per destination | No `aeo/ijen.md`, `aeo/bromo.md`, etc. — only sitewide AEO exists |
-| Social media posts | Format type not yet produced (Workflow 5 `social` profile) |
+| ~~AEO blocks — per destination~~ | **Resolved 2026-05-18** → `aeo/ijen.md`, `aeo/bromo.md`, `aeo/tumpak-sewu.md`, `aeo/madakaripura.md`, `aeo/papuma.md` |
+| ~~Social media posts~~ | **Resolved 2026-05-18** → `social/batch-2026-05-18.md` (10 posts, 14 caption units) |
 | Slide decks | Format type not yet produced (Workflow 5 `slide-deck` profile) |
-| `website/travel-guide/ijen-health-screening.md` wiki refresh | Source `credentials/medical-screening` created 2026-05-16 — output pre-dates this wiki page → **stale candidate** |
-| `website/verify-jvto/police-safety.md` wiki refresh | Source `credentials/police-integration` created 2026-05-16 → **stale candidate** |
-| `website/verify-jvto/press-recognition.md` wiki refresh | Source `credentials/press-coverage` created 2026-05-16 → **stale candidate** |
-| `website/why-jvto/our-team.md` wiki refresh | Source `people/crew-registry` updated 2026-05-16 (image assets added) → **stale candidate** |
+| `faq/papuma.md` pricing | ⚠ IDR figures need verification vs `packages-full-pricing.md` before publishing |
 
-> ~~**Stale candidates** (resolved 2026-05-16)~~: All 4 previously stale files have been refreshed with content from the new wiki credential pages.
+> ~~**Stale candidates** (resolved 2026-05-16)~~: All 4 previously stale files refreshed.
+> ~~**Stale candidates** (resolved 2026-05-18)~~: `faq/bromo.md`, `website/destinations/mount-bromo.md` refreshed with Level II Waspada content.
