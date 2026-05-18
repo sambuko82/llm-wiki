@@ -4,7 +4,7 @@ output_date: 2026-05-18
 status: draft
 sources: [mount-bromo, copy-bank, brand-voice, packages-overview, operational-facts]
 verification: PASS
-note: Refreshed 2026-05-18 — Level II Waspada status, 1km crater exclusion zone. Standard Bromo tour unaffected.
+note: Refreshed 2026-05-18. Alert status section (Level II Waspada, 2026-05-16) sourced from one-time MAGMA ingest — verify current PVMBG status before publishing.
 ---
 
 # Mount Bromo — East Java's Most Iconic Volcano
@@ -34,9 +34,11 @@ The optimal window is narrow: 03:00 departure from accommodation, on the road to
 
 ---
 
-## 2026 Volcanic Status — Important Notice for Current Travellers
+## Volcanic Status — Conditional Notice
 
-**Current alert level: Level II — Waspada (Elevated), effective 2026-05-16.**
+> [stale?] The alert-level content below was accurate as of 2026-05-16 (Level II Waspada). No active update feed exists. Verify current PVMBG/BBKSDA status before publishing this section. If Level I, remove this block or replace with the generic closure SOP text.
+
+**Current alert level: Level II — Waspada (Elevated), effective 2026-05-16 (verify before publishing).**
 
 PVMBG (Indonesian Centre for Volcanology and Geological Hazard Mitigation) raised Mount Bromo to Level II Waspada on 16 May 2026, establishing a 1 km exclusion zone around the crater rim. This means the trail to the crater lip is currently restricted.
 
@@ -45,8 +47,6 @@ PVMBG (Indonesian Centre for Volcanology and Geological Hazard Mitigation) raise
 **What is currently restricted:** The final approach to the crater rim itself — the viewpoint directly over the active vent — falls within the 1 km exclusion zone. JVTO will not take guests to the crater lip while Level II is in effect.
 
 **Effect on JVTO's standard Bromo itinerary:** Minimal. The Penanjakan sunrise, sea-of-sand crossing, and caldera floor exploration are the primary experiences of a JVTO Bromo tour and are unaffected. JVTO's Plan-B framework is active: your guide contacts you before arrival to confirm the adjusted itinerary. No day is lost.
-
-Source: MAGMA Indonesia (magma.esdm.go.id). Status checked 2026-05-18.
 
 ---
 

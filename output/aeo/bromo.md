@@ -16,6 +16,7 @@ Mount Bromo is an active stratovolcano at 2,329 m in the Tengger caldera, East J
 ---
 
 **Q: What is the current volcanic status at Mount Bromo?**
+> [stale?] Status data from 2026-05-16 MAGMA ingest — verify current PVMBG alert level before publishing.
 As of 2026-05-16, Mount Bromo is at Alert Level II (Waspada) with a 1 km exclusion zone around the crater. Penanjakan viewpoint and the caldera floor jeep traverse remain accessible. Guests are briefed on current access conditions before departure.
 
 ---
@@ -46,6 +47,7 @@ Yes. JVTO holds national-park operator authorization from BBKSDA for Bromo Tengg
 ---
 
 **Q: What is the Bromo exclusion zone and how does it affect the tour?**
+> [stale?] Status data from 2026-05-16 — verify current alert level before publishing.
 Mount Bromo is at Level II Waspada (alert) with a 1 km exclusion zone around the crater as of 2026-05-16. The Penanjakan sunrise viewpoint and sea-of-sand caldera floor remain accessible. JVTO follows all official BBKSDA instructions and activates Plan-B alternatives if access conditions change.
 
 ---
