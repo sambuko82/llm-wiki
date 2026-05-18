@@ -135,11 +135,11 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Built `jvto-verified-output` skill, generated + live-verified homepage Organization/TravelAgency JSON-LD schema, cleaned up gitignore debt.
+**Last completed:** Bulk-generated TouristTrip+FAQPage schemas for all 16 canonical tour pages (14 new via 5 parallel agents), resolved foundingDate contradiction, permanently removed magma-feed.
 **Completed date:** 2026-05-18
-**Next task:** Generate TouristTrip + AggregateRating schema for individual tour pages (use `jvto-verified-output` skill, schema profile).
+**Next task:** Ingest full itinerary for taman-safari-prigen-bromo-madakaripura-3d2n into wiki/products/packages-itineraries.md, then regenerate its stub schema.
 **Build status:** — no code changes
 **Open items:**
-- `magma-feed/` permanently removed (local + remote, confirmed 2026-05-18)
-- `foundingDate` resolved: `2016` (PT incorporation, AHU) · `2015` (guesthouse) · `2023` (TDUP). Schema uses `2016`. CLAUDE.md corrected.
-- `priceRange` not yet added to homepage schema — needs packages-full-pricing.md pass
+- `taman-safari-prigen-bromo-madakaripura-3d2n` schema stub — needs full day-by-day itinerary ingested into `wiki/products/packages-itineraries.md`
+- `priceRange` not yet added to homepage Organization schema — needs packages-full-pricing.md pass
+- Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
