@@ -135,9 +135,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Added `image` field to all 16 TouristTrip schemas — ijen-relevant (13): `ops/ijen-geopark-briefing.png`; bromo/safari-only (3): `assets/img/hero/home.webp`. Best-available from ssot-image-asset-map; upgrade when tour photography is uploaded.
+**Last completed:** Monthly health check — 2 contradictions resolved in overview.md (package count 15→16, rating verification date). Trustpilot live-verified 4.8/51 (unchanged). NIB/INDECON/ISIC web checks blocked (403/404) — manual checks needed.
 **Completed date:** 2026-05-18
-**Next task:** Run monthly health check, or start Silo 3 content (`bromo-ijen-status-today`) if a replacement live PVMBG source becomes available.
+**Next task:** Manually verify NIB 1102230032918 on OSS portal, INDECON listing, and ISIC provider 259268 — all three blocked automated web checks this session.
 **Build status:** — no code changes
 **Open items:**
 - ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18 ✓

@@ -78,18 +78,17 @@ See [[people/agung-sambuko]] for the full evidence chain. Full police integratio
 | [[destinations/madakaripura]] | tallest in Java; height under reconciliation | Probolinggo | no |
 | [[destinations/papuma-beach]] | sea-level | Jember | no (coastal supporting destination) |
 
-## Packages (15 total)
+## Packages (16 total)
 
-- **11 from Surabaya** + **4 from Bali origin**
+- **12 from Surabaya** + **4 from Bali origin** = **16 live tour pages**
+- Surabaya 12: 11 standard + 1 specialty (`taman-safari-prigen-bromo-madakaripura-3d2n`). Confirmed by [[sources/sitemap-2026-05]] (resolved 2026-05-12).
 - Durations: 1D1N → 6D5N
 - All packages: private vehicle, dedicated guide & driver, full inclusions per [[products/packages-overview]]
 - 12 packages include Ijen and therefore require health-screening coordination per [[credentials/medical-screening]] (protocol, doctor, facilities) when BBKSDA SE.1658/KSA.9/2024 thresholds apply
 
-> Contradiction within SSOT: §meta records `canonical_package_count: 15`. §9_1 homepage block and §13 AI surfaces reference `16 (12 from Surabaya · 4 from Bali)`. The Surabaya count discrepancy (11 vs 12) is unresolved in SSOT. Treat **15** as canonical (matches §6_1 package_registry table) and flag any "16" usage for review.
-
 See [[products/packages-overview]] for full list.
 
-## Aggregate Rating (verified 2026-04-19)
+## Aggregate Rating (verified 2026-05-18 via Playwright)
 
 - **Primary platform**: Trustpilot — **4.8 / 5** from **51 reviews**
 - **Profile**: https://trustpilot.com/review/javavolcano-touroperator.com

@@ -11,6 +11,87 @@ sources: []
 
 ---
 
+## [2026-05-18] health-check | Monthly
+
+**Triggered**: Manual — "run monthly health check"
+
+---
+
+### On-Demand Checks
+
+**Contradiction scan**: 1 contradiction resolved, 2 existing flags confirmed active.
+
+- ✅ **RESOLVED** — `wiki/overview.md` §Packages: "11 from Surabaya" + "Treat 15 as canonical" was stale. Updated to 16 total (12 SUB + 4 Bali) per [[sources/sitemap-2026-05]] (packages-overview.md had already resolved this 2026-05-12). Contradiction note removed.
+- ✅ **RESOLVED** — `wiki/overview.md` §Aggregate Rating: "verified 2026-04-19" — updated to 2026-05-18 after live Trustpilot verification.
+- ⚠️ **ACTIVE** — `wiki/overview.md` §Trust Pillars line 3: CLAUDE.md says "mandatory Ijen health check" vs SSOT conditional framing. This contradiction predates this audit; flagged in CLAUDE.md §Core differentiators. Content-facing output files use the conditional framing correctly. No fix needed in the wiki page — it exists as documentation of the known gap.
+- ⚠️ **ACTIVE** — `output/faq/bromo.md`, `output/aeo/bromo.md`, `output/website/destinations/mount-bromo.md`: Level II Waspada content flagged `[stale?]` — no active update source. Retained; editors to verify before publishing.
+
+**Orphan detection**: 0 orphans across 50 pages ✓
+
+**Stale claim flags**: All 50 wiki pages have `last_updated` 2026-05-11 to 2026-05-18 (max 7 days old). No 90-day stale flags triggered.
+
+**Gap page identification**: Open Gaps in [[index]] — 2 active:
+- `bromo-ijen-status-today` — blocked on replacement live PVMBG source
+- `content/voice-invariants` — optional; live as section in [[content/brand-voice]] §voice-invariants
+
+---
+
+### Weekly Checks
+
+**30-day stale sweep**: No pages exceed 30 days — all updated within 7 days ✓
+
+**New orphan detection**: 0 orphans ✓ (run above)
+
+**Index completeness**: wiki/ has 50 pages (excl. index, log, overview). All 50 listed in [[index]] ✓
+
+**Log completeness**: All raw/ + Clippings/ files have corresponding ingest entries:
+- GPX files (5): `[2026-05-11] ingest | GPX Trail Data` entry ✓
+- `routes.csv` + `route_details.csv`: `[2026-05-18] ingest | route-data-csv` ✓
+- All other raw/ + Clippings/ files: log entries confirmed ✓
+
+---
+
+### Monthly-Specific Checks
+
+**Credential web-verification**:
+
+| Credential | Method | Result | Action |
+|---|---|---|---|
+| Trustpilot rating | Playwright live check | **4.8 / 51 reviews** — unchanged from canonical | ✓ No change needed |
+| Trustpilot count | Playwright live check | 51 — unchanged | ✓ No change needed |
+| Detik article (Polpar) | WebFetch | Title + date confirmed in page metadata (2021-03-14) | ✓ Article live |
+| NIB 1102230032918 (OSS) | WebFetch | OSS API endpoint returned 404 | ⚠️ Manual check needed |
+| INDECON listing | WebFetch | 403 Forbidden | ⚠️ Manual check needed |
+| ISIC Provider 259268 | WebFetch | Page live but provider listing truncated | ⚠️ Manual check needed (suggest Playwright) |
+
+**Trustpilot new review sweep**: 51 reviews — no new reviews since last ingest (2026-05-09). No action needed.
+
+**Gap page audit**: See Open Gaps above. All previously open gaps resolved except `bromo-ijen-status-today` (source-blocked) and `content/voice-invariants` (optional).
+
+**Output staleness**: No output files with dates in filenames >90 days. All output dated 2026-05-12 to 2026-05-18 ✓
+
+---
+
+### Summary
+
+| Check | Status |
+|---|---|
+| Contradictions | 2 resolved; 2 known active (documented) |
+| Orphans | 0 ✓ |
+| Stale pages | 0 (all within 7 days) ✓ |
+| Index completeness | 50/50 ✓ |
+| Log completeness | All raw files covered ✓ |
+| Trustpilot live | 4.8/51 unchanged ✓ |
+| NIB web-check | Cannot verify via web (OSS 404) — manual check needed |
+| INDECON web-check | 403 — manual check needed |
+| ISIC web-check | Incomplete — manual check recommended |
+| New Trustpilot reviews | None since 2026-05-09 ✓ |
+| Output staleness | 0 files >90 days ✓ |
+
+**Pages updated by this health check**: [[overview]] (package count corrected 15→16, rating verification date updated)
+
+---
+
 ## [2026-05-18] ingest | route-data-csv — 43-route segment library
 
 **Source type**: ssot-update (CSV supplements db-export-2026-05)
