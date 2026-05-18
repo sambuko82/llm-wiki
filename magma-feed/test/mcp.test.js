@@ -18,7 +18,8 @@ const feed = {
     IJE: { summary: { lastDate: "2026-05-16", series: [] } }
   },
   activityLevels: { counts: { "Level I (Normal)": 43 } },
-  dailySummary: { date: "2026-05-17", rows: [] }
+  dailySummary: { date: "2026-05-17", rows: [] },
+  recentEruptions: { page: 1, items: [{ volcanoName: "Lewotobi Laki-laki" }] }
 };
 
 test("MCP tools/list returns read-only tools", async () => {
@@ -27,8 +28,25 @@ test("MCP tools/list returns read-only tools", async () => {
     async () => feed
   );
 
-  assert.equal(response.result.tools.length, 5);
+  assert.equal(response.result.tools.length, 6);
   assert.equal(response.result.tools[0].annotations.readOnlyHint, true);
+});
+
+test("MCP eruption tool returns cached eruption page", async () => {
+  const response = await handleMcpRequest(
+    {
+      jsonrpc: "2.0",
+      id: 3,
+      method: "tools/call",
+      params: {
+        name: "get_recent_eruptions",
+        arguments: { page: 1 }
+      }
+    },
+    async () => feed
+  );
+
+  assert.equal(response.result.structuredContent.items[0].volcanoName, "Lewotobi Laki-laki");
 });
 
 test("MCP advisory tool uses cached report", async () => {

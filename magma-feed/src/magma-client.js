@@ -1,5 +1,5 @@
 import { MAGMA_BASE_URL, USER_AGENT } from "./config.js";
-import { parseActivityLevels, parseDailySummary, parseReportDetail, parseSearchResults, summarizeSeismicChart } from "./parser.js";
+import { parseActivityLevels, parseDailySummary, parseEruptions, parseReportDetail, parseSearchResults, summarizeSeismicChart } from "./parser.js";
 
 const HIGHCHARTS_SIGNATURE = "8c93bcd1b2982612f94bd2a5af8b1f2434afd753ad8383ea9d3fde1d9df577ea";
 
@@ -26,6 +26,12 @@ export async function fetchActivityLevels(fetchImpl = fetch) {
 export async function fetchDailySummary(date, fetchImpl = fetch) {
   const url = `${MAGMA_BASE_URL}/v1/gunung-api/laporan-harian/${encodeURIComponent(date)}`;
   return parseDailySummary(await fetchText(url, fetchImpl), url);
+}
+
+export async function fetchRecentEruptions(page = 1, fetchImpl = fetch) {
+  const numericPage = Math.max(1, Number(page) || 1);
+  const url = `${MAGMA_BASE_URL}/v1/gunung-api/informasi-letusan?page=${encodeURIComponent(numericPage)}`;
+  return parseEruptions(await fetchText(url, fetchImpl), url);
 }
 
 export async function fetchSeismic90d(report, fetchImpl = fetch) {

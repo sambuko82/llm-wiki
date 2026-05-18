@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parseReportDetail, parseSearchResults, summarizeSeismicChart } from "../src/parser.js";
+import { parseEruptions, parseReportDetail, parseSearchResults, summarizeSeismicChart } from "../src/parser.js";
 
 const IJEN_HTML = `
 <title>Laporan Aktivitas Gunung Api - Ijen, Sabtu - 16 Mei 2026, periode 00:00-24:00 WIB</title>
@@ -64,4 +64,26 @@ test("summarizeSeismicChart totals each series", () => {
   assert.equal(summary.lastDate, "2026-05-16");
   assert.equal(summary.series[0].total90, 4);
   assert.equal(summary.series[0].latest, 3);
+});
+
+test("parseEruptions extracts recent eruption timeline items", () => {
+  const html = `
+  <div class="timeline-item">
+    <p class="timeline-date">Minggu, 17 Mei 2026</p>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-time">08:12 WIB</div>
+    <p class="timeline-title">Lewotobi Laki-laki</p>
+    <p class="timeline-author">Dibuat oleh PVMBG</p>
+    <p class="timeline-text">Terjadi erupsi dengan tinggi kolom abu teramati 800 m di atas puncak.</p>
+    <img class="bd img-fluid" src="/img/letusan/test.png">
+    <a class="btn btn-sm btn-outline-primary" href="/v1/gunung-api/informasi-letusan/123">Detail</a>
+  </div>`;
+
+  const result = parseEruptions(html, "https://magma.esdm.go.id/v1/gunung-api/informasi-letusan?page=1");
+  assert.equal(result.items.length, 1);
+  assert.equal(result.items[0].dateLabel, "Minggu, 17 Mei 2026");
+  assert.equal(result.items[0].volcanoName, "Lewotobi Laki-laki");
+  assert.equal(result.items[0].eruptionId, "123");
+  assert.equal(result.items[0].imageUrl, "https://magma.esdm.go.id/img/letusan/test.png");
 });

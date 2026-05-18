@@ -1,0 +1,13 @@
+# Runtime cache and generated snapshots
+data/
+exports/
+.codex-run/
+jvto-magma-feed/
+
+# Local environment overrides
+.env
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini

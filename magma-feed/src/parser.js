@@ -121,6 +121,47 @@ export function parseDailySummary(html, sourceUrl = "") {
   };
 }
 
+export function parseEruptions(html, sourceUrl = "") {
+  const items = [];
+  let currentDate = "";
+  const timelinePattern = /<div class="timeline-item[^"]*">([\s\S]*?)(?=<div class="timeline-item|$)/gi;
+  let block;
+
+  while ((block = timelinePattern.exec(html))) {
+    const itemHtml = block[1];
+    const dateLabel = matchOne(itemHtml, /<p class="timeline-date">\s*([\s\S]*?)<\/p>/i);
+    if (dateLabel) {
+      currentDate = dateLabel;
+      continue;
+    }
+
+    const title = matchOne(itemHtml, /<p class="timeline-title">\s*([\s\S]*?)<\/p>/i);
+    const text = matchOne(itemHtml, /<p class="timeline-text">\s*([\s\S]*?)<\/p>/i);
+    if (!title && !text) continue;
+
+    const imageTag = /<img\b[^>]*>/i.exec(itemHtml)?.[0] || "";
+    const detailUrl = findDetailUrl(itemHtml, sourceUrl);
+
+    items.push({
+      dateLabel: currentDate,
+      time: matchOne(itemHtml, /<div class="timeline-time">\s*([\s\S]*?)<\/div>/i),
+      volcanoName: stripTags(title),
+      author: stripTags(matchOne(itemHtml, /<p class="timeline-author">\s*([\s\S]*?)<\/p>/i)).replace(/^Dibuat oleh\s*/i, ""),
+      information: stripTags(text),
+      imageUrl: absoluteUrl(attrValue(imageTag, "src"), sourceUrl),
+      detailUrl,
+      eruptionId: /\/informasi-letusan\/([^/]+)\/show/.exec(detailUrl)?.[1] || /\/informasi-letusan\/([^/?#]+)/.exec(detailUrl)?.[1] || ""
+    });
+  }
+
+  return {
+    sourceUrl,
+    page: Number(new URL(sourceUrl || "https://magma.esdm.go.id/v1/gunung-api/informasi-letusan?page=1").searchParams.get("page") || 1),
+    items,
+    fetchedAt: new Date().toISOString()
+  };
+}
+
 export function summarizeSeismicChart(chart) {
   const categories = chart?.categories || [];
   const lastDate = categories[categories.length - 1] || "";
@@ -190,4 +231,19 @@ function latestLevelBefore(prefix) {
 
 function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function absoluteUrl(value, baseUrl) {
+  if (!value) return "";
+  try {
+    return new URL(value, baseUrl || "https://magma.esdm.go.id").toString();
+  } catch {
+    return value;
+  }
+}
+
+function findDetailUrl(html, sourceUrl) {
+  const links = [...html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/gi)].map((match) => match[1]);
+  const detail = links.find((href) => /\/informasi-letusan\/[^/]+\/show/.test(href) || /\/informasi-letusan\/[^/?#]+$/.test(href));
+  return detail ? absoluteUrl(detail, sourceUrl) : "";
 }

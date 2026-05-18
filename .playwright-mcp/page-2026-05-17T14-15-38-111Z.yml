@@ -1,0 +1,378 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner:
+      - navigation [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - text: Tourist Police-Led Private Tours
+          - generic [ref=e12]: "|"
+          - generic [ref=e13]: Licensed East Java Operator (No. 1102230032918)
+        - generic [ref=e14]:
+          - generic [ref=e16]:
+            - generic [ref=e17]:
+              - button "Tours" [ref=e18]:
+                - text: Tours
+                - img [ref=e19]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Popular
+                        - list:
+                          - listitem:
+                            - link "3 Day Bromo, Madakaripura & Ijen":
+                              - /url: /tours/from-surabaya/bromo-madakaripura-ijen-3d2n
+                          - listitem:
+                            - link "3 Day Ijen, Bromo, Madakaripura":
+                              - /url: /tours/from-surabaya/ijen-bromo-madakaripura-3d2n
+                          - listitem:
+                            - link "4 Day Ijen, Bromo, Madakaripura":
+                              - /url: /tours/from-surabaya/ijen-bromo-madakaripura-4d3n
+                      - generic:
+                        - paragraph: By Location
+                        - list:
+                          - listitem:
+                            - link "Start From Surabaya":
+                              - /url: /tours/from-surabaya
+                          - listitem:
+                            - link "Start From Bali":
+                              - /url: /tours/from-bali
+                    - generic:
+                      - link "All Tours":
+                        - /url: /tours
+                      - paragraph: 16 private itineraries · Surabaya & Bali
+            - link "Destinations" [ref=e21] [cursor=pointer]:
+              - /url: /destinations
+            - link "Why JVTO" [ref=e22] [cursor=pointer]:
+              - /url: /why-jvto
+            - link "Travel Guide" [ref=e23] [cursor=pointer]:
+              - /url: /travel-guide
+          - link "JVTO Logo" [ref=e25] [cursor=pointer]:
+            - /url: /
+            - img "JVTO Logo" [ref=e26]
+          - button "Open search" [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - complementary [ref=e34]:
+          - generic [ref=e35]: Navigation
+          - navigation [ref=e36]:
+            - link "Why JVTO" [ref=e37] [cursor=pointer]:
+              - /url: /why-jvto
+              - img [ref=e39]
+              - generic [ref=e42]: Why JVTO
+            - link "Our Story" [ref=e43] [cursor=pointer]:
+              - /url: /why-jvto/our-story
+              - img [ref=e45]
+              - generic [ref=e47]: Our Story
+            - link "The JVTO Difference" [ref=e48] [cursor=pointer]:
+              - /url: /why-jvto/the-jvto-difference
+              - img [ref=e50]
+              - generic [ref=e53]: The JVTO Difference
+            - link "Reviews" [ref=e54] [cursor=pointer]:
+              - /url: /why-jvto/reviews
+              - img [ref=e56]
+              - generic [ref=e58]: Reviews
+            - link "Our Team" [ref=e59] [cursor=pointer]:
+              - /url: /why-jvto/our-team
+              - img [ref=e61]
+              - generic [ref=e66]: Our Team
+            - link "Community Standards" [ref=e67] [cursor=pointer]:
+              - /url: /why-jvto/community-standards
+              - img [ref=e69]
+              - generic [ref=e71]: Community Standards
+          - link "◆ Quick Access Verify JVTO Legal docs, licenses & proof library" [ref=e73] [cursor=pointer]:
+            - /url: /verify-jvto
+            - generic [ref=e74]: ◆ Quick Access
+            - generic [ref=e75]: Verify JVTO
+            - generic [ref=e76]: Legal docs, licenses & proof library
+        - main [ref=e77]:
+          - generic [ref=e78]:
+            - navigation [ref=e79]:
+              - link [ref=e80] [cursor=pointer]:
+                - /url: /
+                - img [ref=e81]
+              - generic [ref=e84]: ›
+              - link "Why JVTO" [ref=e85] [cursor=pointer]:
+                - /url: /why-jvto
+              - generic [ref=e86]: ›
+              - generic [ref=e87]: "Our Story: Roots & Continuity Since 2015"
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: ◆
+                - text: Why JVTO
+              - 'heading "Our Story: Roots & Continuity Since 2015" [level=1] [ref=e91]'
+              - article [ref=e93]:
+                - paragraph [ref=e94]: Time on the ground matters. It usually means fewer surprises, stronger local relationships, and calmer handling of real-world issues.
+                - paragraph [ref=e95]: We keep key artifacts accessible so the journey can be audited.
+                - paragraph [ref=e96]:
+                  - text: "Official channels: Website"
+                  - link "https://javavolcano-touroperator.com" [ref=e97] [cursor=pointer]:
+                    - /url: https://javavolcano-touroperator.com
+                  - text: • WhatsApp
+                  - link "+6282244788833" [ref=e98] [cursor=pointer]:
+                    - /url: https://wa.me/6282244788833
+                  - text: • Email
+                  - link "hello@javavolcano-touroperator.com" [ref=e99] [cursor=pointer]:
+                    - /url: mailto:hello@javavolcano-touroperator.com
+                  - text: .
+            - generic [ref=e100]:
+              - heading "Timeline highlights (artifact-backed)" [level=2] [ref=e101]
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - generic [ref=e107]: "2015"
+                  - generic [ref=e108]: Booking.com Guest Review Award plaque delivered to Jl. Khairil Anwar No.102—the same address as today’s JVTO office. Property scored 9.4/10, addressed to “Agung” (founder).
+                - generic [ref=e109]:
+                  - generic [ref=e111]: "2016"
+                  - generic [ref=e112]: Stefan Loose travel guide (4th edition, page 287) explicitly names “Agung” as operator of Ijen Bondowoso Homestay and confirms that tours were offered from a different Bondowoso address (Jl. Diponegoro 19).
+                - generic [ref=e113]:
+                  - generic [ref=e115]: c. 2016-2018
+                  - generic [ref=e116]: Photograph taken of Agung Sambuko with guests who visited specifically because of the Stefan Loose guidebook, holding the book as a guest points to the entry.
+                - generic [ref=e117]:
+                  - generic [ref=e119]: "2021"
+                  - generic [ref=e120]: Press coverage referencing Tourist Police context, linking founder to safety leadership.
+                - generic [ref=e121]:
+                  - generic [ref=e123]: Today
+                  - generic [ref=e124]: Registered PT + tourism licensing (legal documents) and a full local team operating from the same address as the 2015 award.
+            - generic [ref=e125]:
+              - heading "Booking.com Guest Review Award (2015)" [level=2] [ref=e126]
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - figure [ref=e130]:
+                    - img "Booking.com Guest Review Award (2015)" [ref=e132]
+                  - figure [ref=e133]:
+                    - img "Booking.com Guest Review Award (2015)" [ref=e135]
+                - article [ref=e136]:
+                  - paragraph [ref=e137]: Booking.com Guest Review Award plaque and shipping label from the guesthouse era. The award was shipped to Jl. Khairil Anwar No.102—the exact same address where JVTO operates today—confirming operational continuity since 2015.
+                  - list [ref=e138]:
+                    - listitem [ref=e139]:
+                      - text: ▸
+                      - generic [ref=e140]:
+                        - text: "Asset:"
+                        - link "https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg" [ref=e141] [cursor=pointer]:
+                          - /url: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg
+                    - listitem [ref=e142]:
+                      - text: ▸
+                      - generic [ref=e143]:
+                        - text: "Asset:"
+                        - link "https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg" [ref=e144] [cursor=pointer]:
+                          - /url: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg
+                    - listitem [ref=e145]:
+                      - text: ▸
+                      - generic [ref=e146]: "Property: Ijen Bondowoso Home Stay"
+                    - listitem [ref=e147]:
+                      - text: ▸
+                      - generic [ref=e148]: "Score: 9.4 out of 10"
+                    - listitem [ref=e149]:
+                      - text: ▸
+                      - generic [ref=e150]: "Addressed to: Agung (founder’s name)"
+            - generic [ref=e151]:
+              - heading "Stefan Loose Travel Guide – Indonesien (4th Edition, 2016)" [level=2] [ref=e152]
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - figure [ref=e156]:
+                    - img "Stefan Loose Travel Guide – Indonesien (4th Edition, 2016)" [ref=e158]
+                  - figure [ref=e159]:
+                    - img "Stefan Loose Travel Guide – Indonesien (4th Edition, 2016)" [ref=e161]
+                - article [ref=e162]:
+                  - paragraph [ref=e163]: A German-language travel guide that independently documents the founder’s early operations. On page 287 (Ost-JAVA | Ijen-Massiv section), the guide explicitly mentions the homestay run by Agung and confirms that tours were already being offered.
+                  - list [ref=e164]:
+                    - listitem [ref=e165]:
+                      - text: ▸
+                      - generic [ref=e166]:
+                        - text: "Asset:"
+                        - link "https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png" [ref=e167] [cursor=pointer]:
+                          - /url: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png
+                    - listitem [ref=e168]:
+                      - text: ▸
+                      - generic [ref=e169]:
+                        - text: "Asset (enhanced crop):"
+                        - link "https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg" [ref=e170] [cursor=pointer]:
+                          - /url: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg
+                    - listitem [ref=e171]:
+                      - text: ▸
+                      - generic [ref=e172]: Bibliographic details are listed in the SSOT.
+            - generic [ref=e173]:
+              - heading "Founder Agung Sambuko with Guests Holding Stefan Loose Guidebook" [level=2] [ref=e174]
+              - generic [ref=e176]:
+                - figure [ref=e178]:
+                  - img "Founder Agung Sambuko with Guests Holding Stefan Loose Guidebook" [ref=e180]
+                - article [ref=e181]:
+                  - paragraph [ref=e182]: "A photograph capturing the direct impact of the guidebook mention: guests who read about Ijen Bondowoso Homestay in the Stefan Loose guide came to visit and are shown here with founder Agung Sambuko."
+                  - list [ref=e183]:
+                    - listitem [ref=e184]:
+                      - text: ▸
+                      - generic [ref=e185]:
+                        - text: "Asset:"
+                        - link "https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg" [ref=e186] [cursor=pointer]:
+                          - /url: https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg
+            - generic [ref=e187]:
+              - heading "See more proof" [level=2] [ref=e188]
+              - article [ref=e191]:
+                - list [ref=e192]:
+                  - listitem [ref=e193]:
+                    - text: ▸
+                    - generic [ref=e194]:
+                      - text: "Full proof library:"
+                      - link "/verify-jvto" [ref=e195] [cursor=pointer]:
+                        - /url: /verify-jvto
+                  - listitem [ref=e196]:
+                    - text: ▸
+                    - generic [ref=e197]:
+                      - text: "Press links:"
+                      - link "/verify-jvto/press-recognition" [ref=e198] [cursor=pointer]:
+                        - /url: /verify-jvto/press-recognition
+                  - listitem [ref=e199]:
+                    - text: ▸
+                    - generic [ref=e200]:
+                      - text: "Legal documents:"
+                      - link "/verify-jvto/legal" [ref=e201] [cursor=pointer]:
+                        - /url: /verify-jvto/legal
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - generic [ref=e204]: ◆ Quick Answers
+                - heading "FAQ" [level=2] [ref=e205]
+              - generic [ref=e206]:
+                - group [ref=e207]:
+                  - generic "When did JVTO start operating?" [ref=e208] [cursor=pointer]:
+                    - img [ref=e210]
+                    - generic [ref=e213]: When did JVTO start operating?
+                    - img [ref=e214]
+                - group [ref=e216]:
+                  - generic "Is the office address the same as in 2015?" [ref=e217] [cursor=pointer]:
+                    - img [ref=e219]
+                    - generic [ref=e222]: Is the office address the same as in 2015?
+                    - img [ref=e223]
+                - group [ref=e225]:
+                  - generic "Where can I see the historical artifacts?" [ref=e226] [cursor=pointer]:
+                    - img [ref=e228]
+                    - generic [ref=e231]: Where can I see the historical artifacts?
+                    - img [ref=e232]
+                - group [ref=e234]:
+                  - generic "Was JVTO mentioned in a printed travel guide?" [ref=e235] [cursor=pointer]:
+                    - img [ref=e237]
+                    - generic [ref=e240]: Was JVTO mentioned in a printed travel guide?
+                    - img [ref=e241]
+                - group [ref=e243]:
+                  - generic "How does operational history relate to trust?" [ref=e244] [cursor=pointer]:
+                    - img [ref=e246]
+                    - generic [ref=e249]: How does operational history relate to trust?
+                    - img [ref=e250]
+    - contentinfo [ref=e252]:
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - img [ref=e256]
+            - heading "Tourist Police Led" [level=3] [ref=e258]
+            - paragraph [ref=e259]: Operations overseen by active Tourist Police officers for maximum safety.
+          - generic [ref=e260]:
+            - img [ref=e261]
+            - heading "Bondowoso HQ" [level=3] [ref=e264]
+            - paragraph [ref=e265]: Official office at Jl. Khairil Anwar No.102 A.
+          - generic [ref=e266]:
+            - img [ref=e267]
+            - heading "Licensed Operator" [level=3] [ref=e271]
+            - paragraph [ref=e272]: NIB & TDUP No. 1102230032918.
+          - generic [ref=e273]:
+            - img [ref=e274]
+            - heading "Community First" [level=3] [ref=e276]
+            - paragraph [ref=e277]: Supporting local guides and sustainable tourism practices.
+        - generic [ref=e278]:
+          - generic [ref=e279]:
+            - heading "Company" [level=3] [ref=e280]
+            - list [ref=e281]:
+              - listitem [ref=e282]:
+                - link "Why JVTO" [ref=e283] [cursor=pointer]:
+                  - /url: /why-jvto
+              - listitem [ref=e284]:
+                - link "Our Story" [ref=e285] [cursor=pointer]:
+                  - /url: /why-jvto/our-story
+              - listitem [ref=e286]:
+                - link "Reviews" [ref=e287] [cursor=pointer]:
+                  - /url: /why-jvto/reviews
+              - listitem [ref=e288]:
+                - link "Community & Guides" [ref=e289] [cursor=pointer]:
+                  - /url: /why-jvto/community-standards
+              - listitem [ref=e290]:
+                - link "Verify Us" [ref=e291] [cursor=pointer]:
+                  - /url: /verify-jvto
+          - generic [ref=e292]:
+            - heading "Travel Guide" [level=3] [ref=e293]
+            - list [ref=e294]:
+              - listitem [ref=e295]:
+                - link "FAQ" [ref=e296] [cursor=pointer]:
+                  - /url: /travel-guide/faq
+              - listitem [ref=e297]:
+                - link "Booking & Payments" [ref=e298] [cursor=pointer]:
+                  - /url: /travel-guide/booking-information
+              - listitem [ref=e299]:
+                - link "Ijen Health Screening" [ref=e300] [cursor=pointer]:
+                  - /url: /travel-guide/ijen-health-screening
+              - listitem [ref=e301]:
+                - link "Student Deals (ISIC)" [ref=e302] [cursor=pointer]:
+                  - /url: /isic/student-package
+              - listitem [ref=e303]:
+                - link "Policy" [ref=e304] [cursor=pointer]:
+                  - /url: /policy
+          - generic [ref=e305]:
+            - heading "Destinations" [level=3] [ref=e306]
+            - list [ref=e307]:
+              - listitem [ref=e308]:
+                - link "Mount Bromo" [ref=e309] [cursor=pointer]:
+                  - /url: /destinations/mount-bromo
+              - listitem [ref=e310]:
+                - link "Ijen Crater" [ref=e311] [cursor=pointer]:
+                  - /url: /destinations/ijen-crater
+              - listitem [ref=e312]:
+                - link "Tumpak Sewu" [ref=e313] [cursor=pointer]:
+                  - /url: /destinations/tumpak-sewu-waterfall
+              - listitem [ref=e314]:
+                - link "All Private Tours" [ref=e315] [cursor=pointer]:
+                  - /url: /tours
+          - generic [ref=e316]:
+            - heading "Contact" [level=3] [ref=e317]
+            - paragraph [ref=e318]:
+              - strong [ref=e319]: PT Java Volcano Rendezvous
+              - text: Jl. Khairil Anwar No.102 A, Badean,
+              - text: Bondowoso, East Java 68214, Indonesia
+            - paragraph [ref=e320]:
+              - text: "WhatsApp:"
+              - link "+62 822 4478 8833" [ref=e321] [cursor=pointer]:
+                - /url: https://wa.me/6282244788833
+              - text: "Email:"
+              - link "hello@javavolcano-touroperator.com" [ref=e322] [cursor=pointer]:
+                - /url: mailto:hello@javavolcano-touroperator.com
+            - link "Contact Us" [ref=e323] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e324]:
+          - generic [ref=e325]:
+            - img "JVTO Logo Footer" [ref=e326]
+            - generic [ref=e327]:
+              - text: ©️ Copyright 2015-2026 PT. Java Volcano Rendezvous | East Java, Indonesia | All Rights Reserved.
+              - link "Privacy Policy" [ref=e328] [cursor=pointer]:
+                - /url: /policy/privacy
+            - generic [ref=e329]: Popular with travellers from Singapore, Malaysia, Hong Kong, and Taiwan.
+          - generic [ref=e330]:
+            - link "Instagram" [ref=e331] [cursor=pointer]:
+              - /url: https://www.instagram.com/javavolcanotouroperator/
+              - img [ref=e332]
+            - link "Facebook" [ref=e335] [cursor=pointer]:
+              - /url: https://www.facebook.com/javavolcanotours/
+              - img [ref=e336]
+            - link "Twitter / X" [ref=e338] [cursor=pointer]:
+              - /url: https://twitter.com/jvto_tours
+              - img [ref=e339]
+    - generic [ref=e341]:
+      - generic:
+        - generic:
+          - text: Questions about your tour?
+          - generic: Chat us — we reply fast
+      - link "Chat on WhatsApp" [ref=e342] [cursor=pointer]:
+        - /url: https://wa.me/6282244788833?text=Hi%20JVTO%2C%20I'm%20interested%20in%20booking%20a%20private%20tour%20to%20Bromo%20%26%20Ijen.%20Can%20you%20share%20options%20and%20pricing%3F
+        - img [ref=e343]
+        - generic [ref=e345]: Chat on WhatsApp
+  - alert [ref=e346]

@@ -1,0 +1,229 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner:
+      - navigation [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - text: Tourist Police-Led Private Tours
+          - generic [ref=e12]: "|"
+          - generic [ref=e13]: Licensed East Java Operator (No. 1102230032918)
+        - generic [ref=e14]:
+          - generic [ref=e16]:
+            - generic [ref=e17]:
+              - button "Tours" [ref=e18]:
+                - text: Tours
+                - img [ref=e19]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Popular
+                        - list:
+                          - listitem:
+                            - link "3 Day Bromo, Madakaripura & Ijen":
+                              - /url: /tours/from-surabaya/bromo-madakaripura-ijen-3d2n
+                          - listitem:
+                            - link "3 Day Ijen, Bromo, Madakaripura":
+                              - /url: /tours/from-surabaya/ijen-bromo-madakaripura-3d2n
+                          - listitem:
+                            - link "4 Day Ijen, Bromo, Madakaripura":
+                              - /url: /tours/from-surabaya/ijen-bromo-madakaripura-4d3n
+                      - generic:
+                        - paragraph: By Location
+                        - list:
+                          - listitem:
+                            - link "Start From Surabaya":
+                              - /url: /tours/from-surabaya
+                          - listitem:
+                            - link "Start From Bali":
+                              - /url: /tours/from-bali
+                    - generic:
+                      - link "All Tours":
+                        - /url: /tours
+                      - paragraph: 16 private itineraries · Surabaya & Bali
+            - link "Destinations" [ref=e21] [cursor=pointer]:
+              - /url: /destinations
+            - link "Why JVTO" [ref=e22] [cursor=pointer]:
+              - /url: /why-jvto
+            - link "Travel Guide" [ref=e23] [cursor=pointer]:
+              - /url: /travel-guide
+          - link "JVTO Logo" [ref=e25] [cursor=pointer]:
+            - /url: /
+            - img "JVTO Logo" [ref=e26]
+          - button "Open search" [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e36]:
+          - heading "Insights & Explainers" [level=1] [ref=e37]
+          - paragraph [ref=e38]: Explore our articles on choosing a legal operator, understanding Ijen health screening, and maximizing your East Java trip. Expert advice from a police-led team.
+        - main [ref=e39]:
+          - generic [ref=e40]:
+            - navigation "Breadcrumb" [ref=e42]:
+              - list [ref=e43]:
+                - listitem [ref=e44]:
+                  - link "Home" [ref=e45] [cursor=pointer]:
+                    - /url: /
+                  - img [ref=e46]
+                - listitem [ref=e48]:
+                  - generic [ref=e49]: Insights
+            - generic [ref=e50]:
+              - link "Safety & Planning How to Choose a Legal Bromo & Ijen Operator A practical guide to verifying licenses, safety records, and avoiding common scams in East Java. Read Article →" [ref=e51] [cursor=pointer]:
+                - /url: /insights/choose-legal-operator
+                - paragraph [ref=e52]: Safety & Planning
+                - heading "How to Choose a Legal Bromo & Ijen Operator" [level=3] [ref=e53]
+                - paragraph [ref=e54]: A practical guide to verifying licenses, safety records, and avoiding common scams in East Java.
+                - generic [ref=e55]:
+                  - text: Read Article
+                  - generic [ref=e56]: →
+              - link "Safety & Planning Why Real Ijen Health Screening Matters An inside look at the risks of falsified medical letters and how our digital system raises the bar for safety. Read Article →" [ref=e57] [cursor=pointer]:
+                - /url: /insights/ijen-screening-explained
+                - paragraph [ref=e58]: Safety & Planning
+                - heading "Why Real Ijen Health Screening Matters" [level=3] [ref=e59]
+                - paragraph [ref=e60]: An inside look at the risks of falsified medical letters and how our digital system raises the bar for safety.
+                - generic [ref=e61]:
+                  - text: Read Article
+                  - generic [ref=e62]: →
+              - 'link "Itinerary Planning Bromo vs Ijen vs Tumpak Sewu: How to Combine Them in 3–5 Days Expert advice on structuring your itinerary to maximize experience and minimize travel time. Read Article →" [ref=e63] [cursor=pointer]':
+                - /url: /insights/combine-destinations
+                - paragraph [ref=e64]: Itinerary Planning
+                - 'heading "Bromo vs Ijen vs Tumpak Sewu: How to Combine Them in 3–5 Days" [level=3] [ref=e65]'
+                - paragraph [ref=e66]: Expert advice on structuring your itinerary to maximize experience and minimize travel time.
+                - generic [ref=e67]:
+                  - text: Read Article
+                  - generic [ref=e68]: →
+              - link "Community & Fairness A Practical Guide for ISIC Students Traveling in East Java Understanding park fees, how to get fair pricing, and making the most of your student status with JVTO. Read Article →" [ref=e69] [cursor=pointer]:
+                - /url: /insights/isic-student-fairness
+                - paragraph [ref=e70]: Community & Fairness
+                - heading "A Practical Guide for ISIC Students Traveling in East Java" [level=3] [ref=e71]
+                - paragraph [ref=e72]: Understanding park fees, how to get fair pricing, and making the most of your student status with JVTO.
+                - generic [ref=e73]:
+                  - text: Read Article
+                  - generic [ref=e74]: →
+              - link "Safety & Planning How Official Police Escort Works for Large Tourist Groups (Plain English) Demystifying the legal process, purpose, and requirements for arranging a 'Patwal' in East Java. Read Article →" [ref=e75] [cursor=pointer]:
+                - /url: /travel-guide/police-escort-for-groups
+                - paragraph [ref=e76]: Safety & Planning
+                - heading "How Official Police Escort Works for Large Tourist Groups (Plain English)" [level=3] [ref=e77]
+                - paragraph [ref=e78]: Demystifying the legal process, purpose, and requirements for arranging a 'Patwal' in East Java.
+                - generic [ref=e79]:
+                  - text: Read Article
+                  - generic [ref=e80]: →
+      - text: ;
+    - contentinfo [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - img [ref=e85]
+            - heading "Tourist Police Led" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Operations overseen by active Tourist Police officers for maximum safety.
+          - generic [ref=e89]:
+            - img [ref=e90]
+            - heading "Bondowoso HQ" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Official office at Jl. Khairil Anwar No.102 A.
+          - generic [ref=e95]:
+            - img [ref=e96]
+            - heading "Licensed Operator" [level=3] [ref=e100]
+            - paragraph [ref=e101]: NIB & TDUP No. 1102230032918.
+          - generic [ref=e102]:
+            - img [ref=e103]
+            - heading "Community First" [level=3] [ref=e105]
+            - paragraph [ref=e106]: Supporting local guides and sustainable tourism practices.
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - heading "Company" [level=3] [ref=e109]
+            - list [ref=e110]:
+              - listitem [ref=e111]:
+                - link "Why JVTO" [ref=e112] [cursor=pointer]:
+                  - /url: /why-jvto
+              - listitem [ref=e113]:
+                - link "Our Story" [ref=e114] [cursor=pointer]:
+                  - /url: /why-jvto/our-story
+              - listitem [ref=e115]:
+                - link "Reviews" [ref=e116] [cursor=pointer]:
+                  - /url: /why-jvto/reviews
+              - listitem [ref=e117]:
+                - link "Community & Guides" [ref=e118] [cursor=pointer]:
+                  - /url: /why-jvto/community-standards
+              - listitem [ref=e119]:
+                - link "Verify Us" [ref=e120] [cursor=pointer]:
+                  - /url: /verify-jvto
+          - generic [ref=e121]:
+            - heading "Travel Guide" [level=3] [ref=e122]
+            - list [ref=e123]:
+              - listitem [ref=e124]:
+                - link "FAQ" [ref=e125] [cursor=pointer]:
+                  - /url: /travel-guide/faq
+              - listitem [ref=e126]:
+                - link "Booking & Payments" [ref=e127] [cursor=pointer]:
+                  - /url: /travel-guide/booking-information
+              - listitem [ref=e128]:
+                - link "Ijen Health Screening" [ref=e129] [cursor=pointer]:
+                  - /url: /travel-guide/ijen-health-screening
+              - listitem [ref=e130]:
+                - link "Student Deals (ISIC)" [ref=e131] [cursor=pointer]:
+                  - /url: /isic/student-package
+              - listitem [ref=e132]:
+                - link "Policy" [ref=e133] [cursor=pointer]:
+                  - /url: /policy
+          - generic [ref=e134]:
+            - heading "Destinations" [level=3] [ref=e135]
+            - list [ref=e136]:
+              - listitem [ref=e137]:
+                - link "Mount Bromo" [ref=e138] [cursor=pointer]:
+                  - /url: /destinations/mount-bromo
+              - listitem [ref=e139]:
+                - link "Ijen Crater" [ref=e140] [cursor=pointer]:
+                  - /url: /destinations/ijen-crater
+              - listitem [ref=e141]:
+                - link "Tumpak Sewu" [ref=e142] [cursor=pointer]:
+                  - /url: /destinations/tumpak-sewu-waterfall
+              - listitem [ref=e143]:
+                - link "All Private Tours" [ref=e144] [cursor=pointer]:
+                  - /url: /tours
+          - generic [ref=e145]:
+            - heading "Contact" [level=3] [ref=e146]
+            - paragraph [ref=e147]:
+              - strong [ref=e148]: PT Java Volcano Rendezvous
+              - text: Jl. Khairil Anwar No.102 A, Badean,
+              - text: Bondowoso, East Java 68214, Indonesia
+            - paragraph [ref=e149]:
+              - text: "WhatsApp:"
+              - link "+62 822 4478 8833" [ref=e150] [cursor=pointer]:
+                - /url: https://wa.me/6282244788833
+              - text: "Email:"
+              - link "hello@javavolcano-touroperator.com" [ref=e151] [cursor=pointer]:
+                - /url: mailto:hello@javavolcano-touroperator.com
+            - link "Contact Us" [ref=e152] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - img "JVTO Logo Footer" [ref=e155]
+            - generic [ref=e156]:
+              - text: ©️ Copyright 2015-2026 PT. Java Volcano Rendezvous | East Java, Indonesia | All Rights Reserved.
+              - link "Privacy Policy" [ref=e157] [cursor=pointer]:
+                - /url: /policy/privacy
+            - generic [ref=e158]: Popular with travellers from Singapore, Malaysia, Hong Kong, and Taiwan.
+          - generic [ref=e159]:
+            - link "Instagram" [ref=e160] [cursor=pointer]:
+              - /url: https://www.instagram.com/javavolcanotouroperator/
+              - img [ref=e161]
+            - link "Facebook" [ref=e164] [cursor=pointer]:
+              - /url: https://www.facebook.com/javavolcanotours/
+              - img [ref=e165]
+            - link "Twitter / X" [ref=e167] [cursor=pointer]:
+              - /url: https://twitter.com/jvto_tours
+              - img [ref=e168]
+    - generic [ref=e170]:
+      - generic:
+        - generic:
+          - text: Questions about your tour?
+          - generic: Chat us — we reply fast
+      - link "Chat on WhatsApp" [ref=e171] [cursor=pointer]:
+        - /url: https://wa.me/6282244788833?text=Hi%20JVTO%2C%20I'm%20interested%20in%20booking%20a%20private%20tour%20to%20Bromo%20%26%20Ijen.%20Can%20you%20share%20options%20and%20pricing%3F
+        - img [ref=e172]
+        - generic [ref=e174]: Chat on WhatsApp
+  - alert [ref=e175]

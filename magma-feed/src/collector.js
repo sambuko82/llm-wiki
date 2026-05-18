@@ -1,7 +1,7 @@
 import { CACHE_TTL_MS, DEFAULT_VOLCANO_CODES, LOOKBACK_DAYS } from "./config.js";
 import { isFresh, readCache, writeCache } from "./cache.js";
 import { todayRange } from "./dates.js";
-import { fetchActivityLevels, fetchDailySummary, fetchLatestReport, fetchSeismic90d } from "./magma-client.js";
+import { fetchActivityLevels, fetchDailySummary, fetchLatestReport, fetchRecentEruptions, fetchSeismic90d } from "./magma-client.js";
 
 export async function collectMagmaFeed(options = {}) {
   const codes = options.codes || DEFAULT_VOLCANO_CODES;
@@ -39,6 +39,13 @@ export async function collectMagmaFeed(options = {}) {
     errors.push({ scope: "dailySummary", date: end, message: error.message });
   }
 
+  let recentEruptions = null;
+  try {
+    recentEruptions = await fetchRecentEruptions(options.eruptionPage || 1, options.fetchImpl);
+  } catch (error) {
+    errors.push({ scope: "recentEruptions", page: options.eruptionPage || 1, message: error.message });
+  }
+
   const feed = {
     source: "MAGMA Indonesia / PVMBG",
     fetchedAt: new Date().toISOString(),
@@ -48,6 +55,7 @@ export async function collectMagmaFeed(options = {}) {
     seismic90d,
     activityLevels,
     dailySummary,
+    recentEruptions,
     errors,
     stale: false
   };

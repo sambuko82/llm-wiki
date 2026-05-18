@@ -2,7 +2,7 @@ import http from "node:http";
 import { URL } from "node:url";
 import { CACHE_TTL_MS, DEFAULT_VOLCANO_CODES } from "./config.js";
 import { getCachedOrFresh } from "./collector.js";
-import { fetchDailySummary } from "./magma-client.js";
+import { fetchDailySummary, fetchRecentEruptions } from "./magma-client.js";
 import { buildWidget } from "./advisory.js";
 import { handleMcpRequest } from "./mcp.js";
 
@@ -76,6 +76,36 @@ async function route(req, res) {
 
     sendJson(res, 200, {
       dailySummary: await fetchDailySummary(date),
+      stale: false,
+      fetchedAt: new Date().toISOString()
+    });
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/magma/activity-levels") {
+    const feed = await getFeed();
+    sendJson(res, feed.activityLevels ? 200 : 404, {
+      activityLevels: feed.activityLevels || null,
+      stale: Boolean(feed.stale),
+      fetchedAt: feed.fetchedAt
+    });
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/magma/eruptions") {
+    const page = Math.max(1, Number(url.searchParams.get("page") || 1) || 1);
+    const feed = await getFeed();
+    if (feed.recentEruptions?.page === page) {
+      sendJson(res, 200, {
+        recentEruptions: feed.recentEruptions,
+        stale: Boolean(feed.stale),
+        fetchedAt: feed.fetchedAt
+      });
+      return;
+    }
+
+    sendJson(res, 200, {
+      recentEruptions: await fetchRecentEruptions(page),
       stale: false,
       fetchedAt: new Date().toISOString()
     });

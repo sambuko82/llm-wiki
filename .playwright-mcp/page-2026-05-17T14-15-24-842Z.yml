@@ -1,0 +1,445 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner:
+      - navigation [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - img [ref=e9]
+            - text: Tourist Police-Led Private Tours
+          - generic [ref=e12]: "|"
+          - generic [ref=e13]: Licensed East Java Operator (No. 1102230032918)
+        - generic [ref=e14]:
+          - generic [ref=e16]:
+            - generic [ref=e17]:
+              - button "Tours" [ref=e18]:
+                - text: Tours
+                - img [ref=e19]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Popular
+                        - list:
+                          - listitem:
+                            - link "3 Day Bromo, Madakaripura & Ijen":
+                              - /url: /tours/from-surabaya/bromo-madakaripura-ijen-3d2n
+                          - listitem:
+                            - link "3 Day Ijen, Bromo, Madakaripura":
+                              - /url: /tours/from-surabaya/ijen-bromo-madakaripura-3d2n
+                          - listitem:
+                            - link "4 Day Ijen, Bromo, Madakaripura":
+                              - /url: /tours/from-surabaya/ijen-bromo-madakaripura-4d3n
+                      - generic:
+                        - paragraph: By Location
+                        - list:
+                          - listitem:
+                            - link "Start From Surabaya":
+                              - /url: /tours/from-surabaya
+                          - listitem:
+                            - link "Start From Bali":
+                              - /url: /tours/from-bali
+                    - generic:
+                      - link "All Tours":
+                        - /url: /tours
+                      - paragraph: 16 private itineraries · Surabaya & Bali
+            - link "Destinations" [ref=e21] [cursor=pointer]:
+              - /url: /destinations
+            - link "Why JVTO" [ref=e22] [cursor=pointer]:
+              - /url: /why-jvto
+            - link "Travel Guide" [ref=e23] [cursor=pointer]:
+              - /url: /travel-guide
+          - link "JVTO Logo" [ref=e25] [cursor=pointer]:
+            - /url: /
+            - img "JVTO Logo" [ref=e26]
+          - button "Open search" [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - img "Ijen Crater" [ref=e37]
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: volcano
+              - generic [ref=e42]: blue fire
+              - generic [ref=e43]: crater lake
+              - generic [ref=e44]: sulfur miners
+              - generic [ref=e45]: east java
+            - heading "Ijen Crater" [level=1] [ref=e46]
+            - generic [ref=e47]:
+              - img [ref=e48]
+              - text: Bondowoso, East Java, Indonesia
+        - navigation [ref=e51]:
+          - generic [ref=e53]:
+            - button "Overview" [ref=e54]:
+              - img [ref=e55]
+              - text: Overview
+            - button "Logistics" [ref=e57]:
+              - img [ref=e58]
+              - text: Logistics
+            - button "Safety" [ref=e60]:
+              - img [ref=e61]
+              - text: Safety
+            - button "Culture" [ref=e63]:
+              - img [ref=e64]
+              - text: Culture
+        - main [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - img [ref=e73]
+                  - generic [ref=e75]:
+                    - paragraph [ref=e76]: Altitude
+                    - paragraph [ref=e77]: 2769 masl
+                - generic [ref=e78]:
+                  - img [ref=e80]
+                  - generic [ref=e82]:
+                    - paragraph [ref=e83]: Temp
+                    - paragraph [ref=e84]: 5-10°C at night
+                - generic [ref=e85]:
+                  - img [ref=e87]
+                  - generic [ref=e92]:
+                    - paragraph [ref=e93]: Difficulty
+                    - paragraph [ref=e94]: hard
+                - generic [ref=e95]:
+                  - img [ref=e97]
+                  - generic [ref=e100]:
+                    - paragraph [ref=e101]: Duration
+                    - paragraph [ref=e102]: 4–5 hours round trip
+              - generic [ref=e103]:
+                - paragraph [ref=e104]: Kawah Ijen is located in Banyuwangi Regency, East Java, Indonesia — approximately 3 hours by car from Banyuwangi city and 5–6 hours from Surabaya (Juanda Airport). It is the world's largest acidic crater lake and one of only two places where natural blue fire (SO₂ combustion at ~600°C) occurs. Entry requires a BBKSDA health certificate; all JVTO Ijen packages include mandatory in-hotel health screening by a licensed physician.
+                - generic [ref=e105]: Mount Ijen is a composite volcano located in the Banyuwangi Regency of East Java, Indonesia. It is part of the Ijen Volcano Complex, a group of stratovolcanoes inside a larger caldera. Ijen is famous for its turquoise-colored acidic crater lake, which is the largest of its kind in the world. The volcano is most famous for the electric-blue flame that issues from cracks in the volcano at night. The flames are the result of combustion of sulfuric gases that emerge from the volcano at high pressure and temperature. The blue fire is visible only in darkness, making the midnight trek a unique experience. Local sulfur miners work in extreme conditions, carrying heavy loads of sulfur up the steep crater walls. Their resilience and the stunning natural phenomena make Ijen one of Java's most compelling destinations.
+              - generic [ref=e106]:
+                - generic [ref=e107]:
+                  - img [ref=e109]
+                  - heading "Blue Fire Phenomenon" [level=4] [ref=e111]
+                  - paragraph [ref=e112]: Witness the surreal blue flames that appear only at night due to combustion of sulfuric gases
+                - generic [ref=e113]:
+                  - img [ref=e115]
+                  - heading "Acidic Crater Lake" [level=4] [ref=e117]
+                  - paragraph [ref=e118]: See the world's largest acidic lake with stunning turquoise color and pH levels below 0.5
+                - generic [ref=e119]:
+                  - img [ref=e121]
+                  - heading "Sulfur Mining Culture" [level=4] [ref=e123]
+                  - paragraph [ref=e124]: Observe traditional sulfur miners extracting and carrying sulfur blocks in extreme conditions
+                - generic [ref=e125]:
+                  - img [ref=e127]
+                  - heading "Sunrise Panorama" [level=4] [ref=e129]
+                  - paragraph [ref=e130]: Experience breathtaking sunrise views over the crater lake and surrounding mountains
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - img [ref=e134]
+                - heading "Trail & Logistics" [level=2] [ref=e137]
+              - generic [ref=e138]:
+                - generic [ref=e139]:
+                  - img [ref=e140]
+                  - generic [ref=e144]:
+                    - paragraph [ref=e145]: Distance
+                    - paragraph [ref=e146]: 9.0 km
+                - generic [ref=e147]:
+                  - img [ref=e148]
+                  - generic [ref=e151]:
+                    - paragraph [ref=e152]: Elev. Gain
+                    - paragraph [ref=e153]: +797 m
+                - generic [ref=e154]:
+                  - img [ref=e155]
+                  - generic [ref=e157]:
+                    - paragraph [ref=e158]: Max Elev.
+                    - paragraph [ref=e159]: 2379 m
+                - generic [ref=e160]:
+                  - img [ref=e161]
+                  - generic [ref=e163]:
+                    - paragraph [ref=e164]: Min Elev.
+                    - paragraph [ref=e165]: 1872 m
+              - generic [ref=e166]:
+                - generic [ref=e168]: Loading map…
+                - paragraph [ref=e169]: "Route data: AllTrails.com · Rendered via OpenStreetMap/CARTO"
+              - generic [ref=e170]:
+                - generic [ref=e172]:
+                  - generic [ref=e173]:
+                    - heading "Terrain & Trail" [level=4] [ref=e174]:
+                      - img [ref=e175]
+                      - text: Terrain & Trail
+                    - paragraph [ref=e179]: Steep volcanic gravel trails, rocky crater descent, sulfur-rich areas
+                    - paragraph [ref=e180]: 3km ascent (1.5-2 hours) to crater rim, 1km descent (30-45 mins) to crater floor. Steep gradient (30-40°), volcanic gravel surface.
+                    - generic [ref=e181]:
+                      - generic [ref=e182]: Best Time to Visit
+                      - text: April–October
+                  - generic [ref=e183]:
+                    - heading "Required Gear" [level=4] [ref=e184]:
+                      - img [ref=e185]
+                      - text: Required Gear
+                    - generic [ref=e190]:
+                      - generic [ref=e191]:
+                        - img [ref=e192]
+                        - generic [ref=e195]: gas mask
+                      - generic [ref=e196]:
+                        - img [ref=e197]
+                        - generic [ref=e200]: headlamp
+                      - generic [ref=e201]:
+                        - img [ref=e202]
+                        - generic [ref=e205]: hiking boots
+                      - generic [ref=e206]:
+                        - img [ref=e207]
+                        - generic [ref=e210]: warm layers
+                      - generic [ref=e211]:
+                        - img [ref=e212]
+                        - generic [ref=e215]: gloves
+                      - generic [ref=e216]:
+                        - img [ref=e217]
+                        - generic [ref=e220]: waterproof jacket
+                - generic [ref=e221]:
+                  - generic [ref=e222]:
+                    - paragraph [ref=e223]: wind speed
+                    - paragraph [ref=e224]: 10-25 km/h
+                  - generic [ref=e225]:
+                    - paragraph [ref=e226]: humidity
+                    - paragraph [ref=e227]: 70-95 %
+                  - generic [ref=e228]:
+                    - paragraph [ref=e229]: air quality_index
+                    - paragraph [ref=e230]: 150-300
+                  - generic [ref=e231]:
+                    - paragraph [ref=e232]: uv radiation
+                    - paragraph [ref=e233]: 8-11 index
+                  - generic [ref=e234]:
+                    - paragraph [ref=e235]: visibility
+                    - paragraph [ref=e236]: 1-10 km
+              - generic [ref=e237]:
+                - heading "Visitor Tips" [level=4] [ref=e238]:
+                  - img [ref=e239]
+                  - text: Visitor Tips
+                - paragraph [ref=e241]: Start trek at midnight (01:00 AM) for blue fire viewing, bring multiple warm layers as temperatures drop to 5°C, wear sturdy hiking boots with good grip, carry headlamp with extra batteries, acclimatize to altitude if coming from sea level, hire local guide for safety and cultural insights
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - generic [ref=e244]:
+                  - img [ref=e246]
+                  - heading "Safety Protocol" [level=2] [ref=e248]
+                - generic [ref=e249]:
+                  - img [ref=e250]
+                  - text: High Caution Area
+              - generic [ref=e252]:
+                - button "HEALTH RISK high" [ref=e254]:
+                  - generic [ref=e255]:
+                    - img [ref=e256]
+                    - generic [ref=e258]: HEALTH RISK
+                  - generic [ref=e259]:
+                    - generic [ref=e260]: high
+                    - img [ref=e261]
+                - button "TERRAIN RISK medium" [ref=e264]:
+                  - generic [ref=e265]:
+                    - img [ref=e266]
+                    - generic [ref=e268]: TERRAIN RISK
+                  - generic [ref=e269]:
+                    - generic [ref=e270]: medium
+                    - img [ref=e271]
+                - button "WEATHER RISK medium" [ref=e274]:
+                  - generic [ref=e275]:
+                    - img [ref=e276]
+                    - generic [ref=e278]: WEATHER RISK
+                  - generic [ref=e279]:
+                    - generic [ref=e280]: medium
+                    - img [ref=e281]
+                - button "HEALTH RISK medium" [ref=e284]:
+                  - generic [ref=e285]:
+                    - img [ref=e286]
+                    - generic [ref=e288]: HEALTH RISK
+                  - generic [ref=e289]:
+                    - generic [ref=e290]: medium
+                    - img [ref=e291]
+              - generic [ref=e293]:
+                - heading "Important Safety Notes" [level=5] [ref=e294]
+                - list [ref=e295]:
+                  - listitem [ref=e296]: Gas mask mandatory near crater - sulfur dioxide levels can be dangerous
+                  - listitem [ref=e298]: Stay on marked paths and follow guide instructions at all times
+                  - listitem [ref=e300]: Carry sufficient water and energy snacks for the trek
+                  - listitem [ref=e302]: Wear appropriate hiking shoes with good grip
+                  - listitem [ref=e304]: Complete health screening as required by JVTO safety protocols
+                  - listitem [ref=e306]: Avoid visiting during high wind or rain which can concentrate toxic gases
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - img [ref=e311]
+                - heading "Cultural Significance" [level=2] [ref=e314]
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - paragraph [ref=e317]: "\"Locals view Ijen as 'Gunung sing urip' — the living mountain. The Tenggerese and Osing communities consider the volcano sacred and make offerings during the Javanese month of Suro for protection and gratitude. The sulfur miners, known as 'Wong Ijen', have worked the volcano for generations, developing unique cultural practices around their dangerous profession. The volcano represents the element of Fire in Javanese cosmology - symbolizing power, creation, and purification.\""
+                  - generic [ref=e318]:
+                    - generic [ref=e319]: Osing Tribe
+                    - generic [ref=e320]: Java Tribe
+                    - generic [ref=e321]: Madura Tribe
+                - img [ref=e322]
+          - complementary [ref=e324]:
+            - generic [ref=e325]:
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - paragraph [ref=e330]: Current Status — Ijen Crater
+                  - generic [ref=e331]: Operational
+                - generic [ref=e332]:
+                  - generic [ref=e333]:
+                    - img [ref=e334]
+                    - paragraph [ref=e338]: Normal (Level I)
+                  - paragraph [ref=e339]: Ijen Crater open and accessible. Mandatory health screening per BBKSDA SE.1658/KSA.9/2024 in effect. Gas masks and medical check arranged by JVTO the evening before each trek.
+                  - generic [ref=e340]:
+                    - img [ref=e341]
+                    - generic [ref=e344]: Tours operating normally
+                - generic [ref=e345]:
+                  - paragraph [ref=e346]: Verified 4 May 2026 · PVMBG + BBKSDA Jatim
+                  - link "pvmbg.bgl.esdm.go.id" [ref=e347] [cursor=pointer]:
+                    - /url: https://pvmbg.bgl.esdm.go.id
+                    - text: pvmbg.bgl.esdm.go.id
+                    - img [ref=e348]
+              - generic [ref=e353]:
+                - generic [ref=e354]:
+                  - paragraph [ref=e355]: Permit & Entry
+                  - heading "Information" [level=3] [ref=e356]
+                - generic [ref=e357]:
+                  - generic [ref=e358]:
+                    - paragraph [ref=e359]: Permit Details
+                    - paragraph [ref=e360]: "Available at Paltuding entry gate. Foreign tourists: IDR 100,000 (weekdays), IDR 150,000 (weekends). Domestic: IDR 5,000-15,000."
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: Permit Status
+                    - generic [ref=e363]:
+                      - img [ref=e364]
+                      - text: Required
+                  - generic [ref=e367]:
+                    - generic [ref=e368]: Guide Status
+                    - generic [ref=e369]:
+                      - img [ref=e370]
+                      - text: Mandatory
+                - paragraph [ref=e373]: Operated by JVTO • Police-Led Safety
+              - generic [ref=e374]:
+                - heading "Seasonality" [level=4] [ref=e375]:
+                  - img [ref=e376]
+                  - text: Seasonality
+                - paragraph [ref=e378]: "Dry season (Apr-Oct): Clear skies, minimal fog. Wet season (Nov-Mar): Frequent rain, dense fog, higher gas concentration."
+                - generic [ref=e379]:
+                  - strong [ref=e380]: "Rainfall:"
+                  - text: High during wet season (200-400mm/month), Low during dry season (50-100mm/month)
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - paragraph [ref=e384]: Travel Guide
+          - link "Ijen Health Screening →" [ref=e385] [cursor=pointer]:
+            - /url: /travel-guide/ijen-health-screening
+        - generic [ref=e386]:
+          - paragraph [ref=e387]: Related Destinations
+          - generic [ref=e388]:
+            - link "Mount Bromo →" [ref=e389] [cursor=pointer]:
+              - /url: /destinations/mount-bromo
+            - link "Tumpak Sewu Waterfall →" [ref=e390] [cursor=pointer]:
+              - /url: /destinations/tumpak-sewu-waterfall
+    - contentinfo [ref=e391]:
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - generic [ref=e394]:
+            - img [ref=e395]
+            - heading "Tourist Police Led" [level=3] [ref=e397]
+            - paragraph [ref=e398]: Operations overseen by active Tourist Police officers for maximum safety.
+          - generic [ref=e399]:
+            - img [ref=e400]
+            - heading "Bondowoso HQ" [level=3] [ref=e403]
+            - paragraph [ref=e404]: Official office at Jl. Khairil Anwar No.102 A.
+          - generic [ref=e405]:
+            - img [ref=e406]
+            - heading "Licensed Operator" [level=3] [ref=e410]
+            - paragraph [ref=e411]: NIB & TDUP No. 1102230032918.
+          - generic [ref=e412]:
+            - img [ref=e413]
+            - heading "Community First" [level=3] [ref=e415]
+            - paragraph [ref=e416]: Supporting local guides and sustainable tourism practices.
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - heading "Company" [level=3] [ref=e419]
+            - list [ref=e420]:
+              - listitem [ref=e421]:
+                - link "Why JVTO" [ref=e422] [cursor=pointer]:
+                  - /url: /why-jvto
+              - listitem [ref=e423]:
+                - link "Our Story" [ref=e424] [cursor=pointer]:
+                  - /url: /why-jvto/our-story
+              - listitem [ref=e425]:
+                - link "Reviews" [ref=e426] [cursor=pointer]:
+                  - /url: /why-jvto/reviews
+              - listitem [ref=e427]:
+                - link "Community & Guides" [ref=e428] [cursor=pointer]:
+                  - /url: /why-jvto/community-standards
+              - listitem [ref=e429]:
+                - link "Verify Us" [ref=e430] [cursor=pointer]:
+                  - /url: /verify-jvto
+          - generic [ref=e431]:
+            - heading "Travel Guide" [level=3] [ref=e432]
+            - list [ref=e433]:
+              - listitem [ref=e434]:
+                - link "FAQ" [ref=e435] [cursor=pointer]:
+                  - /url: /travel-guide/faq
+              - listitem [ref=e436]:
+                - link "Booking & Payments" [ref=e437] [cursor=pointer]:
+                  - /url: /travel-guide/booking-information
+              - listitem [ref=e438]:
+                - link "Ijen Health Screening" [ref=e439] [cursor=pointer]:
+                  - /url: /travel-guide/ijen-health-screening
+              - listitem [ref=e440]:
+                - link "Student Deals (ISIC)" [ref=e441] [cursor=pointer]:
+                  - /url: /isic/student-package
+              - listitem [ref=e442]:
+                - link "Policy" [ref=e443] [cursor=pointer]:
+                  - /url: /policy
+          - generic [ref=e444]:
+            - heading "Destinations" [level=3] [ref=e445]
+            - list [ref=e446]:
+              - listitem [ref=e447]:
+                - link "Mount Bromo" [ref=e448] [cursor=pointer]:
+                  - /url: /destinations/mount-bromo
+              - listitem [ref=e449]:
+                - link "Ijen Crater" [ref=e450] [cursor=pointer]:
+                  - /url: /destinations/ijen-crater
+              - listitem [ref=e451]:
+                - link "Tumpak Sewu" [ref=e452] [cursor=pointer]:
+                  - /url: /destinations/tumpak-sewu-waterfall
+              - listitem [ref=e453]:
+                - link "All Private Tours" [ref=e454] [cursor=pointer]:
+                  - /url: /tours
+          - generic [ref=e455]:
+            - heading "Contact" [level=3] [ref=e456]
+            - paragraph [ref=e457]:
+              - strong [ref=e458]: PT Java Volcano Rendezvous
+              - text: Jl. Khairil Anwar No.102 A, Badean,
+              - text: Bondowoso, East Java 68214, Indonesia
+            - paragraph [ref=e459]:
+              - text: "WhatsApp:"
+              - link "+62 822 4478 8833" [ref=e460] [cursor=pointer]:
+                - /url: https://wa.me/6282244788833
+              - text: "Email:"
+              - link "hello@javavolcano-touroperator.com" [ref=e461] [cursor=pointer]:
+                - /url: mailto:hello@javavolcano-touroperator.com
+            - link "Contact Us" [ref=e462] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e463]:
+          - generic [ref=e464]:
+            - img "JVTO Logo Footer" [ref=e465]
+            - generic [ref=e466]:
+              - text: ©️ Copyright 2015-2026 PT. Java Volcano Rendezvous | East Java, Indonesia | All Rights Reserved.
+              - link "Privacy Policy" [ref=e467] [cursor=pointer]:
+                - /url: /policy/privacy
+            - generic [ref=e468]: Popular with travellers from Singapore, Malaysia, Hong Kong, and Taiwan.
+          - generic [ref=e469]:
+            - link "Instagram" [ref=e470] [cursor=pointer]:
+              - /url: https://www.instagram.com/javavolcanotouroperator/
+              - img [ref=e471]
+            - link "Facebook" [ref=e474] [cursor=pointer]:
+              - /url: https://www.facebook.com/javavolcanotours/
+              - img [ref=e475]
+            - link "Twitter / X" [ref=e477] [cursor=pointer]:
+              - /url: https://twitter.com/jvto_tours
+              - img [ref=e478]
+    - generic [ref=e480]:
+      - generic:
+        - generic:
+          - text: Questions about your tour?
+          - generic: Chat us — we reply fast
+      - link "Chat on WhatsApp" [ref=e481] [cursor=pointer]:
+        - /url: https://wa.me/6282244788833?text=Hi%20JVTO%2C%20I'm%20interested%20in%20booking%20a%20private%20tour%20to%20Bromo%20%26%20Ijen.%20Can%20you%20share%20options%20and%20pricing%3F
+        - img [ref=e482]
+        - generic [ref=e484]: Chat on WhatsApp
+  - alert [ref=e485]

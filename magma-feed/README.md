@@ -1,17 +1,20 @@
 # JVTO MAGMA Feed
 
-Server-side collector for MAGMA Indonesia / PVMBG volcano reports, built for JVTO travel advisory use.
+Standalone server-side MAGMA Indonesia/PVMBG collector, cache, REST API, MCP endpoint, and export pipeline for JVTO travel advisory workflows.
 
-## Run
+Target standalone path: `F:\magma-feed`.
 
-```bash
-cd magma-feed
+## Commands
+
+```powershell
 npm test
 npm run collect
+npm run export
 npm start
+npm run sync:wiki
 ```
 
-Default API URL: `http://127.0.0.1:8787`
+Default server: `http://127.0.0.1:8787`.
 
 ## REST Endpoints
 
@@ -20,22 +23,53 @@ Default API URL: `http://127.0.0.1:8787`
 - `GET /api/magma/volcano/IJE`
 - `GET /api/magma/daily?date=YYYY-MM-DD`
 - `GET /api/magma/seismic-90d?code=IJE`
+- `GET /api/magma/activity-levels`
+- `GET /api/magma/eruptions?page=1`
 - `GET /api/magma/widget?codes=IJE,BRO`
+- `POST /mcp`
 
-## MCP Endpoint
+## MCP Tools
 
-`POST /mcp` accepts JSON-RPC tool calls for:
+- `get_latest_volcano_report(code)`
+- `get_activity_levels()`
+- `get_daily_volcano_summary(date)`
+- `get_seismic_90d(code)`
+- `get_recent_eruptions(page)`
+- `generate_jvto_travel_advisory(code, tourDate, language)`
 
-- `get_latest_volcano_report`
-- `get_activity_levels`
-- `get_daily_volcano_summary`
-- `get_seismic_90d`
-- `generate_jvto_travel_advisory`
+## Exports
 
-All tools are read-only and should be backed by the JVTO API/cache, not browser-side scraping.
+`npm run export` writes:
 
-## Notes
+- `exports/latest.json`
+- `exports/widget.json`
+- `exports/activity-levels.json`
+- `exports/daily-summary.json`
+- `exports/seismic-90d.json`
+- `exports/eruptions.json`
+- `exports/volcano-status.md`
 
-- MAGMA detail pages are HTML, not public JSON.
-- The 90-day highcharts endpoint requires a fresh page request, MAGMA session cookie, and CSRF token.
-- Public copy must cite MAGMA/PVMBG as the official source and frame output as JVTO travel advisory, not official emergency instruction.
+## llm-wiki Consumption
+
+Preferred: `GET http://127.0.0.1:8787/api/magma/latest?codes=IJE,BRO`
+
+Offline-safe: read `F:\magma-feed\exports\latest.json` or `F:\magma-feed\exports\volcano-status.md`.
+
+Detailed contracts live in `docs/`.
+
+## GitHub Prep
+
+Runtime folders are ignored by `.gitignore`: `data/`, `exports/`, and `.codex-run/`.
+
+Before publishing a fresh repo:
+
+```powershell
+cd F:\magma-feed
+git init
+git add .
+git commit -m "Initial JVTO MAGMA feed service"
+```
+
+## Data Policy
+
+This service cites MAGMA Indonesia/PVMBG as the official source. JVTO output is operational travel advisory copy, not an official emergency instruction.

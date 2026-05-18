@@ -5,8 +5,10 @@
   "type": "module",
   "description": "Server-side MAGMA Indonesia collector, JVTO advisory API, and MCP tool endpoint.",
   "scripts": {
-    "start": "node src/server.js",
-    "collect": "node src/collect.js",
+    "start": "node --env-file=.env src/server.js",
+    "collect": "node --env-file=.env src/collect.js",
+    "export": "node --env-file=.env src/export.js",
+    "sync:wiki": "node --env-file=.env src/sync-wiki.js",
     "test": "node --test"
   },
   "engines": {

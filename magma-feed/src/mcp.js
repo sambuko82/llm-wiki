@@ -45,6 +45,17 @@ export const MCP_TOOLS = [
     annotations: { readOnlyHint: true, destructiveHint: false }
   },
   {
+    name: "get_recent_eruptions",
+    description: "Get recent MAGMA/PVMBG eruption information from the cached eruption page.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        page: { type: "number", minimum: 1, default: 1 }
+      }
+    },
+    annotations: { readOnlyHint: true, destructiveHint: false }
+  },
+  {
     name: "generate_jvto_travel_advisory",
     description: "Generate a JVTO guest-facing travel advisory from the latest cached MAGMA/PVMBG report.",
     inputSchema: {
@@ -108,6 +119,11 @@ async function callTool(name, args, feedProvider) {
     throw new Error(`No cached daily summary found for ${args.date}; refresh collector or use the REST endpoint.`);
   }
   if (name === "get_seismic_90d") return content(feed.seismic90d?.[code] || null);
+  if (name === "get_recent_eruptions") {
+    const page = Math.max(1, Number(args.page || 1) || 1);
+    if (feed.recentEruptions?.page === page) return content(feed.recentEruptions);
+    throw new Error(`No cached eruption page found for page ${page}; refresh collector or use the REST endpoint.`);
+  }
   if (name === "generate_jvto_travel_advisory") {
     const report = feed.latest?.[code];
     if (!report) throw new Error(`No cached report found for ${code}`);

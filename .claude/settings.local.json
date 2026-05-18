@@ -37,7 +37,15 @@
       "WebFetch(domain:oss.go.id)",
       "WebFetch(domain:www.trustpilot.com)",
       "WebFetch(domain:javavolcano-touroperator.com)",
-      "Skill(browse)"
+      "Skill(browse)",
+      "Skill(superpowers:brainstorming)",
+      "Skill(superpowers:brainstorming:*)",
+      "Bash(claude mcp *)",
+      "Bash(node --test)",
+      "Read(//c/Users/JAVA VOLCANO/.claude/**)",
+      "Read(//c/Users/JAVA VOLCANO/.claude/plugins/**)",
+      "Skill(seo-live-audit)",
+      "Bash(npx tsc *)"
     ]
   }
 }

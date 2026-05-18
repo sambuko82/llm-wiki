@@ -5,7 +5,8 @@ const ENTITY_MAP = {
   quot: "\"",
   apos: "'",
   nbsp: " ",
-  deg: "°"
+  deg: "°",
+  plusmn: "±"
 };
 
 export function decodeHtml(value = "") {
