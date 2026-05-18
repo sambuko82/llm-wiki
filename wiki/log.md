@@ -11,6 +11,41 @@ sources: []
 
 ---
 
+## [2026-05-18] schema | TouristAttraction + BreadcrumbList — all 5 destinations
+
+**Profile**: schema (Workflow 5)
+
+**Output files generated (10)**:
+- `output/schema/ijen-crater-schema.json` + `.receipt.md`
+- `output/schema/mount-bromo-schema.json` + `.receipt.md`
+- `output/schema/tumpak-sewu-waterfall-schema.json` + `.receipt.md`
+- `output/schema/madakaripura-waterfall-schema.json` + `.receipt.md`
+- `output/schema/papuma-beach-schema.json` + `.receipt.md`
+
+**Each file contains**: `[TouristAttraction, BreadcrumbList]` — two schema objects per destination page.
+
+**Geo data source**: bbox center coordinates computed from GPX bounding boxes in each destination wiki page.
+
+**Verification**: No reviewCount/ratingValue in TouristAttraction schemas (those belong on TouristTrip tour pages only). NIB `1102230032918` used as `provider.identifier` in all 5. All geo/locality values traced to destinations/*.md.
+
+**Wiki page created (1)**:
+- [[content/schema-templates]] — JSON-LD reference page (page-type → schema map, field rules, verification checklist). Fills the "to be created" gap flagged in [[sources/seo-audit-2026-05]].
+
+**Pages updated (2)**:
+- [[index]] — Added schema-templates to Content Production section; marked schema-templates gap as resolved; total_pages 48→49
+- [[log]] — This entry
+
+**FAQPage verification** (from this session): Existing TouristTrip schemas contain properly structured FAQPage arrays (Question/acceptedAnswer/Answer pattern, mainEntity array, minimum 4 Q&As per page) ✓
+
+**Schema inventory after this session**:
+- TouristTrip + FAQPage: 16/16 ✓
+- Organization (homepage): 1/1 ✓
+- TouristAttraction + BreadcrumbList: 5/5 ✓
+- `taman-safari-prigen-bromo-madakaripura-3d2n` TouristTrip: stub (itinerary not yet ingested)
+- BreadcrumbList for tour pages: included in TouristTrip schema files ✓
+
+---
+
 ## [2026-05-18] cleanup | MAGMA removal + repo hygiene pass
 
 **Trigger**: MAGMA feed permanently removed. Full repo cleanup to remove active workflow dependencies.

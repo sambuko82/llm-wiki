@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-17
-total_pages: 48
+total_pages: 49
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
@@ -78,6 +78,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[content/operational-facts]] — Temperatures (Bromo/Ijen), travel times, support hours, Ijen closure schedule, trolley ojek, micro-customization policy, FOC 5% discount
 - [[content/query-hero-claim]] — Query output: C3 (all-inclusive, no surprise costs) is the lead hero claim for price-skeptical solo travelers; C1/C5 justifies the premium. Evidence chain, 2 headline options, ranked secondary claims.
 - [[content/hotels]] — 23 hotel partners registry; organized by itinerary phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu, Malang, Surabaya finish)
+- [[content/schema-templates]] — JSON-LD schema reference: page-type → schema map, field rules, BreadcrumbList patterns, numeric verification checklist
 
 ## Ops
 
@@ -96,7 +97,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - ~~`credentials/police-integration`~~ — **created 2026-05-16** → [[credentials/police-integration]]
 - ~~`credentials/press-coverage`~~ — **created 2026-05-16** → [[credentials/press-coverage]]
 - `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[content/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
-- `content/schema-templates` — Referenced in [[sources/seo-audit-2026-05]] §schema as "(to be created)". Would centralize JSON-LD templates per page type. Low urgency — [[ops/compilation-profiles]] §schema profile covers the same function operationally.
+- ~~`content/schema-templates`~~ — **created 2026-05-18** → [[content/schema-templates]]
 - `bromo-ijen-status-today` page — Silo 3 SEO target (keyword #7). Needs replacement live source for PVMBG/BBKSDA status; MAGMA feed not active. See [[ops/seo-strategy]] §Silo 3.
 - `raw/routes.csv` + `raw/route_details.csv` — Unclassified DB exports in raw/. May overlap with [[sources/db-export-2026-05]] itinerary_days data. Review before ingesting as separate source.
 

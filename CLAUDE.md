@@ -135,7 +135,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Repo hygiene pass — MAGMA feed removal cleanup. Removed magma-report ingestion profile, fixed 4 downstream wiki refs, added stale flags to 3 output files, fixed dead volcano-status.md ref in jvto-verified-output skill. Committed dirty files. Open Gaps updated. System internally consistent.
+**Last completed:** Schema generation — TouristAttraction + BreadcrumbList for all 5 destination pages (Ijen, Bromo, Tumpak Sewu, Madakaripura, Papuma). wiki/content/schema-templates.md created. FAQPage structure verified ✓ in existing TouristTrip schemas.
 **Completed date:** 2026-05-18
 **Next task:** Verify faq/papuma.md pricing figures (IDR 5,100,000 / 4,900,000) against wiki/products/packages-full-pricing.md, then ingest full itinerary for taman-safari-prigen-bromo-madakaripura-3d2n into wiki/products/packages-itineraries.md and regenerate its stub schema.
 **Build status:** — no code changes
@@ -146,4 +146,3 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 - Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
 - `raw/routes.csv` + `raw/route_details.csv` — unclassified; verify overlap with db-export before ingesting
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
-- TouristAttraction + BreadcrumbList schemas not yet generated (5 destination pages)
