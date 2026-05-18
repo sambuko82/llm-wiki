@@ -135,11 +135,12 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Bulk-generated TouristTrip+FAQPage schemas for all 16 canonical tour pages (14 new via 5 parallel agents), resolved foundingDate contradiction, permanently removed magma-feed.
+**Last completed:** Bulk compilation — 4 profiles (website-copy, social, aeo, faq) via 4 parallel agents. 8 new/refreshed output files, 0 voice-invariant violations. First-ever social profile output (10 posts). First per-destination AEO files (5 files, 53 Q&As). Bromo Level II Waspada reflected in faq/bromo + website/destinations/mount-bromo. faq/papuma new (⚠ pricing unverified — check packages-full-pricing.md before publishing).
 **Completed date:** 2026-05-18
-**Next task:** Ingest full itinerary for taman-safari-prigen-bromo-madakaripura-3d2n into wiki/products/packages-itineraries.md, then regenerate its stub schema.
+**Next task:** Verify faq/papuma.md pricing figures (IDR 5,100,000 / 4,900,000) against wiki/products/packages-full-pricing.md, then ingest full itinerary for taman-safari-prigen-bromo-madakaripura-3d2n into wiki/products/packages-itineraries.md and regenerate its stub schema.
 **Build status:** — no code changes
 **Open items:**
+- `faq/papuma.md` pricing ⚠ — IDR figures unverified; check packages-full-pricing.md before publishing
 - `taman-safari-prigen-bromo-madakaripura-3d2n` schema stub — needs full day-by-day itinerary ingested into `wiki/products/packages-itineraries.md`
 - `priceRange` not yet added to homepage Organization schema — needs packages-full-pricing.md pass
 - Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
