@@ -135,14 +135,14 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Created wiki/sources/route-data-csv.md — formal source page for raw/routes.csv (43 routes) + raw/route_details.csv (217 detail rows). Full route index, structure docs, usage status, Schema.org type mapping noted.
+**Last completed:** Added priceRange to homepage Organization schema — IDR 1,000,000–6,050,000/person (sourced from packages-full-pricing.md). Receipt updated.
 **Completed date:** 2026-05-18
-**Next task:** Add priceRange to homepage Organization schema (output/schema/homepage-organization-schema.json) using packages-full-pricing.md canonical values.
+**Next task:** Review and enrich TouristTrip schemas with tour hero image URLs once ssot-image-asset-map URLs are confirmed — or run monthly health check.
 **Build status:** — no code changes
 **Open items:**
 - ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18 ✓
 - ~~`taman-safari-prigen-bromo-madakaripura-3d2n` schema stub~~ — ingested + regenerated 2026-05-18 ✓
 - ~~`raw/routes.csv` + `raw/route_details.csv`~~ — ingested 2026-05-18 → [[sources/route-data-csv]] ✓
-- `priceRange` not yet added to homepage Organization schema — needs packages-full-pricing.md pass
+- ~~`priceRange` missing from Organization schema~~ — added 2026-05-18 ✓
 - Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status

@@ -54,6 +54,7 @@
     { "@type": "City", "name": "Bondowoso" },
     { "@type": "AdministrativeArea", "name": "East Java", "containedInPlace": { "@type": "Country", "name": "Indonesia" } }
   ],
+  "priceRange": "IDR 1,000,000 – IDR 6,050,000 per person",
   "sameAs": [
     "https://www.facebook.com/javavolcanotours/",
     "https://www.instagram.com/javavolcanotouroperator/",

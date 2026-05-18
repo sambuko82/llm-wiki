@@ -20,6 +20,7 @@ profile: schema (Organization + TravelAgency)
 | HPWKI identifier | `AHU-0001072.AH.01.07.TAHUN 2024` | trust-signals.md:123 | — | Low |
 | ISIC identifier | `259268` | trust-signals.md:124 | — | Low |
 | `sameAs` (8 URLs) | All confirmed Live ✅ | trust-signals.md §Social Media Profiles | 2026-05-09 | Low |
+| `priceRange` | `IDR 1,000,000 – IDR 6,050,000 per person` | packages-full-pricing.md | 2026-05-18 | Low |
 
 ## Drift status
 
@@ -30,5 +31,5 @@ profile: schema (Organization + TravelAgency)
 ## Omissions (not invented)
 
 - `foundingDate` — resolved 2026-05-18: `2016` = PT incorporation (AHU). `2015` = guesthouse era. `2023` = TDUP license. Schema uses 2016 (legal entity founding).
-- `priceRange` — not verified from packages-full-pricing.md in this pass. Add separately if needed.
+- `priceRange` — added 2026-05-18: `IDR 1,000,000` (bromo-1d1n 11+ pax) to `IDR 6,050,000` (ijen-papuma-tumpak-sewu-bromo-malang-6d5n 2 pax). Sourced from packages-full-pricing.md §Canonical.
 - Klook / Booking.com `sameAs` entries — marked ⚠️ Unverified in trust-signals.md. Excluded.
