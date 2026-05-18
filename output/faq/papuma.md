@@ -2,8 +2,9 @@
 profile: faq
 output_date: 2026-05-18
 status: draft
-sources: [faq-master, packages-overview, legal-licenses, trust-signals, papuma-beach, brand-voice]
+sources: [faq-master, packages-overview, legal-licenses, trust-signals, papuma-beach, brand-voice, packages-full-pricing]
 verification: PASS
+pricing_verified: 2026-05-18 — IDR figures confirmed against packages-full-pricing.md (SUB 4d3n: 4,550,000; Bali 4d3n: 4,900,000)
 ---
 
 ## A. About Papuma Beach
@@ -66,7 +67,7 @@ Swimwear and a light towel if you plan to swim. Comfortable walking shoes or san
 
 ### What is the price range for JVTO packages that include Papuma?
 
-Papuma appears in JVTO's 4-day packages and above. The 4 Day Ijen, Papuma, Tumpak Sewu & Bromo from Surabaya starts at IDR 5,100,000/person (2 pax) for the Surabaya circuit. The Bali-origin equivalent (4D3N from Bali to Surabaya) starts at IDR 4,900,000/person (2 pax). Larger groups receive lower per-person rates. All prices are in IDR per person with all standard inclusions. See [[products/packages-overview]] and [[products/packages-full-pricing]] for full pax-tier pricing tables.
+Papuma appears in JVTO's 4-day packages and above. The 4 Day Ijen, Papuma, Tumpak Sewu & Bromo from Surabaya starts at IDR 4,550,000/person (2 pax) for the Surabaya circuit. The Bali-origin equivalent (4D3N from Bali to Surabaya) starts at IDR 4,900,000/person (2 pax). Larger groups receive lower per-person rates. All prices are in IDR per person with all standard inclusions. See [[products/packages-overview]] and [[products/packages-full-pricing]] for full pax-tier pricing tables.
 
 ### How do I book a JVTO Papuma package?
 
