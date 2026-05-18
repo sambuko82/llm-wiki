@@ -135,7 +135,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Monthly health check — 2 contradictions resolved in overview.md (package count 15→16, rating verification date). Trustpilot live-verified 4.8/51 (unchanged). NIB/INDECON/ISIC web checks blocked (403/404) — manual checks needed.
+**Last completed:** Trustpilot full structured review catalog — live firecrawl scrape (3 pages), 49 reviews extracted with reviewer name, country, date, stars, verbatim body, inferred package, guide/driver crew tags. New wiki page [[reviews/trustpilot-all-reviews]] (860 lines). Confirmed 4.8/51 rating unchanged. Added rating distribution (94% 5-star, 6% 4-star).
 **Completed date:** 2026-05-18
 **Next task:** Manually verify NIB 1102230032918 on OSS portal, INDECON listing, and ISIC provider 259268 — all three blocked automated web checks this session.
 **Build status:** — no code changes
@@ -145,4 +145,5 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 - ~~`raw/routes.csv` + `raw/route_details.csv`~~ — ingested 2026-05-18 → [[sources/route-data-csv]] ✓
 - ~~`priceRange` missing from Organization schema~~ — added 2026-05-18 ✓
 - ~~Tour hero image URLs missing from 16 TouristTrip schemas~~ — added 2026-05-18 (best-available; upgrade when tour photos uploaded) ✓
+- ~~Trustpilot review data unstructured~~ — full catalog extracted 2026-05-18 → [[reviews/trustpilot-all-reviews]] ✓
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
