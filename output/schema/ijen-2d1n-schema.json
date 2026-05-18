@@ -3,6 +3,7 @@
     "@context": "https://schema.org",
     "@type": "TouristTrip",
     "name": "2 Day Ijen Blue Fire Expedition from Surabaya",
+    "image": "https://javavolcano-touroperator.com/ops/ijen-geopark-briefing.png",
     "url": "https://javavolcano-touroperator.com/tours/from-surabaya/ijen-2d1n",
     "description": "2-day private tour from Surabaya: overnight staging in Bondowoso with mandatory health screening, midnight guided ascent to Kawah Ijen crater (2,386 m) for Blue Fire observation. Gas masks and trekking poles provided. Health screening coordinated as required under BBKSDA SE.1658/KSA.9/2024. Fully private — your vehicle, your crew, your group only. Licensed operator NIB 1102230032918.",
     "duration": "P2D",

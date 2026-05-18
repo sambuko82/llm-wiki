@@ -135,14 +135,14 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Added priceRange to homepage Organization schema — IDR 1,000,000–6,050,000/person (sourced from packages-full-pricing.md). Receipt updated.
+**Last completed:** Added `image` field to all 16 TouristTrip schemas — ijen-relevant (13): `ops/ijen-geopark-briefing.png`; bromo/safari-only (3): `assets/img/hero/home.webp`. Best-available from ssot-image-asset-map; upgrade when tour photography is uploaded.
 **Completed date:** 2026-05-18
-**Next task:** Review and enrich TouristTrip schemas with tour hero image URLs once ssot-image-asset-map URLs are confirmed — or run monthly health check.
+**Next task:** Run monthly health check, or start Silo 3 content (`bromo-ijen-status-today`) if a replacement live PVMBG source becomes available.
 **Build status:** — no code changes
 **Open items:**
 - ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18 ✓
 - ~~`taman-safari-prigen-bromo-madakaripura-3d2n` schema stub~~ — ingested + regenerated 2026-05-18 ✓
 - ~~`raw/routes.csv` + `raw/route_details.csv`~~ — ingested 2026-05-18 → [[sources/route-data-csv]] ✓
 - ~~`priceRange` missing from Organization schema~~ — added 2026-05-18 ✓
-- Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
+- ~~Tour hero image URLs missing from 16 TouristTrip schemas~~ — added 2026-05-18 (best-available; upgrade when tour photos uploaded) ✓
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
