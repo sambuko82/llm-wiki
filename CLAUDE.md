@@ -140,6 +140,6 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 **Next task:** Generate TouristTrip + AggregateRating schema for individual tour pages (use `jvto-verified-output` skill, schema profile).
 **Build status:** — no code changes
 **Open items:**
-- `magma-feed/` removed from repo by davidsetyaahr (commit a416d86) — local copy still exists as untracked; confirm with team whether permanent removal or move to separate repo
+- `magma-feed/` permanently removed (local + remote, confirmed 2026-05-18)
 - `foundingDate` contradiction in wiki (2016 AHU vs 2023 TDUP) — unresolved, schema omits it pending [[wiki/overview.md]] clarification
 - `priceRange` not yet added to homepage schema — needs packages-full-pricing.md pass
