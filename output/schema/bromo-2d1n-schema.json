@@ -1,0 +1,121 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "2 Day Bromo Sunrise Adventure from Surabaya",
+    "url": "https://javavolcano-touroperator.com/tours/from-surabaya/bromo-2d1n",
+    "description": "2-day private tour from Surabaya: overnight staging near Mount Bromo, sunrise at Penanjakan with private 4WD jeep to the crater base, and Madakaripura Waterfall canyon descent. No shared groups, ever. Licensed operator NIB 1102230032918.",
+    "duration": "P2D",
+    "touristType": "International independent travellers",
+    "inLanguage": "en",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Java Volcano Tour Operator",
+      "url": "https://javavolcano-touroperator.com",
+      "identifier": "1102230032918"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 1 — Surabaya to the Bromo Side for Overnight Staging",
+            "description": "Private transfer from Surabaya to the Bromo staging area. Check-in at Joglo Kecombrang Bromo. Early rest ahead of the pre-dawn departure."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 2 — Bromo Sunrise, Madakaripura, and Return to Surabaya",
+            "description": "02:00 departure to Penanjakan viewpoint. Bromo stargazing and sunrise over the Tengger caldera. Private 4WD jeep to the crater base. Madakaripura Waterfall canyon descent through narrow gorge passages. Return to Surabaya."
+          }
+        }
+      ]
+    },
+    "subjectOf": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Mount Bromo",
+        "description": "Active volcano in the Tengger Semeru National Park. Penanjakan sunrise viewpoint and crater base accessed by private 4WD jeep. Elevation 2,329 m.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.9425", "longitude": "112.9530" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Madakaripura Waterfall",
+        "description": "Indonesia's tallest waterfall (estimated 200 m). Canyon wade through narrow gorge passages. Located in Bromo Tengger Semeru National Park.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.8994", "longitude": "113.0189" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      }
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "1750000",
+      "highPrice": "2800000",
+      "offerCount": "6",
+      "description": "Per-person price by group size: IDR 2,800,000 (2 pax) · IDR 2,350,000 (3) · IDR 2,100,000 (4–5) · IDR 1,950,000 (6–7) · IDR 1,850,000 (8–10) · IDR 1,750,000 (11+). All-inclusive: private transport, dedicated crew, 1 night accommodation + breakfast, entrance fees, private 4WD jeep, mineral water, T-shirt. No solo booking.",
+      "availability": "https://schema.org/InStock",
+      "url": "https://javavolcano-touroperator.com/tours/from-surabaya/bromo-2d1n"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "51",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewAspect": "Trustpilot verified reviews — javavolcano-touroperator.com"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is included in the 2 Day Bromo Sunrise Adventure price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All JVTO packages include: private transport (AC MPV for 1–3 guests, Toyota Hiace for 4–9), dedicated crew, all entrance fees and permits, mineral water daily, full pick-up to drop-off assistance, and a JVTO travel T-shirt. This tour additionally includes 1 night accommodation with breakfast at Joglo Kecombrang Bromo and a private 4WD jeep for Mount Bromo crater access. International flights, travel insurance, and personal expenses are not included. No solo booking; minimum 2 pax."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if Mount Bromo is closed on my tour date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JVTO provides a written Plan B briefed before departure, not improvised at the gate. If Bromo closes due to volcanic activity or a park authority order, an alternative route is offered. Guests may rebook at no penalty if the primary site is inaccessible on the booked date due to official closure. JVTO monitors MAGMA Indonesia / PVMBG advisories daily and contacts guests proactively if closures are imminent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a private tour or a shared group tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "100% private. Your booking covers your own vehicle, your own driver-guide (or driver + escort guide for larger groups), and your own itinerary. No strangers are added to your tour at any point. JVTO does not operate shared group tours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if Bromo is volcanically active during my visit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mount Bromo is an active volcano. JVTO monitors MAGMA Indonesia / PVMBG status daily. If the alert level is raised to a point where access is restricted by the park authority (TNBTS), JVTO will notify you in advance and offer a rebook at no penalty or a discussion of alternative itineraries. We never take guests to a site that is officially closed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I wear for the Bromo sunrise and Madakaripura Waterfall?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Bromo, nights and early mornings at Penanjakan are cold (5–10°C). Bring layered warm clothing — a thermal base layer, a windproof jacket, and a hat and gloves. For Madakaripura Waterfall, the canyon wade involves walking through water and mist. Bring a waterproof bag or dry bag for your valuables, a change of clothes or quick-dry shorts, and water sandals or shoes you do not mind getting wet. A raincoat or poncho is strongly recommended."
+        }
+      }
+    ]
+  }
+]

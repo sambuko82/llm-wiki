@@ -1,0 +1,154 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali",
+    "url": "https://javavolcano-touroperator.com/tours/from-surabaya/tumpak-sewu-bromo-ijen-4d3n",
+    "description": "4-day private tour from Surabaya finishing in Bali: Tumpak Sewu canyon waterfall descent, Mount Bromo sunrise (private 4WD jeep), Ijen Blue Fire crater (midnight hike), and Ketapang–Gilimanuk ferry into Bali. Health screening coordinated for Ijen crater access under BBKSDA SE.1658/KSA.9/2024. Fully private — your vehicle, your crew, your group only. Licensed operator NIB 1102230032918.",
+    "duration": "P4D",
+    "touristType": "International independent travellers",
+    "inLanguage": "en",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Java Volcano Tour Operator",
+      "url": "https://javavolcano-touroperator.com",
+      "identifier": "1102230032918"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 1 — Surabaya to the Tumpak Sewu Side",
+            "description": "Private transfer from Surabaya to the Lumajang / Tumpak Sewu staging area. Check-in and rest before the canyon descent the following morning. Overnight at Artha Cottage."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 2 — Tumpak Sewu Canyon Descent and Transfer to Bromo",
+            "description": "Early descent into the Tumpak Sewu waterfall canyon — approximately 120 m curtain waterfall, canyon wade through narrow gorge passages. Transfer north to the Bromo staging area for the overnight. Overnight at Joglo Kecombrang Bromo."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 3 — Bromo Sunrise and Transfer to the Ijen Side",
+            "description": "02:00 departure for Penanjakan viewpoint. Bromo stargazing and sunrise over the Tengger caldera. Private 4WD jeep to the crater base. Transfer east to Bondowoso. Mandatory Ijen health screening conducted the same evening by licensed medical staff as required under BBKSDA SE.1658/KSA.9/2024 (SpO2, blood pressure, heart rate). QR-coded certificate required for BBKSDA crater access gate. Overnight at Riverside Homestay."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 4 — Ijen Blue Fire Crater and Forward Finish into Bali",
+            "description": "Midnight departure to Paltuding base. Guided ascent to Kawah Ijen crater rim (2,386 m). Blue Fire observation in the pre-dawn window. Descent and breakfast. Transfer to Ketapang ferry terminal, cross to Gilimanuk (Bali). Tour concludes in Bali — guests dropped at agreed Bali destination. Gas masks and trekking poles provided."
+          }
+        }
+      ]
+    },
+    "subjectOf": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Tumpak Sewu Waterfall",
+        "description": "Indonesia's most dramatic curtain waterfall, approximately 120 m high. Reached via a technical canyon descent through narrow gorge passages and river crossings in Lumajang.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.2333", "longitude": "112.9167" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Lumajang", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Mount Bromo",
+        "description": "Active volcano in the Tengger Semeru National Park. Penanjakan sunrise viewpoint and crater base accessed by private 4WD jeep. Elevation 2,329 m.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.9425", "longitude": "112.9530" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Kawah Ijen",
+        "description": "Active stratovolcano with the world's largest acidic crater lake and the world's largest visible blue fire phenomenon. Elevation 2,386 m.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.0580", "longitude": "114.2420" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Banyuwangi", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      }
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "3125000",
+      "highPrice": "8050000",
+      "offerCount": "7",
+      "description": "Per-person: IDR 8,050,000 (solo) · IDR 4,700,000 (2) · IDR 4,350,000 (3) · IDR 4,000,000 (4–5) · IDR 3,600,000 (6–7) · IDR 3,275,000 (8–10) · IDR 3,125,000 (11+). All-inclusive: private transport Surabaya to Bali, crew, 3 nights accommodation + breakfast, entrance fees, 4WD jeep (Bromo), gas masks + trekking poles (Ijen), health screening, Ketapang–Gilimanuk ferry, mineral water, T-shirt.",
+      "availability": "https://schema.org/InStock",
+      "url": "https://javavolcano-touroperator.com/tours/from-surabaya/tumpak-sewu-bromo-ijen-4d3n"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "51",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewAspect": "Trustpilot verified reviews — javavolcano-touroperator.com"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is included in the 4 Day Tumpak Sewu, Bromo & Ijen tour price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All JVTO packages include: private transport (AC MPV for 1–3 guests, Toyota Hiace for 4–9), dedicated crew, all entrance fees and permits, mineral water daily, full pick-up to drop-off assistance, and a JVTO travel T-shirt. This tour additionally includes 3 nights accommodation + breakfast, a private 4WD jeep for Mount Bromo, gas masks and trekking poles for Ijen, health-screening coordination as required by BBKSDA regulations, and the Ketapang–Gilimanuk ferry crossing into Bali. The tour finishes in Bali — it does not return to Surabaya. International flights, travel insurance, and personal expenses are not included."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Ijen health screening work on this tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For tours that include the Ijen night hike, JVTO arranges health-screening coordination — conducted by licensed medical staff — as required under BBKSDA access regulations for the Ijen crater zone (Surat Edaran SE.1658/KSA.9/2024). Vitals measured digitally include SpO2, blood pressure, heart rate, and respiratory history. The certificate carries a QR code verified by BBKSDA at the crater access gate. No valid QR code means no access to the crater zone. On this tour, screening is coordinated the evening of Day 3 in Bondowoso after the Bromo transfer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I do not pass the Ijen health screening?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If screening staff or the JVTO team advise that you should not attempt the hike, JVTO follows that decision — it protects your safety and others on the trail. The climb is cancelled for that individual (not the group); alternatives include waiting at base camp or a safe zone. The screening session cost is non-refundable. The group continues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if Bromo or Ijen is closed on my tour dates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JVTO provides a written Plan B briefed before departure, not improvised at the gate. If a site closes due to volcanic activity or park authority order, an alternative route is offered. Guests may rebook at no penalty if the primary sites are inaccessible on the booked dates due to official closure. JVTO monitors MAGMA Indonesia / PVMBG and BBKSDA advisories daily and contacts guests proactively if closures are imminent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this tour end in Surabaya or Bali?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This tour ends in Bali, not Surabaya. On Day 4, after the Ijen descent, the private vehicle transfers guests to the Ketapang ferry terminal in Banyuwangi. JVTO boards the Ketapang–Gilimanuk ferry with the group and completes the drop-off at an agreed Bali destination (e.g., Kuta, Seminyak, Ubud, or the airport). If you need to return to Surabaya, JVTO can arrange a separate transfer — ask at booking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a private tour or a shared group tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "100% private. Your booking covers your own vehicle, your own driver-guide (or driver + escort guide for larger groups), and your own itinerary. No strangers are added to your tour at any point. JVTO does not operate shared group tours."
+        }
+      }
+    ]
+  }
+]

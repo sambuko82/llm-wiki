@@ -1,0 +1,137 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "3 Day Taman Safari Prigen, Bromo & Madakaripura from Surabaya",
+    "url": "https://javavolcano-touroperator.com/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n",
+    "description": "3-day private tour from Surabaya: Taman Safari Prigen wildlife park (Day 1), Mount Bromo sunrise with private 4WD jeep (Day 2), and Madakaripura Waterfall canyon descent (Day 3) — returning to Surabaya. No Ijen. No health screening required. 100% private. Licensed operator NIB 1102230032918.",
+    "duration": "P3D",
+    "touristType": "International independent travellers",
+    "inLanguage": "en",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Java Volcano Tour Operator",
+      "url": "https://javavolcano-touroperator.com",
+      "identifier": "1102230032918"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 1 — Surabaya to Taman Safari Prigen",
+            "description": "Private transfer from Surabaya to Taman Safari Prigen wildlife park (Pasuruan). Safari park visit. Overnight staging near Bromo area."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 2 — Mount Bromo Sunrise",
+            "description": "Mount Bromo sunrise and crater visit (private 4WD jeep). Onward to Madakaripura area."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 3 — Madakaripura Waterfall and Return to Surabaya",
+            "description": "Madakaripura Waterfall canyon descent. Return to Surabaya."
+          }
+        }
+      ]
+    },
+    "subjectOf": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Taman Safari Prigen",
+        "description": "Drive-through and walk-through wildlife safari park in Pasuruan, East Java. Home to hundreds of animal species in naturalistic habitats.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.6500", "longitude": "112.7167" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Pasuruan", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Mount Bromo",
+        "description": "Active volcano in the Tengger Semeru National Park. Penanjakan sunrise viewpoint and crater base accessed by private 4WD jeep. Elevation 2,329 m.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.9425", "longitude": "112.9530" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Madakaripura Waterfall",
+        "description": "Indonesia's tallest waterfall (estimated 200 m). Canyon wade through narrow gorge passages. Located in Bromo Tengger Semeru National Park.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.8994", "longitude": "113.0189" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      }
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "3450000",
+      "highPrice": "4350000",
+      "offerCount": "6",
+      "description": "Per-person: IDR 4,350,000 (2 pax) · IDR 4,100,000 (3) · IDR 3,850,000 (4–5) · IDR 3,700,000 (6–7) · IDR 3,550,000 (8–10) · IDR 3,450,000 (11+). Minimum 2 guests. All-inclusive: private transport, dedicated crew, 2 nights accommodation + breakfast, entrance fees (including Safari park), private 4WD jeep (Bromo), mineral water, T-shirt.",
+      "availability": "https://schema.org/InStock",
+      "url": "https://javavolcano-touroperator.com/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "51",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewAspect": "Trustpilot verified reviews — javavolcano-touroperator.com"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is included in the 3 Day Taman Safari Prigen, Bromo & Madakaripura price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All JVTO packages include: private transport (AC MPV for 1–3 guests, Toyota Hiace for 4–9), dedicated crew, all entrance fees and permits, mineral water daily, pick-up to drop-off assistance, and a JVTO travel T-shirt. This tour additionally includes the Taman Safari Prigen entrance fee, 2 nights accommodation with breakfast, and a private 4WD jeep for Mount Bromo. No Ijen or health screening on this tour. International flights, travel insurance, and personal expenses are not included."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if Bromo is closed on my tour dates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JVTO provides a written Plan B briefed before departure, not improvised at the gate. If Mount Bromo closes due to volcanic activity or a park authority order, an alternative route is offered. Guests may rebook at no penalty if the primary site is inaccessible on the booked dates due to official closure. JVTO monitors MAGMA Indonesia / PVMBG advisories daily and contacts guests proactively if closures are imminent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this tour 100% private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every JVTO tour is 100% private. You will not share a vehicle, guide, or departure time with any other group. Your group has a dedicated vehicle and crew for the entire duration — from pick-up in Surabaya to drop-off on Day 3."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if Bromo or Taman Safari Prigen is closed on my tour dates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JVTO monitors park and attraction status daily. If Taman Safari Prigen or Mount Bromo is temporarily closed due to operational or volcanic reasons, JVTO will notify you in advance and discuss rebooking or an alternative itinerary at no penalty for closures beyond your control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I bring on this tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Taman Safari Prigen: comfortable walking shoes and a camera. For Mount Bromo: warm layers (temperatures at the viewpoint can drop to 5–10 °C before dawn), a windproof jacket, and a headlamp. For Madakaripura Waterfall: a change of clothes and waterproof bag — the canyon descent involves wading through water. Sunscreen and insect repellent are recommended throughout. No gas mask or specialised gear is required on this tour."
+        }
+      }
+    ]
+  }
+]

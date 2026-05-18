@@ -1,0 +1,114 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "2 Day Ijen Blue Fire Expedition from Surabaya",
+    "url": "https://javavolcano-touroperator.com/tours/from-surabaya/ijen-2d1n",
+    "description": "2-day private tour from Surabaya: overnight staging in Bondowoso with mandatory health screening, midnight guided ascent to Kawah Ijen crater (2,386 m) for Blue Fire observation. Gas masks and trekking poles provided. Health screening coordinated as required under BBKSDA SE.1658/KSA.9/2024. Fully private — your vehicle, your crew, your group only. Licensed operator NIB 1102230032918.",
+    "duration": "P2D",
+    "touristType": "International independent travellers",
+    "inLanguage": "en",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Java Volcano Tour Operator",
+      "url": "https://javavolcano-touroperator.com",
+      "identifier": "1102230032918"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 1 — Surabaya to Bondowoso for Ijen Staging",
+            "description": "Private transfer from Surabaya to Bondowoso. Check-in at Riverside Homestay. Dinner. Health screening (SpO2, blood pressure, heart rate) coordinated by licensed medical staff as required under BBKSDA SE.1658/KSA.9/2024. QR-coded certificate required for crater access gate."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 2 — Ijen Blue Fire Crater and Return to Surabaya",
+            "description": "Midnight departure to Paltuding base. Guided ascent to Kawah Ijen crater rim (2,386 m). Blue Fire observation pre-dawn. Gas masks and trekking poles provided. Descent, breakfast, return to Surabaya."
+          }
+        }
+      ]
+    },
+    "subjectOf": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Kawah Ijen",
+        "description": "Active stratovolcano with the world's largest acidic crater lake and the world's largest visible blue fire phenomenon. Elevation 2,386 m.",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.0580", "longitude": "114.2420" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Banyuwangi", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      }
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "1550000",
+      "highPrice": "2300000",
+      "offerCount": "6",
+      "description": "Per-person price by group size: IDR 2,300,000 (2 pax) · IDR 2,100,000 (3) · IDR 1,950,000 (4–5) · IDR 1,800,000 (6–7) · IDR 1,650,000 (8–10) · IDR 1,550,000 (11+). All-inclusive: private transport, dedicated crew, 1 night accommodation + breakfast, entrance fees, gas masks, trekking poles, health screening coordination, mineral water, T-shirt. No solo booking.",
+      "availability": "https://schema.org/InStock",
+      "url": "https://javavolcano-touroperator.com/tours/from-surabaya/ijen-2d1n"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "51",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewAspect": "Trustpilot verified reviews — javavolcano-touroperator.com"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is included in the 2 Day Ijen Blue Fire Expedition price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All JVTO packages include: private transport (AC MPV for 1–3 guests, Toyota Hiace for 4–9), dedicated crew, all entrance fees and permits, mineral water daily, full pick-up to drop-off assistance, and a JVTO travel T-shirt. This tour additionally includes 1 night accommodation with breakfast at Riverside Homestay Bondowoso, gas masks and trekking poles for the Ijen crater hike, and health-screening coordination as required under BBKSDA regulations (SE.1658/KSA.9/2024). International flights, travel insurance, and personal expenses are not included. No solo booking; minimum 2 pax."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Ijen health screening work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For tours that include the Ijen night hike, JVTO arranges health-screening coordination — conducted by licensed medical staff — as required under BBKSDA access regulations for the Ijen crater zone (Surat Edaran SE.1658/KSA.9/2024). Vitals measured digitally include SpO2, blood pressure, heart rate, and respiratory history. The certificate carries a QR code verified by BBKSDA at the crater access gate. No valid QR code means no access to the crater zone. Screening is coordinated the evening of Day 1 in Bondowoso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I do not pass the Ijen health screening?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If screening staff or the JVTO team advise that you should not attempt the hike, JVTO follows that decision — it protects your safety and others on the trail. The climb is cancelled for that individual (not the group); alternatives include waiting at base camp or a safe zone. The screening session cost is non-refundable. The group continues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if Kawah Ijen is closed on my tour date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JVTO provides a written Plan B briefed before departure, not improvised at the gate. If Ijen closes due to volcanic activity or a park authority order (BBKSDA), an alternative route is offered. Guests may rebook at no penalty if the primary site is inaccessible on the booked date due to official closure. JVTO monitors MAGMA Indonesia / PVMBG and BBKSDA advisories daily and contacts guests proactively if closures are imminent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a private tour or a shared group tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "100% private. Your booking covers your own vehicle, your own driver-guide (or driver + escort guide for larger groups), and your own itinerary. No strangers are added to your tour at any point. JVTO does not operate shared group tours."
+        }
+      }
+    ]
+  }
+]
