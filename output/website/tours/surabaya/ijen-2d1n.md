@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /tours/from-surabaya/ijen-2d1n
 output_date: 2026-05-12

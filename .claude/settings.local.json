@@ -58,7 +58,9 @@
       "mcp__plugin_playwright_playwright__browser_navigate",
       "Skill(session-close)",
       "Bash(Remove-Item -Recurse -Force \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\\\\magma-feed\")",
-      "Skill(superpowers:dispatching-parallel-agents)"
+      "Skill(superpowers:dispatching-parallel-agents)",
+      "Skill(phase-start)",
+      "Bash(grep -v \"\\\\.gpx$\\\\|\\\\.json$\\\\|\\\\.xml$\\\\|\\\\.csv$\")"
     ]
   }
 }
