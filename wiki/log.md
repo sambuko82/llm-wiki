@@ -11,6 +11,27 @@ sources: []
 
 ---
 
+## [2026-05-18] ingest | route-data-csv — 43-route segment library
+
+**Source type**: ssot-update (CSV supplements db-export-2026-05)
+**Raw files**: `raw/routes.csv` (43 routes, id 1–45 excl. 13+18) + `raw/route_details.csv` (217 activity rows, 42 of 43 routes have detail)
+
+**Key findings**:
+- 43 named day-segments covering all journey origins (SUB, Bali, Bromo, Ijen, Jember, Malang, Tumpak Sewu area)
+- Each route maps to one day/leg of a multi-day package; canonical packages are assembled from 2–6 routes
+- Route 8 (SUB-YOGYA) has no timed detail rows
+- Routes 7, 8, 16, 30 appear to be optional add-ons not in any SSOT 16 canonical packages
+- Schema.org `type` values in route_details (`TravelAction`/`TouristAttractionVisit`/`CheckInAction`) are ready for JSON-LD itinerary expansion
+
+**Pages created (1)**:
+- [[sources/route-data-csv]] — Full 43-route index, structure documentation, usage status table, relationship to db-export-2026-05
+
+**Pages updated (2)**:
+- [[index]] — New source entry; CSV open gap resolved; total_pages 49→50
+- [[log]] — This entry
+
+---
+
 ## [2026-05-18] ingest + schema | taman-safari-prigen-bromo-madakaripura-3d2n itinerary
 
 **Source type**: implicit ssot-update (CSV supplements db-export-2026-05)

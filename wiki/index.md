@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-17
-total_pages: 49
+total_pages: 50
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
@@ -34,6 +34,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/bbksda-pelatihan-pemandu-2024]] — BBKSDA Jatim 2024-05-24. Official guide training report: 250 HPWKI guides, SAR + PPGD curriculum, 3 days at Paltuding. Validates HPWKI training chain. Full access.
 - [[sources/ssot-image-asset-map]] — JVTO image asset SSOT (2026-05-16). 54 live images across 14 groups
 - [[sources/seo-audit-2026-05]] — SEO audit (2026-05-17). Dual-URL issue, keyword strategy (15 targets), competitor map (3 tiers), schema requirements (7 page types), 14 QW + 14 SI action items. Ahrefs data unavailable — volumes estimated.: crew portraits (11), field operations (8), crew credentials (5), health screening (5), history/heritage (5), police docs (4), founder (3), press (3), legal docs (6), partner (1), uncertain (1). All URLs live on javavolcano-touroperator.com.
+- [[sources/route-data-csv]] — Route segment library (2026-05-18). 43 named day-segments (`routes.csv`) + 217 timed activity rows (`route_details.csv`). Supplement to db-export-2026-05 adding intra-day granularity. Routes 6 + 20 explicitly ingested for taman-safari package.
 
 ## Destinations
 
@@ -99,7 +100,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[content/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
 - ~~`content/schema-templates`~~ — **created 2026-05-18** → [[content/schema-templates]]
 - `bromo-ijen-status-today` page — Silo 3 SEO target (keyword #7). Needs replacement live source for PVMBG/BBKSDA status; MAGMA feed not active. See [[ops/seo-strategy]] §Silo 3.
-- `raw/routes.csv` + `raw/route_details.csv` — Unclassified DB exports in raw/. May overlap with [[sources/db-export-2026-05]] itinerary_days data. Review before ingesting as separate source.
+- ~~`raw/routes.csv` + `raw/route_details.csv`~~ — **ingested 2026-05-18** → [[sources/route-data-csv]]
 
 ## Lookup Conventions
 

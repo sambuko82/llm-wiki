@@ -135,14 +135,14 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Ingested taman-safari-prigen-bromo-madakaripura-3d2n itinerary (from raw/routes.csv + route_details.csv) into packages-itineraries.md. Regenerated schema with full 3-day detail + 3 pricing corrections (3 pax, 4-5 pax, 6-7 pax mid-tiers were wrong in stub).
+**Last completed:** Created wiki/sources/route-data-csv.md — formal source page for raw/routes.csv (43 routes) + raw/route_details.csv (217 detail rows). Full route index, structure docs, usage status, Schema.org type mapping noted.
 **Completed date:** 2026-05-18
-**Next task:** Classify raw/routes.csv + raw/route_details.csv as a formal source (these are now partially used — routes 6 and 20 ingested for taman-safari; remaining routes may supplement other packages). Or: add priceRange to homepage Organization schema.
+**Next task:** Add priceRange to homepage Organization schema (output/schema/homepage-organization-schema.json) using packages-full-pricing.md canonical values.
 **Build status:** — no code changes
 **Open items:**
-- ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18: SUB 4D3N corrected 5,100,000→4,550,000; Bali 4D3N 4,900,000 ✓
-- ~~`taman-safari-prigen-bromo-madakaripura-3d2n` schema stub~~ — ingested 2026-05-18; schema regenerated with full itinerary + pricing corrections
-- `raw/routes.csv` + `raw/route_details.csv` — partially used (routes 6 + 20 ingested); remaining routes may add detail to other packages. Consider creating `wiki/sources/route-data-csv.md` source page.
+- ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18 ✓
+- ~~`taman-safari-prigen-bromo-madakaripura-3d2n` schema stub~~ — ingested + regenerated 2026-05-18 ✓
+- ~~`raw/routes.csv` + `raw/route_details.csv`~~ — ingested 2026-05-18 → [[sources/route-data-csv]] ✓
 - `priceRange` not yet added to homepage Organization schema — needs packages-full-pricing.md pass
 - Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
