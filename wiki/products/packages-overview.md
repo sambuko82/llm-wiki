@@ -34,7 +34,7 @@ All packages are **100% private**. No shared groups, no join-in tours. Each book
 | 11 | `ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | 6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya | 6D5N | Y |
 | 12 | `taman-safari-prigen-bromo-madakaripura-3d2n` | 3 Day Taman Safari Prigen, Bromo & Madakaripura from Surabaya | 3D2N | N |
 
-*Package 12 confirmed via sitemap 2026-05-12; full pricing and itinerary not yet ingested. Taman Safari Prigen is a wildlife/safari park in Prigen, East Java (near Pasuruan). -> [[sources/sitemap-2026-05]]*
+*Taman Safari Prigen is a wildlife/safari park in Prigen, East Java (near Pasuruan). Pricing: [[products/packages-full-pricing]] §Specialty. Day-by-day itinerary: [[products/packages-itineraries]] §taman-safari-prigen-bromo-madakaripura-3d2n (ingested 2026-05-18 from raw/routes.csv + route_details.csv). -> [[sources/sitemap-2026-05]]*
 
 ### Bali origin (4 packages)
 

@@ -11,6 +11,31 @@ sources: []
 
 ---
 
+## [2026-05-18] ingest + schema | taman-safari-prigen-bromo-madakaripura-3d2n itinerary
+
+**Source type**: implicit ssot-update (CSV supplements db-export-2026-05)
+**Raw files used**: `raw/routes.csv` route 6 (SUB-SAFARI-BROMO, Day 1 detail) + `raw/route_details.csv` route_id=6 (timed activity breakdown) + `raw/routes.csv` route 20 (BROMO-MADAKARIPURA-SUB, Day 3 pattern)
+
+**Itinerary structure confirmed**:
+- Day 1: Surabaya → Taman Safari Prigen (safari adventure, ~2.5h) → Bromo area overnight (Night 1 = Joglo Kecombrang Bromo)
+- Day 2: Bromo sunrise sequence (01:00-02:00 departure, Penanjakan, Sea of Sand, crater) → second overnight (Night 2 = Joglo Kecombrang Bromo)
+- Day 3: Madakaripura Waterfall canyon trek → return to Surabaya
+- Meals: B · — · — (Day 1), B (Day 2), B (Day 3). Lunch at Safari area = own expense.
+
+**Pages updated (2)**:
+- [[products/packages-itineraries]] — New `taman-safari-prigen-bromo-madakaripura-3d2n` section added between `bromo-2d1n` and `ijen-2d1n`; sourced from CSV routes
+- [[products/packages-overview]] — Package 12 note updated: "itinerary not yet ingested" removed, links to itineraries + pricing pages added
+
+**Schema regenerated (1)**:
+- `output/schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json` — Stub replaced with full TouristTrip (3-day itinerary detail) + FAQPage (5 Q&As). Receipt updated.
+- **3 pricing corrections** (stub had wrong mid-tier values vs canonical):
+  - 3 pax: 4,100,000 → **4,150,000**
+  - 4–5 pax: 3,850,000 → **3,950,000**
+  - 6–7 pax: 3,700,000 → **3,750,000**
+  - 2 pax, 8-10 pax, 11+ pax: already correct
+
+---
+
 ## [2026-05-18] schema | TouristAttraction + BreadcrumbList — all 5 destinations
 
 **Profile**: schema (Workflow 5)

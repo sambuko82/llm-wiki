@@ -35,6 +35,24 @@ sources: [db-export-2026-05]
 
 ---
 
+### `taman-safari-prigen-bromo-madakaripura-3d2n` — 3D2N Taman Safari + Bromo + Madakaripura (SUB→SUB)
+
+| Day | Title | Meals | Hotel |
+|---|---|---|---|
+| 1 | Surabaya to Taman Safari Prigen and Bromo Overnight | B | Joglo Kecombrang Bromo |
+| 2 | Bromo Sunrise and Caldera Exploration | B | Joglo Kecombrang Bromo |
+| 3 | Madakaripura Waterfall and Return to Surabaya | B | — |
+
+**Day 1** (Route SUB-SAFARI-BROMO): Breakfast at Surabaya hotel. 09:00 pick-up → ~90 min transfer to Prigen Safari Park. 10:30–13:00 safari adventure. 13:00–15:00 lunch break at Safari area restaurant (own expense). 15:00 depart → ~120 min overland transfer to Bromo area. 17:00 check-in at Bromo area hotel.
+
+**Day 2** (Bromo sunrise sequence): 01:00–02:00 departure from hotel for Penanjakan viewpoint. Milky Way window pre-dawn (weather permitting). Sunrise at Penanjakan (~05:30). Jeep descent to Sea of Sand → crater approach (or Pura Luhur Poten). Return to hotel for breakfast. Afternoon free for rest or optional caldera walk. Second overnight in Bromo area.
+
+**Day 3** (Route BROMO-MADAKARIPURA-SUB): Breakfast at hotel. Check-out. Transfer ~50 min to Madakaripura parking area. Canyon trek ~1.5 km to horseshoe waterfall (bring raincoat — guests will get wet). Return to Surabaya — approximately 4–5 hours. Drop-off at Surabaya hotel or airport.
+
+*Sources: `raw/routes.csv` route 6 (SUB-SAFARI-BROMO) + `raw/route_details.csv` route_id=6 (Day 1 detail) + recurring Bromo sunrise pattern + `raw/routes.csv` route 20 (BROMO-MADAKARIPURA-SUB). See [[sources/db-export-2026-05]] §itinerary_days.*
+
+---
+
 ### `ijen-2d1n` — 2D1N Ijen Blue Fire Expedition
 
 | Day | Title | Meals | Hotel |

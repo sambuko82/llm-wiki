@@ -60,7 +60,9 @@
       "Bash(Remove-Item -Recurse -Force \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\\\\magma-feed\")",
       "Skill(superpowers:dispatching-parallel-agents)",
       "Skill(phase-start)",
-      "Bash(grep -v \"\\\\.gpx$\\\\|\\\\.json$\\\\|\\\\.xml$\\\\|\\\\.csv$\")"
+      "Bash(grep -v \"\\\\.gpx$\\\\|\\\\.json$\\\\|\\\\.xml$\\\\|\\\\.csv$\")",
+      "Bash(awk *)",
+      "Bash(grep -n \"^### \\\\`\" wiki/products/packages-itineraries.md)"
     ]
   }
 }

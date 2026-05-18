@@ -135,14 +135,14 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Schema generation — TouristAttraction + BreadcrumbList for all 5 destination pages (Ijen, Bromo, Tumpak Sewu, Madakaripura, Papuma). wiki/content/schema-templates.md created. FAQPage structure verified ✓ in existing TouristTrip schemas.
+**Last completed:** Ingested taman-safari-prigen-bromo-madakaripura-3d2n itinerary (from raw/routes.csv + route_details.csv) into packages-itineraries.md. Regenerated schema with full 3-day detail + 3 pricing corrections (3 pax, 4-5 pax, 6-7 pax mid-tiers were wrong in stub).
 **Completed date:** 2026-05-18
-**Next task:** Verify faq/papuma.md pricing figures (IDR 5,100,000 / 4,900,000) against wiki/products/packages-full-pricing.md, then ingest full itinerary for taman-safari-prigen-bromo-madakaripura-3d2n into wiki/products/packages-itineraries.md and regenerate its stub schema.
+**Next task:** Classify raw/routes.csv + raw/route_details.csv as a formal source (these are now partially used — routes 6 and 20 ingested for taman-safari; remaining routes may supplement other packages). Or: add priceRange to homepage Organization schema.
 **Build status:** — no code changes
 **Open items:**
 - ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18: SUB 4D3N corrected 5,100,000→4,550,000; Bali 4D3N 4,900,000 ✓
-- `taman-safari-prigen-bromo-madakaripura-3d2n` schema stub — needs full day-by-day itinerary ingested into `wiki/products/packages-itineraries.md`
+- ~~`taman-safari-prigen-bromo-madakaripura-3d2n` schema stub~~ — ingested 2026-05-18; schema regenerated with full itinerary + pricing corrections
+- `raw/routes.csv` + `raw/route_details.csv` — partially used (routes 6 + 20 ingested); remaining routes may add detail to other packages. Consider creating `wiki/sources/route-data-csv.md` source page.
 - `priceRange` not yet added to homepage Organization schema — needs packages-full-pricing.md pass
 - Tour hero image URLs missing from all 16 TouristTrip schemas — not yet in ssot-image-asset-map
-- `raw/routes.csv` + `raw/route_details.csv` — unclassified; verify overlap with db-export before ingesting
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
