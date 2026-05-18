@@ -130,3 +130,16 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 - Link wiki pages: [[folder/page-name]]
 - In prose, use -> before links: -> [[destinations/kawah-ijen]]
 - Always update wiki/index.md after changes
+
+---
+
+## Current Sprint
+
+**Last completed:** Built `jvto-verified-output` skill, generated + live-verified homepage Organization/TravelAgency JSON-LD schema, cleaned up gitignore debt.
+**Completed date:** 2026-05-18
+**Next task:** Generate TouristTrip + AggregateRating schema for individual tour pages (use `jvto-verified-output` skill, schema profile).
+**Build status:** — no code changes
+**Open items:**
+- `magma-feed/` removed from repo by davidsetyaahr (commit a416d86) — local copy still exists as untracked; confirm with team whether permanent removal or move to separate repo
+- `foundingDate` contradiction in wiki (2016 AHU vs 2023 TDUP) — unresolved, schema omits it pending [[wiki/overview.md]] clarification
+- `priceRange` not yet added to homepage schema — needs packages-full-pricing.md pass
