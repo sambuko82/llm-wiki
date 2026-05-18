@@ -50,7 +50,12 @@
       "Bash(Get-ChildItem -Path \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\" -Recurse -Filter \"output*\" -ErrorAction SilentlyContinue)",
       "Bash(Select-Object -First 20)",
       "Skill(jvto-verified-output)",
-      "Skill(caveman:caveman-commit)"
+      "Skill(caveman:caveman-commit)",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_navigate"
     ]
   }
 }
