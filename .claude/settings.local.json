@@ -62,7 +62,10 @@
       "Skill(phase-start)",
       "Bash(grep -v \"\\\\.gpx$\\\\|\\\\.json$\\\\|\\\\.xml$\\\\|\\\\.csv$\")",
       "Bash(awk *)",
-      "Bash(grep -n \"^### \\\\`\" wiki/products/packages-itineraries.md)"
+      "Bash(grep -n \"^### \\\\`\" wiki/products/packages-itineraries.md)",
+      "WebFetch(domain:www.isic.org)",
+      "Bash(node *)",
+      "Bash(wait)"
     ]
   }
 }
