@@ -1,13 +1,20 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-19] ingest | Teori & Konsep Manajemen Komunikasi
+
+Pages updated: [[sources/comm-management-theory]] (new), [[ops/canned-responses]] (new), [[ops/2026-05-14-whatsapp-operations-playbook]] (BANT + SLA cross-links added), [[index]] (2 entries added).
+Key additions: BANT qualification framework adapted for JVTO (N/T/B/A components mapped), MECE chatbot menu design, SFC/FCR principle, SLA benchmarks (WA 2–5 min / email 2–4 hr), ISO 10002 FAQ tracking, GDPR/UU PDP data-request rule, 4-stage pre-booking funnel, 6-stage customer journey. New [[ops/canned-responses]] page: 16 ready-to-use scripts bilingual ID/EN covering Triage, Discovery, Proposal, Urgency/Closing, Post-Booking (H-7, H-1, post-tour review), and 4 objection-handling templates.
 
 ---
 

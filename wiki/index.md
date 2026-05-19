@@ -34,7 +34,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/bbksda-pelatihan-pemandu-2024]] — BBKSDA Jatim 2024-05-24. Official guide training report: 250 HPWKI guides, SAR + PPGD curriculum, 3 days at Paltuding. Validates HPWKI training chain. Full access.
 - [[sources/ssot-image-asset-map]] — JVTO image asset SSOT (2026-05-16). 54 live images across 14 groups
 - [[sources/seo-audit-2026-05]] — SEO audit (2026-05-17). Dual-URL issue, keyword strategy (15 targets), competitor map (3 tiers), schema requirements (7 page types), 14 QW + 14 SI action items. Ahrefs data unavailable — volumes estimated.: crew portraits (11), field operations (8), crew credentials (5), health screening (5), history/heritage (5), police docs (4), founder (3), press (3), legal docs (6), partner (1), uncertain (1). All URLs live on javavolcano-touroperator.com.
-- [[sources/route-data-csv]] — Route segment library (2026-05-18). 43 named day-segments (`routes.csv`) + 217 timed activity rows (`route_details.csv`). Supplement to db-export-2026-05 adding intra-day granularity. Routes 6 + 20 explicitly ingested for taman-safari package.
+- [[sources/route-data-csv]] — Route segment library (2026-05-18).
+- [[sources/comm-management-theory]] — Comm management theory (2026-05-19): BANT, MECE, SFC/FCR, SLA standards, ISO 10002, GDPR/UU PDP, 4-stage pre-booking funnel, 6-stage customer journey. Explicitly references JVTO. 43 named day-segments (`routes.csv`) + 217 timed activity rows (`route_details.csv`). Supplement to db-export-2026-05 adding intra-day granularity. Routes 6 + 20 explicitly ingested for taman-safari package.
 
 ## Destinations
 
@@ -90,7 +91,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[ops/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items). Source: 2026-05-17 audit.
 - [[ops/competitors]] — Tiered competitor registry (3 tiers + OTAs). Monitoring protocol.
 - [[ops/redirect-map]] — 301 redirect table: 13 legacy Laravel routes → canonical SSOT URLs. Dev handoff for `jvto-web`.
-- [[ops/2026-05-14-whatsapp-operations-playbook]] — 5-channel WhatsApp ops playbook (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
+- [[ops/2026-05-14-whatsapp-operations-playbook]] — 5-channel WhatsApp ops playbook
+- [[ops/canned-responses]] — WhatsApp + email template scripts per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN, BANT-tagged, objection handling (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
 - [[ops/2026-05-14-whatsapp-rules-engine]] — Companion to playbook. Pure execution logic — 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute & log). Master action table, intent taxonomy seed, templates, hard rules, escalation destinations, fallback behavior, drift detection. AI-readable, no philosophy.
 
 ## Open Gaps (no page yet — flagged by Lint)

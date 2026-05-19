@@ -62,6 +62,7 @@ Playbook ini menyusun ulang lima alur WhatsApp tersebut menjadi sistem yang **te
 | AEO claims | -> [[content/aeo-claims]] | Klaim yang aman dikutip publik |
 | Copy bank | -> [[content/copy-bank]] | Frasa & template terverifikasi |
 | Operational facts | -> [[content/operational-facts]] | Fakta operasional (jam, lokasi, harga) |
+| **Canned responses** | -> [[ops/canned-responses]] | **Template WA + email siap kirim per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN** |
 | Destinations | -> [[destinations/kawah-ijen]], [[destinations/mount-bromo]], [[destinations/tumpak-sewu]], [[destinations/madakaripura]], [[destinations/papuma-beach]] | Info destinasi |
 | Pricing & itinerary | -> [[products/packages-full-pricing]], -> [[products/packages-itineraries]] | Acuan kuotasi (manual, bukan otomatis) |
 | Policy pack | -> [[sources/jvto-policy-pack-v6]] | Booking, payment, cancellation rules |
@@ -104,7 +105,7 @@ Disusun dari yang paling kritis ke paling minor.
 
 9. **Vendor & crew di-mix dengan tamu.** Inan menjawab "Pak Hartono siap pickup jam 00:30?" di tengah-tengah menjawab pertanyaan tamu Eropa. Context-switching mahal.
 
-10. **Tidak ada SLA tertulis.** Tidak ada komitmen internal: "JVTO inquiry harus dibalas dalam 30 menit business hours". Tanpa SLA, tidak ada cara ukur sukses.
+10. **Tidak ada SLA tertulis.** Tidak ada komitmen internal: "JVTO inquiry harus dibalas dalam 30 menit business hours". Tanpa SLA, tidak ada cara ukur sukses. *Benchmark internasional*: WA/Live Chat maks 2–5 menit (otomatis), email maks 2–4 jam hari kerja. Sumber: -> [[sources/comm-management-theory]] §SLA-Standards.
 
 ### 3.3 Risiko Teknis & Compliance
 
@@ -205,7 +206,7 @@ Setiap flow ditulis sebagai *state machine* dengan pemicu eksplisit. Format kons
 - **Pemicu masuk:** Inan/Sam sudah merespons dan customer balas balik dengan info konkret (destinasi, tanggal, pax).
 - **Aksi sistem:** Update state ke `qualified`. Log info dasar: destinasi, tanggal (jika ada), pax (jika ada), bahasa, asal negara.
 - **Aksi manusia (Inan):** 
-  - Konfirmasi 3 hal minimum: **destinasi + tanggal + pax**.
+  - Konfirmasi 3 hal minimum: **destinasi + tanggal + pax**. Gunakan BANT qualification framework: N (kebutuhan + tipe tur), T (tanggal pasti vs tentatif), B (preferensi hotel sebagai proxy budget), A (pengambil keputusan). Template skrip: -> [[ops/canned-responses]] §Stage-2-Discovery.
   - Kalau pricing question → **eskalasi ke Sam** atau pakai pricing dari -> [[products/packages-full-pricing]] (tidak boleh improvisasi harga).
   - Kalau customer minta "kasih saya itinerary lengkap" → kirim itinerary dari -> [[products/packages-itineraries]].
 - **Pemicu keluar:** 
