@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /why-jvto/community-standards
 output_date: 2026-05-12

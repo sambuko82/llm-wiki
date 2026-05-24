@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /travel-guide/best-time-to-visit
 output_date: 2026-05-12

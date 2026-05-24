@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /why-jvto/our-story
 output_date: 2026-05-16

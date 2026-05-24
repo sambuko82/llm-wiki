@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 page: /travel-guide/safety-on-tours
 output_date: 2026-05-12
