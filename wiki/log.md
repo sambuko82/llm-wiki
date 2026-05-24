@@ -11,6 +11,36 @@ sources: []
 
 ---
 
+## [2026-05-25] sync | wiki → jvto-web — Workstream B (audit revealed near-complete)
+
+**Source type**: Workflow 5 follow-up — fourth and final leg of the 2026-05-24 raw-folder ingest plan (`~/.claude/plans/modular-kindling-clock.md` §Workstream B). **Audit pass discovered the parent plan's "8+ file" scope was 95% already-done** by prior Workflow 5 syncs (`f8ae382` and earlier). Real scope: 1 DB row + 1 schema description line.
+
+**Patched in jvto-web (committed)**:
+- **Workstream B** — `7800e48` + `6bd4011`: EAV NLP sharpening on the AEO surface for `/travel-guide/ijen-health-screening` + `/why-jvto` ItemList:
+  - `narrative_claims` id='C4' (primary_page=/travel-guide/ijen-health-screening): `pillar` + `core_claim` + 4 `nlp_variants` arrays (short, cs_reply, ai_snippet, customer_friendly) now cite **BBKSDA SE.1658/KSA.9/2024** + **Dr. Ahmad Irwandanu (SIP verifiable on satusehat.kemkes.go.id)**. Source: [[content/aeo-claims]] lines 228–241 + [[content/brand-voice]] lines 60–66.
+  - `buildWhyJvtoSchemas.ts:137` ItemList.description: folds in `"PT Java Volcano Rendezvous (NIB 1102230032918, trading as Java Volcano Tour Operator)"` for entity-resolution density on the /why-jvto hub schema graph.
+- **Mechanism**: new helper `scripts/ingest-workstream-b.mjs` (Prisma `narrative_claims.update`, dry-run default, `INGEST_CONFIRM=1` to apply, idempotency guard via SE.1658-substring check). Run via `node --env-file=.env.local`.
+- **No snapshot regen needed**: `narrative_claims` is a separate table from `content_pages` — resolver reads it at SSR/SSG time, no `dbPageSnapshots.json` mirror exists.
+
+**Audit findings (no patch needed — already canonical from prior commits)**:
+- `entityGraph.ts:30` `legalName: 'PT Java Volcano Rendezvous'` ✓
+- 5 schema-builder NIB 1102230032918 references (`buildHomepageSchemas.ts:49`, `entityGraph.ts:31/38`, `buildVerifySchemas.ts:249`, image-asset captions) ✓
+- 9 FAQ-file NIB / PT references (`homepageFaqs.ts:14,26,44,51`, `tourFaqs.ts:89`, `verifyFaqs.ts:17–28,35`) ✓
+- All schema/FAQ "mandatory"/"screening" surfaces already cite SE.1658 (`buildTourSchemas.ts:107-109`, `buildTravelGuideSchemas.ts:79,81,109`, `tourFaqs.ts:124-127`, `homepageFaqs.ts:24-27`, `verifyFaqs.ts:32-36`) ✓
+- 4 Dr. Irwandanu citations across schemas + FAQs (`entityGraph.ts:287`, `buildTravelGuideSchemas.ts:82`, `homepageFaqs.ts:26-27`, `tourFaqs.ts:127`) ✓
+- `narrative_claims` C1 (police-safety pillar) + C5 (verification-approach meta-claim) — clean, scope-correct as-is ✓
+
+**Verification**:
+- DB SAFETY CHECK pass: dry-run → 6-field diff preview confirmed → `INGEST_CONFIRM=1` write → 1 row updated cleanly
+- Idempotency re-run: aborts at SE.1658 guard ✓
+- `npm run build` → `✓ Compiled successfully in 12.1s` + `✓ Generating static pages (143/143) in 5.3s`
+
+**Lesson surfaced**: when a parent plan flags "drift across 8+ files", audit first. A current-state map cost ~5 grep + 1 DB query and rerouted the work from "text-replacement-heavy refactor" to "1 targeted DB write". The wiki source's drift analysis was true at write time but stale by Workflow 5 sync time. Audit-first prevents spurious "I already fixed that" diffs.
+
+→ jvto-web commits: `7800e48` (chore: ingest script), `6bd4011` (feat: content + schema)
+
+---
+
 ## [2026-05-25] sync | wiki → jvto-web — Workstream C Guardian Archetype + Trust-Pillar Crew Mapping
 
 **Source type**: Workflow 5 follow-up — third leg of the 2026-05-24 raw-folder ingest (Plan: `~/.claude/plans/modular-kindling-clock.md` §Workstream C). DB-driven content ingest, not schema. Shipped same day as Workstreams A + D (entry below) but as separate commit pair after owner mid-implementation correction on renderer capability.
