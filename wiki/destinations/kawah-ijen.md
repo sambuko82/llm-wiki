@@ -9,6 +9,7 @@ canonical_url: /destinations/ijen-crater
 ijen_relevant: yes
 health_wording_mode: conditional
 geo_bbox: { minlat: -8.07316, minlon: 114.22426, maxlat: -8.0539, maxlon: 114.24812 }
+route_viewer_url: /3d/ijen-crater
 ---
 
 # Kawah Ijen
@@ -100,8 +101,11 @@ Community-recorded trail data — not an official JVTO route trace. Useful for g
 | Named waypoints | **Tempat Istirahat minum Kopi dan Teh** (rest stop) @ (-8.06528, 114.23673) · **Sudut Pandang Matahari Terbit** (Sunrise Viewpoint) @ (-8.05428, 114.24629) |
 | Track point density | 673 points |
 | Source | AllTrails (community trail data) |
+| 3D viewer | [/3d/ijen-crater](/3d/ijen-crater) |
 
 Notes: GPX peak elevation (2,380 m) is slightly under the official crater-rim figure of **2,386 m** — recorded track did not quite reach the literal high point. The 797 m cumulative ascent exceeds the ~500 m rim-only gain because the trace includes the optional crater-floor descent toward the blue-fire viewing area.
+
+→ [[sources/3d-route-viewer]]
 
 ## Trust Anchors
 

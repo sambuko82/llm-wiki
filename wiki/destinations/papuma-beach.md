@@ -9,6 +9,7 @@ canonical_url: /destinations/papuma-beach
 ijen_relevant: no
 health_wording_mode: none
 geo_bbox: { minlat: -8.43559, minlon: 113.54986, maxlat: -8.42432, maxlon: 113.56033 }
+route_viewer_url: /3d/papuma-beach
 ---
 
 # Papuma Beach
@@ -63,8 +64,11 @@ Community-recorded trail data — not an official JVTO route trace.
 | Named waypoints | — |
 | Track point density | 169 points |
 | Source | AllTrails (community trail data) |
+| 3D viewer | [/3d/papuma-beach](/3d/papuma-beach) |
 
 The 86 m peak elevation corresponds to the cape headland walk. The 335 m cumulative ascent reflects a meandering coastal+cape walking trace (multiple short climbs along the headland path).
+
+→ [[sources/3d-route-viewer]]
 
 ## Content Angles
 

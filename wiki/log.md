@@ -1,13 +1,25 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-19
+last_updated: 2026-05-24
 sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-24] ingest | 3D Route Viewer + GeoJSON route data — all 5 destinations
+
+Pages created: [[sources/3d-route-viewer]] (new) — Mapbox 3D fly-through feature reference: viewer URLs for all 5 destinations, full route stats table (length/gain/elevation range/point count), tech stack (Next.js 16, Mapbox GL JS v3, @turf/turf, hand-rolled SVG ElevationChart), data provenance, component paths.
+
+Pages updated (5 destinations): `route_viewer_url` frontmatter added + `3D viewer` row inserted in Trail Data table + `→ [[sources/3d-route-viewer]]` cross-reference appended to: [[destinations/kawah-ijen]], [[destinations/mount-bromo]], [[destinations/madakaripura]], [[destinations/papuma-beach]], [[destinations/tumpak-sewu]].
+
+Pages updated (meta): [[index]] — source entry added, destination descriptions updated with viewer URLs, `total_pages: 50 → 51`, `last_updated: 2026-05-24`.
+
+Data source: `F:/jvto-web/public/routes/index.json` + 5 GeoJSON files (same GPX origin as `raw/*.gpx`). Feature committed on `design/sam` branch (commit `650e70a`).
 
 ---
 

@@ -10,6 +10,7 @@ ijen_relevant: no
 health_wording_mode: none
 distinction: Tallest waterfall in Java
 geo_bbox: { minlat: -7.85401, minlon: 113.00867, maxlat: -7.84388, maxlon: 113.01865 }
+route_viewer_url: /3d/madakaripura-waterfall
 ---
 
 # Madakaripura Waterfall
@@ -81,8 +82,11 @@ Community-recorded trail data — not an official JVTO route trace.
 | Named waypoints | — |
 | Track point density | 417 points |
 | Source | AllTrails (community trail data) |
+| 3D viewer | [/3d/madakaripura-waterfall](/3d/madakaripura-waterfall) |
 
 Notes: The 269 m elevation range is notable — the bounding box encompasses both the parking area approach (higher elevation, ~800 m) and the canyon basin (lower, ~555 m). Cumulative ascent (492 m) reflects the round-trip nature of the recording (descend canyon → return). The site's reputation as "tallest waterfall in Java" stands independent of these track metrics, which describe **approach terrain**, not waterfall height — see Quick Facts for attributed height values.
+
+→ [[sources/3d-route-viewer]]
 
 ## Trust Anchors
 

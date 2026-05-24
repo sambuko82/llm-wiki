@@ -9,6 +9,7 @@ canonical_url: /destinations/mount-bromo
 ijen_relevant: no
 health_wording_mode: none
 geo_bbox: { minlat: -7.93998, minlon: 112.95277, maxlat: -7.9217, maxlon: 112.9635 }
+route_viewer_url: /3d/mount-bromo
 ---
 
 # Mount Bromo
@@ -82,10 +83,13 @@ Community-recorded trail data — not an official JVTO route trace.
 | Named waypoints | **Pura Luhur Poten** (Hindu temple, caldera floor) @ (-7.93345, 112.95434) |
 | Track point density | 809 points |
 | Source | AllTrails (community trail data) |
+| 3D viewer | [/3d/mount-bromo](/3d/mount-bromo) |
 
 Notes: GPX peak (2,277 m) is below the official Bromo summit-ridge figure of **2,329 m** because the recorded trace stays in the caldera-floor / crater-rim corridor (the typical guided route). Penanjakan viewpoint (2,770 m) is outside this GPX bounding box — viewers reach it by 4WD on a separate access road, not by this trail.
 
 The **Pura Luhur Poten** waypoint is the Hindu temple at the caldera floor — passed by all guided routes between the parking area and the crater stairs.
+
+→ [[sources/3d-route-viewer]]
 
 ## Trust Anchors
 

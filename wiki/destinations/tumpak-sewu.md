@@ -10,6 +10,7 @@ ijen_relevant: no
 health_wording_mode: none
 nickname: Java's Niagara
 geo_bbox: { minlat: -8.23184, minlon: 112.91781, maxlat: -8.23028, maxlon: 112.91997 }
+route_viewer_url: /3d/tumpak-sewu-waterfall
 ---
 
 # Tumpak Sewu Waterfall
@@ -74,8 +75,11 @@ Community-recorded trail data — not an official JVTO route trace.
 | Named waypoints | — |
 | Track point density | 125 points |
 | Source | AllTrails (community trail data) |
+| 3D viewer | [/3d/tumpak-sewu-waterfall](/3d/tumpak-sewu-waterfall) |
 
 Notes: The recorded trace covers the rim-viewpoint area only (508-568 m). The canyon descent into the base of the waterfall is not represented in this GPX. Per [[sources/ssot-v6]] §9_4, the descent involves ~300 steps and requires moderate-challenging fitness — not part of the AllTrails recording above.
+
+→ [[sources/3d-route-viewer]]
 
 ## Trust Anchors
 

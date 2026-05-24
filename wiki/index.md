@@ -1,8 +1,8 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-05-17
-total_pages: 50
+last_updated: 2026-05-24
+total_pages: 51
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
@@ -35,15 +35,16 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/ssot-image-asset-map]] — JVTO image asset SSOT (2026-05-16). 54 live images across 14 groups
 - [[sources/seo-audit-2026-05]] — SEO audit (2026-05-17). Dual-URL issue, keyword strategy (15 targets), competitor map (3 tiers), schema requirements (7 page types), 14 QW + 14 SI action items. Ahrefs data unavailable — volumes estimated.: crew portraits (11), field operations (8), crew credentials (5), health screening (5), history/heritage (5), police docs (4), founder (3), press (3), legal docs (6), partner (1), uncertain (1). All URLs live on javavolcano-touroperator.com.
 - [[sources/route-data-csv]] — Route segment library (2026-05-18).
-- [[sources/comm-management-theory]] — Comm management theory (2026-05-19): BANT, MECE, SFC/FCR, SLA standards, ISO 10002, GDPR/UU PDP, 4-stage pre-booking funnel, 6-stage customer journey. Explicitly references JVTO. 43 named day-segments (`routes.csv`) + 217 timed activity rows (`route_details.csv`). Supplement to db-export-2026-05 adding intra-day granularity. Routes 6 + 20 explicitly ingested for taman-safari package.
+- [[sources/comm-management-theory]] — Comm management theory (2026-05-19):
+- [[sources/3d-route-viewer]] — Mapbox 3D fly-through feature + GeoJSON route data for all 5 destinations (2026-05-24). `/3d/{slug}` viewer URLs, full route stats table, tech stack. BANT, MECE, SFC/FCR, SLA standards, ISO 10002, GDPR/UU PDP, 4-stage pre-booking funnel, 6-stage customer journey. Explicitly references JVTO. 43 named day-segments (`routes.csv`) + 217 timed activity rows (`route_details.csv`). Supplement to db-export-2026-05 adding intra-day granularity. Routes 6 + 20 explicitly ingested for taman-safari package.
 
 ## Destinations
 
-- [[destinations/kawah-ijen]] — 2,386 m, blue fire, BBKSDA health-screening coordination (conditional) · GPX trail data
-- [[destinations/mount-bromo]] — 2,329 m, Tengger caldera, Penanjakan sunrise, BBKSDA clearance · GPX trail data + Pura Luhur Poten waypoint
-- [[destinations/tumpak-sewu]] — Curtain waterfall ~120 m, Lumajang, canyon descent option · GPX trail data (rim trace)
-- [[destinations/madakaripura]] — Tallest waterfall in Java (height under reconciliation — see page note), Probolinggo · GPX trail data
-- [[destinations/papuma-beach]] — White-sand beach + cape headland (~86 m), Jember; coastal break on 5 Papuma-family packages · GPX trail data
+- [[destinations/kawah-ijen]] — 2,386 m, blue fire, BBKSDA health-screening coordination (conditional) · GPX trail data · 3D viewer /3d/ijen-crater
+- [[destinations/mount-bromo]] — 2,329 m, Tengger caldera, Penanjakan sunrise, BBKSDA clearance · GPX trail data + Pura Luhur Poten waypoint · 3D viewer /3d/mount-bromo
+- [[destinations/tumpak-sewu]] — Curtain waterfall ~120 m, Lumajang, canyon descent option · GPX trail data (rim trace) · 3D viewer /3d/tumpak-sewu-waterfall
+- [[destinations/madakaripura]] — Tallest waterfall in Java (height under reconciliation — see page note), Probolinggo · GPX trail data · 3D viewer /3d/madakaripura-waterfall
+- [[destinations/papuma-beach]] — White-sand beach + cape headland (~86 m), Jember; coastal break on 5 Papuma-family packages · GPX trail data · 3D viewer /3d/papuma-beach
 
 ## Products
 
