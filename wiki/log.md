@@ -1,13 +1,44 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-25] sync | wiki → jvto-web — FOUNDER EAV + verify-jvto/legal continuity
+
+**Source type**: Workflow 5 follow-up. Absorbs narrative + schema content from the 2026-05-24 raw-folder ingest into the live site. Two of four scoped workstreams shipped; two scoped + deferred. Plan: `~/.claude/plans/modular-kindling-clock.md`.
+
+**Patched in jvto-web (committed)**:
+- **Workstream A** — `f8ae382`'s parent + `6587e03`: `src/lib/schemas/entityGraph.ts` FOUNDER_SCHEMA — `jobTitle` array `['Founder', 'Active Tourist Police Officer']` → single string `'Active Tourist Police Officer, Ditpamobvit East Java'`; `alternateName` `'Mr. Sam'` → `['Mr. Sam', 'Bripka Agung Sambuko']`; new `description` field citing SPRIN POLPAR + SPRIN WAL-TRAVEL 2024 + Detik / Radar Jember press. Per [[content/aeo-claims]] §EAV Optimization Notes (lines 230–241) + [[content/brand-voice]] §E-E-A-T Framing (lines 129–142). Founder role preserved via `worksFor: { '@id': ORG_ID }` — no signal lost.
+- **Workstream D** — `9c6e58b`: `src/app/(website)/verify-jvto/legal/page.tsx` — new "Operational Continuity" section between Legal Entity Card and SHA-256 Anchors. Two-column grid:
+  - Left: Address Anchor — Ijen Bondowoso Homestay → PT continuity at Jl. Khairil Anwar No.102, Bondowoso since 2015; Booking.com 2015 (9.4/10) shipping anchor; Stefan Loose mention. Per [[credentials/legal-licenses]] §Address Continuity (lines 77–87).
+  - Right (inset card): Audit Disclosure — legacy NIB `0220001393513` may appear in OSS records; canonical active is `1102230032918`. Legacy NIB NOT added to schema `hasCredential` or `taxID` per [[credentials/legal-licenses]] line 18/84 rule. Page-copy-only disclosure.
+
+**Verification**: Both passes `npm run build` → `✓ Compiled` exit 0. Grep invariants:
+- `jobTitle.*Founder` in `src/lib/schemas/` → 0 hits ✓
+- `0220001393513` in `src/` → 1 hit (legal page only) ✓ — zero leak into schema files.
+
+**Scoped + deferred (not in this pass)**:
+- **Workstream B** (EAV NLP sharpening — health screening + legalName). Surface much bigger than plan estimated: ~20 files across schema builders, hardcoded TSX pages, components, FAQ data + DB-derived snapshot regen. Many "mandatory health" hits already cite BBKSDA SE.1658 (technically compliant with [[content/brand-voice]] voice-invariant). Strict EAV upgrade (add Dr. Irwandanu SIP citation per [[content/aeo-claims]] line 240) needs split execution per file class:
+  - B.1: schema builders (1–2 hits, near-canonical, low risk)
+  - B.2: hardcoded TSX pages — `verify-jvto/page.tsx:422,712` + `tour-from-{bali,surabaya}/page.tsx` + `tours-from-surabaya/page.tsx:521` + `travel-guide/page.tsx:423` (5 hits)
+  - B.3: components — `SafetyOnToursPage.tsx`, `TermsPage.tsx`, `TourRequirements.tsx`, `IjenHealthCertFAQ.tsx`, `TravelGuideTeaser.tsx`, `TravelGuidePage.tsx` (6 hits, includes section headings → visual impact)
+  - B.4: FAQ data + constants — `lib/faq-data.ts:88`, `constants.ts:149,182`, `data/knowledge.ts:143,175-176`, `data/faqs.ts:25`, `data.ts:393`
+  - B.5: SKIP — `src/data_new.ts` (14 hits, looks legacy/duplicated), `src/lib/publicContent/generated/*.json` (auto-generated; source = DB content_pages.faq + narrative_claims, regen via `scripts/export-public-page-snapshots.mjs`)
+  - `legalName` half = no-op; already canonical `'PT Java Volcano Rendezvous'` in all 4 sites (entityGraph, site-config, HomePage component, verify-jvto/page.tsx).
+- **Workstream C** (Guardian Archetype + Trust-Pillar Crew Mapping on `/why-jvto/our-story` + `/why-jvto/our-team`). Phase-0 blocker resolved — snapshot script exists at `scripts/export-public-page-snapshots.mjs` and both routes are in scope (lines 30–31). Implementation path: DB row write to `content_pages.content.sections` → `node scripts/export-public-page-snapshots.mjs` → snapshot json regenerates → SSG picks up next build. Source copy verbatim in [[content/copy-bank]] §Guardian Archetype framing + [[people/crew-registry]] §Guardian Mindset / §Trust-Pillar Crew Mapping.
+
+**Live drift (owner adjudication required, NOT in this plan's scope)**:
+- `src/lib/schemas/entityGraph.ts:144–154` and `:259–269` currently publish Stefan Loose `isbn: '978-3-7701-7881-0'` + `datePublished: '2018-07-05'`. [[credentials/press-coverage]] flagged this as a do-not-publish contradiction pending physical scan verification (existing wiki: 2016 / 9783770167654). Recommend keeping current published values until owner has the book in hand; do not unilaterally roll back.
+
+**Plan reference**: `~/.claude/plans/modular-kindling-clock.md`
 
 ---
 
