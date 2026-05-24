@@ -11,6 +11,34 @@ sources: []
 
 ---
 
+## [2026-05-25] sync | wiki → jvto-web — Workstream C Guardian Archetype + Trust-Pillar Crew Mapping
+
+**Source type**: Workflow 5 follow-up — third leg of the 2026-05-24 raw-folder ingest (Plan: `~/.claude/plans/modular-kindling-clock.md` §Workstream C). DB-driven content ingest, not schema. Shipped same day as Workstreams A + D (entry below) but as separate commit pair after owner mid-implementation correction on renderer capability.
+
+**Patched in jvto-web (committed)**:
+- **Workstream C** — `8eedb1a` + `6824b00`: prepended three framing sections via new ingest helper.
+  - `/why-jvto/our-story` (row id=16): `+ guardian-archetype` at position 0 (Style B narrative dossier, 2 pull-quotes via GFM `>` blockquote). Source: [[content/copy-bank]] lines 93–99.
+  - `/why-jvto/our-team` (row id=17): `+ guardian-mindset` + `+ trust-pillar-crew-mapping` at positions 0–1 (framing principle with Rendi crater-descent quote; 7-pillar mapping table + 5-archetype table, both via GFM pipe syntax). Source: [[people/crew-registry]] lines 129–163.
+- **Mechanism**: new helper `scripts/ingest-workstream-c.mjs` (Prisma upsert; dry-run by default; `INGEST_CONFIRM=1` to apply; idempotency guard refuses double-prepend). Run with `node --env-file=.env.local`.
+- **Block strategy**: single `markdown` block per section, GFM syntax. Renders via canonical `src/components/content/MarkdownRenderer.tsx` (react-markdown + remark-gfm). Branded blockquote (left-border `#9fce33`, italic, light-green bg) + branded table styling (Syne header, hover state). No new block types, no renderer changes.
+
+**Mid-implementation correction**: original plan-mode locked constraint "MarkdownRenderer is custom, no GFM" was based on a subagent reading `src/components/website/MarkdownRenderer.tsx` (dead code, zero imports). Canonical renderer at `src/components/content/MarkdownRenderer.tsx` IS GFM-enabled. Owner re-approved revised approach via AskUserQuestion → ingested verbatim wiki markdown (cleaner than the originally-planned bold-paragraph + grid workaround).
+
+**Verification**:
+- DB SAFETY CHECK pass: dry-run → preview confirmed → `INGEST_CONFIRM=1` write → 2/2 rows updated cleanly
+- Snapshot regen via `scripts/export-public-page-snapshots.mjs` → wrote 17 routes
+- `npm run build` → `✓ Compiled successfully in 12.7s` + `✓ Generating static pages (143/143) in 4.2s`
+- `git diff src/lib/publicContent/generated/dbPageSnapshots.json | grep '"id":'` → exactly 3 new section IDs added
+
+**Out of pass (still open per modular-kindling-clock plan)**:
+- Workstream B — EAV NLP sharpening across 8+ schema/Faqs files
+- Stefan Loose ISBN/year contradiction — owner adjudication
+- `reviewApiSnapshots.json` artifact stale (2026-05-08, trustpilot:47) — owner ingest tool
+
+→ jvto-web commits: `8eedb1a` (chore: ingest script), `6824b00` (feat: content)
+
+---
+
 ## [2026-05-25] sync | wiki → jvto-web — FOUNDER EAV + verify-jvto/legal continuity
 
 **Source type**: Workflow 5 follow-up. Absorbs narrative + schema content from the 2026-05-24 raw-folder ingest into the live site. Two of four scoped workstreams shipped; two scoped + deferred. Plan: `~/.claude/plans/modular-kindling-clock.md`.
