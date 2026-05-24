@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-24
-total_pages: 51
+total_pages: 55
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
 ---
 
