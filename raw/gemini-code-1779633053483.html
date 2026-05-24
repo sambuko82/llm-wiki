@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVTO | Java Volcano Tour Operator - The Digital Trust Fortress</title>
+    <meta name="description" content="Police-Led, Forensic Tourism Operations for Mt. Ijen & Bromo. Verified Safety, Legal Compliance, and Operational Certainty.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono:,
+                        serif:,
+                    },
+                    colors: {
+                        police: {
+                            900: '#0F172A', // Slate 900
+                            800: '#1E293B', // Slate 800
+                            accent: '#F59E0B', // Amber 500 (Gold)
+                        },
+                        forensic: {
+                            light: '#F8FAFC',
+                            border: '#E2E8F0',
+                            success: '#10B981', // Emerald
+                        }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Forensic Grid Background */
+       .bg-forensic-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+        }
+        
+        /* Noise Texture for 'Paper' feel */
+       .noise-texture {
+            position: relative;
+        }
+       .noise-texture::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Scanline Animation */
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+       .scan-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.8);
+            animation: scanline 3s linear infinite;
+            z-index: 10;
+        }
+
+        /* Typography Utilities */
+       .text-glow {
+            text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+        }
+        
+        /* Hide Scrollbar for horizontal scroll containers */
+       .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+       .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph":
+          },
+          "identifier":,
+          "founder": {
+            "@type": "Person",
+            "name": "Agung Sambuko",
+            "jobTitle": "Active Tourist Police Officer",
+            "identifier": "Bripka Agung Sambuko",
+            "knowsAbout":
+          },
+          "memberOf":,
+          "subjectOf": {
+            "@type": "Book",
+            "name": "Stefan Loose Reiseführer Indonesien",
+            "isbn": "978-3-7701-7881-0",
+            "publisher": "DuMont Reiseverlag",
+            "year": "2018"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://javavolcano-touroperator.com/why-jvto",
+          "name": "Why JVTO: The Digital Trust Fortress",
+          "isPartOf": { "@id": "https://javavolcano-touroperator.com/#organization" },
+          "about": { "@id": "https://javavolcano-touroperator.com/#organization" }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-police-accent selection:text-white">
+
+    <header class="fixed top-0 w-full z-50 bg-police-900 border-b-2 border-police-accent shadow-lg text-white">
+        <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-police-accent/10 p-1.5 rounded border border-police-accent/30">
+                    <svg class="w-5 h-5 text-police-accent" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[10px] tracking-[0.2em] text-police-accent uppercase font-bold">Police Leadership</span>
+                    <span class="text-xs font-mono text-slate-300">Officer Agung Sambuko (Pam Obvit)</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-2 font-serif text-xl tracking-wide">
+                JVTO <span class="text-police-accent">.</span>
+            </div>
+
+            <a href="#proof-vault" class="flex items-center gap-3 group transition-all hover:bg-white/5 py-1 px-3 rounded">
+                <div class="text-right">
+                    <span class="block text-[10px] uppercase text-slate-400 group-hover:text-white transition-colors">Forensic License ID</span>
+                    <span class="block text-xs font-mono text-forensic-success">NIB: 1102230032918</span>
+                </div>
+                <div class="h-2 w-2 rounded-full bg-forensic-success animate-pulse"></div>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative pt-32 pb-20 bg-police-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506509465715-e5cb991f86d8?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-police-900 via-police-900/80 to-transparent"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-police-accent/30 bg-police-accent/10 text-police-accent text-xs font-bold tracking-widest uppercase">
+                    <span class="w-2 h-2 rounded-full bg-police-accent"></span>
+                    Verified Operational Certainty
+                </div>
+                
+                <h1 class="font-serif text-5xl md:text-7xl leading-tight">
+                    Beyond Tourism. <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Forensic Safety.</span>
+                </h1>
+                
+                <p class="text-lg text-slate-300 max-w-xl border-l-2 border-police-accent pl-6">
+                    The only Ijen & Bromo expedition operator founded and led by an <strong>Active Tourist Police Officer</strong>. We replace anxiety with evidence.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#proof-vault" class="bg-police-accent hover:bg-amber-600 text-police-900 font-bold py-4 px-8 rounded flex items-center gap-2 transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Inspect Evidence
+                    </a>
+                    <a href="#team-registry" class="border border-slate-600 hover:border-white text-white font-medium py-4 px-8 rounded flex items-center gap-2 transition-all">
+                        Meet The Squad
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative group perspective-1000">
+                <div class="absolute -inset-4 bg-gradient-to-r from-police-accent to-blue-600 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div class="relative bg-police-800 border border-slate-700 rounded-xl p-6 shadow-2xl">
+                    <div class="flex items-start gap-4">
+                        <div class="w-24 h-24 rounded bg-slate-700 overflow-hidden border-2 border-slate-600">
+                             <img src="https://ui-avatars.com/api/?name=Agung+Sambuko&background=1e293b&color=fff" alt="Agung Sambuko" class="w-full h-full object-cover grayscale mix-blend-luminosity">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white">Bripka Agung Sambuko</h3>
+                            <p class="text-police-accent text-sm font-mono mb-2">FOUNDER • ACTIVE POLICE</p>
+                            <div class="grid grid-cols-2 gap-2 text-xs text-slate-400 font-mono mt-4">
+                                <div class="bg-police-900 p-2 rounded border border-slate-700">
+                                    <span class="block opacity-50">UNIT</span>
+                                    <span class="text-white">PAM OBVIT</span>
+                                </div>
+                                <div class="bg-police-900 p-2 rounded border border-slate-700">
+                                    <span class="block opacity-50">STATUS</span>
+                                    <span class="text-forensic-success">ACTIVE DUTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-6 right-6 font-mono text-[10px] text-slate-500">
+                        ID_VERIFIED: 1102230032918
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-forensic-grid relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-bold text-police-900">The Fortress Architecture</h2>
+                <p class="text-slate-600 mt-2 max-w-2xl mx-auto">Standard travel agencies offer promises. We offer protocols.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:border-police-accent transition-colors relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-police-900">1. Police Authority</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Founded by Officer Sambuko. Our operations are integrated with local law enforcement intelligence regarding route safety and volcanic activity.
+                    </p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-xs font-mono text-slate-500 rounded">DOC: SPRIN-2024</span>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:border-police-accent transition-colors relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-police-900">2. Legal Fortress</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        We are a registered "Perseroan Terbatas" (PT), not a freelancer. We hold verified NIB, TDUP, and tax licenses, fully auditable.
+                    </p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-xs font-mono text-slate-500 rounded">DOC: NIB-1102</span>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:border-police-accent transition-colors relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-police-900">3. Personality Economy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        We don't outsource. Our crew are "Micro-Entities" with their own reputations, specialized skills (Photography, First Aid), and review logs.
+                    </p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-xs font-mono text-slate-500 rounded">DATA: CREW-LOGS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-serif font-bold text-police-900 mb-12 text-center">The Golden Thread: Proof of Continuity</h2>
+            
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-slate-200"></div>
+
+                <div class="relative mb-16">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="md:w-5/12 text-right pr-8 order-1">
+                            <h3 class="text-xl font-bold text-police-900">The Origin</h3>
+                            <p class="text-sm text-slate-500 font-mono mb-2">2015 • BONDOWOSO</p>
+                            <p class="text-slate-600">"Ijen Bondowoso Homestay" wins Booking.com Guest Review Award. Address matches current HQ.</p>
+                        </div>
+                        <div class="z-10 bg-police-accent w-8 h-8 rounded-full border-4 border-white shadow flex items-center justify-center order-2">
+                            <div class="w-2 h-2 bg-white rounded-full"></div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 order-3">
+                            <div class="bg-slate-50 p-4 rounded border border-slate-200 inline-block rotate-2 shadow-sm">
+                                <div class="text-[10px] text-slate-400 font-mono mb-1">EVIDENCE: AWARD_2015.JPG</div>
+                                <div class="h-20 w-32 bg-slate-200 rounded flex items-center justify-center text-slate-400 text-xs">IMG: Award</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-16">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="md:w-5/12 text-right pr-8 md:order-3 md:text-left md:pl-8 md:pr-0">
+                            <h3 class="text-xl font-bold text-police-900">Bibliographic Citation</h3>
+                            <p class="text-sm text-slate-500 font-mono mb-2">2018 • GERMANY</p>
+                            <p class="text-slate-600">Featured in <em>Stefan Loose Reiseführer Indonesien</em> (ISBN 978-3-7701-7881-0), validating early operational excellence.</p>
+                        </div>
+                        <div class="z-10 bg-police-900 w-8 h-8 rounded-full border-4 border-white shadow flex items-center justify-center order-2">
+                             <div class="w-2 h-2 bg-white rounded-full"></div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 md:order-1 md:text-right md:pr-8 md:pl-0">
+                             <div class="bg-slate-50 p-4 rounded border border-slate-200 inline-block -rotate-1 shadow-sm">
+                                <div class="text-[10px] text-slate-400 font-mono mb-1">EVIDENCE: ISBN_SCAN.PDF</div>
+                                <div class="h-20 w-32 bg-slate-200 rounded flex items-center justify-center text-slate-400 text-xs">IMG: Guidebook</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <div class="md:w-5/12 text-right pr-8 order-1">
+                            <h3 class="text-xl font-bold text-police-900">The Fortress</h3>
+                            <p class="text-sm text-slate-500 font-mono mb-2">2025 • PRESENT DAY</p>
+                            <p class="text-slate-600">Full incorporation as PT Java Volcano Rendezvous. Active Police Leadership confirmed via SPRIN.</p>
+                        </div>
+                        <div class="z-10 bg-forensic-success w-8 h-8 rounded-full border-4 border-white shadow flex items-center justify-center order-2">
+                             <div class="w-2 h-2 bg-white rounded-full"></div>
+                        </div>
+                        <div class="md:w-5/12 pl-8 order-3">
+                             <div class="bg-slate-50 p-4 rounded border border-slate-200 inline-block rotate-0 shadow-sm border-l-4 border-l-forensic-success">
+                                <div class="text-[10px] text-slate-400 font-mono mb-1">STATUS: VERIFIED</div>
+                                <div class="font-bold text-police-900">Current NIB: 1102230032918</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proof-vault" class="py-20 bg-police-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-slate-700 pb-6">
+                <div>
+                    <h2 class="text-3xl font-serif font-bold text-white flex items-center gap-3">
+                        <svg class="w-8 h-8 text-police-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Evidence Locker
+                    </h2>
+                    <p class="text-slate-400 mt-2 font-mono text-sm">PATH: /public/assets/proof/ • ACCESS_LEVEL: PUBLIC</p>
+                </div>
+                <div class="text-right mt-4 md:mt-0">
+                    <span class="inline-flex items-center px-3 py-1 rounded bg-forensic-success/20 text-forensic-success border border-forensic-success/30 text-xs font-mono">
+                        <span class="w-2 h-2 bg-forensic-success rounded-full mr-2 animate-pulse"></span>
+                        INTEGRITY CHECK: PASS
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-police-800 border border-slate-700 rounded-lg p-5 hover:border-police-accent transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300 font-mono">LEGAL</span>
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-police-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">NIB License</h3>
+                    <p class="text-xs text-slate-400 mb-4">Issued: Ministry of Investment</p>
+                    <div class="bg-police-900 p-2 rounded border border-slate-800 mb-4">
+                        <p class="text-[10px] text-slate-500 font-mono mb-1">SHA-256 HASH</p>
+                        <code class="text-[10px] text-police-accent break-all font-mono">a1b2c3d4...9f3e</code>
+                    </div>
+                    <button class="w-full py-2 bg-slate-700 hover:bg-slate-600 text-xs font-bold rounded uppercase tracking-wider text-white transition-colors">Inspect PDF</button>
+                </div>
+
+                <div class="bg-police-800 border border-slate-700 rounded-lg p-5 hover:border-police-accent transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[10px] bg-police-accent/20 text-police-accent px-2 py-1 rounded font-mono">POLICE</span>
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-police-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">SPRIN Orders</h3>
+                    <p class="text-xs text-slate-400 mb-4">Issuer: Kepolisian RI</p>
+                    <div class="bg-police-900 p-2 rounded border border-slate-800 mb-4">
+                        <p class="text-[10px] text-slate-500 font-mono mb-1">SHA-256 HASH</p>
+                        <code class="text-[10px] text-police-accent break-all font-mono">7e8f9a0b...1c2d</code>
+                    </div>
+                    <button class="w-full py-2 bg-slate-700 hover:bg-slate-600 text-xs font-bold rounded uppercase tracking-wider text-white transition-colors">Inspect Document</button>
+                </div>
+
+                <div class="bg-police-800 border border-slate-700 rounded-lg p-5 hover:border-police-accent transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300 font-mono">HISTORY</span>
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-police-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">2015 Award</h3>
+                    <p class="text-xs text-slate-400 mb-4">Source: Booking.com</p>
+                    <div class="bg-police-900 p-2 rounded border border-slate-800 mb-4">
+                        <p class="text-[10px] text-slate-500 font-mono mb-1">SHA-256 HASH</p>
+                        <code class="text-[10px] text-police-accent break-all font-mono">5g6h7i8j...3k4l</code>
+                    </div>
+                    <button class="w-full py-2 bg-slate-700 hover:bg-slate-600 text-xs font-bold rounded uppercase tracking-wider text-white transition-colors">Inspect Image</button>
+                </div>
+
+                <div class="bg-police-800 border border-slate-700 rounded-lg p-5 hover:border-police-accent transition-all group">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[10px] bg-slate-700 px-2 py-1 rounded text-slate-300 font-mono">PARTNER</span>
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-police-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">HPWKI Cert</h3>
+                    <p class="text-xs text-slate-400 mb-4">Guide Association</p>
+                    <div class="bg-police-900 p-2 rounded border border-slate-800 mb-4">
+                        <p class="text-[10px] text-slate-500 font-mono mb-1">SHA-256 HASH</p>
+                        <code class="text-[10px] text-police-accent break-all font-mono">9m0n1o2p...5q6r</code>
+                    </div>
+                    <button class="w-full py-2 bg-slate-700 hover:bg-slate-600 text-xs font-bold rounded uppercase tracking-wider text-white transition-colors">Inspect Cert</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-registry" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between mb-12">
+                <h2 class="text-3xl font-serif font-bold text-police-900">Crew Manifest</h2>
+                <a href="#" class="text-police-accent hover:text-amber-600 font-medium text-sm flex items-center gap-1">View Full Registry &rarr;</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-6">
+                    <div class="w-24 h-24 shrink-0 rounded-full bg-slate-200 overflow-hidden border-2 border-slate-100">
+                         <img src="https://ui-avatars.com/api/?name=Gufron&background=e2e8f0&color=475569" alt="Gufron" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-police-900">Gufron</h3>
+                                <div class="flex gap-2 mt-1">
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full">Guide</span>
+                                    <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-[10px] font-bold uppercase rounded-full">Visual Storyteller</span>
+                                </div>
+                            </div>
+                            <span class="font-mono text-xs text-slate-400">ID: G-04</span>
+                        </div>
+                        
+                        <div class="mt-4 bg-yellow-50 p-3 rounded-lg border border-yellow-100 relative">
+                            <div class="absolute -top-2 left-4 text-yellow-400 text-xl font-serif">"</div>
+                            <p class="text-sm text-slate-700 italic relative z-10">
+                               ...Gufron was amazing, he took the best photos of the blue fire for us when it was too dangerous to go closer...
+                            </p>
+                            <div class="mt-2 text-[10px] text-slate-500 font-bold uppercase tracking-wide">— Jason Li, Verified Guest</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-6">
+                    <div class="w-24 h-24 shrink-0 rounded-full bg-slate-200 overflow-hidden border-2 border-slate-100">
+                         <img src="https://ui-avatars.com/api/?name=Rendi&background=e2e8f0&color=475569" alt="Rendi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-police-900">Rendi</h3>
+                                <div class="flex gap-2 mt-1">
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full">Guide</span>
+                                    <span class="px-2 py-0.5 bg-red-100 text-red-700 text-[10px] font-bold uppercase rounded-full">Technical Safety</span>
+                                </div>
+                            </div>
+                            <span class="font-mono text-xs text-slate-400">ID: R-09</span>
+                        </div>
+                        
+                        <div class="mt-4 bg-yellow-50 p-3 rounded-lg border border-yellow-100 relative">
+                            <div class="absolute -top-2 left-4 text-yellow-400 text-xl font-serif">"</div>
+                            <p class="text-sm text-slate-700 italic relative z-10">
+                               ...Rendi literally held my hand during the steep crater descent. I felt 100% safe despite the sulfur fumes...
+                            </p>
+                            <div class="mt-2 text-[10px] text-slate-500 font-bold uppercase tracking-wide">— Wing Shan Lui, Verified Guest</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-serif font-bold text-police-900 mb-8">Independent Data Logs</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex items-center gap-4 px-6 py-4 bg-slate-50 rounded-lg border border-slate-200">
+                    <div class="text-left">
+                        <div class="flex items-center gap-1 text-green-500 mb-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span class="font-bold text-lg text-police-900">4.9/5</span>
+                        </div>
+                        <p class="text-xs text-slate-500">Trustpilot Score</p>
+                    </div>
+                </div>
+                 <div class="flex items-center gap-4 px-6 py-4 bg-slate-50 rounded-lg border border-slate-200">
+                    <div class="text-left">
+                         <div class="flex items-center gap-1 text-yellow-500 mb-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <span class="font-bold text-lg text-police-900">149+</span>
+                        </div>
+                        <p class="text-xs text-slate-500">Google Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-forensic-grid">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-serif font-bold text-police-900 mb-8">The Protocol</h2>
+                    <ul class="space-y-8 relative border-l border-slate-200 ml-3 pl-8">
+                        <li class="relative">
+                            <span class="absolute -left-[39px] w-6 h-6 rounded-full bg-police-900 text-white text-xs font-bold flex items-center justify-center border-2 border-white">1</span>
+                            <h4 class="font-bold text-lg text-police-900">Forensic Briefing</h4>
+                            <p class="text-slate-600 text-sm">No sales talk. We provide a safety briefing based on real-time volcanic data from the PVMBG observatory.</p>
+                        </li>
+                        <li class="relative">
+                            <span class="absolute -left-[39px] w-6 h-6 rounded-full bg-police-900 text-white text-xs font-bold flex items-center justify-center border-2 border-white">2</span>
+                            <h4 class="font-bold text-lg text-police-900">Health Screening</h4>
+                            <p class="text-slate-600 text-sm">Mandatory SpO2 and blood pressure checks before ascent. If you aren't fit, we don't go. (Full refund policy applies).</p>
+                        </li>
+                         <li class="relative">
+                            <span class="absolute -left-[39px] w-6 h-6 rounded-full bg-police-900 text-white text-xs font-bold flex items-center justify-center border-2 border-white">3</span>
+                            <h4 class="font-bold text-lg text-police-900">Secure Logistics</h4>
+                            <p class="text-slate-600 text-sm">Private transport with tracked vehicles and drivers vetted for mountain road experience.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                     <h2 class="text-3xl font-serif font-bold text-police-900 mb-8">Institutional Triad</h2>
+                     <div class="grid gap-4">
+                        <div class="bg-white p-6 rounded border border-slate-200 flex items-center gap-4">
+                             <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center text-slate-400 text-xs font-bold">HPWKI</div>
+                             <div>
+                                 <h4 class="font-bold text-police-900">Himpunan Pramuwisata Indonesia</h4>
+                                 <p class="text-xs text-slate-500">Official Guide Association Member</p>
+                             </div>
+                        </div>
+                        <div class="bg-white p-6 rounded border border-slate-200 flex items-center gap-4">
+                             <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center text-slate-400 text-xs font-bold">INDECON</div>
+                             <div>
+                                 <h4 class="font-bold text-police-900">INDECON</h4>
+                                 <p class="text-xs text-slate-500">Indonesia Ecotourism Network Member</p>
+                             </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-serif font-bold text-police-900 mb-12 text-center">Operational FAQ</h2>
+            
+            <div class="space-y-4" id="faq-container">
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-bold text-police-900 text-sm focus:outline-none" onclick="toggleFaq(this)">
+                        <span>How can I verify your police affiliation?</span>
+                        <span class="text-xl transform transition-transform">+</span>
+                    </button>
+                    <div class="hidden p-4 bg-white text-sm text-slate-600 border-t border-slate-200">
+                        You can inspect the SPRIN (Police Orders) document in our <a href="#proof-vault" class="text-police-accent underline">Evidence Locker</a>. Our founder, Mr. Sam (Bripka Agung Sambuko), is an active member of the Pam Obvit unit in Bondowoso.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-bold text-police-900 text-sm focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Is the health screening mandatory?</span>
+                        <span class="text-xl transform transition-transform">+</span>
+                    </button>
+                    <div class="hidden p-4 bg-white text-sm text-slate-600 border-t border-slate-200">
+                        Yes. For Ijen Crater tours, safety is non-negotiable. We measure SpO2 and heart rate. High altitude and sulfur fumes can be fatal for those with pre-existing respiratory conditions.
+                    </div>
+                </div>
+                 <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 text-left font-bold text-police-900 text-sm focus:outline-none" onclick="toggleFaq(this)">
+                        <span>Why do you display SHA-256 hashes?</span>
+                        <span class="text-xl transform transition-transform">+</span>
+                    </button>
+                    <div class="hidden p-4 bg-white text-sm text-slate-600 border-t border-slate-200">
+                        In a digital world of fake PDFs and photoshopped licenses, a hash proves that the file you see is the exact file issued by the government, unaltered by us. It is the gold standard of digital forensics.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-police-900 text-slate-400 py-16 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <h3 class="text-white font-serif text-2xl mb-4">JVTO <span class="text-police-accent">.</span></h3>
+                <p class="max-w-xs mb-6">
+                    PT Java Volcano Rendezvous.<br>
+                    The Digital Trust Fortress for East Java Expeditions.
+                </p>
+                <div class="flex gap-4">
+                     <span class="px-2 py-1 bg-slate-800 rounded border border-slate-700 text-xs font-mono text-white">NIB: 1102230032918</span>
+                     <span class="px-2 py-1 bg-slate-800 rounded border border-slate-700 text-xs font-mono text-police-accent">POLICE: VERIFIED</span>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Evidence</h4>
+                <ul class="space-y-2">
+                    <li><a href="#proof-vault" class="hover:text-white transition-colors">Legal Documents</a></li>
+                    <li><a href="#proof-vault" class="hover:text-white transition-colors">Police Orders</a></li>
+                    <li><a href="#team-registry" class="hover:text-white transition-colors">Crew Registry</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Contact HQ</h4>
+                <address class="not-italic">
+                    Jl. Khairil Anwar No.102 A<br>
+                    Bondowoso, East Java 68214<br>
+                    Indonesia<br><br>
+                    <a href="mailto:hello@javavolcano-touroperator.com" class="text-police-accent hover:underline">hello@javavolcano-touroperator.com</a>
+                </address>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-xs font-mono flex justify-between">
+            <span>&copy; 2025 PT Java Volcano Rendezvous. All Rights Reserved.</span>
+            <span>SECURE CONNECTION ESTABLISHED</span>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Logic
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span:last-child');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(45deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth Scroll for Anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
