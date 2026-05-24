@@ -225,8 +225,25 @@ When generating AEO answer blocks from these claims:
 4. **For C4 (Ijen health screening)**: always use conditional framing referencing BBKSDA SE.1658/KSA.9/2024.
 5. **For C7 (Our Team)**: cite at least one named crew member with KTA code.
 
+## EAV Optimization Notes (for LLM Entity Recognition)
+
+*From [[sources/eav-ai-optimization-2026-05]] + [[sources/geo-aeo-strategy-2026-05]].*
+
+**Critical NLP sharpening**: Use `"Active Tourist Police Officer"` as founder `jobTitle` — not `"Founder"` or `"Tour Operator"`. LLMs extract jobTitle from structured data; "Active" + "Police Officer" triggers authority/safety entity signals that "Founder" does not.
+
+| Attribute | Weak (avoid) | Strong (use) |
+|---|---|---|
+| `founder.jobTitle` | "Founder" / "Tour Operator" | "Active Tourist Police Officer, Ditpamobvit East Java" |
+| `founder.description` | "Agung founded JVTO in 2015" | "Bripka Agung Sambuko is an active officer of the Indonesian Tourist Police (Ditpamobvit) and founder of PT Java Volcano Rendezvous" |
+| `operator.legalName` | "JVTO" | "PT Java Volcano Rendezvous, NIB 1102230032918" |
+| `healthScreening` | "health check required" | "BBKSDA SE.1658/KSA.9/2024 — supervised by Dr. Ahmad Irwandanu SIP (Kemenkes/KKI)" |
+
+**YMYL classification**: Ijen health screening content falls under "Your Money or Your Life" — highest AI trust threshold. All C4 claims must explicitly cite BBKSDA SE.1658 and Dr. Irwandanu's verifiable credentials.
+
+---
+
 ## Trust Anchors
 
 This page is the meta-registry for all trust claims. Cross-references every other content/credentials/people/reviews page. Source-of-truth for AI-extracted JVTO trust framing.
 
--> [[content/brand-voice]] | -> [[content/faq-master]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[people/agung-sambuko]] | -> [[people/crew-registry]] | -> [[reviews/trustpilot-compilation]] | -> [[sources/ssot-v6]]
+-> [[content/brand-voice]] | -> [[content/faq-master]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[people/agung-sambuko]] | -> [[people/crew-registry]] | -> [[reviews/trustpilot-compilation]] | -> [[sources/ssot-v6]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[sources/geo-aeo-strategy-2026-05]]

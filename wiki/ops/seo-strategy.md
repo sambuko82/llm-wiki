@@ -190,6 +190,22 @@ These are SEO-optimized titles derived from the audit. Apply when generating or 
 
 ---
 
+## GEO/AEO Extension
+
+*Traditional SEO (above) covers blue-link rankings. For AI answer engine visibility (Google AI Overviews, Perplexity, ChatGPT), see [[ops/geo-aeo-strategy]].*
+
+**Already confirmed #1 for answer-engine-style queries:**
+- "tourist police bromo tour"
+- "licensed bromo tour operator indonesia tourist police"
+
+**Pattern to scale**: long-tail + branded + regulatory intent (e.g., "BBKSDA SE 1658", "ijen health certificate") — no OTA competition in these query clusters.
+
+**Key action**: Implement TL;DR Summary Block on homepage (after H1) + complete Organization JSON-LD with SHA-256 PropertyValues and press `sameAs` links — see [[ops/geo-aeo-strategy]] for full implementation checklist.
+
+**Sources**: [[sources/geo-aeo-strategy-2026-05]] | [[sources/eav-ai-optimization-2026-05]] | [[sources/seo-ux-integration-2026-05]]
+
+---
+
 ## 90-Day Measurable Targets
 
 If QW-1 through QW-14 are executed in Weeks 1–2:

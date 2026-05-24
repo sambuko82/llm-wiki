@@ -126,6 +126,42 @@ JVTO Guide
 - The BBKSDA article is an **independent third-party record** that the training program exists and is active in 2024.
 - The chain is bidirectional: guest sees crew → crew has KTA → KTA issued by HPWKI → HPWKI verified at AHU → HPWKI training documented by BBKSDA.
 
+## Guardian Mindset Framing
+
+*From [[sources/crew-strategy-integration-2026-05]].*
+
+**Core gap identified**: Existing crew bios emphasize friendliness and helpfulness. The strategic shift is to frame crew as **protectors** — people with specific training and operational accountability, not just enjoyable company.
+
+> "A JVTO guide doesn't just walk you up the crater. They're a HPWKI-registered member who completed BBKSDA-supervised SAR and first-aid training at Paltuding (May 2024). When Rendi held hands with guests on the steep crater descent, that's training, not personality."
+
+**Framing principle**: Lead with competence, let warmth emerge from specifics. "Safety-first" alone is insufficient — cite the credential chain (KTA → HPWKI → BBKSDA).
+
+## Trust-Pillar Crew Mapping
+
+*From [[sources/crew-strategy-integration-2026-05]] §crew-to-pillar mapping.*
+
+The 7 JVTO trust pillars map to specific crew members for content production. Use when writing crew bio copy or /why-jvto/our-team sections.
+
+| Trust Pillar | Primary crew | Key evidence |
+|---|---|---|
+| 1. Police-Led Safety (C1) | Mr. Sam (founder) | SPRIN POLPAR, Detik 2021 overnight deployment |
+| 2. Medical Precision (C4) | Dr. Irwandanu + all guides | BBKSDA SE.1658, SIP verifiable at Kemenkes |
+| 3. Local Territory Mastery (C2) | Gufron, Anjas, Rendi | KTA + geological + SAR expertise |
+| 4. Transparency & Documentation (C3, C5) | Yandi, Fredi | Review evidence: briefings, punctuality |
+| 5. Guest Hospitality (C7) | Boy, Kiki, Taufik, Fauzi | Named in reviews, photography, warmth |
+| 6. Environmental Stewardship (C8) | All guides via INDECON | "Local Boys" policy, community employment |
+| 7. Credential Verification (C5, C9) | Whole crew via KTA chain | HPWKI AHU registry, BBKSDA training record |
+
+### Key Crew Archetypes (for bio copy)
+
+| Crew | ID | Archetype | Defining evidence |
+|---|---|---|---|
+| Joyo | KTA-D-2024-011 (DB 73) | Precision Professional | "I drive fast, but always cleanly, smoothly, and safely" |
+| Yandi | KTA-D-2024-003 (DB 1) | Senior Touring Specialist | 4.94/5.0 from 17 reviews; "briefed us on what to expect" |
+| Fredi | KTA-D-2024-005 (DB 7) | Reliability Anchor | "Always on time no matter what time of the day" — Pooja Prakash |
+| Gufron | KTA-G-2024-001 (DB 39) | Expert Guide | Geological + photography expertise, Divya_Stri Sep 2025 review |
+| Anjas | KTA-G-2024-006 (DB 3) | Youth/Creative | 4.91/5.0, astrophotography, "Anjas was the highlight" |
+
 ## Vehicle & Crew Allocation (cross-reference)
 
 See [[products/packages-overview]] §vehicle-and-crew-allocation for which crew configuration applies to each group-size tier.

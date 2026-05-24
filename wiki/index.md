@@ -2,8 +2,8 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-24
-total_pages: 55
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map]
+total_pages: 64
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05]
 ---
 
 # JVTO Wiki — Content Index
@@ -37,6 +37,13 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/route-data-csv]] — Route segment library (2026-05-18).
 - [[sources/comm-management-theory]] — Comm management theory (2026-05-19):
 - [[sources/3d-route-viewer]] — Mapbox 3D fly-through feature + GeoJSON route data for all 5 destinations (2026-05-24). `/3d/{slug}` viewer URLs, full route stats table, tech stack. BANT, MECE, SFC/FCR, SLA standards, ISO 10002, GDPR/UU PDP, 4-stage pre-booking funnel, 6-stage customer journey. Explicitly references JVTO. 43 named day-segments (`routes.csv`) + 217 timed activity rows (`route_details.csv`). Supplement to db-export-2026-05 adding intra-day granularity. Routes 6 + 20 explicitly ingested for taman-safari package.
+- [[sources/geo-aeo-strategy-2026-05]] — GEO/AEO exhaustive audit (2026-05-24, from 4 raw files). Digital Trust Fortress 5-component model, AEO per-page targets, confirmed #1 rankings, TL;DR HTML block + Organization JSON-LD + FAQPage code, llms.txt rec, OTA optimization.
+- [[sources/eav-ai-optimization-2026-05]] — EAV/AI optimization audit (2026-05-24, from 3 raw files). EAV entity framework (Organization/TourPackage/HealthScreening/TravelCredit), 8-layer SSOT→JSON-LD map, NLP sharpening before/after table, StartLocation as primary discriminator.
+- [[sources/seo-ux-integration-2026-05]] — SEO+UX integration analysis (2026-05-24). URL governance comparison (MBA/GA/JVTO), SSOT→DOM integration, WCAG, keyword cannibalization gaps, WAF/crawler conflict, off-page backlink opportunities.
+- [[sources/why-jvto-trust-architecture]] — Why JVTO trust architecture (2026-05-24, from 4 raw files). Hub & spoke URL sitemap, Trust Asset Registry (LEG-001–HIST-002), new facts (Stefan Loose ISBN contradiction, second NIB 0220001393513), Guardian Archetype framing, HPWKI/INDECON/ISIC institutional triad.
+- [[sources/digital-trust-fortress-blueprint]] — Digital Trust Fortress Next.js blueprint (2026-05-24). Full file tree, component registry (AuthorityShield/ForensicGallery/CrewCard), API endpoints, evidence asset structure, Costly Signals principle for police docs.
+- [[sources/crew-strategy-integration-2026-05]] — Crew→trust-pillar strategy (2026-05-24). 7-pillar crew mapping table, crew archetypes with IDs (Joyo/Yandi/Fredi/Gufron/Anjas), 4-zone team page structure, Guardian Mindset principle.
+- [[sources/competitor-design-analysis-2026-05]] — MBA + G Adventures design benchmark (2026-05-24). MBA Level 1-7 difficulty, 67% CAC reduction / 50% RPB increase 2018-2020, URL persistence `/[locale]/adventures/[slug]/`. GA REST API SSOT, `/trips/[name]/[id]/` ID persistence, looptail brand system.
 
 ## Destinations
 
@@ -89,8 +96,10 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
 - [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
-- [[ops/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items). Source: 2026-05-17 audit.
-- [[ops/competitors]] — Tiered competitor registry (3 tiers + OTAs). Monitoring protocol.
+- [[ops/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items), GEO/AEO extension section. Source: 2026-05-17 audit.
+- [[ops/competitors]] — Tiered competitor registry (4 tiers + OTAs). Tier 4: MBA + G Adventures as global UX/design benchmarks. Monitoring protocol.
+- [[ops/geo-aeo-strategy]] — **NEW** GEO entity architecture (llms.txt, SHA-256 in schema, sameAs cross-press), AEO universal rules, per-page targets, EAV principles, confirmed #1 rankings, OTA/App Engine section.
+- [[ops/why-jvto-architecture]] — **NEW** Dev-facing Hub & Spoke routing reference. URL map + schema injection layers + component registry (AuthorityShield/ForensicGallery/CrewCard) + evidence asset structure.
 - [[ops/redirect-map]] — 301 redirect table: 13 legacy Laravel routes → canonical SSOT URLs. Dev handoff for `jvto-web`.
 - [[ops/2026-05-14-whatsapp-operations-playbook]] — 5-channel WhatsApp ops playbook
 - [[ops/canned-responses]] — WhatsApp + email template scripts per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN, BANT-tagged, objection handling (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.

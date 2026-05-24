@@ -15,6 +15,7 @@ All credentials below are publicly verifiable. SHA-256 hashes of source document
 |---|---|---|---|
 | **Legal name** | PT Java Volcano Rendezvous | 2016-01-01 | AHU registry: https://ahu.go.id/pencarian/perseroan |
 | **NIB** (Nomor Induk Berusaha) | 1102230032918 | — | oss.go.id (Online Single Submission) |
+| **NIB (historical)** | 0220001393513 | — | *Possible legacy OSS record — not the canonical active license. Do not use in marketing copy.* |
 | **TDUP** (Tanda Daftar Usaha Pariwisata) | 1102230032918 | 2023-02-11 | Dinas Pariwisata · Sistem Tanda Daftar OSS |
 
 ### KBLI codes (business activity classification)
@@ -77,6 +78,10 @@ Office photo: https://javavolcano-touroperator.com/legal/office-photo.jpg — us
 
 JVTO office (PT Java Volcano Rendezvous, 2016–present):
 - Jl. Khairil Anwar No.102 A, Badean, Bondowoso, Jawa Timur 68214, Indonesia
+
+**Pre-PT entity**: "Ijen Bondowoso Homestay" operated at this same address from at least 2015. The Booking.com Guest Review Award 2015 (9.4/10) was shipped to this address, confirming operational continuity. → [[sources/why-jvto-trust-architecture]]
+
+> [stale?] Historical NIB 0220001393513 — mentioned in audit documents as a possible legacy OSS record. Verify on OSS portal whether this is a prior registration or an error before acting on it. Active NIB 1102230032918 is the canonical license.
 - Google Maps CID: 1266403973589689021 → https://www.google.com/maps?cid=1266403973589689021
 
 Booking.com 2015 award shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso" — same address line as today's PT office, demonstrating continuous operational presence at the same Bondowoso location across the guesthouse era → PT entity → TDUP formalization timeline.

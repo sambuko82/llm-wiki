@@ -104,18 +104,22 @@ Consolidated record of all third-party press, guidebook, and institutional media
 
 ## Guidebook Mention
 
-### Stefan Loose Reiseführer Indonesien, 4th Edition (2016)
+### Stefan Loose Reiseführer Indonesien, 4th Edition (year disputed)
 
 | Field | Value |
 |---|---|
 | **Publication** | Stefan Loose Reiseführer Indonesien, 4th Edition |
-| **ISBN** | 9783770167654 |
+| **ISBN (existing wiki)** | 9783770167654 |
+| **ISBN (raw audit docs)** | 978-3-7701-7881-0 — Publisher: DuMont Reiseverlag |
 | **Page** | 287 |
-| **Year** | 2016 |
+| **Year (existing wiki)** | 2016 |
+| **Year (raw audit docs)** | 2018 |
 | **Entry** | "Agung" named as operator of Ijen Bondowoso Homestay; tours arranged through him |
 | **Language** | German (European travel guide distributed internationally) |
 
-**What it proves**: Third-party editorial mention in a major European travel guide circa 2016 — the same year PT Java Volcano Rendezvous was incorporated. Establishes that the founder was operating and attracting international visitors before any digital marketing was built.
+> Contradiction with [[sources/why-jvto-trust-architecture]]: Raw audit documents (2026-05 generation) cite ISBN 978-3-7701-7881-0, DuMont Reiseverlag, 4th edition 2018. Existing wiki entry cites ISBN 9783770167654, year 2016. These are different ISBNs — possibly two different printings/editions, or one value is incorrect. Verify against physical book scan at https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png before resolving. Do not publish either ISBN in marketing copy until confirmed.
+
+**What it proves**: Third-party editorial mention in a major European travel guide — the same approximate period as PT Java Volcano Rendezvous incorporation. Establishes that the founder was operating and attracting international visitors before any digital marketing was built.
 
 **Image assets** (source: [[sources/ssot-image-asset-map]] `history_heritage` group):
 

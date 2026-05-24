@@ -126,8 +126,25 @@ Source: [[sources/seo-audit-2026-05]] §2.4
 
 ---
 
+## E-E-A-T Framing (for AI/LLM Visibility)
+
+*From [[sources/eav-ai-optimization-2026-05]] + [[sources/geo-aeo-strategy-2026-05]].*
+
+Google's E-E-A-T framework (Experience, Expertise, Authoritativeness, Trustworthiness) maps directly to AI model entity confidence. Signal all four in JVTO content.
+
+| Dimension | JVTO signal | Content application |
+|---|---|---|
+| **Experience** | Founder deployed overnight at Kawah Wurung in 10°C fog (Detik 2021) | Use experiential verbs: "stayed on-site," "patrolled," "held hands on the crater descent" |
+| **Expertise** | HPWKI volcanic safety training, BBKSDA supervision, SE.1658/KSA.9/2024 compliance | Cite regulation numbers + training dates when describing safety procedures |
+| **Authoritativeness** | Tourist Police = formal institutional role (Ditpamobvit, SPRIN document) | Refer to "Ditpamobvit East Java" not just "tourist police" — unit name signals institutional authority |
+| **Trustworthiness** | NIB + TDUP on OSS, SHA-256 anchored docs, 4 independent press articles | Link to verifiable registries (/verify-jvto) — demonstrate trust, don't assert it |
+
+**Key principle**: `"Active Tourist Police Officer"` outperforms `"Founder"` as an E-E-A-T authority signal in both search and LLM contexts. Use as primary descriptor in AEO answer blocks and Organization schema `jobTitle`.
+
+---
+
 ## Trust Anchors
 
 This page is a meta-resource — it does not own claims, but enforces voice rules that protect claims **C1–C9** from violation. Cross-reference: [[content/aeo-claims]], [[content/faq-master]], [[sources/ssot-v6]] §2_4 voice invariants.
 
--> [[content/faq-master]] | -> [[content/aeo-claims]] | -> [[sources/ssot-v6]]
+-> [[content/faq-master]] | -> [[content/aeo-claims]] | -> [[sources/ssot-v6]] | -> [[sources/eav-ai-optimization-2026-05]]

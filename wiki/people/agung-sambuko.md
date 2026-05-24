@@ -69,7 +69,7 @@ See [[credentials/trust-signals]] for full press table.
 ### Proof 3 — Historical / guidebook continuity (2015–2016)
 
 - **Booking.com 2015** — award shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso" — continuity anchor (same address as PT Java Volcano Rendezvous office today)
-- **Stefan Loose Indonesia Travel Guidebook 4th Edition** (2016, ISBN 9783770167654, **p. 287**) — "Agung" named as operator of Ijen Bondowoso Homestay with tour arrangement referenced
+- **Stefan Loose Indonesia Travel Guidebook 4th Edition** (year/ISBN disputed — existing wiki: 2016, ISBN 9783770167654; raw audit docs: 2018, ISBN 978-3-7701-7881-0, DuMont Reiseverlag, **p. 287**) — "Agung" named as operator of Ijen Bondowoso Homestay. See [[credentials/press-coverage]] for full contradiction callout and verification instructions.
 
 ### Proof 4 — Visual / physical
 
@@ -92,7 +92,7 @@ Note: The Wikipedia-hosted image is the only asset in the JVTO image set not ser
 
 - `@type: Person`
 - `@id: /#agung-sambuko`
-- `jobTitle: Founder & Active Tourist Police Officer`
+- `jobTitle: Active Tourist Police Officer` *(primary EAV value — "Active" + "Police Officer" signals authority/safety to LLMs; "Founder" is secondary context)*
 - `worksFor: PT Java Volcano Rendezvous`
 - `memberOf: Indonesian National Police — Ditpamobvit East Java`
 
@@ -110,8 +110,18 @@ No other East Java volcano tour operator is led by an active Tourist Police offi
 2. **Differentiation**: operators who only say "safety-focused" cannot match a documented institutional safety chain
 3. **Legal authority, not personal commitment**: Ditpamobvit's scope makes tourist safety a duty, not a marketing position
 
+### Guardian Archetype (for /why-jvto copy)
+
+*From [[sources/crew-strategy-integration-2026-05]] + [[sources/why-jvto-trust-architecture]].*
+
+Frame Mr. Sam as **"guardian"** not "authority" — a protector who stands between guests and risk. The Detik 2021 "I never went home" quote is the archetype instance: overnight deployment in 10°C fog, answering to police protocol not marketing incentives.
+
+> "Mr. Sam doesn't run tours because he likes the business. He runs them because someone with his training should be managing the safety gap — and no one else was."
+
+This framing translates E-E-A-T signals into human narrative without overclaiming police authority. See [[content/copy-bank]] §Guardian Archetype framing for ready-to-use copy.
+
 ## Trust Anchors
 
 Owns claims **C1** (safety-led operations) — primary trust function. Supports **C5** (proof-first verification). See [[content/aeo-claims]] for claim-evidence mapping.
 
--> [[credentials/police-integration]] | -> [[people/crew-registry]] | -> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[overview]]
+-> [[credentials/police-integration]] | -> [[people/crew-registry]] | -> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[sources/why-jvto-trust-architecture]] | -> [[sources/crew-strategy-integration-2026-05]] | -> [[overview]]

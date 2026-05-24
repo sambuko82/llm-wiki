@@ -65,6 +65,25 @@ These have EMD advantage on long-tail queries but mostly basic content. Out-rank
 
 ---
 
+## Tier 4 — Global UX/Design Benchmarks (not search competitors)
+
+These operate at global scale, not in East Java. Referenced for **website design, IA, and UX patterns only**.
+
+| Company | URL | Stack | Key benchmark |
+|---|---|---|---|
+| **Much Better Adventures (MBA)** | muchbetteradventures.com | Django + React, B-Corp | Activity-centric IA, Level 1–7 difficulty scale, CRO-first (67% CAC reduction 2018–2020), "close to 100% info on product page" |
+| **G Adventures** | gadventures.com | Django REST API, API-first SSOT | REST API as SSOT (one update → all channels), `/trips/[name]/[id]/` persistence for backlink protection, purpose-driven "Ripple Score" |
+
+**Applicable JVTO patterns from these:**
+- Activity difficulty scale → JVTO trekking difficulty rating (Bromo: easy / Ijen: moderate / Tumpak Sewu canyon: hard)
+- "100% info on product page" → JVTO Travel Guide already does this — reinforce, don't dilute
+- Documentary photography (GA style) → JVTO's existing field ops photos already match this
+- Long-form magazine content (MBA) → JVTO's /travel-guide section should expand in this direction
+
+See [[sources/competitor-design-analysis-2026-05]] for full analysis.
+
+---
+
 ## JVTO's Uncontested Differentiators (no competitor has these)
 
 | Asset | Status across all competitors |

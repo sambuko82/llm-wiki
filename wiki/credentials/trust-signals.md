@@ -69,7 +69,7 @@ Each article is an independent entity-linking signal — AI engines reading thes
 |---|---|---|---|
 | Booking.com Guest Review Award (Ijen Bondowoso Homestay) — plaque | 2015 | 9.4 / 10 | https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg |
 | Booking.com 2015 — shipping label (address continuity proof) | 2015 | Jl. Khairil Anwar No.102, Bondowoso | https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
-| Stefan Loose Reiseführer Indonesien, 4th Ed. p. 287 — guidebook page | 2016 | ISBN 9783770167654 — "Agung" named as operator | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
+| Stefan Loose Reiseführer Indonesien, 4th Ed. p. 287 — guidebook page | 2016 ⚠ | ISBN 9783770167654 (existing) / 978-3-7701-7881-0 (raw audit) — "Agung" named as operator. **Year + ISBN disputed — see [[credentials/press-coverage]] for details.** | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
 | Stefan Loose — cropped/enhanced for readability | 2016 | Same page, clearer view | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
 | Mr. Sam + guests with Stefan Loose guidebook (visual confirmation) | 2016–2018 | Founder holding book, guest pointing to the page | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
 

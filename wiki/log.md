@@ -11,6 +11,41 @@ sources: []
 
 ---
 
+## [2026-05-24] ingest | raw folder — 16 files, 7 source pages, GEO/AEO + Why JVTO architecture
+
+**Source type**: Workflow 4 typed ingest. Profiles: seo-audit (Groups 1–2), web-clip (Groups 3–7).
+**Skipped**: `JVTO SEO Audit — Full Site Review.md` (confirmed duplicate of [[sources/seo-audit-2026-05]]); `gemini-code-1779633053483.html` (dev artifact).
+
+**Pages created (9)**:
+- [[sources/geo-aeo-strategy-2026-05]] — 4-file GEO/AEO audit synthesis. Digital Trust Fortress 5-component model, AEO per-page targets table, TL;DR HTML + Organization JSON-LD + FAQPage code, confirmed #1 SERP rankings, llms.txt recommendation.
+- [[sources/eav-ai-optimization-2026-05]] — 3-file EAV/AI audit synthesis. EAV entity framework (4 entities), 8-layer SSOT→JSON-LD map, NLP sharpening before/after (jobTitle: "Founder" → "Active Tourist Police Officer"), StartLocation as primary discriminator.
+- [[sources/seo-ux-integration-2026-05]] — URL governance comparison table (MBA/GA/JVTO), SSOT→DOM SPOF integration, WCAG note, keyword cannibalization gaps, WAF/crawler conflict finding, off-page backlink opportunities.
+- [[sources/why-jvto-trust-architecture]] — 4-file Why JVTO trust audit. Hub & spoke URL sitemap (6 URLs), Trust Asset Registry (LEG-001–PRESS-001), new facts: Stefan Loose ISBN/year contradiction, second NIB 0220001393513 flagged, Ijen Bondowoso Homestay → PT entity continuity, Guardian Archetype framing.
+- [[sources/digital-trust-fortress-blueprint]] — Next.js full file tree, component registry (AuthorityShield/ForensicGallery/CrewCard/TrustNavigation), /api/verifiable-credentials endpoint, Costly Signals principle for police documents.
+- [[sources/crew-strategy-integration-2026-05]] — 7-pillar crew mapping table, crew archetypes (Joyo/Yandi/Fredi/Gufron/Anjas), 4-zone team page structure, Guardian Mindset principle.
+- [[sources/competitor-design-analysis-2026-05]] — MBA: Level 1-7 difficulty, 67% CAC reduction/50% RPB increase 2018–2020, Django+React, B-Corp. GA: REST API SSOT, `/trips/[name]/[id]/` ID persistence, looptail brand system.
+- [[ops/geo-aeo-strategy]] — NEW ops page. GEO entity architecture, AEO universal rules + per-page targets, EAV principles, confirmed rankings, OTA/App Engine optimization.
+- [[ops/why-jvto-architecture]] — NEW ops dev page. URL map with schema injection layers, component registry, data architecture (SSOT JSON), evidence asset structure, 6 trust pillars.
+
+**Pages updated (11)**:
+- [[credentials/legal-licenses]] — Added NIB 0220001393513 as historical/legacy with `[stale?]` flag; added Ijen Bondowoso Homestay address continuity note.
+- [[credentials/press-coverage]] — Added Stefan Loose second ISBN (978-3-7701-7881-0, DuMont Reiseverlag) and 2018 year; full `> Contradiction` callout (existing wiki: 2016/9783770167654; raw docs: 2018/978-3-7701-7881-0).
+- [[credentials/trust-signals]] — Stefan Loose row updated with ⚠ year flag + both ISBNs + link to press-coverage for full details.
+- [[ops/seo-strategy]] — Added `## GEO/AEO Extension` section with confirmed #1 rankings, scale pattern, key action, source links.
+- [[ops/competitors]] — Added Tier 4 global UX/design benchmarks (MBA + G Adventures) with applicable JVTO patterns table.
+- [[content/aeo-claims]] — Added `## EAV Optimization Notes` section: NLP sharpening table (4 attributes), YMYL classification for Ijen C4 claims, updated source links.
+- [[content/brand-voice]] — Added `## E-E-A-T Framing` section: 4-dimension table (Experience/Expertise/Authoritativeness/Trustworthiness), "Active Tourist Police Officer" > "Founder" principle.
+- [[content/copy-bank]] — Added `## Why JVTO Hub Copy Angles` section: Guardian Archetype quotes, Trust Asset ID table (6 assets), Hub & Spoke URL reference (6 URLs).
+- [[people/crew-registry]] — Added `## Guardian Mindset Framing` section + `## Trust-Pillar Crew Mapping` table (7 pillars → crew) + Key Crew Archetypes table (5 entries with DB IDs).
+- [[people/agung-sambuko]] — Updated Stefan Loose note with both ISBN/year values + contradiction link; updated Schema `jobTitle` to "Active Tourist Police Officer" (EAV primary value); added Guardian Archetype section with copy-ready quotes.
+- [[index]] — Added 7 source entries + 2 ops entries; total_pages 55→64.
+
+**Contradictions flagged**:
+- Stefan Loose year/ISBN: wiki says 2016/9783770167654; raw docs say 2018/978-3-7701-7881-0. Full callout in [[credentials/press-coverage]]. Do not publish either ISBN in copy until physical scan verified.
+- NIB 0220001393513: possible legacy OSS record. Flagged `[stale?]` in [[credentials/legal-licenses]].
+
+---
+
 ## [2026-05-24] ingest | 3D Route Viewer + GeoJSON route data — all 5 destinations
 
 Pages created: [[sources/3d-route-viewer]] (new) — Mapbox 3D fly-through feature reference: viewer URLs for all 5 destinations, full route stats table (length/gain/elevation range/point count), tech stack (Next.js 16, Mapbox GL JS v3, @turf/turf, hand-rolled SVG ElevationChart), data provenance, component paths.

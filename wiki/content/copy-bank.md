@@ -86,4 +86,40 @@ Today, we act as a bridge between wild adventure and professional safety standar
 6. 4 independent press articles (Detik, Radar Jember ×2, BBKSDA Jatim)
 7. Booking.com 2015 (9.4/10) + Stefan Loose 2016 (p. 287)
 
+## Why JVTO Hub Copy Angles
+
+*From [[sources/why-jvto-trust-architecture]]. Use when writing /why-jvto pages.*
+
+### Guardian Archetype framing
+
+JVTO founder framing is **"guardian"** not "authority" — protector who stands between guests and risk, not enforcer of rules.
+
+> "Mr. Sam doesn't run tours because he likes the business. He runs them because someone with his training should be managing the safety gap — and no one else was."
+
+> "The Tourist Police unit was built for Ijen Geopark. Mr. Sam was already there. The tours came later."
+
+### Trust Asset IDs (for /why-jvto and /verify-jvto pages)
+
+| Asset | ID | Page |
+|---|---|---|
+| NIB 1102230032918 | LEG-001-NIB | /verify-jvto/legal |
+| SPRIN POLPAR | LEG-002-POLPAR | /verify-jvto/police-safety |
+| HPWKI Approval | LEG-003-HPWKI | /verify-jvto/legal |
+| Booking.com 2015 Award (9.4/10) | HIST-001-BOOKING2015 | /why-jvto/history |
+| Stefan Loose Guidebook (p.287) | HIST-002-STEFANLOOSE | /why-jvto/history |
+| Detik.com 2021 article | PRESS-001-DETIK | /verify-jvto/press-recognition |
+
+### Hub & Spoke URL reference
+
+| Level | URL | Purpose |
+|---|---|---|
+| Hub | `/why-jvto` | Master trust landing page |
+| Spoke | `/why-jvto/our-story` | Founding narrative |
+| Spoke | `/why-jvto/the-jvto-difference` | 6 differentiators |
+| Spoke | `/verify-jvto` | Proof library entry |
+| Spoke | `/why-jvto/reviews` | Review registry |
+| Spoke | `/why-jvto/community-standards` | Policy + standards |
+
+See [[sources/why-jvto-trust-architecture]] + [[ops/why-jvto-architecture]] for full sitemap + component reference.
+
 -> [[content/aeo-claims]] | -> [[content/brand-voice]] | -> [[content/faq-master]] | -> [[content/query-hero-claim]]
