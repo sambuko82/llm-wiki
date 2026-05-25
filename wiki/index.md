@@ -66,7 +66,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 - [[people/agung-sambuko]] — Mr. Sam, founder, active Tourist Police officer (Ditpamobvit East Java) — full evidence chain (police docs SHA-256, press, historical)
 - [[people/dr-ahmad-irwandanu]] — Medical Officer, Ijen health-screening coordination (SIP-licensed, conditional framing)
-- [[people/crew-registry]] — 11 KTA-credentialed crew (7 guides + 4 drivers, 2024 issuance), HPWKI/BBKSDA training chain, named guides linked to review excerpts
+- [[people/crew-registry]] — 14-member field team (7 guides + 7 drivers), 11 KTA-credentialed (2024 issuance), HPWKI/BBKSDA training chain, named guides linked to review excerpts
 
 ## Credentials
 

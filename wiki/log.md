@@ -11,6 +11,36 @@ sources: []
 
 ---
 
+## [2026-05-25] health-check | on-demand (Phase 2 Lint)
+
+**Scope**: Full Workflow 3 / Workflow 6 on-demand audit across 69 wiki pages.
+
+### Results
+
+| Check | Result |
+|---|---|
+| Contradiction scan | **1 found, 1 fixed** |
+| Orphan detection | **0 orphans** |
+| Stale claims (>90 days) | **0 stale** |
+| Index completeness | **0 gaps** (69 files, all indexed) |
+| Gap pages | **1 real gap**: `[[ops/volcano-status]]` (bromo-ijen-status-today, blocked on PVMBG live source) |
+
+### Contradiction Fixed
+
+**Crew count in aeo-claims.md** (C7 section): was "11 members (7 guides + 4 drivers)" — stale SSOT v6.0 §4_2 value. DB export (2026-05-12) confirmed **14 members (7 guides + 7 drivers)**. Updated to "14 members (7+7), 11 KTA-credentialed". Also updated index.md crew-registry description.
+
+### Pre-existing (not resolved — requires owner action)
+
+- **Stefan Loose year/ISBN**: wiki says 2016 / ISBN 9783770167654; raw audit docs say 2018 / ISBN 978-3-7701-7881-0. jvto-web publishes 2018 version. Resolution requires physical book check by Sam. Tracked in [[credentials/press-coverage]].
+- **Madakaripura height**: "tallest in Java" — height under reconciliation. Flagged in [[destinations/madakaripura]].
+- **Second NIB 0220001393513**: flagged as possible historical OSS record. Verification blocked on OSS portal access. Tracked in [[sources/why-jvto-trust-architecture]].
+
+### Gap page
+
+`[[ops/volcano-status]]` — planned as `/travel-guide/bromo-ijen-status-today`. Blocked: PVMBG MAGMA feed not programmatically accessible. Listed in [[ops/seo-strategy]] Silo 3 targets.
+
+---
+
 ## [2026-05-25] ingest | Gemini Trust Fortress HTML Mockup
 
 Pages created: [[sources/gemini-trust-fortress-mockup]]. Key additions: extracted design tokens (police/forensic color system), typography stack (DM Serif Display / Inter / JetBrains Mono), visual effects (scanline, noise texture), embedded schema pattern. Flagged as design reference only — not canonical design system.

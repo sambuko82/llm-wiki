@@ -154,7 +154,7 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 
 **CS reply**: *"If you want to know who runs the trip, see /why-jvto/our-team. Each profile links to review mentions so you can judge from guest experience."*
 
-**Team**: 11 members (7 guides + 4 drivers), all KTA-credentialed 2024. 5 confirmed HPWKI KTA-holders (Ijen specialist competence). All English-speaking on guide-led tours.
+**Team**: 14 members (7 guides + 7 drivers) per [[sources/db-export-2026-05]]. 11 KTA-credentialed (2024 issuance), 5 confirmed HPWKI KTA-holders (Ijen specialist competence). 3 additional drivers (Yusuf, Dika, Pras) confirmed in DB, KTA codes pending. All English-speaking on guide-led tours.
 
 **Evidence**: `kta-anjas`, `kta-taufik`, `kta-rendi`, `kta-kiki`, `kta-gufron`. See [[people/crew-registry]].
 
