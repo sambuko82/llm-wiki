@@ -135,9 +135,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Generated all P1/P2 gap output files — 6 student tour pages, 15 team member pages, 2 Silo 4 travel guides (itinerary guide + Surabaya vs Bali comparison). All prices and credentials verified via jvto-verified-output skill. Total output files now 145+.
+**Last completed:** Bulk review of all 99 draft output files → reviewed status. Brand-voice audit (forbidden phrases, avoid phrases, price format, rating conflation, NIB consistency). 1 violation fixed (world-class → dramatic). All output files now status: reviewed.
 **Completed date:** 2026-05-25
-**Next task:** Review all ~60 draft output files → reviewed status (copy-check against brand-voice.md + trust-signals.md). Then: expand thin wiki pages for partially-sourceable Silo 3 content (permit-requirements, sulfur-mining-cultural-guide).
+**Next task:** Expand thin wiki pages for partially-sourceable Silo 3 content (permit-requirements-east-java, sulfur-mining-cultural-guide, best-time-to-visit expansion). Then generate output files for these expanded pages.
 **Build status:** — no code changes (wiki/output only)
 **Open items:**
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
