@@ -1,8 +1,8 @@
 ---
 type: destination
 title: Kawah Ijen (Ijen Crater)
-last_updated: 2026-05-25
-sources: [ssot-v6, jvto-homepage-clip, gpx-ijen]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, ijen-safety-resource-mapping, ijen-tourist-accidents]
 aliases: [Ijen, Ijen Crater, Kawah Ijen]
 schema_type: TouristAttraction
 canonical_url: /destinations/ijen-crater
@@ -91,6 +91,31 @@ JVTO guides brief all guests before departure on miner etiquette:
 
 Miners work in high-SO₂ zones without respiratory protection. Tourists on JVTO packages are provided gas masks as a standard inclusion — see [[products/packages-overview]]. The contrast is stark and part of the reality guests should understand before descending to the crater floor.
 
+## Safety Incidents & Restricted Zones
+
+### Documented Incidents (2015–2026)
+
+7 documented incidents at Ijen, including 4 fatalities. Full registry: [[sources/ijen-tourist-accidents]].
+
+| Year | Cause | Outcome | Relevance |
+|------|-------|---------|-----------|
+| 2015 | Exhaustion + respiratory distress (Swiss, 68yo) | Fatal | Health screening would flag |
+| 2023 | Heart attack at Post 3 (64yo) | Fatal | Health screening would flag |
+| 2024 | Found dead on trail (Polish, 53yo) | Fatal | Cause undetermined |
+| 2024 | Cliff fall at Hutan Mati during photo (Chinese) | Fatal | Led to Hutan Mati closure |
+| 2025 | Motorcycle slip on descent ×2 | Injuries | Private transport eliminates this risk |
+| 2026 | Hiker lost 2 days, found by SAR | Survived | Guide supervision prevents |
+
+**Pattern**: 50% of fatalities were fitness-related (heart attack, exhaustion) — the exact risk BBKSDA health screening targets. → [[credentials/medical-screening]]
+
+### Restricted Zones
+
+- **Hutan Mati (Dead Forest)** — Closed/restricted after April 2024 fatality. BBKSDA added warning signage. JVTO guides enforce the restriction.
+- **500m crater radius** — Visitors must stay within 500m of crater; do not enter unmarked areas.
+- **Red flag warnings** — When red flags are displayed, crater area access is closed. JVTO follows BBKSDA closures without exception.
+
+Source: [[sources/ijen-safety-resource-mapping]]
+
 ## JVTO Packages That Include Ijen
 
 12 of 15 SSOT canonical packages are Ijen-relevant (`ijen_relevant: yes`):
@@ -132,6 +157,6 @@ Notes: GPX peak elevation (2,380 m) is slightly under the official crater-rim fi
 
 ## Trust Anchors
 
-Owns claim **C4** (Ijen Health Screening) and contributes to **C1** (Safety-led operations) per [[website/aeo-claims]] and [[sources/ssot-v6]] §12.
+Owns claim **C4** (Ijen Health Screening) and contributes to **C1** (Safety-led operations) per [[website/aeo-claims]] and [[sources/ssot-v6]] §12. Incident data from [[sources/ijen-tourist-accidents]] strengthens both claims — 50% of documented fatalities were fitness-related.
 
--> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[website/aeo-claims]]
+-> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[website/aeo-claims]] | -> [[sources/ijen-tourist-accidents]] | -> [[sources/ijen-safety-resource-mapping]]

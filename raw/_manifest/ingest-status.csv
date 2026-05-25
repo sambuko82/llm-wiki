@@ -56,3 +56,5 @@ R054,FINANCE/rate_cards/Copy of activities-rate-card.json,batch-ingested,sources
 R055,FINANCE/rate_cards/Copy of crew-roles-rate-card.json,batch-ingested,sources/finance-rate-cards,2026-05-25,batch,5 crew roles — authoritative
 R056,FINANCE/rate_cards/Copy of other-activities-rate-card.json,batch-ingested,sources/finance-rate-cards,2026-05-25,batch,10 ops costs — authoritative
 R057,FINANCE/rate_cards/Copy of vehicle-rate-card.json,batch-ingested,sources/finance-rate-cards,2026-05-25,batch,6 vehicle types — authoritative
+R058,Mount Ijen Safety and Support Resource Mapping.xlsx,ingested,sources/ijen-safety-resource-mapping,2026-05-26,single,5 safety categories → kawah-ijen + operational-facts + medical-screening
+R059,Tourist Accidents at Kawah Ijen and Surrounding Areas.xlsx,ingested,sources/ijen-tourist-accidents,2026-05-26,single,7 incidents → kawah-ijen + medical-screening (public_sensitive)

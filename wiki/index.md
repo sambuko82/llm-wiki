@@ -1,9 +1,9 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-05-25
-total_pages: 74
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup, finance-rate-cards]
+last_updated: 2026-05-26
+total_pages: 76
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup, finance-rate-cards, ijen-safety-resource-mapping, ijen-tourist-accidents]
 ---
 
 # JVTO Wiki — Content Index
@@ -48,6 +48,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/gpx-destination-data]] — AllTrails GPX recordings ×5 (2026-05-25). Consolidated reference: bounding boxes, elevation ranges, waypoints for Ijen/Bromo/Tumpak Sewu/Madakaripura/Papuma. Data already in destination pages.
 - [[sources/gemini-trust-fortress-mockup]] — Gemini-generated HTML mockup (2026-05-25). "Digital Trust Fortress" visual concept for /why-jvto. Design tokens (police.900/accent, forensic.light/success), DM Serif Display + Inter + JetBrains Mono stack. Design reference only.
 - [[sources/finance-rate-cards]] — 5 JSON rate card files (`raw/FINANCE/rate_cards/`): crew roles, vehicles, accommodation (23 hotels), activities (27 items), other costs (10 items). All IDR. Basis for package COGS analysis.
+- [[sources/ijen-safety-resource-mapping]] — Safety resource mapping (Excel). 5 categories: hazards, health screening, Tourist Police, Ijen Rijik closure (est. March 2019), guide supervision. 14 source references. Supports C1, C4.
+- [[sources/ijen-tourist-accidents]] — Tourist accident registry (Excel). 7 incidents 2015–2026, 4 fatalities (50% fitness-related). Validates BBKSDA health screening mandate. 6 media references. Sensitivity: public_sensitive.
 
 ## Destinations
 

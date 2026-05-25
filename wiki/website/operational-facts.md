@@ -1,8 +1,8 @@
 ---
 type: website
 title: JVTO Operational Facts — Temperatures, Travel Times, Practical Info
-last_updated: 2026-05-25
-sources: [db-export-2026-05]
+last_updated: 2026-05-26
+sources: [db-export-2026-05, ijen-safety-resource-mapping]
 ---
 
 # JVTO Operational Facts
@@ -53,10 +53,12 @@ Both destinations require warm layers — layering recommended over single thick
 
 ## Ijen Closure Schedule
 
-- **Regular closure**: First Friday of every month — Ijen crater is closed to visitors
+- **Regular closure (Ijen Rijik program)**: First Friday of every month, 00:00–23:59 WIB — total closure of TWA Kawah Ijen for ALL tourism and mining activities. Purpose: ecosystem cleaning and recovery. Program established March 1, 2019.
 - **Additional closures**: issued by BBKSDA East Java based on volcanic gas levels and safety assessments
 - JVTO follows official BBKSDA closure announcements; no bypass of restrictions
 - For scheduled closure dates, check bbksdajatim.org
+
+Source: [[sources/ijen-safety-resource-mapping]] (ref #2, #3, #12, #13)
 
 ---
 

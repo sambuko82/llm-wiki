@@ -1,8 +1,8 @@
 ---
 type: credential
 title: Ijen Health-Screening Coordination — Protocol, Personnel, Evidence
-last_updated: 2026-05-16
-sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map, ijen-tourist-accidents, ijen-safety-resource-mapping]
 health_wording_mode: conditional
 claims_supported: [C1, C4]
 ---
@@ -123,6 +123,23 @@ Two locations represented: partner hotel lobby (ijen-screening-hotel-01/02) and 
 | BBKSDA ticket T&C — health requirements and doctor certificate requirement | https://javavolcano-touroperator.com/screening/bbksda/bbksda-ticket-terms-screenshot.jpeg |
 
 > This image shows the public-facing BBKSDA ticketing terms that require a doctor's health certificate. Strong evidence that the screening is regulatory, not JVTO-imposed. Manually categorized here as health_screening (was flagged `uncertain` in the image asset SSOT).
+
+---
+
+## Incident Data — Why Screening Matters
+
+Between 2015 and 2026, 4 tourists died at Ijen. **Two of the four fatalities (50%) were fitness-related**:
+
+- **2015**: Swiss tourist, 68 years old — exhaustion and respiratory distress while ascending
+- **2023**: Indonesian visitor "BJ", 64 years old — heart attack at Post 3; collapsed at Paltuding despite oxygen
+
+Both deaths involved cardiovascular/respiratory failure in individuals who lacked the fitness for the climb. The BBKSDA health screening (SpO₂, blood pressure, heart rate, respiratory history) is designed to catch exactly this pattern.
+
+Two additional fatalities were non-fitness-related: a 53-year-old Polish tourist found dead (cause unpublished) and a Chinese tourist who fell 75m from a cliff while photographing at Hutan Mati.
+
+**This incident data is the strongest evidence that health screening is not bureaucratic theater — it targets a documented, recurring cause of death at Ijen.**
+
+Source: [[sources/ijen-tourist-accidents]] (6 media references, evidence weight 4)
 
 ---
 

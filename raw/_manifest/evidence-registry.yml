@@ -128,6 +128,26 @@ evidence:
     last_verified: 2026-05-12
     proof_ids: [press-bbksda-ijen-guide-training]
 
+  # C4 — Ijen Health Screening (incident data)
+  - evidence_id: E015
+    claim: C4
+    source_file: wiki/sources/ijen-tourist-accidents.md
+    evidence_type: 4  # Reputable media (6 Indonesian news sources)
+    description: 7 Ijen incidents (2015-2026), 4 fatalities — 50% fitness-related (heart attack, exhaustion). Directly validates health screening mandate.
+    verification_status: verified
+    last_verified: 2026-05-26
+    proof_ids: [press-kabar-banyuwangi-bksda-signage, press-travel-weekly-asia-ijen-death, press-cnn-indonesia-hutan-mati, press-tirto-pendaki-hilang]
+
+  # C1 — Safety-Led Operations (resource mapping)
+  - evidence_id: E016
+    claim: C1
+    source_file: wiki/sources/ijen-safety-resource-mapping.md
+    evidence_type: 4  # Reputable media + JVTO internal (14 mixed sources)
+    description: Safety resource mapping — Tourist Police Pam Obvit + Patwal active support, SPRIN docs, APGI guide certification, Ijen Rijik program, red flag system
+    verification_status: verified
+    last_verified: 2026-05-26
+    proof_ids: [sprin-polpar, sprin-wal-travel-2024-02-12, press-ksdae-ijen-rijik, press-bbksda-jatim-closure]
+
   # C9 — Press & Recognition
   - evidence_id: E014
     claim: C9

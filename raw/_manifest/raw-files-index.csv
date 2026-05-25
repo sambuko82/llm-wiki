@@ -56,3 +56,5 @@ R054,FINANCE/rate_cards/Copy of activities-rate-card.json,json,finance-spreadshe
 R055,FINANCE/rate_cards/Copy of crew-roles-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,5 crew role rates
 R056,FINANCE/rate_cards/Copy of other-activities-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,10 operational cost items
 R057,FINANCE/rate_cards/Copy of vehicle-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,6 vehicle type rates
+R058,Mount Ijen Safety and Support Resource Mapping.xlsx,xlsx,incident-dataset,credentials,public_sensitive,sources/ijen-safety-resource-mapping,ingested,5 safety categories 14 sources — Ijen Rijik + hazards + police + guides
+R059,Tourist Accidents at Kawah Ijen and Surrounding Areas.xlsx,xlsx,incident-dataset,credentials,public_sensitive,sources/ijen-tourist-accidents,ingested,7 incidents 4 fatalities 2015-2026 — health screening justification

@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 sources: []
 ---
 
@@ -1865,6 +1865,27 @@ The vault is now ready for content production workflows per `CLAUDE.md` primary 
 - Batch 6: reviews/{trustpilot-compilation, review-patterns} — 4.8/47 verified, 5 SSOT themes + 10 derived.
 - Batch 7: content/{brand-voice, faq-master, aeo-claims} — voice invariants, 20 canonical FAQs, C1–C9 with NLP snippets.
 - Batch 8: cross-ref pass + lint + update [[index]] + final [[log]] entry.
+
+---
+
+## [2026-05-26] ingest | Ijen Safety Resource Mapping + Tourist Accidents
+
+Sources ingested: 2 Excel files from raw/
+- `Mount Ijen Safety and Support Resource Mapping.xlsx` (R058) — 5 safety categories, 14 source references
+- `Tourist Accidents at Kawah Ijen and Surrounding Areas.xlsx` (R059) — 7 incidents (2015–2026), 4 fatalities
+
+Pages created (2): sources/ijen-safety-resource-mapping, sources/ijen-tourist-accidents
+
+Pages updated (3):
+- destinations/kawah-ijen — added Safety Incidents & Restricted Zones section (Hutan Mati, 500m radius, red flags, incident summary table)
+- credentials/medical-screening — added Incident Data section (50% of fatalities fitness-related → validates health screening)
+- website/operational-facts — enhanced Ijen Closure with Ijen Rijik program name + March 2019 establishment date
+
+Manifests updated: raw-files-index (+2), ingest-status (+2), evidence-registry (+E015, E016), recommendation-log (+REC-008, REC-009)
+
+Key finding: 50% of Ijen fatalities (2/4) were fitness-related (heart attack, exhaustion) — the exact risk pattern BBKSDA health screening targets. Strongest evidence yet that screening is not bureaucratic theater.
+
+New recommendations: REC-008 (dedicated safety-incidents wiki page), REC-009 (Silo 3 /travel-guide/ijen-safety-incidents URL — requires human approval due to named fatalities).
 
 ---
 
