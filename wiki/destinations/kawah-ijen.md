@@ -2,7 +2,7 @@
 type: destination
 title: Kawah Ijen (Ijen Crater)
 last_updated: 2026-05-26
-sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, ijen-safety-resource-mapping, ijen-tourist-accidents]
+sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, ijen-safety-resource-mapping, ijen-tourist-accidents, ijen-safety-protocol]
 aliases: [Ijen, Ijen Crater, Kawah Ijen]
 schema_type: TouristAttraction
 canonical_url: /destinations/ijen-crater
@@ -115,6 +115,15 @@ Miners work in high-SO₂ zones without respiratory protection. Tourists on JVTO
 - **Red flag warnings** — When red flags are displayed, crater area access is closed. JVTO follows BBKSDA closures without exception.
 
 Source: [[sources/ijen-safety-resource-mapping]]
+
+### Emergency & Evacuation
+
+- **TWA Kawah Ijen Call Center**: 0812 2018 0930 — initial report point for SAR incidents
+- **"Lamborghini Ijen"** — the traditional mining trolley repurposed for medical evacuation. Protocol: 3 personnel to pull uphill, 2 to stabilize downhill.
+- **SAR protocol** (per 2026 Dzikri Maulana case): Hasty Search of 3.6 km trail → Type II Open Grid search (1 km² around last known position) → thermal drone deployment → trolley evacuation to Puskesmas Licin
+- **Sengkan Gandrung** — steep descent road toward Banyuwangi, classified as "High-Risk Braking Zone." Two motorcycle accidents here (April 2025). JVTO uses professional drivers with certified vehicles; guests never self-ride.
+
+Source: [[sources/ijen-safety-protocol]]
 
 ## JVTO Packages That Include Ijen
 

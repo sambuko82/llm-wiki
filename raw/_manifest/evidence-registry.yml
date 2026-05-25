@@ -148,6 +148,26 @@ evidence:
     last_verified: 2026-05-26
     proof_ids: [sprin-polpar, sprin-wal-travel-2024-02-12, press-ksdae-ijen-rijik, press-bbksda-jatim-closure]
 
+  # C5 — Proof-First Trust (verification dossier)
+  - evidence_id: E017
+    claim: C5
+    source_file: wiki/sources/jvto-verification-dossier.md
+    evidence_type: 8  # AI-generated (NotebookLM)
+    description: 14-page visual dossier consolidating all 9 claims with verified document exhibits. Customer-facing trust artifact. SHA-256 anchored.
+    verification_status: verified
+    last_verified: 2026-05-26
+    proof_ids: [nib-1102230032918, tdup-1102230032918, sprin-polpar, sprin-wal-travel-2024-02-12]
+
+  # C1 — Safety-Led Operations (Ijen safety protocol)
+  - evidence_id: E018
+    claim: C1
+    source_file: wiki/sources/ijen-safety-protocol.md
+    evidence_type: 8  # AI-generated synthesis of weight 1-4 sources
+    description: Structured safety protocol — SAR procedures, Lamborghini evacuation, risk flag system, Sengkan Gandrung braking zone, Green Briefings, PVMBG 500m exclusion zone
+    verification_status: verified
+    last_verified: 2026-05-26
+    proof_ids: [sprin-polpar, press-bbksda-jatim-closure, press-tirto-pendaki-hilang]
+
   # C9 — Press & Recognition
   - evidence_id: E014
     claim: C9

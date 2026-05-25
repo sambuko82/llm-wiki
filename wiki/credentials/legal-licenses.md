@@ -1,8 +1,8 @@
 ---
 type: credential
 title: JVTO Legal Licenses & Verifiable Credentials
-last_updated: 2026-05-16
-sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map, ijen-safety-protocol, jvto-verification-dossier]
 ---
 
 # JVTO Legal Licenses & Verifiable Credentials
@@ -14,6 +14,7 @@ All credentials below are publicly verifiable. SHA-256 hashes of source document
 | Credential | Number | Issued | Verifiable at |
 |---|---|---|---|
 | **Legal name** | PT Java Volcano Rendezvous | 2016-01-01 | AHU registry: https://ahu.go.id/pencarian/perseroan |
+| **AHU** (Company Registry) | AHU-0023020 | — | https://ahu.go.id/pencarian/perseroan |
 | **NIB** (Nomor Induk Berusaha) | 1102230032918 | — | oss.go.id (Online Single Submission) |
 | **NIB (historical)** | 0220001393513 | — | *Possible legacy OSS record — not the canonical active license. Do not use in marketing copy.* |
 | **TDUP** (Tanda Daftar Usaha Pariwisata) | 1102230032918 | 2023-02-11 | Dinas Pariwisata · Sistem Tanda Daftar OSS |

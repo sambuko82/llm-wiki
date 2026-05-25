@@ -1868,6 +1868,25 @@ The vault is now ready for content production workflows per `CLAUDE.md` primary 
 
 ---
 
+## [2026-05-26] ingest | JVTO Verification Dossier + Ijen Safety Protocol
+
+Sources ingested: 2 files from raw/
+- `JVTO_Verification_Dossier.pdf` (R060) — 14-page NotebookLM dossier, AI-generated (weight 8)
+- `Operational Safety Management Protocol...md` (R061) — 7-section Ijen safety protocol, AI-generated (weight 8)
+
+Pages created (2): sources/jvto-verification-dossier, sources/ijen-safety-protocol
+
+Pages updated (3):
+- credentials/legal-licenses — added AHU-0023020 (Company Registry number)
+- destinations/kawah-ijen — added Emergency & Evacuation section (Lamborghini trolley, SAR protocol, Sengkan Gandrung braking zone, TWA Call Center)
+- website/operational-facts — added TWA Call Center contact, Ijen Rijik cleanup volume (100-150kg/month) + Cemara Gunung planting
+
+Manifests updated: raw-files-index (+2), ingest-status (+2), evidence-registry (+E017, E018), conflict-log (CONF-001 updated with dossier Stefan Loose "Year: 2018"), recommendation-log (+REC-010 Buleleng Hiace verification)
+
+Key notes: Both files are AI-generated (NotebookLM, evidence weight 8). Most content corroborates existing wiki. New verifiable fact: AHU-0023020. Unverified item: "Buleleng Hiace Fatality" transit incident — needs Sam confirmation (REC-010).
+
+---
+
 ## [2026-05-26] ingest | Ijen Safety Resource Mapping + Tourist Accidents
 
 Sources ingested: 2 Excel files from raw/

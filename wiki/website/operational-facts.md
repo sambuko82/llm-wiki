@@ -2,7 +2,7 @@
 type: website
 title: JVTO Operational Facts — Temperatures, Travel Times, Practical Info
 last_updated: 2026-05-26
-sources: [db-export-2026-05, ijen-safety-resource-mapping]
+sources: [db-export-2026-05, ijen-safety-resource-mapping, ijen-safety-protocol]
 ---
 
 # JVTO Operational Facts
@@ -59,6 +59,16 @@ Both destinations require warm layers — layering recommended over single thick
 - For scheduled closure dates, check bbksdajatim.org
 
 Source: [[sources/ijen-safety-resource-mapping]] (ref #2, #3, #12, #13)
+
+Monthly cleanup (Ijen Rijik program): coordinated removal of **100–150 kg waste** from Paltuding to crater rim by BKSDA, SAR, and HPWKI. Includes targeted planting of endemic **Cemara Gunung** (*Casuarina junghuhniana*) to stabilize trail slopes and prevent erosion. Source: [[sources/ijen-safety-protocol]]
+
+---
+
+## TWA Kawah Ijen Emergency Contact
+
+- **TWA Call Center**: 0812 2018 0930 — initial report point for SAR incidents at Kawah Ijen
+
+Source: [[sources/ijen-safety-protocol]]
 
 ---
 

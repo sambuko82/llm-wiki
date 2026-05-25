@@ -15,6 +15,7 @@
 | REC-007 | 2026-05-25 | new_tag | Add `taman-safari` tag | Special package with unique hotel (Baobab Safari Resort) | pending | — |
 | REC-008 | 2026-05-26 | new_page | Create wiki/credentials/safety-incidents.md | Dedicated page for Ijen incident registry — currently embedded in source page. Would centralize safety data for AEO/FAQ use. Low priority unless website /safety page is built. | pending | — |
 | REC-009 | 2026-05-26 | new_url | Consider /travel-guide/ijen-safety-incidents for Silo 3 | Accident data has SEO value for "ijen safety" queries. BUT: sensitive content with named fatalities — requires human approval before publishing. | pending | human_decision_required |
+| REC-010 | 2026-05-26 | update | Verify "Buleleng Hiace Fatality" incident | Referenced in ijen-safety-protocol but NOT in Tourist Accidents Excel. Possibly a Bali-side transit accident. Need Sam to confirm/deny before adding to incident registry. | pending | human_decision_required |
 
 ---
 

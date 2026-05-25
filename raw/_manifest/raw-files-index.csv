@@ -58,3 +58,5 @@ R056,FINANCE/rate_cards/Copy of other-activities-rate-card.json,json,finance-spr
 R057,FINANCE/rate_cards/Copy of vehicle-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,6 vehicle type rates
 R058,Mount Ijen Safety and Support Resource Mapping.xlsx,xlsx,incident-dataset,credentials,public_sensitive,sources/ijen-safety-resource-mapping,ingested,5 safety categories 14 sources — Ijen Rijik + hazards + police + guides
 R059,Tourist Accidents at Kawah Ijen and Surrounding Areas.xlsx,xlsx,incident-dataset,credentials,public_sensitive,sources/ijen-tourist-accidents,ingested,7 incidents 4 fatalities 2015-2026 — health screening justification
+R060,JVTO_Verification_Dossier.pdf,pdf,proof-asset,website,public,sources/jvto-verification-dossier,ingested,14-page NotebookLM dossier — trust positioning deck (AI-generated weight 8)
+R061,Operational Safety Management Protocol_ High-Altitude Volcanic Excursions (Kawah Ijen Framework).md,md,ops-note,operations,internal,sources/ijen-safety-protocol,ingested,7-section Ijen safety protocol — SAR/evacuation/risk flags (AI-generated weight 8)
