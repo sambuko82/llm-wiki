@@ -118,6 +118,8 @@
 | `website/travel-guide/bromo-vs-ijen-comparison.md` | `/travel-guide/bromo-vs-ijen-comparison` | 2026-05-25 | reviewed |
 | `website/travel-guide/what-to-pack-bromo-ijen.md` | `/travel-guide/what-to-pack-bromo-ijen` | 2026-05-25 | reviewed |
 | `website/travel-guide/private-vs-shared-tour-comparison.md` | `/travel-guide/private-vs-shared-tour-comparison` | 2026-05-25 | reviewed |
+| `website/travel-guide/bromo-ijen-itinerary-guide.md` | `/travel-guide/bromo-ijen-itinerary-guide` | 2026-05-25 | draft |
+| `website/travel-guide/surabaya-vs-bali-starting-point.md` | `/travel-guide/surabaya-vs-bali-starting-point` | 2026-05-25 | draft |
 ---
 
 ## Website — Why JVTO

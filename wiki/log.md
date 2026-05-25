@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-25] generate | Silo 4 travel guides — itinerary guide + Surabaya vs Bali
+
+Pages created: `output/website/travel-guide/bromo-ijen-itinerary-guide.md` (duration comparison 1D–6D, day-by-day breakdowns, transfer times, pricing table), `output/website/travel-guide/surabaya-vs-bali-starting-point.md` (origin comparison, ferry logistics, cross-island route matrix, price difference breakdown). All prices verified against [[products/packages-full-pricing]], transfer times against [[content/operational-facts]].
+
+---
+
 ## [2026-05-25] generate | Student tour pages ×6 + team member pages ×15
 
 Pages created: 6 student tour detail pages (`output/website/tours/student/`), 15 individual team member pages (`output/website/team/`). All prices verified against [[products/packages-full-pricing]] via jvto-verified-output skill. ISIC Provider ID 259268 verified against [[credentials/legal-licenses]]. Crew data verified against [[people/crew-registry]]. All files status: draft.
