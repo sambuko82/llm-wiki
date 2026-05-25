@@ -2,7 +2,7 @@
 type: person
 title: JVTO Crew Registry — 11 KTA-Credentialed Members
 last_updated: 2026-05-25
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, ssot-image-asset-map, backoffice-mysql]
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, ssot-image-asset-map, backoffice-mysql, guardian-authority-framework-2026-05]
 total_crew: 14
 guides: 7
 drivers: 7
@@ -127,6 +127,25 @@ JVTO Guide
 - A JVTO guide with a KTA card is **not a freelancer found on a marketplace** — they are a registered member of a state-recognized association whose members have undergone government-supervised training.
 - The BBKSDA article is an **independent third-party record** that the training program exists and is active in 2024.
 - The chain is bidirectional: guest sees crew → crew has KTA → KTA issued by HPWKI → HPWKI verified at AHU → HPWKI training documented by BBKSDA.
+
+## Personality Economy + Micro-Entity Framing
+
+*From [[sources/guardian-authority-framework-2026-05]].*
+
+JVTO crew are "Micro-Entities" — specialists with specific, searchable skills (tagged via Schema.org `knowsAbout`) that justify premium pricing and foster traveler loyalty. The "Personality Economy" treats each crew member as a brand asset with a distinct archetype, not an interchangeable employee. Travelers buy the expertise of named specialists, not generic "guides."
+
+### Dream Team Pairings
+
+Strategic crew combinations for specific traveler demographics:
+
+| Pairing | Target demographic | Effect |
+|---|---|---|
+| Fredi (driver) + Gufron (guide) | Content-heavy youth / creators | High-energy, photography-focused expedition |
+| Yandi (driver) + Rendi (guide) | Families / elderly hikers | "Family-style" atmosphere, maximum physical safety |
+
+These are strategic recommendations from audit docs. Not yet a booking system feature — inform owner if implementing crew-request UX.
+
+> **Anjas archetype note**: Raw audit docs use both "Gen Z Ambassador" ([[sources/crew-strategy-integration-2026-05]]) and "Content Architect" ([[sources/guardian-authority-framework-2026-05]]). Both are valid framings — "Gen Z Ambassador" emphasizes demographic fit, "Content Architect" emphasizes astrophotography + social media skill set. Owner to decide canonical label.
 
 ## Guardian Mindset Framing
 

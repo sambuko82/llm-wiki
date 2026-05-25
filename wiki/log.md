@@ -1,13 +1,39 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-26] ingest | Guardian Infrastructure & Authority Framework — 4-file strategy synthesis
+
+**Source type**: Workflow 4 typed ingest. Profile: seo-audit.
+**Raw files (4)**: Guardian Infrastructure (Wild West), Institutional Authority Framework (Costly Signals), JVTO Digital Trust Fortress (GEO Blueprint), Guardian Infrastructure (Strategic Authority & Risk Mitigation).
+**Overlap**: ~75% reconfirms existing sources (geo-aeo-strategy-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05). Only genuinely new concepts extracted.
+
+Pages created (1):
+- sources/guardian-authority-framework-2026-05 — 4-file synthesis. New: Personality Economy + Micro-Entity framing, Dream Team pairings, Digital Trust Gap table, Answer Block format spec, Sprint 0 recovery board, Definition of Done checklist, Authority Stack comparison, ISO 3166-2:ID anchoring, Costly Signal theory, 3 psychological barriers framework, named concept glossary (13 entries).
+
+Pages updated (10):
+- people/crew-registry — Added Personality Economy / Micro-Entity section + Dream Team Pairings table + Anjas archetype contradiction note
+- seo/geo-aeo-strategy — Added Digital Trust Gap evaluation table + ISO 3166-2:ID geospatial anchoring section
+- website/brand-voice — Added Answer Block Format specification
+- website/aeo-claims — Added 3 Answer Block exemplars (Ijen Health, Bromo Inclusions, Cancellation) with voice-invariant warning
+- website/copy-bank — Added Authority Stack table + 3 Psychological Barriers framework + Named Concept Glossary (7 terms)
+- credentials/trust-signals — Added Costly Signal Theory section + Partnership Value Matrix table
+- seo/seo-strategy — Added Sprint 0 Recovery cross-reference (with [stale?] flags)
+- ops/compilation-profiles — Added Definition of Done checklist (Trust Fortress Ready, 4 layers)
+- website/schema-templates — Added ISO 3166-2:ID geospatial anchoring rule with JSON-LD example
+- index — Added source entry, total_pages 87→88
+
+Contradictions flagged:
+- Anjas archetype: "Gen Z Ambassador" (crew-strategy-integration) vs "Content Architect" (institutional-authority-framework). Both valid framings; noted in crew-registry.
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 type: website
 title: JSON-LD Schema Templates — Page Type Reference
-last_updated: 2026-05-18
-sources: [seo-audit-2026-05, ssot-v6, sitemap-2026-05]
+last_updated: 2026-05-26
+sources: [seo-audit-2026-05, ssot-v6, sitemap-2026-05, guardian-authority-framework-2026-05]
 ---
 
 # JSON-LD Schema Templates
@@ -143,4 +143,22 @@ Before saving any schema output, grep [[credentials/trust-signals]] §Schema Can
 
 ---
 
--> [[ops/compilation-profiles]] §schema | -> [[credentials/trust-signals]] §Schema Canonical Values | -> [[credentials/legal-licenses]] | -> [[sources/seo-audit-2026-05]]
+## ISO 3166-2:ID Geospatial Anchoring
+
+*From [[sources/guardian-authority-framework-2026-05]] §9 + [[seo/geo-aeo-strategy]] §ISO 3166-2:ID.*
+
+Add `areaServed` with ISO 3166-2:ID code **`ID-JI`** (East Java / Jawa Timur) to Organization schema. This prevents AI engines from confusing JVTO with Bali-based resellers when processing geographic queries.
+
+```json
+"areaServed": {
+  "@type": "AdministrativeArea",
+  "name": "East Java",
+  "identifier": "ID-JI"
+}
+```
+
+For hyper-local precision, add `serviceArea` entries for Surabaya, Bondowoso, and Banyuwangi as `City` types with `containedInPlace: "East Java"`.
+
+---
+
+-> [[ops/compilation-profiles]] §schema | -> [[credentials/trust-signals]] §Schema Canonical Values | -> [[credentials/legal-licenses]] | -> [[sources/seo-audit-2026-05]] | -> [[sources/guardian-authority-framework-2026-05]]

@@ -1,8 +1,8 @@
 ---
 type: website
 title: JVTO Brand Voice Guide
-last_updated: 2026-05-17
-sources: [ssot-v6, jvto-homepage-clip, seo-audit-2026-05]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, seo-audit-2026-05, guardian-authority-framework-2026-05]
 ---
 
 # JVTO Brand Voice Guide
@@ -123,6 +123,23 @@ Examples:
 - Keep under 160 characters; 120–155 is the ideal range for SERP display
 
 Source: [[sources/seo-audit-2026-05]] §2.4
+
+---
+
+## Answer Block Format (for GEO/AEO)
+
+*From [[sources/guardian-authority-framework-2026-05]] §4.*
+
+LLMs extract "Answer Blocks" — factual payloads within ~300 characters. If AI cannot extract a direct answer within this window, it prioritizes competitor data.
+
+**Structure**: `Direct Answer → Factual Support → Neutral Tone`
+
+Rules:
+- Open with a standalone declarative sentence answering the query
+- Follow with 1–2 factual support sentences (credential IDs, document numbers, specific inclusions)
+- Maintain neutral informational tone — no selling language, no hedging
+
+See [[sources/guardian-authority-framework-2026-05]] §4 for 3 worked examples (Ijen Health Policy, Bromo Tour Inclusions, Cancellation Policy).
 
 ---
 

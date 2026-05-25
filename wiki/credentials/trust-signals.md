@@ -1,8 +1,8 @@
 ---
 type: credential
 title: JVTO Trust Signals — Reviews, Press, Partners, Historical
-last_updated: 2026-05-17
-sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map, seo-audit-2026-05]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map, seo-audit-2026-05, guardian-authority-framework-2026-05]
 ---
 
 # JVTO Trust Signals
@@ -139,6 +139,32 @@ When answering "Is JVTO legitimate?" cite in this order:
 5. **Medical**: Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
 6. **Press**: 4 independent articles (Detik, Radar Jember ×2, BBKSDA Jatim)
 7. **Historical**: Booking.com 2015 + Stefan Loose 2016 — operational continuity at same address
+
+## Costly Signal Theory
+
+*From [[sources/guardian-authority-framework-2026-05]] §8.*
+
+"Costly Signals" are verifiable evidence that illegitimate operators cannot replicate without facing legal consequences. In economics, a costly signal is credible precisely because faking it is prohibitively expensive or risky.
+
+Applied to JVTO trust signals:
+- **NIB/TDUP**: Requires physical HQ, tax compliance, legal liability — commitments ghost operators cannot sustain
+- **SPRIN orders**: Official police assignment letters — forging them is a criminal offense
+- **SHA-256 hashes**: Cryptographic immutability proof — documents are tamper-evident
+- **HPWKI membership**: Requires government-supervised training (BBKSDA) — cannot be purchased or self-issued
+
+This framing is useful in /verify-jvto copy: explain WHY credentials matter, not just list them. "These aren't marketing badges — they're barriers to entry that only a legitimate operator can clear."
+
+## Partnership Value Matrix
+
+*From [[sources/guardian-authority-framework-2026-05]] §11. Complements Partnership Authority table above with strategic framing.*
+
+| Partner | Function | Strategic Value |
+|---|---|---|
+| **ISIC** | Fairness & Tech | UNESCO-endorsed. Alive Verify API authenticates student status in real-time. Signals "Digital Maturity" — tech stack for global database communication. |
+| **HPWKI** | Competence | Membership mandates SAR + disaster mitigation training supervised by BBKSDA. Proves guide competence is institutional, not self-reported. |
+| **INDECON** | Ethics | Validates "Local Boys" policy — crew hired from surrounding Bondowoso/Banyuwangi villages. Enforces waste management protocols. Revenue stays in the community. |
+
+---
 
 ## Trust Anchors
 

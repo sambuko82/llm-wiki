@@ -1,8 +1,8 @@
 ---
 type: seo
 title: GEO/AEO Strategy — Generative & Answer Engine Optimization
-last_updated: 2026-05-24
-sources: [geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-audit-2026-05]
+last_updated: 2026-05-26
+sources: [geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-audit-2026-05, guardian-authority-framework-2026-05]
 ---
 
 # GEO/AEO Strategy
@@ -94,6 +94,32 @@ Plant these as explicit Q&A blocks:
 - "Is Bromo safe?" → See [[seo/seo-strategy]] §Silo 3 `bromo-ijen-status-today`
 - "How to get from Bali to Bromo?" → Ferry table with Gilimanuk→Ketapang timestamps
 - "Can I cancel if volcano closes?" → Travel Credit (not cash refund), 48-hour window
+
+---
+
+## Digital Trust Gap Evaluation
+
+*From [[sources/guardian-authority-framework-2026-05]] §3 (GEO Blueprint, 2026-05).*
+
+Assessment of where offline authority fails to translate to digital/AI presence:
+
+| Attribute | Offline Authority (SSOT Reality) | Digital Presence (Audit Findings) | AI Retrieval Risk |
+|---|---|---|---|
+| Entity Identity | Active Tourist Police Leadership (Bripka Agung Sambuko) | Missing `/our-story/` (404); broken E-E-A-T chain | **High** |
+| Medical Integrity | Mandatory physician-led screening (Dr. Ahmad Irwandanu) | Text-only mentions; no `MedicalProcedure` schema | **Critical** |
+| Verifiability | 14 Credentials & 52 SHA-256 evidence assets | Fragmented schema; assets siloed from machine layer | **Medium** |
+| Policy Logic | Unified "JVTO Travel Credit" system | Conflicting refund terms across 51 URLs | **High** |
+| Geographic Anchor | Licensed East Java Entity (NIB: 1102230032918) | Missing `geoCoordinates` and ISO regional codes | **Medium** |
+
+> [stale?] The `/our-story/` 404 finding dates from 2026-05 audit. `/why-jvto/our-story` may now be live in jvto-web — verify before treating as a gap.
+
+## ISO 3166-2:ID Geospatial Anchoring
+
+*From [[sources/guardian-authority-framework-2026-05]] §9.*
+
+Use `areaServed` with ISO 3166-2:ID code **`ID-JI`** (East Java / Jawa Timur) in Organization schema. Prevents AI engines from confusing JVTO with Bali-based resellers and aggregators. Hardcode regional polygons for Surabaya, Bondowoso, and Banyuwangi as specific `serviceArea` entries.
+
+See [[website/schema-templates]] for implementation in Organization JSON-LD.
 
 ---
 

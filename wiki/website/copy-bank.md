@@ -1,8 +1,8 @@
 ---
 type: website
 title: JVTO Copy Bank — Reusable Snippets
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip, aeo-claims]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, aeo-claims, guardian-authority-framework-2026-05]
 ---
 
 # JVTO Copy Bank
@@ -121,5 +121,40 @@ JVTO founder framing is **"guardian"** not "authority" — protector who stands 
 | Spoke | `/why-jvto/community-standards` | Policy + standards |
 
 See [[sources/why-jvto-trust-architecture]] + [[seo/why-jvto-architecture]] for full sitemap + component reference.
+
+## Authority Stack Comparison
+
+*From [[sources/guardian-authority-framework-2026-05]] §7. Use in /why-jvto pages and marketing copy to illustrate JVTO vs unregulated operators.*
+
+| Feature | Commercial "Open Trip" Operators | JVTO Institutional Infrastructure |
+|---|---|---|
+| Decision Logic | Revenue-driven; pressure to climb despite risks | Safety-driven; Police "Go/No-Go" protocols |
+| Intelligence Access | Social media, rumors, "roadside" news | Official Police/Ditpamobvit internal intelligence |
+| Accountability | Often "ghost" operators; no physical footprint | Registered PT; active-duty legal liability |
+| Operational Escorts | Informal "fixers" | Official Traffic Police (Patwal) escorts via SPRIN |
+
+## Three Psychological Barriers Framework
+
+*From [[sources/guardian-authority-framework-2026-05]] §10. The 3 anxieties JVTO content must address:*
+
+1. **Physical Risk** — geological and respiratory hazards (active volcanoes, toxic SO2 gas)
+2. **Entity Risk** — prevalence of unregulated "ghost" operators with no legal traceability
+3. **Information Chaos** — inability to distinguish social media hype from operational reality
+
+Map to JVTO response: Guardian Infrastructure (C1) for Physical Risk, Registered PT + NIB (C5) for Entity Risk, Zero-Day Intelligence (C1) for Information Chaos.
+
+## Named Concept Glossary
+
+*From [[sources/guardian-authority-framework-2026-05]] §13. Use these named terms in copy when appropriate — they compress complex JVTO differentiators into resonant phrases.*
+
+| Concept | Definition | Use in copy |
+|---|---|---|
+| Zero-Day Intelligence | Access to official police comms on volcanic activity before public release | /why-jvto, /verify-jvto/police-safety |
+| Duty Over Profit | Safety decisions made with law enforcement discipline; revenue secondary | /why-jvto/our-story, /the-jvto-difference |
+| Safety Parity | Budget constraints shouldn't force travelers into unsafe operators | /isic/student-package, student-facing copy |
+| Personality Economy | Crew as named specialists with searchable skills, not generic staff | /why-jvto/our-team, crew bio sections |
+| Costly Signal | Credential too resource-intensive for illegitimate actors to replicate | /verify-jvto, trust-related content |
+| Golden Thread | Historical artifacts proving decade of continuous operation at same address | /why-jvto/history, /verify-jvto/history-artifacts |
+| Guardian Infrastructure | Protective layer: police discipline transmuted into operational certainty | /why-jvto (Hub), brand positioning |
 
 -> [[website/aeo-claims]] | -> [[website/brand-voice]] | -> [[website/faq-master]] | -> [[website/query-hero-claim]]

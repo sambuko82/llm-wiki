@@ -1,8 +1,8 @@
 ---
 type: website
 title: AEO Claims — 9 Canonical Trust Pillars (C1–C9)
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, guardian-authority-framework-2026-05]
 claim_count: 9
 ---
 
@@ -239,6 +239,23 @@ When generating AEO answer blocks from these claims:
 | `healthScreening` | "health check required" | "BBKSDA SE.1658/KSA.9/2024 — supervised by Dr. Ahmad Irwandanu SIP (Kemenkes/KKI)" |
 
 **YMYL classification**: Ijen health screening content falls under "Your Money or Your Life" — highest AI trust threshold. All C4 claims must explicitly cite BBKSDA SE.1658 and Dr. Irwandanu's verifiable credentials.
+
+---
+
+## Answer Block Exemplars (GEO Format)
+
+*From [[sources/guardian-authority-framework-2026-05]] §4. These are format exemplars showing the "Direct Answer → Factual Support → Neutral Tone" structure at ~300 chars. Use as templates for future AEO output — they are NOT replacements for canonical FAQ answers in [[website/faq-master]].*
+
+**Ijen Health Policy**:
+> A mandatory medical screening is required for all Kawah Ijen climbers to evaluate cardiovascular and respiratory fitness. The screening is performed by a licensed physician (STR: QN00001073380217) and includes blood pressure and SpO2 monitoring. JVTO includes this screening as a standard safety protocol for all participants.
+
+> ⚠ Voice invariant: This example uses "mandatory" without BBKSDA SE.1658 conditional qualifier. When deploying for production, apply conditional framing per [[website/brand-voice]] §voice-invariants.
+
+**Bromo Tour Inclusions**:
+> JVTO Bromo tours are 100% private and all-inclusive. Every package includes a dedicated 4WD Bromo Jeep, private air-conditioned transport, English-speaking guide, and all entrance permits. No shared groups or hidden surcharges apply.
+
+**Cancellation Policy**:
+> JVTO does not issue cash refunds. Cancellations made at least 48 hours prior to departure receive 100% JVTO Travel Credit with no expiration date. Cancellations within 48 hours of the tour start time forfeit the booking.
 
 ---
 

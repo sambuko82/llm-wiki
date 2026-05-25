@@ -2,7 +2,7 @@
 type: seo
 title: SEO Strategy — Keyword Targets & Content Silos
 last_updated: 2026-05-17
-sources: [seo-audit-2026-05]
+sources: [seo-audit-2026-05, guardian-authority-framework-2026-05]
 ---
 
 # SEO Strategy
@@ -217,6 +217,20 @@ If QW-1 through QW-14 are executed in Weeks 1–2:
 
 ---
 
+## Sprint 0 Recovery (GEO Blueprint)
+
+*From [[sources/guardian-authority-framework-2026-05]] §5. Cross-reference with QW tracker above — some overlap.*
+
+| Phase | Days | Task | Overlap with QW |
+|---|---|---|---|
+| Phase 1 | 1–2 | 301 redirects from conflicting refund terms → canonical `/policy/booking-payment-cancellation/`. Standardize "JVTO Travel Credit" as exclusive term. | QW-1, QW-10 |
+| Phase 2 | 3–4 | Re-publish `/our-story/` using founder police narrative. Restore `/destinations/tumpak-sewu/`. | — |
+| Phase 3 | 5–7 | C6 Review Registry: index specific Trustpilot Review IDs as evidence assets. Standardize NAP (Jl. Khairil Anwar No.102 A, Badean, Bondowoso, 68214) across all 51 canonical URLs. | QW-14 |
+
+> [stale?] Phase 2 items may already be live in jvto-web. Verify current site state before treating as action items.
+
+---
+
 ## Related Ops Pages
 
--> [[seo/competitors]] | -> [[seo/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[sources/seo-audit-2026-05]]
+-> [[seo/competitors]] | -> [[seo/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[sources/seo-audit-2026-05]] | -> [[sources/guardian-authority-framework-2026-05]]

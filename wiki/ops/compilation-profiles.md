@@ -1,8 +1,8 @@
 ---
 type: ops
 title: Compilation Profiles — Workflow 5
-last_updated: 2026-05-25
-sources: [llm-kb-tooling-guide, seo-audit-2026-05]
+last_updated: 2026-05-26
+sources: [llm-kb-tooling-guide, seo-audit-2026-05, guardian-authority-framework-2026-05]
 ---
 
 # Compilation Profiles
@@ -159,3 +159,16 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 **Output filename:** `output/finance/quote-{destination-slug}-{duration}.md`
 
 **Verification:** Total COGS must equal sum of all line items. Cross-check vehicle/hotel rates against rate-cards.md.
+
+---
+
+## Definition of Done: Trust Fortress Ready
+
+*From [[sources/guardian-authority-framework-2026-05]] §6. Quality gate for all content pages — applies across multiple profiles.*
+
+A page is "Trust Fortress Ready" when it satisfies all 4 layers:
+
+- [ ] **Human Layer**: Content is medically and operationally factual, uses "Safety-Led" brand voice ([[website/brand-voice]]), leads with a clear CTA
+- [ ] **Trust Layer**: Page features "Trust Strip" (License number, Police-led badge) and links to the Forensic Verify cluster (/verify-jvto)
+- [ ] **Machine Layer**: Schema.org markup (FAQPage/TourPackage/TouristAttraction) is nested, title/meta tags are locked, and an Answer Block is optimized for RAG extraction
+- [ ] **Operational Layer**: Verified against SSOT for data drift — all numeric values match [[credentials/trust-signals]] §Schema Canonical Values
