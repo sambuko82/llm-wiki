@@ -2,7 +2,7 @@
 page: /team/holili
 title: Holili — Driver at JVTO
 meta_description: "JVTO driver — dedicated service, wholehearted commitment to guest experience. KTA-D-2024-009."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

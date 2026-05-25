@@ -2,7 +2,7 @@
 profile: website-copy
 page: /tours/from-bali/ijen-bromo-madakaripura-3d2n
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [packages-overview]
 content_source: DB
 type: data-structure-spec

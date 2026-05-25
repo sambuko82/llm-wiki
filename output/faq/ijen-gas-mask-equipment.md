@@ -1,7 +1,7 @@
 ---
 profile: faq
 output_date: 2026-05-25
-status: draft
+status: reviewed
 sources: [kawah-ijen, content/faq-master, products/packages-overview, credentials/trust-signals]
 ---
 

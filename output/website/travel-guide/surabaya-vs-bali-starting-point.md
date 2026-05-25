@@ -2,7 +2,7 @@
 page: /travel-guide/surabaya-vs-bali-starting-point
 title: Starting from Surabaya vs Bali — Which Origin for Your Bromo & Ijen Tour?
 meta_description: "Compare starting your Bromo Ijen tour from Surabaya (12 packages) vs Bali (4 packages). Transfer times, pricing, route logistics, and which fits your flights."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-overview, products/packages-full-pricing, products/packages-itineraries, content/operational-facts]
 ---

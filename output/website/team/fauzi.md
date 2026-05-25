@@ -2,7 +2,7 @@
 page: /team/fauzi
 title: Fauzi — Guide at JVTO
 meta_description: "JVTO guide — friendly, strong photo documentation, quick guest connection. KTA-G-2024-010. HPWKI-registered."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

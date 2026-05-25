@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/faq
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [content/faq-master, jvto-travel-guide-en, jvto-policy-pack-v6, destinations/kawah-ijen, destinations/mount-bromo, content/operational-facts, content/brand-voice]
 voice: Style B
 ---

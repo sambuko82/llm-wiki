@@ -2,7 +2,7 @@
 page: /team/yandi
 title: Yandi — Driver at JVTO
 meta_description: "JVTO driver — senior touring specialist, 4.94/5.0 rating from 17 reviews. KTA-D-2024-003. Reliable, friendly, briefs guests proactively."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

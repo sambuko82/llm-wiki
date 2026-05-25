@@ -2,7 +2,7 @@
 page: /team/kiki
 title: Kiki — Guide at JVTO
 meta_description: "JVTO guide — friendly, knowledgeable, strong logistics and photography. KTA-G-2024-008. HPWKI-registered, BBKSDA-trained."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

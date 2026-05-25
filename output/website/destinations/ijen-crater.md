@@ -2,7 +2,7 @@
 profile: website-copy
 page: /destinations/ijen-crater
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [kawah-ijen, packages-overview, ssot-v6, credentials/medical-screening]
 content_source: DB
 type: data-structure-spec

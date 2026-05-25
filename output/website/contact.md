@@ -2,7 +2,7 @@
 profile: website-copy
 page: /contact
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [wiki/overview.md, wiki/credentials/legal-licenses.md, wiki/content/brand-voice.md, wiki/content/operational-facts.md]
 voice: Style B
 ---

@@ -2,7 +2,7 @@
 profile: website-copy
 page: /isic/student-package
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [wiki/overview.md, wiki/credentials/legal-licenses.md, wiki/products/packages-full-pricing.md, wiki/content/brand-voice.md]
 voice: Style B
 ---

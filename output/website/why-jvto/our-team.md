@@ -2,7 +2,7 @@
 profile: website-copy
 page: /why-jvto/our-team
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [wiki/people/crew-registry.md, wiki/people/agung-sambuko.md, wiki/people/dr-ahmad-irwandanu.md, wiki/reviews/trustpilot-compilation.md, sources/ssot-image-asset-map]
 voice: Style B
 ---

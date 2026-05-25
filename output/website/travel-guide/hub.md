@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [jvto-travel-guide-en, jvto-policy-pack-v6, content/faq-master, content/brand-voice, destinations/kawah-ijen, destinations/mount-bromo, people/agung-sambuko, content/operational-facts]
 voice: Style B
 ---

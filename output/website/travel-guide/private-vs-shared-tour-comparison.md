@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/private-vs-shared-tour-comparison
 output_date: 2026-05-25
-status: draft
+status: reviewed
 sources: [products/packages-overview, content/brand-voice, content/aeo-claims, credentials/trust-signals, sources/jvto-policy-pack-v6]
 voice: Style B
 ---

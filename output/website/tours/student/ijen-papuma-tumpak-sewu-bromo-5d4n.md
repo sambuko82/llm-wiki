@@ -2,7 +2,7 @@
 page: /tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n
 title: Student Package — 5D4N Ijen + Papuma + Tumpak Sewu + Bromo
 meta_description: "ISIC student rate for 5-day full circuit. Extra day for Papuma Beach or rest day. From IDR 3,050,000/person."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-full-pricing, credentials/legal-licenses]
 ---

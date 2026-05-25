@@ -2,7 +2,7 @@
 page: /team/rendi
 title: Rendi — Guide at JVTO
 meta_description: "JVTO guide specializing in expedition safety, mountain rescue, and first aid. KTA-G-2024-002. HPWKI-registered, BBKSDA-trained."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

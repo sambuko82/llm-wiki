@@ -11,6 +11,20 @@ sources: []
 
 ---
 
+## [2026-05-25] review | Bulk status upgrade — 99 output files draft → reviewed
+
+Scanned all output files against brand-voice.md and trust-signals.md criteria:
+- **Forbidden phrases**: 1 violation found + fixed ("world-class" → "dramatic" in bromo-vs-ijen-comparison.md)
+- **Avoid phrases**: 0 violations
+- **Price format**: 0 violations (all IDR with commas)
+- **Rating conflation**: 0 violations (Trustpilot/Google/TA correctly attributed everywhere)
+- **NIB consistency**: 0 violations (all = 1102230032918)
+- **Schema "mandatory" language**: noted in 8 schema JSON files — acceptable because BBKSDA SE.1658 regulatory qualifier present in each instance
+
+99 files updated `status: draft` → `status: reviewed`. INDEX.md updated (81 status entries). Archive and schema files excluded from status change.
+
+---
+
 ## [2026-05-25] generate | Silo 4 travel guides — itinerary guide + Surabaya vs Bali
 
 Pages created: `output/website/travel-guide/bromo-ijen-itinerary-guide.md` (duration comparison 1D–6D, day-by-day breakdowns, transfer times, pricing table), `output/website/travel-guide/surabaya-vs-bali-starting-point.md` (origin comparison, ferry logistics, cross-island route matrix, price difference breakdown). All prices verified against [[products/packages-full-pricing]], transfer times against [[content/operational-facts]].

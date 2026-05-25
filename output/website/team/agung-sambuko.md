@@ -2,7 +2,7 @@
 page: /team/agung-sambuko
 title: Agung "Mr. Sam" Sambuko — Founder & Tourist Police Officer
 meta_description: "Founder of JVTO. Active Tourist Police officer (Bripka, Ditpamobvit East Java). Built JVTO after identifying safety gaps in East Java volcano tourism."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/agung-sambuko, people/crew-registry]
 ---

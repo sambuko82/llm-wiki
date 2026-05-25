@@ -2,7 +2,7 @@
 profile: website-copy
 page: /why-jvto/the-jvto-difference
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [wiki/content/aeo-claims.md, wiki/content/copy-bank.md, wiki/people/agung-sambuko.md, wiki/credentials/trust-signals.md, wiki/credentials/police-integration.md, wiki/credentials/medical-screening.md, wiki/people/dr-ahmad-irwandanu.md, sources/ssot-image-asset-map]
 voice: Style B
 ---

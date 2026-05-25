@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/packing-and-fitness
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [jvto-travel-guide-en, content/operational-facts, destinations/kawah-ijen, destinations/mount-bromo, content/brand-voice]
 voice: Style B
 ---

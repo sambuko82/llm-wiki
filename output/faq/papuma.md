@@ -1,7 +1,7 @@
 ---
 profile: faq
 output_date: 2026-05-18
-status: draft
+status: reviewed
 sources: [faq-master, packages-overview, legal-licenses, trust-signals, papuma-beach, brand-voice, packages-full-pricing]
 verification: PASS
 pricing_verified: 2026-05-18 — IDR figures confirmed against packages-full-pricing.md (SUB 4d3n: 4,550,000; Bali 4d3n: 4,900,000)

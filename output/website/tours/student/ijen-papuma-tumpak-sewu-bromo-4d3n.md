@@ -2,7 +2,7 @@
 page: /tours/student-package/ijen-papuma-tumpak-sewu-bromo-4d3n
 title: Student Package — 4D3N Ijen + Papuma + Tumpak Sewu + Bromo
 meta_description: "ISIC student rate for 4-day full East Java circuit. Ijen, Papuma Beach, Tumpak Sewu waterfall, Bromo. From IDR 2,900,000/person."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-full-pricing, credentials/legal-licenses]
 ---

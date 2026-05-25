@@ -2,7 +2,7 @@
 profile: faq
 page: ijen-faq
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [faq-master, destinations/kawah-ijen, people/dr-ahmad-irwandanu, credentials/medical-screening, content/operational-facts, products/packages-overview, products/packages-full-pricing, credentials/trust-signals, credentials/legal-licenses]
 ---
 

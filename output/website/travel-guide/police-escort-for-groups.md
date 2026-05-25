@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/police-escort-for-groups
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [jvto-travel-guide-en, people/agung-sambuko, credentials/police-integration, content/faq-master, content/brand-voice, jvto-policy-pack-v6, sources/ssot-image-asset-map]
 voice: Style B
 ---

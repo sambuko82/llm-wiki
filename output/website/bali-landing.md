@@ -2,7 +2,7 @@
 profile: website-copy
 page: bali-landing
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [copy-bank, brand-voice, products/packages-overview, products/packages-full-pricing, products/packages-itineraries, content/aeo-claims]
 ---
 

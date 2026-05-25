@@ -2,7 +2,7 @@
 page: /tours/student-package/bromo-ijen-3d2n-to-bali
 title: Student Package — 3D2N Bromo & Ijen (Surabaya → Bali)
 meta_description: "ISIC student rate for 3-day Bromo + Ijen ending in Bali. From IDR 2,050,000/person. Cross-island overland route."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-full-pricing, credentials/legal-licenses]
 ---

@@ -2,7 +2,7 @@
 page: /team/dika
 title: Dika — Driver at JVTO
 meta_description: "JVTO driver — active driver confirmed in operational database. KTA pending."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

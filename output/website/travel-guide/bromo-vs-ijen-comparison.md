@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/bromo-vs-ijen-comparison
 output_date: 2026-05-25
-status: draft
+status: reviewed
 sources: [destinations/mount-bromo, destinations/kawah-ijen, content/operational-facts, content/brand-voice, credentials/trust-signals]
 voice: Style B
 ---
@@ -36,7 +36,7 @@ Mount Bromo sits within the massive Tengger Caldera at 2,329 meters. It is famou
 A private 4WD jeep takes you across the "Sea of Sand" (Pasir Berbisik) to Penanjakan or King Kong Hill viewpoints. After the sunrise, you travel across the caldera floor to the foot of Bromo. You can walk or hire a horse to cross the flat sand field before climbing 250 concrete steps to look directly into the active smoking crater.
 
 ### Who is it for?
-Bromo is highly recommended for families, older travelers, and those seeking world-class volcanic views without a strenuous mountain trek. 
+Bromo is highly recommended for families, older travelers, and those seeking dramatic volcanic views without a strenuous mountain trek. 
 
 ---
 

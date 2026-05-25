@@ -2,7 +2,7 @@
 profile: website-copy
 page: /why-jvto
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [wiki/content/aeo-claims.md, wiki/content/copy-bank.md, wiki/credentials/trust-signals.md, wiki/reviews/trustpilot-compilation.md]
 voice: Style B
 ---

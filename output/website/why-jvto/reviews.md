@@ -2,7 +2,7 @@
 profile: website-copy
 page: /why-jvto/reviews
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [wiki/reviews/trustpilot-compilation.md, wiki/reviews/review-patterns.md, wiki/credentials/trust-signals.md, wiki/content/copy-bank.md]
 voice: Style B
 ---

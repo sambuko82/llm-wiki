@@ -1,7 +1,7 @@
 ---
 profile: aeo
 output_date: 2026-05-25
-status: draft
+status: reviewed
 sources: [kawah-ijen, credentials/medical-screening, sources/bbksda-pelatihan-pemandu-2024, credentials/legal-licenses]
 ---
 

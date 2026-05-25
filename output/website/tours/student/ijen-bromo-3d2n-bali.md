@@ -2,7 +2,7 @@
 page: /tours/student-package/ijen-bromo-3d2n-bali
 title: Student Package — 3D2N Ijen & Bromo from Bali
 meta_description: "ISIC student rate for 3-day private Ijen + Bromo from Bali. From IDR 1,900,000/person. Same safety, verified student pricing."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-full-pricing, credentials/legal-licenses]
 ---

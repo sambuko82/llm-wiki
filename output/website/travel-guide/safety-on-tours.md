@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/safety-on-tours
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [jvto-travel-guide-en, content/faq-master, sources/bbksda-pelatihan-pemandu-2024, destinations/kawah-ijen, destinations/mount-bromo, content/brand-voice, reviews/review-patterns, people/agung-sambuko]
 voice: Style B
 ---

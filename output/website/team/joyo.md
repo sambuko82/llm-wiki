@@ -2,7 +2,7 @@
 page: /team/joyo
 title: Joyo — Driver at JVTO
 meta_description: "JVTO driver — precision professional. Fast, clean, smooth, safe. KTA-D-2024-011."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

@@ -2,7 +2,7 @@
 profile: faq
 page: tumpak-sewu-faq
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [faq-master, destinations/tumpak-sewu, content/operational-facts, products/packages-overview, products/packages-full-pricing, products/packages-itineraries, credentials/trust-signals, credentials/legal-licenses]
 ---
 

@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/ijen-health-screening
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [destinations/kawah-ijen, content/faq-master, jvto-travel-guide-en, content/brand-voice, content/operational-facts, sources/bbksda-pelatihan-pemandu-2024, credentials/medical-screening, sources/ssot-image-asset-map]
 voice: Style B
 ---

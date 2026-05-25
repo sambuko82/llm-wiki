@@ -2,7 +2,7 @@
 page: /team
 title: Meet the Team — Java Volcano Tour Operator
 meta_description: "14-member field crew — HPWKI-registered guides and dedicated drivers. Named, photographed, and traceable by KTA credential. Not freelancers."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry, people/agung-sambuko, content/brand-voice]
 ---

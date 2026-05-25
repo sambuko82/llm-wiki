@@ -2,7 +2,7 @@
 profile: website-copy
 page: /policy
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [wiki/sources/jvto-policy-pack-v6, wiki/products/packages-overview]
 voice: Style A
 ---

@@ -2,7 +2,7 @@
 page: /team/boy
 title: Boy (Ahboy) — Guide at JVTO
 meta_description: "JVTO guide — local resident, deeply knowledgeable, strong logistics and punctuality. KTA-G-2024-004. HPWKI-registered, BBKSDA-trained."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

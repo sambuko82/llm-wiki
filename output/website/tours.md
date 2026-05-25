@@ -3,7 +3,7 @@ profile: website-copy
 page: /tours
 voice: Style B
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [packages-overview, copy-bank, jvto-policy-pack-v6]
 ---
 

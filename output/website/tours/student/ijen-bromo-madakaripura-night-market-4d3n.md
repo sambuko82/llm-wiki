@@ -2,7 +2,7 @@
 page: /tours/student-package/ijen-bromo-madakaripura-night-market-4d3n
 title: Student Package — 4D3N Ijen + Bromo + Madakaripura + Night Market
 meta_description: "ISIC student rate for 4-day private tour. Ijen Blue Fire, Bromo sunrise, Madakaripura waterfall, local night market. From IDR 2,700,000/person."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-full-pricing, credentials/legal-licenses]
 ---

@@ -2,7 +2,7 @@
 page: /team/pras
 title: Pras — Driver at JVTO
 meta_description: "JVTO driver — strong English, impeccable safety record. KTA pending."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

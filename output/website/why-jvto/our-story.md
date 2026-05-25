@@ -2,7 +2,7 @@
 profile: website-copy
 page: /why-jvto/our-story
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [wiki/people/agung-sambuko.md, wiki/content/copy-bank.md, wiki/credentials/trust-signals.md, wiki/credentials/press-coverage.md, sources/ssot-image-asset-map]
 voice: Style B
 ---

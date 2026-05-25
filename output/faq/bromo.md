@@ -1,7 +1,7 @@
 ---
 profile: faq
 output_date: 2026-05-18
-status: draft
+status: reviewed
 sources: [faq-master, packages-overview, legal-licenses, trust-signals, mount-bromo, brand-voice, operational-facts]
 verification: PASS
 note: Refreshed 2026-05-18 — Level II Waspada content from 2026-05-16 MAGMA ingest (feed discontinued). Verify current PVMBG status before publishing.

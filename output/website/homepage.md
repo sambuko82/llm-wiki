@@ -2,7 +2,7 @@
 profile: website-copy
 page: homepage
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [copy-bank, brand-voice, aeo-claims, packages-overview, destinations/kawah-ijen, destinations/mount-bromo, credentials/legal-licenses, credentials/trust-signals, people/agung-sambuko]
 voice: Style B
 ---

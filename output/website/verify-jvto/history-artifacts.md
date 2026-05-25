@@ -2,7 +2,7 @@
 profile: website-copy
 page: /verify-jvto/history-artifacts
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [people/agung-sambuko, credentials/trust-signals, credentials/legal-licenses, credentials/press-coverage, sources/ssot-image-asset-map]
 voice: Style A
 ---

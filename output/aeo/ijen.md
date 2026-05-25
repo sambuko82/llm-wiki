@@ -1,7 +1,7 @@
 ---
 profile: aeo
 output_date: 2026-05-18
-status: draft
+status: reviewed
 sources: [aeo-claims, faq-master, legal-licenses, trust-signals, destinations/kawah-ijen]
 verification: PASS
 ---

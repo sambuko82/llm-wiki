@@ -3,7 +3,7 @@ type: output
 profile: aeo
 title: AEO Blocks — Policy & Travel Guide
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [jvto-policy-pack-v6, jvto-travel-guide-en, content/aeo-claims, content/faq-master]
 route_coverage: [/policy/booking-payment-cancellation, /policy/inclusions-exclusions, /policy/privacy, /travel-guide/*, /travel-guide/faq, /travel-guide/booking-information, /travel-guide/ijen-health-screening, /travel-guide/safety-on-tours, /travel-guide/packing-and-fitness, /travel-guide/weather-and-closures, /travel-guide/police-escort-for-groups]
 ---

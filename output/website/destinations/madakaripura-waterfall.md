@@ -2,7 +2,7 @@
 profile: website-copy
 page: /destinations/madakaripura-waterfall
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [madakaripura, packages-overview, ssot-v6]
 content_source: DB
 type: data-structure-spec

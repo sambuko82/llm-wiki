@@ -2,7 +2,7 @@
 profile: website-copy
 page: /tours/from-bali/ijen-papuma-tumpak-sewu-bromo-4d3n
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [packages-overview]
 content_source: DB
 type: data-structure-spec

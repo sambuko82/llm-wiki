@@ -2,7 +2,7 @@
 profile: website-copy
 page: /verify-jvto/police-safety
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [people/agung-sambuko, credentials/legal-licenses, credentials/trust-signals, credentials/police-integration, sources/detik-polpar-2021, sources/radar-jember-polpar-geopark-2021, sources/radar-jember-bau-menyengat-2021, sources/ssot-image-asset-map]
 voice: Style A
 ---

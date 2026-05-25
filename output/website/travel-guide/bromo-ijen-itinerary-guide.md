@@ -2,7 +2,7 @@
 page: /travel-guide/bromo-ijen-itinerary-guide
 title: Bromo & Ijen Itinerary Guide — How Many Days Do You Need?
 meta_description: "Compare 1-day to 6-day Bromo and Ijen itineraries. Day-by-day breakdowns, transfer times, and what each duration covers. Private tours only."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-itineraries, products/packages-overview, products/packages-full-pricing, content/operational-facts]
 ---

@@ -1,7 +1,7 @@
 ---
 profile: faq
 output_date: 2026-05-25
-status: draft
+status: reviewed
 sources: [mount-bromo, content/faq-master, products/packages-overview, credentials/legal-licenses, credentials/trust-signals]
 ---
 

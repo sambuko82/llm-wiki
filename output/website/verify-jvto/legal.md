@@ -2,7 +2,7 @@
 profile: website-copy
 page: /verify-jvto/legal
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [credentials/legal-licenses, credentials/trust-signals, credentials/police-integration, people/agung-sambuko, sources/ssot-image-asset-map]
 voice: Style A
 ---

@@ -1,7 +1,7 @@
 ---
 profile: website-copy
 output_date: 2026-05-18
-status: draft
+status: reviewed
 sources: [mount-bromo, copy-bank, brand-voice, packages-overview, operational-facts]
 verification: PASS
 note: Refreshed 2026-05-18. Alert status section (Level II Waspada, 2026-05-16) sourced from one-time MAGMA ingest — verify current PVMBG status before publishing.

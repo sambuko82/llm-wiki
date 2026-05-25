@@ -2,7 +2,7 @@
 page: /team/taufik
 title: Taufik — Guide at JVTO
 meta_description: "JVTO guide known for organized briefings, logistics precision, and flexible timing. KTA-G-2024-007. HPWKI-registered, BBKSDA-trained."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

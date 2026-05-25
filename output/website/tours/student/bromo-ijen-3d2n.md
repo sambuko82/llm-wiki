@@ -2,7 +2,7 @@
 page: /tours/student-package/bromo-ijen-3d2n
 title: Student Package — 3D2N Bromo & Ijen Blue Fire
 meta_description: "ISIC student rate for 3-day private Bromo sunrise + Ijen Blue Fire tour. From IDR 2,050,000/person. Same safety standards, verified student pricing."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [products/packages-full-pricing, credentials/legal-licenses]
 ---

@@ -2,7 +2,7 @@
 profile: website-copy
 page: /tours/from-surabaya/ijen-2d1n
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [packages-overview]
 content_source: DB
 type: data-structure-spec

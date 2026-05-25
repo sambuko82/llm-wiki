@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/what-to-pack-bromo-ijen
 output_date: 2026-05-25
-status: draft
+status: reviewed
 sources: [sources/jvto-travel-guide-en, content/operational-facts, content/brand-voice, credentials/trust-signals]
 voice: Style B
 ---

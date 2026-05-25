@@ -2,7 +2,7 @@
 profile: website-copy
 page: /travel-guide/best-time-to-visit
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [content/operational-facts, destinations/kawah-ijen, destinations/mount-bromo, jvto-travel-guide-en, content/brand-voice]
 voice: Style B
 note: Updated on live site 2026-05-12 — high-priority accuracy page

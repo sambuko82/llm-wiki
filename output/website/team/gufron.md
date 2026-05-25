@@ -2,7 +2,7 @@
 page: /team/gufron
 title: Gufron — Guide at JVTO
 meta_description: "JVTO guide specializing in volcano photography, geology, and volcanic terrain navigation. KTA-G-2024-001. HPWKI-registered, BBKSDA-trained."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

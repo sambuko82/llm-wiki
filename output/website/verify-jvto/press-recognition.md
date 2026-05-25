@@ -2,7 +2,7 @@
 profile: website-copy
 page: /verify-jvto/press-recognition
 output_date: 2026-05-16
-status: draft
+status: reviewed
 sources: [credentials/trust-signals, credentials/press-coverage, sources/detik-polpar-2021, sources/radar-jember-polpar-geopark-2021, sources/radar-jember-bau-menyengat-2021, sources/bbksda-pelatihan-pemandu-2024, sources/ssot-image-asset-map]
 voice: Style A
 ---

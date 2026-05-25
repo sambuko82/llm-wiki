@@ -2,7 +2,7 @@
 profile: website-copy
 page: /blog
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [wiki/overview.md, wiki/content/brand-voice.md, wiki/content/operational-facts.md, wiki/destinations/kawah-ijen, wiki/destinations/mount-bromo, wiki/destinations/tumpak-sewu, wiki/destinations/madakaripura]
 voice: Style B
 ---

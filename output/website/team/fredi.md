@@ -2,7 +2,7 @@
 page: /team/fredi
 title: Fredi — Driver at JVTO
 meta_description: "JVTO driver — reliability anchor, exceptional driving skills, always on time. KTA-D-2024-005."
-status: draft
+status: reviewed
 output_date: 2026-05-25
 sources: [people/crew-registry]
 ---

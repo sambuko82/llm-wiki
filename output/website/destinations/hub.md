@@ -3,7 +3,7 @@ profile: website-copy
 voice: Style B
 page: /destinations
 output_date: 2026-05-12
-status: draft
+status: reviewed
 sources: [kawah-ijen, mount-bromo, tumpak-sewu, madakaripura, papuma-beach, packages-overview]
 type: website-copy
 ---
