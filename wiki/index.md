@@ -72,7 +72,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 ## Credentials
 
 - [[credentials/legal-licenses]] — NIB 1102230032918, TDUP, KBLI codes, HPWKI, BBKSDA, ISIC, SHA-256 hashes
-- [[credentials/trust-signals]] — Trustpilot 4.8/47, INDECON, ISIC live provider, press, third-party recognition
+- [[credentials/trust-signals]] — Trustpilot 4.8/51, INDECON, ISIC live provider, press, third-party recognition
 - [[credentials/press-coverage]] — 4 independent press items (Detik, Radar Jember ×2, BBKSDA) + Stefan Loose guidebook 2016 p. 287; entity linking analysis; AEO snippets for C9
 - [[credentials/medical-screening]] — Ijen health-screening system: BBKSDA SE.1658 regulatory basis, 4-step protocol, Dr. Irwandanu (SIP-verifiable), partner facilities, 5 screening photos + BBKSDA terms screenshot; AEO snippets for C4
 - [[credentials/police-integration]] — Full evidence chain: SPRIN POLPAR + SPRIN WAL-TRAVEL (SHA-256), 3 police escort photos + Geopark briefing, 3-article press corroboration, Ditpamobvit unit details, Traffic Police escort mechanics; AEO snippets for C1/C5

@@ -11,6 +11,39 @@ sources: []
 
 ---
 
+## [2026-05-25] health-check | weekly
+
+| Metric | Count |
+|--------|-------|
+| Total wiki pages | 75 |
+| Orphans | 7 |
+| Stale >90 days | 0 |
+| Stale >30 days | 0 |
+| Contradictions (actionable) | 3 fixed |
+| Contradictions (tracked/blocked) | 3 unchanged |
+| Gap pages | 0 |
+| Missing from index | 0 |
+| Unlogged raw files | 37 |
+
+**Contradictions fixed:**
+- C1: `wiki/index.md:75` — Trustpilot 4.8/47 → 4.8/51
+- C2: `wiki/website/faq-master.md:109` — Trustpilot 4.8/47 → 4.8/51
+- C3: `wiki/seo/competitors.md:98` — "160+ reviews" → "164 reviews"
+
+**Orphans (7, all source pages or new pages):**
+- `credentials/permit-requirements` (new, needs cross-refs from destination pages)
+- `sources/finance-rate-cards` (needs link from finance/rate-cards)
+- `sources/gemini-trust-fortress-mockup`, `sources/gpx-destination-data`, `sources/llm-kb-tooling-guide`, `sources/route-data-csv`, `sources/wa-pro-crm-api` (structural source orphans — reachable via index)
+
+**Tracked contradictions (unchanged):**
+- Stefan Loose year/ISBN — blocked on physical book check
+- Madakaripura height — under reconciliation
+- Second NIB 0220001393513 — blocked on OSS portal
+
+**Unlogged raw files:** 37 files in raw/ (including 23 FINANCE/ files and 14 strategy/audit docs) have no individual ingest log entry. Many were batch-ingested under consolidated source pages (e.g., finance rate cards, SEO audit consolidation). Consider a batch-log entry to clear these.
+
+---
+
 ## [2026-05-25] expand | Silo 3 wiki backing — sulfur mining, BBKSDA Bromo, permits, seasonal data
 
 Pages updated: [[destinations/kawah-ijen]] (sulfur mining expanded to ~200 words: history, working conditions, cultural significance, tourist etiquette, safety note), [[destinations/mount-bromo]] (new BBKSDA Regulations section: authority, entry requirements, jeep mandate, closure rules, no health screening), [[website/operational-facts]] (new Best Time to Visit seasonal guide: dry/shoulder/wet season, Yadnya Kasada, Ramadan), [[index]] (permit-requirements entry added). Page created: [[credentials/permit-requirements]] (operator permits + visitor entry requirements per destination with costs).

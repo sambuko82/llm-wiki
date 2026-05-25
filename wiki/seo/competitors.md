@@ -95,7 +95,7 @@ See [[sources/competitor-design-analysis-2026-05]] for full analysis.
 | **INDECON ecotourism membership** | None verified |
 | **SHA-256 document anchoring** of credentials | None — forensic-grade legitimacy proof |
 | **Written cancellation + closure policy with Travel Credit** | Usually buried by competitors |
-| **Multi-platform review verification** (Trustpilot + Google + TripAdvisor + Booking) 4.8★ / 160+ reviews | Usually single platform |
+| **Multi-platform review verification** (Trustpilot + Google + TripAdvisor + Booking) 4.8★ / 164 reviews | Usually single platform |
 
 ---
 
