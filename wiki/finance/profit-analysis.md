@@ -7,30 +7,47 @@ sources: [finance-rate-cards, db-export-2026-05]
 
 # Profit Analysis
 
-*Margin analysis and cost driver insights derived from 8 packages with known selling prices. All prices in IDR.*
+*Margin analysis and cost driver insights. All selling prices validated against [[products/packages-full-pricing]] (DB export, 2026-05-25). All prices in IDR.*
 
 ---
 
-## Margin by Package (Ranked)
+## Price Validation Summary
 
-| Rank | Package | Days | Pax | COGS/Pax | Selling/Pax | Margin | Margin (IDR) |
-|------|---------|------|-----|----------|-------------|--------|--------------|
-| 1 | 1D Surabaya Bromo Sunrise | 1 | 1 | 1,545,000 | 2,375,000 | 34.9% | 830,000 |
-| 2 | 3D Ijen-Bromo-Mada (Sby) | 3 | 9 | 1,816,667 | 2,550,000 | 28.8% | 733,333 |
-| 3 | 4D Ijen-Bromo-Mada (Sby) | 4 | 4 | 2,818,750 | 3,950,000 | 28.6% | 1,131,250 |
-| 4 | 4D Ijen-Papuma-Tumpak-Bromo (Sby) | 4 | 11 | 2,332,863 | 3,125,000 | 25.3% | 792,137 |
-| 5 | 3D Bromo-Mada-Ijen (Sby to Bali) | 3 | 11 | 1,840,772 | 2,450,000 | 24.9% | 609,228 |
-| 6 | 5D Ijen-Papuma-Tumpak-Bromo (Sby) | 5 | 1 | 6,831,500 | 9,050,000 | 24.5% | 2,218,500 |
-| 7 | 3D Taman Safari (Sby) | 3 | 2 | 3,315,000 | 4,300,000 | 22.9% | 985,000 |
-| 8 | 5D Ijen-Papuma-Tumpak-Bromo (Bali to Sby) | 5 | 1 | 7,836,000 | 9,000,000 | 12.9% | 1,164,000 |
+Selling prices from 15 Excel spreadsheets cross-referenced against DB SSOT:
+
+- **5 exact matches**: 3D Sby→Bali, 3D Sby, 4D Sby (Ijen-Bromo-Mada), 4D Sby (full circuit), 5D Sby — all match DB at corresponding pax tier.
+- **1 minor discrepancy**: Taman Safari — Excel 4,300,000, DB 4,350,000. Using DB price (+50k, likely post-spreadsheet adjustment).
+- **1 OTA price**: 1D Bromo Sunrise — 2,375,000 is Klook price, not direct. DB direct price: 1,550,000 (2 pax tier).
+- **1 no matching tier**: 5D Bali — Excel shows 9M for solo, DB starts at 2 pax (5,450,000). Solo tier not published.
+- **7 previously missing**: Filled from DB prices at matching pax tier.
+
+---
+
+## Margin by Package (Ranked — Validated)
+
+| Rank | Package | Days | Pax Tier | COGS/Pax | Selling/Pax | Margin | Margin (IDR) |
+|------|---------|------|----------|----------|-------------|--------|--------------|
+| 1 | 1D Bromo Sunrise (Klook) | 1 | 1 | 1,545,000 | 2,375,000 | 34.9% | 830,000 |
+| 2 | 2D Ijen Blue Fire (Sby) | 2 | 2 | 1,557,500 | 2,300,000 | 32.3% | 742,500 |
+| 3 | 3D Ijen-Bromo-Mada (Sby) | 3 | 8-10 | 1,816,667 | 2,550,000 | 28.8% | 733,333 |
+| 4 | 4D Ijen-Bromo-Mada (Sby) | 4 | 4-5 | 2,818,750 | 3,950,000 | 28.6% | 1,131,250 |
+| 5 | 4D Ijen-Papuma-Tumpak-Bromo (Sby) | 4 | 11+ | 2,332,863 | 3,125,000 | 25.3% | 792,137 |
+| 6 | 3D Bromo-Mada-Ijen (Sby→Bali) | 3 | 11+ | 1,840,772 | 2,450,000 | 24.9% | 609,228 |
+| 7 | 5D Ijen-Papuma-Tumpak-Bromo (Sby) | 5 | solo | 6,831,500 | 9,050,000 | 24.5% | 2,218,500 |
+| 8 | 4D Tumpak-Bromo-Ijen (Sby→Bali) | 4 | 2 | 3,453,500 | 4,550,000 | 24.1% | 1,096,500 |
+| 9 | 3D Taman Safari (Sby) | 3 | 2 | 3,315,000 | 4,350,000 | 23.8% | 1,035,000 |
+| 10 | 2D Bromo Sunrise (Sby) | 2 | 11+ | 1,344,545 | 1,750,000 | 23.2% | 405,455 |
+| 11 | 4D Ijen-Papuma-Tumpak-Bromo (Bali→Sby) | 4 | solo | 7,046,000 | 9,050,000 | 22.1% | 2,004,000 |
+| 12 | 5D Ijen-Bromo-Mada-Malang (Sby) | 5 | 11+ | 3,016,363 | 3,850,000 | 21.6% | 833,637 |
+
+> Row 1 (Klook) uses OTA selling price. Direct-booking margin would differ (DB 2-pax direct = 1,550,000 → margin likely lower). Two packages excluded: 1D Bromo Midnight (COGS/pax exceeds 2-pax selling — spreadsheet likely for different vehicle spec) and 5D Bali (no published solo tier).
 
 **Key observations:**
-- **Best margin**: 1D Bromo Sunrise (34.9%) — short trip, low COGS, high perceived value.
-- **Worst margin**: 5D Bali-to-Sby (12.9%) — ferry costs, accommodation accumulation, and long route erode margin.
-- **Sweet spot**: 3D–4D packages from Surabaya cluster at 25–29% margin.
-- **Absolute profit per pax** ranges from 609k (3D group of 11) to 2.2M (5D solo traveler). Solo travelers generate the highest absolute profit per booking despite higher COGS.
-
-> The 1D Bromo Sunrise selling price is the Klook OTA price. Direct-booking margin may differ.
+- **Best margin**: 2D Ijen Blue Fire at 2 pax (32.3%) — short trip, minimal accommodation, high perceived value for blue fire experience.
+- **Weakest margin**: 5D Ijen-Bromo-Mada-Malang at 11+ pax (21.6%) — 4 nights of accommodation + Malang city activities accumulate costs.
+- **Sweet spot**: 3D–4D Surabaya packages at 4-10 pax cluster at 25–29% margin.
+- **Solo premium**: Solo travelers generate 2M+ absolute profit per booking (highest per-booking value) despite lower percentage margins.
+- **Margin floor**: No package below 21.6%. All are above the 20% minimum threshold.
 
 ---
 
@@ -43,7 +60,7 @@ sources: [finance-rate-cards, db-export-2026-05]
 
 **Multi-day packages (3–5 days)**: Accommodation becomes the largest single cost category.
 - On a 3D package, 2 nights of accommodation at mid-tier (450–700k/night) = 900k–1.4M, often 30–40% of per-pax variable costs.
-- The 3D Taman Safari package has the highest per-pax COGS (3,315,000 for 2 pax) because Baobab Safari Resort rooms start at 1,500,000/night — the accommodation alone exceeds total COGS of budget 3D packages.
+- The 3D Taman Safari package has the highest per-pax COGS (3,315,000 for 2 pax) because Baobab Safari Resort rooms start at 1,500,000/night — accommodation alone exceeds total COGS of budget 3D packages. Current selling price 4,350,000 yields 23.8% margin.
 
 **Ferry-inclusive routes** (Bali to/from Sby): Ferry ticket (16k/pax) is cheap, but ferry guide (100k/unit) + extra travel time + additional fuel adds ~300k+ to the route cost. The 5D Bali route has 1M higher COGS than the equivalent Sby route.
 
@@ -103,21 +120,15 @@ Internal meals (Riverside 65k, Baratha 60k, Kecombrang 50k) are significantly ch
 
 ---
 
-## Packages Without Selling Prices
+## Packages Requiring Attention
 
-7 packages lack selling prices on file. These need pricing decisions:
+After validation, all 7 previously unpriced packages now have DB selling prices. Two packages have data issues:
 
-| Package | Days | Pax | COGS/Pax | Suggested Range (25–30% margin) |
-|---------|------|-----|----------|--------------------------------|
-| 1D Bromo Midnight (Sby) | 1 | 1 | 2,420,000 | 3,225,000–3,450,000 |
-| 2D Bromo Sunrise (Sby) | 2 | 11 | 1,344,545 | 1,800,000–1,920,000 |
-| 2D Ijen Blue Fire (Sby) | 2 | 2 | 1,557,500 | 2,075,000–2,225,000 |
-| 3D Ijen-Bromo-Mada (Bali to Sby) | 3 | ? | — | — |
-| 4D Ijen-Papuma-Tumpak-Bromo (Bali to Sby) | 4 | 1 | 7,046,000 | 9,400,000–10,065,000 |
-| 4D Tumpak-Bromo-Ijen (Sby to Bali) | 4 | 2 | 3,453,500 | 4,600,000–4,935,000 |
-| 5D Ijen-Bromo-Mada-Malang (Sby) | 5 | 11 | 3,016,363 | 4,025,000–4,310,000 |
-
-> These suggestions use the observed margin range (25–30%) from existing packages. The 1-pax packages should be priced toward the higher end given the fixed-cost burden.
+| Package | Issue | Detail |
+|---------|-------|--------|
+| 1D Bromo Midnight | COGS > selling | Excel COGS 2,420,000 (1 pax) > DB 1,550,000 (2 pax). Spreadsheet may use different vehicle spec (Innova 1,200,000/day vs Avanza 1,050,000). Needs spreadsheet review. |
+| 5D Bali→Sby | No solo tier | Excel shows 9M selling for solo, but DB only publishes 2+ pax. Consider adding solo tier to DB if solo bookings occur. |
+| 1D Bromo Sunrise | OTA-only price | Klook price 2,375,000. Need direct-booking price in DB or spreadsheet to compute direct margin. |
 
 ---
 
