@@ -2,7 +2,7 @@
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
 last_updated: 2026-05-25
-total_pages: 67
+total_pages: 69
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup]
 ---
 
@@ -83,7 +83,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[reviews/google-tripadvisor-2026]] — Google Maps 92 reviews 4.90/5 + TripAdvisor 21 reviews 4.95/5; crew mentions, themes mapped to C1–C7
 - [[reviews/review-patterns]] — Themes extracted: 5 SSOT-canonical + 10 derived patterns for content/AEO use
 
-## Content Production
+## Website
 
 - [[website/brand-voice]] — Tone guide (Style A + Style B), key phrases, voice invariants (forbidden phrases + approved Ijen language)
 - [[website/faq-master]] — All approved FAQ answers (AEO-formatted) — 20 canonical FAQs from SSOT §6_5 + locally derived
@@ -94,19 +94,32 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[website/hotels]] — 23 hotel partners registry; organized by itinerary phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu, Malang, Surabaya finish)
 - [[website/schema-templates]] — JSON-LD schema reference: page-type → schema map, field rules, BreadcrumbList patterns, numeric verification checklist
 
-## Ops
+## SEO & Strategy
 
-- [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
-- [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
-- [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
 - [[seo/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items), GEO/AEO extension section. Source: 2026-05-17 audit.
 - [[seo/competitors]] — Tiered competitor registry (4 tiers + OTAs). Tier 4: MBA + G Adventures as global UX/design benchmarks. Monitoring protocol.
 - [[seo/geo-aeo-strategy]] — **NEW** GEO entity architecture (llms.txt, SHA-256 in schema, sameAs cross-press), AEO universal rules, per-page targets, EAV principles, confirmed #1 rankings, OTA/App Engine section.
 - [[seo/why-jvto-architecture]] — **NEW** Dev-facing Hub & Spoke routing reference. URL map + schema injection layers + component registry (AuthorityShield/ForensicGallery/CrewCard) + evidence asset structure.
 - [[seo/redirect-map]] — 301 redirect table: 13 legacy Laravel routes → canonical SSOT URLs. Dev handoff for `jvto-web`.
+
+## WhatsApp
+
 - [[whatsapp/operations-playbook]] — 5-channel WhatsApp ops playbook
 - [[whatsapp/canned-responses]] — WhatsApp + email template scripts per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN, BANT-tagged, objection handling (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
 - [[whatsapp/rules-engine]] — Companion to playbook. Pure execution logic — 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute & log). Master action table, intent taxonomy seed, templates, hard rules, escalation destinations, fallback behavior, drift detection. AI-readable, no philosophy.
+
+## Workflows (Meta)
+
+- [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
+- [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
+- [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
+
+## Finance
+
+- [[finance/rate-cards]] — *Pending ingestion*. Consolidated rate cards: crew, vehicles, accommodation, activities, other costs.
+- [[finance/package-costs]] — *Pending ingestion*. Per-package cost breakdowns from 15 Excel files.
+- [[finance/profit-analysis]] — *Pending creation*. Margin analysis and cost driver insights.
+- [[finance/custom-tour-builder]] — *Pending creation*. Template for composing custom tour quotes from rate cards.
 
 ## Open Gaps (no page yet — flagged by Lint)
 
