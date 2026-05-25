@@ -1,0 +1,209 @@
+# Category Registry — JVTO LLM Wiki
+# Derived from 14 wiki domains + 19 source types
+# last_updated: 2026-05-25
+
+categories:
+  # Domain-based categories
+  - name: destination-knowledge
+    domain: destinations
+    description: Geographic, geological, cultural facts about tour destinations
+    wiki_targets: [wiki/destinations/]
+    output_targets: [output/website/pages/destinations/]
+    example_files: [kawah-ijen.md, mount-bromo.md]
+
+  - name: tour-package
+    domain: products
+    description: Tour itineraries, pricing tiers, inclusions/exclusions
+    wiki_targets: [wiki/products/]
+    output_targets: [output/website/pages/tours/]
+    example_files: [packages-full-pricing.md, packages-overview.md]
+
+  - name: package-costing
+    domain: finance
+    description: COGS breakdown, rate cards, margin analysis
+    wiki_targets: [wiki/finance/]
+    output_targets: [output/finance/]
+    example_files: [rate-cards.md, package-costs.md]
+
+  - name: profit-analysis
+    domain: finance
+    description: Margin calculations, optimization, custom tour quoting
+    wiki_targets: [wiki/finance/]
+    output_targets: [output/finance/]
+    example_files: [profit-analysis.md, custom-tour-builder.md]
+
+  - name: crew-profile
+    domain: people
+    description: Guide/driver profiles, certifications, review mentions
+    wiki_targets: [wiki/people/]
+    output_targets: [output/website/pages/team/]
+    example_files: [crew-registry.md, agung-sambuko.md]
+
+  - name: medical-protocol
+    domain: credentials
+    description: Health screening procedures, doctor credentials, facility info
+    wiki_targets: [wiki/credentials/]
+    output_targets: [output/website/pages/travel-guide/]
+    example_files: [medical-screening.md]
+
+  - name: legal-license
+    domain: credentials
+    description: NIB, TDUP, BBKSDA, HPWKI, ISIC registrations
+    wiki_targets: [wiki/credentials/]
+    output_targets: [output/website/pages/verify-jvto/]
+    example_files: [legal-licenses.md, permit-requirements.md]
+
+  - name: trust-signal
+    domain: credentials
+    description: Review aggregates, press coverage, SHA-256 anchors
+    wiki_targets: [wiki/credentials/]
+    output_targets: [output/website/pages/verify-jvto/]
+    example_files: [trust-signals.md, press-coverage.md]
+
+  - name: review-compilation
+    domain: reviews
+    description: Per-platform review collections and pattern analysis
+    wiki_targets: [wiki/reviews/]
+    output_targets: [output/website/faq/, output/website/aeo/]
+    example_files: [trustpilot-compilation.md, review-patterns.md]
+
+  - name: brand-content
+    domain: website
+    description: Voice rules, copy bank, FAQ master, AEO claims
+    wiki_targets: [wiki/website/]
+    output_targets: [output/website/pages/]
+    example_files: [brand-voice.md, copy-bank.md, faq-master.md]
+
+  - name: seo-strategy
+    domain: seo
+    description: Keyword targets, content silos, competitor analysis
+    wiki_targets: [wiki/seo/]
+    output_targets: [output/website/pages/travel-guide/]
+    example_files: [seo-strategy.md, competitors.md]
+
+  - name: geo-aeo
+    domain: seo
+    description: AI answer engine optimization, entity architecture
+    wiki_targets: [wiki/seo/]
+    output_targets: [output/website/aeo/]
+    example_files: [geo-aeo-strategy.md]
+
+  - name: whatsapp-ops
+    domain: whatsapp
+    description: WA playbook, rules engine, canned responses
+    wiki_targets: [wiki/whatsapp/]
+    output_targets: [output/whatsapp/]
+    example_files: [operations-playbook.md, rules-engine.md]
+
+  - name: workflow-meta
+    domain: operations
+    description: Ingestion profiles, compilation profiles, health checks, intake gate
+    wiki_targets: [wiki/ops/]
+    output_targets: []
+    example_files: [ingestion-profiles.md, compilation-profiles.md]
+
+  - name: route-data
+    domain: destinations
+    description: GPX tracks, route segments, travel times
+    wiki_targets: [wiki/destinations/, wiki/sources/]
+    output_targets: []
+    example_files: [route-data-csv.md, gpx-destination-data.md]
+
+  - name: schema-template
+    domain: website
+    description: JSON-LD structured data patterns
+    wiki_targets: [wiki/website/]
+    output_targets: [output/website/schema/]
+    example_files: [schema-templates.md]
+
+  - name: redirect-seo
+    domain: seo
+    description: URL mapping, redirect tables, sitemap governance
+    wiki_targets: [wiki/seo/]
+    output_targets: []
+    example_files: [redirect-map.md]
+
+  - name: integration-api
+    domain: integrations
+    description: WA Pro CRM API, Klook, ISIC Alive Verify
+    wiki_targets: [wiki/integrations/]
+    output_targets: [output/integrations/]
+    example_files: []
+
+  - name: marketing-campaign
+    domain: marketing
+    description: Ad copy, email sequences, promo calendars
+    wiki_targets: [wiki/marketing/]
+    output_targets: [output/marketing/]
+    example_files: []
+
+  - name: analytics-reporting
+    domain: analytics
+    description: SEO metrics, review tracking, performance reports
+    wiki_targets: [wiki/analytics/]
+    output_targets: []
+    example_files: []
+
+  - name: internal-sop
+    domain: internal-ops
+    description: SOPs, training materials, crew schedules
+    wiki_targets: [wiki/internal-ops/]
+    output_targets: [output/ops/]
+    example_files: []
+
+  - name: social-content
+    domain: website
+    description: Social media posts, captions, story copy
+    wiki_targets: [wiki/website/]
+    output_targets: [output/social/]
+    example_files: [batch-2026-05-18.md]
+
+  # Source-type categories (for raw classification)
+  - name: ssot-dataset
+    domain: sources
+    description: Canonical SSOT JSON exports
+    wiki_targets: [wiki/sources/]
+    output_targets: []
+    example_files: [ssot-v6.md, db-export-2026-05.md]
+
+  - name: regulation-document
+    domain: credentials
+    description: Government regulations, BBKSDA edicts, permits
+    wiki_targets: [wiki/credentials/, wiki/sources/]
+    output_targets: [output/website/pages/travel-guide/]
+    example_files: [bbksda-pelatihan-pemandu-2024.md]
+
+  - name: press-article
+    domain: credentials
+    description: Independent media coverage
+    wiki_targets: [wiki/sources/, wiki/credentials/]
+    output_targets: [output/website/pages/verify-jvto/]
+    example_files: [detik-polpar-2021.md]
+
+  - name: vendor-record
+    domain: finance
+    description: Hotel rates, vehicle contracts, crew rates
+    wiki_targets: [wiki/finance/]
+    output_targets: []
+    example_files: [rate-cards.md]
+
+  - name: booking-record
+    domain: operations
+    description: Booking data, customer records
+    wiki_targets: [wiki/ops/]
+    output_targets: []
+    example_files: []
+
+  - name: incident-record
+    domain: operations
+    description: Safety incidents, complaints, accident reports
+    wiki_targets: [wiki/ops/]
+    output_targets: []
+    example_files: []
+
+  - name: design-mockup
+    domain: website
+    description: UI/UX mockups, wireframes, design references
+    wiki_targets: [wiki/sources/]
+    output_targets: []
+    example_files: [gemini-trust-fortress-mockup.md]

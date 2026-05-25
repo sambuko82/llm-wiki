@@ -65,6 +65,9 @@ Place any new file in `raw/_inbox/`. Run: "Process inbox" or "Intake gate".
 | integrations | wiki/integrations/ | output/integrations/ (internal) |
 | people | wiki/people/ | output/website/pages/team/ |
 | sources | wiki/sources/ | no output |
+| marketing | wiki/marketing/ | output/marketing/ |
+| analytics | wiki/analytics/ | no output (internal) |
+| internal-ops | wiki/internal-ops/ | output/ops/ (internal) |
 
 ## Visibility Rules
 
@@ -96,6 +99,11 @@ Place any new file in `raw/_inbox/`. Run: "Process inbox" or "Intake gate".
 | `raw/_manifest/source-url-index.csv` | URL sources for web clips |
 | `raw/_manifest/decision-queue.md` | Items needing human decision |
 | `raw/_manifest/sitemap-proposals.md` | Proposed new website URLs |
+| `raw/_manifest/category-registry.yml` | Category taxonomy for raw item classification |
+| `raw/_manifest/tag-registry.yml` | Cross-cutting tags for multi-domain items |
+| `raw/_manifest/evidence-registry.yml` | Evidence items supporting C1-C9 claims |
+| `raw/_manifest/conflict-log.md` | Detected data conflicts between sources |
+| `raw/_manifest/recommendation-log.md` | Proposed changes from intake processing |
 
 ## Rules
 
@@ -105,5 +113,103 @@ Place any new file in `raw/_inbox/`. Run: "Process inbox" or "Intake gate".
 - If confidence < 70%, mark needs_review
 - New category proposals require human approval
 - Sensitive claims (price, legal, medical, safety, credential) require verification before output
+
+## Correlation, Conflict, and Recommendation Layer
+
+Before classifying any raw item as `unknown`, the gate must perform correlation against existing infrastructure.
+
+### Pre-Classification Correlation
+
+Check every raw item against:
+1. `category-registry.yml` — does an existing category fit?
+2. `tag-registry.yml` — which cross-cutting tags apply?
+3. Existing wiki pages — does a target page already exist?
+4. Existing output files — has this content been generated before?
+5. `source-url-index.csv` — is this URL already indexed?
+6. `raw-files-index.csv` — is this filename already tracked?
+
+### Duplicate Detection
+
+Before creating any new entry:
+- Check `source-url-index.csv` for matching URLs
+- Check `raw-files-index.csv` for matching filenames or content descriptions
+- If duplicate found: link to existing entry, do NOT create new one
+- If partial match: note overlap in intake card, propose merge or update
+
+### Supporting Evidence Detection
+
+When a raw item corroborates an existing claim (C1-C9):
+- Add to `evidence-registry.yml` with appropriate evidence weight (1-8)
+- Link to the claim it supports
+- Do NOT create a new wiki page — evidence goes in the registry
+- Update the source wiki page only if the evidence adds new facts
+
+### Conflict Detection
+
+When a raw item contradicts an existing claim:
+- Add to `conflict-log.md` with both claims, sources, and evidence weights
+- Compare authority: official > JVTO internal > vendor > media > dataset > review > note > AI
+- Do NOT overwrite existing data automatically
+- Mark `human_decision_required = true` if the conflict affects: prices, legal, medical, safety, credential, review rating, or operational decision-making
+- Add to `decision-queue.md` for human resolution
+
+### New Tag Proposal
+
+Propose a new tag (NOT a new category) when:
+- Existing categories fit the content domain
+- A cross-cutting label is missing that would aid future correlation
+- The tag applies to 3+ existing wiki pages
+- Add proposal to `recommendation-log.md`, type = `new_tag`
+
+### New Category Proposal
+
+Propose a new category ONLY when:
+- No existing category covers >50% of the content
+- The closest 3 existing categories are documented in the proposal
+- The overlap percentage with each is calculated
+- `human_decision_required = true`
+- Add proposal to `recommendation-log.md`, type = `new_category`
+
+### New Wiki Page Proposal
+
+Propose a new wiki page ONLY when:
+- Knowledge strength is sufficient (evidence weight ≥ 3 — vendor/partner or higher)
+- The content is not merely supporting evidence for an existing page
+- A clear wiki target path is identified
+- Add proposal to `recommendation-log.md`, type = `new_page`
+
+### New Website URL Proposal
+
+Propose a new public URL ONLY when:
+- Public search intent exists (SEO/GEO/AEO value)
+- The content has traveler education, trust-building, or conversion value
+- Add to `sitemap-proposals.md` with proposed URL, target keyword, and justification
+- `human_decision_required = true` for: legal, medical, safety, fatal accident, or official policy pages
+- Add proposal to `recommendation-log.md`, type = `new_url`
+
+### Internal Routing Rule
+
+Data in these domains defaults to `internal` visibility:
+- **finance** — costs, margins, rate cards, vendor terms
+- **operations** — SOPs, crew schedules, internal workflows
+- **whatsapp** — automation rules, canned responses, CRM logic
+- **integrations** — API keys, Klook/ISIC integration details
+- **internal-ops** — training materials, briefing documents
+
+Do NOT force a website route for internal-only data. Route to wiki domain page and internal output target.
+
+### Evidence Weighting
+
+When multiple sources support different claims, prefer:
+1. Official government/authority source
+2. JVTO verified internal operational record
+3. Direct vendor/partner confirmation
+4. Reputable news/media source
+5. Structured dataset (DB export, SSOT JSON)
+6. Customer review/chat
+7. Unverified note
+8. AI-generated summary
+
+Do NOT decide by source count alone. Prefer higher-authority, more recent, more specific, and more directly relevant sources.
 
 -> [[ops/ingestion-profiles]] | -> [[ops/compilation-profiles]]

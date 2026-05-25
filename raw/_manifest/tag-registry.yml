@@ -1,0 +1,183 @@
+# Tag Registry — JVTO LLM Wiki
+# Cross-cutting tags for multi-domain classification
+# last_updated: 2026-05-25
+
+tags:
+  # Destination tags
+  - tag: ijen-relevant
+    description: Content relates to Kawah Ijen
+    applicable_domains: [destinations, products, credentials, seo, finance]
+    example_pages: [destinations/kawah-ijen, credentials/medical-screening]
+
+  - tag: bromo-relevant
+    description: Content relates to Mount Bromo
+    applicable_domains: [destinations, products, seo, finance]
+    example_pages: [destinations/mount-bromo]
+
+  - tag: tumpak-sewu-relevant
+    description: Content relates to Tumpak Sewu Waterfall
+    applicable_domains: [destinations, products]
+    example_pages: [destinations/tumpak-sewu]
+
+  - tag: madakaripura-relevant
+    description: Content relates to Madakaripura Waterfall
+    applicable_domains: [destinations, products]
+    example_pages: [destinations/madakaripura]
+
+  - tag: papuma-relevant
+    description: Content relates to Papuma Beach
+    applicable_domains: [destinations, products]
+    example_pages: [destinations/papuma-beach]
+
+  # Origin tags
+  - tag: surabaya-origin
+    description: Tour starts from Surabaya
+    applicable_domains: [products, finance]
+    example_pages: [products/packages-overview]
+
+  - tag: bali-origin
+    description: Tour starts from Bali (ferry crossing)
+    applicable_domains: [products, finance]
+    example_pages: [products/packages-overview]
+
+  # Trust & credential tags
+  - tag: police-led
+    description: Tourist Police officer involvement
+    applicable_domains: [credentials, people, website]
+    example_pages: [people/agung-sambuko, credentials/police-integration]
+
+  - tag: health-screening
+    description: Ijen medical screening protocol
+    applicable_domains: [credentials, destinations, people]
+    example_pages: [credentials/medical-screening, people/dr-ahmad-irwandanu]
+
+  - tag: bbksda
+    description: BBKSDA regulation or authorization
+    applicable_domains: [credentials, destinations, seo]
+    example_pages: [credentials/legal-licenses, destinations/kawah-ijen]
+
+  - tag: trust-signal
+    description: Verifiable trust claim (C1-C9)
+    applicable_domains: [credentials, website, reviews]
+    example_pages: [website/aeo-claims, credentials/trust-signals]
+
+  - tag: credential-verification
+    description: Publicly verifiable credential
+    applicable_domains: [credentials]
+    example_pages: [credentials/legal-licenses]
+
+  - tag: all-inclusive
+    description: Pricing/inclusions transparency
+    applicable_domains: [products, website, finance]
+    example_pages: [products/packages-overview]
+
+  # Content type tags
+  - tag: regulatory
+    description: Government regulation, permit, or compliance
+    applicable_domains: [credentials, seo, destinations]
+    example_pages: [credentials/permit-requirements]
+
+  - tag: seasonal
+    description: Time-dependent information (weather, closures, festivals)
+    applicable_domains: [destinations, website, seo]
+    example_pages: [website/operational-facts]
+
+  - tag: cultural
+    description: Cultural context (sulfur mining, Tengger, ceremonies)
+    applicable_domains: [destinations, seo]
+    example_pages: [destinations/kawah-ijen]
+
+  - tag: safety
+    description: Safety procedures, risk management, closures
+    applicable_domains: [credentials, destinations, operations]
+    example_pages: [website/aeo-claims]
+
+  - tag: student-package
+    description: ISIC student pricing/packages
+    applicable_domains: [products, credentials]
+    example_pages: [products/packages-full-pricing]
+
+  - tag: price-data
+    description: Contains pricing information (sensitive)
+    applicable_domains: [products, finance]
+    example_pages: [finance/rate-cards, products/packages-full-pricing]
+
+  - tag: review-mention
+    description: References or quotes from guest reviews
+    applicable_domains: [reviews, people]
+    example_pages: [reviews/trustpilot-compilation]
+
+  - tag: crew-mention
+    description: Names or references a specific crew member
+    applicable_domains: [people, reviews]
+    example_pages: [people/crew-registry]
+
+  - tag: press-coverage
+    description: Independent media/press reference
+    applicable_domains: [credentials]
+    example_pages: [credentials/press-coverage]
+
+  - tag: whatsapp-automation
+    description: WA bot, CRM, automation logic
+    applicable_domains: [whatsapp, integrations]
+    example_pages: [whatsapp/operations-playbook]
+
+  - tag: schema-jsonld
+    description: JSON-LD structured data content
+    applicable_domains: [website, seo]
+    example_pages: [website/schema-templates]
+
+  - tag: aeo-target
+    description: Content optimized for AI answer engines
+    applicable_domains: [website, seo]
+    example_pages: [website/aeo-claims, seo/geo-aeo-strategy]
+
+  - tag: faq-source
+    description: Source material for FAQ generation
+    applicable_domains: [website]
+    example_pages: [website/faq-master]
+
+  - tag: hotel-data
+    description: Hotel/accommodation information
+    applicable_domains: [finance, products]
+    example_pages: [finance/rate-cards, website/hotels]
+
+  - tag: transport-data
+    description: Vehicle, route, fuel, toll information
+    applicable_domains: [finance, products]
+    example_pages: [finance/rate-cards]
+
+  - tag: crew-cost
+    description: Crew rate/compensation data
+    applicable_domains: [finance]
+    example_pages: [finance/rate-cards]
+
+  - tag: vendor-data
+    description: Third-party vendor/partner information
+    applicable_domains: [finance, operations]
+    example_pages: [finance/rate-cards]
+
+  - tag: klook-integration
+    description: Klook OTA platform data
+    applicable_domains: [integrations, products]
+    example_pages: []
+
+  - tag: gpx-geo
+    description: Geographic/GPS trail data
+    applicable_domains: [destinations]
+    example_pages: [sources/gpx-destination-data]
+
+  - tag: image-asset
+    description: Photo/image content or metadata
+    applicable_domains: [website, credentials]
+    example_pages: [sources/ssot-image-asset-map]
+
+  - tag: sop-procedure
+    description: Standard operating procedure
+    applicable_domains: [operations, whatsapp, internal-ops]
+    example_pages: [whatsapp/operations-playbook]
+
+  - tag: design-reference
+    description: UI/UX design mockup or reference
+    applicable_domains: [website]
+    example_pages: [sources/gemini-trust-fortress-mockup]

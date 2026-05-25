@@ -1,0 +1,139 @@
+# Evidence Registry — JVTO LLM Wiki
+# Track evidence supporting claims C1-C9
+# last_updated: 2026-05-25
+
+evidence:
+  # C1 — Safety-Led Operations
+  - evidence_id: E001
+    claim: C1
+    source_file: wiki/people/agung-sambuko.md
+    evidence_type: 2  # JVTO verified internal
+    description: Founder is active Tourist Police officer (Ditpamobvit)
+    verification_status: verified
+    last_verified: 2026-05-25
+    proof_ids: [sprin-polpar, sprin-wal-travel-2024-02-12]
+
+  - evidence_id: E002
+    claim: C1
+    source_file: wiki/sources/detik-polpar-2021.md
+    evidence_type: 4  # Reputable media
+    description: Detik.com independent confirmation of Bripka Agung as active Polpar
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: [press-detik-polisi-pariwisata-2021-03-14]
+
+  - evidence_id: E003
+    claim: C1
+    source_file: wiki/credentials/police-integration.md
+    evidence_type: 2  # JVTO verified internal
+    description: Police vehicle support and escort documentation
+    verification_status: verified
+    last_verified: 2026-05-16
+    proof_ids: [police-vehicle-support, police-escort-arrival-day]
+
+  # C2 — Private Tours
+  - evidence_id: E004
+    claim: C2
+    source_file: wiki/products/packages-overview.md
+    evidence_type: 5  # Structured dataset
+    description: All 22 packages are private (dedicated vehicle + crew)
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: [nib-1102230032918, tdup-1102230032918]
+
+  # C3 — All-Inclusive
+  - evidence_id: E005
+    claim: C3
+    source_file: wiki/sources/jvto-policy-pack-v6.md
+    evidence_type: 2  # JVTO verified internal
+    description: Written inclusions/exclusions in policy pack v6
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: [nib-1102230032918]
+
+  # C4 — Ijen Health Screening
+  - evidence_id: E006
+    claim: C4
+    source_file: wiki/credentials/medical-screening.md
+    evidence_type: 1  # Official authority
+    description: BBKSDA SE.1658/KSA.9/2024 — regulatory basis for health screening
+    verification_status: verified
+    last_verified: 2026-05-25
+    proof_ids: [bbksda-surat-edaran-se-1658-ksa-9-2024, bbksda-ticket-terms-screenshot]
+
+  - evidence_id: E007
+    claim: C4
+    source_file: wiki/people/dr-ahmad-irwandanu.md
+    evidence_type: 1  # Official authority
+    description: Dr. Irwandanu SIP — Kemenkes/KKI verifiable medical license
+    verification_status: verified
+    last_verified: 2026-05-16
+    proof_ids: [sip-dr-ahmad-irwandanu-2026]
+
+  # C5 — Proof-First Trust
+  - evidence_id: E008
+    claim: C5
+    source_file: wiki/credentials/legal-licenses.md
+    evidence_type: 1  # Official authority
+    description: NIB, TDUP, HPWKI all publicly verifiable with SHA-256 anchors
+    verification_status: verified
+    last_verified: 2026-05-16
+    proof_ids: [nib-1102230032918, tdup-1102230032918, hpwki-approval]
+
+  # C6 — Reviews Registry
+  - evidence_id: E009
+    claim: C6
+    source_file: wiki/reviews/trustpilot-compilation.md
+    evidence_type: 6  # Customer review
+    description: Trustpilot 4.8/5 (51 reviews)
+    verification_status: verified
+    last_verified: 2026-05-18
+    proof_ids: [trustpilot-live-profile]
+
+  - evidence_id: E010
+    claim: C6
+    source_file: wiki/reviews/google-tripadvisor-2026.md
+    evidence_type: 6  # Customer review
+    description: Google Maps 4.90/5 (92 reviews), TripAdvisor 4.95/5 (21 reviews)
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: [google-maps-live-cid, tripadvisor-live-profile]
+
+  # C7 — Our Team
+  - evidence_id: E011
+    claim: C7
+    source_file: wiki/people/crew-registry.md
+    evidence_type: 2  # JVTO verified internal
+    description: 14 crew members with KTA credentials and review-linked profiles
+    verification_status: verified
+    last_verified: 2026-05-25
+    proof_ids: [kta-anjas, kta-taufik, kta-rendi, kta-kiki, kta-gufron]
+
+  # C8 — Partners as Context
+  - evidence_id: E012
+    claim: C8
+    source_file: wiki/credentials/trust-signals.md
+    evidence_type: 2  # JVTO verified internal
+    description: HPWKI, INDECON, ISIC partnerships with functional descriptions
+    verification_status: verified
+    last_verified: 2026-05-16
+    proof_ids: [hpwki-approval, indecon-live-member, isic-live-provider]
+
+  - evidence_id: E013
+    claim: C8
+    source_file: wiki/sources/bbksda-pelatihan-pemandu-2024.md
+    evidence_type: 1  # Official authority
+    description: BBKSDA-supervised guide training (250 HPWKI guides, SAR + PPGD)
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: [press-bbksda-ijen-guide-training]
+
+  # C9 — Press & Recognition
+  - evidence_id: E014
+    claim: C9
+    source_file: wiki/credentials/press-coverage.md
+    evidence_type: 4  # Reputable media
+    description: 4 independent press items + Stefan Loose guidebook + Booking 2015 award
+    verification_status: verified
+    last_verified: 2026-05-16
+    proof_ids: [press-detik-polisi-pariwisata-2021-03-14, press-radarjember-polpar-ijen-geopark-2021-03-24]
