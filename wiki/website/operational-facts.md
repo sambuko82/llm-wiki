@@ -1,7 +1,7 @@
 ---
 type: website
 title: JVTO Operational Facts — Temperatures, Travel Times, Practical Info
-last_updated: 2026-05-12
+last_updated: 2026-05-25
 sources: [db-export-2026-05]
 ---
 
@@ -90,6 +90,34 @@ Both destinations require warm layers — layering recommended over single thick
 - Canyon approach: wading through stream, narrow passages, wet stones
 - You WILL get wet — waterproof bags and a change of clothes essential
 - Helmets provided by local site management (NOT a JVTO inclusion per [[products/packages-overview]] §madakaripura-caveat)
+
+---
+
+## Best Time to Visit — Seasonal Guide
+
+### Dry Season (April–October)
+
+Best overall period for all East Java volcano tours. Clear skies maximize Bromo sunrise quality and Ijen blue fire visibility. Lower rain risk on waterfall trails (Tumpak Sewu, Madakaripura). This is peak tourist season — book 2–4 weeks ahead for preferred dates. Temperatures at Bromo and Ijen are cold but manageable with layers (see Temperatures section above).
+
+### Shoulder Months (March, November)
+
+Mix of dry and wet days. Still viable for all destinations. Blue fire odds at Ijen are slightly lower due to increased cloud cover and moisture. Bromo sunrise can be obscured by cloud. Upside: lower prices and fewer crowds at all sites.
+
+### Wet Season (December–February)
+
+Heavy rainfall affects trail conditions. Tumpak Sewu canyon descent and Madakaripura stream approach can be hazardous. Bromo caldera road may flood in extreme rain. Ijen trail becomes slippery; blue fire less likely due to cloud and gas-condition interference. JVTO still operates during wet season but issues weather advisories and may activate Plan-B SOP for safety-critical conditions.
+
+### Yadnya Kasada (Variable Date)
+
+Annual Tengger Hindu ceremony at Pura Luhur Poten on the Bromo caldera floor. Date follows the lunar calendar — shifts each year. The Bromo area becomes extremely crowded during Kasada. JVTO activates Plan-B SOP for bookings in this window. See §Bromo Practical Facts above.
+
+### Ijen Monthly Closure
+
+First Friday of every month — Ijen crater is closed to all visitors. See §Ijen Closure Schedule above. JVTO schedules around this; guests are never affected if booked through JVTO.
+
+### Ramadan Period
+
+Hotels and tour operations remain fully operational. Meal scheduling may be adjusted at some local restaurants. JVTO accommodates dietary timing needs on request.
 
 ---
 

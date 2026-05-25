@@ -1,7 +1,7 @@
 ---
 type: destination
 title: Kawah Ijen (Ijen Crater)
-last_updated: 2026-05-11
+last_updated: 2026-05-25
 sources: [ssot-v6, jvto-homepage-clip, gpx-ijen]
 aliases: [Ijen, Ijen Crater, Kawah Ijen]
 schema_type: TouristAttraction
@@ -66,7 +66,30 @@ For protocol details see [[people/dr-ahmad-irwandanu]] and [[credentials/trust-s
 
 ## Sulfur Mining Context
 
-Local workers carry 70–90 kg sulfur blocks daily from the crater floor. JVTO guides brief guests on respectful conduct (do not block path, do not photograph without consent).
+### History
+
+Sulfur mining at Ijen dates to the early 1900s under Dutch colonial exploitation. The operation has continued largely unchanged for over a century. An estimated 200–300 miners currently work the crater, employed by PT Candi Ngrimbi, which holds the mining concession.
+
+### Working Conditions
+
+Miners descend into the crater twice daily, break solidified sulfur from the fumarole deposits, and carry 70–90 kg loads up the steep crater path to the weighing station at Paltuding. They work in direct exposure to SO₂ and HCl gases — most without gas masks. The physical toll is severe: chronic respiratory problems, skin burns, and dental erosion are common. Miners earn approximately IDR 50,000–100,000 per load (roughly USD 3–6), making it one of the most physically demanding low-wage jobs in Indonesia.
+
+### Cultural Significance
+
+The miners are part of Ijen's living heritage. Many have worked the crater for 20+ years. They share the trail with tourists and are a defining element of the Ijen experience — not a backdrop. Some miners sell small sulfur souvenirs (shaped figures, raw pieces) at the crater rim or along the trail as supplemental income.
+
+### Tourist Etiquette (JVTO Briefing Points)
+
+JVTO guides brief all guests before departure on miner etiquette:
+
+- **Right of way** — Miners carrying loads always have priority on the trail. Step aside and let them pass.
+- **Photography** — Ask before photographing miners. Do not use flash in their faces.
+- **Souvenir purchasing** — Buy from dedicated souvenir sellers, not from miners carrying working loads (those blocks are destined for the weighing station).
+- **Tips** — Miners may ask for tips. This is common and not aggressive; respond as you see fit.
+
+### Safety Note
+
+Miners work in high-SO₂ zones without respiratory protection. Tourists on JVTO packages are provided gas masks as a standard inclusion — see [[products/packages-overview]]. The contrast is stark and part of the reality guests should understand before descending to the crater floor.
 
 ## JVTO Packages That Include Ijen
 

@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-25] expand | Silo 3 wiki backing — sulfur mining, BBKSDA Bromo, permits, seasonal data
+
+Pages updated: [[destinations/kawah-ijen]] (sulfur mining expanded to ~200 words: history, working conditions, cultural significance, tourist etiquette, safety note), [[destinations/mount-bromo]] (new BBKSDA Regulations section: authority, entry requirements, jeep mandate, closure rules, no health screening), [[website/operational-facts]] (new Best Time to Visit seasonal guide: dry/shoulder/wet season, Yadnya Kasada, Ramadan), [[index]] (permit-requirements entry added). Page created: [[credentials/permit-requirements]] (operator permits + visitor entry requirements per destination with costs).
+
+---
+
 ## [2026-05-25] restructure | Domain separation + finance ingestion
 
 Full restructure of wiki/ and output/ into domain-separated folders. 14 commits.

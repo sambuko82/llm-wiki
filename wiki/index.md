@@ -76,6 +76,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[credentials/press-coverage]] — 4 independent press items (Detik, Radar Jember ×2, BBKSDA) + Stefan Loose guidebook 2016 p. 287; entity linking analysis; AEO snippets for C9
 - [[credentials/medical-screening]] — Ijen health-screening system: BBKSDA SE.1658 regulatory basis, 4-step protocol, Dr. Irwandanu (SIP-verifiable), partner facilities, 5 screening photos + BBKSDA terms screenshot; AEO snippets for C4
 - [[credentials/police-integration]] — Full evidence chain: SPRIN POLPAR + SPRIN WAL-TRAVEL (SHA-256), 3 police escort photos + Geopark briefing, 3-article press corroboration, Ditpamobvit unit details, Traffic Police escort mechanics; AEO snippets for C1/C5
+- [[credentials/permit-requirements]] — Operator permits (NIB, TDUP, KBLI, BBKSDA, HPWKI) + visitor entry requirements per destination (Ijen, Bromo, Tumpak Sewu, Madakaripura, Papuma) with costs. Backs Silo 3 permit-requirements output.
 
 ## Reviews
 

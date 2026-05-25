@@ -1,7 +1,7 @@
 ---
 type: destination
 title: Mount Bromo (Gunung Bromo)
-last_updated: 2026-05-11
+last_updated: 2026-05-25
 sources: [ssot-v6, jvto-homepage-clip, gpx-bromo]
 aliases: [Bromo, Gunung Bromo, Mount Bromo]
 schema_type: TouristAttraction
@@ -46,6 +46,28 @@ Mount Bromo is an active volcano in the Tengger caldera, East Java. Best known f
 - **BBKSDA clearance** — JVTO holds national-park operator authorization. Guests enter without paperwork friction. See [[credentials/legal-licenses]].
 - **Bromo 4WD jeep included** — pre-arranged, no on-the-day haggling. Standard inclusion on all Bromo-relevant packages per [[products/packages-overview]].
 - **Closure SOP (C1 Plan-B framework)** — if Bromo closes for volcanic activity, JVTO activates alternative-route SOP. Guests briefed in advance, no day lost. See [[sources/ssot-v6]] §7_3 weather closures.
+
+## BBKSDA Regulations — Bromo Tengger Semeru
+
+### Regulatory Authority
+
+Bromo Tengger Semeru National Park is managed by **BBKSDA Jawa Timur** (bbksdajatim.org). All commercial tour operations within the park boundary require operator clearance — JVTO holds this authorization. → [[credentials/legal-licenses]]
+
+### Entry Requirements
+
+All visitors need a park entrance ticket: **IDR 160,000/person** for foreign tourists (current rate). JVTO handles ticketing as part of all-inclusive packages — guests do not queue or pay separately at the gate.
+
+### Jeep Requirement
+
+Private vehicles cannot enter the caldera zone. A **4WD jeep is mandatory** for Penanjakan viewpoint access and the Sea of Sand traverse. JVTO pre-arranges jeep allocation (IDR 500,000/jeep unit, seats 4–5) — included in all Bromo-relevant package prices. No on-the-day haggling with jeep operators.
+
+### Closure Rules
+
+Volcanic activity can trigger park closure by PVMBG (national volcanology agency) or BBKSDA. Alert levels are published on MAGMA Indonesia. JVTO follows all official closure announcements without exception. When closure affects a booked tour, the **Plan-B SOP** activates — guests are briefed in advance and no tour day is lost. → [[seo/seo-strategy]] §Silo 3
+
+### No Health Screening Required
+
+Unlike Ijen, Bromo does not have a BBKSDA health-certificate requirement. The altitude (2,329 m) and absence of sulfuric gas exposure at tourist viewing points make it lower-risk. Guests with standard fitness levels can participate without medical clearance. → [[credentials/medical-screening]] for Ijen's contrasting requirement.
 
 ## Bromo-Relevant Packages
 
