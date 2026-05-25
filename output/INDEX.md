@@ -1,7 +1,7 @@
 ﻿# Output Index
 
 *Master map of all output files → website URL → wiki sources → status.*
-*Updated: 2026-05-16. Regenerate after any wiki update that changes source pages.*
+*Updated: 2026-05-25. Regenerate after any wiki update that changes source pages.*
 
 **Status values**: `draft` — generated, not reviewed · `reviewed` — copy-checked · `published` — live on site · `stale` — source wiki updated since output was generated
 
@@ -26,7 +26,9 @@
 | `aeo/tumpak-sewu.md` | `/destinations/tumpak-sewu-waterfall` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, tumpak-sewu |
 | `aeo/madakaripura.md` | `/destinations/madakaripura-waterfall` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, madakaripura |
 | `aeo/papuma.md` | `/destinations/papuma-beach` (AEO overlay) | 2026-05-18 | draft | aeo-claims, faq-master, legal-licenses, trust-signals, papuma-beach |
-
+| `aeo/bbksda-regulations-ijen.md` | `/travel-guide/bbksda-regulations-ijen` (AEO overlay) | 2026-05-25 | reviewed | kawah-ijen, medical-screening, bbksda-pelatihan-pemandu-2024, legal-licenses |
+| `aeo/ijen-gas-mask-equipment.md` | `/travel-guide/ijen-gas-mask-equipment` (AEO overlay) | 2026-05-25 | reviewed | kawah-ijen, faq-master, packages-overview |
+| `aeo/bbksda-regulations-bromo.md` | `/travel-guide/bbksda-regulations-bromo` (AEO overlay) | 2026-05-25 | reviewed | mount-bromo, faq-master, packages-overview |
 ---
 
 ## FAQ Pages
@@ -37,18 +39,20 @@
 | `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-18 | draft | faq-master, mount-bromo, operational-facts, packages-overview |
 | `faq/tumpak-sewu.md` | `/travel-guide/faq` (Tumpak Sewu section) | 2026-05-12 | draft | faq-master, tumpak-sewu, packages-overview |
 | `faq/madakaripura.md` | `/travel-guide/faq` (Madakaripura section) | 2026-05-12 | draft | faq-master, madakaripura, packages-overview |
-| `faq/papuma.md` | `/travel-guide/faq` (Papuma section) | 2026-05-18 | draft ⚠ pricing unverified | faq-master, papuma-beach, packages-overview, brand-voice |
-
+| `faq/papuma.md` | `/travel-guide/faq` (Papuma section) | 2026-05-25 | reviewed | faq-master, papuma-beach, packages-overview, brand-voice |
+| `faq/bbksda-regulations-ijen.md` | `/travel-guide/faq` (Ijen regulations) | 2026-05-25 | reviewed | kawah-ijen, medical-screening, bbksda-pelatihan-pemandu-2024, legal-licenses |
+| `faq/ijen-gas-mask-equipment.md` | `/travel-guide/faq` (Gas masks) | 2026-05-25 | reviewed | kawah-ijen, faq-master, packages-overview |
+| `faq/bbksda-regulations-bromo.md` | `/travel-guide/faq` (Bromo regulations) | 2026-05-25 | reviewed | mount-bromo, faq-master, packages-overview |
 ---
 
 ## Website — Sitewide
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/homepage.md` | `/` | 2026-05-12 | draft |
-| `website/surabaya-landing.md` | `/tours` (Surabaya angle) | 2026-05-12 | draft |
-| `website/bali-landing.md` | `/tours` (Bali angle) | 2026-05-12 | draft |
-| `website/tours.md` | `/tours` | 2026-05-12 | draft |
+| `website/homepage.md` | `/` | 2026-05-25 | reviewed |
+| `website/surabaya-landing.md` | `/tours` (Surabaya angle) | 2026-05-25 | reviewed |
+| `website/bali-landing.md` | `/tours` (Bali angle) | 2026-05-25 | reviewed |
+| `website/tours.md` | `/tours` | 2026-05-25 | reviewed |
 | `website/isic-student-package.md` | `/isic/student-package` | 2026-05-12 | draft |
 | `website/blog.md` | `/blog` | 2026-05-12 | draft |
 | `website/contact.md` | `/contact` | 2026-05-12 | draft |
@@ -111,7 +115,9 @@
 | `website/travel-guide/police-escort-for-groups.md` | `/travel-guide/police-escort-for-groups` | 2026-05-16 | draft |
 | `website/travel-guide/safety-on-tours.md` | `/travel-guide/safety-on-tours` | 2026-05-12 | draft |
 | `website/travel-guide/weather-and-closures.md` | `/travel-guide/weather-and-closures` | 2026-05-12 | draft |
-
+| `website/travel-guide/bromo-vs-ijen-comparison.md` | `/travel-guide/bromo-vs-ijen-comparison` | 2026-05-25 | reviewed |
+| `website/travel-guide/what-to-pack-bromo-ijen.md` | `/travel-guide/what-to-pack-bromo-ijen` | 2026-05-25 | reviewed |
+| `website/travel-guide/private-vs-shared-tour-comparison.md` | `/travel-guide/private-vs-shared-tour-comparison` | 2026-05-25 | reviewed |
 ---
 
 ## Website — Why JVTO
@@ -120,10 +126,10 @@
 |---|---|---|---|
 | `website/why-jvto/hub.md` | `/why-jvto` | 2026-05-12 | draft |
 | `website/why-jvto/community-standards.md` | `/why-jvto/community-standards` | 2026-05-12 | draft |
-| `website/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-16 | draft |
-| `website/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-16 | draft |
-| `website/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-12 | draft |
-| `website/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-16 | draft |
+| `website/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-25 | reviewed |
+| `website/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-25 | reviewed |
+| `website/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-25 | reviewed |
+| `website/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-25 | reviewed |
 
 ---
 
@@ -147,6 +153,22 @@
 | `website/policy/booking-payment-cancellation.md` | `/policy/booking-payment-cancellation` | 2026-05-12 | draft |
 | `website/policy/inclusions-exclusions.md` | `/policy/inclusions-exclusions` | 2026-05-12 | draft |
 | `website/policy/privacy.md` | `/policy/privacy` | 2026-05-12 | draft |
+
+---
+
+## Website — Team
+
+| File | URL | Output date | Status |
+|---|---|---|---|
+| `website/team.md` | `/team` | 2026-05-25 | draft |
+
+---
+
+## Developer Handoff
+
+| File | Purpose | Output date |
+|---|---|---|
+| `HANDOFF.md` | Complete route → output → schema map for developer integration | 2026-05-25 |
 
 ---
 
@@ -176,7 +198,7 @@ Outputs not yet generated for these website pages / content formats:
 | ~~AEO blocks — per destination~~ | **Resolved 2026-05-18** → `aeo/ijen.md`, `aeo/bromo.md`, `aeo/tumpak-sewu.md`, `aeo/madakaripura.md`, `aeo/papuma.md` |
 | ~~Social media posts~~ | **Resolved 2026-05-18** → `social/batch-2026-05-18.md` (10 posts, 14 caption units) |
 | Slide decks | Format type not yet produced (Workflow 5 `slide-deck` profile) |
-| `faq/papuma.md` pricing | ⚠ IDR figures need verification vs `packages-full-pricing.md` before publishing |
+| ~~`faq/papuma.md` pricing~~ | **Verified 2026-05-25** vs packages-full-pricing.md ✓ |
 
 > ~~**Stale candidates** (resolved 2026-05-16)~~: All 4 previously stale files refreshed.
 > ~~**Stale candidates** (resolved 2026-05-18)~~: `faq/bromo.md`, `website/destinations/mount-bromo.md` refreshed with Level II Waspada content.

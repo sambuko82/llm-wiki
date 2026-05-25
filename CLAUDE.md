@@ -135,18 +135,17 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Trustpilot full structured review catalog — live firecrawl scrape (3 pages), 49 reviews extracted with reviewer name, country, date, stars, verbatim body, inferred package, guide/driver crew tags. New wiki page [[reviews/trustpilot-all-reviews]] (860 lines). Confirmed 4.8/51 rating unchanged. Added rating distribution (94% 5-star, 6% 4-star).
-**Completed date:** 2026-05-18
-**Next task:** Manually verify NIB 1102230032918 on OSS portal, INDECON listing, and ISIC provider 259268 — all three blocked automated web checks this session.
-**Build status:** — no code changes
+**Last completed:** 3-phase wiki overhaul + developer handoff. Phase 1: ingested remaining raw files (WA API, GPX formal source, Gemini mockup; verified 7 consolidated sources). Phase 2: full lint audit — 1 contradiction fixed (crew count 11→14 in aeo-claims), 0 orphans, 0 stale. Phase 3: developer handoff doc (`output/HANDOFF.md`) with complete route→output→schema map, team page generated.
+**Completed date:** 2026-05-25
+**Next task:** Generate remaining P1/P2 gap output files: student tour pages ×6, `/team/[slug]` member pages, `bromo-ijen-itinerary-guide`, `surabaya-vs-bali-starting-point`. Then: review all 44 draft output files → reviewed status.
+**Build status:** — no code changes (wiki/output only)
 **Open items:**
-- ~~`faq/papuma.md` pricing ⚠~~ — verified 2026-05-18 ✓
-- ~~`taman-safari-prigen-bromo-madakaripura-3d2n` schema stub~~ — ingested + regenerated 2026-05-18 ✓
-- ~~`raw/routes.csv` + `raw/route_details.csv`~~ — ingested 2026-05-18 → [[sources/route-data-csv]] ✓
-- ~~`priceRange` missing from Organization schema~~ — added 2026-05-18 ✓
-- ~~Tour hero image URLs missing from 16 TouristTrip schemas~~ — added 2026-05-18 (best-available; upgrade when tour photos uploaded) ✓
-- ~~Trustpilot review data unstructured~~ — full catalog extracted 2026-05-18 → [[reviews/trustpilot-all-reviews]] ✓
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
+- Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam
+- Madakaripura height — "tallest in Java" under reconciliation
+- Second NIB 0220001393513 — verify on OSS portal (blocked on portal access)
+- Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data
+- `yadnya-kasada-2026` — need Tengger calendar source
 
 ## Skill routing
 

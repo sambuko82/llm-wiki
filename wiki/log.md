@@ -11,6 +11,33 @@ sources: []
 
 ---
 
+## [2026-05-25] phase-3 | Structural Gap Fill + Developer Handoff
+
+**Scope**: Route-to-content gap analysis, developer handoff document, missing output generation.
+
+### Deliverables
+
+1. **`output/HANDOFF.md`** — Complete developer handoff document:
+   - Full route → output file → schema map (56 website pages, 22 schemas, 10 AEO blocks, 8 FAQ blocks)
+   - Missing pages inventory (5 ready-to-generate, 3 partially sourceable, 6 blocked)
+   - SEO quick wins action list (7 dev-actionable items)
+   - Content status summary (12 reviewed, 44 draft)
+   - Key wiki reference files for dev
+
+2. **`output/website/team.md`** — Team hub page for `/team` route:
+   - All 14 crew members (7 guides + 7 drivers) with bios, KTA credentials, review quotes
+   - Founder section with police authority evidence
+   - Credential chain explanation (KTA → HPWKI → BBKSDA)
+   - Verified via jvto-verified-output skill
+
+### Gap Inventory (documented in HANDOFF.md)
+
+**Ready to generate**: `/team/[slug]` member pages, student tour detail pages ×6, `bromo-ijen-itinerary-guide`, `surabaya-vs-bali-starting-point`
+
+**Blocked**: `bromo-ijen-status-today` (PVMBG), `yadnya-kasada-2026` (no source), geographic market pages (no logistics data)
+
+---
+
 ## [2026-05-25] health-check | on-demand (Phase 2 Lint)
 
 **Scope**: Full Workflow 3 / Workflow 6 on-demand audit across 69 wiki pages.
