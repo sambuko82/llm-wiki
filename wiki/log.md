@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-25] ingest | WhatsApp Pro CRM API Documentation
+
+Pages created: [[sources/wa-pro-crm-api]]. Pages updated: [[ops/2026-05-14-whatsapp-operations-playbook]], [[ops/2026-05-14-whatsapp-rules-engine]] (added source reference). Key additions: 6 REST endpoints (send_message, send_image_url, send_file_url, groups, send_template, checking_key), error codes (200/1002-1006), webhook payload formats for 6 message types (text, image, audio, document, location, contact). API credentials redacted from wiki — stored in WA Dashboard only.
+
+---
+
 ## [2026-05-25] sync | wiki → jvto-web — Workstream B (audit revealed near-complete)
 
 **Source type**: Workflow 5 follow-up — fourth and final leg of the 2026-05-24 raw-folder ingest plan (`~/.claude/plans/modular-kindling-clock.md` §Workstream B). **Audit pass discovered the parent plan's "8+ file" scope was 95% already-done** by prior Workflow 5 syncs (`f8ae382` and earlier). Real scope: 1 DB row + 1 schema description line.

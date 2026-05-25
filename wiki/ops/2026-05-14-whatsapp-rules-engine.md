@@ -2,7 +2,7 @@
 type: ops
 title: JVTO WhatsApp Rules Engine
 last_updated: 2026-05-14
-sources: [2026-05-14-whatsapp-operations-playbook]
+sources: [2026-05-14-whatsapp-operations-playbook, wa-pro-crm-api]
 ---
 
 # JVTO WhatsApp Rules Engine
