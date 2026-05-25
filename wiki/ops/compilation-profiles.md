@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Compilation Profiles — Workflow 5
-last_updated: 2026-05-17
+last_updated: 2026-05-25
 sources: [llm-kb-tooling-guide, seo-audit-2026-05]
 ---
 
@@ -17,13 +17,13 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Purpose:** Answer Engine Optimization — structured Q&A blocks for AI search ingestion.
 
-**Draw from:** `content/aeo-claims`, `content/faq-master`, `credentials/legal-licenses`, `credentials/trust-signals`
+**Draw from:** `website/aeo-claims`, `website/faq-master`, `credentials/legal-licenses`, `credentials/trust-signals`
 
 **Format:**
 - One Q&A pair per block
 - Question: ≤15 words, direct (e.g., "Is Java Volcano Tour Operator licensed?")
 - Answer: ≤40 words, citable, starts with a direct claim
-- Use the NLP atom structure from `content/aeo-claims` (C1–C9) as the template
+- Use the NLP atom structure from `website/aeo-claims` (C1–C9) as the template
 
 **Forbidden:** hedging language ("may", "might", "could"), invented statistics, unsourced credential claims
 
@@ -35,10 +35,10 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Purpose:** Hero paragraphs, section copy, and body text for javavolcano-touroperator.com.
 
-**Draw from:** `content/copy-bank`, `content/brand-voice`, `destinations/[relevant]`, `products/packages-overview`
+**Draw from:** `website/copy-bank`, `website/brand-voice`, `destinations/[relevant]`, `products/packages-overview`
 
 **Format:**
-- Style A voice (direct, evidence-led — see `content/brand-voice` §Style-A)
+- Style A voice (direct, evidence-led — see `website/brand-voice` §Style-A)
 - Hero: one punchy sentence + one credibility sentence
 - Body: 2–4 sentences per paragraph, no bullet lists in hero sections
 - All claims must trace to a wiki source; no invented statistics
@@ -55,7 +55,7 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Purpose:** FAQ pages — AEO-compatible, human-readable.
 
-**Draw from:** `content/faq-master`, `products/packages-overview`, `credentials/legal-licenses`, `credentials/trust-signals`
+**Draw from:** `website/faq-master`, `products/packages-overview`, `credentials/legal-licenses`, `credentials/trust-signals`
 
 **Format:**
 - H3 question heading
@@ -73,10 +73,10 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Purpose:** Social media captions, story copy, short-form posts.
 
-**Draw from:** `content/copy-bank`, `reviews/trustpilot-compilation` (for verbatim quotes), `content/brand-voice`
+**Draw from:** `website/copy-bank`, `reviews/trustpilot-compilation` (for verbatim quotes), `website/brand-voice`
 
 **Format:**
-- Style B voice (warmer, still direct — see `content/brand-voice` §Style-B)
+- Style B voice (warmer, still direct — see `website/brand-voice` §Style-B)
 - Quote-led: open with a verbatim review excerpt, cite reviewer name if given; or
 - Claim-led: open with the strongest differentiator for this post's topic
 - ≤280 characters for Twitter/X; ≤150 words for Instagram caption
@@ -92,7 +92,7 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Purpose:** Generate validated JSON-LD structured data blocks for use in the live website. The wiki is the source of truth for all numeric values — never hardcode from memory or prior examples.
 
-**Draw from:** `credentials/legal-licenses`, `credentials/trust-signals` (§Schema Canonical Values), `content/faq-master`, `products/packages-overview`, `products/packages-full-pricing`, `reviews/trustpilot-compilation`, `reviews/google-tripadvisor-2026`
+**Draw from:** `credentials/legal-licenses`, `credentials/trust-signals` (§Schema Canonical Values), `website/faq-master`, `products/packages-overview`, `products/packages-full-pricing`, `reviews/trustpilot-compilation`, `reviews/google-tripadvisor-2026`
 
 **Output types** (select the type requested):
 
@@ -139,3 +139,23 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 **Forbidden:** slides with >3 bullet points, unsourced claims, placeholder images
 
 **Output filename:** `output/slides-YYYY-MM-DD-[topic].md`
+
+---
+
+## custom-tour-quote
+
+**Purpose:** Build a custom tour cost estimate from rate cards.
+
+**Input requirements:** Destination list, duration (days/nights), pax count, hotel tier preference, any special activity requests.
+
+**Draw from:**
+- [[finance/rate-cards]] — all cost components
+- [[finance/package-costs]] — reference similar packages for sanity check
+- [[products/packages-itineraries]] — route/timing templates
+- [[destinations/*]] — activity options per destination
+
+**Output format:** Itemized cost table → COGS → suggested selling price with markup.
+
+**Output filename:** `output/finance/quote-{destination-slug}-{duration}.md`
+
+**Verification:** Total COGS must equal sum of all line items. Cross-check vehicle/hotel rates against rate-cards.md.

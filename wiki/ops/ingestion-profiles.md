@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Ingestion Profiles — Workflow 4
-last_updated: 2026-05-11
+last_updated: 2026-05-25
 sources: [llm-kb-tooling-guide]
 ---
 
@@ -24,7 +24,7 @@ Select the profile matching your source. The profile supplies type-specific extr
 - Claims that corroborate or contradict existing wiki facts
 - Any new statistics, ratings, or credentials mentioned
 
-**Wiki pages to update:** `sources/[slug]`, `content/copy-bank` (if new voice exemplars found), relevant `destinations/` or `credentials/` pages if new facts surface
+**Wiki pages to update:** `sources/[slug]`, `website/copy-bank` (if new voice exemplars found), relevant `destinations/` or `credentials/` pages if new facts surface
 
 ---
 
@@ -104,4 +104,24 @@ Select the profile matching your source. The profile supplies type-specific extr
 - Action items (QW quick-wins and SI strategic investments, numbered)
 - Data discrepancies found (audit values vs wiki canonicals)
 
-**Wiki pages to update:** `sources/[slug]`, `ops/seo-strategy` (create if not exists), `ops/competitors` (create if not exists), `ops/redirect-map` (create if not exists), `ops/compilation-profiles` (add schema profile), `content/brand-voice` (add meta description formula), `credentials/trust-signals` (add social URLs)
+**Wiki pages to update:** `sources/[slug]`, `seo/seo-strategy` (create if not exists), `seo/competitors` (create if not exists), `seo/redirect-map` (create if not exists), `ops/compilation-profiles` (add schema profile), `website/brand-voice` (add meta description formula), `credentials/trust-signals` (add social URLs)
+
+---
+
+## finance-spreadsheet
+
+**What it is:** Excel (.xlsx) cost breakdown for a tour package.
+
+**Extraction targets:**
+- Per-day cost items (crew, vehicle, accommodation, activities, other)
+- Pax tier pricing (1-pax, 2-pax, 3-pax columns or similar)
+- Total COGS per pax tier
+- Selling price per pax tier (if present)
+- Component category subtotals
+
+**Wiki pages to update:**
+- [[finance/package-costs]] — add/update row for this package
+- [[finance/profit-analysis]] — recalculate margins if selling price available
+- [[products/packages-full-pricing]] — cross-reference pricing consistency
+
+**Output naming:** N/A (data goes into wiki, not output)
