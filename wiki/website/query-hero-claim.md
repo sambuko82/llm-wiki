@@ -8,7 +8,7 @@ query: "What single trust claim should anchor the homepage hero for a price-skep
 
 # Query: Hero Claim for Price-Skeptical Solo Traveler
 
-*Filed from Query workflow (CLAUDE.md §Workflow 2). Synthesized across 4 wiki pages: [[reviews/review-patterns]], [[content/aeo-claims]], [[credentials/trust-signals]], [[products/packages-overview]].*
+*Filed from Query workflow (CLAUDE.md §Workflow 2). Synthesized across 4 wiki pages: [[reviews/review-patterns]], [[website/aeo-claims]], [[credentials/trust-signals]], [[products/packages-overview]].*
 
 ---
 
@@ -37,9 +37,9 @@ C3 opens the door (removes the fear of being ripped off); C1/C5 justifies the pr
 
 **Policy documentation** (JVTO-authored) lists exact inclusions: entrance fees, Bromo 4WD jeep, accommodation, breakfast, gas masks, transfers, T-shirt. Published in the booking reference before payment. The written-rules promise reduces the risk of post-booking ambiguity.
 
-> "All-inclusive by default. Clear inclusions. Fewer surprise costs. Transparent pricing, written rules." — [[content/aeo-claims]] C3 nlp_short
+> "All-inclusive by default. Clear inclusions. Fewer surprise costs. Transparent pricing, written rules." — [[website/aeo-claims]] C3 nlp_short
 
-> "Read the Rulebook Before You Book" — [[content/brand-voice]] key phrases (also: [[sources/ssot-v6]] §2_4)
+> "Read the Rulebook Before You Book" — [[website/brand-voice]] key phrases (also: [[sources/ssot-v6]] §2_4)
 
 ### C1/C5 as the price-justifier — strongest third-party proof chain
 
@@ -54,7 +54,7 @@ No other claim has 4 independent press articles + 2 official police documents. F
 
 > "No other East Java volcano tour operator is led by an active Tourist Police officer." — [[people/agung-sambuko]] §significance
 
-> C5: "Proof you can verify — licenses, partners, press, and documented references. Trust stack, not slogans." — [[content/aeo-claims]] C5 nlp_short
+> C5: "Proof you can verify — licenses, partners, press, and documented references. Trust stack, not slogans." — [[website/aeo-claims]] C5 nlp_short
 
 ### Why T5/C3 beats T4/C1 as the opener
 
@@ -67,17 +67,17 @@ T4/C1 (safety-led, police-led) has stronger third-party proof overall, but it do
 **Headline option A (C3 opener):**
 > Everything included. Written in the booking. No surprises on the road.
 
-*Source compliance: C3 nlp_short, T5 review pattern, "Read the Rulebook" brand voice — [[content/copy-bank]], [[content/brand-voice]]*
+*Source compliance: C3 nlp_short, T5 review pattern, "Read the Rulebook" brand voice — [[website/copy-bank]], [[website/brand-voice]]*
 
 **Headline option B (C1/C3 combined):**
 > Tourist Police-Led Private Tours — Everything Included, All Credentials Verifiable.
 
-*Source compliance: C1 nlp_short + C3 nlp_short — [[content/copy-bank]] §hero-copy. This is close to the live site headline and may be the stronger AEO-optimized choice.*
+*Source compliance: C1 nlp_short + C3 nlp_short — [[website/copy-bank]] §hero-copy. This is close to the live site headline and may be the stronger AEO-optimized choice.*
 
 **Supporting subheadline (works under either headline):**
 > Private Bromo, Ijen & Tumpak Sewu tours from Surabaya or Bali. Entrance fees, accommodation, and transfers bundled. Licensed operator (NIB 1102230032918) — led by an active Tourist Police officer. Credentials checkable before you pay.
 
-*Source compliance: live site subheadline structure [[content/copy-bank]] §hero-copy; credential numbers from [[credentials/legal-licenses]]; "checkable" framing from C5*
+*Source compliance: live site subheadline structure [[website/copy-bank]] §hero-copy; credential numbers from [[credentials/legal-licenses]]; "checkable" framing from C5*
 
 ---
 
@@ -98,4 +98,4 @@ C6 (reviews — 4.8/51 Trustpilot) is the strongest social proof for closing, bu
 - **"Price-skeptical" is inferred** — no direct review segment separating price-skeptics from other traveler types exists in the current wiki. The mapping to T5/C3 is based on logical alignment, not behavioral segmentation data.
 - **Headline option A** departs from the live site headline (currently C1-first). Changing to C3-first is a hypothesis; A/B testing would validate it.
 
--> [[content/aeo-claims]] | -> [[reviews/review-patterns]] | -> [[content/copy-bank]] | -> [[credentials/trust-signals]]
+-> [[website/aeo-claims]] | -> [[reviews/review-patterns]] | -> [[website/copy-bank]] | -> [[credentials/trust-signals]]

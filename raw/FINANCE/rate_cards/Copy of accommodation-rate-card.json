@@ -1,0 +1,757 @@
+[
+  {
+    "hotel_name": "ARTOTEL Cabin Bromo",
+    "rooms": [
+      {
+        "room_name": "Cabin King",
+        "bed_type": null,
+        "rate": 1150000
+      },
+      {
+        "room_name": "Cabin Twin",
+        "bed_type": null,
+        "rate": 1150000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Artha Cottage",
+    "rooms": [
+      {
+        "room_name": "Double",
+        "bed_type": "Double",
+        "rate": 467500
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 0
+      },
+      {
+        "room_name": "Twin",
+        "bed_type": "Twin",
+        "rate": 467500
+      },
+      {
+        "room_name": "VIP Double",
+        "bed_type": "Double",
+        "rate": 595000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Aston Banyuwangi",
+    "rooms": [
+      {
+        "room_name": "Double",
+        "bed_type": "Double",
+        "rate": 525000
+      },
+      {
+        "room_name": "Premiere",
+        "bed_type": "Family",
+        "rate": 625000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Atria Malang",
+    "rooms": [
+      {
+        "room_name": "Connecting",
+        "bed_type": "Connecting",
+        "rate": 0
+      },
+      {
+        "room_name": "Double",
+        "bed_type": "Double",
+        "rate": 610000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 350000
+      },
+      {
+        "room_name": "Twin",
+        "bed_type": "Twin",
+        "rate": 610000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Baobab Safari Resort",
+    "rooms": [
+      {
+        "room_name": "Deluxe Hill View",
+        "bed_type": "Double",
+        "rate": 1500000
+      },
+      {
+        "room_name": "Deluxe Safari View",
+        "bed_type": "Double",
+        "rate": 1700000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 500000
+      },
+      {
+        "room_name": "Junior Suite Hill View",
+        "bed_type": "Double",
+        "rate": 4500000
+      },
+      {
+        "room_name": "Junior Suite Safari View",
+        "bed_type": "Double",
+        "rate": 4700000
+      },
+      {
+        "room_name": "Premium Hill View",
+        "bed_type": "Double",
+        "rate": 1900000
+      },
+      {
+        "room_name": "Premium Safari View",
+        "bed_type": "Double",
+        "rate": 2200000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Baratha Hotel and Resto",
+    "rooms": [
+      {
+        "room_name": "Apartment",
+        "bed_type": "Apartment",
+        "rate": 450000
+      },
+      {
+        "room_name": "Apartment + Extra Bed",
+        "bed_type": "Apartment Extra Bed",
+        "rate": 625000
+      },
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": "Double",
+        "rate": 275000
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": "Twin",
+        "rate": 275000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 175000
+      },
+      {
+        "room_name": "Family",
+        "bed_type": "Quad",
+        "rate": 450000
+      },
+      {
+        "room_name": "Superior Double",
+        "bed_type": null,
+        "rate": 250000
+      },
+      {
+        "room_name": "Superior Twin",
+        "bed_type": null,
+        "rate": 250000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Bromo Terrace",
+    "rooms": [
+      {
+        "room_name": "Double",
+        "bed_type": "Double",
+        "rate": 1150000
+      },
+      {
+        "room_name": "Double Hillview",
+        "bed_type": "Double",
+        "rate": 1350000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 300000
+      },
+      {
+        "room_name": "Twin",
+        "bed_type": "Twin",
+        "rate": 1200000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Doho Homestay",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": null,
+        "rate": 260000
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": "Twin",
+        "rate": 260000
+      },
+      {
+        "room_name": "Emerald Double",
+        "bed_type": "Extra Bed",
+        "rate": 316000
+      },
+      {
+        "room_name": "Emerald Twin",
+        "bed_type": null,
+        "rate": 316000
+      },
+      {
+        "room_name": "Executive Double",
+        "bed_type": null,
+        "rate": 300000
+      },
+      {
+        "room_name": "Executive Twin",
+        "bed_type": null,
+        "rate": 300000
+      },
+      {
+        "room_name": "Extra bed",
+        "bed_type": null,
+        "rate": 150000
+      },
+      {
+        "room_name": "Family",
+        "bed_type": "Family",
+        "rate": 440000
+      },
+      {
+        "room_name": "Platinum Double",
+        "bed_type": "Double",
+        "rate": 380000
+      },
+      {
+        "room_name": "Platinum Twin",
+        "bed_type": null,
+        "rate": 380000
+      },
+      {
+        "room_name": "Superior Double",
+        "bed_type": null,
+        "rate": 220000
+      },
+      {
+        "room_name": "Superior Twin",
+        "bed_type": "Twin",
+        "rate": 220000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Grand Padis Hotel",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": null,
+        "rate": 615000
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": "Twin",
+        "rate": 615000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 300000
+      },
+      {
+        "room_name": "Family",
+        "bed_type": "Quad",
+        "rate": 735000
+      },
+      {
+        "room_name": "Superior Double",
+        "bed_type": "Double",
+        "rate": 450000
+      },
+      {
+        "room_name": "Superior Twin",
+        "bed_type": "Twin",
+        "rate": 450000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Harris Hotel Satelit",
+    "rooms": [
+      {
+        "room_name": "Connecting Room",
+        "bed_type": null,
+        "rate": 1420000
+      },
+      {
+        "room_name": "Double Room",
+        "bed_type": null,
+        "rate": 710000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 350000
+      },
+      {
+        "room_name": "Twin Room",
+        "bed_type": null,
+        "rate": 710000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Holiday Inn Express Surabaya Centerpoint, an IHG Hotel",
+    "rooms": [
+      {
+        "room_name": "Double",
+        "bed_type": "Double",
+        "rate": 550000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 350000
+      },
+      {
+        "room_name": "Twin",
+        "bed_type": "Twin",
+        "rate": 550000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Hotel 88 Kedungsari",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": null,
+        "rate": 330000
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": null,
+        "rate": 330000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Hotel Santika Banyuwangi",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": null,
+        "rate": 700000
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": null,
+        "rate": 700000
+      },
+      {
+        "room_name": "Executive Suite",
+        "bed_type": null,
+        "rate": 990000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 300000
+      },
+      {
+        "room_name": "Superior Double",
+        "bed_type": null,
+        "rate": 580000
+      },
+      {
+        "room_name": "Superior Twin",
+        "bed_type": null,
+        "rate": 580000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Joglo Kecombrang Bromo",
+    "rooms": [
+      {
+        "room_name": "Double",
+        "bed_type": "Double",
+        "rate": 750000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 300000
+      },
+      {
+        "room_name": "Family",
+        "bed_type": "Family",
+        "rate": 950000
+      },
+      {
+        "room_name": "Twin",
+        "bed_type": "Twin",
+        "rate": 750000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Lava View Lodge",
+    "rooms": [
+      {
+        "room_name": "Cottages Weekday",
+        "bed_type": null,
+        "rate": 2337500
+      },
+      {
+        "room_name": "Cottages Weekend",
+        "bed_type": null,
+        "rate": 2550000
+      },
+      {
+        "room_name": "Deluxe Double Weekday",
+        "bed_type": null,
+        "rate": 935000
+      },
+      {
+        "room_name": "Deluxe Double Weekend",
+        "bed_type": null,
+        "rate": 1062500
+      },
+      {
+        "room_name": "Deluxe Twin Weekday",
+        "bed_type": null,
+        "rate": 935000
+      },
+      {
+        "room_name": "Deluxe Twin Weekend",
+        "bed_type": null,
+        "rate": 1062500
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 250000
+      },
+      {
+        "room_name": "Family Room Weekday",
+        "bed_type": null,
+        "rate": 1147500
+      },
+      {
+        "room_name": "Family Room Weekend",
+        "bed_type": null,
+        "rate": 1402500
+      },
+      {
+        "room_name": "Suite Room Weekday",
+        "bed_type": null,
+        "rate": 2550000
+      },
+      {
+        "room_name": "Suite Room Weekend",
+        "bed_type": null,
+        "rate": 2762500
+      },
+      {
+        "room_name": "Superior Twin Weekday",
+        "bed_type": null,
+        "rate": 680000
+      },
+      {
+        "room_name": "Superior Twin Weekend",
+        "bed_type": null,
+        "rate": 765000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Luminor Hotel",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": null,
+        "rate": 500000
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": "Twin",
+        "rate": 500000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 250000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Manis Ae Cabin & Resto Bromo",
+    "rooms": [
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 350000
+      },
+      {
+        "room_name": "Family Cabin - High Season",
+        "bed_type": null,
+        "rate": 2220000
+      },
+      {
+        "room_name": "Family Cabin - Weekday",
+        "bed_type": null,
+        "rate": 1880000
+      },
+      {
+        "room_name": "Family Cabin - Weekend",
+        "bed_type": null,
+        "rate": 2020000
+      },
+      {
+        "room_name": "Single Cabin Double - High Season",
+        "bed_type": null,
+        "rate": 1520000
+      },
+      {
+        "room_name": "Single Cabin Double - Weekday",
+        "bed_type": null,
+        "rate": 1240000
+      },
+      {
+        "room_name": "Single Cabin Double - Weekend",
+        "bed_type": null,
+        "rate": 1420000
+      },
+      {
+        "room_name": "Single Cabin Twin - High Season",
+        "bed_type": null,
+        "rate": 1520000
+      },
+      {
+        "room_name": "Single Cabin Twin - Weekday",
+        "bed_type": null,
+        "rate": 1240000
+      },
+      {
+        "room_name": "Single Cabin Twin - Weekend",
+        "bed_type": null,
+        "rate": 1420000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Riverside Homestay",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double",
+        "bed_type": "Double",
+        "rate": 337500
+      },
+      {
+        "room_name": "Deluxe Twin",
+        "bed_type": null,
+        "rate": 337500
+      },
+      {
+        "room_name": "Emerald Double",
+        "bed_type": "Double",
+        "rate": 412500
+      },
+      {
+        "room_name": "Emerald Twin",
+        "bed_type": null,
+        "rate": 412500
+      },
+      {
+        "room_name": "Executive Double",
+        "bed_type": "Executive",
+        "rate": 375000
+      },
+      {
+        "room_name": "Executive Twin",
+        "bed_type": null,
+        "rate": 375000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": "Extra Bed",
+        "rate": 200000
+      },
+      {
+        "room_name": "Family",
+        "bed_type": "Family",
+        "rate": 562500
+      },
+      {
+        "room_name": "Platinum Double",
+        "bed_type": "Twin",
+        "rate": 487500
+      },
+      {
+        "room_name": "Platinum Twin",
+        "bed_type": null,
+        "rate": 487500
+      }
+    ]
+  },
+  {
+    "hotel_name": "Shanaya Resort Malang",
+    "rooms": [
+      {
+        "room_name": "2 Bed Weekday",
+        "bed_type": null,
+        "rate": 695000
+      },
+      {
+        "room_name": "2 Bed Weekend",
+        "bed_type": null,
+        "rate": 840000
+      },
+      {
+        "room_name": "3 Bed Weekday",
+        "bed_type": null,
+        "rate": 1045000
+      },
+      {
+        "room_name": "3 Bed Weekend",
+        "bed_type": null,
+        "rate": 1200000
+      },
+      {
+        "room_name": "Shanaya - Royal Villa",
+        "bed_type": null,
+        "rate": 5200000
+      },
+      {
+        "room_name": "Shanaya - Singhasari Riverview",
+        "bed_type": null,
+        "rate": 3970000
+      }
+    ]
+  },
+  {
+    "hotel_name": "THE 1O1 Malang OJ",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double Room Only - Weekday",
+        "bed_type": null,
+        "rate": 700000
+      },
+      {
+        "room_name": "Deluxe Double Room Only - Weekend",
+        "bed_type": null,
+        "rate": 800000
+      },
+      {
+        "room_name": "Deluxe Twin Room Only - Weekday",
+        "bed_type": null,
+        "rate": 700000
+      },
+      {
+        "room_name": "Deluxe Twin Room Only - Weekend",
+        "bed_type": null,
+        "rate": 800000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 300000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Whiz Prime Malang",
+    "rooms": [
+      {
+        "room_name": "Deluxe Double (Breakfast)",
+        "bed_type": null,
+        "rate": 517000
+      },
+      {
+        "room_name": "Deluxe Double (Non Breakfast)",
+        "bed_type": null,
+        "rate": 490000
+      },
+      {
+        "room_name": "Deluxe Twin (Breakfast)",
+        "bed_type": null,
+        "rate": 517000
+      },
+      {
+        "room_name": "Deluxe Twin (Non Breakfast)",
+        "bed_type": null,
+        "rate": 490000
+      },
+      {
+        "room_name": "Extra Bed",
+        "bed_type": null,
+        "rate": 200000
+      },
+      {
+        "room_name": "Superior Double (Breakfast)",
+        "bed_type": "Twin",
+        "rate": 472000
+      },
+      {
+        "room_name": "Superior Double (Non Breakfast)",
+        "bed_type": "Double",
+        "rate": 390000
+      },
+      {
+        "room_name": "Superior Twin (Breakfast)",
+        "bed_type": null,
+        "rate": 472000
+      },
+      {
+        "room_name": "Superior Twin (Non Breakfast)",
+        "bed_type": null,
+        "rate": 390000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Whizz Bromo",
+    "rooms": [
+      {
+        "room_name": "Capsule",
+        "bed_type": null,
+        "rate": 200000
+      },
+      {
+        "room_name": "Superior",
+        "bed_type": "Capsule",
+        "rate": 550000
+      }
+    ]
+  },
+  {
+    "hotel_name": "Yanto Homestay Anugerah Tumpak Sewu",
+    "rooms": [
+      {
+        "room_name": "Cottage",
+        "bed_type": null,
+        "rate": 550000
+      },
+      {
+        "room_name": "Deluxe",
+        "bed_type": null,
+        "rate": 350000
+      }
+    ]
+  }
+]

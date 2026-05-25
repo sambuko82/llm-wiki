@@ -65,7 +65,12 @@
       "Bash(grep -n \"^### \\\\`\" wiki/products/packages-itineraries.md)",
       "WebFetch(domain:www.isic.org)",
       "Bash(node *)",
-      "Bash(wait)"
+      "Bash(wait)",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "PowerShell(New-Item *)",
+      "Bash(ls -la output/.gitkeep)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(xargs sed -i 's/\\\\[\\\\[content\\\\//[[website\\\\//g')"
     ]
   }
 }

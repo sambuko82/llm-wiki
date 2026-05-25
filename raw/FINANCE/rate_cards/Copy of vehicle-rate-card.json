@@ -1,0 +1,38 @@
+[
+  {
+    "vehicle_type": "MPV",
+    "capacity_min_pax": 1,
+    "capacity_max_pax": 3,
+    "price_per_day": 250000
+  },
+  {
+    "vehicle_type": "Innova",
+    "capacity_min_pax": 3,
+    "capacity_max_pax": 3,
+    "price_per_day": 350000
+  },
+  {
+    "vehicle_type": "Hiace",
+    "capacity_min_pax": 4,
+    "capacity_max_pax": 9,
+    "price_per_day": 1100000
+  },
+  {
+    "vehicle_type": "Hiace Premio",
+    "capacity_min_pax": 4,
+    "capacity_max_pax": 9,
+    "price_per_day": 1300000
+  },
+  {
+    "vehicle_type": "Medium Bus",
+    "capacity_min_pax": 27,
+    "capacity_max_pax": 35,
+    "price_per_day": 1800000
+  },
+  {
+    "vehicle_type": "Mini Bus (Elf)",
+    "capacity_min_pax": 10,
+    "capacity_max_pax": 13,
+    "price_per_day": 1350000
+  }
+]

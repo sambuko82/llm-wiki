@@ -77,7 +77,7 @@ OTAs (Klook, GetYourGuide, Viator, Tripadvisor) + aged-domain operators (bromoto
 | `/travel-guide/{slug}` | `Article` + `FAQPage` (if applicable) |
 | `/verify-jvto/*` | `Organization` with `identifier` (NIB, TDUP) + `memberOf` (HPWKI, INDECON) |
 
-Full schema spec: [[content/schema-templates]] (to be created).
+Full schema spec: [[website/schema-templates]] (to be created).
 
 ---
 

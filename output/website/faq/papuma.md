@@ -75,4 +75,4 @@ Contact JVTO via WhatsApp (+62 822 4478 8833) or email (hello@javavolcano-tourop
 
 ---
 
-*Sources: [[destinations/papuma-beach]] · [[products/packages-overview]] · [[products/packages-itineraries]] · [[content/faq-master]] · [[content/brand-voice]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[sources/ssot-v6]]*
+*Sources: [[destinations/papuma-beach]] · [[products/packages-overview]] · [[products/packages-itineraries]] · [[website/faq-master]] · [[website/brand-voice]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[sources/ssot-v6]]*

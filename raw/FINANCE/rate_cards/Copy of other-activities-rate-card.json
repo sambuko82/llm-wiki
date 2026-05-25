@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Transport Allowance",
+    "unit": "trip",
+    "price": 100000
+  },
+  {
+    "name": "Mineral Water",
+    "unit": "bottle",
+    "price": 40000
+  },
+  {
+    "name": "T-shirt",
+    "unit": "piece",
+    "price": 60000
+  },
+  {
+    "name": "Toll & Parking",
+    "unit": "car",
+    "price": 200000
+  },
+  {
+    "name": "Fuel",
+    "unit": "day",
+    "price": 200000
+  },
+  {
+    "name": "Ferry Ticket",
+    "unit": "pax",
+    "price": 16000
+  },
+  {
+    "name": "Ferry - Guide",
+    "unit": "no",
+    "price": 100000
+  },
+  {
+    "name": "Meal allowance",
+    "unit": "day",
+    "price": 25000
+  },
+  {
+    "name": "Shuttle Airport",
+    "unit": "no",
+    "price": 200000
+  },
+  {
+    "name": "Police Escort",
+    "unit": "no",
+    "price": 2000000
+  }
+]

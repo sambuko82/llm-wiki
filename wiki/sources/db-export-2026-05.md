@@ -17,7 +17,7 @@ sources: [db-export-2026-05]
 
 | Section | Count | Wiki impact |
 |---|---|---|
-| `narrative_claims` | 9 | Already in [[content/aeo-claims]] (C1–C9) — confirmed match |
+| `narrative_claims` | 9 | Already in [[website/aeo-claims]] (C1–C9) — confirmed match |
 | `packages` | 22 | Full registry — 15 canonical + 6 student + 1 specialty |
 | `destinations` | 9 | 5 published (matches wiki); 4 unpublished (Bali, Surabaya, Malang city refs + Taman Safari) |
 | `crew_members` | 14 | 7 guides + 7 drivers — 3 new confirmed vs SSOT v6.0 |
@@ -72,13 +72,13 @@ All day-by-day itineraries — previously zero in wiki → [[products/packages-i
 - Trolley ojek at Ijen (extra cost, on-site)
 - FOC 5% group discount at 50+ pax (not in prior wiki)
 - Micro-customization policy
-See [[content/operational-facts]].
+See [[website/operational-facts]].
 
 ## Contradictions — Resolved
 
 1. **Cancellation policy (KB vs Policy Pack)**: ✅ RESOLVED — KB `cancellation-policy` says "50% fee for <48h" but this is an older/simplified version. [[sources/jvto-policy-pack-v6]] is canonical: 100% forfeiture for <48h cancellation. KB data ignored for policy purposes.
 
-2. **FOC 5% discount**: ✅ CONFIRMED CANONICAL — 50+ paying pax = 3 FOC + 5% group discount on total price. Updated in [[products/packages-overview]], [[content/operational-facts]], [[sources/jvto-policy-pack-v6]], and [[content/faq-master]].
+2. **FOC 5% discount**: ✅ CONFIRMED CANONICAL — 50+ paying pax = 3 FOC + 5% group discount on total price. Updated in [[products/packages-overview]], [[website/operational-facts]], [[sources/jvto-policy-pack-v6]], and [[website/faq-master]].
 
 3. **Trustpilot count**: ✅ RESOLVED — Live clip (51 reviews / 4.8, verified 2026-05-09) is canonical. DB snapshot (44 / 4.93) is an older snapshot. All wiki pages use the live clip values.
 
@@ -87,8 +87,8 @@ See [[content/operational-facts]].
 - **NEW**: [[products/packages-full-pricing]] — complete pricing for 22 packages
 - **NEW**: [[products/packages-itineraries]] — all 99 day itinerary entries
 - **NEW**: [[reviews/google-tripadvisor-2026]] — 92 Google + 21 TripAdvisor reviews
-- **NEW**: [[content/hotels]] — 23 hotel partners registry
-- **NEW**: [[content/operational-facts]] — temperatures, travel times, KB facts
+- **NEW**: [[website/hotels]] — 23 hotel partners registry
+- **NEW**: [[website/operational-facts]] — temperatures, travel times, KB facts
 - **UPDATED**: [[people/crew-registry]] — 14 members, self-quotes, Yusuf/Dika/Pras confirmed
 
 ## Provenance Chain

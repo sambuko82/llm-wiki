@@ -56,7 +56,7 @@ Trust-graph pillars. Each is owned by a primary page on the public site and prov
 | C8 | Partners (HPWKI / INDECON / ISIC) as context | /verify-jvto |
 | C9 | Press & Recognition | /verify-jvto/press-recognition |
 
-See [[content/aeo-claims]] for NLP snippets, customer-service replies, and full evidence chains per claim.
+See [[website/aeo-claims]] for NLP snippets, customer-service replies, and full evidence chains per claim.
 
 ## Founder
 
@@ -120,7 +120,7 @@ Approved language for Ijen content:
 
 **Price format**: `IDR X,XXX,XXX/person` — Rupiah only, comma thousand separators. No USD/EUR.
 
-> Contradiction with project CLAUDE.md: CLAUDE.md "Core differentiators" line 3 says "Medical Screening — Mandatory Ijen health check by Dr. Ahmad Irwandanu, included in price." SSOT explicitly forbids "mandatory health screening" without conditional qualifier. The correct framing is **conditional**: required only when BBKSDA SE.1658/KSA.9/2024 thresholds apply, and JVTO **coordinates** the screening workflow (not unilaterally imposes it). Use approved phrasing in all customer-facing content. See [[content/brand-voice]] for the canonical voice rules.
+> Contradiction with project CLAUDE.md: CLAUDE.md "Core differentiators" line 3 says "Medical Screening — Mandatory Ijen health check by Dr. Ahmad Irwandanu, included in price." SSOT explicitly forbids "mandatory health screening" without conditional qualifier. The correct framing is **conditional**: required only when BBKSDA SE.1658/KSA.9/2024 thresholds apply, and JVTO **coordinates** the screening workflow (not unilaterally imposes it). Use approved phrasing in all customer-facing content. See [[website/brand-voice]] for the canonical voice rules.
 
 ## Crew
 
@@ -172,9 +172,9 @@ See [[products/packages-overview]] for full rules.
 
 ## Content Priorities (handoff signals)
 
-1. **Police-led safety** as headline differentiator → [[content/aeo-claims]] (C1, C7)
-2. **Ijen health-screening coordination** uniqueness, conditional framing → [[content/faq-master]] (C4)
-3. **All-inclusive vs hidden costs** transparency → [[content/brand-voice]] (C3)
+1. **Police-led safety** as headline differentiator → [[website/aeo-claims]] (C1, C7)
+2. **Ijen health-screening coordination** uniqueness, conditional framing → [[website/faq-master]] (C4)
+3. **All-inclusive vs hidden costs** transparency → [[website/brand-voice]] (C3)
 4. **Crew credibility** — KTA + named individuals from reviews → [[reviews/trustpilot-compilation]] (C7)
 5. **Verifiable proof** — SHA-256 hashes, live registry URLs → [[credentials/legal-licenses]] (C5)
 

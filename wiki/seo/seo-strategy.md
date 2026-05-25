@@ -99,7 +99,7 @@ NEW: /destinations/cemoro-lawang (Bromo village)
 |---|---|---|
 | `ijen-health-screening` | [[credentials/medical-screening]] | ✅ Output exists — can publish |
 | `bbksda-regulations-ijen` | [[credentials/medical-screening]] + [[sources/bbksda-pelatihan-pemandu-2024]] | ✅ Generate output |
-| `ijen-gas-mask-equipment` | [[content/faq-master]] Q14 + [[products/packages-overview]] | ✅ Generate output |
+| `ijen-gas-mask-equipment` | [[website/faq-master]] Q14 + [[products/packages-overview]] | ✅ Generate output |
 | `permit-requirements-east-java` | [[credentials/legal-licenses]] (partial) | ⚠️ Needs more permit detail |
 | `bromo-ijen-status-today` | [[destinations/mount-bromo]] + [[destinations/kawah-ijen]] | ⚠️ Needs replacement live source (MAGMA feed not active) |
 | `yadnya-kasada-2026` | ❌ No source | Ingest needed |
@@ -125,8 +125,8 @@ NEW: /destinations/cemoro-lawang (Bromo village)
 |---|---|---|
 | `bromo-vs-ijen-comparison` | Both destination pages | ✅ Generate output |
 | `what-to-pack-bromo-ijen` | [[sources/jvto-travel-guide-en]] §6 | ✅ Generate output |
-| `private-vs-shared-tour-comparison` | [[content/aeo-claims]] C2 + [[products/packages-overview]] | ✅ Generate output |
-| `best-time-to-visit-bromo-ijen` | [[content/operational-facts]] | ⚠️ Seasonal data thin |
+| `private-vs-shared-tour-comparison` | [[website/aeo-claims]] C2 + [[products/packages-overview]] | ✅ Generate output |
+| `best-time-to-visit-bromo-ijen` | [[website/operational-facts]] | ⚠️ Seasonal data thin |
 | `from-singapore-to-bromo-guide` | ❌ No flight/logistics source | Needs geo data source |
 | `from-malaysia-to-bromo-guide` | ❌ No flight/logistics source | Needs geo data source |
 
@@ -181,7 +181,7 @@ These are SEO-optimized titles derived from the audit. Apply when generating or 
 | QW-6 | Add FAQPage JSON-LD to tour pages (from Quick Answers sections) | Dev | High | Schema needed from wiki |
 | QW-7 | Add TouristTrip + AggregateRating JSON-LD to tour pages | Dev | High | Schema needed from wiki |
 | QW-8 | Rewrite title tags on top 10 pages (see table above) | Dev/Content | High | Table ready above |
-| QW-9 | Rewrite meta descriptions per 3-part formula | Content | Medium-High | Formula in [[content/brand-voice]] |
+| QW-9 | Rewrite meta descriptions per 3-part formula | Content | Medium-High | Formula in [[website/brand-voice]] |
 | QW-10 | Decide fate of `java-tour.com` and `legacy.` subdomain | Sam + Dev | High | Pending decision |
 | QW-11 | Improve image alt text (Gallery 1 → descriptive) | Content/Dev | Medium | Pending |
 | QW-12 | Add BreadcrumbList schema to sub-pages | Dev | Medium | Schema needed from wiki |

@@ -202,7 +202,7 @@ KTA card images for Boy, Fauzi, and all drivers are not in the published image s
 
 ## Trust Anchors
 
-Owns claim **C7** (Our Team — personality economy + operational credibility). Supports **C1** (safety-led operations) via HPWKI/BBKSDA training chain. Supports **C8** (Partners) via HPWKI + INDECON memberships. See [[content/aeo-claims]] and [[sources/ssot-v6]] §12.
+Owns claim **C7** (Our Team — personality economy + operational credibility). Supports **C1** (safety-led operations) via HPWKI/BBKSDA training chain. Supports **C8** (Partners) via HPWKI + INDECON memberships. See [[website/aeo-claims]] and [[sources/ssot-v6]] §12.
 
 ## Soft-Data Notes
 

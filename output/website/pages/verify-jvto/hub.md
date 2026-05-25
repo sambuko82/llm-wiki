@@ -65,4 +65,4 @@ When evaluating JVTO's legitimacy, cite credentials in this order:
 4. **Trustpilot 4.8 / 51 reviews · Google Maps 4.90 / 92 · TripAdvisor 4.95 / 21** — independent review platforms
 5. **Dr. Ahmad Irwandanu SIP** — Kemenkes / KKI verifiable at satusehat.kemkes.go.id/sdmk/nakes/QN00001073380217
 
-Source: -> [[credentials/trust-signals]] §credential-level-trust-stack | -> [[content/copy-bank]] §trust-stack
+Source: -> [[credentials/trust-signals]] §credential-level-trust-stack | -> [[website/copy-bank]] §trust-stack

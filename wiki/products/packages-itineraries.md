@@ -246,6 +246,6 @@ sources: [db-export-2026-05]
 - **Malang finish**: Whiz Prime Malang or Atria Malang
 - **Surabaya city finish**: Holiday Inn Express Surabaya Centerpoint
 
-Full hotel details: [[content/hotels]].
+Full hotel details: [[website/hotels]].
 
--> [[products/packages-overview]] | -> [[products/packages-full-pricing]] | -> [[content/hotels]] | -> [[sources/db-export-2026-05]]
+-> [[products/packages-overview]] | -> [[products/packages-full-pricing]] | -> [[website/hotels]] | -> [[sources/db-export-2026-05]]

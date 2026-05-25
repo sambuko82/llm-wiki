@@ -124,4 +124,4 @@ The Detik.com article (2021-03-14) independently reports Bripka Agung Sambuko as
 
 ---
 
-*Sources: [[content/aeo-claims]] (C1–C9) · [[content/faq-master]] · [[credentials/legal-licenses]] · [[credentials/trust-signals]] · [[people/agung-sambuko]] · [[people/dr-ahmad-irwandanu]] · [[reviews/trustpilot-compilation]] · [[sources/ssot-v6]]*
+*Sources: [[website/aeo-claims]] (C1–C9) · [[website/faq-master]] · [[credentials/legal-licenses]] · [[credentials/trust-signals]] · [[people/agung-sambuko]] · [[people/dr-ahmad-irwandanu]] · [[reviews/trustpilot-compilation]] · [[sources/ssot-v6]]*

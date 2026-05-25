@@ -124,10 +124,10 @@ These names appear in customer-authored Trustpilot reviews. Cross-referenced to 
 
 > Blue Fire is a natural phenomenon subject to weather and gas activity.
 
-See [[content/brand-voice]] and [[sources/ssot-v6]] §2_4 voice invariants.
+See [[website/brand-voice]] and [[sources/ssot-v6]] §2_4 voice invariants.
 
 ## Trust Anchors
 
-Owns claim **C6** (Reviews registry — independent validation). Supports **C7** (Our Team) via named-crew attribution. See [[content/aeo-claims]] and [[sources/ssot-v6]] §12.
+Owns claim **C6** (Reviews registry — independent validation). Supports **C7** (Our Team) via named-crew attribution. See [[website/aeo-claims]] and [[sources/ssot-v6]] §12.
 
--> [[reviews/trustpilot-all-reviews]] (full catalog, 49 reviews, crew + package tags) | -> [[reviews/google-tripadvisor-2026]] | -> [[reviews/review-patterns]] | -> [[people/crew-registry]] | -> [[credentials/trust-signals]] | -> [[content/aeo-claims]]
+-> [[reviews/trustpilot-all-reviews]] (full catalog, 49 reviews, crew + package tags) | -> [[reviews/google-tripadvisor-2026]] | -> [[reviews/review-patterns]] | -> [[people/crew-registry]] | -> [[credentials/trust-signals]] | -> [[website/aeo-claims]]

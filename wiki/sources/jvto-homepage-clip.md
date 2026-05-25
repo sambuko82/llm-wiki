@@ -110,14 +110,14 @@ Full compilation in [[reviews/trustpilot-compilation]].
 
 ## Voice Pattern Observations
 
-The published copy uses **Style B (Narrative dossier)** — see [[content/brand-voice]] for the codified style spec. Key patterns:
+The published copy uses **Style B (Narrative dossier)** — see [[website/brand-voice]] for the codified style spec. Key patterns:
 
 1. **Founder as protagonist**: "Mr. Sam" / "our founder" anchors safety claims to a named human, not the brand.
 2. **"We" voice**: First-person plural throughout. "We saw the gaps." "We act as a bridge."
 3. **Concrete promises**: "private-only routes, realistic driving days, clear written rules" — not "best service guaranteed."
 4. **Authority by proof, not adjective**: "Licensed operator (No.1102230032918)" — license number cited inline, not just claimed.
 
-Note: this vault has adopted **Style A (Authoritative dossier)** for wiki pages. Published website copy uses Style B. When generating new public-facing copy, see [[content/brand-voice]] for register-switching guidance.
+Note: this vault has adopted **Style A (Authoritative dossier)** for wiki pages. Published website copy uses Style B. When generating new public-facing copy, see [[website/brand-voice]] for register-switching guidance.
 
 ## Cross-Page Links Surfaced (homepage IA)
 
@@ -138,7 +138,7 @@ This corresponds to SSOT §5 page architecture (50 routes across 9 clusters). Se
 
 ## Content Angles This Source Unlocks
 
-- **Tone calibration**: Direct comparison between Style A (SSOT) and Style B (this clip) for [[content/brand-voice]].
+- **Tone calibration**: Direct comparison between Style A (SSOT) and Style B (this clip) for [[website/brand-voice]].
 - **Review verbatims**: Long-form guest quotes for [[reviews/trustpilot-compilation]] not preserved elsewhere.
 - **Staff name catalog**: 7 guides + 6 drivers identified by name from review attributions — useful soft data for [[people/crew-registry]] (gap to be created).
 - **Public-facing schema validation**: Confirms which trust signals actually surface on the homepage.

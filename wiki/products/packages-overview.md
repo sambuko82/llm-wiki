@@ -51,7 +51,7 @@ All packages are **100% private**. No shared groups, no join-in tours. Each book
 
 All pricing follows **per-person tiered rates by group size**, in IDR. Larger groups → lower per-person price.
 
-**Price format (canonical)**: `IDR X,XXX,XXX/person` — Rupiah only, comma thousand separators. See [[content/brand-voice]].
+**Price format (canonical)**: `IDR X,XXX,XXX/person` — Rupiah only, comma thousand separators. See [[website/brand-voice]].
 
 ### Pax tiers (typical)
 
@@ -223,6 +223,6 @@ JVTO is an official ISIC provider (ID 259268 — verifiable at https://www.isic.
 - Supports claim **C4** (Ijen Health Screening) on Ijen-relevant packages
 - Supports claim **C8** (Partners) on ISIC student pricing
 
-See [[content/aeo-claims]] for full claim-evidence chains.
+See [[website/aeo-claims]] for full claim-evidence chains.
 
--> [[products/packages-full-pricing]] | -> [[products/packages-itineraries]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[destinations/tumpak-sewu]] | -> [[destinations/madakaripura]] | -> [[credentials/legal-licenses]] | -> [[content/faq-master]]
+-> [[products/packages-full-pricing]] | -> [[products/packages-itineraries]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[destinations/tumpak-sewu]] | -> [[destinations/madakaripura]] | -> [[credentials/legal-licenses]] | -> [[website/faq-master]]

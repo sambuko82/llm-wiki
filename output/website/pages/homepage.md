@@ -9,7 +9,7 @@ voice: Style B
 
 # Homepage Copy — javavolcano-touroperator.com
 
-*All claims trace to wiki sources cited inline. No invented statistics or credentials. Voice: Style B (narrative dossier) with Style A fact inserts per [[content/brand-voice]] §register-switching rule.*
+*All claims trace to wiki sources cited inline. No invented statistics or credentials. Voice: Style B (narrative dossier) with Style A fact inserts per [[website/brand-voice]] §register-switching rule.*
 
 ---
 
@@ -21,7 +21,7 @@ Tourist Police-Led Private Volcano Tours in East Java
 ### Subheadline
 Private Bromo, Ijen & Tumpak Sewu tours from Surabaya or Bali. Licensed operator (NIB 1102230032918), led by an active Tourist Police officer.
 
-*Sources: [[content/copy-bank]] §hero-copy (verbatim from live site) · [[credentials/legal-licenses]] NIB*
+*Sources: [[website/copy-bank]] §hero-copy (verbatim from live site) · [[credentials/legal-licenses]] NIB*
 
 ### Hero Body
 
@@ -29,7 +29,7 @@ Mr. Sam is a Tourist Police officer first, tour operator second. That order matt
 
 We operate private tours only. Your group gets a dedicated vehicle, driver, and guide. No shared transfers, no schedule compromises with strangers, no last-minute logistics surprises.
 
-*Sources: [[people/agung-sambuko]] · [[content/copy-bank]] §company-bio · [[content/aeo-claims]] C2*
+*Sources: [[people/agung-sambuko]] · [[website/copy-bank]] §company-bio · [[website/aeo-claims]] C2*
 
 ---
 
@@ -46,7 +46,7 @@ Six things that separate JVTO from every other operator in East Java.
 
 Mr. Sam — Bripka Agung Sambuko — is an active officer of the Indonesian Tourist Police (Ditpamobvit, East Java). No other licensed tour operator in East Java is founded and led by an active Polpar officer. His police authorization documents are publicly SHA-256 anchored.
 
-*Source: [[people/agung-sambuko]] · [[credentials/legal-licenses]] SPRIN POLPAR · [[content/aeo-claims]] C1*
+*Source: [[people/agung-sambuko]] · [[credentials/legal-licenses]] SPRIN POLPAR · [[website/aeo-claims]] C1*
 
 ---
 
@@ -54,7 +54,7 @@ Mr. Sam — Bripka Agung Sambuko — is an active officer of the Indonesian Tour
 
 Every tour is private by default. Your booking means your vehicle, your driver, your guide — nobody else's group added to your seat. This keeps timing decisions yours, recovery time realistic, and safety coordination simple.
 
-*Source: [[content/aeo-claims]] C2 · [[products/packages-overview]]*
+*Source: [[website/aeo-claims]] C2 · [[products/packages-overview]]*
 
 ---
 
@@ -62,7 +62,7 @@ Every tour is private by default. Your booking means your vehicle, your driver, 
 
 Entrance fees, the Bromo 4WD jeep, accommodation, breakfast, gas masks, and transfers are bundled in writing. What is and isn't included is published in the booking reference before you pay. "Read the Rulebook Before You Book" is a policy, not a tagline.
 
-*Source: [[content/aeo-claims]] C3 · [[sources/jvto-policy-pack-v6]] inclusions/exclusions*
+*Source: [[website/aeo-claims]] C3 · [[sources/jvto-policy-pack-v6]] inclusions/exclusions*
 
 ---
 
@@ -70,7 +70,7 @@ Entrance fees, the Bromo 4WD jeep, accommodation, breakfast, gas masks, and tran
 
 Ijen access rules can require a recent local health certificate. JVTO coordinates the clinic workflow when current BBKSDA rules require it — before the hike, not as an afterthought. Dr. Ahmad Irwandanu holds a verified SIP license (Kemenkes RI, checkable at satusehat.kemkes.go.id).
 
-*Source: [[content/aeo-claims]] C4 · [[destinations/kawah-ijen]] §health-screening · [[people/dr-ahmad-irwandanu]] · Voice invariant: conditional framing per [[content/brand-voice]]*
+*Source: [[website/aeo-claims]] C4 · [[destinations/kawah-ijen]] §health-screening · [[people/dr-ahmad-irwandanu]] · Voice invariant: conditional framing per [[website/brand-voice]]*
 
 ---
 
@@ -78,7 +78,7 @@ Ijen access rules can require a recent local health certificate. JVTO coordinate
 
 NIB 1102230032918 is checkable at oss.go.id. HPWKI membership (AHU-0001072.AH.01.07.TAHUN 2024) verifies Ijen specialist guide training. BBKSDA clearance covers both Bromo Tengger Semeru National Park and Ijen. ISIC Provider 259268 confirms student-rate eligibility. SHA-256 hashes for every credential document are published in public/llms.txt.
 
-*Source: [[credentials/legal-licenses]] · [[content/aeo-claims]] C5*
+*Source: [[credentials/legal-licenses]] · [[website/aeo-claims]] C5*
 
 ---
 
@@ -86,7 +86,7 @@ NIB 1102230032918 is checkable at oss.go.id. HPWKI membership (AHU-0001072.AH.01
 
 Bromo and Ijen both close without warning. JVTO operates a written Plan-B framework: if a site closes, you get an alternative route — briefed in advance, not improvised at the gate. You don't lose a day, and that is a written policy, not a verbal promise.
 
-*Source: [[content/aeo-claims]] C1 · [[destinations/mount-bromo]] §closure-sop · [[sources/ssot-v6]] §7_3*
+*Source: [[website/aeo-claims]] C1 · [[destinations/mount-bromo]] §closure-sop · [[sources/ssot-v6]] §7_3*
 
 ---
 
@@ -98,7 +98,7 @@ Four destinations. One licensed operator covering all of them.
 ### Section Intro
 All JVTO tours start and end with full logistics covered. Every destination below is served by dedicated private transport — no public buses, no group vans shared with strangers.
 
-*Source: [[products/packages-overview]] · [[content/aeo-claims]] C2*
+*Source: [[products/packages-overview]] · [[website/aeo-claims]] C2*
 
 ---
 
@@ -106,7 +106,7 @@ All JVTO tours start and end with full logistics covered. Every destination belo
 
 Active volcano at 2,386 m. The pre-dawn Blue Fire phenomenon — sulfuric gases igniting at the crater floor — is visible in suitable weather conditions. The summit holds the world's highest-volume acidic crater lake (pH ≈ 0, turquoise). The ascent from Paltuding trailhead is ~3 km, roughly 90 minutes, on a steep rocky trail. Gas masks are provided by JVTO. Blue Fire is a natural phenomenon subject to weather and gas activity.
 
-*Source: [[destinations/kawah-ijen]] · Voice invariant: approved blue-fire language per [[content/brand-voice]]*
+*Source: [[destinations/kawah-ijen]] · Voice invariant: approved blue-fire language per [[website/brand-voice]]*
 
 ---
 
@@ -188,7 +188,7 @@ Trustpilot rating: **4.8 / 5** (51 reviews, verified 2026-05-09). Google Maps: *
 
 These are not cherry-picked quotes. Browse by platform, browse by pattern. The themes that appear across guides, drivers, and logistics tell you more than any single testimonial.
 
-*Source: [[content/aeo-claims]] C6 · [[credentials/trust-signals]] §review-platforms · [[reviews/trustpilot-compilation]]*
+*Source: [[website/aeo-claims]] C6 · [[credentials/trust-signals]] §review-platforms · [[reviews/trustpilot-compilation]]*
 
 ---
 
@@ -201,7 +201,7 @@ Credentials you can check — not logos you have to take on faith.
 
 Every license on this page is publicly verifiable. We publish SHA-256 hashes for all credential documents in public/llms.txt so you can confirm authenticity before you book.
 
-*Source: [[credentials/legal-licenses]] §sha256-anchors · [[content/aeo-claims]] C5*
+*Source: [[credentials/legal-licenses]] §sha256-anchors · [[website/aeo-claims]] C5*
 
 ---
 
@@ -222,7 +222,7 @@ Dr. Ahmad Irwandanu — SIP license issued by Kemenkes RI. Verifiable at satuseh
 **5. Third-party recognition**
 ISIC Provider 259268 (UNESCO-endorsed student identification). INDECON live member (Indonesian Ecotourism Network). Stefan Loose Indonesia guidebook 2016, p. 287. Booking.com 2015 award (Ijen Bondowoso Homestay, 9.4/10).
 
-*Source: [[content/copy-bank]] §trust-stack · [[credentials/legal-licenses]] · [[credentials/trust-signals]] · [[people/agung-sambuko]]*
+*Source: [[website/copy-bank]] §trust-stack · [[credentials/legal-licenses]] · [[credentials/trust-signals]] · [[people/agung-sambuko]]*
 
 ---
 
@@ -239,7 +239,7 @@ We saw the gaps in safety standards first-hand — unlicensed guides, no medical
 
 Today, we act as a bridge between wild adventure and professional safety standards. The Tourist Police experience isn't a marketing credential — it's the lens through which every route, every safety rule, and every Plan-B decision is made.
 
-*Source: [[content/copy-bank]] §company-bio (verbatim) · [[people/agung-sambuko]] · [[content/aeo-claims]] C1*
+*Source: [[website/copy-bank]] §company-bio (verbatim) · [[people/agung-sambuko]] · [[website/aeo-claims]] C1*
 
 ---
 
@@ -254,7 +254,7 @@ Verify JVTO — Check licenses, press coverage, and founder credentials
 ### Policy Reminder
 Read the Rulebook Before You Book — cancellation rules, inclusions, and screening protocols are published in full before payment.
 
-*Source: [[content/copy-bank]] §key-phrases · [[sources/ssot-v6]] §2_4 "Read the Rulebook Before You Book"*
+*Source: [[website/copy-bank]] §key-phrases · [[sources/ssot-v6]] §2_4 "Read the Rulebook Before You Book"*
 
 ---
 

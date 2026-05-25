@@ -85,14 +85,14 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 
 ## Content Production
 
-- [[content/brand-voice]] — Tone guide (Style A + Style B), key phrases, voice invariants (forbidden phrases + approved Ijen language)
-- [[content/faq-master]] — All approved FAQ answers (AEO-formatted) — 20 canonical FAQs from SSOT §6_5 + locally derived
-- [[content/aeo-claims]] — 9 canonical claim blocks (C1–C9) with NLP snippets, customer-service replies, evidence chains
-- [[content/copy-bank]] — Reusable snippets: NLP atoms (C1–C9), hero copy, approved/forbidden Ijen language, trust stack order
-- [[content/operational-facts]] — Temperatures (Bromo/Ijen), travel times, support hours, Ijen closure schedule, trolley ojek, micro-customization policy, FOC 5% discount
-- [[content/query-hero-claim]] — Query output: C3 (all-inclusive, no surprise costs) is the lead hero claim for price-skeptical solo travelers; C1/C5 justifies the premium. Evidence chain, 2 headline options, ranked secondary claims.
-- [[content/hotels]] — 23 hotel partners registry; organized by itinerary phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu, Malang, Surabaya finish)
-- [[content/schema-templates]] — JSON-LD schema reference: page-type → schema map, field rules, BreadcrumbList patterns, numeric verification checklist
+- [[website/brand-voice]] — Tone guide (Style A + Style B), key phrases, voice invariants (forbidden phrases + approved Ijen language)
+- [[website/faq-master]] — All approved FAQ answers (AEO-formatted) — 20 canonical FAQs from SSOT §6_5 + locally derived
+- [[website/aeo-claims]] — 9 canonical claim blocks (C1–C9) with NLP snippets, customer-service replies, evidence chains
+- [[website/copy-bank]] — Reusable snippets: NLP atoms (C1–C9), hero copy, approved/forbidden Ijen language, trust stack order
+- [[website/operational-facts]] — Temperatures (Bromo/Ijen), travel times, support hours, Ijen closure schedule, trolley ojek, micro-customization policy, FOC 5% discount
+- [[website/query-hero-claim]] — Query output: C3 (all-inclusive, no surprise costs) is the lead hero claim for price-skeptical solo travelers; C1/C5 justifies the premium. Evidence chain, 2 headline options, ranked secondary claims.
+- [[website/hotels]] — 23 hotel partners registry; organized by itinerary phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu, Malang, Surabaya finish)
+- [[website/schema-templates]] — JSON-LD schema reference: page-type → schema map, field rules, BreadcrumbList patterns, numeric verification checklist
 
 ## Ops
 
@@ -113,8 +113,8 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - ~~`credentials/medical-screening`~~ — **created 2026-05-16** → [[credentials/medical-screening]]
 - ~~`credentials/police-integration`~~ — **created 2026-05-16** → [[credentials/police-integration]]
 - ~~`credentials/press-coverage`~~ — **created 2026-05-16** → [[credentials/press-coverage]]
-- `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[content/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
-- ~~`content/schema-templates`~~ — **created 2026-05-18** → [[content/schema-templates]]
+- `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[website/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
+- ~~`content/schema-templates`~~ — **created 2026-05-18** → [[website/schema-templates]]
 - `bromo-ijen-status-today` page — Silo 3 SEO target (keyword #7). Needs replacement live source for PVMBG/BBKSDA status; MAGMA feed not active. See [[ops/seo-strategy]] §Silo 3.
 - ~~`raw/routes.csv` + `raw/route_details.csv`~~ — **ingested 2026-05-18** → [[sources/route-data-csv]]
 

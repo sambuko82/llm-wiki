@@ -52,9 +52,9 @@ For LLM queries, this is the lookup table:
 | [[products/packages-overview]] | 6 | `domain_6` (15 packages with pricing, itineraries, inclusions, AI intelligence, route metadata) |
 | `credentials/` (2 pages) | 3, 12 | `domain_3` (15 credentials), `domain_12.proof_items` (24 items) |
 | `reviews/` (2 pages) | 10 | `domain_10_review_registry` |
-| [[content/brand-voice]] (§voice-invariants) | 2.4 | `domain_2.2_4_voice_invariants` |
-| [[content/faq-master]] | 6.5 | `domain_6.6_5_faq_logic` (20 unique FAQs across 6 categories) |
-| [[content/aeo-claims]] | 2.3, 11, 12 | `domain_2.2_3_narrative_claimmap` (9 claims with NLP snippets) |
+| [[website/brand-voice]] (§voice-invariants) | 2.4 | `domain_2.2_4_voice_invariants` |
+| [[website/faq-master]] | 6.5 | `domain_6.6_5_faq_logic` (20 unique FAQs across 6 categories) |
+| [[website/aeo-claims]] | 2.3, 11, 12 | `domain_2.2_3_narrative_claimmap` (9 claims with NLP snippets) |
 
 ## Voice Invariants (CRITICAL — copied verbatim from SSOT §2_4)
 
@@ -73,7 +73,7 @@ For LLM queries, this is the lookup table:
 4. "Gas masks provided by JVTO"
 5. "Health-certificate screening coordination for Ijen routes when current access rules require it"
 
-See [[content/brand-voice]] §voice-invariants for enforcement examples.
+See [[website/brand-voice]] §voice-invariants for enforcement examples.
 
 ## Key Numeric Facts (cite this source)
 

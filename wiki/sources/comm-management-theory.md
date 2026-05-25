@@ -48,7 +48,7 @@ Rule: customer yang sudah punya booking aktif tidak masuk [1]. B2B partner tidak
 
 Standard global: selesaikan pertanyaan atau masalah customer **pada kontak pertama**. Setiap bolak-balik tambahan = risiko pembatalan naik.
 
-**JVTO implication:** FAQ yang paling sering masuk (jam pickup, apa saja yang termasuk, kondisi medis Ijen, cancellation policy, deposit berapa) harus dijawab **lengkap** di respons pertama. Referensi: -> [[content/faq-master]] dan -> [[content/operational-facts]].
+**JVTO implication:** FAQ yang paling sering masuk (jam pickup, apa saja yang termasuk, kondisi medis Ijen, cancellation policy, deposit berapa) harus dijawab **lengkap** di respons pertama. Referensi: -> [[website/faq-master]] dan -> [[website/operational-facts]].
 
 ---
 
@@ -71,7 +71,7 @@ Gap vs international benchmark: human SLA 30 menit masih di atas 2-5 menit bench
 
 Standar internasional untuk complaint handling. Dalam konteks pra-booking: catat area di website/brosur yang sering memicu pertanyaan repetitif.
 
-**JVTO application:** Track FAQ yang masuk WhatsApp. Pertanyaan yang sama muncul >3× dalam sebulan → tambahkan ke -> [[content/faq-master]] dan kirim proaktif di pre-departure pack. Input ke David untuk upgrade chatbot menu jika perlu.
+**JVTO application:** Track FAQ yang masuk WhatsApp. Pertanyaan yang sama muncul >3× dalam sebulan → tambahkan ke -> [[website/faq-master]] dan kirim proaktif di pre-departure pack. Input ke David untuk upgrade chatbot menu jika perlu.
 
 ---
 

@@ -187,4 +187,4 @@ Book direct — no agency fees
 
 ---
 
-*Sources: [[products/packages-overview]] · [[products/packages-full-pricing]] · [[content/copy-bank]] · [[content/brand-voice]] · [[content/aeo-claims]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[people/agung-sambuko]] · [[sources/ssot-v6]]*
+*Sources: [[products/packages-overview]] · [[products/packages-full-pricing]] · [[website/copy-bank]] · [[website/brand-voice]] · [[website/aeo-claims]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[people/agung-sambuko]] · [[sources/ssot-v6]]*

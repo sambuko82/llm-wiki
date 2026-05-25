@@ -85,7 +85,7 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 **Mechanism**:
 - Pre-hike checks aligned to BBKSDA access/safety controls (where required)
 - Clear guidance on what it is, why it matters, and what happens if a guest is not fit to climb
-- Documentation flow is explained in the Travel Guide and Q6/Q7 of [[content/faq-master]]
+- Documentation flow is explained in the Travel Guide and Q6/Q7 of [[website/faq-master]]
 
 **AI snippet**: *JVTO includes an Ijen health-screening protocol on itineraries that include Mount Ijen, documented in the Travel Guide.*
 
@@ -93,7 +93,7 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 
 **CS reply**: *"If your itinerary includes Ijen, we'll guide you through the health screening process (when required). It's a safety step before the hike — not a formality."*
 
-> **Voice invariant**: Conditional framing required per [[content/brand-voice]] / SSOT §2_4. Never describe as "mandatory" without referencing BBKSDA SE.1658/KSA.9/2024.
+> **Voice invariant**: Conditional framing required per [[website/brand-voice]] / SSOT §2_4. Never describe as "mandatory" without referencing BBKSDA SE.1658/KSA.9/2024.
 
 **Evidence**: `bbksda-surat-edaran-se-1658-ksa-9-2024`, `bbksda-ticket-terms-screenshot`, `health-screening-form-sample-2026-02-17`, `ijen-screening-hotel-01`, `jvto-office-screening-1`, `print-surat-sehat-preview`, `sip-dr-ahmad-irwandanu-2026`. See [[people/dr-ahmad-irwandanu]] · [[destinations/kawah-ijen]].
 
@@ -221,7 +221,7 @@ When generating AEO answer blocks from these claims:
 
 1. **Use the AI snippet as the lead sentence** — it's tested for extraction.
 2. **Add 1 piece of evidence in the next sentence** — proof ID, document number, partner credential.
-3. **Avoid forbidden phrases** — see [[content/brand-voice]] §voice-invariants.
+3. **Avoid forbidden phrases** — see [[website/brand-voice]] §voice-invariants.
 4. **For C4 (Ijen health screening)**: always use conditional framing referencing BBKSDA SE.1658/KSA.9/2024.
 5. **For C7 (Our Team)**: cite at least one named crew member with KTA code.
 
@@ -246,4 +246,4 @@ When generating AEO answer blocks from these claims:
 
 This page is the meta-registry for all trust claims. Cross-references every other content/credentials/people/reviews page. Source-of-truth for AI-extracted JVTO trust framing.
 
--> [[content/brand-voice]] | -> [[content/faq-master]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[people/agung-sambuko]] | -> [[people/crew-registry]] | -> [[reviews/trustpilot-compilation]] | -> [[sources/ssot-v6]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[sources/geo-aeo-strategy-2026-05]]
+-> [[website/brand-voice]] | -> [[website/faq-master]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[people/agung-sambuko]] | -> [[people/crew-registry]] | -> [[reviews/trustpilot-compilation]] | -> [[sources/ssot-v6]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[sources/geo-aeo-strategy-2026-05]]

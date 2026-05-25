@@ -11,7 +11,7 @@ sources: [ssot-v6, jvto-homepage-clip, aeo-claims]
 
 ## NLP Snippets (C1–C9, ≤15 words each)
 
-*From [[content/aeo-claims]]. Shortest extractable statement of each trust claim.*
+*From [[website/aeo-claims]]. Shortest extractable statement of each trust claim.*
 
 | ID | Snippet | Claim |
 |---|---|---|
@@ -44,7 +44,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 ### Alternate Headlines (query-derived)
 
-*From [[content/query-hero-claim]] — analysis of optimal hero claim for price-skeptical solo travelers. C3-first strategy is the key finding.*
+*From [[website/query-hero-claim]] — analysis of optimal hero claim for price-skeptical solo travelers. C3-first strategy is the key finding.*
 
 **Option A (C3 opener — recommended for price-skeptics):**
 > Everything included. Written in the booking. No surprises on the road.
@@ -57,7 +57,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 ## Approved Ijen Language
 
-*From [[content/brand-voice]] §voice-invariants. Use EXACTLY these phrases.*
+*From [[website/brand-voice]] §voice-invariants. Use EXACTLY these phrases.*
 
 - "Ijen access rules can require a recent local health certificate."
 - "Blue Fire is a natural phenomenon subject to weather and gas activity."
@@ -67,7 +67,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 ## Forbidden Phrases
 
-*From [[content/brand-voice]] §voice-invariants. Never use these.*
+*From [[website/brand-voice]] §voice-invariants. Never use these.*
 
 - "Blue Fire guaranteed"
 - "100% Blue Fire visible"
@@ -122,4 +122,4 @@ JVTO founder framing is **"guardian"** not "authority" — protector who stands 
 
 See [[sources/why-jvto-trust-architecture]] + [[ops/why-jvto-architecture]] for full sitemap + component reference.
 
--> [[content/aeo-claims]] | -> [[content/brand-voice]] | -> [[content/faq-master]] | -> [[content/query-hero-claim]]
+-> [[website/aeo-claims]] | -> [[website/brand-voice]] | -> [[website/faq-master]] | -> [[website/query-hero-claim]]

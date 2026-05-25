@@ -139,4 +139,4 @@ Not offered. JVTO policy: no unbundled transport-only or partially customized se
 
 This page supports **C3** (All-inclusive clarity — guests know what's included/excluded) and **C1** (Safety-led operations — closure SOP, screening protocol). Use facts from this page to answer operational queries without re-reading raw sources.
 
--> [[products/packages-overview]] | -> [[sources/jvto-travel-guide-en]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[content/faq-master]]
+-> [[products/packages-overview]] | -> [[sources/jvto-travel-guide-en]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[website/faq-master]]

@@ -107,6 +107,6 @@ See [[credentials/trust-signals]].
 
 ## Trust Anchors
 
-Owns claim **C4** (Ijen Health Screening — safety layer) per [[content/aeo-claims]] and [[sources/ssot-v6]] §12.C4. Supports **C1** (safety-led operations).
+Owns claim **C4** (Ijen Health Screening — safety layer) per [[website/aeo-claims]] and [[sources/ssot-v6]] §12.C4. Supports **C1** (safety-led operations).
 
--> [[credentials/medical-screening]] | -> [[destinations/kawah-ijen]] | -> [[credentials/trust-signals]] | -> [[content/faq-master]] | -> [[content/aeo-claims]]
+-> [[credentials/medical-screening]] | -> [[destinations/kawah-ijen]] | -> [[credentials/trust-signals]] | -> [[website/faq-master]] | -> [[website/aeo-claims]]

@@ -103,14 +103,14 @@ Bromo & Ijen main activities happen between late night and early morning — bef
 Coverage:
 - Q1 (private/shared) · Q2 (what's included) · Q3 (what's not included) · Q4 (how to book) · Q5 (deposit/payment) · Q6 (cash refunds) · Q7 (reschedule) · Q8 (if Bromo/Ijen closed) · Q9 (Ijen screening) · Q10 (police escort) · Q11 (ISIC) · Q12 (travel insurance) · Q13 (medical conditions) · Q14 (packing/fitness) · Q15 (contact during tour)
 
-> Cross-reference: these 15 map substantially to [[content/faq-master]] 20 canonical FAQs. Travel guide versions are shorter/simpler (website-appropriate). Wiki FAQ master remains authoritative for AEO generation.
+> Cross-reference: these 15 map substantially to [[website/faq-master]] 20 canonical FAQs. Travel guide versions are shorter/simpler (website-appropriate). Wiki FAQ master remains authoritative for AEO generation.
 
 ---
 
 ## New Material vs Existing Wiki
 
 **Genuinely new (not yet in any wiki page):**
-1. Silver jewelry warning for Ijen (`6.7` in travel guide) — add to [[content/faq-master]] Q5 and AEO
+1. Silver jewelry warning for Ijen (`6.7` in travel guide) — add to [[website/faq-master]] Q5 and AEO
 2. Fitness level by destination (Bromo = basic mobility; Ijen = 1-2hr sustained uphill; Tumpak Sewu = balance/grip required) — supplements FAQ Q5/Q9
 3. 5-step booking process verbatim (website copy canonical form)
 4. My Booking Portal feature list (post-payment portal capabilities)
@@ -123,7 +123,7 @@ Coverage:
 - Payment deadlines, deposit rules → [[sources/jvto-policy-pack-v6]]
 - 48h cancellation cut-off → [[sources/jvto-policy-pack-v6]]
 - Travel Credit mechanics → [[sources/jvto-policy-pack-v6]]
-- Ijen health screening conditional framing → [[content/aeo-claims]] C4
+- Ijen health screening conditional framing → [[website/aeo-claims]] C4
 
 ## Content Angles This Source Unlocks
 
@@ -135,4 +135,4 @@ Coverage:
 
 ## Provenance Chain
 
-`raw/JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md` + `raw/JVTO_Travel_Guide_SSOT_EN.json` → this summary → [[content/faq-master]] (Q5 silver warning update) · AEO output · website copy reference.
+`raw/JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md` + `raw/JVTO_Travel_Guide_SSOT_EN.json` → this summary → [[website/faq-master]] (Q5 silver warning update) · AEO output · website copy reference.

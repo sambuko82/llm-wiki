@@ -177,6 +177,6 @@ Use these when writing content that references press coverage. Cite the source, 
 
 ## Trust Anchors
 
-Owns claim **C9** (Press & Recognition). Supports **C1** (safety-led operations — independent confirmation), **C5** (proof-first verification — third-party sources). See [[content/aeo-claims]] for full C9 evidence chain.
+Owns claim **C9** (Press & Recognition). Supports **C1** (safety-led operations — independent confirmation), **C5** (proof-first verification — third-party sources). See [[website/aeo-claims]] for full C9 evidence chain.
 
--> [[credentials/trust-signals]] | -> [[credentials/legal-licenses]] | -> [[people/agung-sambuko]] | -> [[people/crew-registry]] | -> [[content/aeo-claims]]
+-> [[credentials/trust-signals]] | -> [[credentials/legal-licenses]] | -> [[people/agung-sambuko]] | -> [[people/crew-registry]] | -> [[website/aeo-claims]]

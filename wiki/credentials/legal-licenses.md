@@ -88,6 +88,6 @@ Booking.com 2015 award shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso" �
 
 ## Trust Anchors
 
-Owns claim **C5** (Proof-first trust — verification layer). Supports **C1** (safety-led operations), **C8** (Partners as context). See [[content/aeo-claims]] and [[sources/ssot-v6]] §12.
+Owns claim **C5** (Proof-first trust — verification layer). Supports **C1** (safety-led operations), **C8** (Partners as context). See [[website/aeo-claims]] and [[sources/ssot-v6]] §12.
 
--> [[credentials/trust-signals]] | -> [[credentials/police-integration]] | -> [[credentials/medical-screening]] | -> [[people/agung-sambuko]] | -> [[people/dr-ahmad-irwandanu]] | -> [[content/aeo-claims]]
+-> [[credentials/trust-signals]] | -> [[credentials/police-integration]] | -> [[credentials/medical-screening]] | -> [[people/agung-sambuko]] | -> [[people/dr-ahmad-irwandanu]] | -> [[website/aeo-claims]]

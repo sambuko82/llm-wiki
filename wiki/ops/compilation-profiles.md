@@ -45,7 +45,7 @@ Each profile specifies which wiki pages to read, the output format, voice constr
 
 **Forbidden:** invented statistics, passive voice in hero copy, "safety-focused guide" (use "Tourist Police officer"), superlatives without evidence
 
-**Meta description**: Use the 3-part formula from [[content/brand-voice]] §Meta Description Formula: `[Format + Duration + Highlights] · [Differentiator] · [Trust signal or price hook]`. Max 160 characters. No first-person. For SEO-optimized title tags, see [[ops/seo-strategy]] §Title Tag Rewrites.
+**Meta description**: Use the 3-part formula from [[website/brand-voice]] §Meta Description Formula: `[Format + Duration + Highlights] · [Differentiator] · [Trust signal or price hook]`. Max 160 characters. No first-person. For SEO-optimized title tags, see [[ops/seo-strategy]] §Title Tag Rewrites.
 
 **Output filename:** `output/copy-YYYY-MM-DD-[page].md`
 

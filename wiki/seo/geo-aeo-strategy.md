@@ -148,4 +148,4 @@ Pattern to scale: long-tail + branded + regulatory intent + low competition. The
 
 ---
 
--> [[ops/seo-strategy]] | -> [[sources/geo-aeo-strategy-2026-05]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[content/schema-templates]] | -> [[content/aeo-claims]]
+-> [[ops/seo-strategy]] | -> [[sources/geo-aeo-strategy-2026-05]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[website/schema-templates]] | -> [[website/aeo-claims]]

@@ -37,7 +37,7 @@ Kawah Ijen is an active volcano at 2,386 m with the world's highest-volume acidi
 
 > Blue Fire is a natural phenomenon subject to weather and gas activity.
 
-Visible pre-dawn in suitable conditions only. **Not guaranteed.** Originates from ignited sulfuric gases venting at the crater floor. JVTO content must use this conditional framing per [[content/brand-voice]] voice invariants.
+Visible pre-dawn in suitable conditions only. **Not guaranteed.** Originates from ignited sulfuric gases venting at the crater floor. JVTO content must use this conditional framing per [[website/brand-voice]] voice invariants.
 
 ❌ Forbidden phrases: "Blue Fire guaranteed", "100% Blue Fire visible". See [[sources/ssot-v6]] §2_4.
 
@@ -109,6 +109,6 @@ Notes: GPX peak elevation (2,380 m) is slightly under the official crater-rim fi
 
 ## Trust Anchors
 
-Owns claim **C4** (Ijen Health Screening) and contributes to **C1** (Safety-led operations) per [[content/aeo-claims]] and [[sources/ssot-v6]] §12.
+Owns claim **C4** (Ijen Health Screening) and contributes to **C1** (Safety-led operations) per [[website/aeo-claims]] and [[sources/ssot-v6]] §12.
 
--> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[content/aeo-claims]]
+-> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[website/aeo-claims]]

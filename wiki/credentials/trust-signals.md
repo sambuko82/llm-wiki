@@ -142,6 +142,6 @@ When answering "Is JVTO legitimate?" cite in this order:
 
 ## Trust Anchors
 
-Supports claims **C5** (Proof-first verification), **C6** (Reviews registry), **C8** (Partners), **C9** (Press & Recognition). See [[content/aeo-claims]] for claim-evidence chains.
+Supports claims **C5** (Proof-first verification), **C6** (Reviews registry), **C8** (Partners), **C9** (Press & Recognition). See [[website/aeo-claims]] for claim-evidence chains.
 
--> [[credentials/legal-licenses]] | -> [[credentials/press-coverage]] | -> [[credentials/police-integration]] | -> [[credentials/medical-screening]] | -> [[reviews/trustpilot-compilation]] | -> [[people/agung-sambuko]] | -> [[content/aeo-claims]]
+-> [[credentials/legal-licenses]] | -> [[credentials/press-coverage]] | -> [[credentials/police-integration]] | -> [[credentials/medical-screening]] | -> [[reviews/trustpilot-compilation]] | -> [[people/agung-sambuko]] | -> [[website/aeo-claims]]

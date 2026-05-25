@@ -9,7 +9,7 @@ schema_ready: yes
 
 # JVTO FAQ Master
 
-20 canonical FAQs from [[sources/ssot-v6]] §6_5_faq_logic. All answers comply with [[content/brand-voice]] voice invariants. Formatted for direct AEO citation and FAQPage schema generation.
+20 canonical FAQs from [[sources/ssot-v6]] §6_5_faq_logic. All answers comply with [[website/brand-voice]] voice invariants. Formatted for direct AEO citation and FAQPage schema generation.
 
 Voice invariants in effect — health-related FAQs (Q6, Q7) use conditional Ijen language per SSOT §2_4. Guarantee-style answers (Q19) explicitly negate guarantees.
 
@@ -87,7 +87,7 @@ JVTO follows official instructions from Indonesian authorities and park manageme
 Light or normal rain rarely cancels an entire tour, but it can make trails slippery, reduce visibility, or require timing/route changes. JVTO guides assess on the day. For safety-critical sections (Ijen crater rim, Madakaripura canyon), JVTO may delay or reroute. Sunrise and Blue Fire views are conditional on weather (see Q19).
 
 **Q19. Can you guarantee sunrise views or blue fire?**
-No. Weather, cloud, volcanic gas, and other natural factors are outside JVTO's control. JVTO designs itineraries to maximise the chance of good conditions but cannot promise specific natural phenomena. **Blue Fire is a natural phenomenon subject to weather and gas activity.** See [[content/brand-voice]] §voice-invariants for the canonical wording.
+No. Weather, cloud, volcanic gas, and other natural factors are outside JVTO's control. JVTO designs itineraries to maximise the chance of good conditions but cannot promise specific natural phenomena. **Blue Fire is a natural phenomenon subject to weather and gas activity.** See [[website/brand-voice]] §voice-invariants for the canonical wording.
 
 ---
 
@@ -121,4 +121,4 @@ Yes. JVTO direct bookings (website + WhatsApp only) receive FOC (Free of Charge)
 
 Supports claims **C1, C2, C3, C4, C5, C6, C8** depending on FAQ. Q19 + voice invariants protect C4 (Ijen health screening) and the unguaranteed-natural-phenomena positioning.
 
--> [[content/brand-voice]] | -> [[content/aeo-claims]] | -> [[content/operational-facts]] | -> [[products/packages-overview]] | -> [[credentials/legal-licenses]] | -> [[people/dr-ahmad-irwandanu]]
+-> [[website/brand-voice]] | -> [[website/aeo-claims]] | -> [[website/operational-facts]] | -> [[products/packages-overview]] | -> [[credentials/legal-licenses]] | -> [[people/dr-ahmad-irwandanu]]

@@ -32,7 +32,7 @@ JVTO's role: **coordinate** the clinic workflow so guests can satisfy the BBKSDA
 
 ## Approved Language (Voice Invariants)
 
-Per [[sources/ssot-v6]] §2_4 and [[content/brand-voice]]:
+Per [[sources/ssot-v6]] §2_4 and [[website/brand-voice]]:
 
 | ✅ Use | ❌ Avoid |
 |---|---|
@@ -158,6 +158,6 @@ Two locations represented: partner hotel lobby (ijen-screening-hotel-01/02) and 
 
 ## Trust Anchors
 
-Owns claim **C4** (Ijen Health Screening — safety layer). Supports **C1** (safety-led operations). See [[content/aeo-claims]] for full C4 evidence chain and NLP snippets.
+Owns claim **C4** (Ijen Health Screening — safety layer). Supports **C1** (safety-led operations). See [[website/aeo-claims]] for full C4 evidence chain and NLP snippets.
 
--> [[people/dr-ahmad-irwandanu]] | -> [[destinations/kawah-ijen]] | -> [[credentials/trust-signals]] | -> [[content/aeo-claims]] | -> [[content/faq-master]]
+-> [[people/dr-ahmad-irwandanu]] | -> [[destinations/kawah-ijen]] | -> [[credentials/trust-signals]] | -> [[website/aeo-claims]] | -> [[website/faq-master]]

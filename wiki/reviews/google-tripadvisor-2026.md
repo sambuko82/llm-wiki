@@ -112,6 +112,6 @@ New pattern from Google reviews:
 | **TripAdvisor** | 4.95 / 5 | 21 | 2026-05-12 (DB) |
 | **Total** | — | **164** | — |
 
-> Schema note: Google Maps and TripAdvisor ratings are not yet wired to `AggregateRating` schema in jvto-web. When activated, combined 164-review dataset significantly strengthens C6 (Reviews Registry). See [[content/aeo-claims]] C6.
+> Schema note: Google Maps and TripAdvisor ratings are not yet wired to `AggregateRating` schema in jvto-web. When activated, combined 164-review dataset significantly strengthens C6 (Reviews Registry). See [[website/aeo-claims]] C6.
 
--> [[reviews/trustpilot-compilation]] | -> [[reviews/review-patterns]] | -> [[people/crew-registry]] | -> [[content/aeo-claims]]
+-> [[reviews/trustpilot-compilation]] | -> [[reviews/review-patterns]] | -> [[people/crew-registry]] | -> [[website/aeo-claims]]

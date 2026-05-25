@@ -168,6 +168,6 @@ Source: [[sources/jvto-travel-guide-en]] §police-escort section.
 
 ## Trust Anchors
 
-Owns claim **C1** (Police-Led Safety — primary differentiator). Supports **C5** (Proof-First verification — four-layer evidence chain). See [[content/aeo-claims]] for full C1 and C5 evidence chains.
+Owns claim **C1** (Police-Led Safety — primary differentiator). Supports **C5** (Proof-First verification — four-layer evidence chain). See [[website/aeo-claims]] for full C1 and C5 evidence chains.
 
--> [[people/agung-sambuko]] | -> [[credentials/legal-licenses]] | -> [[credentials/press-coverage]] | -> [[credentials/trust-signals]] | -> [[content/aeo-claims]]
+-> [[people/agung-sambuko]] | -> [[credentials/legal-licenses]] | -> [[credentials/press-coverage]] | -> [[credentials/trust-signals]] | -> [[website/aeo-claims]]

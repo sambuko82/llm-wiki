@@ -125,6 +125,6 @@ sources: [jvto-policy-pack-v6]
 
 ## Provenance Chain
 
-`raw/JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md` → this summary → [[products/packages-overview]] · [[content/faq-master]] · AEO outputs on policy topics.
+`raw/JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md` → this summary → [[products/packages-overview]] · [[website/faq-master]] · AEO outputs on policy topics.
 
 > Cross-check vehicle allocation (2-3 MPV / 4-9 Hiace / 10-11 Hiace+MPV) and Bromo jeep (max ±4 guests) against [[sources/ssot-v6]] §6 — flag contradiction if different.

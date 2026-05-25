@@ -57,11 +57,11 @@ Playbook ini menyusun ulang lima alur WhatsApp tersebut menjadi sistem yang **te
 
 | Aset | Lokasi | Fungsi dalam playbook |
 |---|---|---|
-| Brand voice guide | -> [[content/brand-voice]] | Acuan tone semua balasan |
-| FAQ master | -> [[content/faq-master]] | Sumber jawaban FAQ otomatis |
-| AEO claims | -> [[content/aeo-claims]] | Klaim yang aman dikutip publik |
-| Copy bank | -> [[content/copy-bank]] | Frasa & template terverifikasi |
-| Operational facts | -> [[content/operational-facts]] | Fakta operasional (jam, lokasi, harga) |
+| Brand voice guide | -> [[website/brand-voice]] | Acuan tone semua balasan |
+| FAQ master | -> [[website/faq-master]] | Sumber jawaban FAQ otomatis |
+| AEO claims | -> [[website/aeo-claims]] | Klaim yang aman dikutip publik |
+| Copy bank | -> [[website/copy-bank]] | Frasa & template terverifikasi |
+| Operational facts | -> [[website/operational-facts]] | Fakta operasional (jam, lokasi, harga) |
 | **Canned responses** | -> [[ops/canned-responses]] | **Template WA + email siap kirim per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN** |
 | Destinations | -> [[destinations/kawah-ijen]], [[destinations/mount-bromo]], [[destinations/tumpak-sewu]], [[destinations/madakaripura]], [[destinations/papuma-beach]] | Info destinasi |
 | Pricing & itinerary | -> [[products/packages-full-pricing]], -> [[products/packages-itineraries]] | Acuan kuotasi (manual, bukan otomatis) |
@@ -219,7 +219,7 @@ Setiap flow ditulis sebagai *state machine* dengan pemicu eksplisit. Format kons
 - **Aksi sistem:** Set reminder 48 jam — kalau tidak ada balasan, tag untuk follow-up.
 - **Aksi manusia:**
   - Tunggu respons customer.
-  - Kalau ada pertanyaan klarifikasi (inclusion, jam, single vs twin) → jawab langsung pakai -> [[content/operational-facts]].
+  - Kalau ada pertanyaan klarifikasi (inclusion, jam, single vs twin) → jawab langsung pakai -> [[website/operational-facts]].
 - **Pemicu keluar:**
   - Customer setuju, minta payment instruction → A4.
   - Customer minta nego (diskon, perubahan paket) → A4.
@@ -282,7 +282,7 @@ Setiap flow ditulis sebagai *state machine* dengan pemicu eksplisit. Format kons
 #### B2: Pre-Tour Prep
 - **Pemicu masuk:** Tour minus 7 hari hingga minus 1 hari.
 - **Aksi sistem (otomatisasi tinggi mungkin):**
-  - **H-7**: Welcome message + checklist persiapan (pakaian, fisik, dokumen). Ambil dari -> [[content/faq-master]].
+  - **H-7**: Welcome message + checklist persiapan (pakaian, fisik, dokumen). Ambil dari -> [[website/faq-master]].
   - **H-3**: Konfirmasi jam pickup, lokasi pickup, kontak driver. **Tetapi**: jam & lokasi diambil dari operational DB, **bukan dari LLM**.
   - **H-1**: Reminder + cek terakhir (flight detail kalau ada, akomodasi night 0, kesehatan).
 - **Aksi manusia (Inan):**
@@ -309,7 +309,7 @@ Setiap flow ditulis sebagai *state machine* dengan pemicu eksplisit. Format kons
   - Tanggapi pesan masuk dari tamu (request tambahan, komplain, info).
   - Kalau ada masalah serius (sakit, kecelakaan, komplain berat) → eskalasi ke Sam segera.
 - **Pemicu keluar:** Tour selesai → B5.
-- **Risk / Watch:** Komplain saat tour = momen krusial. Jangan defensive. Lihat -> [[content/brand-voice]] untuk handling komplain.
+- **Risk / Watch:** Komplain saat tour = momen krusial. Jangan defensive. Lihat -> [[website/brand-voice]] untuk handling komplain.
 
 #### B5: Post-Tour
 - **Pemicu masuk:** Tour selesai (kembali ke hotel/airport).
@@ -361,7 +361,7 @@ Setiap flow ditulis sebagai *state machine* dengan pemicu eksplisit. Format kons
 - **Pemicu masuk:** Tamu Klook mengirim pertanyaan apa pun pre-tour.
 - **Aksi sistem (otomatisasi tinggi):**
   - Klasifikasi intent: pickup time / what to bring / weather / duration / dress code / dietary / etc.
-  - Match ke template di wiki -> [[content/faq-master]] atau output FAQ -> [[output/faq-2026-05-12-ijen]], [[output/faq-2026-05-12-bromo]], dst.
+  - Match ke template di wiki -> [[website/faq-master]] atau output FAQ -> [[output/faq-2026-05-12-ijen]], [[output/faq-2026-05-12-bromo]], dst.
   - Auto-reply dengan template multilingual (EN default, ID kalau tamu pakai ID).
 - **Aksi manusia (Inan):** 
   - Approve draft (Phase 3) atau review log (Phase 4 ketika auto-send).
@@ -651,7 +651,7 @@ Apa yang **bisa Inan putuskan sendiri**:
 
 ## 9. Brand Voice per Kanal
 
-Tone berbeda berdasarkan audiens. Referensi utama: -> [[content/brand-voice]].
+Tone berbeda berdasarkan audiens. Referensi utama: -> [[website/brand-voice]].
 
 | Kanal | Tone | Contoh frasa pembuka | Contoh frasa yang tidak pas |
 |---|---|---|---|
@@ -661,7 +661,7 @@ Tone berbeda berdasarkan audiens. Referensi utama: -> [[content/brand-voice]].
 | D — Window Travel | Profesional, peer-to-peer, transactional | "Hi Sarah, requesting confirmation for the Bromo trip 18-19 May, 4 pax." | Tone B2C dengan terlalu banyak penjelasan dasar |
 | E — Vendor/Crew | Singkat, instruksional, action-oriented | "Pak Hartono, pickup besok 00:30, 2 tamu Eropa di Kalibaru. OK?" | Kalimat panjang yang tidak action-oriented |
 
-Aturan tegas semua channel (dari -> [[content/brand-voice]]):
+Aturan tegas semua channel (dari -> [[website/brand-voice]]):
 - **Tidak ada generic tourism brochure language.** "Discover paradise" / "magical adventure" = ditolak.
 - **Selalu evidence-led.** "Mr. Sam, Tourist Police officer aktif" — bukan "safety-focused guide."
 - **Hindari hyperbole.** "Best tour in Java" = banned. Pakai data: "rated Excellent on Trustpilot."
@@ -721,7 +721,7 @@ Disusun per kanal + per fase otomatisasi. Semua metric harus *measurable* dari l
 | Customer Eropa kecewa karena response lambat tanpa konteks | Auto-ack off-hours **wajib** sebelum apa pun lain. Ini relief paling cepat di-eksekusi. |
 | Klook customer kira mereka harus deal dengan JVTO untuk perubahan | Welcome message C1 harus tegas redirect ke Klook untuk hal-hal account-level. |
 | Window Travel relationship rusak karena over-automation | Window = manual atau draft-assist saja. Tidak ada auto-reply pernah. |
-| Brand voice drift di auto-reply | Review mingguan: sample 20 pesan auto, audit terhadap -> [[content/brand-voice]]. |
+| Brand voice drift di auto-reply | Review mingguan: sample 20 pesan auto, audit terhadap -> [[website/brand-voice]]. |
 | WA Pro CRM di-ban Meta | Disiplin volume (max rate, random delay), prepare migration playbook ke WhatsApp Cloud API resmi. |
 | Sam tidak punya visibilitas | Tahap pelaporan harian / mingguan (dipisah dari playbook ini, tapi konseptual menempel). |
 

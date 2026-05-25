@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Escort Guide (Senior)",
+    "rate_per_day": 275000
+  },
+  {
+    "name": "Escort Guide (Junior)",
+    "rate_per_day": 250000
+  },
+  {
+    "name": "Driver cum guide",
+    "rate_per_day": 250000
+  },
+  {
+    "name": "Escort Guide",
+    "rate_per_day": 250000
+  },
+  {
+    "name": "Driver only",
+    "rate_per_day": 200000
+  }
+]

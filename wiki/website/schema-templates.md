@@ -45,7 +45,7 @@ memberOf (HPWKI, INDECON)
 
 ## TouristTrip (Tour pages)
 
-**SSOT draw-from**: [[products/packages-full-pricing]] (price, currency) + [[content/faq-master]] (FAQ block) + [[credentials/trust-signals]] §Schema Canonical Values (reviewCount, ratingValue)
+**SSOT draw-from**: [[products/packages-full-pricing]] (price, currency) + [[website/faq-master]] (FAQ block) + [[credentials/trust-signals]] §Schema Canonical Values (reviewCount, ratingValue)
 
 **Required fields:**
 ```
@@ -70,7 +70,7 @@ aggregateRating (ratingValue: 4.8, reviewCount: 51 Trustpilot)
 
 ## FAQPage (Tour and destination pages)
 
-**SSOT draw-from**: [[content/faq-master]] — draw questions relevant to the specific page.
+**SSOT draw-from**: [[website/faq-master]] — draw questions relevant to the specific page.
 
 **Required fields:**
 ```

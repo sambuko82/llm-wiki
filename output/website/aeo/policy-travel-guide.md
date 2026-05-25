@@ -11,7 +11,7 @@ route_coverage: [/policy/booking-payment-cancellation, /policy/inclusions-exclus
 # AEO Blocks — Policy & Travel Guide
 
 *Generated using the **aeo** compilation profile. Each block = one extractable Q&A for AI search engines.*
-*Voice invariants enforced per [[content/brand-voice]] §voice-invariants. All claims cite [[sources/jvto-policy-pack-v6]] or [[sources/jvto-travel-guide-en]].*
+*Voice invariants enforced per [[website/brand-voice]] §voice-invariants. All claims cite [[sources/jvto-policy-pack-v6]] or [[sources/jvto-travel-guide-en]].*
 
 ---
 
@@ -117,7 +117,7 @@ Excluded by default: international or domestic flights, visas, long-distance tra
 ---
 
 **Q: How does the Ijen health screening work at JVTO?**
-For tours that include the Ijen night hike, JVTO arranges health-screening coordination — conducted by licensed medical staff — as required under BBKSDA access regulations (SE.1658/KSA.9/2024). Results are stored digitally with a QR code verified at crater access gates. → [[sources/jvto-travel-guide-en]] §4; [[content/aeo-claims]] C4
+For tours that include the Ijen night hike, JVTO arranges health-screening coordination — conducted by licensed medical staff — as required under BBKSDA access regulations (SE.1658/KSA.9/2024). Results are stored digitally with a QR code verified at crater access gates. → [[sources/jvto-travel-guide-en]] §4; [[website/aeo-claims]] C4
 
 ---
 
@@ -132,7 +132,7 @@ Yes. The same digital screening system used by JVTO guests is available to trave
 ---
 
 **Q: What happens if I fail the Ijen health screening?**
-If medical staff or the JVTO team advise against the hike, that decision is followed for the guest's safety. The climb is cancelled for that individual; alternatives include waiting at base camp. The screening cost is non-refundable as it is a pre-committed service. → [[sources/jvto-policy-pack-v6]] §10; [[content/faq-master]] Q7
+If medical staff or the JVTO team advise against the hike, that decision is followed for the guest's safety. The climb is cancelled for that individual; alternatives include waiting at base camp. The screening cost is non-refundable as it is a pre-committed service. → [[sources/jvto-policy-pack-v6]] §10; [[website/faq-master]] Q7
 
 ---
 
@@ -247,4 +247,4 @@ JVTO collects contact details, participant details, and relevant health or logis
 ---
 
 *End of AEO block file. 30 Q&A blocks covering policy, travel guide, and practical pre-trip topics.*
-*For trust/credential AEO (C1–C9), see [[content/aeo-claims]]. For combined FAQ schema, see [[content/faq-master]].*
+*For trust/credential AEO (C1–C9), see [[website/aeo-claims]]. For combined FAQ schema, see [[website/faq-master]].*

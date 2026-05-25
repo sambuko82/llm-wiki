@@ -116,7 +116,7 @@ The dry season — April through October — offers the most stable trail condit
 
 ### What happens if conditions make the canyon descent unsafe?
 
-If the trail is too hazardous to descend safely, JVTO guides will direct guests to the rim viewpoint instead. The rim provides a full panoramic view of the falls and is a worthwhile visit in its own right. The decision to close the descent is made by the on-site JVTO guide; JVTO's policy follows the safety-first principle documented in [[content/aeo-claims]] C1. No refund or credit is issued for descent access being unavailable due to safety conditions.
+If the trail is too hazardous to descend safely, JVTO guides will direct guests to the rim viewpoint instead. The rim provides a full panoramic view of the falls and is a worthwhile visit in its own right. The decision to close the descent is made by the on-site JVTO guide; JVTO's policy follows the safety-first principle documented in [[website/aeo-claims]] C1. No refund or credit is issued for descent access being unavailable due to safety conditions.
 
 ---
 
@@ -132,4 +132,4 @@ JVTO uses a Lifetime Travel Credit system for guest-initiated cancellations. Can
 
 ---
 
-*Sources: [[destinations/tumpak-sewu]] · [[content/faq-master]] · [[content/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[products/packages-itineraries]] · [[content/brand-voice]] · [[content/aeo-claims]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[sources/ssot-v6]]*
+*Sources: [[destinations/tumpak-sewu]] · [[website/faq-master]] · [[website/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[products/packages-itineraries]] · [[website/brand-voice]] · [[website/aeo-claims]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[sources/ssot-v6]]*

@@ -780,7 +780,7 @@ If you have a specific need, just let us know — we'll do our best within our o
 
 - **Harga**: Jangan masukkan angka harga di template — selalu ambil dari -> [[products/packages-full-pricing]] untuk pax tier yang sesuai sebelum kirim.
 - **Silver warning**: Selalu sertakan di H-7 reminder untuk paket Ijen. Sumber: -> [[sources/jvto-travel-guide-en]] §packing.
-- **Ijen first Friday**: Cek jadwal penutupan rutin (setiap Jumat pertama bulan) sebelum konfirmasi tanggal. Sumber: -> [[content/operational-facts]] §ijen-closure.
-- **Pickup timing**: Day 1 latest pickup 16:00 WIB. Last-day flight jangan sebelum 18:00 WIB (20:00 WIB lebih aman). Sumber: -> [[content/operational-facts]] §arrival-departure.
+- **Ijen first Friday**: Cek jadwal penutupan rutin (setiap Jumat pertama bulan) sebelum konfirmasi tanggal. Sumber: -> [[website/operational-facts]] §ijen-closure.
+- **Pickup timing**: Day 1 latest pickup 16:00 WIB. Last-day flight jangan sebelum 18:00 WIB (20:00 WIB lebih aman). Sumber: -> [[website/operational-facts]] §arrival-departure.
 - **GDPR rule**: Jangan minta data paspor, kondisi medis, atau ukuran sepatu sebelum DP diterima. Sumber: -> [[sources/comm-management-theory]] §GDPR.
 - **Authority check**: Jika customer bilang "saya perlu konsultasikan dulu" → set follow-up reminder 48 jam, jangan push. Sumber: BANT-A.

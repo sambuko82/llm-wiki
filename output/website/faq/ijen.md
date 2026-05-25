@@ -60,7 +60,7 @@ Blue fire at Kawah Ijen is a natural optical phenomenon caused by ignited sulfur
 
 ### Is Blue Fire guaranteed?
 
-No. Blue Fire is a natural phenomenon subject to weather and gas activity. JVTO designs itineraries around the optimal viewing window but cannot guarantee visibility of any natural phenomenon. Guests are briefed on this before booking. The canonical answer from JVTO's policy documents: "Blue Fire is a natural phenomenon subject to weather and gas activity." — [[destinations/kawah-ijen]], [[content/brand-voice]] §voice-invariants.
+No. Blue Fire is a natural phenomenon subject to weather and gas activity. JVTO designs itineraries around the optimal viewing window but cannot guarantee visibility of any natural phenomenon. Guests are briefed on this before booking. The canonical answer from JVTO's policy documents: "Blue Fire is a natural phenomenon subject to weather and gas activity." — [[destinations/kawah-ijen]], [[website/brand-voice]] §voice-invariants.
 
 ### What should I realistically expect on an Ijen night hike?
 
@@ -164,4 +164,4 @@ Yes. JVTO is an official ISIC provider (Provider ID 259268, verifiable at isic.o
 
 ---
 
-*Sources: [[content/faq-master]] · [[destinations/kawah-ijen]] · [[people/dr-ahmad-irwandanu]] · [[content/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[content/brand-voice]] · [[content/aeo-claims]] · [[credentials/trust-signals]] · [[sources/ssot-v6]]*
+*Sources: [[website/faq-master]] · [[destinations/kawah-ijen]] · [[people/dr-ahmad-irwandanu]] · [[website/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[website/brand-voice]] · [[website/aeo-claims]] · [[credentials/trust-signals]] · [[sources/ssot-v6]]*

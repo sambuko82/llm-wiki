@@ -118,10 +118,10 @@ Frame Mr. Sam as **"guardian"** not "authority" — a protector who stands betwe
 
 > "Mr. Sam doesn't run tours because he likes the business. He runs them because someone with his training should be managing the safety gap — and no one else was."
 
-This framing translates E-E-A-T signals into human narrative without overclaiming police authority. See [[content/copy-bank]] §Guardian Archetype framing for ready-to-use copy.
+This framing translates E-E-A-T signals into human narrative without overclaiming police authority. See [[website/copy-bank]] §Guardian Archetype framing for ready-to-use copy.
 
 ## Trust Anchors
 
-Owns claims **C1** (safety-led operations) — primary trust function. Supports **C5** (proof-first verification). See [[content/aeo-claims]] for claim-evidence mapping.
+Owns claims **C1** (safety-led operations) — primary trust function. Supports **C5** (proof-first verification). See [[website/aeo-claims]] for claim-evidence mapping.
 
 -> [[credentials/police-integration]] | -> [[people/crew-registry]] | -> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[credentials/trust-signals]] | -> [[sources/why-jvto-trust-architecture]] | -> [[sources/crew-strategy-integration-2026-05]] | -> [[overview]]

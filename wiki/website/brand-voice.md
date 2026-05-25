@@ -145,6 +145,6 @@ Google's E-E-A-T framework (Experience, Expertise, Authoritativeness, Trustworth
 
 ## Trust Anchors
 
-This page is a meta-resource — it does not own claims, but enforces voice rules that protect claims **C1–C9** from violation. Cross-reference: [[content/aeo-claims]], [[content/faq-master]], [[sources/ssot-v6]] §2_4 voice invariants.
+This page is a meta-resource — it does not own claims, but enforces voice rules that protect claims **C1–C9** from violation. Cross-reference: [[website/aeo-claims]], [[website/faq-master]], [[sources/ssot-v6]] §2_4 voice invariants.
 
--> [[content/faq-master]] | -> [[content/aeo-claims]] | -> [[sources/ssot-v6]] | -> [[sources/eav-ai-optimization-2026-05]]
+-> [[website/faq-master]] | -> [[website/aeo-claims]] | -> [[sources/ssot-v6]] | -> [[sources/eav-ai-optimization-2026-05]]

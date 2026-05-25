@@ -132,4 +132,4 @@ JVTO uses a Lifetime Travel Credit system for guest-initiated cancellations. Can
 
 ---
 
-*Sources: [[destinations/madakaripura]] · [[content/faq-master]] · [[content/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[products/packages-itineraries]] · [[content/brand-voice]] · [[content/aeo-claims]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[sources/ssot-v6]]*
+*Sources: [[destinations/madakaripura]] · [[website/faq-master]] · [[website/operational-facts]] · [[products/packages-overview]] · [[products/packages-full-pricing]] · [[products/packages-itineraries]] · [[website/brand-voice]] · [[website/aeo-claims]] · [[credentials/trust-signals]] · [[credentials/legal-licenses]] · [[sources/ssot-v6]]*
