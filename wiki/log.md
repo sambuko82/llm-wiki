@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-25] ingest | Gemini Trust Fortress HTML Mockup
+
+Pages created: [[sources/gemini-trust-fortress-mockup]]. Key additions: extracted design tokens (police/forensic color system), typography stack (DM Serif Display / Inter / JetBrains Mono), visual effects (scanline, noise texture), embedded schema pattern. Flagged as design reference only — not canonical design system.
+
+---
+
 ## [2026-05-25] ingest | GPX Trail Data — Formal Source Page
 
 Pages created: [[sources/gpx-destination-data]]. Key additions: consolidated reference for all 5 AllTrails GPX recordings — bounding boxes, track point counts, elevation ranges, named waypoints. Data already extracted to destination pages during prior session; this formalizes the source page for index completeness.
