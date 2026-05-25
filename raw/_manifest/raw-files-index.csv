@@ -1,0 +1,58 @@
+raw_id,file_name,file_type,source_type,primary_domain,visibility,wiki_source_page,ingest_status,notes
+R001,JVTO_FINAL_CLEAN_SSOT.json,json,ssot-update,products,internal,sources/ssot-v6,ingested,Canonical SSOT v6.0 — 471KB 13 domains
+R002,db_export_raw.json,json,ssot-update,products,internal,sources/db-export-2026-05,ingested,Live DB export 14 categories
+R003,Tourist Police-Led Private Volcano Tours in East Java.md,md,web-clip,website,public,sources/jvto-homepage-clip,ingested,Homepage clip via Obsidian Web Clipper
+R004,JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md,md,pdf-doc,products,public_sensitive,sources/jvto-policy-pack-v6,ingested,3 customer-facing policies
+R005,JVTO_Travel_Guide_PUBLISHABLE_EN_2026-01-18.md,md,pdf-doc,website,public,sources/jvto-travel-guide-en,ingested,7-route travel guide EN copy
+R006,JVTO_Travel_Guide_SSOT_EN.json,json,ssot-update,products,internal,sources/jvto-travel-guide-en,ingested,Travel guide SSOT JSON (bundled with R005)
+R007,llm-kb-tooling-guide.md,md,ops-note,operations,internal,sources/llm-kb-tooling-guide,ingested,Karpathy-inspired KB patterns
+R008,sitemap.xml,xml,url-list,seo,internal,sources/sitemap-2026-05,ingested,44 URLs — live XML sitemap
+R009,JVTO SSOT Image Inventory.md,md,proof-asset,website,internal,sources/ssot-image-asset-map,ingested,54 images — human-readable view
+R010,JVTO SSOT Image Asset Map.md,md,proof-asset,website,internal,sources/ssot-image-asset-map,ingested,54 images — markdown asset map
+R011,jvto_image_asset_map.json,json,proof-asset,website,internal,sources/ssot-image-asset-map,ingested,54 images — machine-readable JSON
+R012,routes.csv,csv,ssot-update,products,internal,sources/route-data-csv,ingested,43 named day-segments
+R013,route_details.csv,csv,ssot-update,products,internal,sources/route-data-csv,ingested,217 timed activity rows
+R014,API_Documentation_JVTO.pdf,pdf,pdf-doc,integrations,internal,sources/wa-pro-crm-api,ingested,WA Pro CRM REST API v1 — 4 pages
+R015,Kawah_Ijen_Volcano.gpx,gpx,structured-data,destinations,internal,sources/gpx-destination-data,ingested,AllTrails GPX — 673 track pts
+R016,Gunung_Bromo.gpx,gpx,structured-data,destinations,internal,sources/gpx-destination-data,ingested,AllTrails GPX — 809 track pts
+R017,Air_Terjun_Tumpak_Sewu.gpx,gpx,structured-data,destinations,internal,sources/gpx-destination-data,ingested,AllTrails GPX — rim trace
+R018,Madakaripura_Waterfalls.gpx,gpx,structured-data,destinations,internal,sources/gpx-destination-data,ingested,AllTrails GPX — waterfall trail
+R019,Pantai_dan_Tanjung_Papuma.gpx,gpx,structured-data,destinations,internal,sources/gpx-destination-data,ingested,AllTrails GPX — coastal trail
+R020,the_GEO_and_AEO_recommendations.md,md,seo-audit,seo,internal,sources/geo-aeo-strategy-2026-05,batch-ingested,GEO/AEO implementation guidelines
+R021,Java Volcano Tour Optimization Audit.md,md,seo-audit,seo,internal,sources/geo-aeo-strategy-2026-05,batch-ingested,SEO+GEO+AEO full spectrum audit
+R022,JVTO SEO Audit — Full Site Review.md,md,seo-audit,seo,internal,sources/seo-audit-2026-05,batch-ingested,Full site SEO audit (confirmed duplicate)
+R023,Java Volcano Tour SEO Audit (1).md,md,seo-audit,seo,internal,sources/seo-audit-2026-05,batch-ingested,SEO audit variant
+R024,SEO Audit for Java Volcano Tours.md,md,seo-audit,seo,internal,sources/geo-aeo-strategy-2026-05,batch-ingested,GEO digital discoverability audit
+R025,SEO and UX for Java Volcano Tours.md,md,seo-audit,seo,internal,sources/seo-ux-integration-2026-05,batch-ingested,SEO+UX convergence analysis
+R026,Website Data Transformation to EAV.md,md,seo-audit,seo,internal,sources/eav-ai-optimization-2026-05,batch-ingested,EAV data transformation report
+R027,Optimasi AI Java Volcano Tour Operator.md,md,seo-audit,seo,internal,sources/eav-ai-optimization-2026-05,batch-ingested,AI optimization audit (BI)
+R028,Competitor Analysis for Website Redesign (1).md,md,web-clip,seo,internal,sources/competitor-design-analysis-2026-05,batch-ingested,MBA + G Adventures design benchmark
+R029,Analisis Data dan Konsolidasi WHY JVTO.md,md,web-clip,website,internal,sources/why-jvto-trust-architecture,batch-ingested,WHY JVTO trust audit (BI)
+R030,Why_JVTO_Page_Registry_ Technical & Content Blueprint.md,md,web-clip,website,internal,sources/why-jvto-trust-architecture,batch-ingested,WHY JVTO page registry v2.0 (EN)
+R031,Integrasi Data SDM ke Strategi Why JVTO.md,md,web-clip,website,internal,sources/why-jvto-trust-architecture,batch-ingested,HR→trust strategy integration (BI)
+R032,Transformasi Rekomendasi Menjadi Registry.md,md,web-clip,website,internal,sources/why-jvto-trust-architecture,batch-ingested,Recommendation→registry transform (BI)
+R033,The_JVTO_Digital_Trust_Fortress__A_Technical___Content_Implementation_Blueprint.md,md,web-clip,website,internal,sources/digital-trust-fortress-blueprint,batch-ingested,Next.js trust fortress architecture
+R034,____WIREFRAME_BLUEPRINT__HALAMAN__WHY_JVTO___THE_HUB_.md,md,web-clip,website,internal,sources/why-jvto-trust-architecture,batch-ingested,WHY JVTO wireframe blueprint
+R035,Laporan Konsolidasi Strategis_ Transformasi Aset JVTO Menjadi Data Terstruktur.md,md,ops-note,operations,internal,sources/crew-strategy-integration-2026-05,batch-ingested,Crew HR→trust pillar strategy (BI)
+R036,gemini-code-1779633053483.html,html,web-clip,website,internal,sources/gemini-trust-fortress-mockup,ingested,Gemini HTML mockup — design reference only
+R037,UX_UI Design Review for JVTO (1).md,md,seo-audit,seo,internal,sources/seo-ux-integration-2026-05,batch-ingested,UX/UI design review + strategic analysis
+R038,FINANCE/1 Day Bromo Midnight Experience from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 1D Bromo Midnight SUB
+R039,FINANCE/1 Day Surabaya - Mount Bromo Sunrise Tour.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 1D Bromo Sunrise SUB
+R040,FINANCE/2 Day Bromo Sunrise Adventure from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 2D Bromo SUB
+R041,FINANCE/2 Day Ijen Blue Fire Expedition from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 2D Ijen SUB
+R042,FINANCE/3 Day Bromo, Madakaripura Waterfall & Ijen Overland from Surabaya to Bali.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 3D SUB→Bali overland
+R043,FINANCE/3 Day Ijen, Bromo & Madakaripura Waterfall Discovery from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 3D Ijen-Bromo-Mada SUB
+R044,FINANCE/3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 3D Bali→SUB
+R045,FINANCE/3 Day Taman Safari Prigen, Bromo & Madakaripura Family Adventure from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 3D Safari family SUB
+R046,FINANCE/4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 4D Ijen-Bromo-Mada SUB
+R047,FINANCE/4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 4D Bali→SUB Papuma
+R048,FINANCE/4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Journey from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 4D SUB Papuma
+R049,FINANCE/4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 4D SUB→Bali
+R050,FINANCE/5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 5D SUB Malang
+R051,FINANCE/5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 5D Bali→SUB Papuma
+R052,FINANCE/5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Nature Trip from Surabaya.xlsx,xlsx,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,Package COGS — 5D SUB Papuma
+R053,FINANCE/rate_cards/Copy of accommodation-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,23 hotels 100+ room configs
+R054,FINANCE/rate_cards/Copy of activities-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,27 activity cost items
+R055,FINANCE/rate_cards/Copy of crew-roles-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,5 crew role rates
+R056,FINANCE/rate_cards/Copy of other-activities-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,10 operational cost items
+R057,FINANCE/rate_cards/Copy of vehicle-rate-card.json,json,finance-spreadsheet,finance,internal,sources/finance-rate-cards,batch-ingested,6 vehicle type rates
