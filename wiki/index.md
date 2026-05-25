@@ -1,9 +1,9 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-05-24
-total_pages: 64
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05]
+last_updated: 2026-05-25
+total_pages: 67
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup]
 ---
 
 # JVTO Wiki — Content Index
@@ -44,6 +44,9 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/digital-trust-fortress-blueprint]] — Digital Trust Fortress Next.js blueprint (2026-05-24). Full file tree, component registry (AuthorityShield/ForensicGallery/CrewCard), API endpoints, evidence asset structure, Costly Signals principle for police docs.
 - [[sources/crew-strategy-integration-2026-05]] — Crew→trust-pillar strategy (2026-05-24). 7-pillar crew mapping table, crew archetypes with IDs (Joyo/Yandi/Fredi/Gufron/Anjas), 4-zone team page structure, Guardian Mindset principle.
 - [[sources/competitor-design-analysis-2026-05]] — MBA + G Adventures design benchmark (2026-05-24). MBA Level 1-7 difficulty, 67% CAC reduction / 50% RPB increase 2018-2020, URL persistence `/[locale]/adventures/[slug]/`. GA REST API SSOT, `/trips/[name]/[id]/` ID persistence, looptail brand system.
+- [[sources/wa-pro-crm-api]] — WhatsApp Pro CRM REST API v1 (2026-05-25). 6 endpoints (send_message, send_image_url, send_file_url, groups, send_template, checking_key), error codes, webhook formats for 6 message types. Powers WA automation playbook.
+- [[sources/gpx-destination-data]] — AllTrails GPX recordings ×5 (2026-05-25). Consolidated reference: bounding boxes, elevation ranges, waypoints for Ijen/Bromo/Tumpak Sewu/Madakaripura/Papuma. Data already in destination pages.
+- [[sources/gemini-trust-fortress-mockup]] — Gemini-generated HTML mockup (2026-05-25). "Digital Trust Fortress" visual concept for /why-jvto. Design tokens (police.900/accent, forensic.light/success), DM Serif Display + Inter + JetBrains Mono stack. Design reference only.
 
 ## Destinations
 
