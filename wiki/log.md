@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-25] ingest | GPX Trail Data — Formal Source Page
+
+Pages created: [[sources/gpx-destination-data]]. Key additions: consolidated reference for all 5 AllTrails GPX recordings — bounding boxes, track point counts, elevation ranges, named waypoints. Data already extracted to destination pages during prior session; this formalizes the source page for index completeness.
+
+---
+
 ## [2026-05-25] ingest | WhatsApp Pro CRM API Documentation
 
 Pages created: [[sources/wa-pro-crm-api]]. Pages updated: [[ops/2026-05-14-whatsapp-operations-playbook]], [[ops/2026-05-14-whatsapp-rules-engine]] (added source reference). Key additions: 6 REST endpoints (send_message, send_image_url, send_file_url, groups, send_template, checking_key), error codes (200/1002-1006), webhook payload formats for 6 message types (text, image, audio, document, location, contact). API credentials redacted from wiki — stored in WA Dashboard only.
