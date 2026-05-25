@@ -143,4 +143,4 @@ Each crew member in reviews should become a `Person` entity linked to the Organi
 
 ---
 
--> [[ops/geo-aeo-strategy]] | -> [[ops/seo-strategy]] | -> [[website/aeo-claims]] | -> [[website/schema-templates]]
+-> [[seo/geo-aeo-strategy]] | -> [[seo/seo-strategy]] | -> [[website/aeo-claims]] | -> [[website/schema-templates]]

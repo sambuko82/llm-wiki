@@ -7,7 +7,7 @@ sources: [geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-audit-2026-
 
 # GEO/AEO Strategy
 
-*Companion to [[ops/seo-strategy]]. Where seo-strategy covers traditional search rankings, this page covers AI answer engine visibility: Google AI Overviews, Perplexity, ChatGPT, and similar.*
+*Companion to [[seo/seo-strategy]]. Where seo-strategy covers traditional search rankings, this page covers AI answer engine visibility: Google AI Overviews, Perplexity, ChatGPT, and similar.*
 
 ---
 
@@ -91,7 +91,7 @@ Two disciplines:
 
 Plant these as explicit Q&A blocks:
 - "What permits for Ijen?" → IDR 100,000 weekday / IDR 150,000 weekend (foreign)
-- "Is Bromo safe?" → See [[ops/seo-strategy]] §Silo 3 `bromo-ijen-status-today`
+- "Is Bromo safe?" → See [[seo/seo-strategy]] §Silo 3 `bromo-ijen-status-today`
 - "How to get from Bali to Bromo?" → Ferry table with Gilimanuk→Ketapang timestamps
 - "Can I cancel if volcano closes?" → Travel Credit (not cash refund), 48-hour window
 
@@ -148,4 +148,4 @@ Pattern to scale: long-tail + branded + regulatory intent + low competition. The
 
 ---
 
--> [[ops/seo-strategy]] | -> [[sources/geo-aeo-strategy-2026-05]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[website/schema-templates]] | -> [[website/aeo-claims]]
+-> [[seo/seo-strategy]] | -> [[sources/geo-aeo-strategy-2026-05]] | -> [[sources/eav-ai-optimization-2026-05]] | -> [[website/schema-templates]] | -> [[website/aeo-claims]]

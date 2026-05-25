@@ -70,7 +70,8 @@
       "PowerShell(New-Item *)",
       "Bash(ls -la output/.gitkeep)",
       "Bash(echo \"exit: $?\")",
-      "Bash(xargs sed -i 's/\\\\[\\\\[content\\\\//[[website\\\\//g')"
+      "Bash(xargs sed -i 's/\\\\[\\\\[content\\\\//[[website\\\\//g')",
+      "Bash(xargs sed -i -e 's/\\\\[\\\\[ops\\\\/seo-strategy/[[seo\\\\/seo-strategy/g' -e 's/\\\\[\\\\[ops\\\\/geo-aeo-strategy/[[seo\\\\/geo-aeo-strategy/g' -e 's/\\\\[\\\\[ops\\\\/competitors/[[seo\\\\/competitors/g' -e 's/\\\\[\\\\[ops\\\\/why-jvto-architecture/[[seo\\\\/why-jvto-architecture/g' -e 's/\\\\[\\\\[ops\\\\/redirect-map/[[seo\\\\/redirect-map/g' -e 's/\\\\[\\\\[ops\\\\/2026-05-14-whatsapp-operations-playbook/[[whatsapp\\\\/operations-playbook/g' -e 's/\\\\[\\\\[ops\\\\/2026-05-14-whatsapp-rules-engine/[[whatsapp\\\\/rules-engine/g' -e 's/\\\\[\\\\[ops\\\\/canned-responses/[[whatsapp\\\\/canned-responses/g')"
     ]
   }
 }

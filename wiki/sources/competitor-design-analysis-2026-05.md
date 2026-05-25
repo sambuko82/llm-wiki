@@ -111,4 +111,4 @@ Much Better Adventures (MBA) and G Adventures (GA) are **Tier 3 global benchmark
 
 ---
 
--> [[ops/competitors]] | -> [[ops/seo-strategy]] | -> [[ops/geo-aeo-strategy]]
+-> [[seo/competitors]] | -> [[seo/seo-strategy]] | -> [[seo/geo-aeo-strategy]]

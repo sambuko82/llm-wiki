@@ -12,7 +12,7 @@ companion: 2026-05-14-whatsapp-rules-engine
 > Audiens utama: Sam (founder, sebagai pengambil keputusan), Inan (staf operasional), David (IT, untuk membangun tooling pendukung).
 > Dokumen ini bukan spek teknis. Dokumen ini adalah *peta operasi*. Spek teknis dibuat di Claude Code setelah playbook ini disetujui.
 >
-> **Untuk eksekusi langsung (AI atau staf baru):** baca companion document -> [[ops/2026-05-14-whatsapp-rules-engine]] — logika murni, tanpa filosofi, dapat diikuti tanpa interpretasi.
+> **Untuk eksekusi langsung (AI atau staf baru):** baca companion document -> [[whatsapp/rules-engine]] — logika murni, tanpa filosofi, dapat diikuti tanpa interpretasi.
 
 ---
 
@@ -62,7 +62,7 @@ Playbook ini menyusun ulang lima alur WhatsApp tersebut menjadi sistem yang **te
 | AEO claims | -> [[website/aeo-claims]] | Klaim yang aman dikutip publik |
 | Copy bank | -> [[website/copy-bank]] | Frasa & template terverifikasi |
 | Operational facts | -> [[website/operational-facts]] | Fakta operasional (jam, lokasi, harga) |
-| **Canned responses** | -> [[ops/canned-responses]] | **Template WA + email siap kirim per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN** |
+| **Canned responses** | -> [[whatsapp/canned-responses]] | **Template WA + email siap kirim per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN** |
 | Destinations | -> [[destinations/kawah-ijen]], [[destinations/mount-bromo]], [[destinations/tumpak-sewu]], [[destinations/madakaripura]], [[destinations/papuma-beach]] | Info destinasi |
 | Pricing & itinerary | -> [[products/packages-full-pricing]], -> [[products/packages-itineraries]] | Acuan kuotasi (manual, bukan otomatis) |
 | Policy pack | -> [[sources/jvto-policy-pack-v6]] | Booking, payment, cancellation rules |
@@ -206,7 +206,7 @@ Setiap flow ditulis sebagai *state machine* dengan pemicu eksplisit. Format kons
 - **Pemicu masuk:** Inan/Sam sudah merespons dan customer balas balik dengan info konkret (destinasi, tanggal, pax).
 - **Aksi sistem:** Update state ke `qualified`. Log info dasar: destinasi, tanggal (jika ada), pax (jika ada), bahasa, asal negara.
 - **Aksi manusia (Inan):** 
-  - Konfirmasi 3 hal minimum: **destinasi + tanggal + pax**. Gunakan BANT qualification framework: N (kebutuhan + tipe tur), T (tanggal pasti vs tentatif), B (preferensi hotel sebagai proxy budget), A (pengambil keputusan). Template skrip: -> [[ops/canned-responses]] §Stage-2-Discovery.
+  - Konfirmasi 3 hal minimum: **destinasi + tanggal + pax**. Gunakan BANT qualification framework: N (kebutuhan + tipe tur), T (tanggal pasti vs tentatif), B (preferensi hotel sebagai proxy budget), A (pengambil keputusan). Template skrip: -> [[whatsapp/canned-responses]] §Stage-2-Discovery.
   - Kalau pricing question → **eskalasi ke Sam** atau pakai pricing dari -> [[products/packages-full-pricing]] (tidak boleh improvisasi harga).
   - Kalau customer minta "kasih saya itinerary lengkap" → kirim itinerary dari -> [[products/packages-itineraries]].
 - **Pemicu keluar:** 
@@ -578,7 +578,7 @@ WA Pro CRM yang dibangun David mendukung multi-nomor. Pemisahan fisik di tingkat
 WA Pro CRM perlu:
 - Register 3 nomor terpisah (3 set `api_key` + `number_key` di WA Pro CRM dashboard).
 - Webhook handler bisa identifikasi nomor mana yang menerima (lihat `number_key` di payload incoming).
-- Routing logic di rules engine (-> [[ops/2026-05-14-whatsapp-rules-engine]] Step 2) → default channel berbeda per nomor.
+- Routing logic di rules engine (-> [[whatsapp/rules-engine]] Step 2) → default channel berbeda per nomor.
 - Konfigurasi grup WhatsApp di Nomor 3: terpisah per kategori (hotel group, driver group, guide group), atau 1-on-1 per vendor.
 
 #### Migration Path (Existing Operation → Multi-Number)

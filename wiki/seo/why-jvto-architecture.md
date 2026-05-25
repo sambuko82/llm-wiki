@@ -97,4 +97,4 @@ Anti-duplication rule: evidence PDFs stored **only** in /public/assets/proof/. A
 
 ---
 
--> [[sources/digital-trust-fortress-blueprint]] | -> [[sources/why-jvto-trust-architecture]] | -> [[ops/geo-aeo-strategy]] | -> [[ops/seo-strategy]]
+-> [[sources/digital-trust-fortress-blueprint]] | -> [[sources/why-jvto-trust-architecture]] | -> [[seo/geo-aeo-strategy]] | -> [[seo/seo-strategy]]

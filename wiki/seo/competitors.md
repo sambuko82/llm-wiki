@@ -113,6 +113,6 @@ See [[sources/competitor-design-analysis-2026-05]] for full analysis.
 
 ## Monitoring Protocol
 
-Monthly spot-check: search 5 target keywords from [[ops/seo-strategy]] and record top 10 SERP positions for JVTO and top 3 competitors. Track in a Google Sheet (outside wiki scope). Flag significant movements in the next health check log.
+Monthly spot-check: search 5 target keywords from [[seo/seo-strategy]] and record top 10 SERP positions for JVTO and top 3 competitors. Track in a Google Sheet (outside wiki scope). Flag significant movements in the next health check log.
 
--> [[ops/seo-strategy]] | -> [[sources/seo-audit-2026-05]]
+-> [[seo/seo-strategy]] | -> [[sources/seo-audit-2026-05]]

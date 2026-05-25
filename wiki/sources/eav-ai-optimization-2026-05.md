@@ -117,4 +117,4 @@ Current JVTO site taxonomy correctly mirrors this (Surabaya hub = 12 packages, B
 
 ---
 
--> [[sources/geo-aeo-strategy-2026-05]] | -> [[ops/geo-aeo-strategy]] | -> [[website/aeo-claims]] | -> [[credentials/trust-signals]]
+-> [[sources/geo-aeo-strategy-2026-05]] | -> [[seo/geo-aeo-strategy]] | -> [[website/aeo-claims]] | -> [[credentials/trust-signals]]

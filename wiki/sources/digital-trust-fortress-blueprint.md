@@ -109,4 +109,4 @@ Police documents (/public/assets/proof/police/) serve as **Costly Signals**:
 
 ---
 
--> [[ops/why-jvto-architecture]] | -> [[sources/why-jvto-trust-architecture]] | -> [[credentials/police-integration]] | -> [[credentials/legal-licenses]]
+-> [[seo/why-jvto-architecture]] | -> [[sources/why-jvto-trust-architecture]] | -> [[credentials/police-integration]] | -> [[credentials/legal-licenses]]

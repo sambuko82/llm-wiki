@@ -67,8 +67,8 @@ Each webhook payload includes: `event: "message"`, `data.from`, `data.fromMe`, `
 
 ## Relevance to Wiki
 
-- Feeds [[ops/2026-05-14-whatsapp-operations-playbook]] — this is the API that powers WhatsApp automation
-- Template endpoint enables canned responses from [[ops/canned-responses]]
+- Feeds [[whatsapp/operations-playbook]] — this is the API that powers WhatsApp automation
+- Template endpoint enables canned responses from [[whatsapp/canned-responses]]
 - Webhook types inform what the WA rules engine can react to
 - `send_template` with `variables` supports personalized booking confirmations, itinerary reminders
 - File/image sending supports post-booking asset delivery (vouchers, maps, medical screening reminders)

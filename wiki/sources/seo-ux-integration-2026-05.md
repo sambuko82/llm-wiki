@@ -68,4 +68,4 @@ Trust platform serving international, often older travelers (premium market): WC
 
 ---
 
--> [[ops/seo-strategy]] | -> [[ops/geo-aeo-strategy]] | -> [[ops/competitors]] | -> [[credentials/trust-signals]]
+-> [[seo/seo-strategy]] | -> [[seo/geo-aeo-strategy]] | -> [[seo/competitors]] | -> [[credentials/trust-signals]]

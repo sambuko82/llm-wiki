@@ -8,7 +8,7 @@ sources: [2026-05-14-whatsapp-operations-playbook, wa-pro-crm-api]
 # JVTO WhatsApp Rules Engine
 
 > Dokumen ini adalah **logika eksekusi murni**. Tidak ada penjelasan filosofi.
-> Untuk konteks & alasan, baca dulu -> [[ops/2026-05-14-whatsapp-operations-playbook]].
+> Untuk konteks & alasan, baca dulu -> [[whatsapp/operations-playbook]].
 > Audiens: AI yang menjalankan classifier/router, David yang membangun sistem, Inan/staf yang perlu rujukan cepat.
 
 ---

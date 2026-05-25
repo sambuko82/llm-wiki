@@ -49,6 +49,6 @@ A complete single-file HTML page implementing the "Digital Trust Fortress" visua
 ## Relevance
 
 - Design reference for jvto-web UI development — not for wiki content production
-- Color system ("police authority + forensic verification") aligns with [[ops/why-jvto-architecture]] hub concept
+- Color system ("police authority + forensic verification") aligns with [[seo/why-jvto-architecture]] hub concept
 - Schema JSON-LD pattern aligns with [[website/schema-templates]] but is a subset
 - Should NOT be treated as canonical design — it's a concept exploration, not an approved design system

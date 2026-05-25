@@ -9,7 +9,7 @@ sources: [seo-audit-2026-05, sitemap-2026-05]
 
 **Purpose**: Map legacy Laravel URL routes to their canonical Next.js SSOT equivalents. This is a **dev handoff document** — the wiki holds the intent; implementation is in `jvto-web` (`next.config.js` or middleware).
 
-**Priority**: Critical (QW-1 in [[ops/seo-strategy]]). Google has indexed both the legacy and new routes at the same domain. Authority dilution and duplicate content penalties are active.
+**Priority**: Critical (QW-1 in [[seo/seo-strategy]]). Google has indexed both the legacy and new routes at the same domain. Authority dilution and duplicate content penalties are active.
 
 ---
 
@@ -77,4 +77,4 @@ Fix: ensure the meta description template converts route segments to human-reada
 
 ---
 
--> [[ops/seo-strategy]] | -> [[sources/sitemap-2026-05]] | -> [[sources/seo-audit-2026-05]]
+-> [[seo/seo-strategy]] | -> [[sources/sitemap-2026-05]] | -> [[sources/seo-audit-2026-05]]

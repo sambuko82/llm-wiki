@@ -54,7 +54,7 @@ Canonical tags ✅ · Open Graph ✅ · Twitter cards ✅ · robots meta ✅ · 
 
 ### Priority keyword targets
 
-See [[ops/seo-strategy]] for the full 15-term table with difficulty ratings. High-priority uncontested terms:
+See [[seo/seo-strategy]] for the full 15-term table with difficulty ratings. High-priority uncontested terms:
 - `ijen health certificate` — Low difficulty, JVTO most authoritative
 - `BBKSDA SE 1658` — Very Low difficulty, JVTO only source
 - `madakaripura waterfall tour` — Medium difficulty, strong opportunity
@@ -62,7 +62,7 @@ See [[ops/seo-strategy]] for the full 15-term table with difficulty ratings. Hig
 
 ### Competitive positioning
 
-OTAs (Klook, GetYourGuide, Viator, Tripadvisor) + aged-domain operators (bromotour.com since 1998, tourmountbromo.com 10+ years) own the high-volume commercial SERPs. Head-on competition is 12-18 months. Fast wins: long-tail + branded + intent-rich queries. See [[ops/competitors]] for full tier map.
+OTAs (Klook, GetYourGuide, Viator, Tripadvisor) + aged-domain operators (bromotour.com since 1998, tourmountbromo.com 10+ years) own the high-volume commercial SERPs. Head-on competition is 12-18 months. Fast wins: long-tail + branded + intent-rich queries. See [[seo/competitors]] for full tier map.
 
 ---
 
@@ -95,7 +95,7 @@ Full schema spec: [[website/schema-templates]] (to be created).
 
 ## Content Gap Map
 
-Full silo + gap table: [[ops/seo-strategy]].
+Full silo + gap table: [[seo/seo-strategy]].
 
 ### Silo 3 (Regulatory + Safety — uncontested moat):
 - Most pages already have wiki source material
@@ -120,7 +120,7 @@ Full silo + gap table: [[ops/seo-strategy]].
 
 ## Quick Wins Not in Wiki Scope (Dev Handoffs)
 
-See [[ops/redirect-map]] for the 301 redirect table. All other QW items (footer fix, meta description template, schema embed, GSC submission) are `jvto-web` tasks.
+See [[seo/redirect-map]] for the 301 redirect table. All other QW items (footer fix, meta description template, schema embed, GSC submission) are `jvto-web` tasks.
 
 ---
 
@@ -128,4 +128,4 @@ See [[ops/redirect-map]] for the 301 redirect table. All other QW items (footer 
 
 This source summary was created from the uploaded audit document. The audit itself lacked Ahrefs data; exact keyword volumes are estimated. When Ahrefs MCP access is restored, this audit's estimates can be quantified. Key operational guidance (redirect map, schema spec, competitor table, content silo map) is valid regardless of volume precision.
 
--> [[ops/seo-strategy]] | -> [[ops/competitors]] | -> [[ops/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[credentials/trust-signals]]
+-> [[seo/seo-strategy]] | -> [[seo/competitors]] | -> [[seo/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[credentials/trust-signals]]

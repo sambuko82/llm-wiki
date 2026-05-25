@@ -14,7 +14,7 @@ companion: 2026-05-14-whatsapp-operations-playbook
 > **Rule**: Jangan kirim quotation sebelum 3 komponen terkunci: tanggal pasti + jumlah pax + preferensi hotel.
 > **Max 2 opsi** di stage Proposal — tidak lebih.
 
-Untuk konteks channel dan state machine lengkap → [[ops/2026-05-14-whatsapp-operations-playbook]]
+Untuk konteks channel dan state machine lengkap → [[whatsapp/operations-playbook]]
 Untuk teori di balik framework ini → [[sources/comm-management-theory]]
 
 ---

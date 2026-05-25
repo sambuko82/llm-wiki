@@ -26,7 +26,7 @@ Global sales/support standard. Purpose: filter non-buyers sebelum mengalokasikan
 
 **Rule:** Kunci 3 items sebelum kirim quotation: **tanggal pasti + jumlah pax + preferensi hotel.** Quotation sebelum 3 items terkunci = pekerjaan berulang (rework).
 
-**BANT × Rules Engine mapping:** B component maps ke STEP 4 classify intent di -> [[ops/2026-05-14-whatsapp-rules-engine]]. Potential field upgrade: tambah `bant_t_confirmed` boolean di `wa_conversations` untuk flag cold vs hot lead.
+**BANT × Rules Engine mapping:** B component maps ke STEP 4 classify intent di -> [[whatsapp/rules-engine]]. Potential field upgrade: tambah `bant_t_confirmed` boolean di `wa_conversations` untuk flag cold vs hot lead.
 
 ---
 
@@ -59,7 +59,7 @@ Standard global: selesaikan pertanyaan atau masalah customer **pada kontak perta
 | Instant Messaging (WhatsApp/Live Chat) | Maks **2–5 menit** respons pertama | Biasanya diotomatisasi bot |
 | Email Inquiry | Maks **2–4 jam** hari kerja | Untuk draft itinerary awal + quotation |
 
-**JVTO current SLA** (per -> [[ops/2026-05-14-whatsapp-operations-playbook]] §5):
+**JVTO current SLA** (per -> [[whatsapp/operations-playbook]] §5):
 - Channel A (inquiry): <30 menit business hours, <6 jam off-hours (dengan auto-ack)
 - JVTO support hours: **08:00–22:00 WIB** daily
 
@@ -117,7 +117,7 @@ Standar internasional untuk complaint handling. Dalam konteks pra-booking: catat
 | **5. On-tour** | WA Group (guide + back-office + tamu), BMKG/MAGMA feed | Health Screening Pass, Schedule Alerts, Incident Report | Tour Leader + Inan |
 | **6. Post-tour** | Automated feedback trigger (24hr post-tour), CRM retargeting | Verified Review (Trustpilot/Google), CRM tag `Alumni - Promoter` | Customer Relations |
 
-Template scripts per stage: -> [[ops/canned-responses]]
+Template scripts per stage: -> [[whatsapp/canned-responses]]
 
 ---
 

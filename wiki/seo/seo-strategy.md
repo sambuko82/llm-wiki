@@ -173,7 +173,7 @@ These are SEO-optimized titles derived from the audit. Apply when generating or 
 
 | # | Action | Owner | Impact | Status |
 |---|---|---|---|---|
-| QW-1 | Build 301 redirect map from legacy → SSOT routes | Dev | Critical | See [[ops/redirect-map]] — table ready |
+| QW-1 | Build 301 redirect map from legacy → SSOT routes | Dev | Critical | See [[seo/redirect-map]] — table ready |
 | QW-2 | Fix footer: `/destinations` → `/destinations/{slug}` | Dev | High | Pending dev |
 | QW-3 | Fix meta description template "From-surabaya" → "Surabaya" | Dev | High | Pending dev |
 | QW-4 | Submit updated sitemap.xml in GSC (legacy URLs excluded) | Sam | High | Pending |
@@ -192,7 +192,7 @@ These are SEO-optimized titles derived from the audit. Apply when generating or 
 
 ## GEO/AEO Extension
 
-*Traditional SEO (above) covers blue-link rankings. For AI answer engine visibility (Google AI Overviews, Perplexity, ChatGPT), see [[ops/geo-aeo-strategy]].*
+*Traditional SEO (above) covers blue-link rankings. For AI answer engine visibility (Google AI Overviews, Perplexity, ChatGPT), see [[seo/geo-aeo-strategy]].*
 
 **Already confirmed #1 for answer-engine-style queries:**
 - "tourist police bromo tour"
@@ -200,7 +200,7 @@ These are SEO-optimized titles derived from the audit. Apply when generating or 
 
 **Pattern to scale**: long-tail + branded + regulatory intent (e.g., "BBKSDA SE 1658", "ijen health certificate") — no OTA competition in these query clusters.
 
-**Key action**: Implement TL;DR Summary Block on homepage (after H1) + complete Organization JSON-LD with SHA-256 PropertyValues and press `sameAs` links — see [[ops/geo-aeo-strategy]] for full implementation checklist.
+**Key action**: Implement TL;DR Summary Block on homepage (after H1) + complete Organization JSON-LD with SHA-256 PropertyValues and press `sameAs` links — see [[seo/geo-aeo-strategy]] for full implementation checklist.
 
 **Sources**: [[sources/geo-aeo-strategy-2026-05]] | [[sources/eav-ai-optimization-2026-05]] | [[sources/seo-ux-integration-2026-05]]
 
@@ -219,4 +219,4 @@ If QW-1 through QW-14 are executed in Weeks 1–2:
 
 ## Related Ops Pages
 
--> [[ops/competitors]] | -> [[ops/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[sources/seo-audit-2026-05]]
+-> [[seo/competitors]] | -> [[seo/redirect-map]] | -> [[ops/compilation-profiles]] | -> [[sources/seo-audit-2026-05]]

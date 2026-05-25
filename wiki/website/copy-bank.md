@@ -120,6 +120,6 @@ JVTO founder framing is **"guardian"** not "authority" — protector who stands 
 | Spoke | `/why-jvto/reviews` | Review registry |
 | Spoke | `/why-jvto/community-standards` | Policy + standards |
 
-See [[sources/why-jvto-trust-architecture]] + [[ops/why-jvto-architecture]] for full sitemap + component reference.
+See [[sources/why-jvto-trust-architecture]] + [[seo/why-jvto-architecture]] for full sitemap + component reference.
 
 -> [[website/aeo-claims]] | -> [[website/brand-voice]] | -> [[website/faq-master]] | -> [[website/query-hero-claim]]

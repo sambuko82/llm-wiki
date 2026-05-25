@@ -99,14 +99,14 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
 - [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
-- [[ops/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items), GEO/AEO extension section. Source: 2026-05-17 audit.
-- [[ops/competitors]] — Tiered competitor registry (4 tiers + OTAs). Tier 4: MBA + G Adventures as global UX/design benchmarks. Monitoring protocol.
-- [[ops/geo-aeo-strategy]] — **NEW** GEO entity architecture (llms.txt, SHA-256 in schema, sameAs cross-press), AEO universal rules, per-page targets, EAV principles, confirmed #1 rankings, OTA/App Engine section.
-- [[ops/why-jvto-architecture]] — **NEW** Dev-facing Hub & Spoke routing reference. URL map + schema injection layers + component registry (AuthorityShield/ForensicGallery/CrewCard) + evidence asset structure.
-- [[ops/redirect-map]] — 301 redirect table: 13 legacy Laravel routes → canonical SSOT URLs. Dev handoff for `jvto-web`.
-- [[ops/2026-05-14-whatsapp-operations-playbook]] — 5-channel WhatsApp ops playbook
-- [[ops/canned-responses]] — WhatsApp + email template scripts per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN, BANT-tagged, objection handling (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
-- [[ops/2026-05-14-whatsapp-rules-engine]] — Companion to playbook. Pure execution logic — 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute & log). Master action table, intent taxonomy seed, templates, hard rules, escalation destinations, fallback behavior, drift detection. AI-readable, no philosophy.
+- [[seo/seo-strategy]] — Keyword targets (15 terms), content silo map (4 silos, 30+ pages), title tag rewrites (10 pages), QW action tracker (14 items), GEO/AEO extension section. Source: 2026-05-17 audit.
+- [[seo/competitors]] — Tiered competitor registry (4 tiers + OTAs). Tier 4: MBA + G Adventures as global UX/design benchmarks. Monitoring protocol.
+- [[seo/geo-aeo-strategy]] — **NEW** GEO entity architecture (llms.txt, SHA-256 in schema, sameAs cross-press), AEO universal rules, per-page targets, EAV principles, confirmed #1 rankings, OTA/App Engine section.
+- [[seo/why-jvto-architecture]] — **NEW** Dev-facing Hub & Spoke routing reference. URL map + schema injection layers + component registry (AuthorityShield/ForensicGallery/CrewCard) + evidence asset structure.
+- [[seo/redirect-map]] — 301 redirect table: 13 legacy Laravel routes → canonical SSOT URLs. Dev handoff for `jvto-web`.
+- [[whatsapp/operations-playbook]] — 5-channel WhatsApp ops playbook
+- [[whatsapp/canned-responses]] — WhatsApp + email template scripts per stage (Triage/Discovery/Proposal/Closing + post-booking), bilingual ID/EN, BANT-tagged, objection handling (JVTO inquiry, JVTO post-booking, Klook, Window Travel, Vendor/Crew). Funnels per channel, brand voice per audience, AI intervention points, phased roadmap, success metrics. Multi-number setup (3 SIM concept). Foundation for Claude Code build.
+- [[whatsapp/rules-engine]] — Companion to playbook. Pure execution logic — 7-step pipeline (receive → identify number → identify channel → identify state → classify intent → determine action → execute & log). Master action table, intent taxonomy seed, templates, hard rules, escalation destinations, fallback behavior, drift detection. AI-readable, no philosophy.
 
 ## Open Gaps (no page yet — flagged by Lint)
 
@@ -115,7 +115,7 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - ~~`credentials/press-coverage`~~ — **created 2026-05-16** → [[credentials/press-coverage]]
 - `content/voice-invariants` — Forbidden phrases and approved Ijen language: live as a section in [[website/brand-voice]] §voice-invariants. Promoting to its own page is optional — current location is canonical.
 - ~~`content/schema-templates`~~ — **created 2026-05-18** → [[website/schema-templates]]
-- `bromo-ijen-status-today` page — Silo 3 SEO target (keyword #7). Needs replacement live source for PVMBG/BBKSDA status; MAGMA feed not active. See [[ops/seo-strategy]] §Silo 3.
+- `bromo-ijen-status-today` page — Silo 3 SEO target (keyword #7). Needs replacement live source for PVMBG/BBKSDA status; MAGMA feed not active. See [[seo/seo-strategy]] §Silo 3.
 - ~~`raw/routes.csv` + `raw/route_details.csv`~~ — **ingested 2026-05-18** → [[sources/route-data-csv]]
 
 ## Lookup Conventions

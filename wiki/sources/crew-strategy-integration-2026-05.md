@@ -123,4 +123,4 @@ Each bio should include at least one of:
 
 ---
 
--> [[people/crew-registry]] | -> [[people/agung-sambuko]] | -> [[sources/why-jvto-trust-architecture]] | -> [[ops/why-jvto-architecture]]
+-> [[people/crew-registry]] | -> [[people/agung-sambuko]] | -> [[sources/why-jvto-trust-architecture]] | -> [[seo/why-jvto-architecture]]

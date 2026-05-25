@@ -114,4 +114,4 @@ The police-founder narrative must avoid "police = rigid authority" and instead f
 
 ---
 
--> [[credentials/trust-signals]] | -> [[credentials/press-coverage]] | -> [[credentials/legal-licenses]] | -> [[ops/why-jvto-architecture]] | -> [[website/copy-bank]] | -> [[people/agung-sambuko]]
+-> [[credentials/trust-signals]] | -> [[credentials/press-coverage]] | -> [[credentials/legal-licenses]] | -> [[seo/why-jvto-architecture]] | -> [[website/copy-bank]] | -> [[people/agung-sambuko]]
