@@ -1,8 +1,8 @@
 ---
 type: person
 title: JVTO Crew Registry — 11 KTA-Credentialed Members
-last_updated: 2026-05-16
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, ssot-image-asset-map]
+last_updated: 2026-05-25
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, ssot-image-asset-map, backoffice-mysql]
 total_crew: 14
 guides: 7
 drivers: 7
@@ -10,7 +10,9 @@ drivers: 7
 
 # JVTO Crew Registry
 
-**14-member field team — 7 guides + 7 drivers** — confirmed via [[sources/db-export-2026-05]] `crew_members` table (live DB, 2026-05). KTA registration covers 11 members (per SSOT v6.0 §4_2); 3 additional drivers (Yusuf, Dika, Pras) confirmed in DB without KTA codes recorded — pending SSOT update.
+**14-member field team — 7 guides + 7 drivers** — confirmed via [[sources/db-export-2026-05]] `crew_members` table and live MySQL extraction in -> [[sources/backoffice-staff]] (`guide_drivers` table, 2026-05). KTA registration covers 11 members (per SSOT v6.0 §4_2); 3 additional drivers (Yusuf, Dika, Pras) confirmed in DB without KTA codes recorded — pending SSOT update.
+
+> **Operational signal:** assignment volume per crew member (top deployed list) lives in [[sources/backoffice-staff]] §Assignment volume. Use that page for "who works most" questions; this page for "who is licensed how."
 
 > Prior SSOT v6.0 §4_2 recorded 11 (7+4). DB export confirms 14 (7+7), matching the §13 figure. The §13 driver count of 7 is now corroborated by live DB data. Updated canonical: **14 members total**.
 

@@ -150,10 +150,10 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Domain restructure + finance validation + Silo 3 expansion + weekly health check (3 stale review counts fixed) + intake gate infrastructure (Workflow 7 ops page, 10 manifest files, 29 categories, 35 tags, 14 evidence items, 3 tracked conflicts, correlation/recommendation layer). 4 hookify rules created. output/INDEX.md fixed.
+**Last completed:** Backoffice MySQL extraction Tier 1 (finance + ops). Live extraction from `u1805424_jvto_clone @ Hostinger` (MariaDB 10.11): 210 tables inventoried, 148 dumped (~63k rows), 8 new `wiki/sources/backoffice-*.md` pages, 1 new `wiki/internal-ops/backoffice-extraction.md` playbook, 3 cross-refs (rate-cards / crew-registry / packages-full-pricing), index updated, intake gate R062–R064 registered, PII clean (raw layer gitignored).
 **Completed date:** 2026-05-25
-**Next task:** Review 5 new Silo 3 draft output files (bbksda-regulations-ijen, bbksda-regulations-bromo, ijen-gas-mask-equipment, permit-requirements-east-java, sulfur-mining-cultural-guide) from draft → reviewed status. Then generate JSON-LD schema for Silo 1 tour pages.
-**Build status:** — no code changes (wiki/output only)
+**Next task:** (1) Review backoffice extraction findings — validate realized vs template pricing in `sources/backoffice-pricing`, propose discount-layer adjustments to `finance/rate-cards`. (2) Then: review 5 Silo 3 draft output files (bbksda-regulations-ijen, bbksda-regulations-bromo, ijen-gas-mask-equipment, permit-requirements-east-java, sulfur-mining-cultural-guide) from draft → reviewed. (3) Then: generate JSON-LD schema for Silo 1 tour pages.
+**Build status:** — no code changes (wiki/output only). 7 new Python scripts under `scripts/` for the extraction pipeline.
 **Open items:**
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
 - Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam

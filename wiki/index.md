@@ -1,9 +1,9 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-05-26
-total_pages: 78
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup, finance-rate-cards, ijen-safety-resource-mapping, ijen-tourist-accidents, jvto-verification-dossier, ijen-safety-protocol]
+last_updated: 2026-05-25
+total_pages: 87
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup, finance-rate-cards, ijen-safety-resource-mapping, ijen-tourist-accidents, jvto-verification-dossier, ijen-safety-protocol, backoffice-mysql]
 ---
 
 # JVTO Wiki — Content Index
@@ -52,6 +52,19 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[sources/ijen-tourist-accidents]] — Tourist accident registry (Excel). 7 incidents 2015–2026, 4 fatalities (50% fitness-related). Validates BBKSDA health screening mandate. 6 media references. Sensitivity: public_sensitive.
 - [[sources/jvto-verification-dossier]] — 14-page NotebookLM "Daylight Audit Dossier" (PDF). Visual trust deck: hazard profile, JVTO vs unregulated comparison, 4-layer Trust Stack, legal exhibits, health screening flowchart, crew, operational timeline. AI-generated (weight 8). New fact: AHU-0023020.
 - [[sources/ijen-safety-protocol]] — Operational safety protocol (md). 7-section Kawah Ijen framework: regulatory foundation, incident analysis, personnel standards, gear, SAR protocol, risk flags, Ijen Rijik. AI-generated (weight 8). New facts: Lamborghini evacuation, Sengkan Gandrung braking zone, TWA Call Center.
+
+### Backoffice MySQL extraction (2026-05-25)
+
+Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger). 210 tables, ~63k rows. Schema + aggregates committed; PII raw data gitignored.
+
+- [[sources/backoffice-schema]] — 210-table inventory, Mermaid ERD for core entities, full FK web. Entry point for all backoffice DB questions.
+- [[sources/backoffice-finance]] — Revenue by month, currency mix, payment method ledger, debt outstanding, invoice line-item breakdown. **Canonical for "how much money."**
+- [[sources/backoffice-pricing]] — Template `package_prices` vs realized `bookings.grand_total` per template_package_id. **Validation source for [[finance/rate-cards]].**
+- [[sources/backoffice-bookings-ops]] — Booking volume by month, pax distribution, lead time, channel/agent mix, assignment counts (guide/driver/car/hotel/jeep).
+- [[sources/backoffice-staff]] — `guide_drivers` aggregates: crew level, role, licenses populated, star rating, top-deployed crew. Complements [[people/crew-registry]].
+- [[sources/backoffice-vendors]] — Vendor count by category, hotel partner list with rates, car fleet with pax range + driver allowance.
+- [[sources/backoffice-master-data]] — Reference catalogs: accounts, payment_methods, crew_roles, booking_categories, vendor_categories, price_plans, destinations, areas, weather_codes, wa_chat_categories.
+- [[sources/backoffice-whatsapp]] — Conversation analytics: 5,547 messages, direction/media breakdown, monthly volume, intent category distribution, top conversations (anonymized).
 
 ## Destinations
 
@@ -119,6 +132,11 @@ This vault is canonical for content production about Java Volcano Tour Operator 
 - [[ops/ingestion-profiles]] — Workflow 4: typed source handlers (web-clip, pdf-doc, ssot-update, review-feed, press-clip, seo-audit)
 - [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
+- [[ops/intake-gate]] — Workflow 7: universal raw intake gate
+
+## Internal Ops
+
+- [[internal-ops/backoffice-extraction]] — How to re-run the MySQL → CSV → wiki pipeline. PII rules, scripts, connection fallback. End-to-end runtime ~3 min for 63k rows.
 
 ## Finance
 

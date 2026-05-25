@@ -18,3 +18,13 @@ magma-feed/exports/
 
 # Obsidian graph layout state (changes on every pan/zoom, not content)
 .obsidian/graph.json
+
+# Backoffice MySQL dumps — contain PII, never commit
+raw/backoffice/dumps/
+raw/backoffice/csv/
+raw/backoffice/_inventory.json
+raw/backoffice/_export_summary.json
+
+# Python bytecode
+__pycache__/
+*.pyc

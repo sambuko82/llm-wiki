@@ -1,13 +1,56 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-26
+last_updated: 2026-05-25
 sources: []
 ---
 
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-05-25] ingest | Backoffice MySQL extraction (Tier 1: finance + ops)
+
+Live extraction from `u1805424_jvto_clone @ 153.92.9.37` (MariaDB 10.11, Hostinger). 210 tables inventoried; 148 non-empty tables dumped to CSV; ~63k rows total.
+
+Pages created (9):
+- sources/backoffice-schema — 210-table inventory + Mermaid ERD for core entities + full FK web
+- sources/backoffice-finance — revenue by month, currency mix, payment methods, invoice line-items, debt outstanding
+- sources/backoffice-pricing — template `package_prices` vs realized `bookings.grand_total` per template_package_id
+- sources/backoffice-bookings-ops — booking volume, pax distribution, lead time, channel/agent mix, assignment counts
+- sources/backoffice-staff — `guide_drivers` aggregates: crew level, role, licenses populated, top-deployed crew
+- sources/backoffice-vendors — vendor count by category, hotel + car fleet inventory with rates
+- sources/backoffice-master-data — reference catalogs: accounts, payment_methods, crew_roles, weather_codes, wa_chat_categories, etc.
+- sources/backoffice-whatsapp — 5,547 message analytics; direction/media breakdown; intent category distribution
+- internal-ops/backoffice-extraction — pipeline playbook + scripts + PII rules + connection fallback
+
+Pages updated (3 cross-refs):
+- finance/rate-cards — added validation hook pointing at backoffice-pricing for realized prices
+- people/crew-registry — added pointer to backoffice-staff for assignment volume
+- products/packages-full-pricing — added realized vs template note pointing at backoffice-pricing
+- index — added Backoffice MySQL extraction subsection + Internal Ops section
+- overview — pending
+
+Manifests updated: raw-files-index (+R062, R063, R064)
+
+Scripts added: scripts/_db.py, inventory.py, build_manifest.py, dump_schema.py, dump_data.py, peek.py, analyze.py
+
+Raw layer:
+- raw/backoffice/schema/full-schema.sql (committed — DDL only)
+- raw/backoffice/_manifest.md (committed)
+- raw/backoffice/csv/*.csv (148 files, gitignored — contains PII)
+- raw/backoffice/_inventory.json (gitignored — table metadata)
+
+PII handling: aggregate-only at wiki layer; defense-in-depth `pii_scrub()` in analyzer. Manual grep verification: 0 emails, 0 phone numbers leaked into committed wiki pages. Full data lives only in gitignored raw/backoffice/csv/.
+
+Key new facts surfaced:
+- 5,547 WhatsApp messages tracked in `wa_chats` — previously not in wiki at all
+- 2,985 itineraries shared via WA (`wa_itineraries`) — new operational channel
+- `tw_calculations` (295 rows) + `tw_calculation_details` (5,317 rows) — internal pricing calculator that pre-dates and feeds bookings
+- `tw_invoices*` family — separate B2B/Klook invoice subsystem
+- 35 `user_partners` — agent/partner records
 
 ---
 

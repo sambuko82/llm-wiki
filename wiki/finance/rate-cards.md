@@ -2,12 +2,14 @@
 type: finance
 title: JVTO Rate Cards — Cost Component Reference
 last_updated: 2026-05-25
-sources: [finance-rate-cards]
+sources: [finance-rate-cards, backoffice-mysql]
 ---
 
 # Rate Cards
 
-*Consolidated cost components for all JVTO tour packages. All prices in IDR. Source: `raw/FINANCE/rate_cards/*.json`.*
+*Consolidated cost components for all JVTO tour packages. All prices in IDR. Source: `raw/FINANCE/rate_cards/*.json` (manual SSOT) — reconciled against live MySQL via -> [[sources/backoffice-pricing]] and -> [[sources/backoffice-finance]].*
+
+> **Validation hook:** when a rate here disagrees with realized booking averages in [[sources/backoffice-pricing]], flag for review. The backoffice CSVs are the source of truth for "what actually happened"; this page is the source of truth for "what we quote."
 
 ---
 
