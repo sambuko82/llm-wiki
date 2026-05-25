@@ -35,11 +35,20 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
 
     llm-wiki/
     raw/                  # Immutable source docs. LLM reads, NEVER writes here.
+      FINANCE/            # Tour package cost spreadsheets + rate card JSONs
     Clippings/            # Web clips from Obsidian Web Clipper. Treat as sources.
     templates/            # Obsidian page templates
-    output/               # LLM-generated artifacts: website copy drafts, FAQ pages,
-                          # AEO snippets, slide content, etc. Never canonical — derived
-                          # from wiki/content/ on demand. Safe to delete and regenerate.
+    output/               # LLM-generated artifacts, organized by domain.
+      website/            # All website artifacts
+        pages/            # Page copy (homepage, tours, destinations, etc.)
+        schema/           # JSON-LD structured data
+        faq/              # FAQ answer pages
+        aeo/              # AEO snippets
+      social/             # Social media posts
+      whatsapp/           # WA dashboard output
+      marketing/          # Campaign output
+      finance/            # Profit reports, custom tour quotes
+      _archive/           # Superseded files
     wiki/
         overview.md       # Master synthesis
         index.md          # Content catalog — AI entry point
@@ -49,9 +58,15 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
         products/         # Tour packages, pricing, itineraries
         people/           # Founder, doctor, guides, drivers
         credentials/      # Licenses, safety compliance, trust signals
-        content/          # Brand voice, FAQ master, AEO claims, copy bank
         sources/          # One summary page per ingested raw source
-        ops/              # Operational workflow detail pages (Workflows 4–6)
+        website/          # Brand voice, FAQ master, AEO claims, copy bank, schemas
+        seo/              # SEO strategy, GEO/AEO, competitors, redirect map
+        whatsapp/         # WA ops playbook, rules engine, canned responses
+        finance/          # Rate cards, package costs, profit analysis, custom tour builder
+        marketing/        # Future: campaigns, ad copy
+        analytics/        # Future: metrics, tracking
+        internal-ops/     # Future: SOPs, training
+        ops/              # Meta-workflows: ingestion, compilation, health checks
     CLAUDE.md             # This file
 
 ---
