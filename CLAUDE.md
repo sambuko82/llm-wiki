@@ -135,9 +135,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** 3-phase wiki overhaul + developer handoff. Phase 1: ingested remaining raw files (WA API, GPX formal source, Gemini mockup; verified 7 consolidated sources). Phase 2: full lint audit — 1 contradiction fixed (crew count 11→14 in aeo-claims), 0 orphans, 0 stale. Phase 3: developer handoff doc (`output/HANDOFF.md`) with complete route→output→schema map, team page generated.
+**Last completed:** Generated all P1/P2 gap output files — 6 student tour pages, 15 team member pages, 2 Silo 4 travel guides (itinerary guide + Surabaya vs Bali comparison). All prices and credentials verified via jvto-verified-output skill. Total output files now 145+.
 **Completed date:** 2026-05-25
-**Next task:** Generate remaining P1/P2 gap output files: student tour pages ×6, `/team/[slug]` member pages, `bromo-ijen-itinerary-guide`, `surabaya-vs-bali-starting-point`. Then: review all 44 draft output files → reviewed status.
+**Next task:** Review all ~60 draft output files → reviewed status (copy-check against brand-voice.md + trust-signals.md). Then: expand thin wiki pages for partially-sourceable Silo 3 content (permit-requirements, sulfur-mining-cultural-guide).
 **Build status:** — no code changes (wiki/output only)
 **Open items:**
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
