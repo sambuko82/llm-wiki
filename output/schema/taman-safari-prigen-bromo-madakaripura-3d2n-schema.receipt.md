@@ -1,5 +1,5 @@
 ---
-output_date: 2026-05-18
+output_date: 2026-05-25
 schema_file: taman-safari-prigen-bromo-madakaripura-3d2n-schema.json
 profile: schema (TouristTrip + AggregateRating + FAQPage)
 tour_url: /tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n

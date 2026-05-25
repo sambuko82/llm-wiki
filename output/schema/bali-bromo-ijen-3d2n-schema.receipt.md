@@ -1,5 +1,5 @@
 ---
-output_date: 2026-05-18
+output_date: 2026-05-25
 schema_file: bali-bromo-ijen-3d2n-schema.json
 profile: schema (TouristTrip + AggregateRating + FAQPage)
 tour_url: /tours/from-bali/bromo-ijen-3d2n

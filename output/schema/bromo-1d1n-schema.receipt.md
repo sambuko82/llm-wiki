@@ -1,5 +1,5 @@
 ---
-output_date: 2026-05-18
+output_date: 2026-05-25
 schema_file: bromo-1d1n-schema.json
 profile: schema (TouristTrip + AggregateRating + FAQPage)
 tour_url: /tours/from-surabaya/bromo-1d1n

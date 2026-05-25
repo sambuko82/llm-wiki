@@ -1,4 +1,4 @@
-﻿---
+---
 profile: website-copy
 voice: Style B
 page: /destinations

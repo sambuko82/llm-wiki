@@ -1,5 +1,5 @@
 ---
-output_date: 2026-05-18
+output_date: 2026-05-25
 schema_file: ijen-bromo-madakaripura-malang-5d4n-schema.json
 profile: schema (TouristTrip + AggregateRating + FAQPage)
 tour_url: /tours/from-surabaya/ijen-bromo-madakaripura-malang-5d4n
