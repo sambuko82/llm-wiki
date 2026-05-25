@@ -19,43 +19,43 @@
 
 | File | Website target | Output date | Status | Key sources |
 |---|---|---|---|---|
-| `aeo/why-jvto.md` | `/why-jvto` (AEO overlay) | 2026-05-16 | reviewed | aeo-claims C1–C9, faq-master, legal-licenses, trust-signals |
-| `aeo/policy-travel-guide.md` | `/policy` + `/travel-guide` (AEO overlay) | 2026-05-12 | reviewed | jvto-policy-pack-v6, jvto-travel-guide-en, faq-master |
-| `aeo/ijen.md` | `/destinations/ijen-crater` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, kawah-ijen |
-| `aeo/bromo.md` | `/destinations/mount-bromo` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, mount-bromo |
-| `aeo/tumpak-sewu.md` | `/destinations/tumpak-sewu-waterfall` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, tumpak-sewu |
-| `aeo/madakaripura.md` | `/destinations/madakaripura-waterfall` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, madakaripura |
-| `aeo/papuma.md` | `/destinations/papuma-beach` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, papuma-beach |
-| `aeo/bbksda-regulations-ijen.md` | `/travel-guide/bbksda-regulations-ijen` (AEO overlay) | 2026-05-25 | reviewed | kawah-ijen, medical-screening, bbksda-pelatihan-pemandu-2024, legal-licenses |
-| `aeo/ijen-gas-mask-equipment.md` | `/travel-guide/ijen-gas-mask-equipment` (AEO overlay) | 2026-05-25 | reviewed | kawah-ijen, faq-master, packages-overview |
-| `aeo/bbksda-regulations-bromo.md` | `/travel-guide/bbksda-regulations-bromo` (AEO overlay) | 2026-05-25 | reviewed | mount-bromo, faq-master, packages-overview |
+| `website/aeo/why-jvto.md` | `/why-jvto` (AEO overlay) | 2026-05-16 | reviewed | aeo-claims C1–C9, faq-master, legal-licenses, trust-signals |
+| `website/aeo/policy-travel-guide.md` | `/policy` + `/travel-guide` (AEO overlay) | 2026-05-12 | reviewed | jvto-policy-pack-v6, jvto-travel-guide-en, faq-master |
+| `website/aeo/ijen.md` | `/destinations/ijen-crater` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, kawah-ijen |
+| `website/aeo/bromo.md` | `/destinations/mount-bromo` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, mount-bromo |
+| `website/aeo/tumpak-sewu.md` | `/destinations/tumpak-sewu-waterfall` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, tumpak-sewu |
+| `website/aeo/madakaripura.md` | `/destinations/madakaripura-waterfall` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, madakaripura |
+| `website/aeo/papuma.md` | `/destinations/papuma-beach` (AEO overlay) | 2026-05-18 | reviewed | aeo-claims, faq-master, legal-licenses, trust-signals, papuma-beach |
+| `website/aeo/bbksda-regulations-ijen.md` | `/travel-guide/bbksda-regulations-ijen` (AEO overlay) | 2026-05-25 | reviewed | kawah-ijen, medical-screening, bbksda-pelatihan-pemandu-2024, legal-licenses |
+| `website/aeo/ijen-gas-mask-equipment.md` | `/travel-guide/ijen-gas-mask-equipment` (AEO overlay) | 2026-05-25 | reviewed | kawah-ijen, faq-master, packages-overview |
+| `website/aeo/bbksda-regulations-bromo.md` | `/travel-guide/bbksda-regulations-bromo` (AEO overlay) | 2026-05-25 | reviewed | mount-bromo, faq-master, packages-overview |
 ---
 
 ## FAQ Pages
 
 | File | Website target | Output date | Status | Key sources |
 |---|---|---|---|---|
-| `faq/ijen.md` | `/travel-guide/faq` (Ijen section) | 2026-05-16 | reviewed | faq-master, kawah-ijen, dr-ahmad-irwandanu, packages-overview |
-| `faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-18 | reviewed | faq-master, mount-bromo, operational-facts, packages-overview |
-| `faq/tumpak-sewu.md` | `/travel-guide/faq` (Tumpak Sewu section) | 2026-05-12 | reviewed | faq-master, tumpak-sewu, packages-overview |
-| `faq/madakaripura.md` | `/travel-guide/faq` (Madakaripura section) | 2026-05-12 | reviewed | faq-master, madakaripura, packages-overview |
-| `faq/papuma.md` | `/travel-guide/faq` (Papuma section) | 2026-05-25 | reviewed | faq-master, papuma-beach, packages-overview, brand-voice |
-| `faq/bbksda-regulations-ijen.md` | `/travel-guide/faq` (Ijen regulations) | 2026-05-25 | reviewed | kawah-ijen, medical-screening, bbksda-pelatihan-pemandu-2024, legal-licenses |
-| `faq/ijen-gas-mask-equipment.md` | `/travel-guide/faq` (Gas masks) | 2026-05-25 | reviewed | kawah-ijen, faq-master, packages-overview |
-| `faq/bbksda-regulations-bromo.md` | `/travel-guide/faq` (Bromo regulations) | 2026-05-25 | reviewed | mount-bromo, faq-master, packages-overview |
+| `website/faq/ijen.md` | `/travel-guide/faq` (Ijen section) | 2026-05-16 | reviewed | faq-master, kawah-ijen, dr-ahmad-irwandanu, packages-overview |
+| `website/faq/bromo.md` | `/travel-guide/faq` (Bromo section) | 2026-05-18 | reviewed | faq-master, mount-bromo, operational-facts, packages-overview |
+| `website/faq/tumpak-sewu.md` | `/travel-guide/faq` (Tumpak Sewu section) | 2026-05-12 | reviewed | faq-master, tumpak-sewu, packages-overview |
+| `website/faq/madakaripura.md` | `/travel-guide/faq` (Madakaripura section) | 2026-05-12 | reviewed | faq-master, madakaripura, packages-overview |
+| `website/faq/papuma.md` | `/travel-guide/faq` (Papuma section) | 2026-05-25 | reviewed | faq-master, papuma-beach, packages-overview, brand-voice |
+| `website/faq/bbksda-regulations-ijen.md` | `/travel-guide/faq` (Ijen regulations) | 2026-05-25 | reviewed | kawah-ijen, medical-screening, bbksda-pelatihan-pemandu-2024, legal-licenses |
+| `website/faq/ijen-gas-mask-equipment.md` | `/travel-guide/faq` (Gas masks) | 2026-05-25 | reviewed | kawah-ijen, faq-master, packages-overview |
+| `website/faq/bbksda-regulations-bromo.md` | `/travel-guide/faq` (Bromo regulations) | 2026-05-25 | reviewed | mount-bromo, faq-master, packages-overview |
 ---
 
 ## Website — Sitewide
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/homepage.md` | `/` | 2026-05-25 | reviewed |
-| `website/surabaya-landing.md` | `/tours` (Surabaya angle) | 2026-05-25 | reviewed |
-| `website/bali-landing.md` | `/tours` (Bali angle) | 2026-05-25 | reviewed |
-| `website/tours.md` | `/tours` | 2026-05-25 | reviewed |
-| `website/isic-student-package.md` | `/isic/student-package` | 2026-05-12 | reviewed |
-| `website/blog.md` | `/blog` | 2026-05-12 | reviewed |
-| `website/contact.md` | `/contact` | 2026-05-12 | reviewed |
+| `website/pages/homepage.md` | `/` | 2026-05-25 | reviewed |
+| `website/pages/surabaya-landing.md` | `/tours` (Surabaya angle) | 2026-05-25 | reviewed |
+| `website/pages/bali-landing.md` | `/tours` (Bali angle) | 2026-05-25 | reviewed |
+| `website/pages/tours.md` | `/tours` | 2026-05-25 | reviewed |
+| `website/pages/isic-student-package.md` | `/isic/student-package` | 2026-05-12 | reviewed |
+| `website/pages/blog.md` | `/blog` | 2026-05-12 | reviewed |
+| `website/pages/contact.md` | `/contact` | 2026-05-12 | reviewed |
 
 ---
 
@@ -63,12 +63,12 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/destinations/hub.md` | `/destinations` | 2026-05-12 | reviewed |
-| `website/destinations/ijen-crater.md` | `/destinations/ijen-crater` | 2026-05-16 | reviewed |
-| `website/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-18 | reviewed |
-| `website/destinations/tumpak-sewu-waterfall.md` | `/destinations/tumpak-sewu-waterfall` | 2026-05-12 | reviewed |
-| `website/destinations/madakaripura-waterfall.md` | `/destinations/madakaripura-waterfall` | 2026-05-12 | reviewed |
-| `website/destinations/papuma-beach.md` | `/destinations/papuma-beach` | 2026-05-12 | reviewed |
+| `website/pages/destinations/hub.md` | `/destinations` | 2026-05-12 | reviewed |
+| `website/pages/destinations/ijen-crater.md` | `/destinations/ijen-crater` | 2026-05-16 | reviewed |
+| `website/pages/destinations/mount-bromo.md` | `/destinations/mount-bromo` | 2026-05-18 | reviewed |
+| `website/pages/destinations/tumpak-sewu-waterfall.md` | `/destinations/tumpak-sewu-waterfall` | 2026-05-12 | reviewed |
+| `website/pages/destinations/madakaripura-waterfall.md` | `/destinations/madakaripura-waterfall` | 2026-05-12 | reviewed |
+| `website/pages/destinations/papuma-beach.md` | `/destinations/papuma-beach` | 2026-05-12 | reviewed |
 
 ---
 
@@ -76,18 +76,18 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/tours/surabaya/bromo-1d1n.md` | `/tours/from-surabaya/bromo-1d1n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/bromo-2d1n.md` | `/tours/from-surabaya/bromo-2d1n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-2d1n.md` | `/tours/from-surabaya/ijen-2d1n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-bromo-madakaripura-3d2n.md` | `/tours/from-surabaya/ijen-bromo-madakaripura-3d2n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/bromo-madakaripura-ijen-3d2n.md` | `/tours/from-surabaya/bromo-madakaripura-ijen-3d2n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-bromo-madakaripura-4d3n.md` | `/tours/from-surabaya/ijen-bromo-madakaripura-4d3n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/tumpak-sewu-bromo-ijen-4d3n.md` | `/tours/from-surabaya/tumpak-sewu-bromo-ijen-4d3n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-bromo-madakaripura-malang-5d4n.md` | `/tours/from-surabaya/ijen-bromo-madakaripura-malang-5d4n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n.md` | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | 2026-05-12 | reviewed |
-| `website/tours/surabaya/taman-safari-prigen-bromo-madakaripura-3d2n.md` | `/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/bromo-1d1n.md` | `/tours/from-surabaya/bromo-1d1n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/bromo-2d1n.md` | `/tours/from-surabaya/bromo-2d1n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-2d1n.md` | `/tours/from-surabaya/ijen-2d1n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-bromo-madakaripura-3d2n.md` | `/tours/from-surabaya/ijen-bromo-madakaripura-3d2n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/bromo-madakaripura-ijen-3d2n.md` | `/tours/from-surabaya/bromo-madakaripura-ijen-3d2n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-bromo-madakaripura-4d3n.md` | `/tours/from-surabaya/ijen-bromo-madakaripura-4d3n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/tumpak-sewu-bromo-ijen-4d3n.md` | `/tours/from-surabaya/tumpak-sewu-bromo-ijen-4d3n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-bromo-madakaripura-malang-5d4n.md` | `/tours/from-surabaya/ijen-bromo-madakaripura-malang-5d4n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n.md` | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | 2026-05-12 | reviewed |
+| `website/pages/tours/surabaya/taman-safari-prigen-bromo-madakaripura-3d2n.md` | `/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n` | 2026-05-12 | reviewed |
 
 ---
 
@@ -95,10 +95,10 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/tours/bali/bromo-ijen-3d2n.md` | `/tours/from-bali/bromo-ijen-3d2n` | 2026-05-12 | reviewed |
-| `website/tours/bali/ijen-bromo-madakaripura-3d2n.md` | `/tours/from-bali/ijen-bromo-madakaripura-3d2n` | 2026-05-12 | reviewed |
-| `website/tours/bali/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-12 | reviewed |
-| `website/tours/bali/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-12 | reviewed |
+| `website/pages/tours/bali/bromo-ijen-3d2n.md` | `/tours/from-bali/bromo-ijen-3d2n` | 2026-05-12 | reviewed |
+| `website/pages/tours/bali/ijen-bromo-madakaripura-3d2n.md` | `/tours/from-bali/ijen-bromo-madakaripura-3d2n` | 2026-05-12 | reviewed |
+| `website/pages/tours/bali/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-12 | reviewed |
+| `website/pages/tours/bali/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-12 | reviewed |
 
 ---
 
@@ -106,32 +106,37 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/travel-guide/hub.md` | `/travel-guide` | 2026-05-12 | reviewed |
-| `website/travel-guide/best-time-to-visit.md` | `/travel-guide/best-time-to-visit` | 2026-05-12 | reviewed |
-| `website/travel-guide/booking-information.md` | `/travel-guide/booking-information` | 2026-05-12 | reviewed |
-| `website/travel-guide/faq.md` | `/travel-guide/faq` | 2026-05-12 | reviewed |
-| `website/travel-guide/ijen-health-screening.md` | `/travel-guide/ijen-health-screening` | 2026-05-16 | reviewed |
-| `website/travel-guide/packing-and-fitness.md` | `/travel-guide/packing-and-fitness` | 2026-05-12 | reviewed |
-| `website/travel-guide/police-escort-for-groups.md` | `/travel-guide/police-escort-for-groups` | 2026-05-16 | reviewed |
-| `website/travel-guide/safety-on-tours.md` | `/travel-guide/safety-on-tours` | 2026-05-12 | reviewed |
-| `website/travel-guide/weather-and-closures.md` | `/travel-guide/weather-and-closures` | 2026-05-12 | reviewed |
-| `website/travel-guide/bromo-vs-ijen-comparison.md` | `/travel-guide/bromo-vs-ijen-comparison` | 2026-05-25 | reviewed |
-| `website/travel-guide/what-to-pack-bromo-ijen.md` | `/travel-guide/what-to-pack-bromo-ijen` | 2026-05-25 | reviewed |
-| `website/travel-guide/private-vs-shared-tour-comparison.md` | `/travel-guide/private-vs-shared-tour-comparison` | 2026-05-25 | reviewed |
-| `website/travel-guide/bromo-ijen-itinerary-guide.md` | `/travel-guide/bromo-ijen-itinerary-guide` | 2026-05-25 | reviewed |
-| `website/travel-guide/surabaya-vs-bali-starting-point.md` | `/travel-guide/surabaya-vs-bali-starting-point` | 2026-05-25 | reviewed |
+| `website/pages/travel-guide/hub.md` | `/travel-guide` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/best-time-to-visit.md` | `/travel-guide/best-time-to-visit` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/booking-information.md` | `/travel-guide/booking-information` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/faq.md` | `/travel-guide/faq` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/ijen-health-screening.md` | `/travel-guide/ijen-health-screening` | 2026-05-16 | reviewed |
+| `website/pages/travel-guide/packing-and-fitness.md` | `/travel-guide/packing-and-fitness` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/police-escort-for-groups.md` | `/travel-guide/police-escort-for-groups` | 2026-05-16 | reviewed |
+| `website/pages/travel-guide/safety-on-tours.md` | `/travel-guide/safety-on-tours` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/weather-and-closures.md` | `/travel-guide/weather-and-closures` | 2026-05-12 | reviewed |
+| `website/pages/travel-guide/bromo-vs-ijen-comparison.md` | `/travel-guide/bromo-vs-ijen-comparison` | 2026-05-25 | reviewed |
+| `website/pages/travel-guide/what-to-pack-bromo-ijen.md` | `/travel-guide/what-to-pack-bromo-ijen` | 2026-05-25 | reviewed |
+| `website/pages/travel-guide/private-vs-shared-tour-comparison.md` | `/travel-guide/private-vs-shared-tour-comparison` | 2026-05-25 | reviewed |
+| `website/pages/travel-guide/bromo-ijen-itinerary-guide.md` | `/travel-guide/bromo-ijen-itinerary-guide` | 2026-05-25 | reviewed |
+| `website/pages/travel-guide/surabaya-vs-bali-starting-point.md` | `/travel-guide/surabaya-vs-bali-starting-point` | 2026-05-25 | reviewed |
+| `website/pages/travel-guide/bbksda-regulations-ijen.md` | `/travel-guide/bbksda-regulations-ijen` | 2026-05-25 | draft |
+| `website/pages/travel-guide/bbksda-regulations-bromo.md` | `/travel-guide/bbksda-regulations-bromo` | 2026-05-25 | draft |
+| `website/pages/travel-guide/ijen-gas-mask-equipment.md` | `/travel-guide/ijen-gas-mask-equipment` | 2026-05-25 | draft |
+| `website/pages/travel-guide/permit-requirements-east-java.md` | `/travel-guide/permit-requirements-east-java` | 2026-05-25 | draft |
+| `website/pages/travel-guide/sulfur-mining-cultural-guide.md` | `/travel-guide/sulfur-mining-cultural-guide` | 2026-05-25 | draft |
 ---
 
 ## Website — Why JVTO
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/why-jvto/hub.md` | `/why-jvto` | 2026-05-12 | reviewed |
-| `website/why-jvto/community-standards.md` | `/why-jvto/community-standards` | 2026-05-12 | reviewed |
-| `website/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-25 | reviewed |
-| `website/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-25 | reviewed |
-| `website/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-25 | reviewed |
-| `website/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-25 | reviewed |
+| `website/pages/why-jvto/hub.md` | `/why-jvto` | 2026-05-12 | reviewed |
+| `website/pages/why-jvto/community-standards.md` | `/why-jvto/community-standards` | 2026-05-12 | reviewed |
+| `website/pages/why-jvto/our-story.md` | `/why-jvto/our-story` | 2026-05-25 | reviewed |
+| `website/pages/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-25 | reviewed |
+| `website/pages/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-25 | reviewed |
+| `website/pages/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-25 | reviewed |
 
 ---
 
@@ -139,11 +144,11 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/verify-jvto/hub.md` | `/verify-jvto` | 2026-05-16 | reviewed |
-| `website/verify-jvto/legal.md` | `/verify-jvto/legal` | 2026-05-16 | reviewed |
-| `website/verify-jvto/history-artifacts.md` | `/verify-jvto/history-artifacts` | 2026-05-16 | reviewed |
-| `website/verify-jvto/police-safety.md` | `/verify-jvto/police-safety` | 2026-05-16 | reviewed |
-| `website/verify-jvto/press-recognition.md` | `/verify-jvto/press-recognition` | 2026-05-16 | reviewed |
+| `website/pages/verify-jvto/hub.md` | `/verify-jvto` | 2026-05-16 | reviewed |
+| `website/pages/verify-jvto/legal.md` | `/verify-jvto/legal` | 2026-05-16 | reviewed |
+| `website/pages/verify-jvto/history-artifacts.md` | `/verify-jvto/history-artifacts` | 2026-05-16 | reviewed |
+| `website/pages/verify-jvto/police-safety.md` | `/verify-jvto/police-safety` | 2026-05-16 | reviewed |
+| `website/pages/verify-jvto/press-recognition.md` | `/verify-jvto/press-recognition` | 2026-05-16 | reviewed |
 
 ---
 
@@ -151,10 +156,10 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/policy/hub.md` | `/policy` | 2026-05-12 | reviewed |
-| `website/policy/booking-payment-cancellation.md` | `/policy/booking-payment-cancellation` | 2026-05-12 | reviewed |
-| `website/policy/inclusions-exclusions.md` | `/policy/inclusions-exclusions` | 2026-05-12 | reviewed |
-| `website/policy/privacy.md` | `/policy/privacy` | 2026-05-12 | reviewed |
+| `website/pages/policy/hub.md` | `/policy` | 2026-05-12 | reviewed |
+| `website/pages/policy/booking-payment-cancellation.md` | `/policy/booking-payment-cancellation` | 2026-05-12 | reviewed |
+| `website/pages/policy/inclusions-exclusions.md` | `/policy/inclusions-exclusions` | 2026-05-12 | reviewed |
+| `website/pages/policy/privacy.md` | `/policy/privacy` | 2026-05-12 | reviewed |
 
 ---
 
@@ -162,22 +167,22 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/team.md` | `/team` | 2026-05-25 | reviewed |
-| `website/team/agung-sambuko.md` | `/team/agung-sambuko` | 2026-05-25 | reviewed |
-| `website/team/anjas.md` | `/team/anjas` | 2026-05-25 | reviewed |
-| `website/team/taufik.md` | `/team/taufik` | 2026-05-25 | reviewed |
-| `website/team/rendi.md` | `/team/rendi` | 2026-05-25 | reviewed |
-| `website/team/kiki.md` | `/team/kiki` | 2026-05-25 | reviewed |
-| `website/team/gufron.md` | `/team/gufron` | 2026-05-25 | reviewed |
-| `website/team/fauzi.md` | `/team/fauzi` | 2026-05-25 | reviewed |
-| `website/team/boy.md` | `/team/boy` | 2026-05-25 | reviewed |
-| `website/team/yandi.md` | `/team/yandi` | 2026-05-25 | reviewed |
-| `website/team/fredi.md` | `/team/fredi` | 2026-05-25 | reviewed |
-| `website/team/holili.md` | `/team/holili` | 2026-05-25 | reviewed |
-| `website/team/joyo.md` | `/team/joyo` | 2026-05-25 | reviewed |
-| `website/team/yusuf.md` | `/team/yusuf` | 2026-05-25 | reviewed |
-| `website/team/dika.md` | `/team/dika` | 2026-05-25 | reviewed |
-| `website/team/pras.md` | `/team/pras` | 2026-05-25 | reviewed |
+| `website/pages/team.md` | `/team` | 2026-05-25 | reviewed |
+| `website/pages/team/agung-sambuko.md` | `/team/agung-sambuko` | 2026-05-25 | reviewed |
+| `website/pages/team/anjas.md` | `/team/anjas` | 2026-05-25 | reviewed |
+| `website/pages/team/taufik.md` | `/team/taufik` | 2026-05-25 | reviewed |
+| `website/pages/team/rendi.md` | `/team/rendi` | 2026-05-25 | reviewed |
+| `website/pages/team/kiki.md` | `/team/kiki` | 2026-05-25 | reviewed |
+| `website/pages/team/gufron.md` | `/team/gufron` | 2026-05-25 | reviewed |
+| `website/pages/team/fauzi.md` | `/team/fauzi` | 2026-05-25 | reviewed |
+| `website/pages/team/boy.md` | `/team/boy` | 2026-05-25 | reviewed |
+| `website/pages/team/yandi.md` | `/team/yandi` | 2026-05-25 | reviewed |
+| `website/pages/team/fredi.md` | `/team/fredi` | 2026-05-25 | reviewed |
+| `website/pages/team/holili.md` | `/team/holili` | 2026-05-25 | reviewed |
+| `website/pages/team/joyo.md` | `/team/joyo` | 2026-05-25 | reviewed |
+| `website/pages/team/yusuf.md` | `/team/yusuf` | 2026-05-25 | reviewed |
+| `website/pages/team/dika.md` | `/team/dika` | 2026-05-25 | reviewed |
+| `website/pages/team/pras.md` | `/team/pras` | 2026-05-25 | reviewed |
 
 ---
 
@@ -185,12 +190,12 @@
 
 | File | URL | Output date | Status |
 |---|---|---|---|
-| `website/tours/student/bromo-ijen-3d2n.md` | `/tours/student-package/bromo-ijen-3d2n` | 2026-05-25 | reviewed |
-| `website/tours/student/bromo-ijen-3d2n-to-bali.md` | `/tours/student-package/bromo-ijen-3d2n-to-bali` | 2026-05-25 | reviewed |
-| `website/tours/student/ijen-bromo-3d2n-bali.md` | `/tours/student-package/ijen-bromo-3d2n` | 2026-05-25 | reviewed |
-| `website/tours/student/ijen-bromo-madakaripura-night-market-4d3n.md` | `/tours/student-package/ijen-bromo-madakaripura-night-market-4d3n` | 2026-05-25 | reviewed |
-| `website/tours/student/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-25 | reviewed |
-| `website/tours/student/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-25 | reviewed |
+| `website/pages/tours/student/bromo-ijen-3d2n.md` | `/tours/student-package/bromo-ijen-3d2n` | 2026-05-25 | reviewed |
+| `website/pages/tours/student/bromo-ijen-3d2n-to-bali.md` | `/tours/student-package/bromo-ijen-3d2n-to-bali` | 2026-05-25 | reviewed |
+| `website/pages/tours/student/ijen-bromo-3d2n-bali.md` | `/tours/student-package/ijen-bromo-3d2n` | 2026-05-25 | reviewed |
+| `website/pages/tours/student/ijen-bromo-madakaripura-night-market-4d3n.md` | `/tours/student-package/ijen-bromo-madakaripura-night-market-4d3n` | 2026-05-25 | reviewed |
+| `website/pages/tours/student/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-25 | reviewed |
+| `website/pages/tours/student/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-25 | reviewed |
 
 ---
 
@@ -198,7 +203,7 @@
 
 | File | Purpose | Output date |
 |---|---|---|
-| `HANDOFF.md` | Complete route → output → schema map for developer integration | 2026-05-25 |
+| `website/HANDOFF.md` | Complete route → output → schema map for developer integration | 2026-05-25 |
 
 ---
 
@@ -206,8 +211,8 @@
 
 | File | Superseded by | Note |
 |---|---|---|
-| `_archive/kawah-ijen-page-copy.md` | `website/destinations/ijen-crater.md` | Pre-convention, 2026-05-11 |
-| `_archive/mount-bromo-page-copy.md` | `website/destinations/mount-bromo.md` | Pre-convention, 2026-05-11 |
+| `_archive/kawah-ijen-page-copy.md` | `website/pages/destinations/ijen-crater.md` | Pre-convention, 2026-05-11 |
+| `_archive/mount-bromo-page-copy.md` | `website/pages/destinations/mount-bromo.md` | Pre-convention, 2026-05-11 |
 
 ---
 
