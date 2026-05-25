@@ -76,7 +76,7 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
 Every wiki page starts with:
 
     ---
-    type: destination|reviews|product|person|credential|content|source|overview|ops
+    type: destination|reviews|product|person|credential|website|source|overview|ops|seo|whatsapp|finance
     title: Human-readable title
     last_updated: YYYY-MM-DD
     sources: [slug1, slug2]
@@ -103,7 +103,7 @@ Every wiki page starts with:
 1. Read wiki/index.md to find relevant pages
 2. Read identified pages
 3. Synthesize with citations e.g. -> [[reviews/trustpilot-compilation]]
-4. File back valuable answers as new pages in wiki/content/
+4. File back valuable answers as new pages in wiki/website/
 
 ## Workflow 3: Lint
 
@@ -150,9 +150,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Bulk review of all 99 draft output files → reviewed status. Brand-voice audit (forbidden phrases, avoid phrases, price format, rating conflation, NIB consistency). 1 violation fixed (world-class → dramatic). All output files now status: reviewed.
+**Last completed:** Domain restructure — wiki/ and output/ reorganized into domain-separated folders (website, whatsapp, seo, finance). 8 files wiki/content/→wiki/website/, 8 files wiki/ops/ split to wiki/seo/ + wiki/whatsapp/, output/ consolidated (schema/faq/aeo under output/website/). Finance domain created: rate-cards, package-costs, profit-analysis, custom-tour-builder (from raw/FINANCE/ data). 14 commits, 74 wiki pages, 147 output files.
 **Completed date:** 2026-05-25
-**Next task:** Expand thin wiki pages for partially-sourceable Silo 3 content (permit-requirements-east-java, sulfur-mining-cultural-guide, best-time-to-visit expansion). Then generate output files for these expanded pages.
+**Next task:** Validate finance/profit-analysis.md against known selling prices on website. Then expand Silo 3 thin wiki pages (permit-requirements-east-java, sulfur-mining-cultural-guide, best-time-to-visit expansion).
 **Build status:** — no code changes (wiki/output only)
 **Open items:**
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status

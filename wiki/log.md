@@ -11,6 +11,33 @@ sources: []
 
 ---
 
+## [2026-05-25] restructure | Domain separation + finance ingestion
+
+Full restructure of wiki/ and output/ into domain-separated folders. 14 commits.
+
+**Wiki moves:**
+- `content/` → `website/` (8 files: brand-voice, copy-bank, faq-master, aeo-claims, schema-templates, query-hero-claim, operational-facts, hotels)
+- `ops/` split: 3 files → `whatsapp/` (operations-playbook, rules-engine, canned-responses), 5 files → `seo/` (seo-strategy, geo-aeo-strategy, competitors, why-jvto-architecture, redirect-map), 3 files stay in `ops/` (ingestion-profiles, compilation-profiles, health-checks)
+
+**Output moves:**
+- `schema/`, `faq/`, `aeo/` → consolidated under `output/website/`
+- Existing `output/website/*` → `output/website/pages/`
+
+**New domains created:**
+- `wiki/finance/` — 4 pages: [[finance/rate-cards]], [[finance/package-costs]], [[finance/profit-analysis]], [[finance/custom-tour-builder]]
+- `wiki/sources/finance-rate-cards.md` — source summary for raw/FINANCE/ rate cards
+- Empty placeholders: `wiki/marketing/`, `wiki/analytics/`, `wiki/internal-ops/`, `output/whatsapp/`, `output/marketing/`, `output/finance/`
+
+**Profile additions:**
+- `finance-spreadsheet` ingestion profile added to [[ops/ingestion-profiles]]
+- `custom-tour-quote` compilation profile added to [[ops/compilation-profiles]]
+
+**Cross-references:** All `[[content/...]]` → `[[website/...]]`, all moved `[[ops/...]]` → `[[seo/...]]` or `[[whatsapp/...]]`. `wiki/log.md` unchanged (historical). Frontmatter types updated. CLAUDE.md, index.md, HANDOFF.md rewritten.
+
+**Final counts:** 74 wiki pages, 147 output files, 24 sources.
+
+---
+
 ## [2026-05-25] review | Bulk status upgrade — 99 output files draft → reviewed
 
 Scanned all output files against brand-voice.md and trust-signals.md criteria:
