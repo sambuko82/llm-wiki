@@ -150,9 +150,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Domain restructure — wiki/ and output/ reorganized into domain-separated folders (website, whatsapp, seo, finance). 8 files wiki/content/→wiki/website/, 8 files wiki/ops/ split to wiki/seo/ + wiki/whatsapp/, output/ consolidated (schema/faq/aeo under output/website/). Finance domain created: rate-cards, package-costs, profit-analysis, custom-tour-builder (from raw/FINANCE/ data). 14 commits, 74 wiki pages, 147 output files.
+**Last completed:** Domain restructure + finance validation + Silo 3 expansion. Finance margins validated against DB (5/8 exact match, 12 packages now have margins). Silo 3: expanded wiki backing (sulfur mining, BBKSDA Bromo, seasonal data, permit-requirements page), generated 5 travel-guide output pages (5,353 words). Fixed output/INDEX.md stale paths. Created 4 hookify rules for restructure verification.
 **Completed date:** 2026-05-25
-**Next task:** Validate finance/profit-analysis.md against known selling prices on website. Then expand Silo 3 thin wiki pages (permit-requirements-east-java, sulfur-mining-cultural-guide, best-time-to-visit expansion).
+**Next task:** Review 5 new Silo 3 draft output files (bbksda-regulations-ijen, bbksda-regulations-bromo, ijen-gas-mask-equipment, permit-requirements-east-java, sulfur-mining-cultural-guide) from draft → reviewed status. Then generate JSON-LD schema for Silo 1 tour pages.
 **Build status:** — no code changes (wiki/output only)
 **Open items:**
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
