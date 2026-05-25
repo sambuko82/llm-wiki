@@ -11,6 +11,12 @@ sources: []
 
 ---
 
+## [2026-05-25] generate | Student tour pages ×6 + team member pages ×15
+
+Pages created: 6 student tour detail pages (`output/website/tours/student/`), 15 individual team member pages (`output/website/team/`). All prices verified against [[products/packages-full-pricing]] via jvto-verified-output skill. ISIC Provider ID 259268 verified against [[credentials/legal-licenses]]. Crew data verified against [[people/crew-registry]]. All files status: draft.
+
+---
+
 ## [2026-05-25] phase-3 | Structural Gap Fill + Developer Handoff
 
 **Scope**: Route-to-content gap analysis, developer handoff document, missing output generation.

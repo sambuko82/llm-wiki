@@ -161,6 +161,34 @@
 | File | URL | Output date | Status |
 |---|---|---|---|
 | `website/team.md` | `/team` | 2026-05-25 | draft |
+| `website/team/agung-sambuko.md` | `/team/agung-sambuko` | 2026-05-25 | draft |
+| `website/team/anjas.md` | `/team/anjas` | 2026-05-25 | draft |
+| `website/team/taufik.md` | `/team/taufik` | 2026-05-25 | draft |
+| `website/team/rendi.md` | `/team/rendi` | 2026-05-25 | draft |
+| `website/team/kiki.md` | `/team/kiki` | 2026-05-25 | draft |
+| `website/team/gufron.md` | `/team/gufron` | 2026-05-25 | draft |
+| `website/team/fauzi.md` | `/team/fauzi` | 2026-05-25 | draft |
+| `website/team/boy.md` | `/team/boy` | 2026-05-25 | draft |
+| `website/team/yandi.md` | `/team/yandi` | 2026-05-25 | draft |
+| `website/team/fredi.md` | `/team/fredi` | 2026-05-25 | draft |
+| `website/team/holili.md` | `/team/holili` | 2026-05-25 | draft |
+| `website/team/joyo.md` | `/team/joyo` | 2026-05-25 | draft |
+| `website/team/yusuf.md` | `/team/yusuf` | 2026-05-25 | draft |
+| `website/team/dika.md` | `/team/dika` | 2026-05-25 | draft |
+| `website/team/pras.md` | `/team/pras` | 2026-05-25 | draft |
+
+---
+
+## Website — Tours (Student packages, 6)
+
+| File | URL | Output date | Status |
+|---|---|---|---|
+| `website/tours/student/bromo-ijen-3d2n.md` | `/tours/student-package/bromo-ijen-3d2n` | 2026-05-25 | draft |
+| `website/tours/student/bromo-ijen-3d2n-to-bali.md` | `/tours/student-package/bromo-ijen-3d2n-to-bali` | 2026-05-25 | draft |
+| `website/tours/student/ijen-bromo-3d2n-bali.md` | `/tours/student-package/ijen-bromo-3d2n` | 2026-05-25 | draft |
+| `website/tours/student/ijen-bromo-madakaripura-night-market-4d3n.md` | `/tours/student-package/ijen-bromo-madakaripura-night-market-4d3n` | 2026-05-25 | draft |
+| `website/tours/student/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-25 | draft |
+| `website/tours/student/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-25 | draft |
 
 ---
 
