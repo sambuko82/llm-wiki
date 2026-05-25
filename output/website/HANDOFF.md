@@ -25,7 +25,7 @@ jvto-web uses **Prisma + PostgreSQL** for dynamic content. Two patterns:
 1. **DB-driven pages** (tours, destinations, FAQs): Content lives in Prisma models. Output markdown provides the copy to seed/update DB records.
 2. **Static/SSG pages** (policy, travel-guide, why-jvto, verify-jvto): Content rendered from page components. Output markdown provides the copy for `page.tsx` or MDX files.
 
-JSON-LD schemas in `output/schema/` inject via `<script type="application/ld+json">` in page head — ensure content is from trusted wiki source only.
+JSON-LD schemas in `output/website/schema/` inject via `<script type="application/ld+json">` in page head — ensure content is from trusted wiki source only.
 
 ---
 
@@ -35,97 +35,97 @@ JSON-LD schemas in `output/schema/` inject via `<script type="application/ld+jso
 
 | Route | Output file | Schema | Status |
 |---|---|---|---|
-| `/` | `website/homepage.md` | `schema/homepage-organization-schema.json` | reviewed |
-| `/tours` | `website/tours.md` | — | reviewed |
-| `/tours/from-surabaya` | `website/surabaya-landing.md` | — | reviewed |
-| `/tours/from-bali` | `website/bali-landing.md` | — | reviewed |
-| `/destinations` | `website/destinations/hub.md` | — | draft |
-| `/contact` | `website/contact.md` | — | draft |
-| `/blog` | `website/blog.md` | — | draft |
-| `/isic/student-package` | `website/isic-student-package.md` | — | draft |
+| `/` | `website/pages/homepage.md` | `website/schema/homepage-organization-schema.json` | reviewed |
+| `/tours` | `website/pages/tours.md` | — | reviewed |
+| `/tours/from-surabaya` | `website/pages/surabaya-landing.md` | — | reviewed |
+| `/tours/from-bali` | `website/pages/bali-landing.md` | — | reviewed |
+| `/destinations` | `website/pages/destinations/hub.md` | — | draft |
+| `/contact` | `website/pages/contact.md` | — | draft |
+| `/blog` | `website/pages/blog.md` | — | draft |
+| `/isic/student-package` | `website/pages/isic-student-package.md` | — | draft |
 
 ### Tours — Surabaya Origin (12 packages)
 
 | Route | Output file | Schema | Status |
 |---|---|---|---|
-| `/tours/from-surabaya/bromo-1d1n` | `website/tours/surabaya/bromo-1d1n.md` | `schema/bromo-1d1n-schema.json` | draft |
-| `/tours/from-surabaya/bromo-2d1n` | `website/tours/surabaya/bromo-2d1n.md` | `schema/bromo-2d1n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-2d1n` | `website/tours/surabaya/ijen-2d1n.md` | `schema/ijen-2d1n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-bromo-madakaripura-3d2n` | `website/tours/surabaya/ijen-bromo-madakaripura-3d2n.md` | `schema/ijen-bromo-madakaripura-3d2n-schema.json` | draft |
-| `/tours/from-surabaya/bromo-madakaripura-ijen-3d2n` | `website/tours/surabaya/bromo-madakaripura-ijen-3d2n.md` | `schema/bromo-madakaripura-ijen-3d2n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-bromo-madakaripura-4d3n` | `website/tours/surabaya/ijen-bromo-madakaripura-4d3n.md` | `schema/ijen-bromo-madakaripura-4d3n-schema.json` | draft |
-| `/tours/from-surabaya/tumpak-sewu-bromo-ijen-4d3n` | `website/tours/surabaya/tumpak-sewu-bromo-ijen-4d3n.md` | `schema/tumpak-sewu-bromo-ijen-4d3n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n` | `website/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `schema/ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n` | `website/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `schema/ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-bromo-madakaripura-malang-5d4n` | `website/tours/surabaya/ijen-bromo-madakaripura-malang-5d4n.md` | `schema/ijen-bromo-madakaripura-malang-5d4n-schema.json` | draft |
-| `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | `website/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n.md` | `schema/ijen-papuma-tumpak-sewu-bromo-malang-6d5n-schema.json` | draft |
-| `/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n` | `website/tours/surabaya/taman-safari-prigen-bromo-madakaripura-3d2n.md` | `schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json` | draft |
+| `/tours/from-surabaya/bromo-1d1n` | `website/pages/tours/surabaya/bromo-1d1n.md` | `website/schema/bromo-1d1n-schema.json` | draft |
+| `/tours/from-surabaya/bromo-2d1n` | `website/pages/tours/surabaya/bromo-2d1n.md` | `website/schema/bromo-2d1n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-2d1n` | `website/pages/tours/surabaya/ijen-2d1n.md` | `website/schema/ijen-2d1n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-bromo-madakaripura-3d2n` | `website/pages/tours/surabaya/ijen-bromo-madakaripura-3d2n.md` | `website/schema/ijen-bromo-madakaripura-3d2n-schema.json` | draft |
+| `/tours/from-surabaya/bromo-madakaripura-ijen-3d2n` | `website/pages/tours/surabaya/bromo-madakaripura-ijen-3d2n.md` | `website/schema/bromo-madakaripura-ijen-3d2n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-bromo-madakaripura-4d3n` | `website/pages/tours/surabaya/ijen-bromo-madakaripura-4d3n.md` | `website/schema/ijen-bromo-madakaripura-4d3n-schema.json` | draft |
+| `/tours/from-surabaya/tumpak-sewu-bromo-ijen-4d3n` | `website/pages/tours/surabaya/tumpak-sewu-bromo-ijen-4d3n.md` | `website/schema/tumpak-sewu-bromo-ijen-4d3n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n` | `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `website/schema/ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n` | `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `website/schema/ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-bromo-madakaripura-malang-5d4n` | `website/pages/tours/surabaya/ijen-bromo-madakaripura-malang-5d4n.md` | `website/schema/ijen-bromo-madakaripura-malang-5d4n-schema.json` | draft |
+| `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n.md` | `website/schema/ijen-papuma-tumpak-sewu-bromo-malang-6d5n-schema.json` | draft |
+| `/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n` | `website/pages/tours/surabaya/taman-safari-prigen-bromo-madakaripura-3d2n.md` | `website/schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json` | draft |
 
 ### Tours — Bali Origin (4 packages)
 
 | Route | Output file | Schema | Status |
 |---|---|---|---|
-| `/tours/from-bali/bromo-ijen-3d2n` | `website/tours/bali/bromo-ijen-3d2n.md` | `schema/bali-bromo-ijen-3d2n-schema.json` | draft |
-| `/tours/from-bali/ijen-bromo-madakaripura-3d2n` | `website/tours/bali/ijen-bromo-madakaripura-3d2n.md` | `schema/bali-ijen-bromo-madakaripura-3d2n-schema.json` | draft |
-| `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-4d3n` | `website/tours/bali/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `schema/bali-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json` | draft |
-| `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-5d4n` | `website/tours/bali/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `schema/bali-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json` | draft |
+| `/tours/from-bali/bromo-ijen-3d2n` | `website/pages/tours/bali/bromo-ijen-3d2n.md` | `website/schema/bali-bromo-ijen-3d2n-schema.json` | draft |
+| `/tours/from-bali/ijen-bromo-madakaripura-3d2n` | `website/pages/tours/bali/ijen-bromo-madakaripura-3d2n.md` | `website/schema/bali-ijen-bromo-madakaripura-3d2n-schema.json` | draft |
+| `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-4d3n` | `website/pages/tours/bali/ijen-papuma-tumpak-sewu-bromo-4d3n.md` | `website/schema/bali-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json` | draft |
+| `/tours/from-bali/ijen-papuma-tumpak-sewu-bromo-5d4n` | `website/pages/tours/bali/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `website/schema/bali-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json` | draft |
 
 ### Destinations (5 pages)
 
 | Route | Output file | Schema | Status |
 |---|---|---|---|
-| `/destinations/ijen-crater` | `website/destinations/ijen-crater.md` | `schema/ijen-crater-schema.json` | draft |
-| `/destinations/mount-bromo` | `website/destinations/mount-bromo.md` | `schema/mount-bromo-schema.json` | draft |
-| `/destinations/tumpak-sewu-waterfall` | `website/destinations/tumpak-sewu-waterfall.md` | `schema/tumpak-sewu-waterfall-schema.json` | draft |
-| `/destinations/madakaripura-waterfall` | `website/destinations/madakaripura-waterfall.md` | `schema/madakaripura-waterfall-schema.json` | draft |
-| `/destinations/papuma-beach` | `website/destinations/papuma-beach.md` | `schema/papuma-beach-schema.json` | draft |
+| `/destinations/ijen-crater` | `website/pages/destinations/ijen-crater.md` | `website/schema/ijen-crater-schema.json` | draft |
+| `/destinations/mount-bromo` | `website/pages/destinations/mount-bromo.md` | `website/schema/mount-bromo-schema.json` | draft |
+| `/destinations/tumpak-sewu-waterfall` | `website/pages/destinations/tumpak-sewu-waterfall.md` | `website/schema/tumpak-sewu-waterfall-schema.json` | draft |
+| `/destinations/madakaripura-waterfall` | `website/pages/destinations/madakaripura-waterfall.md` | `website/schema/madakaripura-waterfall-schema.json` | draft |
+| `/destinations/papuma-beach` | `website/pages/destinations/papuma-beach.md` | `website/schema/papuma-beach-schema.json` | draft |
 
 ### Travel Guide (12 pages)
 
 | Route | Output file | AEO block | FAQ block | Status |
 |---|---|---|---|---|
-| `/travel-guide` | `website/travel-guide/hub.md` | — | — | draft |
-| `/travel-guide/faq` | `website/travel-guide/faq.md` | — | `faq/ijen.md` + `faq/bromo.md` + `faq/tumpak-sewu.md` + `faq/madakaripura.md` + `faq/papuma.md` | draft |
-| `/travel-guide/best-time-to-visit` | `website/travel-guide/best-time-to-visit.md` | — | — | draft |
-| `/travel-guide/booking-information` | `website/travel-guide/booking-information.md` | `aeo/policy-travel-guide.md` | — | draft |
-| `/travel-guide/ijen-health-screening` | `website/travel-guide/ijen-health-screening.md` | `aeo/ijen.md` | `faq/ijen.md` | draft |
-| `/travel-guide/packing-and-fitness` | `website/travel-guide/packing-and-fitness.md` | — | — | draft |
-| `/travel-guide/police-escort-for-groups` | `website/travel-guide/police-escort-for-groups.md` | — | — | draft |
-| `/travel-guide/safety-on-tours` | `website/travel-guide/safety-on-tours.md` | — | — | draft |
-| `/travel-guide/weather-and-closures` | `website/travel-guide/weather-and-closures.md` | — | — | draft |
-| `/travel-guide/bromo-vs-ijen-comparison` | `website/travel-guide/bromo-vs-ijen-comparison.md` | — | — | reviewed |
-| `/travel-guide/what-to-pack-bromo-ijen` | `website/travel-guide/what-to-pack-bromo-ijen.md` | — | — | reviewed |
-| `/travel-guide/private-vs-shared-tour-comparison` | `website/travel-guide/private-vs-shared-tour-comparison.md` | — | — | reviewed |
+| `/travel-guide` | `website/pages/travel-guide/hub.md` | — | — | draft |
+| `/travel-guide/faq` | `website/pages/travel-guide/faq.md` | — | `website/faq/ijen.md` + `website/faq/bromo.md` + `website/faq/tumpak-sewu.md` + `website/faq/madakaripura.md` + `website/faq/papuma.md` | draft |
+| `/travel-guide/best-time-to-visit` | `website/pages/travel-guide/best-time-to-visit.md` | — | — | draft |
+| `/travel-guide/booking-information` | `website/pages/travel-guide/booking-information.md` | `website/aeo/policy-travel-guide.md` | — | draft |
+| `/travel-guide/ijen-health-screening` | `website/pages/travel-guide/ijen-health-screening.md` | `website/aeo/ijen.md` | `website/faq/ijen.md` | draft |
+| `/travel-guide/packing-and-fitness` | `website/pages/travel-guide/packing-and-fitness.md` | — | — | draft |
+| `/travel-guide/police-escort-for-groups` | `website/pages/travel-guide/police-escort-for-groups.md` | — | — | draft |
+| `/travel-guide/safety-on-tours` | `website/pages/travel-guide/safety-on-tours.md` | — | — | draft |
+| `/travel-guide/weather-and-closures` | `website/pages/travel-guide/weather-and-closures.md` | — | — | draft |
+| `/travel-guide/bromo-vs-ijen-comparison` | `website/pages/travel-guide/bromo-vs-ijen-comparison.md` | — | — | reviewed |
+| `/travel-guide/what-to-pack-bromo-ijen` | `website/pages/travel-guide/what-to-pack-bromo-ijen.md` | — | — | reviewed |
+| `/travel-guide/private-vs-shared-tour-comparison` | `website/pages/travel-guide/private-vs-shared-tour-comparison.md` | — | — | reviewed |
 
 ### Why JVTO (6 pages)
 
 | Route | Output file | AEO block | Status |
 |---|---|---|---|
-| `/why-jvto` | `website/why-jvto/hub.md` | `aeo/why-jvto.md` | draft |
-| `/why-jvto/our-story` | `website/why-jvto/our-story.md` | — | reviewed |
-| `/why-jvto/our-team` | `website/why-jvto/our-team.md` | — | reviewed |
-| `/why-jvto/the-jvto-difference` | `website/why-jvto/the-jvto-difference.md` | — | reviewed |
-| `/why-jvto/reviews` | `website/why-jvto/reviews.md` | — | reviewed |
-| `/why-jvto/community-standards` | `website/why-jvto/community-standards.md` | — | draft |
+| `/why-jvto` | `website/pages/why-jvto/hub.md` | `website/aeo/why-jvto.md` | draft |
+| `/why-jvto/our-story` | `website/pages/why-jvto/our-story.md` | — | reviewed |
+| `/why-jvto/our-team` | `website/pages/why-jvto/our-team.md` | — | reviewed |
+| `/why-jvto/the-jvto-difference` | `website/pages/why-jvto/the-jvto-difference.md` | — | reviewed |
+| `/why-jvto/reviews` | `website/pages/why-jvto/reviews.md` | — | reviewed |
+| `/why-jvto/community-standards` | `website/pages/why-jvto/community-standards.md` | — | draft |
 
 ### Verify JVTO (5 pages)
 
 | Route | Output file | Status |
 |---|---|---|
-| `/verify-jvto` | `website/verify-jvto/hub.md` | draft |
-| `/verify-jvto/legal` | `website/verify-jvto/legal.md` | draft |
-| `/verify-jvto/police-safety` | `website/verify-jvto/police-safety.md` | draft |
-| `/verify-jvto/press-recognition` | `website/verify-jvto/press-recognition.md` | draft |
-| `/verify-jvto/history-artifacts` | `website/verify-jvto/history-artifacts.md` | draft |
+| `/verify-jvto` | `website/pages/verify-jvto/hub.md` | draft |
+| `/verify-jvto/legal` | `website/pages/verify-jvto/legal.md` | draft |
+| `/verify-jvto/police-safety` | `website/pages/verify-jvto/police-safety.md` | draft |
+| `/verify-jvto/press-recognition` | `website/pages/verify-jvto/press-recognition.md` | draft |
+| `/verify-jvto/history-artifacts` | `website/pages/verify-jvto/history-artifacts.md` | draft |
 
 ### Policy (4 pages)
 
 | Route | Output file | Status |
 |---|---|---|
-| `/policy` | `website/policy/hub.md` | draft |
-| `/policy/booking-payment-cancellation` | `website/policy/booking-payment-cancellation.md` | draft |
-| `/policy/inclusions-exclusions` | `website/policy/inclusions-exclusions.md` | draft |
-| `/policy/privacy` | `website/policy/privacy.md` | draft |
+| `/policy` | `website/pages/policy/hub.md` | draft |
+| `/policy/booking-payment-cancellation` | `website/pages/policy/booking-payment-cancellation.md` | draft |
+| `/policy/inclusions-exclusions` | `website/pages/policy/inclusions-exclusions.md` | draft |
+| `/policy/privacy` | `website/pages/policy/privacy.md` | draft |
 
 ---
 
@@ -147,7 +147,7 @@ JSON-LD schemas in `output/schema/` inject via `<script type="application/ld+jso
 |---|---|---|
 | `/travel-guide/permit-requirements-east-java` | `wiki/credentials/legal-licenses.md` | Permit detail thin — needs BBKSDA/TNBTS fee tables |
 | `/travel-guide/sulfur-mining-cultural-guide` | `wiki/destinations/kawah-ijen.md` | Cultural context section thin — needs Osing/sulfur mining source |
-| `/travel-guide/best-time-to-visit` (expansion) | `wiki/content/operational-facts.md` | Seasonal weather data thin |
+| `/travel-guide/best-time-to-visit` (expansion) | `wiki/website/operational-facts.md` | Seasonal weather data thin |
 
 ### Blocked (missing external sources)
 
@@ -164,7 +164,7 @@ JSON-LD schemas in `output/schema/` inject via `<script type="application/ld+jso
 
 ## Schema Files
 
-22 JSON-LD schema files in `output/schema/`, each with a `.receipt.md` verification file:
+22 JSON-LD schema files in `output/website/schema/`, each with a `.receipt.md` verification file:
 
 - **1 Organization schema** — homepage
 - **16 TouristTrip schemas** — tour detail pages (12 Surabaya + 4 Bali)
@@ -184,16 +184,16 @@ Answer Engine Optimization snippets for AI search citation. Each file contains s
 
 | AEO file | Target page | Integration |
 |---|---|---|
-| `aeo/why-jvto.md` | `/why-jvto` | Overlay — add as hidden/structured data for AI crawlers |
-| `aeo/policy-travel-guide.md` | `/policy` + `/travel-guide` | Overlay |
-| `aeo/ijen.md` | `/destinations/ijen-crater` | Overlay |
-| `aeo/bromo.md` | `/destinations/mount-bromo` | Overlay |
-| `aeo/tumpak-sewu.md` | `/destinations/tumpak-sewu-waterfall` | Overlay |
-| `aeo/madakaripura.md` | `/destinations/madakaripura-waterfall` | Overlay |
-| `aeo/papuma.md` | `/destinations/papuma-beach` | Overlay |
-| `aeo/bbksda-regulations-ijen.md` | `/travel-guide/bbksda-regulations-ijen` | Overlay |
-| `aeo/bbksda-regulations-bromo.md` | `/travel-guide/bbksda-regulations-bromo` | Overlay |
-| `aeo/ijen-gas-mask-equipment.md` | `/travel-guide/ijen-gas-mask-equipment` | Overlay |
+| `website/aeo/why-jvto.md` | `/why-jvto` | Overlay — add as hidden/structured data for AI crawlers |
+| `website/aeo/policy-travel-guide.md` | `/policy` + `/travel-guide` | Overlay |
+| `website/aeo/ijen.md` | `/destinations/ijen-crater` | Overlay |
+| `website/aeo/bromo.md` | `/destinations/mount-bromo` | Overlay |
+| `website/aeo/tumpak-sewu.md` | `/destinations/tumpak-sewu-waterfall` | Overlay |
+| `website/aeo/madakaripura.md` | `/destinations/madakaripura-waterfall` | Overlay |
+| `website/aeo/papuma.md` | `/destinations/papuma-beach` | Overlay |
+| `website/aeo/bbksda-regulations-ijen.md` | `/travel-guide/bbksda-regulations-ijen` | Overlay |
+| `website/aeo/bbksda-regulations-bromo.md` | `/travel-guide/bbksda-regulations-bromo` | Overlay |
+| `website/aeo/ijen-gas-mask-equipment.md` | `/travel-guide/ijen-gas-mask-equipment` | Overlay |
 
 ---
 
@@ -203,26 +203,26 @@ Destination-specific FAQ content for the `/travel-guide/faq` page and individual
 
 | FAQ file | Section |
 |---|---|
-| `faq/ijen.md` | Ijen-specific questions |
-| `faq/bromo.md` | Bromo-specific questions |
-| `faq/tumpak-sewu.md` | Tumpak Sewu questions |
-| `faq/madakaripura.md` | Madakaripura questions |
-| `faq/papuma.md` | Papuma questions |
-| `faq/bbksda-regulations-ijen.md` | Ijen regulations |
-| `faq/bbksda-regulations-bromo.md` | Bromo regulations |
-| `faq/ijen-gas-mask-equipment.md` | Gas mask/equipment |
+| `website/faq/ijen.md` | Ijen-specific questions |
+| `website/faq/bromo.md` | Bromo-specific questions |
+| `website/faq/tumpak-sewu.md` | Tumpak Sewu questions |
+| `website/faq/madakaripura.md` | Madakaripura questions |
+| `website/faq/papuma.md` | Papuma questions |
+| `website/faq/bbksda-regulations-ijen.md` | Ijen regulations |
+| `website/faq/bbksda-regulations-bromo.md` | Bromo regulations |
+| `website/faq/ijen-gas-mask-equipment.md` | Gas mask/equipment |
 
 ---
 
-## SEO Quick Wins (from wiki/ops/seo-strategy.md)
+## SEO Quick Wins (from wiki/seo/seo-strategy.md)
 
-Dev-actionable items. See `wiki/ops/seo-strategy.md` for full details.
+Dev-actionable items. See `wiki/seo/seo-strategy.md` for full details.
 
 | # | Action | Owner | Status |
 |---|---|---|---|
-| QW-1 | 301 redirects — legacy to SSOT routes | Dev | See `wiki/ops/redirect-map.md` |
+| QW-1 | 301 redirects — legacy to SSOT routes | Dev | See `wiki/seo/redirect-map.md` |
 | QW-3 | Fix meta description "From-surabaya" to "Surabaya" | Dev | Template bug |
-| QW-5 | Organization/TravelAgency JSON-LD globally | Dev | Schema in `schema/homepage-organization-schema.json` |
+| QW-5 | Organization/TravelAgency JSON-LD globally | Dev | Schema in `website/schema/homepage-organization-schema.json` |
 | QW-6 | FAQPage JSON-LD on tour pages | Dev | Generate from FAQ blocks |
 | QW-7 | TouristTrip + AggregateRating on tour pages | Dev | Schema files ready |
 | QW-8 | Title tag rewrites (top 10) | Dev | See seo-strategy Title Tags section |
@@ -237,7 +237,7 @@ Dev-actionable items. See `wiki/ops/seo-strategy.md` for full details.
 | reviewed | 12 files | Copy-checked, ready for site use |
 | draft | 44 files | Generated from wiki, not yet reviewed |
 
-**To publish a draft page**: Review against `wiki/content/brand-voice.md` voice guidelines + verify trust signal values against `wiki/credentials/trust-signals.md`.
+**To publish a draft page**: Review against `wiki/website/brand-voice.md` voice guidelines + verify trust signal values against `wiki/credentials/trust-signals.md`.
 
 ---
 
@@ -245,10 +245,10 @@ Dev-actionable items. See `wiki/ops/seo-strategy.md` for full details.
 
 | Wiki page | What it provides |
 |---|---|
-| `wiki/ops/redirect-map.md` | 301 redirect mapping (legacy to new routes) |
-| `wiki/ops/seo-strategy.md` | Keyword targets, title tags, quick wins |
-| `wiki/content/schema-templates.md` | Schema.org field requirements per page type |
-| `wiki/content/brand-voice.md` | Voice guidelines + meta description formula |
+| `wiki/seo/redirect-map.md` | 301 redirect mapping (legacy to new routes) |
+| `wiki/seo/seo-strategy.md` | Keyword targets, title tags, quick wins |
+| `wiki/website/schema-templates.md` | Schema.org field requirements per page type |
+| `wiki/website/brand-voice.md` | Voice guidelines + meta description formula |
 | `wiki/products/packages-full-pricing.md` | All pricing data (22 packages, all pax tiers) |
 | `wiki/sources/wa-pro-crm-api.md` | WhatsApp API reference |
 | `wiki/sources/gpx-destination-data.md` | Geo coordinates for all 5 destinations |
