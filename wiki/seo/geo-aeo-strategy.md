@@ -1,5 +1,5 @@
 ---
-type: ops
+type: seo
 title: GEO/AEO Strategy — Generative & Answer Engine Optimization
 last_updated: 2026-05-24
 sources: [geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-audit-2026-05]

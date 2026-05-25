@@ -1,5 +1,5 @@
 ---
-type: content
+type: website
 title: Query — Hero Claim for Price-Skeptical Solo Traveler
 last_updated: 2026-05-12
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026]

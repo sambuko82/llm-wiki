@@ -1,5 +1,5 @@
 ---
-type: content
+type: website
 title: JVTO Brand Voice Guide
 last_updated: 2026-05-17
 sources: [ssot-v6, jvto-homepage-clip, seo-audit-2026-05]

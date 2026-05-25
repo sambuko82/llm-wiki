@@ -1,5 +1,5 @@
 ---
-type: ops
+type: seo
 title: 301 Redirect Map — Legacy → SSOT URLs
 last_updated: 2026-05-17
 sources: [seo-audit-2026-05, sitemap-2026-05]

@@ -1,5 +1,5 @@
 ---
-type: ops
+type: seo
 title: Why JVTO — Hub & Spoke Architecture Reference
 last_updated: 2026-05-24
 sources: [digital-trust-fortress-blueprint, why-jvto-trust-architecture]

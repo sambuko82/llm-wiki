@@ -1,5 +1,5 @@
 ---
-type: ops
+type: seo
 title: Competitor Intelligence Registry
 last_updated: 2026-05-17
 sources: [seo-audit-2026-05]

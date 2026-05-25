@@ -1,5 +1,5 @@
 ---
-type: content
+type: website
 title: JVTO FAQ Master — 20 Canonical Answers
 last_updated: 2026-05-11
 sources: [ssot-v6, jvto-homepage-clip]

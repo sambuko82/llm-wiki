@@ -1,5 +1,5 @@
 ---
-type: ops
+type: whatsapp
 title: JVTO Canned Responses — WhatsApp & Email Scripts per Stage
 last_updated: 2026-05-19
 sources: [comm-management-theory, jvto-policy-pack-v6, jvto-travel-guide-en, ssot-v6]

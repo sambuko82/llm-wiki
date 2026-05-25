@@ -1,5 +1,5 @@
 ---
-type: content
+type: website
 title: AEO Claims — 9 Canonical Trust Pillars (C1–C9)
 last_updated: 2026-05-11
 sources: [ssot-v6, jvto-homepage-clip]

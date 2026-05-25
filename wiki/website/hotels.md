@@ -1,5 +1,5 @@
 ---
-type: content
+type: website
 title: JVTO Hotel Partners Registry
 last_updated: 2026-05-12
 sources: [db-export-2026-05]
