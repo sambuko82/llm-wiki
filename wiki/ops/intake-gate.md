@@ -48,6 +48,7 @@ Place any new file in `raw/_inbox/`. Run: "Process inbox" or "Intake gate".
 | api-feedback | API integration issue/feedback |
 | booking-data | Booking records/statistics |
 | vendor-data | Vendor/partner information |
+| db-export | Live database dump (SQL DDL, CSV rows, table inventory) — backoffice MySQL or equivalent |
 
 ## Domain Routing
 
@@ -78,6 +79,7 @@ Place any new file in `raw/_inbox/`. Run: "Process inbox" or "Intake gate".
 | hybrid | Wiki knowledge is internal, some output may be public |
 | sensitive | Legal, medical, safety — requires human approval |
 | public_sensitive | Public but with verification gate (credentials, regulations) |
+| internal_pii | Internal only AND contains PII (customer emails/phones, payment refs, KTP) — must be gitignored at raw layer; wiki summaries must be aggregate-only |
 
 ## Evidence Weighting (descending authority)
 

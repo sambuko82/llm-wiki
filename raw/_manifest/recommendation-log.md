@@ -13,9 +13,13 @@
 | REC-005 | 2026-05-25 | update | Log 37 unlogged raw files as batch-ingested | Health check found 37 raw files without individual log entries | pending | Consider batch-log entry |
 | REC-006 | 2026-05-25 | new_tag | Add `ferry-crossing` tag | Bali-origin routes have distinct ferry cost structure | pending | — |
 | REC-007 | 2026-05-25 | new_tag | Add `taman-safari` tag | Special package with unique hotel (Baobab Safari Resort) | pending | — |
-| REC-008 | 2026-05-26 | new_page | Create wiki/credentials/safety-incidents.md | Dedicated page for Ijen incident registry — currently embedded in source page. Would centralize safety data for AEO/FAQ use. Low priority unless website /safety page is built. | pending | — |
-| REC-009 | 2026-05-26 | new_url | Consider /travel-guide/ijen-safety-incidents for Silo 3 | Accident data has SEO value for "ijen safety" queries. BUT: sensitive content with named fatalities — requires human approval before publishing. | pending | human_decision_required |
-| REC-010 | 2026-05-26 | update | Verify "Buleleng Hiace Fatality" incident | Referenced in ijen-safety-protocol but NOT in Tourist Accidents Excel. Possibly a Bali-side transit accident. Need Sam to confirm/deny before adding to incident registry. | pending | human_decision_required |
+| REC-008 | 2026-05-25 | new_page | Create wiki/credentials/safety-incidents.md | Dedicated page for Ijen incident registry — currently embedded in source page. Would centralize safety data for AEO/FAQ use. Low priority unless website /safety page is built. | pending | — |
+| REC-009 | 2026-05-25 | new_url | Consider /travel-guide/ijen-safety-incidents for Silo 3 | Accident data has SEO value for "ijen safety" queries. BUT: sensitive content with named fatalities — requires human approval before publishing. | pending | human_decision_required |
+| REC-010 | 2026-05-25 | update | Verify "Buleleng Hiace Fatality" incident | Referenced in ijen-safety-protocol but NOT in Tourist Accidents Excel. Possibly a Bali-side transit accident. Need Sam to confirm/deny before adding to incident registry. | pending | human_decision_required |
+| REC-011 | 2026-05-25 | update | Add `db-export` source_type and `internal_pii` visibility to ops/intake-gate.md taxonomy | Backoffice extraction (R062-R064) introduced these values; taxonomy in intake-gate spec doesn't list them yet. Done in this audit. | done | Added in intake audit 2026-05-25 |
+| REC-012 | 2026-05-25 | update | Validate `finance/rate-cards` against realized prices in `sources/backoffice-pricing` | New backoffice extraction surfaced realized booking totals per template_package_id. Spreadsheet-based rate cards have never been reconciled against live DB. Next sprint task. | pending | — |
+| REC-013 | 2026-05-25 | new_page | Consider `wiki/whatsapp/conversation-analytics.md` distilled from `sources/backoffice-whatsapp` | 5,547 WA messages + 640 daily summaries now in DB; current `whatsapp/operations-playbook` is procedural, lacks volume analytics. Would power CRM tuning + canned-response coverage gap detection. | pending | — |
+| REC-014 | 2026-05-25 | update | Inbox at `raw/_inbox/` currently empty — confirm no orphan files outside `raw/_inbox/`, `raw/_manifest/`, `raw/backoffice/csv/dumps/` | Audit verified 64 raw files counted vs 64 raw-files-index.csv entries. PASS. | done | Verified 2026-05-25 |
 
 ---
 
