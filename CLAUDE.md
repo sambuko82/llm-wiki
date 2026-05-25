@@ -150,7 +150,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Domain restructure + finance validation + Silo 3 expansion. Finance margins validated against DB (5/8 exact match, 12 packages now have margins). Silo 3: expanded wiki backing (sulfur mining, BBKSDA Bromo, seasonal data, permit-requirements page), generated 5 travel-guide output pages (5,353 words). Fixed output/INDEX.md stale paths. Created 4 hookify rules for restructure verification.
+**Last completed:** Domain restructure + finance validation + Silo 3 expansion + weekly health check (3 stale review counts fixed) + intake gate infrastructure (Workflow 7 ops page, 10 manifest files, 29 categories, 35 tags, 14 evidence items, 3 tracked conflicts, correlation/recommendation layer). 4 hookify rules created. output/INDEX.md fixed.
 **Completed date:** 2026-05-25
 **Next task:** Review 5 new Silo 3 draft output files (bbksda-regulations-ijen, bbksda-regulations-bromo, ijen-gas-mask-equipment, permit-requirements-east-java, sulfur-mining-cultural-guide) from draft → reviewed status. Then generate JSON-LD schema for Silo 1 tour pages.
 **Build status:** — no code changes (wiki/output only)
