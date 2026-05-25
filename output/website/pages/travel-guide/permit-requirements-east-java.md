@@ -1,5 +1,5 @@
 ---
-status: draft
+status: reviewed
 profile: website-copy
 target_url: /travel-guide/permit-requirements-east-java
 title: "East Java Tour Permits — What You Need for Bromo, Ijen & More | JVTO"
@@ -63,7 +63,7 @@ Bromo is simpler than Ijen: ticket + jeep, no health screening. The jeep is not 
 | Entrance ticket | Collected at site entrance | IDR 100,000–150,000/person | Yes |
 | Local guide | Recommended for canyon descent | IDR 200,000/unit | Yes |
 
-The canyon descent is steep, wet, and uses fixed ropes. A local guide is strongly recommended. Water shoes improve grip on river rocks.
+The canyon descent is steep, wet, and uses fixed ropes. A local guide is strongly recommended. Water shoes improve grip on river rocks. Helmets are provided by local site management at the canyon — not a JVTO inclusion.
 
 ### Madakaripura Waterfall
 
@@ -139,7 +139,7 @@ No — if you book with a properly licensed operator. JVTO handles all entrance 
 For a typical Ijen visit: IDR 75,000 (ticket) + IDR 35,000 (health check) + IDR 250,000 (guide) + IDR 55,000 (gas mask) + IDR 35,000 (certificate) = IDR 450,000/person in gate costs alone — before transport, accommodation, or any safety coordination. For Bromo: IDR 160,000 (ticket) + IDR 500,000 (jeep) minimum. All of this is pre-included in JVTO packages.
 
 **Q: Can I verify JVTO's credentials before booking?**
-Yes. NIB 1102230032918 is searchable on OSS. Dr. Irwandanu's SIP is verifiable at satusehat.kemkes.go.id. HPWKI registration number AHU-0001072.AH.01.07.TAHUN 2024 is on file. JVTO publishes SHA-256 hashes of credential documents in its public llms.txt file.
+Yes. NIB 1102230032918 is searchable on OSS. Dr. Irwandanu's STR (QN00001073380217) is verifiable at satusehat.kemkes.go.id. HPWKI registration number AHU-0001072.AH.01.07.TAHUN 2024 is on file. JVTO publishes SHA-256 hashes of credential documents for forensic verification.
 
 **Q: Is JVTO licensed for both Ijen and Bromo?**
 Yes. JVTO holds BBKSDA operator clearance for both Kawah Ijen (Natural Tourism Park) and Bromo Tengger Semeru National Park, plus TDUP and NIB covering tour operator + travel agency activity codes (KBLI 79121 + 79911).

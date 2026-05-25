@@ -1,5 +1,5 @@
 ---
-status: draft
+status: reviewed
 profile: website-copy
 target_url: /travel-guide/bbksda-regulations-bromo
 title: "Bromo National Park Rules — Entry, Jeep & BBKSDA Permits | JVTO"

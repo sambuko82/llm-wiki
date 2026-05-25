@@ -11,6 +11,19 @@ sources: []
 
 ---
 
+## [2026-05-26] review | Silo 3 draft output files — draft → reviewed (5 files)
+
+5 Silo 3 travel-guide output files promoted from `draft` to `reviewed`:
+- output/website/pages/travel-guide/bbksda-regulations-ijen.md — Fixed: unsourced clinic names removed, SIP→STR credential naming corrected
+- output/website/pages/travel-guide/bbksda-regulations-bromo.md — Clean, no changes needed
+- output/website/pages/travel-guide/ijen-gas-mask-equipment.md — Fixed: removed dead link to non-existent what-to-pack page
+- output/website/pages/travel-guide/permit-requirements-east-java.md — Fixed: llms.txt reference removed (not yet live), Tumpak Sewu helmet note added, SIP→STR corrected
+- output/website/pages/travel-guide/sulfur-mining-cultural-guide.md — Added unsourced-data disclaimer for mining statistics (load weights, income, PT Candi Ngrimbi, colonial history)
+
+Wiki discrepancy flagged: KBLI code 79120 (trust-signals) vs 79121+79911 (permit-requirements) — reconcile in next health check.
+
+---
+
 ## [2026-05-26] ingest | Guardian Infrastructure & Authority Framework — 4-file strategy synthesis
 
 **Source type**: Workflow 4 typed ingest. Profile: seo-audit.

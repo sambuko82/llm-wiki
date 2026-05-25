@@ -1,5 +1,5 @@
 ---
-status: draft
+status: reviewed
 profile: website-copy
 target_url: /travel-guide/ijen-gas-mask-equipment
 title: "Ijen Gas Mask & Safety Equipment — What's Provided | JVTO"
@@ -87,7 +87,7 @@ JVTO provides gas masks, headlamps, and trekking poles. Everything else is the g
 - Headlamp (provided)
 - Trekking poles (provided)
 
--> [[website/operational-facts]] · [[travel-guide/what-to-pack-bromo-ijen]]
+-> [[website/operational-facts]]
 
 ---
 

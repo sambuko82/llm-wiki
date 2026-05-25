@@ -1,5 +1,5 @@
 ---
-status: draft
+status: reviewed
 profile: website-copy
 target_url: /travel-guide/bbksda-regulations-ijen
 title: "BBKSDA Ijen Regulations — Health Certificate, Entry & Permits | JVTO"
@@ -57,7 +57,7 @@ The health certificate requirement is set by **BBKSDA**, not by tour operators. 
 
 **No valid QR code = no access to the crater zone.** This is a hard gate — not a formality.
 
-JVTO's Ijen health screenings are conducted by Dr. Ahmad Irwandanu, a licensed medical doctor (Dokter Umum) whose SIP credential is publicly verifiable through Kemenkes RI (SatuSehat SDMK) and KKI. Screening can take place at Klinik Bakti Husada, Puskesmas Licin, or at the guest's hotel before departure.
+JVTO's Ijen health screenings are conducted by Dr. Ahmad Irwandanu, a licensed medical doctor (Dokter Umum) whose STR credential (QN00001073380217) is publicly verifiable through Kemenkes RI (SatuSehat SDMK) and KKI. Screening takes place at the guest's hotel before departure or at a local partner clinic.
 
 If a guest is assessed unfit, the climb is cancelled for that individual — not the group. The screening cost is non-refundable. This is a BBKSDA rule, not JVTO discretion.
 

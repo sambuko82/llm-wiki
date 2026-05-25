@@ -1,5 +1,5 @@
 ---
-status: draft
+status: reviewed
 profile: website-copy
 target_url: /travel-guide/sulfur-mining-cultural-guide
 title: "Ijen Sulfur Mining — History, Culture & Visitor Etiquette | JVTO"
@@ -10,7 +10,9 @@ sources: [destinations/kawah-ijen, website/operational-facts, website/faq-master
 
 # Ijen Sulfur Mining — History, Culture & Visitor Etiquette
 
-The sulfur miners of Kawah Ijen are not a tourist attraction. They are workers — carrying 70–90 kg loads of broken sulfur up a steep crater path twice a day, in direct exposure to toxic gases, for roughly IDR 50,000–100,000 per load. They share the trail with you. Understanding their work, their history, and the etiquette of sharing their space is part of being a responsible visitor.
+The sulfur miners of Kawah Ijen are not a tourist attraction. They are workers — carrying heavy loads of broken sulfur up a steep crater path in direct exposure to toxic gases. They share the trail with you. Understanding their work, their history, and the etiquette of sharing their space is part of being a responsible visitor.
+
+> **Source note**: Mining statistics in this page (load weights, income, workforce size, concession holder) are widely reported in international media and travel literature. They are not sourced from the JVTO wiki SSOT. Verify specifics before publication or create a dedicated wiki source page for Ijen mining data.
 
 ---
 
