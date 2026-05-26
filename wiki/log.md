@@ -11,6 +11,19 @@ sources: []
 
 ---
 
+## [2026-05-26] audit | Backoffice pricing validation — template vs realized
+
+Pages updated: sources/backoffice-pricing (validation findings + DATA GAP flag), finance/rate-cards (Klook 25% commission model), finance/profit-analysis (OTA impact + realized validation BLOCKED note).
+
+Key findings:
+- Template prices match wiki at solo tier (5/5 spot checks pass)
+- Klook commission = flat 25% retail markup, JVTO receives full template price — now documented
+- `bookings.template_package_id` unpopulated for all 1,453 bookings — realized price comparison structurally impossible
+- 89 backoffice packages vs 22 published (67 unpublished — status unknown)
+- `price_categories` names missing — pax-tier mapping blocked, needs live DB query
+
+---
+
 ## [2026-05-26] review | Silo 3 draft output files — draft → reviewed (5 files)
 
 5 Silo 3 travel-guide output files promoted from `draft` to `reviewed`:

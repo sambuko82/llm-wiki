@@ -1,7 +1,7 @@
 ---
 type: finance
 title: JVTO Rate Cards — Cost Component Reference
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 sources: [finance-rate-cards, backoffice-mysql]
 ---
 
@@ -162,6 +162,24 @@ Police Escort is the highest single-item cost at 2,000,000 IDR per engagement. U
 - **Luxury** (1.5M+): Lava View Lodge (suites/cottages), Baobab Safari Resort, Shanaya Resort
 
 Some hotels have weekday/weekend/high-season tiered pricing (Lava View, Manis Ae, THE 1O1, Shanaya). See raw JSON for full room-level detail.
+
+---
+
+## OTA Channel Pricing — Klook
+
+Source: [[sources/backoffice-pricing]] — 5 packages with Klook pricing in `package_prices` table.
+
+**Commission model**: Klook retails at **template price × 1.25** (25% markup). JVTO receives the full template price (Klook net = template).
+
+| Package | Template (IDR) | Klook Retail (IDR) | Klook Net (IDR) | Markup |
+|---------|---------------|-------------------|----------------|--------|
+| 3D2N Bromo-Mada-Ijen (Sby) | 5,460,000 | 6,825,000 | 5,460,000 | 25.0% |
+| 4D3N Ijen-Papuma-Tumpak-Bromo (Sby) | 6,675,000 | 8,343,750 | 6,675,000 | 25.0% |
+| 4D3N Bromo-Ijen-Night Market (Sby) | 6,715,000 | 8,393,750 | 6,715,000 | 25.0% |
+
+Only 3 distinct packages (5 rows) have Klook pricing populated. Remaining packages either not listed on Klook or pricing not entered in backoffice.
+
+**Margin impact**: JVTO margin is identical whether booking is direct or via Klook — the tourist pays 25% more, Klook absorbs the spread. No JVTO discount for OTA channel.
 
 ---
 

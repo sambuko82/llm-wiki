@@ -1,8 +1,8 @@
 ---
 type: finance
 title: JVTO Profit Analysis
-last_updated: 2026-05-25
-sources: [finance-rate-cards, db-export-2026-05]
+last_updated: 2026-05-26
+sources: [finance-rate-cards, db-export-2026-05, backoffice-mysql]
 ---
 
 # Profit Analysis
@@ -129,6 +129,24 @@ After validation, all 7 previously unpriced packages now have DB selling prices.
 | 1D Bromo Midnight | COGS > selling | Excel COGS 2,420,000 (1 pax) > DB 1,550,000 (2 pax). Spreadsheet may use different vehicle spec (Innova 1,200,000/day vs Avanza 1,050,000). Needs spreadsheet review. |
 | 5D Bali→Sby | No solo tier | Excel shows 9M selling for solo, but DB only publishes 2+ pax. Consider adding solo tier to DB if solo bookings occur. |
 | 1D Bromo Sunrise | OTA-only price | Klook price 2,375,000. Need direct-booking price in DB or spreadsheet to compute direct margin. |
+
+---
+
+## OTA Channel Impact (Klook)
+
+Source: [[sources/backoffice-pricing]] validation 2026-05-26. See [[finance/rate-cards]] §OTA Channel Pricing.
+
+Klook uses a flat 25% retail markup. JVTO receives the full template price (Klook net = template). Tourist pays 25% more on Klook vs direct booking.
+
+**Margin implication**: JVTO margin is channel-neutral — same profit per booking regardless of direct or Klook. The Row 1 entry (1D Bromo Sunrise at Klook 2,375,000) may be a special case; the 25% pattern from `package_prices` suggests JVTO's template price would be ~1,900,000 (2,375,000 / 1.25), not the DB 2-pax direct price of 1,550,000. Needs verification.
+
+---
+
+## Realized Price Validation — BLOCKED
+
+Template-to-realized price comparison is structurally impossible. `bookings.template_package_id` = 0 for all 1,453 bookings — the backoffice app does not link bookings to package templates. See [[sources/backoffice-pricing]] §DATA GAP for detail.
+
+Without this link, discount patterns, upsell frequency, and actual vs quoted spread remain unobservable from DB data alone.
 
 ---
 

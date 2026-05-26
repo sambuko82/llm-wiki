@@ -1,7 +1,7 @@
 ---
 type: source
 title: Backoffice — Pricing (Template vs Realized)
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 sources: [backoffice-mysql]
 ---
 
@@ -13,6 +13,8 @@ Use this to validate `wiki/finance/rate-card-*.md` against actual booking data.
 - **Distinct packages with prices:** 89
 - **Total price rows (`package_prices`):** 556
 - **Bookings with template_package_id set:** 0
+
+> **DATA GAP (structural):** `bookings.template_package_id` is unpopulated for all 1,453 bookings. The backoffice app does not link bookings to template packages — prices are entered manually per booking. This makes template-to-realized price comparison **structurally impossible** from current data. The "Realized prices" section below will remain empty until the backoffice app is patched to populate this FK.
 
 ## Template price points
 
@@ -76,12 +78,50 @@ Top 50 by price (template, not realized).
 | Package id | Bookings | Avg total | Avg per-pax | Min per-pax | Max per-pax |
 |---|---:|---:|---:|---:|---:|
 
+## Validation findings (2026-05-26)
+
+### Template vs wiki prices — PASS
+
+Solo prices (category 1) cross-checked against [[products/packages-full-pricing]]:
+
+| Package | Backoffice cat-1 | Wiki solo | Match |
+|---------|-----------------|-----------|-------|
+| 3D Ijen-Bromo-Mada (Sby) | 6,300,000 | 6,300,000 | ✓ |
+| 3D Bromo-Mada-Ijen (Sby→Bali) | 6,300,000 | 6,300,000 | ✓ |
+| 4D Ijen-Bromo-Mada (Sby) | 7,550,000 | 7,550,000 | ✓ |
+| 4D Ijen-Papuma-Tumpak-Bromo (Sby) | 8,050,000 | 8,050,000 | ✓ |
+| 5D Ijen-Papuma-Tumpak-Bromo (Sby) | 9,050,000 | 9,050,000 | ✓ |
+
+Template prices are consistent with published wiki prices at solo tier.
+
+### Klook commission model — NEW FINDING
+
+Flat 25% retail markup across all Klook-priced packages. Klook net = template price (JVTO receives full amount). Now documented in [[finance/rate-cards]] §OTA Channel Pricing.
+
+### Duplicate/stale template rows — FLAG
+
+Multiple price rows exist for the same package + category:
+
+- 3D2N Bromo-Mada-Ijen cat 1: 5,460,000 AND 5,310,000 (150k gap — stale row?)
+
+556 rows for 89 packages = avg 6.2 rows/package. Some are multi-tier (expected), some are duplicates (needs cleanup in backoffice).
+
+### Category mapping — BLOCKED
+
+`price_categories` table has 42 rows with IDs only (no `name` column extracted). Category numbers (1, 11, 27–33) cannot be mapped to pax tiers without a live DB query for `price_categories.name`.
+
+### Scale gap: 89 vs 22 packages
+
+Backoffice holds 89 package templates; only 22 are published on the website. Unpublished packages include Yogyakarta (4D3N), Grand Java Expedition (7D6N ×2), Bangsring Underwater combos, and Malang city variants. Status unknown (deprecated? future? internal?).
+
+---
+
 ## Validation hook
 
 When updating `wiki/finance/rate-card-package.md`, cross-check that:
 1. Each template price in this table has a matching entry in the rate card.
-2. Realized per-pax averages fall within ±15% of the rate card price (otherwise discount layer or upsell is happening uncaptured).
-3. Klook retail vs net spread matches the Klook commission assumption in `wiki/finance/`.
+2. ~~Realized per-pax averages fall within ±15% of the rate card price.~~ **BLOCKED** — `template_package_id` unpopulated, no realized data available.
+3. Klook retail vs net spread matches the Klook commission assumption in `wiki/finance/`. **CONFIRMED** — 25% flat markup, documented 2026-05-26.
 
 ## Cross-references
 - [[sources/backoffice-finance]] — aggregate revenue from these prices
