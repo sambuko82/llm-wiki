@@ -158,10 +158,10 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Full project documentation (Diataxis framework) — 7 docs under `docs/`: 1 tutorial, 3 how-tos, 2 references, 1 explanation. 1,027 lines covering all workflows, ingestion profiles, compilation profiles, health checks, scripts pipeline, trust architecture, and design decisions. CLAUDE.md directory structure updated.
+**Last completed:** (1) Diataxis docs (7 files, 1,027 lines). (2) Backoffice pricing validation — Klook 25% commission documented, template_package_id structural gap flagged, 5/5 template-vs-wiki price checks pass. (3) JSON-LD schema for all 6 student packages generated + Silo 1 status updated to DONE (28 total schema files now). (4) SEO strategy Silo 1 stale note corrected.
 **Completed date:** 2026-05-26
-**Next task:** (1) Review backoffice extraction findings — validate realized vs template pricing in `sources/backoffice-pricing`, propose discount-layer adjustments to `finance/rate-cards`. (2) Then: generate JSON-LD schema for Silo 1 tour pages.
-**Build status:** — no code changes (wiki/docs only).
+**Next task:** (1) Query live DB for `price_categories.name` to unlock pax-tier mapping for 556 template price rows. (2) Catalog 67 unpublished backoffice packages (deprecated vs future vs internal). (3) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
+**Build status:** — no code changes (wiki/output only).
 **Open items:**
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
 - Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam
