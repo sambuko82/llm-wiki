@@ -158,7 +158,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** (1) Diataxis docs (7 files, 1,027 lines). (2) Backoffice pricing validation — Klook 25% commission documented, template_package_id structural gap flagged, 5/5 template-vs-wiki price checks pass. (3) JSON-LD schema for all 6 student packages generated + Silo 1 status updated to DONE (28 total schema files now). (4) SEO strategy Silo 1 stale note corrected.
+**Last completed:** (1) Google Maps Reviews API ingestion (123 reviews) + Profile Media (87 items). (2) 3-platform review compilation — 195 reviews (Google 123 + Trustpilot 51 + TripAdvisor 21) organized by crew (14) + package (16). (3) Crew-registry enriched with cross-platform quotes. (4) Packages-overview gets review evidence section. (5) 4 new review patterns identified (accommodation, schedule, photography, multi-language).
 **Completed date:** 2026-05-26
 **Next task:** (1) Query live DB for `price_categories.name` to unlock pax-tier mapping for 556 template price rows. (2) Catalog 67 unpublished backoffice packages (deprecated vs future vs internal). (3) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
 **Build status:** — no code changes (wiki/output only).
