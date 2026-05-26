@@ -22,20 +22,21 @@ The website has a dedicated trust verification section at `/verify-jvto` (confir
 
 This section operationalizes the "Transparency-First" differentiator — prospects can verify credentials without asking. Content for these pages has not been ingested; use [[credentials/legal-licenses]] and [[people/agung-sambuko]] as the canonical sources for the underlying facts.
 
-## Live Review Platforms (verified 2026-05-18)
+## Live Review Platforms (verified 2026-05-26)
 
-| Platform | Rating | Count | URL |
-|---|---|---|---|
-| **Trustpilot** (primary) | **4.8 / 5** | 51 | https://trustpilot.com/review/javavolcano-touroperator.com |
-| **Google Maps** | 4.90 / 5 | 92 | https://www.google.com/maps?cid=1266403973589689021 |
-| **TripAdvisor** | 4.95 / 5 | 21 | https://www.tripadvisor.com/Attraction_Review-g297715-d19983165-Reviews-Java_Volcano_Tour_Operator-Surabaya_East_Java_Java.html |
-| **GetYourGuide** | — | — | https://www.getyourguide.com/java-volcano-tour-operator-s260697/ |
+| Platform | Rating | Count | URL | Verified |
+|---|---|---|---|---|
+| **Google Maps** | **4.9 / 5** | **123** | https://www.google.com/maps?cid=1266403973589689021 | 2026-05-26 (API) |
+| **Trustpilot** (schema primary) | **4.8 / 5** | 51 | https://trustpilot.com/review/javavolcano-touroperator.com | 2026-05-18 |
+| **TripAdvisor** | 4.95 / 5 | 21 | https://www.tripadvisor.com/Attraction_Review-g297715-d19983165-Reviews-Java_Volcano_Tour_Operator-Surabaya_East_Java_Java.html | 2026-05-12 (DB) |
+| **GetYourGuide** | — | — | https://www.getyourguide.com/java-volcano-tour-operator-s260697/ | — |
+| **Total** | — | **195** | — | — |
 
-**Schema status**: AggregateRating ACTIVE on Organization schema. Individual Review schema DEFERRED. See [[sources/ssot-v6]] §10.
+**Schema status**: AggregateRating ACTIVE on Organization schema (Trustpilot 4.8/51 as primary). Individual Review schema DEFERRED. See [[sources/ssot-v6]] §10.
 
-> Stale-value note: Prior version v4.0 of SSOT used `4.9 / 112 reviews`. v6.0 canonical was `4.8 / 47` (verified 2026-04-19). **Current canonical is `4.8 / 51`** (verified 2026-05-09 via [[sources/trustpilot-reviews-2026]]). Any content showing 47, 112, or 4.9/Trustpilot is stale.
+> Stale-value note: Prior SSOT v4.0 used `4.9 / 112 reviews`. v6.0 canonical was `4.8 / 47`. **Current Trustpilot canonical: `4.8 / 51`** (verified 2026-05-18). **Current Google canonical: `4.9 / 123`** (verified 2026-05-26 via API). Any content showing 92 Google reviews or 47 Trustpilot is stale.
 
-See [[reviews/trustpilot-compilation]] for verbatim excerpts and guide/driver attribution.
+See [[reviews/google-tripadvisor-2026]] for unified 195-review cross-platform compilation.
 
 ## Press Coverage (third-party independent records)
 

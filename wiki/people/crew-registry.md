@@ -1,8 +1,8 @@
 ---
 type: person
 title: JVTO Crew Registry — 11 KTA-Credentialed Members
-last_updated: 2026-05-25
-sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, ssot-image-asset-map, backoffice-mysql, guardian-authority-framework-2026-05]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, google-maps-reviews-api-2026, ssot-image-asset-map, backoffice-mysql, guardian-authority-framework-2026-05]
 total_crew: 14
 guides: 7
 drivers: 7
@@ -51,16 +51,41 @@ Per SSOT §4_3, this is enforced by INDECON membership: "INDECON listing explici
 - **Fauzi** — "I'm a friendly guide who loves taking photos for guests and quickly connects with people. I enjoy making trips fun, relaxed, and full of great memories."
 - **Boy (Ahboy)** — "I am a local resident who enjoys welcoming visitors and sharing stories about this area. I'm happy to help travelers explore Java's landscapes."
 
-### Guide review-quote excerpts (verified guest-authored)
+### Guide review-quote excerpts (verified guest-authored, 3-platform)
 
-- **Anjas** — "Creative at taking fun photos... Anjas was the highlight for the trip." — Wang Zhe, Google Reviews
-- **Rendi** — "When we went down the steep crater, he held our hands to prevent us from falling." — Wing Shan Lui, Google Reviews
-- **Gufron** — "Always willing to help you get your best photo." — Adrián Martínez, Google Reviews
-- **Boy (Ahboy)** — "Incredibly knowledgeable and went out of his way to make sure everything we needed was sorted." — Jason Li, Trustpilot
-- **Taufik** — "Organized, always briefing done prior to all trips and flexible with timing." — Kevin Foo, Trustpilot
-- **Fauzi** — "Very attentive, went the extra mile, photo documentation, safety-first." — multiple Trustpilot reviewers
+**Anjas** — 12 reviews (Google 8 · TP 3 · TA 1)
+- "Stunningly beautiful nature and super well coordinated by our tour guide Anjas." — Milo Parrott, Google 2026-05
+- "I don't think there is a better tour guide anywhere than Anjas." — John Joyce, Trustpilot 2025-12
+- "Creative at taking fun photos... Anjas was the highlight for the trip." — Wang Zhe, Google
 
-Full review compilation: [[reviews/trustpilot-compilation]].
+**Boy (Ahboy)** — 23 reviews (Google 9 · TP 13 · TA 1) — most-reviewed guide
+- "Ahboy was a phenomenal Ijen guide — knowledgeable, went out of his way for safety, logistics, equipment." — Jason Li, Trustpilot 2025-10
+- "From start to finish he made sure we were safe, having fun and told us many interesting facts about Ijen." — Iain Maclean, Trustpilot 2025-07
+- "Boy (our guide to Ijen crater) — so friendly and shared lots of useful info." — Patarachai Sereerat, Google 2026-01
+
+**Fauzi** — 6 reviews (Google 5 · TP 1)
+- "Fauzi is a remarkable guide: always attentive, constantly searching for the best spots to avoid the crowds." — marie becquet, Google 2026-05
+- "Fauzi was very attentive, ensured we were comfortable and safe at all times, and always went the extra mile." — Han Waye, Trustpilot 2026-05
+
+**Gufron** — 20 reviews (Google 16 · TP 3 · TA 1) — 16/16 Google reviews are 5★
+- "Gufron was friendly and accommodating, making sure no one fell behind during the hikes." — Mark, Google 2026-04
+- "Gufron was super friendly and fun to hang out with." — Alydies Yue, Google 2025-10
+- "Always willing to help you get your best photo." — Adrián Martínez, Google
+
+**Kiki** — 17 reviews (Google 12 · TP 5)
+- "Kiki is an amazing photographer — every shot turned out beautifully!" — waraporn arssanawitaya, Google 2026-04
+- "Communication was easy, instructions were clear, and they made the experience fun and safe. Kiki also took amazing photos." — Tan Yong Xue Jayden, Trustpilot 2026-03
+
+**Rendi** — 22 reviews (Google 14 · TP 7 · TA 1) — 14/14 Google 5★, second most-reviewed
+- "Rendi is an excellent photographer who took a lot of great photos of us." — Yip Chuiyee, Google 2025-12
+- "When we went down the steep crater, he held our hands to prevent us from falling." — Wing Shan Lui, Trustpilot 2025-08
+- "Rendi were the best, super professionals and thoughtful, took care of every detail." — samia amrani, Google 2025-10
+
+**Taufik** — 8 reviews (Google 4 · TP 3 · TA 1)
+- "Hiked up mount ijen with a 12 and 15 years old. Taufik ensure all briefing is always done prior to all trips." — Kevin Foo, Trustpilot 2026-03
+- "Tour guide Taufik is humorous and very patient." — Desiree Lim, Google 2024-04
+
+Full review compilation: [[reviews/google-tripadvisor-2026]] (195 reviews, 3 platforms).
 
 ### Social presence (verifiable individual identity)
 
@@ -84,11 +109,35 @@ Full review compilation: [[reviews/trustpilot-compilation]].
 | **Dika** | KTA pending | ID | Reliable Operator archetype — confirmed Driver (soft-data resolved) |
 | **Pras** | KTA pending | EN · ID | "Strong English and impeccable safety record" (per JVTO Trustpilot bio) |
 
-### Driver review-quote excerpts
+### Driver review-quote excerpts (verified guest-authored, 3-platform)
 
-- **Fredi** — "Always on time no matter what time of the day. Exceptional driving skills." — Pooja Prakash, Google Reviews
-- **Yandi** — "Our driver Yandi was really reliable and friendly. He briefed us on what to expect." — Divya_Stri, Trustpilot
-- **Fredi + Gufron** — "Fredi and Gufron are the best drivers and guides, respectively. Both were very entertaining, helpful, and extremely professional." — Pablo Rodríguez Toledano, Google Reviews
+**Fredi** — 20 reviews (Google 15 · TP 4 · TA 1) — most-reviewed driver
+- "Our driver Fredy was friendly, professional, and very attentive. He safely drove us across East Java." — Rebecca Tsai, Google 2026-05
+- "Always on time no matter what time of the day. Exceptional driving skills." — Pooja Prakash, Google
+- "Fredi and Gufron are the best drivers and guides, respectively." — Pablo Rodríguez Toledano, Google
+
+**Holili** — 6 reviews (Google 4 · TP 2)
+- "Holili is an excellent driver, always punctual and smiling, who drove us safely to each stop." — marie becquet, Google 2026-05
+- "Our driver Holili made sure we were always the first to arrive everywhere." — Veronica Ramos, Google 2025-10
+
+**Joyo** — 19 reviews (Google 4 · TP 15) — most-reviewed on Trustpilot
+- "Joyo knows how to get from A to B in the fastest time possible!" — senthan balachandiran, Google 2025-12
+- "Driver Joy is very experienced and ensures the car safety of the passengers." — Eileen Chua, Trustpilot 2025-05
+
+**Pras** — 6 reviews (Google 6)
+- "Our driver Pras and guide Rendi were the best, super professionals and thoughtful." — samia amrani, Google 2025-10
+- "Big thanks to our guide Pras — friendly, funny, and speaking great English." — 麥塊程式教育, Google 2025-08
+
+**Yandi** — 16 reviews (Google 9 · TP 7)
+- "Our driver Yandi was really reliable and friendly. He briefed us on what to expect." — Divya_Stri, Trustpilot 2025-09
+- "Everything went perfect, and our driver Yandi helped us with everything!" — Noelia Carrasco, Trustpilot 2025-04
+
+**Yusuf** — 7 reviews (Google 7) — all 5★, all 2026
+- "Yusuf was an excellent driver and tour guide. Always punctual, responsible, and very professional." — Teo Wan Chean, Google 2026-05
+- "Yusuf is the best driver I've ever met." — 歐湲, Google 2026-02
+
+**Dika** — 3 reviews (Google 2 · TP 1)
+- "Dika was very helpful and caring, sharing things about Indonesia with us." — Wing Shan Lui, Google/TP 2025-08
 
 ## HPWKI KTA → BBKSDA Training Chain (SSOT §4_4)
 

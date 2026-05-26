@@ -1,8 +1,8 @@
 ---
 type: product
 title: JVTO Tour Packages Overview
-last_updated: 2026-05-16
-sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, google-maps-reviews-api-2026, trustpilot-reviews-2026]
 canonical_package_count: 16
 ---
 
@@ -216,6 +216,68 @@ Rules:
 
 JVTO is an official ISIC provider (ID 259268 — verifiable at https://www.isic.org/discounts/?providerId=259268). Verified international students with a valid ISIC card receive student pricing. See [[credentials/trust-signals]].
 
+## Guest Review Evidence by Package
+
+*195 reviews across Google, Trustpilot, TripAdvisor — mapped by destination combo + duration. Full compilation: [[reviews/google-tripadvisor-2026]].*
+
+### Bromo + Ijen tours (3D2N) — ~35 reviews | Most-reviewed package family
+
+> "We did the 3D2N Bromo and Mount Ijen tour. It was organised very well and our tourguide Rendi as well as our driver Holili were super kind and helpful!" — Nina Kliem, Trustpilot
+
+> "We took the 3D/2N package Kawah Ijen and Bromo with pick-up in Bali and drop-off in Surabaya. JVTO is a very professional agency." — Marine Netter, Google
+
+Covers: `bromo-madakaripura-ijen-3d2n`, `bali/bromo-ijen-3d2n`, `ijen-bromo-madakaripura-3d2n`
+
+### 4-Destination tours (4D3N / 5D4N) — ~12 reviews
+
+> "We had a wonderful experience joining the 4D3N Ijen Crater, Papuma Beach, Tumpak Sewu Waterfall & Mount Bromo tour. Special thanks to Fauzi and Fredi." — Han Waye, Trustpilot
+
+> "Memorable 4-day journey exploring Ijen, Papuma, Tumpak Sewu, and Bromo. Gufron, our guide, was fantastic." — Reza Mustofa A, Google
+
+Covers: `ijen-papuma-tumpak-sewu-bromo-4d3n`, `ijen-papuma-tumpak-sewu-bromo-5d4n`, `bali/ijen-papuma-tumpak-sewu-bromo-4d3n`
+
+### Ijen + Bromo + Tumpak Sewu (4D3N) — ~10 reviews
+
+> "We joined the 4D3N East Java volcano tour and it was truly an unforgettable experience." — Rebecca Tsai, Google
+
+> "Just had an amazing time at Ijen, Tumpak Sewu, and Bromo with Mas Kiki." — Yu Qing Yan, Google
+
+Covers: `tumpak-sewu-bromo-ijen-4d3n`
+
+### Ijen + Bromo + Madakaripura — ~10 reviews
+
+> "Big thanks to our guide Gufron — super friendly and fun to hang out with." — Alydies Yue, Google (3D2N)
+
+> "Well organized from pick-up to send off. The visit to Mt Ijen, Mt Bromo and especially Madakaripura was a must see." — Nazeem Nasir, Trustpilot
+
+Covers: `ijen-bromo-madakaripura-3d2n`, `ijen-bromo-madakaripura-4d3n`, `bali/ijen-bromo-madakaripura-3d2n`
+
+### Ijen only (2D1N) — ~8 reviews
+
+> "Had a wonderful time hiking Ijen crater. Our guide Aboy gave us a lot of history about the volcanoes and blue flame." — Karl Kamiya, Trustpilot
+
+> "My wife and I visited Ijen with Eboy. From start to finish he made sure we were safe, having fun." — Iain Maclean, Trustpilot
+
+Covers: `ijen-2d1n`
+
+### Bromo only (1D1N / 2D1N) — ~5 reviews
+
+> "Good 2hrs hike up with amazing view." — FAIZATHUL FARHAN, Google
+
+Covers: `bromo-1d1n`, `bromo-2d1n`
+
+### Extended tours (5D4N / 6D5N) — ~5 reviews
+
+> "We took the 5D4N package and explored magnificent landscapes, experienced diverse cultures, and made memories that will last a lifetime." — Chrystal Tan, Google
+
+Covers: `ijen-bromo-madakaripura-malang-5d4n`, `ijen-papuma-tumpak-sewu-bromo-malang-6d5n`
+
+### Taman Safari Prigen package — 0 reviews
+
+`taman-safari-prigen-bromo-madakaripura-3d2n` — no identified reviews. Newer/niche package.
+
+---
+
 ## Trust Anchors
 
 - Owns claim **C3** (All-inclusive clarity) — written inclusions/exclusions, central policy pages
@@ -225,4 +287,4 @@ JVTO is an official ISIC provider (ID 259268 — verifiable at https://www.isic.
 
 See [[website/aeo-claims]] for full claim-evidence chains.
 
--> [[products/packages-full-pricing]] | -> [[products/packages-itineraries]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[destinations/tumpak-sewu]] | -> [[destinations/madakaripura]] | -> [[credentials/legal-licenses]] | -> [[website/faq-master]]
+-> [[products/packages-full-pricing]] | -> [[products/packages-itineraries]] | -> [[reviews/google-tripadvisor-2026]] | -> [[destinations/kawah-ijen]] | -> [[destinations/mount-bromo]] | -> [[destinations/tumpak-sewu]] | -> [[destinations/madakaripura]] | -> [[credentials/legal-licenses]] | -> [[website/faq-master]]

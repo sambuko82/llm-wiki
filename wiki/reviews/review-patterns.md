@@ -1,8 +1,8 @@
 ---
 type: reviews
 title: Review Patterns & Themes
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip]
+last_updated: 2026-05-26
+sources: [ssot-v6, jvto-homepage-clip, google-maps-reviews-api-2026, trustpilot-reviews-2026]
 ---
 
 # Review Patterns & Themes
@@ -47,6 +47,10 @@ Extracted from review-text reading — supplementary content fuel for marketing 
 8. **Emergency Handling** — Injured guest helped well. Safety capability proven. Maps to **T4 / C1**.
 9. **Accommodation Quality** — Hotels and food recommendations praised. Maps to **T5 / C3**.
 10. **Logistics Smoothness** — "Arranged smoothly from airport to hotel on last day." Maps to **T1 / C2 / T5 / C3**.
+11. **Multi-language service** — Spanish, French, Dutch, Chinese, Russian reviews confirm quality for non-English speakers. Maps to **T2 / C7**.
+12. **Guide+Driver pairing loyalty** — Guests name both crew. Popular pairings: Rendi+Fredi, Rendi+Pras, Gufron+Joyo, Kiki+Yusuf, Boy+Yandi, Fauzi+Holili. Maps to **T1 / C2 / C7**.
+13. **Accommodation variance** — #1 driver of 4★ reviews. Baratha Hotel (thin walls), Joglo Kecombrang (no hot water), Grand Whiz (needs renovation). Crew praised while hotels cited. Maps to **T5 / C3** (negative signal).
+14. **Schedule tightness** — 3★ review flags <3h sleep on 3D2N. Concern about guide working conditions. Maps to **T4 / C1** (negative signal).
 
 ## AEO Implication
 

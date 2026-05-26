@@ -11,6 +11,18 @@ sources: []
 
 ---
 
+## [2026-05-26] ingest | Google Maps Reviews API (123) + Profile Media (87) — 3-platform compilation
+
+Sources: `raw/google review page [1-3].json` (123 Google reviews via API), `raw/google profile media.json` (87 GMB media items).
+Profile: review-feed + custom (media).
+
+Pages created: sources/google-maps-reviews-api-2026, sources/google-profile-media-2026.
+Pages updated: reviews/google-tripadvisor-2026 (rebuilt as unified 3-platform compilation: 195 reviews organized by crew + package), people/crew-registry (all 14 crew enriched with cross-platform review quotes + counts), products/packages-overview (review evidence section per package family), reviews/review-patterns (4 new derived patterns: multi-language, photography, accommodation variance, schedule tightness), credentials/trust-signals (Google 92→123, total 164→195), index.
+
+Key additions: 31 new Google reviews since DB export; full text+replies for all 123; combined 195-review cross-platform compilation; all 14 crew have multi-platform review quotes; review evidence mapped to 15 of 16 packages (Taman Safari: 0 reviews); accommodation feedback pattern identified (Baratha, Joglo Kecombrang, Grand Whiz).
+
+---
+
 ## [2026-05-26] compile | JSON-LD schema for 6 student packages
 
 Profile: `schema` compilation. 6 TouristTrip + AggregateRating + AggregateOffer schemas generated. All prices verified against packages-full-pricing.md §Student Packages. All canonical values verified against trust-signals.md §Schema Canonical Values (ratingValue=4.8, reviewCount=51, NIB=1102230032918, ISIC=259268). Student-specific fields: eligibleCustomerType=Student, touristType=ISIC-verified. Receipt: output/website/schema/student-schemas.receipt.md.
