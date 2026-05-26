@@ -59,9 +59,12 @@
 |----------|---------|---|
 | category-registry.yml | 29 categories | 0 |
 | tag-registry.yml | 35 tags | 0 (REC-006 / REC-007 still pending) |
-| evidence-registry.yml | 14 evidence items (C1-C9) | 0 |
+| evidence-registry.yml | 18 evidence items E001-E018 (C1-C9) | +4 (E015-E018 added 2026-05-25/26) |
 | conflict-log.md | 3 open conflicts | 0 |
 | recommendation-log.md | 14 entries (5 done, 9 pending) | +4 (REC-011..REC-014) |
+| claim-registry.yml | 9 claims (C1-C9) | NEW |
+| entity-registry.yml | 50 entities (ENT-001-ENT-050) | NEW |
+| decision-queue.md | 5 items (DQ-001-DQ-005) | NEW (seeded from CONF + REC) |
 
 ## Open Conflicts
 
@@ -72,6 +75,19 @@
 | CONF-003 | Second NIB 0220001393513 | open — blocked on OSS portal |
 
 No new conflicts detected from backoffice extraction. Realized pricing vs template rate-cards comparison may surface CONF-004+ once REC-012 executes.
+
+## Governance Layer Counts
+
+| Check | Count | Notes |
+|-------|------:|-------|
+| Claims registered (claim-registry.yml) | 9 | C1-C9, all verified |
+| Entities registered (entity-registry.yml) | 50 | ENT-001–ENT-050 across 10 types |
+| Decision queue items (decision-queue.md) | 5 | DQ-001–DQ-005 (3 conflicts + 2 safety) |
+| Entity proposals pending | 0 | No pending entity proposals |
+| Claim proposals pending | 0 | All 9 claims registered |
+| Website URL proposals (sitemap-proposals.md) | 0 | No pending proposals |
+| Internal output proposals (rec-log type=new_page) | 3 | REC-003, REC-008, REC-013 |
+| Unknown classifications | 0 | All 64 raw files classified |
 
 ## Pending Recommendations
 

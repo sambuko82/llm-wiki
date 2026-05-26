@@ -1,0 +1,189 @@
+# Claim Registry — JVTO LLM Wiki
+# Canonical definitions for trust claims C1-C9
+# Cross-references evidence-registry.yml and wiki/website/aeo-claims.md
+# last_updated: 2026-05-26
+
+claims:
+  - claim_id: C1
+    name: Safety-Led Operations
+    canonical_text: >-
+      Volcano travel is unpredictable, so JVTO focuses on operational certainty:
+      disciplined decisions, clear safety boundaries, and realistic expectations.
+    domain: credentials
+    category: trust-signal
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/people/agung-sambuko.md
+      - wiki/credentials/police-integration.md
+      - wiki/sources/ijen-safety-resource-mapping.md
+      - wiki/sources/ijen-safety-protocol.md
+    output_pages:
+      - output/website/pages/verify-jvto/
+    evidence_ids: [E001, E002, E003, E016, E018]
+    evidence_count: 5
+    key_proof_ids: [sprin-polpar, sprin-wal-travel-2024-02-12, police-vehicle-support]
+    tags: [police-led, safety, trust-signal]
+    last_verified: 2026-05-26
+
+  - claim_id: C2
+    name: Private Tours (Execution Control)
+    canonical_text: >-
+      JVTO runs private tours by default so timing, pacing, and safety decisions
+      stay consistent for your group.
+    domain: products
+    category: tour-package
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/products/packages-overview.md
+    output_pages:
+      - output/website/pages/tours/
+    evidence_ids: [E004]
+    evidence_count: 1
+    key_proof_ids: [nib-1102230032918, tdup-1102230032918]
+    tags: [trust-signal]
+    last_verified: 2026-05-12
+
+  - claim_id: C3
+    name: All-Inclusive Clarity
+    canonical_text: >-
+      JVTO uses an all-inclusive structure by default to reduce surprise costs
+      and mid-trip negotiation.
+    domain: products
+    category: tour-package
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/products/packages-overview.md
+      - wiki/sources/jvto-policy-pack-v6.md
+    output_pages:
+      - output/website/pages/tours/
+    evidence_ids: [E005]
+    evidence_count: 1
+    key_proof_ids: [nib-1102230032918]
+    tags: [all-inclusive, trust-signal]
+    last_verified: 2026-05-12
+
+  - claim_id: C4
+    name: Ijen Health-Screening Coordination
+    canonical_text: >-
+      On routes that include Mount Ijen, JVTO integrates health screening
+      as a practical safety step, not a formality.
+    domain: credentials
+    category: medical-protocol
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/credentials/medical-screening.md
+      - wiki/people/dr-ahmad-irwandanu.md
+      - wiki/destinations/kawah-ijen.md
+      - wiki/sources/ijen-tourist-accidents.md
+    output_pages:
+      - output/website/pages/travel-guide/
+    evidence_ids: [E006, E007, E015]
+    evidence_count: 3
+    key_proof_ids: [bbksda-surat-edaran-se-1658-ksa-9-2024, sip-dr-ahmad-irwandanu-2026]
+    tags: [health-screening, bbksda, ijen-relevant, safety, trust-signal]
+    last_verified: 2026-05-26
+
+  - claim_id: C5
+    name: Proof-First Trust (Verification Layer)
+    canonical_text: >-
+      JVTO organizes trust signals as a verification layer: clear claims,
+      context, and evidence links — not just marketing statements.
+    domain: credentials
+    category: trust-signal
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/credentials/legal-licenses.md
+      - wiki/credentials/trust-signals.md
+      - wiki/sources/jvto-verification-dossier.md
+    output_pages:
+      - output/website/pages/verify-jvto/
+    evidence_ids: [E008, E017]
+    evidence_count: 2
+    key_proof_ids: [nib-1102230032918, tdup-1102230032918, hpwki-approval]
+    tags: [credential-verification, trust-signal]
+    last_verified: 2026-05-26
+
+  - claim_id: C6
+    name: Reviews Registry (Independent Validation)
+    canonical_text: >-
+      JVTO treats reviews as a registry: grouped by platform and theme,
+      so guests can validate patterns instead of reading random quotes.
+    domain: reviews
+    category: review-compilation
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/reviews/trustpilot-compilation.md
+      - wiki/reviews/google-tripadvisor-2026.md
+      - wiki/reviews/review-patterns.md
+    output_pages:
+      - output/website/pages/verify-jvto/
+      - output/website/faq/
+    evidence_ids: [E009, E010]
+    evidence_count: 2
+    key_proof_ids: [trustpilot-live-profile, google-maps-live-cid, tripadvisor-live-profile]
+    tags: [review-mention, trust-signal]
+    last_verified: 2026-05-18
+
+  - claim_id: C7
+    name: Our Team (Personality Economy + Operational Credibility)
+    canonical_text: >-
+      JVTO's product is executed by real people. The Team Registry shows roles,
+      routes, and proof from review mentions — not generic bios.
+    domain: people
+    category: crew-profile
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/people/crew-registry.md
+    output_pages:
+      - output/website/pages/team/
+    evidence_ids: [E011]
+    evidence_count: 1
+    key_proof_ids: [kta-anjas, kta-taufik, kta-rendi, kta-kiki, kta-gufron]
+    tags: [crew-mention, trust-signal]
+    last_verified: 2026-05-25
+
+  - claim_id: C8
+    name: Partners as Context (HPWKI / INDECON / ISIC)
+    canonical_text: >-
+      JVTO partnerships are explained by function: competence context (HPWKI),
+      sustainability context (INDECON), and verification logic (ISIC).
+    domain: credentials
+    category: trust-signal
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/credentials/trust-signals.md
+      - wiki/sources/bbksda-pelatihan-pemandu-2024.md
+    output_pages:
+      - output/website/pages/verify-jvto/
+    evidence_ids: [E012, E013]
+    evidence_count: 2
+    key_proof_ids: [hpwki-approval, indecon-live-member, isic-live-provider]
+    tags: [trust-signal]
+    last_verified: 2026-05-16
+
+  - claim_id: C9
+    name: Press & Recognition (Third-Party Context)
+    canonical_text: >-
+      JVTO lists press and recognition with context so guests can evaluate
+      third-party references, not just branding claims.
+    domain: credentials
+    category: trust-signal
+    verification_status: verified
+    wiki_pages:
+      - wiki/website/aeo-claims.md
+      - wiki/credentials/press-coverage.md
+    output_pages:
+      - output/website/pages/verify-jvto/
+    evidence_ids: [E014]
+    evidence_count: 1
+    key_proof_ids: [press-detik-polisi-pariwisata-2021-03-14, press-radarjember-polpar-ijen-geopark-2021-03-24]
+    tags: [press-coverage, trust-signal]
+    last_verified: 2026-05-16

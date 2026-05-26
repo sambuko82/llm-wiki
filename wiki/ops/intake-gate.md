@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Universal Raw Intake Gate — Classification & Routing System
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 sources: []
 ---
 
@@ -104,6 +104,8 @@ Place any new file in `raw/_inbox/`. Run: "Process inbox" or "Intake gate".
 | `raw/_manifest/category-registry.yml` | Category taxonomy for raw item classification |
 | `raw/_manifest/tag-registry.yml` | Cross-cutting tags for multi-domain items |
 | `raw/_manifest/evidence-registry.yml` | Evidence items supporting C1-C9 claims |
+| `raw/_manifest/claim-registry.yml` | Canonical claim definitions C1-C9 with evidence cross-references |
+| `raw/_manifest/entity-registry.yml` | Central registry of named entities (destinations, people, authorities, credentials, systems) |
 | `raw/_manifest/conflict-log.md` | Detected data conflicts between sources |
 | `raw/_manifest/recommendation-log.md` | Proposed changes from intake processing |
 
@@ -125,10 +127,12 @@ Before classifying any raw item as `unknown`, the gate must perform correlation 
 Check every raw item against:
 1. `category-registry.yml` — does an existing category fit?
 2. `tag-registry.yml` — which cross-cutting tags apply?
-3. Existing wiki pages — does a target page already exist?
-4. Existing output files — has this content been generated before?
-5. `source-url-index.csv` — is this URL already indexed?
-6. `raw-files-index.csv` — is this filename already tracked?
+3. `claim-registry.yml` — does the data support or challenge an existing claim (C1-C9)?
+4. `entity-registry.yml` — does the data reference or introduce a named entity?
+5. Existing wiki pages — does a target page already exist?
+6. Existing output files — has this content been generated before?
+7. `source-url-index.csv` — is this URL already indexed?
+8. `raw-files-index.csv` — is this filename already tracked?
 
 ### Duplicate Detection
 
@@ -145,6 +149,36 @@ When a raw item corroborates an existing claim (C1-C9):
 - Link to the claim it supports
 - Do NOT create a new wiki page — evidence goes in the registry
 - Update the source wiki page only if the evidence adds new facts
+
+### Entity Registration
+
+When a raw item introduces a new important named object:
+- Check `entity-registry.yml` — does the entity already exist?
+- If yes: verify `wiki_pages` cross-reference is current
+- If new and qualifies: propose an entity entry in `recommendation-log.md`, type = `new_entity`
+
+Qualify as a new entity when the object is:
+- A **destination** with its own wiki page or route
+- A **person** named in credentials, reviews, or press
+- A **crew member** assigned to tours
+- An **authority** (government body, regulatory agency) that issues credentials or regulations
+- A **partner** organization with a functional trust role
+- A **credential** with a verifiable ID number
+- A **policy** document that governs operations
+- A **system** (API, platform) integrated into operations
+
+Do NOT create entities for:
+- Individual hotel rooms, activity line items, or cost components (live in rate-cards.md)
+- Individual packages (stable slugs in packages-overview.md)
+- Unnamed or generic objects ("the jeep", "a local guide")
+
+### Claim Linkage
+
+When a raw item supports or challenges an existing claim (C1-C9):
+- Check `claim-registry.yml` for matching claim
+- If supporting: add evidence to `evidence-registry.yml` AND update `claim-registry.yml` evidence_ids
+- If challenging: follow Conflict Detection rules below
+- If data suggests a new claim beyond C1-C9: add proposal to `recommendation-log.md`, type = `new_claim`, with `human_decision_required = true`
 
 ### Conflict Detection
 

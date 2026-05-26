@@ -1,0 +1,534 @@
+# Entity Registry — JVTO LLM Wiki
+# Central registry of named entities referenced across wiki pages
+# ID format: ENT-NNN
+# last_updated: 2026-05-26
+#
+# Excluded from individual IDs (have stable registries elsewhere):
+#   Hotels (23) — wiki/website/hotels.md
+#   Packages (16) — wiki/products/packages-overview.md (stable slugs)
+#   Activities (27) — wiki/finance/rate-cards.md (cost components)
+
+entity_types:
+  - destination
+  - person
+  - crew_member
+  - authority
+  - partner
+  - credential
+  - policy
+  - system
+  - review_platform
+  - vehicle_class
+
+entities:
+  # --- Destinations (ENT-001 to ENT-005) ---
+
+  - entity_id: ENT-001
+    name: Kawah Ijen
+    type: destination
+    aliases: [Ijen, Ijen Crater, Mount Ijen, Blue Fire Crater]
+    wiki_pages: [wiki/destinations/kawah-ijen.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/ijen-crater
+    claims: [C1, C4]
+    tags: [ijen-relevant, bbksda, health-screening, safety]
+
+  - entity_id: ENT-002
+    name: Mount Bromo
+    type: destination
+    aliases: [Bromo, Gunung Bromo, Bromo Tengger Semeru]
+    wiki_pages: [wiki/destinations/mount-bromo.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/mount-bromo
+    claims: []
+    tags: [bromo-relevant]
+
+  - entity_id: ENT-003
+    name: Tumpak Sewu
+    type: destination
+    aliases: [Tumpak Sewu Waterfall, Coban Sewu]
+    wiki_pages: [wiki/destinations/tumpak-sewu.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/tumpak-sewu-waterfall
+    claims: []
+    tags: [tumpak-sewu-relevant]
+
+  - entity_id: ENT-004
+    name: Madakaripura
+    type: destination
+    aliases: [Madakaripura Waterfall, Air Terjun Madakaripura]
+    wiki_pages: [wiki/destinations/madakaripura.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/madakaripura-waterfall
+    claims: []
+    tags: [madakaripura-relevant]
+
+  - entity_id: ENT-005
+    name: Papuma Beach
+    type: destination
+    aliases: [Pantai Papuma, Papuma]
+    wiki_pages: [wiki/destinations/papuma-beach.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/papuma-beach
+    claims: []
+    tags: [papuma-relevant]
+
+  # --- Key People (ENT-006 to ENT-007) ---
+
+  - entity_id: ENT-006
+    name: Agung Sambuko
+    type: person
+    aliases: [Mr. Sam, Bripka Agung Sambuko]
+    wiki_pages: [wiki/people/agung-sambuko.md]
+    schema_type: Person
+    canonical_url: /why-jvto/our-team
+    claims: [C1, C5, C9]
+    tags: [police-led, trust-signal]
+
+  - entity_id: ENT-007
+    name: Dr. Ahmad Irwandanu
+    type: person
+    aliases: [Dr. Irwandanu]
+    wiki_pages: [wiki/people/dr-ahmad-irwandanu.md]
+    schema_type: Person
+    claims: [C4]
+    tags: [health-screening, ijen-relevant]
+
+  # --- Crew Members: Guides (ENT-008 to ENT-014) ---
+
+  - entity_id: ENT-008
+    name: Anjas
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-006
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, ijen-relevant]
+
+  - entity_id: ENT-009
+    name: Taufik
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-007
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, ijen-relevant]
+
+  - entity_id: ENT-010
+    name: Rendi
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-002
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, safety, ijen-relevant]
+
+  - entity_id: ENT-011
+    name: Kiki
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-008
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, ijen-relevant]
+
+  - entity_id: ENT-012
+    name: Gufron
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-001
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, ijen-relevant]
+
+  - entity_id: ENT-013
+    name: Fauzi
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-010
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, ijen-relevant]
+
+  - entity_id: ENT-014
+    name: Boy (Ahboy)
+    type: crew_member
+    aliases: [Ahboy, Eboy, Oboy]
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-G-2024-004
+    role: guide
+    claims: [C7]
+    tags: [crew-mention, ijen-relevant]
+
+  # --- Crew Members: Drivers (ENT-015 to ENT-021) ---
+
+  - entity_id: ENT-015
+    name: Yandi
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-D-2024-003
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  - entity_id: ENT-016
+    name: Fredi
+    type: crew_member
+    aliases: [Fredy, Freddy]
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-D-2024-005
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  - entity_id: ENT-017
+    name: Holili
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-D-2024-009
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  - entity_id: ENT-018
+    name: Joyo
+    type: crew_member
+    aliases: [Goyo, Joy]
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: KTA-D-2024-011
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  - entity_id: ENT-019
+    name: Yusuf
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: pending
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  - entity_id: ENT-020
+    name: Dika
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: pending
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  - entity_id: ENT-021
+    name: Pras
+    type: crew_member
+    aliases: []
+    wiki_pages: [wiki/people/crew-registry.md]
+    kta: pending
+    role: driver
+    claims: [C7]
+    tags: [crew-mention]
+
+  # --- Authorities (ENT-022 to ENT-025) ---
+
+  - entity_id: ENT-022
+    name: BBKSDA Jawa Timur
+    type: authority
+    aliases: [BBKSDA, BBKSDA Jatim]
+    wiki_pages: [wiki/credentials/legal-licenses.md, wiki/credentials/permit-requirements.md]
+    description: Balai Besar Konservasi Sumber Daya Alam — East Java conservation authority. Issues operator clearance for Ijen + Bromo Tengger Semeru.
+    claims: [C4, C8]
+    tags: [bbksda, regulatory]
+
+  - entity_id: ENT-023
+    name: Kemenkes RI / KKI
+    type: authority
+    aliases: [Kemenkes, KKI, SatuSehat]
+    wiki_pages: [wiki/people/dr-ahmad-irwandanu.md, wiki/credentials/medical-screening.md]
+    description: Ministry of Health / Indonesian Medical Council — issues and verifies SIP/STR medical licenses.
+    claims: [C4]
+    tags: [health-screening, regulatory]
+
+  - entity_id: ENT-024
+    name: Tourist Police Ditpamobvit
+    type: authority
+    aliases: [Polisi Pariwisata, Ditpamobvit, Polpar]
+    wiki_pages: [wiki/people/agung-sambuko.md, wiki/credentials/police-integration.md]
+    description: Direktorat Pengamanan Obyek Vital — Indonesian Tourist Police division. Founder Agung Sambuko is an active officer.
+    claims: [C1]
+    tags: [police-led, regulatory]
+
+  - entity_id: ENT-025
+    name: OSS (Online Single Submission)
+    type: authority
+    aliases: [OSS, oss.go.id]
+    wiki_pages: [wiki/credentials/legal-licenses.md]
+    description: National business licensing portal — verifies NIB and TDUP.
+    claims: [C5]
+    tags: [credential-verification, regulatory]
+
+  # --- Partners (ENT-026 to ENT-028) ---
+
+  - entity_id: ENT-026
+    name: HPWKI
+    type: partner
+    aliases: [Himpunan Pelaku Wisata Khusus Ijen]
+    wiki_pages: [wiki/credentials/legal-licenses.md, wiki/credentials/trust-signals.md]
+    identifier: AHU-0001072.AH.01.07.TAHUN 2024
+    description: Ijen specialist guide association — membership requires BBKSDA-supervised volcanic safety training (SAR + PPGD).
+    claims: [C7, C8]
+    tags: [trust-signal, ijen-relevant]
+
+  - entity_id: ENT-027
+    name: INDECON
+    type: partner
+    aliases: [Indonesian Ecotourism Network]
+    wiki_pages: [wiki/credentials/trust-signals.md]
+    identifier: indecon-live-member
+    description: Indonesian Ecotourism Network — validates community-based tourism + Local Boys employment policy.
+    claims: [C8]
+    tags: [trust-signal]
+
+  - entity_id: ENT-028
+    name: ISIC
+    type: partner
+    aliases: [International Student Identity Card]
+    wiki_pages: [wiki/credentials/trust-signals.md, wiki/credentials/legal-licenses.md]
+    identifier: Provider ID 259268
+    description: UNESCO-endorsed student verification — JVTO is official ISIC provider for student-pricing eligibility.
+    claims: [C8]
+    tags: [student-package, trust-signal]
+
+  # --- Credentials (ENT-029 to ENT-034) ---
+
+  - entity_id: ENT-029
+    name: NIB 1102230032918
+    type: credential
+    aliases: [Nomor Induk Berusaha]
+    wiki_pages: [wiki/credentials/legal-licenses.md]
+    authority: OSS (oss.go.id)
+    sha256: fa20dde31bb75e46b061ed14cc6d003f6960c02a9a82c20d8603b0cbf6f7b1b7
+    claims: [C2, C3, C5]
+    tags: [credential-verification, trust-signal]
+
+  - entity_id: ENT-030
+    name: TDUP 1102230032918
+    type: credential
+    aliases: [Tanda Daftar Usaha Pariwisata]
+    wiki_pages: [wiki/credentials/legal-licenses.md]
+    authority: Dinas Pariwisata / OSS
+    issued: 2023-02-11
+    sha256: 27252d512ddfa74de22a3e3ec10aa3dd40ef88da3eb57349fcd2137411551ee3
+    claims: [C2, C5]
+    tags: [credential-verification, trust-signal]
+
+  - entity_id: ENT-031
+    name: HPWKI Certificate
+    type: credential
+    aliases: [HPWKI Approval]
+    wiki_pages: [wiki/credentials/legal-licenses.md]
+    authority: AHU (ahu.go.id)
+    identifier: AHU-0001072.AH.01.07.TAHUN 2024
+    sha256: ca1fb1a48b550a7748d400f165899f12a356e6941aacdde9c043427698aaf63b
+    claims: [C5, C8]
+    tags: [credential-verification, trust-signal, ijen-relevant]
+
+  - entity_id: ENT-032
+    name: SPRIN POLPAR
+    type: credential
+    aliases: [POLPAR, Surat Perintah Polisi Pariwisata]
+    wiki_pages: [wiki/credentials/police-integration.md, wiki/people/agung-sambuko.md]
+    authority: Indonesian National Police
+    sha256: 03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab
+    claims: [C1, C5]
+    tags: [police-led, credential-verification, trust-signal]
+
+  - entity_id: ENT-033
+    name: ISIC Provider 259268
+    type: credential
+    aliases: [ISIC Provider Registration]
+    wiki_pages: [wiki/credentials/legal-licenses.md, wiki/credentials/trust-signals.md]
+    authority: ISIC Association (UNESCO-endorsed)
+    claims: [C8]
+    tags: [student-package, credential-verification]
+
+  - entity_id: ENT-034
+    name: AHU-0023020
+    type: credential
+    aliases: [PT Java Volcano Rendezvous Company Registration]
+    wiki_pages: [wiki/credentials/legal-licenses.md]
+    authority: AHU (ahu.go.id)
+    claims: [C5]
+    tags: [credential-verification]
+
+  # --- Policies (ENT-035 to ENT-037) ---
+
+  - entity_id: ENT-035
+    name: JVTO Policy Pack v6
+    type: policy
+    aliases: [Policy Pack v6, Terms & Conditions]
+    wiki_pages: [wiki/sources/jvto-policy-pack-v6.md]
+    description: Written inclusions/exclusions, cancellation rules, payment steps. Canonical booking reference.
+    claims: [C3]
+    tags: [all-inclusive]
+
+  - entity_id: ENT-036
+    name: BBKSDA SE.1658/KSA.9/2024
+    type: policy
+    aliases: [Surat Edaran BBKSDA, Ijen Health Screening Mandate]
+    wiki_pages: [wiki/credentials/medical-screening.md, wiki/destinations/kawah-ijen.md]
+    description: BBKSDA circular establishing regulatory basis for Ijen visitor health screening.
+    claims: [C4]
+    tags: [bbksda, health-screening, regulatory, ijen-relevant]
+
+  - entity_id: ENT-037
+    name: SIP Dr. Ahmad Irwandanu
+    type: policy
+    aliases: [Surat Izin Praktik, Medical License]
+    wiki_pages: [wiki/people/dr-ahmad-irwandanu.md]
+    identifier: STR QN00001073380217
+    description: Medical practice license verifiable at SatuSehat SDMK + KKI.
+    claims: [C4]
+    tags: [health-screening]
+
+  # --- Systems (ENT-038 to ENT-040) ---
+
+  - entity_id: ENT-038
+    name: WA Pro CRM
+    type: system
+    aliases: [WhatsApp Pro CRM, WA CRM]
+    wiki_pages: [wiki/whatsapp/operations-playbook.md]
+    description: WhatsApp automation and CRM platform for customer communication.
+    claims: []
+    tags: [whatsapp-automation]
+
+  - entity_id: ENT-039
+    name: Klook
+    type: system
+    aliases: [Klook OTA]
+    wiki_pages: []
+    description: Online travel agency platform — JVTO distribution channel. No dedicated wiki page yet.
+    claims: []
+    tags: [klook-integration]
+
+  - entity_id: ENT-040
+    name: ISIC Alive Verify
+    type: system
+    aliases: [ISIC Verification API]
+    wiki_pages: [wiki/credentials/trust-signals.md]
+    description: API for real-time ISIC card verification — validates student eligibility for discounted pricing.
+    claims: [C8]
+    tags: [student-package]
+
+  # --- Review Platforms (ENT-041 to ENT-044) ---
+
+  - entity_id: ENT-041
+    name: Trustpilot
+    type: review_platform
+    aliases: [TP]
+    wiki_pages: [wiki/reviews/trustpilot-compilation.md]
+    profile_url: trustpilot.com/review/javavolcano-touroperator.com
+    aggregate_rating: "4.8"
+    review_count: 51
+    claims: [C6]
+    tags: [review-mention, trust-signal]
+
+  - entity_id: ENT-042
+    name: Google Maps
+    type: review_platform
+    aliases: [Google Reviews, Google Business Profile]
+    wiki_pages: [wiki/reviews/google-tripadvisor-2026.md]
+    cid: "1266403973589689021"
+    aggregate_rating: "4.90"
+    review_count: 123
+    claims: [C6]
+    tags: [review-mention, trust-signal]
+
+  - entity_id: ENT-043
+    name: TripAdvisor
+    type: review_platform
+    aliases: [TA]
+    wiki_pages: [wiki/reviews/google-tripadvisor-2026.md]
+    aggregate_rating: "4.95"
+    review_count: 21
+    claims: [C6]
+    tags: [review-mention, trust-signal]
+
+  - entity_id: ENT-044
+    name: GetYourGuide
+    type: review_platform
+    aliases: [GYG]
+    wiki_pages: []
+    claims: [C6]
+    tags: [review-mention]
+
+  # --- Vehicle Classes (ENT-045 to ENT-050) ---
+
+  - entity_id: ENT-045
+    name: MPV
+    type: vehicle_class
+    aliases: []
+    wiki_pages: [wiki/finance/rate-cards.md]
+    pax_range: 1-3
+    rate_per_day_idr: 250000
+    claims: [C2]
+    tags: [transport-data]
+
+  - entity_id: ENT-046
+    name: Innova
+    type: vehicle_class
+    aliases: [Toyota Innova]
+    wiki_pages: [wiki/finance/rate-cards.md]
+    pax_range: 3-3
+    rate_per_day_idr: 350000
+    claims: [C2]
+    tags: [transport-data]
+
+  - entity_id: ENT-047
+    name: Hiace
+    type: vehicle_class
+    aliases: [Toyota Hiace]
+    wiki_pages: [wiki/finance/rate-cards.md]
+    pax_range: 4-9
+    rate_per_day_idr: 1100000
+    claims: [C2]
+    tags: [transport-data]
+
+  - entity_id: ENT-048
+    name: Hiace Premio
+    type: vehicle_class
+    aliases: [Toyota Hiace Premio]
+    wiki_pages: [wiki/finance/rate-cards.md]
+    pax_range: 4-9
+    rate_per_day_idr: 1300000
+    claims: [C2]
+    tags: [transport-data]
+
+  - entity_id: ENT-049
+    name: Mini Bus (Elf)
+    type: vehicle_class
+    aliases: [Elf, Isuzu Elf]
+    wiki_pages: [wiki/finance/rate-cards.md]
+    pax_range: 10-13
+    rate_per_day_idr: 1350000
+    claims: [C2]
+    tags: [transport-data]
+
+  - entity_id: ENT-050
+    name: Medium Bus
+    type: vehicle_class
+    aliases: []
+    wiki_pages: [wiki/finance/rate-cards.md]
+    pax_range: 27-35
+    rate_per_day_idr: 1800000
+    claims: [C2]
+    tags: [transport-data]
