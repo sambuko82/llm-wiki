@@ -67,6 +67,14 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
         analytics/        # Future: metrics, tracking
         internal-ops/     # Future: SOPs, training
         ops/              # Meta-workflows: ingestion, compilation, health checks
+    docs/                 # Documentation (Diataxis framework)
+      tutorial-first-ingestion.md   # Walk through ingesting a source end-to-end
+      howto-ingest-sources.md       # Step-by-step for each ingestion profile
+      howto-generate-output.md      # Step-by-step for each compilation profile
+      howto-health-checks.md        # On-demand, weekly, monthly audit procedures
+      reference-wiki-structure.md   # Directory map, frontmatter, domains, templates
+      reference-scripts.md          # Python extraction pipeline (7 scripts)
+      explanation-architecture.md   # Why: SSOT pipeline, trust arch, design decisions
     CLAUDE.md             # This file
 
 ---
