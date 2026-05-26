@@ -159,18 +159,18 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** (1) Intake correlation governance layer — claim-registry.yml (C1-C9), entity-registry.yml (50 entities), decision-queue.md (structured + 5 seeded), intake-gate.md (entity registration + claim linkage rules), intake-audit.md (governance counts + evidence fix). (2) Documentation updated: reference-wiki-structure, howto-ingest-sources, CLAUDE.md, log.md.
+**Last completed:** (1) Intake correlation governance layer — claim-registry.yml (C1-C9), entity-registry.yml (50 entities ENT-001–050), decision-queue.md (5 seeded items), intake-gate.md (entity registration + claim linkage rules), intake-audit.md (governance counts). (2) Documentation sync — reference-wiki-structure, howto-ingest-sources, CLAUDE.md, log.md. (3) Health check — fixed stale Google review count in aeo-claims.md (92→123), fixed stale package count in index.md (15→16). 2 orphans confirmed (permit-requirements, finance-rate-cards — pending REC-003/004). 92 wiki pages, all within 90-day freshness. Governance layer fully consistent.
 **Completed date:** 2026-05-26
-**Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
+**Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words. (5) Fix 2 orphans: add inbound links to permit-requirements + finance-rate-cards (REC-003/004).
 **Build status:** — no code changes (wiki/output only).
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" is stale — now 123. Fix in jvto-web.
 - Duplicate TouristTrip in tour page JSON-LD schemas — deduplicate in jvto-web
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
-- Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam
-- Madakaripura height — "tallest in Java" under reconciliation
-- Second NIB 0220001393513 — verify on OSS portal (blocked on portal access)
+- Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam (DQ-001)
+- Madakaripura height — "tallest in Java" under reconciliation (DQ-002)
+- Second NIB 0220001393513 — verify on OSS portal (blocked on portal access) (DQ-003)
 - Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data
 - `yadnya-kasada-2026` — need Tengger calendar source
 
