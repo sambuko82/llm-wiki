@@ -11,6 +11,16 @@ sources: []
 
 ---
 
+## [2026-05-26] enhance | Intake correlation governance layer
+
+New files: `raw/_manifest/claim-registry.yml` (9 claims C1-C9 with evidence chains), `raw/_manifest/entity-registry.yml` (50 entities ENT-001–ENT-050 across 10 types).
+
+Enhanced: `decision-queue.md` (table structure + 5 seeded items from conflicts/recs), `wiki/ops/intake-gate.md` (Entity Registration + Claim Linkage subsections, 12-row manifest table, 8-item correlation checklist), `intake-audit.md` (Governance Layer Counts section, evidence count fix 14→18).
+
+Documentation updated: `docs/reference-wiki-structure.md` (added `_manifest/` to directory tree + claim/entity registry references), `docs/howto-ingest-sources.md` (added entity registration + claim linkage to Workflow 7 section).
+
+---
+
 ## [2026-05-26] ingest | Google Maps Reviews API (123) + Profile Media (87) — 3-platform compilation
 
 Sources: `raw/google review page [1-3].json` (123 Google reviews via API), `raw/google profile media.json` (87 GMB media items).

@@ -98,7 +98,11 @@ For bulk or uncertain sources, use the intake gate instead of manual classificat
 1. Place the file in `raw/_inbox/`
 2. Say: "Process inbox" or "Intake gate"
 3. The gate classifies, routes, extracts key facts, checks for duplicates, and generates an intake card
-4. Review the intake card and proceed with the appropriate ingestion profile
+4. The gate also runs **correlation checks** against existing registries:
+   - **Entity registration**: if the source introduces a new destination, crew member, authority, credential, or system, the gate proposes an entity entry in `entity-registry.yml`
+   - **Claim linkage**: if the source supports or challenges an existing trust claim (C1-C9), the gate links evidence to `claim-registry.yml` or flags a conflict
+   - **Conflict detection**: contradictions go to `conflict-log.md` and `decision-queue.md` for human review
+5. Review the intake card and proceed with the appropriate ingestion profile
 
 ## Verification
 

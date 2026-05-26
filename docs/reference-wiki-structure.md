@@ -9,6 +9,20 @@ llm-wiki/
 ├── raw/                    # Immutable source documents. LLM reads, NEVER writes.
 │   ├── FINANCE/            # Tour package cost spreadsheets + rate card JSONs
 │   │   └── rate_cards/     # 5 JSON files: crew, vehicles, accommodation, activities, other
+│   ├── _manifest/          # Intake governance registries and tracking (LLM-maintained)
+│   │   ├── raw-files-index.csv    # Master index of all raw files (raw_id, type, domain)
+│   │   ├── ingest-status.csv      # Ingestion status per file
+│   │   ├── source-url-index.csv   # URL sources for web clips
+│   │   ├── category-registry.yml  # 29 domain-based categories
+│   │   ├── tag-registry.yml       # 35 cross-cutting tags
+│   │   ├── evidence-registry.yml  # 18 evidence items supporting claims C1-C9
+│   │   ├── claim-registry.yml     # Canonical claim definitions C1-C9
+│   │   ├── entity-registry.yml    # 50 named entities (destinations, crew, credentials, etc.)
+│   │   ├── conflict-log.md        # Data conflicts between sources
+│   │   ├── recommendation-log.md  # Proposed changes from intake processing
+│   │   ├── decision-queue.md      # Items requiring human decision
+│   │   ├── sitemap-proposals.md   # Proposed new website URLs
+│   │   └── intake-audit.md        # Intake processing audit trail
 │   ├── backoffice/         # MySQL dumps (PII — gitignored)
 │   │   ├── dumps/          # Raw SQL exports (gitignored)
 │   │   ├── csv/            # Table CSV exports (gitignored)
@@ -189,7 +203,7 @@ Nine canonical claims form the trust graph. Each claim is owned by a primary pag
 | C8 | Partners (HPWKI/INDECON/ISIC) | /verify-jvto |
 | C9 | Press & Recognition | /verify-jvto/press-recognition |
 
-See `wiki/website/aeo-claims.md` for NLP snippets and full evidence chains per claim.
+See `wiki/website/aeo-claims.md` for NLP snippets and full evidence chains per claim. See `raw/_manifest/claim-registry.yml` for machine-readable claim definitions with evidence cross-references, and `raw/_manifest/entity-registry.yml` for the central entity registry (50 named entities across 10 types).
 
 ## Related
 

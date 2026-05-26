@@ -36,6 +36,7 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
     llm-wiki/
     raw/                  # Immutable source docs. LLM reads, NEVER writes here.
       FINANCE/            # Tour package cost spreadsheets + rate card JSONs
+      _manifest/          # Intake governance: 13 tracking/registry files (LLM-maintained exception to raw/ immutability)
     Clippings/            # Web clips from Obsidian Web Clipper. Treat as sources.
     templates/            # Obsidian page templates
     output/               # LLM-generated artifacts, organized by domain.
@@ -158,7 +159,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** (1) Google Maps Reviews API ingestion (123 reviews) + Profile Media (87 items). (2) 3-platform review compilation — 195 reviews organized by crew (14) + package (16). (3) Crew-registry enriched with cross-platform quotes. (4) Packages-overview review evidence section. (5) 4 new review patterns. (6) Live SEO audit of javavolcano-touroperator.com — schema exceptional (20+ entities on homepage, 163 Review schemas on /reviews), stale "92 Google Maps" on homepage H2 flagged (should be 123).
+**Last completed:** (1) Intake correlation governance layer — claim-registry.yml (C1-C9), entity-registry.yml (50 entities), decision-queue.md (structured + 5 seeded), intake-gate.md (entity registration + claim linkage rules), intake-audit.md (governance counts + evidence fix). (2) Documentation updated: reference-wiki-structure, howto-ingest-sources, CLAUDE.md, log.md.
 **Completed date:** 2026-05-26
 **Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
 **Build status:** — no code changes (wiki/output only).
