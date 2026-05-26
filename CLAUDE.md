@@ -158,11 +158,14 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** (1) Google Maps Reviews API ingestion (123 reviews) + Profile Media (87 items). (2) 3-platform review compilation — 195 reviews (Google 123 + Trustpilot 51 + TripAdvisor 21) organized by crew (14) + package (16). (3) Crew-registry enriched with cross-platform quotes. (4) Packages-overview gets review evidence section. (5) 4 new review patterns identified (accommodation, schedule, photography, multi-language).
+**Last completed:** (1) Google Maps Reviews API ingestion (123 reviews) + Profile Media (87 items). (2) 3-platform review compilation — 195 reviews organized by crew (14) + package (16). (3) Crew-registry enriched with cross-platform quotes. (4) Packages-overview review evidence section. (5) 4 new review patterns. (6) Live SEO audit of javavolcano-touroperator.com — schema exceptional (20+ entities on homepage, 163 Review schemas on /reviews), stale "92 Google Maps" on homepage H2 flagged (should be 123).
 **Completed date:** 2026-05-26
-**Next task:** (1) Query live DB for `price_categories.name` to unlock pax-tier mapping for 556 template price rows. (2) Catalog 67 unpublished backoffice packages (deprecated vs future vs internal). (3) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
+**Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
 **Build status:** — no code changes (wiki/output only).
 **Open items:**
+- **URGENT**: Homepage H2 "92 on Google Maps" is stale — now 123. Fix in jvto-web.
+- Duplicate TouristTrip in tour page JSON-LD schemas — deduplicate in jvto-web
+- robots.txt Cloudflare/custom conflict — contradictory AI crawler directives
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
 - Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam
 - Madakaripura height — "tallest in Java" under reconciliation
