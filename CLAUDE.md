@@ -159,9 +159,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** (1) Intake correlation governance layer — claim-registry.yml (C1-C9), entity-registry.yml (50 entities ENT-001–050), decision-queue.md (5 seeded items), intake-gate.md (entity registration + claim linkage rules), intake-audit.md (governance counts). (2) Documentation sync — reference-wiki-structure, howto-ingest-sources, CLAUDE.md, log.md. (3) Health check — fixed stale Google review count in aeo-claims.md (92→123), fixed stale package count in index.md (15→16). 2 orphans confirmed (permit-requirements, finance-rate-cards — pending REC-003/004). 92 wiki pages, all within 90-day freshness. Governance layer fully consistent.
+**Last completed:** (1) Intake correlation governance layer — claim-registry.yml (C1-C9), entity-registry.yml (50 entities ENT-001–050), decision-queue.md (5 seeded items), intake-gate.md (entity registration + claim linkage rules), intake-audit.md (governance counts). (2) Documentation sync — reference-wiki-structure, howto-ingest-sources, CLAUDE.md, log.md. (3) Health check — fixed stale Google 92→123 in aeo-claims, packages 15→16 in index. (4) Orphan fix — permit-requirements linked from kawah-ijen + mount-bromo; finance-rate-cards linked from finance/rate-cards. REC-003 + REC-004 done. Zero orphans remaining.
 **Completed date:** 2026-05-26
-**Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words. (5) Fix 2 orphans: add inbound links to permit-requirements + finance-rate-cards (REC-003/004).
+**Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
 **Build status:** — no code changes (wiki/output only).
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" is stale — now 123. Fix in jvto-web.
