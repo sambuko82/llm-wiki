@@ -11,6 +11,14 @@ sources: []
 
 ---
 
+## [2026-05-26] compile | JSON-LD schema for 6 student packages
+
+Profile: `schema` compilation. 6 TouristTrip + AggregateRating + AggregateOffer schemas generated. All prices verified against packages-full-pricing.md §Student Packages. All canonical values verified against trust-signals.md §Schema Canonical Values (ratingValue=4.8, reviewCount=51, NIB=1102230032918, ISIC=259268). Student-specific fields: eligibleCustomerType=Student, touristType=ISIC-verified. Receipt: output/website/schema/student-schemas.receipt.md.
+
+Also: updated seo/seo-strategy Silo 1 status from "needs schema" to "DONE" (16 canonical schemas generated 2026-05-18, 6 student schemas generated today).
+
+---
+
 ## [2026-05-26] audit | Backoffice pricing validation — template vs realized
 
 Pages updated: sources/backoffice-pricing (validation findings + DATA GAP flag), finance/rate-cards (Klook 25% commission model), finance/profit-analysis (OTA impact + realized validation BLOCKED note).

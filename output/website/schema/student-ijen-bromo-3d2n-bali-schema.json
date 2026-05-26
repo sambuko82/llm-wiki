@@ -1,0 +1,84 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Student Package — 3D2N Ijen & Bromo from Bali",
+    "image": "https://javavolcano-touroperator.com/ops/ijen-geopark-briefing.png",
+    "url": "https://javavolcano-touroperator.com/tours/student-package/ijen-bromo-3d2n",
+    "description": "ISIC student rate for 3-day private Ijen Blue Fire + Bromo sunrise from Bali. Gilimanuk-Ketapang ferry crossing included. Same safety standards: HPWKI-registered guides, mandatory Ijen health screening (BBKSDA SE.1658/KSA.9/2024). ISIC Provider ID 259268. Licensed operator NIB 1102230032918.",
+    "duration": "P3D",
+    "touristType": "International students with verified ISIC card",
+    "inLanguage": "en",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Java Volcano Tour Operator",
+      "url": "https://javavolcano-touroperator.com",
+      "identifier": "1102230032918"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 1 — Bali to Bondowoso via Ferry",
+            "description": "Pick-up from Bali. Gilimanuk-Ketapang ferry crossing to Java. Private transfer to Bondowoso. Health screening on arrival (BBKSDA SE.1658/KSA.9/2024)."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 2 — Ijen Blue Fire + Transfer to Bromo",
+            "description": "Midnight departure to Paltuding base. Guided ascent to Kawah Ijen crater rim (2,386 m). Blue Fire observation. Gas masks and trekking poles provided. Descent, breakfast, transfer west to Bromo area."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 3 — Bromo Sunrise + Return to Surabaya",
+            "description": "Penanjakan viewpoint for Bromo sunrise over the Tengger caldera. Private 4WD jeep to crater base. Transfer to Surabaya for drop-off."
+          }
+        }
+      ]
+    },
+    "subjectOf": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Kawah Ijen",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.0580", "longitude": "114.2420" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Banyuwangi", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Mount Bromo",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.9425", "longitude": "112.9530" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      }
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "1900000",
+      "highPrice": "2900000",
+      "offerCount": "6",
+      "description": "ISIC student pricing per person: IDR 2,900,000 (2 pax) · IDR 2,700,000 (3) · IDR 2,500,000 (4–5) · IDR 2,300,000 (6–7) · IDR 2,100,000 (8–10) · IDR 1,900,000 (11+). Minimum 2 guests. Includes Gilimanuk-Ketapang ferry crossing. Valid ISIC card required.",
+      "availability": "https://schema.org/InStock",
+      "url": "https://javavolcano-touroperator.com/tours/student-package/ijen-bromo-3d2n",
+      "eligibleCustomerType": "Student"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "51",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewAspect": "Trustpilot verified reviews — javavolcano-touroperator.com"
+    }
+  }
+]

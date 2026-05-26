@@ -199,6 +199,21 @@
 
 ---
 
+## JSON-LD Schema — Student Packages (6)
+
+| File | URL | Output date | Status |
+|---|---|---|---|
+| `website/schema/student-bromo-ijen-3d2n-schema.json` | `/tours/student-package/bromo-ijen-3d2n` | 2026-05-26 | draft |
+| `website/schema/student-bromo-ijen-3d2n-to-bali-schema.json` | `/tours/student-package/bromo-ijen-3d2n-to-bali` | 2026-05-26 | draft |
+| `website/schema/student-ijen-bromo-3d2n-bali-schema.json` | `/tours/student-package/ijen-bromo-3d2n` | 2026-05-26 | draft |
+| `website/schema/student-ijen-bromo-madakaripura-night-market-4d3n-schema.json` | `/tours/student-package/ijen-bromo-madakaripura-night-market-4d3n` | 2026-05-26 | draft |
+| `website/schema/student-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-4d3n` | 2026-05-26 | draft |
+| `website/schema/student-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json` | `/tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n` | 2026-05-26 | draft |
+
+Verification receipt: `website/schema/student-schemas.receipt.md`
+
+---
+
 ## Developer Handoff
 
 | File | Purpose | Output date |

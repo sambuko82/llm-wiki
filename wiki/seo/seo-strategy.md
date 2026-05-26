@@ -58,8 +58,8 @@ JVTO already ranks #1 for police-led and licensed-operator queries. The moat is 
 /tours/from-surabaya/{slug} × 12
 /tours/from-bali/{slug} × 4
 ```
-**Wiki status**: All 16 pages have output files in `output/website/tours/`. Schema not yet generated.  
-**Action**: Generate TouristTrip + FAQPage schema for all 16 tour pages via `schema` compilation profile.
+**Wiki status**: All 16 pages have output files in `output/website/tours/`. TouristTrip + AggregateRating schema generated for all 16 (2026-05-18). 6 student packages have output copy but no schema yet.  
+**Action**: ~~Generate TouristTrip + FAQPage schema for all 16 tour pages.~~ DONE (2026-05-18). Remaining: generate schema for 6 student packages.
 
 ---
 

@@ -1,0 +1,114 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Student Package — 5D4N Ijen + Papuma + Tumpak Sewu + Bromo",
+    "image": "https://javavolcano-touroperator.com/ops/ijen-geopark-briefing.png",
+    "url": "https://javavolcano-touroperator.com/tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n",
+    "description": "ISIC student rate for 5-day extended East Java circuit: Ijen Blue Fire, Papuma Beach with extra day, Tumpak Sewu waterfall, and Bromo sunrise. Same safety standards: HPWKI-registered guides, mandatory health screening (BBKSDA SE.1658/KSA.9/2024). ISIC Provider ID 259268. Licensed operator NIB 1102230032918.",
+    "duration": "P5D",
+    "touristType": "International students with verified ISIC card",
+    "inLanguage": "en",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Java Volcano Tour Operator",
+      "url": "https://javavolcano-touroperator.com",
+      "identifier": "1102230032918"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 1 — Surabaya to Bondowoso + Ijen Screening",
+            "description": "Private transfer from Surabaya to Bondowoso. Health screening on arrival (BBKSDA SE.1658/KSA.9/2024). Dinner and overnight."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 2 — Ijen Blue Fire + Transfer to Papuma",
+            "description": "Midnight departure to Paltuding base. Guided ascent to Kawah Ijen (2,386 m). Blue Fire observation. Gas masks and trekking poles provided. Descent, breakfast, transfer south to Papuma Beach area."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 3 — Papuma Beach + Tumpak Sewu Waterfall",
+            "description": "Morning at Papuma Beach. Transfer to Tumpak Sewu waterfall (~120 m curtain waterfall). Optional canyon descent. Overnight in Lumajang area."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 4 — Transfer to Bromo + Bromo Stargazing",
+            "description": "Transfer to Bromo area. Free time or optional local exploration. Overnight at Bromo-area hotel."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Trip",
+            "name": "Day 5 — Bromo Sunrise + Return to Surabaya",
+            "description": "Penanjakan viewpoint for Bromo sunrise over the Tengger caldera. Private 4WD jeep to crater base. Return to Surabaya for drop-off."
+          }
+        }
+      ]
+    },
+    "subjectOf": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Kawah Ijen",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.0580", "longitude": "114.2420" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Banyuwangi", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Papuma Beach",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.4565", "longitude": "113.5580" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Jember", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Tumpak Sewu Waterfall",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-8.2301", "longitude": "112.9150" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Lumajang", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Mount Bromo",
+        "geo": { "@type": "GeoCoordinates", "latitude": "-7.9425", "longitude": "112.9530" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Probolinggo", "addressRegion": "Jawa Timur", "addressCountry": "ID" }
+      }
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "3050000",
+      "highPrice": "4050000",
+      "offerCount": "6",
+      "description": "ISIC student pricing per person: IDR 4,050,000 (2 pax) · IDR 3,850,000 (3) · IDR 3,650,000 (4–5) · IDR 3,450,000 (6–7) · IDR 3,250,000 (8–10) · IDR 3,050,000 (11+). Minimum 2 guests. All-inclusive: private transport, 4 nights accommodation + breakfast, entrance fees, Bromo jeep, Ijen gas masks, health screening, water, T-shirt.",
+      "availability": "https://schema.org/InStock",
+      "url": "https://javavolcano-touroperator.com/tours/student-package/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "eligibleCustomerType": "Student"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "51",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewAspect": "Trustpilot verified reviews — javavolcano-touroperator.com"
+    }
+  }
+]
