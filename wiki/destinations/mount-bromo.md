@@ -117,4 +117,4 @@ The **Pura Luhur Poten** waypoint is the Hindu temple at the caldera floor — p
 
 Supports claims **C1** (Safety-led operations) and **C3** (All-inclusive clarity) per [[website/aeo-claims]]. Bromo is not a claim-owner destination — see [[sources/ssot-v6]] §12.
 
--> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[destinations/kawah-ijen]] | -> [[destinations/madakaripura]]
+-> [[credentials/legal-licenses]] | -> [[credentials/permit-requirements]] | -> [[products/packages-overview]] | -> [[destinations/kawah-ijen]] | -> [[destinations/madakaripura]]

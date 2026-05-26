@@ -168,4 +168,4 @@ Notes: GPX peak elevation (2,380 m) is slightly under the official crater-rim fi
 
 Owns claim **C4** (Ijen Health Screening) and contributes to **C1** (Safety-led operations) per [[website/aeo-claims]] and [[sources/ssot-v6]] §12. Incident data from [[sources/ijen-tourist-accidents]] strengthens both claims — 50% of documented fatalities were fitness-related.
 
--> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[products/packages-overview]] | -> [[website/aeo-claims]] | -> [[sources/ijen-tourist-accidents]] | -> [[sources/ijen-safety-resource-mapping]]
+-> [[people/dr-ahmad-irwandanu]] | -> [[credentials/legal-licenses]] | -> [[credentials/permit-requirements]] | -> [[products/packages-overview]] | -> [[website/aeo-claims]] | -> [[sources/ijen-tourist-accidents]] | -> [[sources/ijen-safety-resource-mapping]]
