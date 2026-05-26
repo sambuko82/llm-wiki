@@ -11,6 +11,27 @@ sources: []
 
 ---
 
+## [2026-05-26] health-check | on-demand
+
+**Stale claims fixed:**
+- `aeo-claims.md` C6 aggregate: Google 92→123 reviews (superseded by google-maps-reviews-api-2026)
+- `index.md` packages line: 15 (11+4) → 16 (12+4) (resolved since sitemap ingest)
+- `db-export-2026-05.md:51` still says Google 92 — correct for DB export date, noted as superseded
+
+**Orphans (known, pending REC-003 + REC-004):**
+- `credentials/permit-requirements.md` — no inbound domain page links
+- `sources/finance-rate-cards.md` — no inbound link from finance/rate-cards
+
+**Open gaps (2 remaining):**
+- `content/voice-invariants` — lives in brand-voice §voice-invariants (optional promotion)
+- `bromo-ijen-status-today` — blocked on PVMBG/BBKSDA live source
+
+**Governance layer:** 9 claims registered, 50 entities, 18 evidence items, 3 open conflicts, 5 decision queue items, 9 pending recommendations. All registries consistent.
+
+**No stale pages** — all 92 wiki pages updated within 90 days (most recent: 2026-05-26).
+
+---
+
 ## [2026-05-26] enhance | Intake correlation governance layer
 
 New files: `raw/_manifest/claim-registry.yml` (9 claims C1-C9 with evidence chains), `raw/_manifest/entity-registry.yml` (50 entities ENT-001–ENT-050 across 10 types).
