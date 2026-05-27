@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>JVTO Business Exposure Board</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f7f8fa; color: #1a1d23; margin: 0; padding: 0; line-height: 1.55; font-size: 14px; }
+header { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: white; padding: 24px 32px; }
+header h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+header p { margin: 6px 0 0; opacity: 0.9; font-size: 13px; }
+.engine-tag { display: inline-block; background: rgba(255,255,255,0.15); padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; margin-top: 8px; }
+.tabs { background: white; border-bottom: 1px solid #e5e7eb; padding: 0 24px; display: flex; gap: 0; position: sticky; top: 0; z-index: 10; }
+.tabs button { background: transparent; border: 0; border-bottom: 3px solid transparent; padding: 14px 18px; font-size: 13px; font-weight: 600; color: #6b7280; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+.tabs button:hover { color: #1e40af; }
+.tabs button.active { color: #1e40af; border-bottom-color: #1e40af; }
+.tab-count { background: #e5e7eb; color: #4b5563; padding: 1px 7px; border-radius: 10px; font-size: 11px; margin-left: 6px; }
+.tabs button.active .tab-count { background: #dbeafe; color: #1e40af; }
+main { padding: 24px 32px; max-width: 1400px; }
+section { display: none; }
+section.active { display: block; }
+.section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; }
+.section-header h2 { margin: 0; font-size: 18px; font-weight: 700; }
+.section-header p { margin: 4px 0 0; color: #6b7280; font-size: 13px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; }
+.card h3 { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.03em; }
+.card .big { font-size: 26px; font-weight: 700; color: #1a1d23; line-height: 1.1; }
+.card .sub { font-size: 12px; color: #6b7280; margin-top: 4px; }
+.card.ok { border-left: 3px solid #16a34a; }
+.card.warn { border-left: 3px solid #f59e0b; }
+.card.todo { border-left: 3px solid #ef4444; }
+.card.info { border-left: 3px solid #3b82f6; }
+.row { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; display: flex; gap: 14px; align-items: flex-start; }
+.row .pill { display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+.pill-done { background: #dcfce7; color: #166534; }
+.pill-progress { background: #fef3c7; color: #92400e; }
+.pill-pending { background: #f3f4f6; color: #4b5563; }
+.pill-claim { background: #dbeafe; color: #1e40af; margin-right: 4px; font-size: 10px; }
+.pill-legal { background: #f3e8ff; color: #6b21a8; }
+.pill-police { background: #dbeafe; color: #1e40af; }
+.pill-medical { background: #fee2e2; color: #991b1b; }
+.pill-partners { background: #dcfce7; color: #166534; }
+.pill-history { background: #fef3c7; color: #92400e; }
+.pill-press { background: #cffafe; color: #155e75; }
+.pill-reviews { background: #ffe4e6; color: #9f1239; }
+.row-content { flex: 1; }
+.row-content h4 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+.row-content p { margin: 0; font-size: 13px; color: #4b5563; }
+.row-content .meta { display: flex; gap: 12px; margin-top: 6px; font-size: 12px; color: #6b7280; flex-wrap: wrap; }
+.row-side { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; min-width: 90px; }
+.status-btn { background: white; border: 1px solid #d1d5db; border-radius: 6px; padding: 4px 10px; font-size: 12px; font-weight: 500; cursor: pointer; font-family: inherit; }
+.status-btn:hover { background: #f9fafb; }
+.grid-wrapper { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; }
+.filter-bar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.filter-btn { background: white; border: 1px solid #d1d5db; border-radius: 16px; padding: 5px 12px; font-size: 12px; cursor: pointer; font-family: inherit; }
+.filter-btn.active { background: #1e40af; color: white; border-color: #1e40af; }
+.principle-block { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px; font-size: 13px; }
+.principle-block strong { color: #92400e; }
+.code-tag { font-family: ui-monospace, "SF Mono", Menlo, monospace; background: #f3f4f6; padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+.muted { color: #6b7280; }
+a { color: #1e40af; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.list-tight { list-style: none; padding: 0; margin: 0; }
+.list-tight li { padding: 8px 0; border-bottom: 1px solid #f1f3f5; }
+.list-tight li:last-child { border-bottom: 0; }
+.list-tight .li-meta { display: flex; gap: 10px; font-size: 12px; color: #6b7280; margin-top: 3px; flex-wrap: wrap; }
+.blog-row { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+.blog-row h4 { margin: 0 0 8px; font-size: 15px; font-weight: 700; }
+.blog-row .blog-meta-grid { display: grid; grid-template-columns: 110px 1fr; gap: 6px 16px; font-size: 13px; }
+.blog-row .blog-meta-grid > div:nth-child(odd) { color: #6b7280; font-weight: 500; }
+.blog-row .blog-meta-grid > div:nth-child(even) { color: #1a1d23; }
+.note-input { width: 100%; border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 8px; font-size: 12px; margin-top: 8px; font-family: inherit; resize: vertical; min-height: 32px; }
+footer { padding: 20px 32px; color: #9ca3af; font-size: 12px; border-top: 1px solid #e5e7eb; background: white; margin-top: 32px; }
+@media (max-width: 700px) {
+  header { padding: 18px 16px; }
+  main { padding: 16px; }
+  .tabs { padding: 0 12px; overflow-x: auto; }
+  .tabs button { padding: 12px 12px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>JVTO Business Exposure Board</h1>
+  <p>Bukan dashboard sensus. Bukan BI berat. Setiap data JVTO → diekspose menjadi aset yang membuat tourist asing percaya dan booking.</p>
+  <span class="engine-tag">JVTO Business Exposure Engine — Cycle 1</span>
+</header>
+
+<nav class="tabs" id="tab-nav">
+  <button data-tab="status" class="active">Status<span class="tab-count">3</span></button>
+  <button data-tab="assets">Trust Assets<span class="tab-count" id="count-assets">20</span></button>
+  <button data-tab="queue">Exposure Queue<span class="tab-count" id="count-queue">6</span></button>
+  <button data-tab="blog">Blog Priority<span class="tab-count">5</span></button>
+</nav>
+
+<main>
+
+<!-- ════════ TAB 1 — STATUS ════════ -->
+<section data-panel="status" class="active">
+  <div class="section-header">
+    <div>
+      <h2>Cycle 1 — Status Eksekusi Hari Ini</h2>
+      <p>2026-05-27 · Apa yang sudah keluar ke website, apa yang berikutnya</p>
+    </div>
+  </div>
+
+  <div class="principle-block">
+    <strong>Prinsip operasional aktif:</strong> Owner-approved data = <span class="code-tag">locked_business_asset</span> → tidak diaudit ulang. Conflict-mode hanya untuk hal yang merusak klaim publik / legal / harga / keselamatan / booking. Tugas: <strong>extract → kemas → ekspose</strong>, bukan membuktikan.
+  </div>
+
+  <h3 style="font-size: 14px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 12px;">Aset yang sudah dideploy hari ini</h3>
+  <div class="card-grid">
+    <div class="card ok">
+      <h3>llms.txt</h3>
+      <div class="big">Live</div>
+      <div class="sub">F:\jvto-web\public\llms.txt · 10 KB · Overwrote outdated (backup .bak.2026-05-27)</div>
+    </div>
+    <div class="card ok">
+      <h3>llms-full.txt</h3>
+      <div class="big">Live</div>
+      <div class="sub">F:\jvto-web\public\llms-full.txt · 32 KB · 19 sections, locked Stefan Loose</div>
+    </div>
+    <div class="card ok">
+      <h3>evidenceRegistry.ts</h3>
+      <div class="big">Live</div>
+      <div class="sub">F:\jvto-web\src\data\evidenceRegistry.ts · 20 items · 5 helper functions</div>
+    </div>
+    <div class="card info">
+      <h3>Owner-approved Locks</h3>
+      <div class="big">3</div>
+      <div class="sub">Stefan Loose · NIB · Madakaripura</div>
+    </div>
+  </div>
+
+  <h3 style="font-size: 14px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; margin: 20px 0 12px;">Locked business assets</h3>
+  <div class="row info">
+    <div class="row-content">
+      <h4>Stefan Loose Reiseführer Indonesien (4th Edition)</h4>
+      <p>ISBN <span class="code-tag">978-3-7701-7881-0</span> · published <span class="code-tag">2018-07-05</span> · DuMont Reiseverlag · page 287 of 772 · German</p>
+      <div class="meta">
+        <span>Schema: <span class="code-tag">Book</span> via <span class="code-tag">Organization.subjectOf</span></span>
+        <span>Live at: <span class="code-tag">entityGraph.ts:124-153</span></span>
+      </div>
+    </div>
+    <div class="row-side"><span class="pill pill-done">LOCKED</span></div>
+  </div>
+  <div class="row info">
+    <div class="row-content">
+      <h4>NIB (Business Registration)</h4>
+      <p>Canonical: <span class="code-tag">1102230032918</span> — legacy 0220001393513 NOT a business asset, dibuang dari semua output</p>
+      <div class="meta"><span>Authority: Kementerian Investasi / BKPM (OSS Portal)</span></div>
+    </div>
+    <div class="row-side"><span class="pill pill-done">LOCKED</span></div>
+  </div>
+  <div class="row info">
+    <div class="row-content">
+      <h4>Madakaripura framing</h4>
+      <p>"Tallest waterfall in Java" — approved for public use, tidak perlu reconciliation height meter spesifik</p>
+    </div>
+    <div class="row-side"><span class="pill pill-done">LOCKED</span></div>
+  </div>
+
+  <h3 style="font-size: 14px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; margin: 20px 0 12px;">3 next actions (paling impactful)</h3>
+  <ol class="list-tight">
+    <li>
+      <strong>AuthorityShield refresh</strong> — point existing <span class="code-tag">src/components/website/AuthorityShield.tsx</span> ke <span class="code-tag">topEvidenceForClaim('C1')</span> bukan hardcoded
+      <div class="li-meta"><span>Effort: 1-2 jam</span><span>Direct impact: every page that shows AuthorityShield</span></div>
+    </li>
+    <li>
+      <strong>Crew Person schema</strong> — Gufron + named crew sebagai <span class="code-tag">Person</span> dengan <span class="code-tag">jobTitle</span> + <span class="code-tag">knowsAbout</span> (per SEO doc)
+      <div class="li-meta"><span>Effort: 2-3 jam</span><span>Direct impact: E-E-A-T signal untuk tour pages</span></div>
+    </li>
+    <li>
+      <strong>Blog #1: "Why You Should Not Visit Mount Ijen with an Unlicensed Operator"</strong> — fear-based blog cite police authority + BBKSDA + reviews
+      <div class="li-meta"><span>Effort: 3-4 jam</span><span>Direct impact: ads support + organic SEO untuk safety query</span></div>
+    </li>
+  </ol>
+</section>
+
+<!-- ════════ TAB 2 — TRUST ASSETS ════════ -->
+<section data-panel="assets">
+  <div class="section-header">
+    <div>
+      <h2>Trust Asset Inventory</h2>
+      <p>20 owner-approved evidence items dari <span class="code-tag">F:\jvto-web\src\data\evidenceRegistry.ts</span> · klik kategori untuk filter</p>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="asset-filter">
+    <button class="filter-btn active" data-cat="all">All (20)</button>
+    <button class="filter-btn" data-cat="legal">Legal (3)</button>
+    <button class="filter-btn" data-cat="police">Police (2)</button>
+    <button class="filter-btn" data-cat="medical">Medical (2)</button>
+    <button class="filter-btn" data-cat="partners">Partners (3)</button>
+    <button class="filter-btn" data-cat="history">History (3)</button>
+    <button class="filter-btn" data-cat="press">Press (4)</button>
+    <button class="filter-btn" data-cat="reviews">Reviews (3)</button>
+  </div>
+
+  <div class="grid-wrapper">
+    <div id="assets-grid"></div>
+  </div>
+</section>
+
+<!-- ════════ TAB 3 — EXPOSURE QUEUE ════════ -->
+<section data-panel="queue">
+  <div class="section-header">
+    <div>
+      <h2>Exposure Queue</h2>
+      <p>Aset berikutnya yang harus diekspose · klik status untuk toggle (tersimpan di browser Anda)</p>
+    </div>
+  </div>
+
+  <div id="queue-list"></div>
+</section>
+
+<!-- ════════ TAB 4 — BLOG PRIORITY ════════ -->
+<section data-panel="blog">
+  <div class="section-header">
+    <div>
+      <h2>Blog Priority — 5 Konten untuk Mendukung Ads</h2>
+      <p>Bukan blog random. Setiap blog menjawab fear + memperkuat advantage + CTA terhubung ke paket atau klaim.</p>
+    </div>
+  </div>
+
+  <div id="blog-list"></div>
+</section>
+
+</main>
+
+<footer>
+  Built by Cowork · Data source: <code>llm-wiki</code> + <code>F:\jvto-web\src\data\evidenceRegistry.ts</code> · Last compile: 2026-05-27
+  · Anda bisa refresh tampilan ini lewat tombol Reload di header artifact (Cowork bawaan)
+</footer>
+
+<script>
+// ════════════════════════════════════════════════════════
+// JVTO Business Exposure Board — state + data
+// ════════════════════════════════════════════════════════
+
+const STORAGE_KEY = 'jvto_exposure_board_v1';
+const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+
+// ─── Trust Assets data (mirror evidenceRegistry.ts) ──────
+const assets = [
+  ['NIB — Business Registration', 'legal', 'C5, C8', 'homepage, verify-jvto, checkout', 5, 'credentials/legal-licenses'],
+  ['TDUP — Tourism License', 'legal', 'C3, C5', 'homepage, verify-jvto, checkout', 5, 'credentials/legal-licenses'],
+  ['AHU Company Registry (AHU-0023020)', 'legal', 'C5', 'verify-jvto', 4, 'credentials/legal-licenses'],
+  ['SPRIN POLPAR — Police Assignment', 'police', 'C1, C5', 'homepage, why-jvto, verify-jvto', 5, 'credentials/police-integration'],
+  ['SPRIN WAL-TRAVEL 2024-02-12', 'police', 'C1, C5', 'why-jvto, verify-jvto', 5, 'credentials/police-integration'],
+  ['Dr. Irwandanu SIP (Ijen screening)', 'medical', 'C4, C5', 'why-jvto, verify-jvto, travel-guide', 5, 'people/dr-ahmad-irwandanu'],
+  ['BBKSDA SE.1658/KSA.9/2024', 'medical', 'C4, C8', 'why-jvto, verify-jvto, travel-guide, package', 4, 'credentials/medical-screening'],
+  ['HPWKI (AHU-0001072.AH.01.07.2024)', 'partners', 'C8, C7, C1', 'why-jvto, verify-jvto, team', 4, 'credentials/trust-signals'],
+  ['INDECON — Ecotourism Network', 'partners', 'C8', 'verify-jvto', 3, 'credentials/trust-signals'],
+  ['ISIC Provider 259268', 'partners', 'C8', 'verify-jvto, package', 4, 'credentials/trust-signals'],
+  ['Booking.com 2015 Award (plaque)', 'history', 'C5, C9', 'why-jvto, verify-jvto', 3, 'credentials/trust-signals'],
+  ['Booking.com 2015 — Shipping label', 'history', 'C5', 'verify-jvto', 4, 'credentials/trust-signals'],
+  ['Stefan Loose 4th Ed. p.287 (ISBN 978-3-7701-7881-0)', 'history', 'C9, C5', 'why-jvto, verify-jvto, homepage', 4, 'credentials/press-coverage'],
+  ['Detik.com 2021-03-14', 'press', 'C1, C5, C9', 'verify-jvto, why-jvto', 4, 'credentials/press-coverage'],
+  ['Radar Jember 2021-03-24 (Polpar formation)', 'press', 'C1, C5, C9', 'verify-jvto', 3, 'credentials/press-coverage'],
+  ['Radar Jember 2021-05-27 (Ijen patrol)', 'press', 'C1, C9', 'verify-jvto', 3, 'credentials/press-coverage'],
+  ['BBKSDA 2024-05-24 (HPWKI training)', 'press', 'C1, C4, C5, C8', 'verify-jvto, why-jvto', 5, 'credentials/press-coverage'],
+  ['Google Maps — 4.9 from 123', 'reviews', 'C6', 'homepage, why-jvto, verify-jvto, package', 4, 'reviews/google-tripadvisor-2026'],
+  ['Trustpilot — 4.8 from 51', 'reviews', 'C6', 'homepage, why-jvto, verify-jvto, package', 4, 'reviews/trustpilot-compilation'],
+  ['TripAdvisor — 4.95 from 21', 'reviews', 'C6', 'why-jvto, verify-jvto', 4, 'reviews/google-tripadvisor-2026'],
+];
+
+let currentFilter = 'all';
+function renderAssetGrid() {
+  const filtered = currentFilter === 'all' ? assets : assets.filter(r => r[1] === currentFilter);
+  const wrapper = document.getElementById('assets-grid');
+  wrapper.innerHTML = '';
+  new gridjs.Grid({
+    columns: [
+      { name: 'Asset', sort: true, formatter: v => gridjs.html('<strong>' + v + '</strong>') },
+      { name: 'Category', formatter: v => gridjs.html('<span class="pill pill-' + v + '">' + v + '</span>') },
+      { name: 'Claims', formatter: v => gridjs.html(v.split(', ').map(c => '<span class="pill pill-claim">' + c + '</span>').join('')) },
+      { name: 'Best placement', formatter: v => gridjs.html('<span style="font-size: 12px;">' + v + '</span>') },
+      { name: 'Weight', sort: true, width: '70px', formatter: v => gridjs.html('<strong style="color: #1e40af;">' + v + '</strong> /5') },
+      { name: 'Wiki source', formatter: v => gridjs.html('<code style="font-size: 11px;">' + v + '</code>') },
+    ],
+    data: filtered,
+    sort: true,
+    search: true,
+    pagination: { limit: 25 },
+    style: { table: { 'font-size': '13px' }, th: { 'background-color': '#f9fafb', 'color': '#374151' } },
+  }).render(wrapper);
+}
+
+document.getElementById('asset-filter').addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-cat]');
+  if (!btn) return;
+  currentFilter = btn.dataset.cat;
+  document.querySelectorAll('#asset-filter button').forEach(b => b.classList.toggle('active', b === btn));
+  renderAssetGrid();
+});
+
+// ─── Exposure Queue ──────────────────────────────────────
+const queue = [
+  {
+    id: 'q1',
+    title: 'AuthorityShield refresh',
+    desc: 'Point existing component ke topEvidenceForClaim() bukan hardcoded values',
+    impact: 'Every page that shows AuthorityShield (homepage, why-jvto, package)',
+    effort: '1-2 jam',
+    files: ['F:\\jvto-web\\src\\components\\website\\AuthorityShield.tsx', 'F:\\jvto-web\\src\\components\\why\\AuthorityShield.tsx'],
+    defaultStatus: 'pending',
+  },
+  {
+    id: 'q2',
+    title: 'Crew Person schema (Gufron + named crew)',
+    desc: 'Add Person schema per SEO doc spec — jobTitle, knowsAbout, affiliation. Expose Expertise signals to Google',
+    impact: 'E-E-A-T boost untuk tour pages, /team, /why-jvto/our-team',
+    effort: '2-3 jam',
+    files: ['F:\\jvto-web\\src\\lib\\schemas\\buildCrewSchemas.ts'],
+    defaultStatus: 'pending',
+  },
+  {
+    id: 'q3',
+    title: 'Blog #1 — "Why Not Visit Ijen with Unlicensed Operator"',
+    desc: 'Fear-driven blog. Cite police authority + BBKSDA + 195 reviews. CTA → package detail',
+    impact: 'Organic SEO untuk safety/scam queries + ads landing support',
+    effort: '3-4 jam',
+    files: ['F:\\jvto-web\\src\\app\\(website)\\blog\\unlicensed-ijen-operator-risk\\page.tsx'],
+    defaultStatus: 'pending',
+  },
+  {
+    id: 'q4',
+    title: '/verify-jvto pages wiring (legal + police-safety)',
+    desc: 'Render evidence cards dari evidenceRegistry. Each card: title + description + identifier + hash + external verify link',
+    impact: 'Tourist bisa verify sendiri. Mengurangi keraguan di checkout funnel',
+    effort: '3-4 jam',
+    files: ['F:\\jvto-web\\src\\app\\(website)\\verify-jvto\\legal\\page.tsx', 'F:\\jvto-web\\src\\app\\(website)\\verify-jvto\\police-safety\\page.tsx'],
+    defaultStatus: 'pending',
+  },
+  {
+    id: 'q5',
+    title: 'Per-package trust block component',
+    desc: 'Render evidenceByPlacement("package") di setiap tour page. Inject relevant claims (C1 untuk Ijen, C3 untuk inclusions, C4 untuk Ijen routes)',
+    impact: 'Direct conversion lift di checkout pages',
+    effort: '2-3 jam',
+    files: ['F:\\jvto-web\\src\\components\\website\\PackageTrustBlock.tsx (new)'],
+    defaultStatus: 'pending',
+  },
+  {
+    id: 'q6',
+    title: 'Authority Shield JSON-LD enrichment',
+    desc: 'Sambungkan Organization schema dengan founder.jobTitle "Active Tourist Police Officer" + memberOf police unit, per SEO doc',
+    impact: 'Google Knowledge Graph entity linking — police authority gets recognized',
+    effort: '1-2 jam',
+    files: ['F:\\jvto-web\\src\\lib\\schemas\\entityGraph.ts'],
+    defaultStatus: 'pending',
+  },
+];
+
+function renderQueue() {
+  const wrap = document.getElementById('queue-list');
+  wrap.innerHTML = '';
+  queue.forEach(item => {
+    const status = state['queue_' + item.id] || item.defaultStatus;
+    const div = document.createElement('div');
+    div.className = 'row';
+    div.innerHTML = `
+      <div class="row-content">
+        <h4>${item.title}</h4>
+        <p>${item.desc}</p>
+        <div class="meta">
+          <span><strong>Impact:</strong> ${item.impact}</span>
+          <span><strong>Effort:</strong> ${item.effort}</span>
+        </div>
+        <div class="meta">${item.files.map(f => `<code style="font-size: 11px;">${f}</code>`).join('')}</div>
+        <textarea class="note-input" placeholder="Catatan Anda (tersimpan)" data-note="${item.id}">${state['note_' + item.id] || ''}</textarea>
+      </div>
+      <div class="row-side">
+        <span class="pill pill-${status === 'done' ? 'done' : status === 'in_progress' ? 'progress' : 'pending'}">${status === 'done' ? 'DONE' : status === 'in_progress' ? 'IN PROGRESS' : 'PENDING'}</span>
+        <button class="status-btn" data-toggle="${item.id}">Toggle status</button>
+      </div>
+    `;
+    wrap.appendChild(div);
+  });
+  document.getElementById('count-queue').textContent = queue.filter(q => (state['queue_' + q.id] || q.defaultStatus) !== 'done').length;
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target.dataset.toggle) {
+    const id = e.target.dataset.toggle;
+    const cur = state['queue_' + id] || 'pending';
+    const next = cur === 'pending' ? 'in_progress' : cur === 'in_progress' ? 'done' : 'pending';
+    state['queue_' + id] = next;
+    saveState();
+    renderQueue();
+  }
+});
+document.addEventListener('input', (e) => {
+  if (e.target.dataset.note) {
+    state['note_' + e.target.dataset.note] = e.target.value;
+    saveState();
+  }
+});
+
+// ─── Blog Priority ───────────────────────────────────────
+const blogs = [
+  {
+    id: 'b1',
+    title: 'Why You Should Not Visit Mount Ijen with an Unlicensed Operator',
+    fear: 'Safety / scam risk · Indonesian regulations unclear · stranded by unlicensed driver',
+    advantage: 'JVTO is licensed (NIB + TDUP) + Tourist Police-led + BBKSDA training chain (HPWKI) + Dr. Irwandanu screening',
+    targetUrl: '/blog/unlicensed-ijen-operator-risk',
+    adsCampaign: 'Ijen safety search + remarketing for tour-shoppers',
+    cta: 'See licensed Ijen packages from Surabaya / Bali',
+    citeEvidence: 'SPRIN POLPAR, BBKSDA SE.1658, HPWKI, 195 reviews',
+    targetReader: 'First-time East Java traveler, 25-45, safety-conscious',
+  },
+  {
+    id: 'b2',
+    title: 'Mount Ijen Safety Guide for Foreign Travelers',
+    fear: 'Gas exposure, fall on the trail, unknown conditions, what to bring',
+    advantage: 'JVTO gas masks included + trekking poles + screening when required + police-trained guide',
+    targetUrl: '/blog/ijen-safety-foreign-travelers',
+    adsCampaign: 'Ijen + safety + foreign-traveler keywords',
+    cta: 'Book private Ijen tour with full safety kit',
+    citeEvidence: 'BBKSDA SE.1658, HPWKI training, Detik 2021, Radar Jember Ijen patrol',
+    targetReader: 'Skeptical first-time Ijen hiker',
+  },
+  {
+    id: 'b3',
+    title: 'Private Bromo Ijen Tour vs Random Driver — Real Cost Comparison',
+    fear: 'Will I get scammed? Hidden costs? Bad experience?',
+    advantage: 'JVTO 100% private + all-inclusive (transport + accom + entrance + jeep + screening + T-shirt) + written policy + Travel Credit',
+    targetUrl: '/blog/private-bromo-ijen-vs-random-driver',
+    adsCampaign: 'Bromo private tour + comparison queries',
+    cta: 'Compare JVTO packages from Surabaya / Bali',
+    citeEvidence: 'C3 inclusions, NIB + TDUP, Trustpilot/Google reviews',
+    targetReader: 'Budget-conscious traveler comparing options',
+  },
+  {
+    id: 'b4',
+    title: 'Why Health Screening Matters Before Hiking Mount Ijen',
+    fear: 'Will I pass? What if I fail? Is this real or just upsell?',
+    advantage: 'BBKSDA regulation (not JVTO upsell) + Dr. Irwandanu licensed + conditional protocol explained + screening included in price',
+    targetUrl: '/blog/ijen-health-screening-explained',
+    adsCampaign: 'Ijen health screening / Surat Sehat queries',
+    cta: 'Read what is included in JVTO Ijen tour',
+    citeEvidence: 'BBKSDA SE.1658, Dr. Irwandanu SIP, BBKSDA HPWKI training press',
+    targetReader: 'Pre-departure traveler doing research',
+  },
+  {
+    id: 'b5',
+    title: 'How to Choose a Safe Bromo Ijen Tour Operator from Surabaya or Bali',
+    fear: 'How do I tell legit from scam? What credentials should I look for?',
+    advantage: 'Checklist that JVTO meets all: NIB + TDUP + police-led + HPWKI + INDECON + ISIC + 195 reviews + Stefan Loose + Booking.com',
+    targetUrl: '/blog/how-to-choose-safe-bromo-ijen-operator',
+    adsCampaign: 'Tour operator comparison + safety queries',
+    cta: 'See full verification at /verify-jvto',
+    citeEvidence: 'All 9 claims, Stefan Loose, Booking.com, Trust Stack',
+    targetReader: 'Highly-skeptical researcher pre-booking',
+  },
+];
+
+function renderBlogs() {
+  const wrap = document.getElementById('blog-list');
+  wrap.innerHTML = '';
+  blogs.forEach(b => {
+    const status = state['blog_' + b.id] || 'pending';
+    const div = document.createElement('div');
+    div.className = 'blog-row';
+    div.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+        <h4 style="flex: 1;">${b.title}</h4>
+        <div>
+          <span class="pill pill-${status === 'done' ? 'done' : status === 'in_progress' ? 'progress' : 'pending'}">${status === 'done' ? 'PUBLISHED' : status === 'in_progress' ? 'DRAFTING' : 'IDEA'}</span>
+          <button class="status-btn" data-blog-toggle="${b.id}" style="margin-left: 6px;">Toggle</button>
+        </div>
+      </div>
+      <div class="blog-meta-grid">
+        <div>Customer fear</div><div>${b.fear}</div>
+        <div>JVTO advantage</div><div>${b.advantage}</div>
+        <div>Target URL</div><div><code>${b.targetUrl}</code></div>
+        <div>Ads campaign</div><div>${b.adsCampaign}</div>
+        <div>CTA</div><div><strong>${b.cta}</strong></div>
+        <div>Cite evidence</div><div>${b.citeEvidence}</div>
+        <div>Target reader</div><div>${b.targetReader}</div>
+      </div>
+      <textarea class="note-input" placeholder="Catatan Anda (tersimpan)" data-blog-note="${b.id}">${state['blog_note_' + b.id] || ''}</textarea>
+    `;
+    wrap.appendChild(div);
+  });
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target.dataset.blogToggle) {
+    const id = e.target.dataset.blogToggle;
+    const cur = state['blog_' + id] || 'pending';
+    const next = cur === 'pending' ? 'in_progress' : cur === 'in_progress' ? 'done' : 'pending';
+    state['blog_' + id] = next;
+    saveState();
+    renderBlogs();
+  }
+});
+document.addEventListener('input', (e) => {
+  if (e.target.dataset.blogNote) {
+    state['blog_note_' + e.target.dataset.blogNote] = e.target.value;
+    saveState();
+  }
+});
+
+// ─── Tab switching ───────────────────────────────────────
+document.getElementById('tab-nav').addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-tab]');
+  if (!btn) return;
+  const tab = btn.dataset.tab;
+  document.querySelectorAll('#tab-nav button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('section[data-panel]').forEach(s => s.classList.toggle('active', s.dataset.panel === tab));
+});
+
+// ─── Initial render ──────────────────────────────────────
+renderAssetGrid();
+renderQueue();
+renderBlogs();
+</script>
+
+</body>
+</html>

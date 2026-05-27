@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mysql --version)",
+      "Bash(ls \"/c/Users/JAVA VOLCANO/.config/herd/bin/\" 2>&1 | head -30)",
+      "Read(//c/Users/JAVA VOLCANO/.config/herd/bin//**)",
+      "Read(//c/Users/JAVA VOLCANO/.config/herd//**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/xampp/mysql/**)",
+      "Bash(cat > *)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
+    ]
+  }
+}

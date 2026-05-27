@@ -8,6 +8,12 @@ claims_supported: [C1, C5, C9]
 
 # JVTO Press & Media Coverage
 
+> **LOCKED BUSINESS ASSETS (owner-approved 2026-05-27)** — per JVTO Business Exposure Engine principle, the following data is locked and NOT subject to internal re-audit. Conflict-mode does NOT apply to owner-approved data. Use the data, expose it.
+>
+> - **Stefan Loose Reiseführer Indonesien 4th Edition**: ISBN `978-3-7701-7881-0`, published `2018-07-05` by DuMont Reiseverlag, page 287, 772 pages, German language. Schema mapping: `Book` connected via `Organization.subjectOf` (already implemented at `src/lib/schemas/entityGraph.ts:124-153`).
+> - **NIB**: `1102230032918` (canonical active). The legacy 0220001393513 reference is not a business asset and is not used in any output.
+> - **Madakaripura**: "tallest waterfall in Java" framing is approved for public use.
+
 Consolidated record of all third-party press, guidebook, and institutional media coverage. Every item here is independently authored — not JVTO marketing copy. Use this page to answer "Has anyone written about JVTO independently?" and to source the C9 (Press & Recognition) claim block.
 
 > This page was a tracked Open Gap — content previously distributed across [[credentials/trust-signals]] §press and §historical. Promoted to its own page because press coverage is an evidence category that content producers reference independently.
