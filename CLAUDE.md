@@ -159,13 +159,13 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** (1) Intake correlation governance layer — claim-registry.yml (C1-C9), entity-registry.yml (50 entities ENT-001–050), decision-queue.md (5 seeded items), intake-gate.md (entity registration + claim linkage rules), intake-audit.md (governance counts). (2) Documentation sync — reference-wiki-structure, howto-ingest-sources, CLAUDE.md, log.md. (3) Health check — fixed stale Google 92→123 in aeo-claims, packages 15→16 in index. (4) Orphan fix — permit-requirements linked from kawah-ijen + mount-bromo; finance-rate-cards linked from finance/rate-cards. REC-003 + REC-004 done. Zero orphans remaining.
-**Completed date:** 2026-05-26
-**Next task:** (1) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (2) Deduplicate TouristTrip in tour page JSON-LD. (3) Query live DB for `price_categories.name` to unlock pax-tier mapping. (4) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
-**Build status:** — no code changes (wiki/output only).
+**Last completed:** Trust Bundle Compiler v1 shipped on `feat/trust-bundle-compiler-v1` — `scripts/compile_trust.py` (loaders, enricher, 8 validation rules F1–F8, 6 renderers, atomic write, --dry-run/--strict CLI) backed by 54 passing tests (unit + E2E happy-path + E2E strict-fail/atomic-write). Compiles claim-registry + evidence-registry + entity-registry + decision-registry + conflict-log + aeo-claims into `output/website/trust-bundle/*.json` (claims, Organization schema, FAQPage schema, TouristTrip schema ×16, FAQ, AEO snippets, manifest). Real-data dry-run (2026-05-28) reports the 3 expected F4 errors (CONF-001/002/003) — all blocked on DQ-001/002/003 awaiting Sam's verdicts.
+**Completed date:** 2026-05-28
+**Next task:** (1) Sam to issue verdicts on DQ-001 (Stefan Loose year/ISBN), DQ-002 (Madakaripura height), DQ-003 (second NIB 0220001393513) → lock DEC-001/002/003 in `raw/_manifest/decision-registry.yml`. (2) Re-run `python scripts/compile_trust.py` (no `--dry-run`) to produce first real Trust Bundle. (3) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (4) Query live DB for `price_categories.name` to unlock pax-tier mapping. (5) Silo 2 depth expansion — Madakaripura + Tumpak Sewu + Papuma to 1,500+ words.
+**Build status:** — Trust Bundle Compiler v1 code complete on `feat/trust-bundle-compiler-v1`; 54/54 tests pass; real compile gated on decision locks.
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" is stale — now 123. Fix in jvto-web.
-- Duplicate TouristTrip in tour page JSON-LD schemas — deduplicate in jvto-web
+- Run real-data compile after Sam locks DEC-001/002/003 (currently provisional/missing) — produces `output/website/trust-bundle/*.json`.
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
 - Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam (DQ-001)
@@ -173,6 +173,9 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 - Second NIB 0220001393513 — verify on OSS portal (blocked on portal access) (DQ-003)
 - Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data
 - `yadnya-kasada-2026` — need Tengger calendar source
+
+**Compiler v1 resolves:**
+- Duplicate TouristTrip in tour page JSON-LD schemas — `render_tourist_trip_schema` emits one TouristTrip per package_id from a single registry-driven source of truth. (Was: "deduplicate in jvto-web" — superseded by compiled output consumption.)
 
 ## Skill routing
 
