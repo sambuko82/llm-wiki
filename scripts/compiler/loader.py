@@ -217,3 +217,43 @@ def load_decisions(path: Path) -> list[Decision]:
             )
         )
     return out
+
+
+import re
+
+_CONFLICT_ROW_RE = re.compile(r"^\|\s*CONF-\w+", re.MULTILINE)
+
+
+def load_conflicts(path: Path) -> list[Conflict]:
+    """Parse the markdown table in conflict-log.md → list[Conflict].
+
+    Expected columns (order matters):
+      ID | Detected | Claim A | Source A | Claim B | Source B | Status |
+      Affects Claims | Evidence Weight | Resolution
+    """
+    text = path.read_text(encoding="utf-8")
+    out: list[Conflict] = []
+    for line in text.splitlines():
+        if not _CONFLICT_ROW_RE.match(line):
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 10:
+            raise ValueError(f"conflict row has {len(cells)} cells, expected 10: {line!r}")
+        affects = cells[7]
+        affects_list = [c.strip() for c in affects.split(",")] if affects else []
+        affects_list = [c for c in affects_list if c]
+        out.append(
+            Conflict(
+                conflict_id=cells[0],
+                detected=_to_date(cells[1]),
+                claim_a=cells[2],
+                source_a=cells[3],
+                claim_b=cells[4],
+                source_b=cells[5],
+                status=cells[6],
+                affects_claims=affects_list,
+                evidence_weight=cells[8],
+                resolution=cells[9],
+            )
+        )
+    return out

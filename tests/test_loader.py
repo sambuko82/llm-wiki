@@ -111,3 +111,27 @@ def test_load_decisions(fixtures_dir):
     assert items[1].secondary_facts == {"related_year": 2016}
     assert items[1].resolves_conflicts == []
     assert items[1].superseded_by is None
+
+
+def test_load_conflicts(fixtures_dir):
+    from scripts.compiler.loader import load_conflicts
+    items = load_conflicts(fixtures_dir / "minimal-conflict-log.md")
+    assert len(items) == 3
+    assert items[0].conflict_id == "CONF-001"
+    assert items[0].status == "open"
+    assert items[0].affects_claims == ["C1"]
+    assert items[1].status == "resolved"
+    assert items[1].affects_claims == ["C1", "C2"]
+    assert items[2].affects_claims == ["C2"]
+
+
+def test_load_conflicts_empty_affects(tmp_path):
+    from scripts.compiler.loader import load_conflicts
+    md = tmp_path / "empty.md"
+    md.write_text(
+        "| ID | Detected | Claim A | Source A | Claim B | Source B | Status | Affects Claims | Evidence Weight | Resolution |\n"
+        "|----|----------|---------|---------|---------|---------|--------|----------------|-----------------|------------|\n"
+        "| CONF-X | 2026-01-01 | A | s | B | s | open |  | w | r |\n"
+    )
+    items = load_conflicts(md)
+    assert items[0].affects_claims == []
