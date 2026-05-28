@@ -73,3 +73,19 @@ def test_render_organization_schema():
     assert identifiers["NIB"] == "1102230032918"
     assert identifiers["TDUP"] == "1102230032918"
     assert org["founder"]["name"] == "Agung Sambuko"
+
+
+def test_render_faq_page_schema():
+    from scripts.compiler.renderer import render_faq_page_schema
+    faq = render_faq_page_schema([
+        {"question": "Is JVTO licensed?", "answer": "Yes, NIB 1102230032918."},
+        {"question": "Do you offer private tours?", "answer": "Yes, all tours are private."},
+    ])
+    assert faq["@context"] == "https://schema.org"
+    assert faq["@type"] == "FAQPage"
+    assert len(faq["mainEntity"]) == 2
+    q0 = faq["mainEntity"][0]
+    assert q0["@type"] == "Question"
+    assert q0["name"] == "Is JVTO licensed?"
+    assert q0["acceptedAnswer"]["@type"] == "Answer"
+    assert q0["acceptedAnswer"]["text"] == "Yes, NIB 1102230032918."

@@ -85,3 +85,19 @@ def render_organization_schema(
             "jobTitle": founder_job,
         },
     }
+
+
+def render_faq_page_schema(qa_pairs: list[dict[str, str]]) -> dict[str, Any]:
+    """Build schema/faq-page.json (JSON-LD FAQPage)."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": qa["question"],
+                "acceptedAnswer": {"@type": "Answer", "text": qa["answer"]},
+            }
+            for qa in qa_pairs
+        ],
+    }
