@@ -11,6 +11,12 @@ Usage:
 """
 from __future__ import annotations
 
+import sys
+from pathlib import Path as _PathForBoot
+_REPO_ROOT_FOR_IMPORTS = _PathForBoot(__file__).resolve().parent.parent
+if str(_REPO_ROOT_FOR_IMPORTS) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT_FOR_IMPORTS))
+
 import argparse
 import hashlib
 import json
