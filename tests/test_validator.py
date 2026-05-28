@@ -227,3 +227,34 @@ def test_f4_provisional_decision_does_not_resolve():
     rep = run([ec], decisions, conflicts, {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
     f4 = [v for v in rep.violations if v.rule_id == "F4"]
     assert len(f4) == 1
+
+
+def test_f5_missing_narrative_fails():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.enricher import EnrichedClaim
+    claim = _make_claim()
+    # Build EnrichedClaim with narrative=None
+    ec = EnrichedClaim(claim=claim, evidence=[_make_evidence()], entities=[], decisions=[], narrative=None)
+    rep = run([ec], [], [], {}, {"C1"}, today=date(2026, 5, 28))
+    f5 = [v for v in rep.violations if v.rule_id == "F5"]
+    assert len(f5) == 1
+    assert f5[0].severity == Severity.ERROR
+
+
+def test_f5_present_narrative_passes():
+    from scripts.compiler.validator import run
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    assert [v for v in rep.violations if v.rule_id == "F5"] == []
+
+
+def test_f5_empty_narrative_fields_fail():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import AeoFields
+    from scripts.compiler.enricher import EnrichedClaim
+    claim = _make_claim()
+    bad = AeoFields("C1", "", "", "")
+    ec = EnrichedClaim(claim=claim, evidence=[_make_evidence()], entities=[], decisions=[], narrative=bad)
+    rep = run([ec], [], [], {"C1": bad}, {"C1"}, today=date(2026, 5, 28))
+    f5 = [v for v in rep.violations if v.rule_id == "F5"]
+    assert len(f5) == 1

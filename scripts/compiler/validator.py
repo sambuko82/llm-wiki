@@ -85,6 +85,7 @@ def run(
         _check_f1_freshness(ec, today, report)
         _check_f2_evidence(ec, report)
         _check_f3_entities(ec, known_entity_ids, report)
+        _check_f5_narratives(ec, report)
     _check_f4_conflicts(enriched_claims, decisions, conflicts, report)
     return report
 
@@ -141,6 +142,22 @@ def _check_f3_entities(ec: EnrichedClaim, known: set[str], report: ValidationRep
                 Violation("F3", Severity.WARNING, ec.claim.claim_id,
                           f"entity_ref {eid} unresolved in entity-registry")
             )
+
+
+def _check_f5_narratives(ec: EnrichedClaim, report: ValidationReport) -> None:
+    n = ec.narrative
+    if n is None:
+        report.violations.append(
+            Violation("F5", Severity.ERROR, ec.claim.claim_id,
+                      "no narrative block found in aeo-claims.md")
+        )
+        return
+    missing = [f for f in ("ai_snippet", "short", "cs_reply") if not getattr(n, f)]
+    if missing:
+        report.violations.append(
+            Violation("F5", Severity.ERROR, ec.claim.claim_id,
+                      f"narrative missing fields: {', '.join(missing)}")
+        )
 
 
 def _check_f4_conflicts(
