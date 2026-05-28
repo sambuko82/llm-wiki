@@ -56,3 +56,31 @@ def test_load_claims_dates_parsed(fixtures_dir):
     from datetime import date
     claims = load_claims(fixtures_dir / "minimal-claim-registry.yml")
     assert claims[0].last_verified == date(2026, 5, 26)
+
+
+def test_load_evidence_maps_type_codes(fixtures_dir):
+    from scripts.compiler.loader import load_evidence
+    items = load_evidence(fixtures_dir / "minimal-evidence-registry.yml")
+    assert len(items) == 3
+    assert items[0].evidence_type_code == 1
+    assert items[0].evidence_type == "official_authority"
+    assert items[1].evidence_type == "jvto_verified_internal"
+    assert items[2].evidence_type == "customer_review"
+
+
+def test_load_evidence_unknown_type_raises(tmp_path):
+    from scripts.compiler.loader import load_evidence
+    bad = tmp_path / "bad.yml"
+    bad.write_text(
+        "evidence:\n"
+        "  - evidence_id: E999\n"
+        "    claim: C1\n"
+        "    source_file: x\n"
+        "    evidence_type: 99\n"
+        "    description: x\n"
+        "    verification_status: verified\n"
+        "    last_verified: 2026-05-01\n"
+        "    proof_ids: []\n"
+    )
+    with pytest.raises(ValueError, match="unknown evidence_type"):
+        load_evidence(bad)

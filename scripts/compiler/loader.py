@@ -133,3 +133,41 @@ def load_claims(path: Path) -> list[Claim]:
             )
         )
     return out
+
+
+EVIDENCE_TYPE_SLUGS: dict[int, str] = {
+    1: "official_authority",
+    2: "jvto_verified_internal",
+    4: "reputable_media",
+    5: "structured_dataset",
+    6: "customer_review",
+    8: "ai_generated",
+}
+
+
+def load_evidence(path: Path) -> list[Evidence]:
+    """Parse evidence-registry.yml → list[Evidence] with numeric→slug type mapping."""
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    out: list[Evidence] = []
+    for item in data["evidence"]:
+        code = int(item["evidence_type"])
+        slug = EVIDENCE_TYPE_SLUGS.get(code)
+        if slug is None:
+            raise ValueError(
+                f"unknown evidence_type code {code} for {item['evidence_id']}; "
+                f"add it to EVIDENCE_TYPE_SLUGS in loader.py"
+            )
+        out.append(
+            Evidence(
+                evidence_id=item["evidence_id"],
+                claim=item["claim"],
+                source_file=item["source_file"],
+                evidence_type_code=code,
+                evidence_type=slug,
+                description=item["description"],
+                verification_status=item["verification_status"],
+                last_verified=_to_date(item["last_verified"]),
+                proof_ids=list(item.get("proof_ids") or []),
+            )
+        )
+    return out

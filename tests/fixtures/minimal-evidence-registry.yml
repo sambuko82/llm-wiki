@@ -1,0 +1,28 @@
+# tests/fixtures/minimal-evidence-registry.yml
+evidence:
+  - evidence_id: E001
+    claim: C1
+    source_file: wiki/test/source-one.md
+    evidence_type: 1
+    description: Official authority document
+    verification_status: verified
+    last_verified: 2026-05-25
+    proof_ids: [proof-a]
+
+  - evidence_id: E002
+    claim: C1
+    source_file: wiki/test/source-two.md
+    evidence_type: 2
+    description: JVTO verified internal
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: []
+
+  - evidence_id: E003
+    claim: C2
+    source_file: wiki/test/source-three.md
+    evidence_type: 6
+    description: Customer review
+    verification_status: pending
+    last_verified: 2026-05-01
+    proof_ids: []
