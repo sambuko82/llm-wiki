@@ -11,15 +11,60 @@ decisions:
     topic: stefan_loose_year_isbn
     final_value:
       year: 2018
-      isbn: "9783770167654"
-    status: provisional
+      isbn: "978-3-7701-7881-0"
+      title: "Stefan Loose Reiseführer Indonesien"
+      publisher: "DuMont Reiseverlag"
+      edition: "4th edition"
+      date_published: "2018-07-05"
+      language: "de"
+      number_of_pages: 772
+    status: locked
     decided_by: Sam
     decided_at: 2026-05-28
     source_basis:
-      - jvto_verification_dossier_p10
+      - sam_internal_decision
     applies_to_claims: [C9]
-    resolves_conflicts: []
+    resolves_conflicts: [CONF-001]
     resolves_dq: [DQ-001]
     notes: >-
-      Provisional until Sam confirms via physical book scan. Once confirmed,
-      change status to `locked` and add CONF-001 to resolves_conflicts.
+      Use this Stefan Loose bibliographic metadata as JVTO internal canonical value
+      for Trust Bundle v1. No further physical scan or additional proof is required
+      for this compiler phase.
+
+  - decision_id: DEC-002
+    topic: founding_year_canonical
+    final_value:
+      marketing_founding_year: 2015
+      legal_incorporation_year: 2016
+      tdup_issued_year: 2023
+    status: locked
+    decided_by: Sam
+    decided_at: 2026-05-28
+    source_basis:
+      - sam_internal_decision
+    applies_to_claims: [C8]
+    resolves_conflicts: [CONF-002]
+    resolves_dq: []
+    notes: >-
+      Use 2015 for JVTO brand/history narrative. Use 2016 only when discussing
+      PT Java Volcano Rendezvous as the legal entity. Use 2023 only for TDUP issuance context.
+
+  - decision_id: DEC-003
+    topic: affiliation_wording_policy
+    final_value:
+      isic: "JVTO may mention ISIC student verification or student benefit only when the merchant/verification flow is confirmed."
+      indecon: "Use 'aligned with national ecotourism principles' unless formal INDECON membership proof exists."
+      hpi_hpwki: "Use HPI/HPWKI credential wording only for individual licensed guides with evidence; do not imply JVTO corporate membership without proof."
+      media_logos: "Use media logos only as 'As Featured In' references with direct source links, not as partnership or endorsement claims."
+    status: locked
+    decided_by: Sam
+    decided_at: 2026-05-28
+    source_basis:
+      - sam_internal_decision
+    applies_to_claims: [C8, C9]
+    resolves_conflicts: [CONF-003]
+    resolves_dq: []
+    notes: >-
+      This locks safe public wording for affiliation, credential, and media-reference
+      claims. Formal partnership claims require separate evidence later, but this safe
+      wording is approved for Trust Bundle v1.
