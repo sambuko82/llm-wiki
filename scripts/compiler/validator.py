@@ -80,6 +80,7 @@ def run(
     report = ValidationReport()
     for ec in enriched_claims:
         _check_f1_freshness(ec, today, report)
+        _check_f2_evidence(ec, report)
     return report
 
 
@@ -98,3 +99,31 @@ def _check_f1_freshness(ec: EnrichedClaim, today: date, report: ValidationReport
                 ),
             )
         )
+
+
+def _check_f2_evidence(ec: EnrichedClaim, report: ValidationReport) -> None:
+    declared = ec.claim.evidence_ids
+    resolved_ids = {e.evidence_id for e in ec.evidence}
+
+    # F2a: at least one evidence_id declared
+    if not declared:
+        report.violations.append(
+            Violation("F2a", Severity.ERROR, ec.claim.claim_id,
+                      "claim has no evidence_ids declared")
+        )
+
+    # F2b: every declared id resolves
+    for eid in declared:
+        if eid not in resolved_ids:
+            report.violations.append(
+                Violation("F2b", Severity.ERROR, ec.claim.claim_id,
+                          f"evidence_id {eid} declared but not found in evidence-registry")
+            )
+
+    # F2c: every resolved evidence is verified
+    for e in ec.evidence:
+        if e.verification_status != "verified":
+            report.violations.append(
+                Violation("F2c", Severity.ERROR, ec.claim.claim_id,
+                          f"evidence {e.evidence_id} has status={e.verification_status!r}, expected 'verified'")
+            )

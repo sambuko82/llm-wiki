@@ -78,3 +78,65 @@ def test_f1_per_claim_override_shortens_window():
     rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
     f1 = [v for v in rep.violations if v.rule_id == "F1"]
     assert len(f1) == 1
+
+
+def _make_evidence(eid="E1", claim="C1", status="verified"):
+    from scripts.compiler.loader import Evidence
+    return Evidence(
+        evidence_id=eid, claim=claim, source_file="x",
+        evidence_type_code=1, evidence_type="official_authority",
+        description="d", verification_status=status,
+        last_verified=date(2026, 5, 25), proof_ids=[],
+    )
+
+
+def test_f2a_no_evidence_ids_fails():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import Claim
+    c = Claim(
+        claim_id="C1", name="n", canonical_text="t",
+        domain="d", category="c", verification_status="verified",
+        wiki_pages=[], output_pages=[], evidence_ids=[], evidence_count=0,
+        key_proof_ids=[], tags=[],
+        last_verified=date(2026, 5, 26), stale_after_days=None, entity_refs=[],
+    )
+    ec = _ec(c, evidence=[])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f2a = [v for v in rep.violations if v.rule_id == "F2a"]
+    assert len(f2a) == 1
+    assert f2a[0].severity == Severity.ERROR
+
+
+def test_f2b_unresolved_evidence_id_fails():
+    """Claim references E2 but enriched evidence list is empty (E2 missing from registry)."""
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import Claim
+    c = Claim(
+        claim_id="C1", name="n", canonical_text="t",
+        domain="d", category="c", verification_status="verified",
+        wiki_pages=[], output_pages=[], evidence_ids=["E2"], evidence_count=1,
+        key_proof_ids=[], tags=[],
+        last_verified=date(2026, 5, 26), stale_after_days=None, entity_refs=[],
+    )
+    ec = _ec(c, evidence=[])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f2b = [v for v in rep.violations if v.rule_id == "F2b"]
+    assert len(f2b) == 1
+    assert "E2" in f2b[0].message
+
+
+def test_f2c_unverified_evidence_fails():
+    from scripts.compiler.validator import run, Severity
+    ec = _ec(_make_claim(), evidence=[_make_evidence(status="pending")])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f2c = [v for v in rep.violations if v.rule_id == "F2c"]
+    assert len(f2c) == 1
+    assert f2c[0].severity == Severity.ERROR
+
+
+def test_f2_clean_passes():
+    from scripts.compiler.validator import run
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f2 = [v for v in rep.violations if v.rule_id.startswith("F2")]
+    assert f2 == []
