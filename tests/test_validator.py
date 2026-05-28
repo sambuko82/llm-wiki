@@ -140,3 +140,31 @@ def test_f2_clean_passes():
     rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
     f2 = [v for v in rep.violations if v.rule_id.startswith("F2")]
     assert f2 == []
+
+
+def test_f3_unresolved_entity_ref_warns():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import Claim
+    c = Claim(
+        claim_id="C1", name="n", canonical_text="t",
+        domain="d", category="c", verification_status="verified",
+        wiki_pages=[], output_pages=[], evidence_ids=["E1"], evidence_count=1,
+        key_proof_ids=[], tags=[],
+        last_verified=date(2026, 5, 26), stale_after_days=None,
+        entity_refs=["ENT-999"],
+    )
+    ec = _ec(c, evidence=[_make_evidence()], entities=[])  # ENT-999 not in entities
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"},
+              today=date(2026, 5, 28), known_entity_ids={"ENT-001"})
+    f3 = [v for v in rep.violations if v.rule_id == "F3"]
+    assert len(f3) == 1
+    assert f3[0].severity == Severity.WARNING
+
+
+def test_f3_empty_entity_refs_is_clean():
+    from scripts.compiler.validator import run
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"},
+              today=date(2026, 5, 28), known_entity_ids=set())
+    f3 = [v for v in rep.violations if v.rule_id == "F3"]
+    assert f3 == []

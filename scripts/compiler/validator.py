@@ -73,14 +73,18 @@ def run(
     narratives: dict[str, AeoFields],
     all_claim_ids: set[str],
     today: Optional[date] = None,
+    known_entity_ids: Optional[set[str]] = None,
 ) -> ValidationReport:
     """Run all rules F1..F8 and return a single ValidationReport."""
     if today is None:
         today = date.today()
+    if known_entity_ids is None:
+        known_entity_ids = set()
     report = ValidationReport()
     for ec in enriched_claims:
         _check_f1_freshness(ec, today, report)
         _check_f2_evidence(ec, report)
+        _check_f3_entities(ec, known_entity_ids, report)
     return report
 
 
@@ -126,4 +130,13 @@ def _check_f2_evidence(ec: EnrichedClaim, report: ValidationReport) -> None:
             report.violations.append(
                 Violation("F2c", Severity.ERROR, ec.claim.claim_id,
                           f"evidence {e.evidence_id} has status={e.verification_status!r}, expected 'verified'")
+            )
+
+
+def _check_f3_entities(ec: EnrichedClaim, known: set[str], report: ValidationReport) -> None:
+    for eid in ec.claim.entity_refs:
+        if eid not in known:
+            report.violations.append(
+                Violation("F3", Severity.WARNING, ec.claim.claim_id,
+                          f"entity_ref {eid} unresolved in entity-registry")
             )
