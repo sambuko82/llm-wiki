@@ -120,6 +120,23 @@ def render_faq(enriched: list[EnrichedClaim]) -> dict[str, Any]:
     return {"version": _BUNDLE_VERSION, "items": items}
 
 
+def render_aeo_snippets(enriched: list[EnrichedClaim]) -> dict[str, Any]:
+    """Build aeo-snippets.json — AI ingestion TL;DR pack."""
+    snippets: list[dict[str, Any]] = []
+    for ec in enriched:
+        n = ec.narrative
+        if n is None or not n.ai_snippet:
+            continue
+        topic = ec.claim.tags[0] if ec.claim.tags else ec.claim.claim_id.lower()
+        snippets.append({
+            "topic": topic,
+            "tldr": n.ai_snippet,
+            "claim_ids": [ec.claim.claim_id],
+            "use_for": ["llms.txt", "FAQPage", "TL;DR block"],
+        })
+    return {"version": _BUNDLE_VERSION, "snippets": snippets}
+
+
 def render_tourist_trip_schema(entities: list[Entity], base_url: str) -> list[dict[str, Any]]:
     """Build schema/tourist-trip.json — one TouristTrip per destination, deduplicated by canonical_url.
 

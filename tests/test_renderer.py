@@ -143,3 +143,16 @@ def test_render_faq_falls_back_to_cs_reply_when_short_empty():
                         decisions=ec.decisions, narrative=blank_short)
     faq = render_faq([ec2])
     assert faq["items"][0]["answer"] == "cs reply"
+
+
+def test_render_aeo_snippets_topic_from_tags():
+    from scripts.compiler.renderer import render_aeo_snippets
+    snippets = render_aeo_snippets([_enriched_c1()])
+    assert snippets["version"] == "1.0"
+    assert len(snippets["snippets"]) == 1
+    s = snippets["snippets"][0]
+    # topic is first tag if any, else claim_id lowercased
+    assert s["topic"] == "police-led"
+    assert s["tldr"] == "snippet"
+    assert s["claim_ids"] == ["C1"]
+    assert "FAQPage" in s["use_for"]
