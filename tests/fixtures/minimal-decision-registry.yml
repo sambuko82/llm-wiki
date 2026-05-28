@@ -1,0 +1,26 @@
+# tests/fixtures/minimal-decision-registry.yml
+decisions:
+  - decision_id: DEC-001
+    topic: test_locked_topic
+    final_value:
+      year: 2018
+      isbn: "9783770167654"
+    status: locked
+    decided_by: Sam
+    decided_at: 2026-05-28
+    source_basis: [physical_book_check]
+    applies_to_claims: [C1]
+    resolves_conflicts: [CONF-001]
+    resolves_dq: [DQ-001]
+    notes: Test locked decision.
+
+  - decision_id: DEC-002
+    topic: test_provisional_topic
+    final_value: 2015
+    secondary_facts:
+      related_year: 2016
+    status: provisional
+    decided_by: Sam
+    decided_at: 2026-05-28
+    source_basis: [ahu_certificate]
+    applies_to_claims: [C2]

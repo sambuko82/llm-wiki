@@ -96,3 +96,18 @@ def test_load_entities(fixtures_dir):
     assert items[0].claims == ["C1", "C2"]
     assert items[1].schema_type is None
     assert items[1].canonical_url is None
+
+
+def test_load_decisions(fixtures_dir):
+    from scripts.compiler.loader import load_decisions
+    items = load_decisions(fixtures_dir / "minimal-decision-registry.yml")
+    assert len(items) == 2
+    assert items[0].decision_id == "DEC-001"
+    assert items[0].status == "locked"
+    assert items[0].final_value == {"year": 2018, "isbn": "9783770167654"}
+    assert items[0].resolves_conflicts == ["CONF-001"]
+    assert items[1].status == "provisional"
+    assert items[1].final_value == 2015
+    assert items[1].secondary_facts == {"related_year": 2016}
+    assert items[1].resolves_conflicts == []
+    assert items[1].superseded_by is None

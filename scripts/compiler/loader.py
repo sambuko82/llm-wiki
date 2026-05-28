@@ -192,3 +192,28 @@ def load_entities(path: Path) -> list[Entity]:
             )
         )
     return out
+
+
+def load_decisions(path: Path) -> list[Decision]:
+    """Parse decision-registry.yml → list[Decision]."""
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    out: list[Decision] = []
+    for item in data["decisions"]:
+        out.append(
+            Decision(
+                decision_id=item["decision_id"],
+                topic=item["topic"],
+                final_value=item["final_value"],
+                secondary_facts=item.get("secondary_facts"),
+                status=item["status"],
+                decided_by=item["decided_by"],
+                decided_at=_to_date(item["decided_at"]),
+                source_basis=list(item.get("source_basis") or []),
+                applies_to_claims=list(item.get("applies_to_claims") or []),
+                resolves_conflicts=list(item.get("resolves_conflicts") or []),
+                resolves_dq=list(item.get("resolves_dq") or []),
+                superseded_by=item.get("superseded_by"),
+                notes=item.get("notes", "") or "",
+            )
+        )
+    return out
