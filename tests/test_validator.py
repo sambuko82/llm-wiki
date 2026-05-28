@@ -168,3 +168,62 @@ def test_f3_empty_entity_refs_is_clean():
               today=date(2026, 5, 28), known_entity_ids=set())
     f3 = [v for v in rep.violations if v.rule_id == "F3"]
     assert f3 == []
+
+
+def _make_conflict(cid="CONF-001", status="open", affects=("C1",)):
+    from scripts.compiler.loader import Conflict
+    return Conflict(
+        conflict_id=cid, detected=date(2026, 1, 1),
+        claim_a="A", source_a="sa", claim_b="B", source_b="sb",
+        status=status, affects_claims=list(affects),
+        evidence_weight="w", resolution="r",
+    )
+
+
+def _make_decision(did="DEC-001", status="locked", applies=("C1",), resolves=("CONF-001",)):
+    from scripts.compiler.loader import Decision
+    return Decision(
+        decision_id=did, topic="t", final_value=None,
+        secondary_facts=None, status=status,
+        decided_by="Sam", decided_at=date(2026, 5, 28),
+        source_basis=["x"], applies_to_claims=list(applies),
+        resolves_conflicts=list(resolves), resolves_dq=[],
+        superseded_by=None, notes="",
+    )
+
+
+def test_f4_unresolved_conflict_no_lock_fails():
+    from scripts.compiler.validator import run, Severity
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    conflicts = [_make_conflict()]
+    rep = run([ec], [], conflicts, {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f4 = [v for v in rep.violations if v.rule_id == "F4"]
+    assert len(f4) == 1
+    assert f4[0].severity == Severity.ERROR
+
+
+def test_f4_resolved_conflict_passes():
+    from scripts.compiler.validator import run
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    conflicts = [_make_conflict(status="resolved")]
+    rep = run([ec], [], conflicts, {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    assert [v for v in rep.violations if v.rule_id == "F4"] == []
+
+
+def test_f4_locked_decision_resolves_conflict():
+    from scripts.compiler.validator import run
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    conflicts = [_make_conflict()]
+    decisions = [_make_decision()]
+    rep = run([ec], decisions, conflicts, {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    assert [v for v in rep.violations if v.rule_id == "F4"] == []
+
+
+def test_f4_provisional_decision_does_not_resolve():
+    from scripts.compiler.validator import run
+    ec = _ec(_make_claim(), evidence=[_make_evidence()])
+    conflicts = [_make_conflict()]
+    decisions = [_make_decision(status="provisional")]
+    rep = run([ec], decisions, conflicts, {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f4 = [v for v in rep.violations if v.rule_id == "F4"]
+    assert len(f4) == 1

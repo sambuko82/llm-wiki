@@ -85,6 +85,7 @@ def run(
         _check_f1_freshness(ec, today, report)
         _check_f2_evidence(ec, report)
         _check_f3_entities(ec, known_entity_ids, report)
+    _check_f4_conflicts(enriched_claims, decisions, conflicts, report)
     return report
 
 
@@ -139,4 +140,31 @@ def _check_f3_entities(ec: EnrichedClaim, known: set[str], report: ValidationRep
             report.violations.append(
                 Violation("F3", Severity.WARNING, ec.claim.claim_id,
                           f"entity_ref {eid} unresolved in entity-registry")
+            )
+
+
+def _check_f4_conflicts(
+    enriched_claims: list[EnrichedClaim],
+    decisions: list[Decision],
+    conflicts: list[Conflict],
+    report: ValidationReport,
+) -> None:
+    # Build set of conflict_ids resolved by locked decisions
+    locked_resolves: set[str] = set()
+    for d in decisions:
+        if d.status == "locked":
+            locked_resolves.update(d.resolves_conflicts)
+
+    enriched_ids = {ec.claim.claim_id for ec in enriched_claims}
+    for c in conflicts:
+        if c.status != "open":
+            continue
+        for cid in c.affects_claims:
+            if cid not in enriched_ids:
+                continue
+            if c.conflict_id in locked_resolves:
+                continue
+            report.violations.append(
+                Violation("F4", Severity.ERROR, cid,
+                          f"unresolved conflict {c.conflict_id} touches {cid} and no locked decision covers it")
             )
