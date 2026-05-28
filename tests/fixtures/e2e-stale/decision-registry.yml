@@ -1,0 +1,10 @@
+decisions:
+  - decision_id: DEC-001
+    topic: test_topic
+    final_value: locked_value
+    status: locked
+    decided_by: Sam
+    decided_at: 2026-05-28
+    source_basis: [x]
+    applies_to_claims: [C1]
+    resolves_conflicts: []

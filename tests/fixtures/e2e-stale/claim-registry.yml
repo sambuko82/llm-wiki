@@ -1,0 +1,27 @@
+claims:
+  - claim_id: C1
+    name: Police-Led
+    canonical_text: Founder is active Tourist Police officer.
+    domain: credentials
+    category: trust-signal
+    verification_status: verified
+    wiki_pages: [wiki/people/agung.md]
+    output_pages: [output/about/]
+    evidence_ids: [E001]
+    evidence_count: 1
+    key_proof_ids: [sprin-polpar]
+    tags: [police-led]
+    last_verified: 2025-01-01
+  - claim_id: C2
+    name: Private Tours
+    canonical_text: All tours are private.
+    domain: products
+    category: tour-package
+    verification_status: verified
+    wiki_pages: [wiki/products.md]
+    output_pages: [output/tours/]
+    evidence_ids: [E002]
+    evidence_count: 1
+    key_proof_ids: [nib]
+    tags: [private]
+    last_verified: 2026-05-26

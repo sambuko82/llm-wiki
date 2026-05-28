@@ -1,0 +1,17 @@
+evidence:
+  - evidence_id: E001
+    claim: C1
+    source_file: wiki/people/agung.md
+    evidence_type: 2
+    description: Founder is active Tourist Police officer
+    verification_status: verified
+    last_verified: 2026-05-25
+    proof_ids: [sprin-polpar]
+  - evidence_id: E002
+    claim: C2
+    source_file: wiki/products.md
+    evidence_type: 5
+    description: All packages are private
+    verification_status: verified
+    last_verified: 2026-05-12
+    proof_ids: [nib]

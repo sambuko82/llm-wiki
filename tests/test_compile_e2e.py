@@ -60,3 +60,39 @@ def test_e2e_happy_path(tmp_path):
     # Log was appended
     log_text = (work / "wiki" / "log.md").read_text(encoding="utf-8")
     assert "compile | trust-bundle v0.1.0" in log_text
+
+
+def test_e2e_strict_fail_writes_nothing(tmp_path):
+    work = _setup_e2e_repo(tmp_path, source_dir="e2e-stale")
+    result = subprocess.run(
+        [sys.executable, "scripts/compile_trust.py"],
+        cwd=work, capture_output=True, text=True,
+    )
+    assert result.returncode == 1
+    assert "F1" in result.stderr
+    assert "stale" in result.stderr.lower()
+    bundle = work / "output" / "website" / "trust-bundle"
+    assert not bundle.exists(), "strict-fail should not write any output"
+
+
+def test_e2e_dry_run_writes_nothing_even_when_clean(tmp_path):
+    work = _setup_e2e_repo(tmp_path, source_dir="e2e")
+    result = subprocess.run(
+        [sys.executable, "scripts/compile_trust.py", "--dry-run"],
+        cwd=work, capture_output=True, text=True,
+    )
+    assert result.returncode == 0
+    bundle = work / "output" / "website" / "trust-bundle"
+    assert not bundle.exists(), "dry-run should not write any output"
+
+
+def test_e2e_atomic_write_leaves_no_tmp_files(tmp_path):
+    """A successful run leaves zero .tmp files behind."""
+    work = _setup_e2e_repo(tmp_path, source_dir="e2e")
+    result = subprocess.run(
+        [sys.executable, "scripts/compile_trust.py"],
+        cwd=work, capture_output=True, text=True,
+    )
+    assert result.returncode == 0
+    tmps = list((work / "output").rglob("*.tmp"))
+    assert tmps == []

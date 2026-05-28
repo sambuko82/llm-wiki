@@ -1,0 +1,11 @@
+entity_types: [destination]
+entities:
+  - entity_id: ENT-001
+    name: Kawah Ijen
+    type: destination
+    aliases: [Ijen]
+    wiki_pages: [wiki/destinations/ijen.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/ijen-crater
+    claims: [C1]
+    tags: [destination]
