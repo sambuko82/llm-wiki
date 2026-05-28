@@ -120,3 +120,26 @@ def test_render_tourist_trip_excludes_entities_without_url():
     ]
     trips = render_tourist_trip_schema(entities, base_url="https://x")
     assert trips == []
+
+
+def test_render_faq_uses_short_preferred():
+    from scripts.compiler.renderer import render_faq
+    faq = render_faq([_enriched_c1()])
+    assert faq["version"] == "1.0"
+    assert len(faq["items"]) == 1
+    item = faq["items"][0]
+    assert item["question"] == "Safety-Led Operations"
+    assert item["answer"] == "short"
+    assert item["source_claim_id"] == "C1"
+
+
+def test_render_faq_falls_back_to_cs_reply_when_short_empty():
+    from scripts.compiler.renderer import render_faq
+    from scripts.compiler.loader import AeoFields
+    from scripts.compiler.enricher import EnrichedClaim
+    ec = _enriched_c1()
+    blank_short = AeoFields("C1", "snippet", "", "cs reply")
+    ec2 = EnrichedClaim(claim=ec.claim, evidence=ec.evidence, entities=ec.entities,
+                        decisions=ec.decisions, narrative=blank_short)
+    faq = render_faq([ec2])
+    assert faq["items"][0]["answer"] == "cs reply"

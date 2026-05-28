@@ -103,6 +103,23 @@ def render_faq_page_schema(qa_pairs: list[dict[str, str]]) -> dict[str, Any]:
     }
 
 
+def render_faq(enriched: list[EnrichedClaim]) -> dict[str, Any]:
+    """Build faq.json. Answer prefers narrative.short, falls back to narrative.cs_reply."""
+    items: list[dict[str, Any]] = []
+    for ec in enriched:
+        n = ec.narrative
+        if n is None:
+            continue
+        answer = n.short if n.short else n.cs_reply
+        items.append({
+            "question": ec.claim.name,
+            "answer": answer,
+            "source_claim_id": ec.claim.claim_id,
+            "target_pages": ec.claim.output_pages,
+        })
+    return {"version": _BUNDLE_VERSION, "items": items}
+
+
 def render_tourist_trip_schema(entities: list[Entity], base_url: str) -> list[dict[str, Any]]:
     """Build schema/tourist-trip.json — one TouristTrip per destination, deduplicated by canonical_url.
 
