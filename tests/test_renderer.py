@@ -53,3 +53,23 @@ def test_render_claims_structure():
     assert c["decisions"][0]["decision_id"] == "DEC-001"
     assert c["decisions"][0]["final_value"] == 2015
     assert c["narrative"]["ai_snippet"] == "snippet"
+
+
+def test_render_organization_schema():
+    from scripts.compiler.renderer import render_organization_schema
+    org = render_organization_schema(
+        legal_name="PT Java Volcano Rendezvous",
+        brand_name="Java Volcano Tour Operator",
+        nib="1102230032918",
+        tdup="1102230032918",
+        founder_name="Agung Sambuko",
+        founder_job="Tourist Police Officer",
+        url="https://javavolcano-touroperator.com",
+    )
+    assert org["@context"] == "https://schema.org"
+    assert org["@type"] == "TravelAgency"
+    assert org["legalName"] == "PT Java Volcano Rendezvous"
+    identifiers = {i["propertyID"]: i["value"] for i in org["identifier"]}
+    assert identifiers["NIB"] == "1102230032918"
+    assert identifiers["TDUP"] == "1102230032918"
+    assert org["founder"]["name"] == "Agung Sambuko"

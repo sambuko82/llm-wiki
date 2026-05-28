@@ -57,3 +57,31 @@ def _render_one_claim(ec: EnrichedClaim) -> dict[str, Any]:
         ],
         "tags": ec.claim.tags,
     }
+
+
+def render_organization_schema(
+    legal_name: str,
+    brand_name: str,
+    nib: str,
+    tdup: str,
+    founder_name: str,
+    founder_job: str,
+    url: str,
+) -> dict[str, Any]:
+    """Build schema/organization.json (JSON-LD TravelAgency)."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": brand_name,
+        "legalName": legal_name,
+        "url": url,
+        "identifier": [
+            {"@type": "PropertyValue", "propertyID": "NIB", "value": nib},
+            {"@type": "PropertyValue", "propertyID": "TDUP", "value": tdup},
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": founder_name,
+            "jobTitle": founder_job,
+        },
+    }
