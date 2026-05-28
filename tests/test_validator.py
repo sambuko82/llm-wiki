@@ -258,3 +258,39 @@ def test_f5_empty_narrative_fields_fail():
     rep = run([ec], [], [], {"C1": bad}, {"C1"}, today=date(2026, 5, 28))
     f5 = [v for v in rep.violations if v.rule_id == "F5"]
     assert len(f5) == 1
+
+
+def test_f6_back_ref_mismatch_warns():
+    from scripts.compiler.validator import run, Severity
+    # E1 back-ref says claim=C2 but C1.evidence_ids includes E1 → mismatch
+    bad_ev = _make_evidence(eid="E1", claim="C2")
+    from scripts.compiler.loader import Claim
+    c = Claim(
+        claim_id="C1", name="n", canonical_text="t",
+        domain="d", category="c", verification_status="verified",
+        wiki_pages=[], output_pages=[], evidence_ids=["E1"], evidence_count=1,
+        key_proof_ids=[], tags=[],
+        last_verified=date(2026, 5, 26), stale_after_days=None, entity_refs=[],
+    )
+    ec = _ec(c, evidence=[bad_ev])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f6 = [v for v in rep.violations if v.rule_id == "F6"]
+    assert len(f6) == 1
+    assert f6[0].severity == Severity.WARNING
+
+
+def test_f7_evidence_count_mismatch_warns():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import Claim
+    c = Claim(
+        claim_id="C1", name="n", canonical_text="t",
+        domain="d", category="c", verification_status="verified",
+        wiki_pages=[], output_pages=[], evidence_ids=["E1"], evidence_count=99,  # mismatch
+        key_proof_ids=[], tags=[],
+        last_verified=date(2026, 5, 26), stale_after_days=None, entity_refs=[],
+    )
+    ec = _ec(c, evidence=[_make_evidence()])
+    rep = run([ec], [], [], {"C1": ec.narrative}, {"C1"}, today=date(2026, 5, 28))
+    f7 = [v for v in rep.violations if v.rule_id == "F7"]
+    assert len(f7) == 1
+    assert f7[0].severity == Severity.WARNING

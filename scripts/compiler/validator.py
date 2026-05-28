@@ -86,6 +86,7 @@ def run(
         _check_f2_evidence(ec, report)
         _check_f3_entities(ec, known_entity_ids, report)
         _check_f5_narratives(ec, report)
+        _check_f6_f7_crosschecks(ec, report)
     _check_f4_conflicts(enriched_claims, decisions, conflicts, report)
     return report
 
@@ -157,6 +158,22 @@ def _check_f5_narratives(ec: EnrichedClaim, report: ValidationReport) -> None:
         report.violations.append(
             Violation("F5", Severity.ERROR, ec.claim.claim_id,
                       f"narrative missing fields: {', '.join(missing)}")
+        )
+
+
+def _check_f6_f7_crosschecks(ec: EnrichedClaim, report: ValidationReport) -> None:
+    # F6: every resolved evidence has back-ref matching this claim's id
+    for e in ec.evidence:
+        if e.claim != ec.claim.claim_id:
+            report.violations.append(
+                Violation("F6", Severity.WARNING, ec.claim.claim_id,
+                          f"evidence {e.evidence_id} back-ref claim={e.claim!r} but listed under {ec.claim.claim_id}")
+            )
+    # F7: evidence_count field matches actual count
+    if ec.claim.evidence_count != len(ec.claim.evidence_ids):
+        report.violations.append(
+            Violation("F7", Severity.WARNING, ec.claim.claim_id,
+                      f"evidence_count={ec.claim.evidence_count} but len(evidence_ids)={len(ec.claim.evidence_ids)}")
         )
 
 
