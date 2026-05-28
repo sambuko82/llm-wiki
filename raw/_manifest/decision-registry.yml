@@ -1,0 +1,25 @@
+# Decision Registry — JVTO LLM Wiki
+# Final locked decisions for static / semi-static data.
+# Once a decision is `status: locked`, the Trust Bundle Compiler treats any conflict-log
+# entry listed in `resolves_conflicts` as resolved for validator rule F4.
+# Compiler v1 only CONSUMES this file. Lock-creation is an operational workflow
+# (Sam + LLM in Obsidian).
+# last_updated: 2026-05-28
+
+decisions:
+  - decision_id: DEC-001
+    topic: stefan_loose_year_isbn
+    final_value:
+      year: 2018
+      isbn: "9783770167654"
+    status: provisional
+    decided_by: Sam
+    decided_at: 2026-05-28
+    source_basis:
+      - jvto_verification_dossier_p10
+    applies_to_claims: [C9]
+    resolves_conflicts: []
+    resolves_dq: [DQ-001]
+    notes: >-
+      Provisional until Sam confirms via physical book scan. Once confirmed,
+      change status to `locked` and add CONF-001 to resolves_conflicts.
