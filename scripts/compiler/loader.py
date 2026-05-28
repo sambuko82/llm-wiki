@@ -257,3 +257,42 @@ def load_conflicts(path: Path) -> list[Conflict]:
             )
         )
     return out
+
+
+_H2_CLAIM_RE = re.compile(r"^##\s+(C\d+)\b", re.MULTILINE)
+_FIELD_RE = re.compile(
+    r"^\*\*(AI snippet|Short|CS reply)\*\*:\s*\*?\"?(.*?)\"?\*?\s*$",
+    re.MULTILINE,
+)
+
+
+def _strip_wrappers(text: str) -> str:
+    """Strip leading/trailing `*` italics and `"` quote wrappers if present."""
+    text = text.strip()
+    while text and text[0] in '*"' and text[-1:] in '*"':
+        text = text[1:-1].strip()
+    return text
+
+
+def load_aeo_narratives(path: Path) -> dict[str, AeoFields]:
+    """Parse wiki/website/aeo-claims.md → dict[claim_id, AeoFields].
+
+    Splits by H2 headers matching `## C<N>` and extracts three bold-labeled
+    fields per block: `AI snippet`, `Short`, `CS reply`.
+    """
+    text = path.read_text(encoding="utf-8")
+    starts = [(m.group(1), m.start()) for m in _H2_CLAIM_RE.finditer(text)]
+    starts.append(("__END__", len(text)))
+    out: dict[str, AeoFields] = {}
+    for i, (cid, pos) in enumerate(starts[:-1]):
+        block = text[pos:starts[i + 1][1]]
+        fields: dict[str, str] = {}
+        for fm in _FIELD_RE.finditer(block):
+            fields[fm.group(1)] = _strip_wrappers(fm.group(2))
+        out[cid] = AeoFields(
+            claim_id=cid,
+            ai_snippet=fields.get("AI snippet", ""),
+            short=fields.get("Short", ""),
+            cs_reply=fields.get("CS reply", ""),
+        )
+    return out

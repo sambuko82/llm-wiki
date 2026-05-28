@@ -135,3 +135,15 @@ def test_load_conflicts_empty_affects(tmp_path):
     )
     items = load_conflicts(md)
     assert items[0].affects_claims == []
+
+
+def test_load_aeo_narratives(fixtures_dir):
+    from scripts.compiler.loader import load_aeo_narratives
+    narratives = load_aeo_narratives(fixtures_dir / "minimal-aeo-claims.md")
+    assert set(narratives.keys()) == {"C1", "C2"}
+    c1 = narratives["C1"]
+    assert c1.ai_snippet == "AI snippet text for C1."
+    assert c1.short == "Short for C1."
+    assert c1.cs_reply == "CS reply for C1."
+    c2 = narratives["C2"]
+    assert c2.ai_snippet == "AI snippet for C2."
