@@ -101,3 +101,27 @@ def render_faq_page_schema(qa_pairs: list[dict[str, str]]) -> dict[str, Any]:
             for qa in qa_pairs
         ],
     }
+
+
+def render_tourist_trip_schema(entities: list[Entity], base_url: str) -> list[dict[str, Any]]:
+    """Build schema/tourist-trip.json — one TouristTrip per destination, deduplicated by canonical_url.
+
+    Resolves the open sprint item 'Duplicate TouristTrip in tour page JSON-LD schemas'
+    by collapsing entities that share a canonical_url into a single entry.
+    """
+    seen: dict[str, dict[str, Any]] = {}
+    for e in entities:
+        if e.type != "destination":
+            continue
+        if not e.canonical_url:
+            continue
+        key = e.canonical_url
+        if key in seen:
+            continue
+        seen[key] = {
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            "name": e.name,
+            "url": base_url.rstrip("/") + e.canonical_url,
+        }
+    return list(seen.values())

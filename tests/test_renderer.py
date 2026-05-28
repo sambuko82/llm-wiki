@@ -89,3 +89,34 @@ def test_render_faq_page_schema():
     assert q0["name"] == "Is JVTO licensed?"
     assert q0["acceptedAnswer"]["@type"] == "Answer"
     assert q0["acceptedAnswer"]["text"] == "Yes, NIB 1102230032918."
+
+
+def test_render_tourist_trip_schema_dedupes_by_url():
+    from scripts.compiler.renderer import render_tourist_trip_schema
+    from scripts.compiler.loader import Entity
+    entities = [
+        Entity("ENT-001", "Kawah Ijen", "destination", [], [],
+               "TouristAttraction", "/destinations/ijen-crater", ["C1"], []),
+        Entity("ENT-001-dup", "Kawah Ijen", "destination", [], [],
+               "TouristAttraction", "/destinations/ijen-crater", ["C4"], []),  # duplicate URL
+        Entity("ENT-002", "Mount Bromo", "destination", [], [],
+               "TouristAttraction", "/destinations/mount-bromo", ["C1"], []),
+        Entity("ENT-003", "Founder Person", "person", [], [],
+               "Person", "/people/founder", ["C1"], []),  # not a destination -> excluded
+    ]
+    trips = render_tourist_trip_schema(entities, base_url="https://javavolcano-touroperator.com")
+    assert len(trips) == 2  # one per unique destination URL
+    urls = [t["url"] for t in trips]
+    assert "https://javavolcano-touroperator.com/destinations/ijen-crater" in urls
+    assert "https://javavolcano-touroperator.com/destinations/mount-bromo" in urls
+    assert all(t["@type"] == "TouristTrip" for t in trips)
+
+
+def test_render_tourist_trip_excludes_entities_without_url():
+    from scripts.compiler.renderer import render_tourist_trip_schema
+    from scripts.compiler.loader import Entity
+    entities = [
+        Entity("ENT-X", "No URL Place", "destination", [], [], "TouristAttraction", None, [], []),
+    ]
+    trips = render_tourist_trip_schema(entities, base_url="https://x")
+    assert trips == []
