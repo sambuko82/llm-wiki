@@ -294,3 +294,85 @@ def test_f7_evidence_count_mismatch_warns():
     f7 = [v for v in rep.violations if v.rule_id == "F7"]
     assert len(f7) == 1
     assert f7[0].severity == Severity.WARNING
+
+
+def test_f8a_empty_source_basis_fails():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import Decision
+    d = Decision(
+        decision_id="DEC-001", topic="t", final_value=None,
+        secondary_facts=None, status="locked",
+        decided_by="Sam", decided_at=date(2026, 5, 28),
+        source_basis=[], applies_to_claims=["C1"],
+        resolves_conflicts=[], resolves_dq=[],
+        superseded_by=None, notes="",
+    )
+    rep = run([], [d], [], {}, {"C1"}, today=date(2026, 5, 28))
+    f8a = [v for v in rep.violations if v.rule_id == "F8a"]
+    assert len(f8a) == 1
+    assert f8a[0].severity == Severity.ERROR
+
+
+def test_f8b_resolves_unknown_conflict_warns():
+    from scripts.compiler.validator import run, Severity
+    d = _make_decision(resolves=("CONF-999",))
+    rep = run([], [d], [], {}, {"C1"}, today=date(2026, 5, 28))
+    f8b = [v for v in rep.violations if v.rule_id == "F8b"]
+    assert len(f8b) == 1
+    assert f8b[0].severity == Severity.WARNING
+
+
+def test_f8c_duplicate_locked_topic_fails():
+    from scripts.compiler.validator import run, Severity
+    from scripts.compiler.loader import Decision
+    d1 = Decision(
+        decision_id="DEC-001", topic="same_topic", final_value=1,
+        secondary_facts=None, status="locked",
+        decided_by="Sam", decided_at=date(2026, 5, 1),
+        source_basis=["x"], applies_to_claims=["C1"],
+        resolves_conflicts=[], resolves_dq=[],
+        superseded_by=None, notes="",
+    )
+    d2 = Decision(
+        decision_id="DEC-002", topic="same_topic", final_value=2,
+        secondary_facts=None, status="locked",
+        decided_by="Sam", decided_at=date(2026, 5, 28),
+        source_basis=["x"], applies_to_claims=["C1"],
+        resolves_conflicts=[], resolves_dq=[],
+        superseded_by=None, notes="",
+    )
+    rep = run([], [d1, d2], [], {}, {"C1"}, today=date(2026, 5, 28))
+    f8c = [v for v in rep.violations if v.rule_id == "F8c"]
+    assert len(f8c) == 1
+
+
+def test_f8c_superseded_chain_passes():
+    from scripts.compiler.validator import run
+    from scripts.compiler.loader import Decision
+    d1 = Decision(
+        decision_id="DEC-001", topic="t", final_value=1,
+        secondary_facts=None, status="superseded",
+        decided_by="Sam", decided_at=date(2026, 5, 1),
+        source_basis=["x"], applies_to_claims=["C1"],
+        resolves_conflicts=[], resolves_dq=[],
+        superseded_by="DEC-002", notes="",
+    )
+    d2 = Decision(
+        decision_id="DEC-002", topic="t", final_value=2,
+        secondary_facts=None, status="locked",
+        decided_by="Sam", decided_at=date(2026, 5, 28),
+        source_basis=["x"], applies_to_claims=["C1"],
+        resolves_conflicts=[], resolves_dq=[],
+        superseded_by=None, notes="",
+    )
+    rep = run([], [d1, d2], [], {}, {"C1"}, today=date(2026, 5, 28))
+    assert [v for v in rep.violations if v.rule_id == "F8c"] == []
+
+
+def test_f8d_unknown_applies_to_claim_fails():
+    from scripts.compiler.validator import run, Severity
+    d = _make_decision(applies=("C999",))
+    rep = run([], [d], [], {}, {"C1"}, today=date(2026, 5, 28))
+    f8d = [v for v in rep.violations if v.rule_id == "F8d"]
+    assert len(f8d) == 1
+    assert f8d[0].severity == Severity.ERROR

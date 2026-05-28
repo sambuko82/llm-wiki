@@ -88,6 +88,7 @@ def run(
         _check_f5_narratives(ec, report)
         _check_f6_f7_crosschecks(ec, report)
     _check_f4_conflicts(enriched_claims, decisions, conflicts, report)
+    _check_f8_decisions(decisions, conflicts, all_claim_ids, report)
     return report
 
 
@@ -175,6 +176,48 @@ def _check_f6_f7_crosschecks(ec: EnrichedClaim, report: ValidationReport) -> Non
             Violation("F7", Severity.WARNING, ec.claim.claim_id,
                       f"evidence_count={ec.claim.evidence_count} but len(evidence_ids)={len(ec.claim.evidence_ids)}")
         )
+
+
+def _check_f8_decisions(
+    decisions: list[Decision],
+    conflicts: list[Conflict],
+    all_claim_ids: set[str],
+    report: ValidationReport,
+) -> None:
+    conflict_ids = {c.conflict_id for c in conflicts}
+    # F8a + F8d per decision
+    for d in decisions:
+        if not d.source_basis:
+            report.violations.append(
+                Violation("F8a", Severity.ERROR, d.decision_id,
+                          "locked decision has empty source_basis" if d.status == "locked"
+                          else "decision has empty source_basis")
+            )
+        for cid in d.applies_to_claims:
+            if cid not in all_claim_ids:
+                report.violations.append(
+                    Violation("F8d", Severity.ERROR, d.decision_id,
+                              f"applies_to_claims references unknown claim {cid}")
+                )
+        # F8b
+        for conf_id in d.resolves_conflicts:
+            if conf_id not in conflict_ids:
+                report.violations.append(
+                    Violation("F8b", Severity.WARNING, d.decision_id,
+                              f"resolves_conflicts references unknown conflict {conf_id}")
+                )
+
+    # F8c: no two locked on same topic
+    locked_by_topic: dict[str, list[str]] = {}
+    for d in decisions:
+        if d.status == "locked":
+            locked_by_topic.setdefault(d.topic, []).append(d.decision_id)
+    for topic, ids in locked_by_topic.items():
+        if len(ids) > 1:
+            report.violations.append(
+                Violation("F8c", Severity.ERROR, ids[-1],
+                          f"multiple locked decisions on topic {topic!r}: {ids}; use superseded_by to chain")
+            )
 
 
 def _check_f4_conflicts(
