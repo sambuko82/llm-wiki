@@ -137,6 +137,24 @@ def render_aeo_snippets(enriched: list[EnrichedClaim]) -> dict[str, Any]:
     return {"version": _BUNDLE_VERSION, "snippets": snippets}
 
 
+def render_manifest(
+    report,  # ValidationReport (avoid import cycle)
+    inputs: dict[str, int],
+    outputs: dict[str, int],
+    input_hashes: dict[str, str],
+    compiled_at: str,
+) -> dict[str, Any]:
+    """Build _manifest.json — build report."""
+    return {
+        "compiled_at": compiled_at,
+        "compiler_version": _COMPILER_VERSION,
+        "inputs": inputs,
+        "outputs": outputs,
+        "validation": report.rule_summary(),
+        "input_hashes": input_hashes,
+    }
+
+
 def render_tourist_trip_schema(entities: list[Entity], base_url: str) -> list[dict[str, Any]]:
     """Build schema/tourist-trip.json — one TouristTrip per destination, deduplicated by canonical_url.
 

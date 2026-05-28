@@ -156,3 +156,24 @@ def test_render_aeo_snippets_topic_from_tags():
     assert s["tldr"] == "snippet"
     assert s["claim_ids"] == ["C1"]
     assert "FAQPage" in s["use_for"]
+
+
+def test_render_manifest_includes_validation_summary():
+    from scripts.compiler.renderer import render_manifest
+    from scripts.compiler.validator import ValidationReport, Violation, Severity
+    rep = ValidationReport(violations=[
+        Violation("F3", Severity.WARNING, "C1", "entity ENT-099 unresolved"),
+        Violation("F3", Severity.WARNING, "C2", "entity ENT-098 unresolved"),
+    ])
+    m = render_manifest(
+        report=rep,
+        inputs={"claims": 9, "evidence": 25, "entities": 50, "decisions": 1, "narratives": 9},
+        outputs={"claims": 9, "schema_files": 3, "faq_items": 9, "aeo_snippets": 9},
+        input_hashes={"claim-registry.yml": "sha256:abc"},
+        compiled_at="2026-05-28T00:00:00Z",
+    )
+    assert m["compiled_at"] == "2026-05-28T00:00:00Z"
+    assert m["compiler_version"] == "0.1.0"
+    assert m["inputs"]["claims"] == 9
+    assert m["validation"]["F3"] == "2 warnings"
+    assert m["validation"]["F1"] == "pass"
