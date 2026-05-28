@@ -1,0 +1,31 @@
+# tests/fixtures/minimal-claim-registry.yml
+claims:
+  - claim_id: C1
+    name: Test Claim One
+    canonical_text: First test claim body text.
+    domain: credentials
+    category: trust-signal
+    verification_status: verified
+    wiki_pages: [wiki/test/one.md]
+    output_pages: [output/test/]
+    evidence_ids: [E001, E002]
+    evidence_count: 2
+    key_proof_ids: [proof-a]
+    tags: [test, trust-signal]
+    last_verified: 2026-05-26
+
+  - claim_id: C2
+    name: Test Claim Two
+    canonical_text: Second test claim.
+    domain: products
+    category: tour-package
+    verification_status: verified
+    wiki_pages: [wiki/test/two.md]
+    output_pages: []
+    evidence_ids: [E003]
+    evidence_count: 1
+    key_proof_ids: []
+    tags: []
+    last_verified: 2026-05-12
+    stale_after_days: 30
+    entity_refs: [ENT-001]

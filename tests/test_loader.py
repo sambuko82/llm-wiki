@@ -37,3 +37,22 @@ def test_claim_instantiation():
     )
     assert c.claim_id == "C1"
     assert c.stale_after_days is None
+
+
+def test_load_claims_parses_minimal_fixture(fixtures_dir):
+    from scripts.compiler.loader import load_claims
+    claims = load_claims(fixtures_dir / "minimal-claim-registry.yml")
+    assert len(claims) == 2
+    assert claims[0].claim_id == "C1"
+    assert claims[0].stale_after_days is None
+    assert claims[0].entity_refs == []
+    assert claims[1].claim_id == "C2"
+    assert claims[1].stale_after_days == 30
+    assert claims[1].entity_refs == ["ENT-001"]
+
+
+def test_load_claims_dates_parsed(fixtures_dir):
+    from scripts.compiler.loader import load_claims
+    from datetime import date
+    claims = load_claims(fixtures_dir / "minimal-claim-registry.yml")
+    assert claims[0].last_verified == date(2026, 5, 26)

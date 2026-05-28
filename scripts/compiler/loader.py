@@ -9,6 +9,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any, Optional
 
+import yaml
+
 
 # ---------- Dataclasses ----------
 
@@ -94,3 +96,40 @@ class AeoFields:
     ai_snippet: str
     short: str
     cs_reply: str
+
+
+# ---------- Loaders ----------
+
+def _to_date(value: Any) -> date:
+    if isinstance(value, date):
+        return value
+    if isinstance(value, str):
+        return date.fromisoformat(value)
+    raise ValueError(f"Cannot coerce to date: {value!r}")
+
+
+def load_claims(path: Path) -> list[Claim]:
+    """Parse claim-registry.yml → list[Claim]."""
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    out: list[Claim] = []
+    for item in data["claims"]:
+        out.append(
+            Claim(
+                claim_id=item["claim_id"],
+                name=item["name"],
+                canonical_text=item["canonical_text"],
+                domain=item["domain"],
+                category=item["category"],
+                verification_status=item["verification_status"],
+                wiki_pages=list(item.get("wiki_pages") or []),
+                output_pages=list(item.get("output_pages") or []),
+                evidence_ids=list(item.get("evidence_ids") or []),
+                evidence_count=int(item.get("evidence_count", 0)),
+                key_proof_ids=list(item.get("key_proof_ids") or []),
+                tags=list(item.get("tags") or []),
+                last_verified=_to_date(item["last_verified"]),
+                stale_after_days=item.get("stale_after_days"),
+                entity_refs=list(item.get("entity_refs") or []),
+            )
+        )
+    return out
