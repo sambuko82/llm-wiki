@@ -78,5 +78,23 @@ def run(
     if today is None:
         today = date.today()
     report = ValidationReport()
-    # Rules added by Tasks 13–19.
+    for ec in enriched_claims:
+        _check_f1_freshness(ec, today, report)
     return report
+
+
+def _check_f1_freshness(ec: EnrichedClaim, today: date, report: ValidationReport) -> None:
+    window = ec.claim.stale_after_days if ec.claim.stale_after_days is not None else 90
+    age_days = (today - ec.claim.last_verified).days
+    if age_days > window:
+        report.violations.append(
+            Violation(
+                rule_id="F1",
+                severity=Severity.ERROR,
+                target_id=ec.claim.claim_id,
+                message=(
+                    f"stale: last_verified {ec.claim.last_verified} is {age_days} days old "
+                    f"(limit {window})"
+                ),
+            )
+        )
