@@ -1,0 +1,23 @@
+# tests/fixtures/minimal-entity-registry.yml
+entity_types:
+  - destination
+  - person
+
+entities:
+  - entity_id: ENT-001
+    name: Test Destination
+    type: destination
+    aliases: [Test, Destination]
+    wiki_pages: [wiki/destinations/test.md]
+    schema_type: TouristAttraction
+    canonical_url: /destinations/test
+    claims: [C1, C2]
+    tags: [test]
+
+  - entity_id: ENT-002
+    name: Test Person
+    type: person
+    aliases: []
+    wiki_pages: [wiki/people/test.md]
+    claims: [C1]
+    tags: []

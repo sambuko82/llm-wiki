@@ -84,3 +84,15 @@ def test_load_evidence_unknown_type_raises(tmp_path):
     )
     with pytest.raises(ValueError, match="unknown evidence_type"):
         load_evidence(bad)
+
+
+def test_load_entities(fixtures_dir):
+    from scripts.compiler.loader import load_entities
+    items = load_entities(fixtures_dir / "minimal-entity-registry.yml")
+    assert len(items) == 2
+    assert items[0].entity_id == "ENT-001"
+    assert items[0].schema_type == "TouristAttraction"
+    assert items[0].canonical_url == "/destinations/test"
+    assert items[0].claims == ["C1", "C2"]
+    assert items[1].schema_type is None
+    assert items[1].canonical_url is None

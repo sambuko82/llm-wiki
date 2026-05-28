@@ -171,3 +171,24 @@ def load_evidence(path: Path) -> list[Evidence]:
             )
         )
     return out
+
+
+def load_entities(path: Path) -> list[Entity]:
+    """Parse entity-registry.yml → list[Entity]."""
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    out: list[Entity] = []
+    for item in data["entities"]:
+        out.append(
+            Entity(
+                entity_id=item["entity_id"],
+                name=item["name"],
+                type=item["type"],
+                aliases=list(item.get("aliases") or []),
+                wiki_pages=list(item.get("wiki_pages") or []),
+                schema_type=item.get("schema_type"),
+                canonical_url=item.get("canonical_url"),
+                claims=list(item.get("claims") or []),
+                tags=list(item.get("tags") or []),
+            )
+        )
+    return out
