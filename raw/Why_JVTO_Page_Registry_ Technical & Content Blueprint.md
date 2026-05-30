@@ -8,14 +8,14 @@
 
 Klaster ini dibangun dengan struktur "Hub & Spoke" untuk memaksimalkan otoritas topik (*Topical Authority*) di mata mesin pencari.
 
-| Page Level | URL Slug | Page Title (H1) | Fungsi Strategis |
-| :---- | :---- | :---- | :---- |
-| **L1 (Hub)** | /why-jvto | Why Travel with Java Volcano Tour Operator | Pintu masuk utama & ringkasan pilar kepercayaan. |
-| **L2 (Spoke)** | /why-jvto/our-story | Our Story: From Homestay to Police-Led Operator | Narasi sejarah & transformasi otoritas. |
-| **L2 (Spoke)** | /why-jvto/the-jvto-difference | The JVTO Difference: Standards & Protocols | Standar operasional (SOP) yang mengikat. |
-| **L2 (Spoke)** | /verify-jvto | Verify JVTO: Legal & Official Documents | Bukti forensik (NIB, Lisensi, Sertifikat). |
-| **L2 (Spoke)** | /why-jvto/reviews | Guest Reviews & Historical Proof | Bukti sosial jangka panjang & arsip penghargaan. |
-| **L2 (Spoke)** | /why-jvto/community-standards | Community & Sustainability | Dampak lokal, Etika, & Keadilan Pelajar (ISIC). |
+| Page Level     | URL Slug                      | Page Title (H1)                                 | Fungsi Strategis                                 |
+| :------------- | :---------------------------- | :---------------------------------------------- | :----------------------------------------------- |
+| **L1 (Hub)**   | /why-jvto                     | Why Travel with Java Volcano Tour Operator      | Pintu masuk utama & ringkasan pilar kepercayaan. |
+| **L2 (Spoke)** | /why-jvto/our-story           | Our Story: From Homestay to Police-Led Operator | Narasi sejarah & transformasi otoritas.          |
+| **L2 (Spoke)** | /why-jvto/the-jvto-difference | The JVTO Difference: Standards & Protocols      | Standar operasional (SOP) yang mengikat.         |
+| **L2 (Spoke)** | /verify-jvto                  | Verify JVTO: Legal & Official Documents         | Bukti forensik (NIB, Lisensi, Sertifikat).       |
+| **L2 (Spoke)** | /why-jvto/reviews             | Guest Reviews & Historical Proof                | Bukti sosial jangka panjang & arsip penghargaan. |
+| **L2 (Spoke)** | /why-jvto/community-standards | Community & Sustainability                      | Dampak lokal, Etika, & Keadilan Pelajar (ISIC).  |
 
 ## **2\. Registrasi Aset Bukti (Trust Asset Registry)**
 

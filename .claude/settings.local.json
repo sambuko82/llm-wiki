@@ -77,7 +77,16 @@
       "Bash(xargs sed -i 's/^type: ops$/type: seo/')",
       "Bash(pip install *)",
       "Skill(hookify:hookify)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "mcp__Windows-MCP__PowerShell",
+      "Bash(pytest tests/ -v)",
+      "Bash(echo \"EXIT_CODE=$?\")",
+      "Bash(pytest tests/test_loader.py -v)",
+      "Bash(pytest tests/test_validator.py -v)",
+      "Bash(pytest tests/test_renderer.py -v)",
+      "Bash(pytest tests/test_renderer.py::test_render_manifest_includes_validation_summary -v)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(pytest tests/ -q)"
     ]
   }
 }
