@@ -53,6 +53,9 @@ class Sources:
     db_export_text: str
     packages: list[Package] = field(default_factory=list)
     sitemap_slugs: dict[str, set] = field(default_factory=dict)  # origin -> {norm slug}
+    # norm_slug -> [(section_origin, table_rows)]; one entry per detail block.
+    pricing_tables: dict[str, list] = field(default_factory=dict)
+    itinerary_tables: dict[str, list] = field(default_factory=dict)
 
 
 def _read(path: Path) -> str:
@@ -131,6 +134,71 @@ def parse_sitemap(sitemap_text: str) -> dict[str, set]:
     return out
 
 
+def _section_origin(h2_text: str) -> str:
+    t = h2_text.lower()
+    if "surabaya" in t:
+        return "surabaya"
+    if "bali" in t:
+        return "bali"
+    return "other"
+
+
+def parse_slug_tables(text: str) -> dict[str, list]:
+    """Map norm_slug -> [(section_origin, data_rows)] for each `### `slug`` block
+    in a detail file (pricing / itineraries). Section origin comes from the
+    enclosing `## ...` heading, so Surabaya/Bali variants of a shared slug stay
+    distinguishable. Pure parsing — no interpretation of the rows."""
+    lines = text.splitlines()
+    out: dict[str, list] = {}
+    origin = "other"
+    n = len(lines)
+    i = 0
+    while i < n:
+        s = lines[i].strip()
+        if s.startswith("## ") and not s.startswith("### "):
+            origin = _section_origin(s)
+            i += 1
+            continue
+        m = re.match(r"^###\s+`([^`]+)`", s)
+        if not m:
+            i += 1
+            continue
+        slug = m.group(1).split("/")[-1].strip()
+        j = i + 1
+        while j < n and not lines[j].strip().startswith("|"):
+            if lines[j].strip().startswith("#"):
+                break  # next heading before any table
+            j += 1
+        rows: list[list[str]] = []
+        seen_sep = False
+        while j < n and lines[j].strip().startswith("|"):
+            cells = [c.strip() for c in lines[j].strip().strip("|").split("|")]
+            if cells and all(c and set(c) <= {"-", ":"} for c in cells):
+                seen_sep = True
+            elif not seen_sep:
+                pass  # header row
+            else:
+                rows.append(cells)
+            j += 1
+        out.setdefault(slug, []).append((origin, rows))
+        i = j
+    return out
+
+
+def detail_for(tables: dict[str, list], package) -> list | None:
+    """Pick the detail rows for a package from a parse_slug_tables() map.
+    Resolves Surabaya/Bali slug collisions by matching section origin."""
+    entries = tables.get(package.norm_slug)
+    if not entries:
+        return None
+    if len(entries) == 1:
+        return entries[0][1]
+    for section_origin, rows in entries:
+        if section_origin == package.origin:
+            return rows
+    return None
+
+
 def load_sources(wiki_root: str | Path) -> Sources:
     p = Path(wiki_root)
     src = Sources(
@@ -144,4 +212,6 @@ def load_sources(wiki_root: str | Path) -> Sources:
     )
     src.packages = parse_registry(src.overview_text)
     src.sitemap_slugs = parse_sitemap(src.sitemap_text)
+    src.pricing_tables = parse_slug_tables(src.pricing_text)
+    src.itinerary_tables = parse_slug_tables(src.itinerary_text)
     return src

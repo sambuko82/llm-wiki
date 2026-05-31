@@ -10,12 +10,22 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-SCHEMA_VERSION = "package-readiness/v1"
-OUTPUTS = ("package-registry.json", "gap-report.json", "_manifest.json")
+from . import loader
+
+SCHEMA_VERSION = "package-readiness/v1.2"
+OUTPUTS = (
+    "package-registry.json",
+    "package-pricing.json",
+    "package-itineraries.json",
+    "booking-compatibility.json",
+    "gap-report.json",
+    "_manifest.json",
+)
 
 
 def build_registry(sources) -> list[dict]:
@@ -30,6 +40,95 @@ def build_registry(sources) -> list[dict]:
             "ijen_relevant": pk.visits_ijen,
             "visits_madakaripura": pk.visits_madakaripura,
             "is_specialty": "taman-safari" in pk.norm_slug,
+        }
+        for pk in sources.packages
+    ]
+
+
+def _parse_pax(cell: str) -> tuple[int | None, int | None]:
+    """'2' -> (2,2); '3–4' -> (3,4); '11+' -> (11,None); '1 (solo)' -> (1,1)."""
+    c = cell.lower().replace("(solo)", "").replace("pax", "")
+    c = c.replace("–", "-").replace("—", "-").strip()
+    if c.endswith("+"):
+        digits = re.sub(r"\D", "", c)
+        return (int(digits), None) if digits else (None, None)
+    if "-" in c:
+        a, b = c.split("-", 1)
+        da, db = re.sub(r"\D", "", a), re.sub(r"\D", "", b)
+        return (int(da) if da else None, int(db) if db else None)
+    digits = re.sub(r"\D", "", c)
+    v = int(digits) if digits else None
+    return (v, v)
+
+
+def _parse_price(cell: str) -> int | None:
+    digits = re.sub(r"[^\d]", "", cell)
+    return int(digits) if digits else None
+
+
+def _parse_meals(cell: str) -> list[str]:
+    raw = cell.replace("·", "·")
+    parts = re.split(r"[·/,]", raw)
+    return [p.strip() for p in parts if p.strip() and p.strip() not in ("—", "-")]
+
+
+def build_pricing(sources) -> list[dict]:
+    out: list[dict] = []
+    for pk in sources.packages:
+        rows = loader.detail_for(sources.pricing_tables, pk) or []
+        tiers = []
+        for r in rows:
+            if len(r) < 2:
+                continue
+            mn, mx = _parse_pax(r[0])
+            tiers.append({
+                "min_pax": mn, "max_pax": mx,
+                "idr_per_person": _parse_price(r[1]),
+            })
+        out.append({
+            "package_id": pk.slug,
+            "slug": pk.norm_slug,
+            "currency": "IDR",
+            "ferry_included": pk.origin == "bali",
+            "pax_tiers": tiers,
+        })
+    return out
+
+
+def build_itineraries(sources) -> list[dict]:
+    out: list[dict] = []
+    for pk in sources.packages:
+        rows = loader.detail_for(sources.itinerary_tables, pk) or []
+        days = []
+        for r in rows:
+            if len(r) < 4:
+                continue
+            day_digits = re.sub(r"\D", "", r[0])
+            hotel = r[3].strip()
+            days.append({
+                "day": int(day_digits) if day_digits else None,
+                "title": r[1].strip(),
+                "meals": _parse_meals(r[2]),
+                "hotel": None if hotel in ("—", "-", "") else hotel,
+            })
+        out.append({
+            "package_id": pk.slug,
+            "slug": pk.norm_slug,
+            "days": days,
+        })
+    return out
+
+
+def build_booking_compatibility(sources) -> list[dict]:
+    # All 16 canonical packages are live website tour pages (Instant Book path)
+    # and bookable via WhatsApp-assisted flow. See packages-overview §booking-flow.
+    return [
+        {
+            "package_id": pk.slug,
+            "slug": pk.norm_slug,
+            "instant_book": True,
+            "whatsapp_assisted": True,
+            "booking_paths": ["website_instant_book", "whatsapp_assisted"],
         }
         for pk in sources.packages
     ]
@@ -68,6 +167,7 @@ def build_manifest(sources, findings: list[dict], *, dry_run: bool) -> dict:
             "db-export": _sha(sources.db_export_text),
         },
         "findings_by_rule": by_rule,
+        "artifacts": [n for n in OUTPUTS if n != "_manifest.json"],
         "clean": not any(f["severity"] == "error" for f in findings),
     }
 
@@ -84,14 +184,11 @@ def _atomic_write_json(path: Path, data) -> None:
             os.remove(tmp)
 
 
-def write_outputs(out_dir: str | Path, registry, gap_report, manifest) -> list[str]:
+def write_outputs(out_dir: str | Path, artifacts: dict) -> list[str]:
+    """Atomically write each {filename: data} pair. Caller controls the set;
+    OUTPUTS defines the canonical v1.2 six."""
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    payloads = {
-        "package-registry.json": registry,
-        "gap-report.json": gap_report,
-        "_manifest.json": manifest,
-    }
-    for name, data in payloads.items():
+    for name, data in artifacts.items():
         _atomic_write_json(out / name, data)
-    return list(payloads)
+    return list(artifacts)

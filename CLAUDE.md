@@ -159,20 +159,23 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Project-architecture phase — created `wiki/ops/transformation-map.md` (master domain→bundle pipeline map, output convention `output/<domain>/<bundle>/`, Trust Bundle marked DONE/do-not-reopen) and `wiki/ops/package-readiness-compiler-spec.md` (spec-only for NEXT wedge: 16-package slug list, 6 output files, 12 validation rules PKG-01–12, compiler architecture). Both merged to master (PR #2, merge 76b31c8). Also hardened `~/.claude/commands/session-close.md` (selective staging, pre-commit scope HARD GATE, project-agnostic, freshness guard).
+**Last completed:** Package Readiness Compiler — built end to end and merged to master: v1 skeleton+dry-run (PR #3), first output bundle (PR #4), v1.1 tests + PKG-06/11/12 (PR #5, merge ab4053b). PKG-01–12 complete; 13 tests pass; `scripts/compile_packages.py` + `scripts/package_compiler/{loader,validator,renderer}.py`; bundle at `output/products/package-readiness/{package-registry,gap-report,_manifest}.json` clean (16 packages / 0 findings / manifest.clean=True).
 **Completed date:** 2026-05-31
-**Next task:** Build `scripts/compile_packages.py` per `wiki/ops/package-readiness-compiler-spec.md` §9 — TDD (unit per parser + each PKG rule, E2E happy-path + strict-fail), then first `--dry-run` → `gap-report.json`. AWAITING EXPLICIT APPROVAL before coding.
-**Build status:** — wiki-only this session (docs/specs), no code.
+**Next task:** NOT STARTED — awaiting selection from candidate wedges (see Next-phase candidates below). No work begun.
+**Build status:** — compiler tested, 13/13 pass; no uncommitted code this session.
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" stale — now 123. Fix in jvto-web (not Trust-Bundle-related).
 - R065 gap #1: verify JVTO website Terms checkbox (Step 15) shows Travel Credit policy text.
 - R065 gap #2: price anomaly IDR 3,350,000 vs SSOT — folds into Package Readiness gap-report (PKG-04 pricing); Sam to verify pax tier / discount.
+- Package Readiness compiler limits: 3/6 artifacts deferred (pricing / itineraries / booking-compatibility); PKG-11 count-based only; PKG-12 active-source-only (full-repo sweep = Global Validator wedge).
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives.
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live PVMBG status source.
 - Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data.
 - `yadnya-kasada-2026` — need Tengger calendar source.
 
-**Resolved (do not reopen):** Trust Bundle v1 DONE — DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, real compile succeeded, 7 JSON outputs pushed, jvto-web `/trust` integrated. DQ-001 (Stefan Loose), DQ-002 (Madakaripura height), DQ-003 (second NIB) all resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
+**Next-phase candidates (not started — pick one):** (1) remaining Package Readiness artifacts — pricing / itineraries / booking-compatibility JSON; (2) Policy Bundle; (3) WhatsApp Reply Intelligence; (4) Review Proof Index; (5) Finance Quote Helper; (6) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
+
+**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler v1.1 — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
 
 ## Skill routing
 

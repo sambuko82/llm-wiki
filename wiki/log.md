@@ -11,6 +11,15 @@ sources: []
 
 ---
 
+## [2026-05-31] feat | Package Readiness Compiler v1.2 — detail artifacts (pricing/itineraries/booking)
+Extended the compiler to emit the three deferred artifacts. Bundle now complete at 6 files. Still Package Readiness — no new wedge.
+
+Files updated (5): scripts/package_compiler/loader.py (parse_slug_tables + origin-aware detail_for — resolves the 3 Surabaya/Bali slug collisions via enclosing H2 section; loads pricing + itinerary detail tables), validator.py (PKG-04/05 now require a parseable tier/day table, not just a slug mention), renderer.py (build_pricing / build_itineraries / build_booking_compatibility + pax/price/meals parsers; OUTPUTS=6; dict-based atomic write; schema v1.2; manifest gains artifacts list), compile_packages.py (build + write all 6; pricing/itinerary counts in report), tests/package_compiler/test_package_compiler.py (now 17 tests — added pricing/itineraries/booking builders + collision-resolved-by-origin).
+Files created (3): output/products/package-readiness/package-pricing.json, package-itineraries.json, booking-compatibility.json. Regenerated: package-registry.json (unchanged content), gap-report.json, _manifest.json.
+
+Verification: `pytest` → 17 passed. `--dry-run --strict` and `--write --strict` → 16 packages, 0 findings, manifest.clean=True; 103 pricing tiers + 57 itinerary days parsed across all 16 (incl. colliding Bali variants). Bundle = 6 artifacts + manifest.
+Notes: pricing pax tiers parse solo/range/N+ forms ({min_pax,max_pax,idr_per_person}); Bali packages flagged ferry_included; booking-compatibility marks all 16 instant_book + whatsapp_assisted (live sitemap pages). Non-goals honored: no Trust Bundle / decision-registry / jvto-web / DB / Policy-Bundle / WhatsApp / Review / Finance / package-source-content edits.
+
 ## [2026-05-31] feat | Package Readiness Compiler v1.1 — tests + PKG-06/11/12
 Hardened the compiler: added a test suite and the three remaining validation rules. Behaviour change → output regenerated; result stayed clean.
 
