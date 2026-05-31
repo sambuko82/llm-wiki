@@ -92,17 +92,54 @@ class RendererTests(unittest.TestCase):
         man = renderer.build_manifest(self.src, err, dry_run=True)
         self.assertFalse(man["clean"])
 
-    def test_write_outputs_emits_three_v1_files(self):
-        reg = renderer.build_registry(self.src)
-        gap = renderer.build_gap_report([])
-        man = renderer.build_manifest(self.src, [], dry_run=False)
+    def test_write_outputs_emits_six_v1_2_files(self):
+        artifacts = {
+            "package-registry.json": renderer.build_registry(self.src),
+            "package-pricing.json": renderer.build_pricing(self.src),
+            "package-itineraries.json": renderer.build_itineraries(self.src),
+            "booking-compatibility.json": renderer.build_booking_compatibility(self.src),
+            "gap-report.json": renderer.build_gap_report([]),
+            "_manifest.json": renderer.build_manifest(self.src, [], dry_run=False),
+        }
+        self.assertEqual(sorted(artifacts), sorted(renderer.OUTPUTS))
         with tempfile.TemporaryDirectory() as d:
-            written = renderer.write_outputs(d, reg, gap, man)
+            written = renderer.write_outputs(d, artifacts)
             self.assertEqual(sorted(written), sorted(renderer.OUTPUTS))
             for name in renderer.OUTPUTS:
                 path = Path(d) / name
                 self.assertTrue(path.exists())
                 json.loads(path.read_text(encoding="utf-8"))  # valid JSON
+
+    def test_pricing_16_packages_with_tiers(self):
+        pricing = renderer.build_pricing(self.src)
+        self.assertEqual(len(pricing), 16)
+        self.assertTrue(all(p["currency"] == "IDR" for p in pricing))
+        self.assertTrue(all(len(p["pax_tiers"]) >= 1 for p in pricing),
+                        msg="every package must have >=1 parsed pricing tier")
+        bali = [p for p in pricing if "from-bali" not in p["package_id"]
+                and p["ferry_included"]]
+        self.assertTrue(all(p["ferry_included"] for p in pricing
+                            if p["package_id"].startswith("bali/")))
+
+    def test_itineraries_16_packages_with_days(self):
+        itins = renderer.build_itineraries(self.src)
+        self.assertEqual(len(itins), 16)
+        self.assertTrue(all(len(it["days"]) >= 1 for it in itins),
+                        msg="every package must have >=1 parsed itinerary day")
+
+    def test_booking_compatibility_all_dual_path(self):
+        bc = renderer.build_booking_compatibility(self.src)
+        self.assertEqual(len(bc), 16)
+        self.assertTrue(all(b["instant_book"] and b["whatsapp_assisted"] for b in bc))
+
+    def test_collision_slug_resolved_by_origin(self):
+        # two packages share norm_slug ijen-bromo-madakaripura-3d2n (Surabaya + Bali)
+        shared = [p for p in self.src.packages
+                  if p.norm_slug == "ijen-bromo-madakaripura-3d2n"]
+        self.assertEqual(len(shared), 2)
+        rows = {p.origin: loader.detail_for(self.src.pricing_tables, p) for p in shared}
+        self.assertIsNotNone(rows["surabaya"])
+        self.assertIsNotNone(rows["bali"])
 
 
 class CliBehaviourTests(unittest.TestCase):

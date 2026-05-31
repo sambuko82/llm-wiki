@@ -1,7 +1,7 @@
 {
-  "schema_version": "package-readiness/v1",
+  "schema_version": "package-readiness/v1.2",
   "generated_by": "scripts/compile_packages.py",
-  "generated_at": "2026-05-31T16:10:44.659905+00:00",
+  "generated_at": "2026-05-31T16:48:11.395298+00:00",
   "dry_run": false,
   "canonical_package_count": 16,
   "source_hashes": {
@@ -14,5 +14,12 @@
     "db-export": "6c2d85ac5825"
   },
   "findings_by_rule": {},
+  "artifacts": [
+    "package-registry.json",
+    "package-pricing.json",
+    "package-itineraries.json",
+    "booking-compatibility.json",
+    "gap-report.json"
+  ],
   "clean": true
 }

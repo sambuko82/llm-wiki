@@ -18,6 +18,8 @@ from __future__ import annotations
 
 import re
 
+from . import loader
+
 ERROR = "error"
 WARN = "warn"
 
@@ -43,8 +45,6 @@ def _has(text: str, *needles: str) -> bool:
 def validate(sources) -> list[dict]:
     findings: list[dict] = []
     ov = sources.overview_text
-    pricing = sources.pricing_text
-    itin = sources.itinerary_text
 
     # --- document-level wording probes (shared across per-package checks) ---
     health_conditional = (
@@ -80,17 +80,17 @@ def validate(sources) -> list[dict]:
                 f"derived url {pk.public_url} not found in sitemap snapshot",
                 wiki_value=pk.public_url, reference_value=sorted(live)))
 
-        # PKG-04 pricing mention/source
-        if pk.norm_slug not in pricing and pk.slug not in pricing:
+        # PKG-04 pricing detail present + parseable (origin-aware lookup)
+        if not loader.detail_for(sources.pricing_tables, pk):
             findings.append(_finding(
                 "PKG-04", WARN, pid, "pricing",
-                "no pricing mention found in packages-full-pricing"))
+                "no parseable pricing tier table found in packages-full-pricing"))
 
-        # PKG-05 itinerary mention/source
-        if pk.norm_slug not in itin and pk.slug not in itin:
+        # PKG-05 itinerary detail present + parseable
+        if not loader.detail_for(sources.itinerary_tables, pk):
             findings.append(_finding(
                 "PKG-05", WARN, pid, "itinerary",
-                "no itinerary mention found in packages-itineraries"))
+                "no parseable itinerary day table found in packages-itineraries"))
 
         # PKG-07 Ijen packages require conditional health-screening wording
         if pk.visits_ijen and (not health_conditional or health_mandatory_bad):
