@@ -13,7 +13,7 @@ stale_after_days: 60
 
 > **Realized vs template:** prices below are the template rate card. Actual booking averages per `template_package_id` live in -> [[sources/backoffice-pricing]] §"Realized prices per template package". Discounts, upsells, and channel-specific rates surface there.
 
-**Canonical packages** = 15 standard routes (Surabaya + Bali origin). **Student packages** = 6 ISIC-eligible routes at reduced rates. **Specialty** = Taman Safari add-on package.
+**Canonical packages** = 15 SSOT standard routes (11 Surabaya origin + 4 Bali origin). **Specialty** = 1 (`taman-safari-prigen-bromo-madakaripura-3d2n`). Together: **16 commercial tour pages**. **Student packages** = 6 ISIC-eligible routes at reduced rates. **Total priced packages = 22** (15 canonical + 1 specialty + 6 student).
 
 ---
 

@@ -1,7 +1,7 @@
 # Developer Handoff — JVTO Website Content
 
 **Generated**: 2026-05-25
-**Source**: llm-wiki vault (69 wiki pages, 23 sources, 122 output files)
+**Source**: llm-wiki vault (page/source/output counts maintained in `wiki/index.md` and `bases/index.base` — not duplicated here)
 **Target**: jvto-web (Next.js 16 + Prisma + NextAuth) at `F:\jvto-web`
 
 ---
@@ -44,7 +44,7 @@ JSON-LD schemas in `output/website/schema/` inject via `<script type="applicatio
 | `/blog` | `website/pages/blog.md` | — | draft |
 | `/isic/student-package` | `website/pages/isic-student-package.md` | — | draft |
 
-### Tours — Surabaya Origin (12 packages)
+### Tours — Surabaya Origin (11 SSOT canonical + 1 specialty = 12 routes)
 
 | Route | Output file | Schema | Status |
 |---|---|---|---|
@@ -59,7 +59,7 @@ JSON-LD schemas in `output/website/schema/` inject via `<script type="applicatio
 | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n` | `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-5d4n.md` | `website/schema/ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json` | draft |
 | `/tours/from-surabaya/ijen-bromo-madakaripura-malang-5d4n` | `website/pages/tours/surabaya/ijen-bromo-madakaripura-malang-5d4n.md` | `website/schema/ijen-bromo-madakaripura-malang-5d4n-schema.json` | draft |
 | `/tours/from-surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n` | `website/pages/tours/surabaya/ijen-papuma-tumpak-sewu-bromo-malang-6d5n.md` | `website/schema/ijen-papuma-tumpak-sewu-bromo-malang-6d5n-schema.json` | draft |
-| `/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n` | `website/pages/tours/surabaya/taman-safari-prigen-bromo-madakaripura-3d2n.md` | `website/schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json` | draft |
+| `/tours/from-surabaya/taman-safari-prigen-bromo-madakaripura-3d2n` **(Specialty)** | `website/pages/tours/surabaya/taman-safari-prigen-bromo-madakaripura-3d2n.md` | `website/schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json` | draft |
 
 ### Tours — Bali Origin (4 packages)
 
@@ -172,8 +172,9 @@ JSON-LD schemas in `output/website/schema/` inject via `<script type="applicatio
 
 **Important**: Schema files contain trust signal values (reviewCount, ratingValue, NIB). These MUST match the canonical values in `wiki/credentials/trust-signals.md`. Current canonical values:
 - Trustpilot: 4.8 / 51 reviews
-- Google Maps: 4.90 / 92 reviews
+- Google Maps: 4.9 / 123 reviews
 - TripAdvisor: 4.95 / 21 reviews
+- Cross-platform total: 195
 - NIB: 1102230032918
 
 ---

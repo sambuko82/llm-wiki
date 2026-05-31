@@ -115,7 +115,7 @@ These URLs are the canonical social profile endpoints. Include in Organization s
 | `ratingValue` (Trustpilot, for TouristTrip per-page) | `4.8` | [[reviews/trustpilot-compilation]] | Medium — updates with reviews |
 | `reviewCount` (Trustpilot only) | `51` (as of 2026-05-18) | [[reviews/trustpilot-compilation]] | **High — check before each schema generate** |
 | `ratingValue` (cross-platform, for Organization schema) | `4.8` (conservative — use lowest single-platform value) | [[reviews/trustpilot-compilation]] | Medium |
-| `reviewCount` (cross-platform total, for Organization) | `164` (51 TP + 92 Google + 21 TA, as of 2026-05-18) | [[reviews/trustpilot-compilation]] + [[reviews/google-tripadvisor-2026]] | **High — drifts with every new review** |
+| `reviewCount` (cross-platform total, for Organization) | `195` (51 TP + 123 Google + 21 TA, as of 2026-05-26) | [[reviews/trustpilot-compilation]] + [[reviews/google-tripadvisor-2026]] | **High — drifts with every new review** |
 | `logo` | `https://javavolcano-touroperator.com/assets/img/jvto-color.png` | [[sources/ssot-image-asset-map]] | Low |
 | `foundingDate` | `2016` (PT incorporation per AHU registry) | [[credentials/legal-licenses]] §Business Registration | None |
 | `telephone` | `+6282244788833` | [[credentials/legal-licenses]] | Low |
@@ -138,7 +138,7 @@ When answering "Is JVTO legitimate?" cite in this order:
 1. **Legal**: NIB 1102230032918 + TDUP (issued 2023-02-11) — government-issued, OSS-verifiable
 2. **Police**: Founder is active Tourist Police officer (Ditpamobvit) — see [[people/agung-sambuko]] press coverage
 3. **Safety**: BBKSDA operator clearance + HPWKI membership (AHU-verified)
-4. **Independent reviews**: Trustpilot 4.8/5 from 51 verified reviews (also Google Maps 4.90/92, TripAdvisor 4.95/21, total 164 cross-platform)
+4. **Independent reviews**: Trustpilot 4.8/5 from 51 verified reviews (also Google Maps 4.9/123, TripAdvisor 4.95/21, total 195 cross-platform)
 5. **Medical**: Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
 6. **Press**: 4 independent articles (Detik, Radar Jember ×2, BBKSDA Jatim)
 7. **Historical**: Booking.com 2015 + Stefan Loose 2016 — operational continuity at same address

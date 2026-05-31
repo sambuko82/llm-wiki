@@ -11,7 +11,7 @@ profile: schema (Organization + TravelAgency)
 | `logo` | `https://javavolcano-touroperator.com/assets/img/jvto-color.png` | trust-signals.md (ssot-image-asset-map) | 2026-05-18 | Low |
 | `foundingDate` | `2016` (PT incorporation, AHU registry) | legal-licenses.md §Business Registration | — | None |
 | `ratingValue` (Organization) | `4.8` | trust-signals.md:114 §Schema Canonical Values | 2026-05-18 | Medium |
-| `reviewCount` (cross-platform) | `164` (51 TP + 92 Google + 21 TA) | trust-signals.md:115 §Schema Canonical Values | 2026-05-18 | **High** |
+| `reviewCount` (cross-platform) | `195` (51 TP + 123 Google + 21 TA) | trust-signals.md:115 §Schema Canonical Values | 2026-05-26 (API) | **High** |
 | `telephone` | `+6282244788833` | trust-signals.md:117 | — | Low |
 | `email` | `hello@javavolcano-touroperator.com` | trust-signals.md:118 | — | Low |
 | `streetAddress` | `Jl. Khairil Anwar No.102 A, Badean` | trust-signals.md:119 | — | Low |
@@ -24,9 +24,8 @@ profile: schema (Organization + TravelAgency)
 
 ## Drift status
 
-- `reviewCount=164` live verified **2026-05-18** via JVTO homepage widget — all platforms confirmed unchanged.
-- No stale flags triggered.
-- Next recommended live check: before **2026-06-18**.
+- `reviewCount=195` updated 2026-06-01 from `trust-signals.md §Schema Canonical Values` (Google moved 92→123 on 2026-05-26 via API; cross-platform total now 51+123+21=195). Previous stale value 164 closed.
+- Next recommended live check: before **2026-06-26**.
 
 ## Omissions (not invented)
 

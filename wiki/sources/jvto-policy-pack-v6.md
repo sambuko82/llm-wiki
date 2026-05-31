@@ -10,6 +10,8 @@ pages_updated: [wiki/index, wiki/ops/package-readiness-compiler-spec, wiki/ops/p
 
 # Source: JVTO Policy Pack — 3 Customer-Facing Policies
 
+> **Canonical version note**: Canonical document version = **v5 (2026-01-17)**. Filename label `v6` is a misnomer carried from filename; **v5 is the binding text** per internal header. All consumers (master doc, trust-bundle, AEO output) treat v5 wording as authoritative.
+
 ## Metadata
 
 - **File**: `raw/JVTO_Policy_Pack_REVISED_v6_2026-01-26_3POLICIES_ONLY.md`

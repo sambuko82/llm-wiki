@@ -98,7 +98,7 @@ Source: [[sources/ijen-safety-protocol]]
 **Tumpak Sewu:**
 - Steep, wet trail with fixed ropes and handholds on canyon descent
 - Water shoes strongly recommended (grip on river rocks)
-- Helmets provided — see `> Contradiction` note in packages-overview (helmets are local site management provision, not JVTO-supplied per SSOT canonical)
+- Helmets provided by local site management (NOT a JVTO inclusion per SSOT canonical — see [[products/packages-overview]] §tumpak-sewu-caveat)
 
 **Madakaripura:**
 - Canyon approach: wading through stream, narrow passages, wet stones

@@ -100,8 +100,8 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 
 ## Products
 
-- [[products/packages-overview]] — All 16 canonical packages (12 Surabaya + 4 Bali), pricing logic, inclusions, cancellation, FOC, vehicle allocation
-- [[products/packages-full-pricing]] — Complete pricing tables for all 22 packages (15 canonical + 6 student + 1 specialty), all pax tiers
+- [[products/packages-overview]] — 15 SSOT canonical (11 Surabaya + 4 Bali) + 1 specialty = **16 commercial tour pages**. Pricing logic, inclusions, cancellation, FOC, vehicle allocation
+- [[products/packages-full-pricing]] — Complete pricing tables for all 22 priced packages (15 canonical + 1 specialty + 6 student), all pax tiers
 - [[products/packages-itineraries]] — Day-by-day itineraries for all canonical packages; recurring patterns; hotel allocation per phase
 
 ## People

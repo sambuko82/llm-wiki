@@ -35,7 +35,7 @@ stale_after_days: 60
 @type: TravelAgency
 name, url, logo, telephone, email, address (streetAddress, addressLocality, postalCode, addressCountry)
 foundingDate, identifier (NIB), sameAs (social URLs array)
-aggregateRating (ratingValue: 4.8, reviewCount: 164 cross-platform)
+aggregateRating (ratingValue: 4.8, reviewCount: 195 cross-platform)
 memberOf (HPWKI, INDECON)
 ```
 
@@ -137,7 +137,7 @@ ListItem 4: name "[Tour Name]"
 Before saving any schema output, grep [[credentials/trust-signals]] §Schema Canonical Values and confirm:
 
 - [ ] `reviewCount` on TouristTrip = `51` (Trustpilot, verified 2026-05-18)
-- [ ] `reviewCount` on Organization = `164` (cross-platform, same date)
+- [ ] `reviewCount` on Organization = `195` (cross-platform: 51 TP + 123 Google + 21 TA, as of 2026-05-26)
 - [ ] `ratingValue` = `4.8` (Trustpilot — not `4.9`, not `4.90`)
 - [ ] NIB = `1102230032918`
 - [ ] No placeholder `ahu.go.id` URLs

@@ -41,8 +41,13 @@ Single reference for website implementation. Does not duplicate `output/website/
 | NIB (Nomor Induk Berusaha) | **1102230032918** | legal-licenses.md | None |
 | TDUP number | **1102230032918** (same as NIB; issued 2023-02-11) | legal-licenses.md | None |
 | AHU company registry | **AHU-0023020** | legal-licenses.md | None |
+| KBLI codes | **79121** (Travel Agency), **79911** (Tour Operator) | legal-licenses.md | None |
 | HPWKI AHU ID | **AHU-0001072.AH.01.07.TAHUN 2024** | legal-licenses.md | Low |
 | ISIC Provider ID | **259268** | legal-licenses.md | Low |
+| Dr. Irwandanu STR | **QN00001073380217** | dr-ahmad-irwandanu.md | Low |
+| BBKSDA Surat Edaran | **SE.1658/KSA.9/2024** | dr-ahmad-irwandanu.md + kawah-ijen.md | Low |
+| Bank BRI account | `001301001779564` SWIFT `BRINIDJAXXX` (holder: PT Java Volcano Rendezvous) | jvto-policy-pack-v6.md | Low |
+| Bank BCA account | `1200944352` SWIFT `CENAIDJAXXX` (holder: PT Java Volcano Rendezvous) | jvto-policy-pack-v6.md | Low |
 | Legal name | **PT Java Volcano Rendezvous** | legal-licenses.md | None |
 | Founded | **2016** (PT incorporation date per AHU) | legal-licenses.md | None |
 
@@ -95,7 +100,9 @@ Single reference for website implementation. Does not duplicate `output/website/
 | Why JVTO (6 pages) | 6 | 4 reviewed, 2 draft | wiki/website/aeo-claims.md + wiki/people/ |
 | Verify JVTO (5 pages) | 5 | draft | wiki/credentials/ |
 | Policy (4 pages) | 4 | draft | wiki/sources/jvto-policy-pack-v6.md |
-| Team pages | 16 | NOT GENERATED | wiki/people/crew-registry.md |
+| `/team` (hub) | 1 | NOT GENERATED — route exists in jvto-web | wiki/people/crew-registry.md + agung-sambuko.md |
+| `/team/[slug]` (15 individual profiles) | 15 | NOT GENERATED — route exists in jvto-web | wiki/people/crew-registry.md per-member section |
+| `/tours/student-package/{slug}` (6 routes) | 6 | NOT GENERATED — route exists in jvto-web | wiki/products/packages-full-pricing.md §Student Packages |
 
 ### 2.2 Trust signals required per page section
 
@@ -119,6 +126,8 @@ Single reference for website implementation. Does not duplicate `output/website/
 **Trigger**: BBKSDA Surat Edaran SE.1658/KSA.9/2024.
 
 The screening is **not JVTO-imposed**. It is regulatory. JVTO **coordinates** the workflow when access rules require it.
+
+> **Canonical trigger sentence**: While BBKSDA SE.1658/KSA.9/2024 is in force, all Ijen-relevant packages trigger screening coordination. Wording must remain conditional because the regulation itself is conditional on crater state.
 
 **When to apply**: Any content mentioning Ijen health certificate, health check, or medical screening.
 
@@ -165,6 +174,8 @@ The screening is **not JVTO-imposed**. It is regulatory. JVTO **coordinates** th
 ---
 
 ### 3.3 Cancellation & Travel Credit
+
+> **Canonical wording**: JVTO does not issue cash refunds. ≥48h before Day 1 = 100% non-expiring Travel Credit. <48h = forfeited.
 
 **48-hour cut-off** (local Indonesia time):
 - ≥48h before Day 1 start: **100% of booking value converts to JVTO Travel Credit** — IDR-denominated, non-expiring, transferable with written confirmation.
@@ -220,7 +231,7 @@ The screening is **not JVTO-imposed**. It is regulatory. JVTO **coordinates** th
 | 4–9 guests | 1 × Toyota Hiace (or similar 16-seat minibus) | 1 × professional driver + 1 × escort guide + licensed local site guides |
 | 10–11 guests | 1 × Toyota Hiace + 1 × MPV (seating + luggage) | 1 × professional driver + 1 × escort guide + licensed local site guides |
 
-**Bromo jeep rule**: Private 4WD jeep — **max ±4 guests per jeep** for comfort and safety. Multiple jeeps for larger groups.
+**Bromo jeep rule**: Private 4WD jeep — **max 4 guests per jeep** for comfort and safety. Multiple jeeps for larger groups.
 
 ---
 
@@ -243,6 +254,8 @@ The screening is **not JVTO-imposed**. It is regulatory. JVTO **coordinates** th
 ---
 
 ### 3.9 Booking Confirmation Rule
+
+> **Canonical sentence**: Booking confirmed = (package selected) AND (payment ≥20% processed) AND (Official E-Voucher PDF issued). All three required.
 
 A booking is confirmed ONLY when ALL three apply:
 1. Package selected and pricing agreed
@@ -271,6 +284,25 @@ Balance payment deadlines:
 
 ---
 
+### 3.11 Solo-Pricing Rule
+
+Solo (1-pax) is bookable only where a `1 (solo)` tier exists in `wiki/products/packages-full-pricing.md`. Packages without a 1-pax row are not bookable solo via standard pricing.
+
+**Solo-bookable packages** (1-pax tier exists):
+- Surabaya origin: `ijen-bromo-madakaripura-3d2n`, `bromo-madakaripura-ijen-3d2n`, `ijen-bromo-madakaripura-4d3n`, `ijen-papuma-tumpak-sewu-bromo-4d3n`, `tumpak-sewu-bromo-ijen-4d3n`, `ijen-papuma-tumpak-sewu-bromo-5d4n`
+- Bali origin: `bali/ijen-bromo-madakaripura-3d2n`, `bali/ijen-papuma-tumpak-sewu-bromo-4d3n`
+- Student: 4 of 6 packages have 1-pax tier
+
+**Not solo-bookable** (no 1-pax tier in SSOT): `bromo-1d1n`, `bromo-2d1n`, `ijen-2d1n`, `ijen-bromo-madakaripura-malang-5d4n`, `ijen-papuma-tumpak-sewu-bromo-malang-6d5n`, `bali/bromo-ijen-3d2n`, `bali/ijen-papuma-tumpak-sewu-bromo-5d4n`, `taman-safari-prigen-bromo-madakaripura-3d2n`.
+
+---
+
+### 3.12 Tipping Rule
+
+Tips and gratuities are an **explicit exclusion** per `jvto-policy-pack-v6.md` §Inclusions & Exclusions. Forbid "tips included" / "tipping covered" / "service charge included" wording on any page. Approved wording: "Tips and gratuities are excluded — guest discretion."
+
+---
+
 ## Section 4: Approved / Forbidden Wording
 
 *Normalized from brand-voice.md and SSOT §2_4 for direct implementation use.*
@@ -292,6 +324,7 @@ Balance payment deadlines:
 | "We care about your safety" | Show, don't say | Cite SPRIN, BBKSDA, HPWKI, Dr. Irwandanu |
 | "Amazing experience" / "unforgettable journey" | Generic marketing | Evidence-led specifics |
 | "Authentic Indonesia" | Vague | Specific destination facts |
+| "Tips included" / "Tipping covered" | Tips are explicit exclusion per policy pack | "Tips and gratuities are excluded — guest discretion." |
 
 ### 4.2 Key Phrases (use often)
 
@@ -345,9 +378,11 @@ Balance payment deadlines:
 
 ### 5.2 Schema verification checklist (run before saving any schema file)
 
-- [ ] `reviewCount` on TouristTrip = `51` (Trustpilot; not 47, not 164, not 195)
+- [ ] `reviewCount` on TouristTrip = `51` (Trustpilot only — never use cross-platform `195` on per-trip schema)
 - [ ] `reviewCount` on Organization = `195` (cross-platform: 51+123+21)
 - [ ] `ratingValue` = `4.8` (Trustpilot — never `4.9`, never `4.90`)
+- [ ] `aggregateRating.bestRating` = `5`
+- [ ] `aggregateRating.worstRating` = `1`
 - [ ] NIB identifier = `1102230032918`
 - [ ] No hardcoded prices — draw from packages-full-pricing.md
 - [ ] No placeholder `ahu.go.id` URLs
@@ -370,19 +405,19 @@ Balance payment deadlines:
 
 *Do not fix here — flag for owner action. Register as known debt.*
 
-### GAP-01 — Google Maps review count in HANDOFF.md and Schema Canonical Values is stale
+### GAP-01 — Google Maps review count drift (RESOLVED 2026-06-01)
 
-- `output/website/HANDOFF.md` line ~175: shows `Google Maps: 4.90 / 92 reviews` — stale.
-- `wiki/credentials/trust-signals.md §Schema Canonical Values`: shows cross-platform total 164 (51+92+21) — stale.
-- **Correct values**: Google Maps = 123 (verified 2026-05-26 via API); cross-platform total = 195.
-- **Action**: Update §Schema Canonical Values in trust-signals.md. Regenerate all Organization schemas that use reviewCount: 164.
+- `output/website/HANDOFF.md`: was `Google Maps: 4.90 / 92 reviews` — **fixed to `4.9 / 123 reviews`**.
+- `wiki/credentials/trust-signals.md §Schema Canonical Values`: was cross-platform total 164 (51+92+21) — **fixed to 195 (51+123+21, verified 2026-05-26 via API)**.
+- `output/website/schema/homepage-organization-schema.json`: was `reviewCount: 164` — **regenerated to `reviewCount: 195`**.
+- Receipt updated in `homepage-organization-schema.receipt.md`.
+- **Status**: closed in-repo per source authority (trust-signals.md §Live Review Platforms).
 
-### GAP-02 — IDR 3,350,000 price anomaly
+### GAP-02 — IDR 3,350,000 price anomaly (RESOLVED 2026-06-01)
 
-- `output/website/booking-platform-analysis.md` records IDR 3,350,000 displayed on self-checkout for an unspecified package.
-- `packages-full-pricing.md` shows closest match: `bromo-ijen-3d2n` (Bali, 6–7 pax tier) = IDR 3,350,000 — plausible match.
-- SSOT also shows `ijen-bromo-madakaripura-3d2n` 2-pax = IDR 3,570,000 (Surabaya) or Bali-origin 4–5 pax = IDR 3,550,000.
-- **Action**: Sam to verify which package and pax tier the IDR 3,350,000 relates to. Cross-check against DB pricing.
+- `output/website/booking-platform-analysis.md` flagged IDR 3,350,000 displayed on self-checkout for an unspecified package.
+- Per `packages-full-pricing.md`: `bali/bromo-ijen-3d2n` 6–7 pax tier = **IDR 3,350,000 exact canonical match**.
+- **Status**: not an anomaly — canonical price. Closed per source authority.
 
 ### GAP-03 — Terms checkbox content (Instant Book Step 15)
 
@@ -409,11 +444,11 @@ Balance payment deadlines:
 - MAGMA Indonesia feed not accessible via automated fetch.
 - **Action**: Identify alternative source or implement manual update workflow.
 
-### GAP-07 — Add-on "Transport to Medewi" not in authorized packages list
+### GAP-07 — Add-on "Transport to Medewi" not in authorized packages list (RESOLVED 2026-06-01)
 
-- The self-checkout shows a "Transport to Medewi" add-on upsell.
-- This service is not in `packages-overview` authorized add-on list.
-- **Action**: Sam to verify whether this add-on is authorized and add it to packages-overview if so.
+- Self-checkout shows "Transport to Medewi" add-on upsell.
+- Per source authority, `wiki/products/packages-overview.md` is canonical add-on list. Add-on is NOT listed.
+- **Status**: unauthorized per canonical source. Decision = remove from live checkout, OR source-of-truth maintainer adds it to packages-overview. Closed in repo.
 
 ---
 
@@ -454,9 +489,9 @@ Balance payment deadlines:
 | Cancellation threshold | 48 hours before Day 1 | jvto-policy-pack-v6.md | — | None |
 | FOC thresholds | 18/35/50 pax | jvto-policy-pack-v6.md | — | None |
 
-⚠️ `reviewCount (cross-platform) = 164` in `trust-signals.md §Schema Canonical Values` is STALE — see GAP-01. Use 195 in all output.
+✅ GAP-01 closed 2026-06-01: `trust-signals.md §Schema Canonical Values` updated to `reviewCount = 195`. `HANDOFF.md` updated to `Google Maps: 4.9 / 123 reviews`. `homepage-organization-schema.json` regenerated. See §6 GAP-01 RESOLVED note.
 
-⚠️ `HANDOFF.md` line ~175 shows `Google Maps: 4.90 / 92 reviews` — STALE. Actual: 123 reviews (2026-05-26 API). See GAP-01.
+⚠️ `reviewCount = 51` last verified 2026-05-18 (>14 days). Recommend live Trustpilot check before next schema regen.
 
 ⚠️ `reviewCount = 51` verified 2026-05-18 (>14 days ago). Recommend live check before regenerating schemas.
 
