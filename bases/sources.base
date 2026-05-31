@@ -1,0 +1,79 @@
+filters:
+  and:
+    - file.inFolder("wiki/sources")
+    - 'type == "source"'
+
+formulas:
+  has_slug: 'if(slug, "✓", "✗")'
+  has_format: 'if(format, format, "—")'
+  ingest_date: 'if(ingested, ingested, if(published, published, last_updated))'
+  days_since_ingested: 'if(formula.ingest_date, (today() - date(formula.ingest_date)).days, "")'
+  page_count: 'if(pages_updated, pages_updated.length, 0)'
+  coverage_flag: 'if(pages_updated, if(pages_updated.length == 0, "❗ orphan", if(pages_updated.length < 3, "⚠ low", "✓ ok")), "❓ unknown")'
+  has_url: 'if(source_url || original_url, "✓", "—")'
+
+properties:
+  slug:
+    displayName: Slug
+  format:
+    displayName: Format
+  ingested:
+    displayName: Ingested
+  formula.ingest_date:
+    displayName: "Effective date"
+  formula.days_since_ingested:
+    displayName: "Days old"
+  formula.page_count:
+    displayName: "# downstream pages"
+  formula.coverage_flag:
+    displayName: Coverage
+  formula.has_slug:
+    displayName: "Slug?"
+  formula.has_url:
+    displayName: "URL?"
+
+views:
+  - type: table
+    name: "All sources"
+    order:
+      - file.name
+      - title
+      - formula.has_format
+      - formula.ingest_date
+      - formula.days_since_ingested
+      - formula.page_count
+      - formula.coverage_flag
+      - formula.has_slug
+      - formula.has_url
+    groupBy:
+      property: format
+      direction: ASC
+
+  - type: table
+    name: "Orphan / low-coverage"
+    filters:
+      and:
+        - 'formula.page_count < 3'
+    order:
+      - file.name
+      - formula.page_count
+      - formula.ingest_date
+
+  - type: table
+    name: "Missing slug field"
+    filters:
+      and:
+        - 'formula.has_slug == "✗"'
+    order:
+      - file.name
+      - title
+
+  - type: table
+    name: "Recent ingests (60d)"
+    filters:
+      and:
+        - 'formula.days_since_ingested <= 60'
+    order:
+      - formula.ingest_date
+      - file.name
+      - formula.has_format
