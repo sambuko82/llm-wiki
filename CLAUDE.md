@@ -159,14 +159,13 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Typed ingest R065 — Tango workflow PDF (JVTO website self-checkout / Instant Book flow, 18 steps, 4 pages) formally registered in manifests, source wiki page created, booking-platform-analysis.md corrected from Trip.com framing to JVTO website, 5 gaps registered. Also added `.claude/launch.json` with dev server configs for jvto-web.
+**Last completed:** Policy consolidation — `wiki/products/packages-overview` §booking-flow split into dual path (Path A Website Instant Book / Path B WhatsApp-assisted), faq-master Q15 rewritten dual-path, created `wiki/ops/policy-source-ownership.md` (9-domain canonical map + deprecated-wording guardrails), index + log updated. 3-agent audit confirmed cash-refund/Blue Fire/helmet/police-escort/ISIC-UNESCO/health-screening wording all already correct — no edits needed. Resolves R065 gap #5. Commit 53d4153.
 **Completed date:** 2026-05-31
-**Next task:** (1) Sam to issue verdicts on DQ-001 (Stefan Loose year/ISBN), DQ-002 (Madakaripura height), DQ-003 (second NIB 0220001393513) → lock DEC-001/002/003 in `raw/_manifest/decision-registry.yml`. (2) Re-run `python scripts/compile_trust.py` (no `--dry-run`) to produce first real Trust Bundle. (3) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195). (4) Update `wiki/products/packages-overview` §booking-flow to add Instant Book path (gap from R065 ingest).
-**Build status:** — no code changes this session; Trust Bundle Compiler v1 still on `feat/trust-bundle-compiler-v1`, 54/54 tests pass, real compile gated on decision locks.
+**Next task:** (1) Sam to issue verdicts on DQ-001 (Stefan Loose year/ISBN), DQ-002 (Madakaripura height), DQ-003 (second NIB 0220001393513) → lock DEC-001/002/003 in `raw/_manifest/decision-registry.yml`. (2) Re-run `python scripts/compile_trust.py` (no `--dry-run`) to produce first real Trust Bundle. (3) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195).
+**Build status:** — wiki-only changes this session, no code; Trust Bundle Compiler v1 still on `feat/trust-bundle-compiler-v1`, 54/54 tests pass, real compile gated on decision locks.
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" is stale — now 123. Fix in jvto-web.
 - Run real-data compile after Sam locks DEC-001/002/003 (currently provisional/missing) — produces `output/website/trust-bundle/*.json`.
-- **NEW**: `wiki/products/packages-overview` §booking-flow stale — Instant Book / self-checkout path undocumented (R065 gap #5)
 - **NEW**: JVTO website Terms & Conditions checkbox (Step 15) — verify it shows JVTO Travel Credit policy text (R065 gap #1)
 - **NEW**: Price anomaly IDR 3,350,000 vs SSOT — Sam to verify pax tier / discount (R065 gap #2)
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives
