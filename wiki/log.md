@@ -11,6 +11,16 @@ sources: []
 
 ---
 
+## [2026-05-31] data | Package Readiness Compiler v1 — first bundle output
+Ran the compiler with `--write` to generate the first real package-readiness bundle. No compiler logic changed — `--write` succeeded on the existing v1 code.
+
+Command: `python scripts/compile_packages.py --write --verbose`.
+Output created (3): output/products/package-readiness/package-registry.json (16 packages), gap-report.json (0 findings), _manifest.json (clean=True, canonical_package_count=16, dry_run=false, source hashes recorded).
+Files updated (1): wiki/log.md.
+
+Result: 16 packages, sitemap 12 Surabaya + 4 Bali, 0 findings (0 error / 0 warn), manifest.clean=True. v1 emits registry/gap-report/manifest only — package-pricing/itineraries/booking-compatibility deferred per v1 design. No tests added; PKG-06/11/12 not implemented this phase.
+Non-goals honored: no Trust Bundle / decision-registry / jvto-web / DB edits.
+
 ## [2026-05-31] feat | Package Readiness Compiler v1 — skeleton + dry-run
 Implemented the v1 skeleton of the Package Readiness Compiler per wiki/ops/package-readiness-compiler-spec.md. Dry-run only — no JSON written.
 
