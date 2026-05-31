@@ -11,6 +11,15 @@ sources: []
 
 ---
 
+## [2026-05-31] ops | Transformation Map — Domain→Bundle Pipeline
+Created the master transformation map so future compiler/bundle work follows one structure and completed work is not reopened.
+
+Pages created (1): wiki/ops/transformation-map.md — per-domain chain (canonical source → script → output → validator → consumer → status), bundle status table, output convention `output/<domain>/<bundle>/` (no `compiled/`), do-not-reopen section, next-wedge spec.
+Pages updated (2): wiki/index.md — added [[ops/transformation-map]] under Workflows (Meta), corrected stale Trust Bundle "blocked" status to DONE/do-not-reopen, total_pages 93→94; (this) wiki/log.md.
+
+Status recorded: Trust Bundle v1 DONE (DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web integrated) — DO NOT REOPEN. Policy Source Ownership DONE. R065 Booking Flow DONE. Package Readiness Compiler = NEXT (P1). Policy Bundle, WhatsApp Reply Intelligence, Review Proof Index, Finance Quote Helper, Global Wiki Validator = FUTURE.
+Non-goals honored: no compiler scripts, no JSON, no Trust Bundle/registry/jvto-web/DB edits.
+
 ## [2026-05-31] policy | JVTO Policy Consolidation + Stale Data Cleanup
 Updated policy sources for dual booking paths, all-inclusive/inclusions, payment, Travel Credit, health screening, natural-phenomena guarantee wording, and R065 booking-flow alignment. Added policy-source-ownership map and deprecated wording guardrails.
 
