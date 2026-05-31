@@ -159,25 +159,20 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Policy consolidation — `wiki/products/packages-overview` §booking-flow split into dual path (Path A Website Instant Book / Path B WhatsApp-assisted), faq-master Q15 rewritten dual-path, created `wiki/ops/policy-source-ownership.md` (9-domain canonical map + deprecated-wording guardrails), index + log updated. 3-agent audit confirmed cash-refund/Blue Fire/helmet/police-escort/ISIC-UNESCO/health-screening wording all already correct — no edits needed. Resolves R065 gap #5. Commit 53d4153.
+**Last completed:** Project-architecture phase — created `wiki/ops/transformation-map.md` (master domain→bundle pipeline map, output convention `output/<domain>/<bundle>/`, Trust Bundle marked DONE/do-not-reopen) and `wiki/ops/package-readiness-compiler-spec.md` (spec-only for NEXT wedge: 16-package slug list, 6 output files, 12 validation rules PKG-01–12, compiler architecture). Both merged to master (PR #2, merge 76b31c8). Also hardened `~/.claude/commands/session-close.md` (selective staging, pre-commit scope HARD GATE, project-agnostic, freshness guard).
 **Completed date:** 2026-05-31
-**Next task:** (1) Sam to issue verdicts on DQ-001 (Stefan Loose year/ISBN), DQ-002 (Madakaripura height), DQ-003 (second NIB 0220001393513) → lock DEC-001/002/003 in `raw/_manifest/decision-registry.yml`. (2) Re-run `python scripts/compile_trust.py` (no `--dry-run`) to produce first real Trust Bundle. (3) Fix stale homepage H2 review count in jvto-web (92→123 Google, total→195).
-**Build status:** — wiki-only changes this session, no code; Trust Bundle Compiler v1 still on `feat/trust-bundle-compiler-v1`, 54/54 tests pass, real compile gated on decision locks.
+**Next task:** Build `scripts/compile_packages.py` per `wiki/ops/package-readiness-compiler-spec.md` §9 — TDD (unit per parser + each PKG rule, E2E happy-path + strict-fail), then first `--dry-run` → `gap-report.json`. AWAITING EXPLICIT APPROVAL before coding.
+**Build status:** — wiki-only this session (docs/specs), no code.
 **Open items:**
-- **URGENT**: Homepage H2 "92 on Google Maps" is stale — now 123. Fix in jvto-web.
-- Run real-data compile after Sam locks DEC-001/002/003 (currently provisional/missing) — produces `output/website/trust-bundle/*.json`.
-- **NEW**: JVTO website Terms & Conditions checkbox (Step 15) — verify it shows JVTO Travel Credit policy text (R065 gap #1)
-- **NEW**: Price anomaly IDR 3,350,000 vs SSOT — Sam to verify pax tier / discount (R065 gap #2)
-- robots.txt Cloudflare/custom conflict — contradictory AI crawler directives
-- `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live source for PVMBG status
-- Stefan Loose year/ISBN — 2016 vs 2018 dispute; requires physical book check by Sam (DQ-001)
-- Madakaripura height — "tallest in Java" under reconciliation (DQ-002)
-- Second NIB 0220001393513 — verify on OSS portal (blocked on portal access) (DQ-003)
-- Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data
-- `yadnya-kasada-2026` — need Tengger calendar source
+- **URGENT**: Homepage H2 "92 on Google Maps" stale — now 123. Fix in jvto-web (not Trust-Bundle-related).
+- R065 gap #1: verify JVTO website Terms checkbox (Step 15) shows Travel Credit policy text.
+- R065 gap #2: price anomaly IDR 3,350,000 vs SSOT — folds into Package Readiness gap-report (PKG-04 pricing); Sam to verify pax tier / discount.
+- robots.txt Cloudflare/custom conflict — contradictory AI crawler directives.
+- `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live PVMBG status source.
+- Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data.
+- `yadnya-kasada-2026` — need Tengger calendar source.
 
-**Compiler v1 resolves:**
-- Duplicate TouristTrip in tour page JSON-LD schemas — `render_tourist_trip_schema` emits one TouristTrip per package_id from a single registry-driven source of truth. (Was: "deduplicate in jvto-web" — superseded by compiled output consumption.)
+**Resolved (do not reopen):** Trust Bundle v1 DONE — DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, real compile succeeded, 7 JSON outputs pushed, jvto-web `/trust` integrated. DQ-001 (Stefan Loose), DQ-002 (Madakaripura height), DQ-003 (second NIB) all resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
 
 ## Skill routing
 
