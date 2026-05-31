@@ -160,14 +160,17 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Package Readiness Compiler v1.2 — emitted the 3 deferred detail artifacts (PR #6 merged, master 775c303). Bundle now complete at 6 files: `output/products/package-readiness/{package-registry,package-pricing,package-itineraries,booking-compatibility,gap-report,_manifest}.json`. 103 pricing tiers + 57 itinerary days across 16 packages; 3 Surabaya/Bali slug collisions resolved by origin-aware section keying. PKG-01–12 complete; 17 tests pass; clean (16 packages / 0 findings / manifest.clean=True). Package Readiness wedge is now fully DONE.
-**Completed date:** 2026-05-31
-**Next task:** NOT STARTED — awaiting selection from candidate wedges (see Next-phase candidates below). No work begun.
-**Build status:** — compiler tested, 17/17 pass; no uncommitted code this session.
+**Last completed:** Obsidian Bases infrastructure — 3 PRs merged in sequence: (#7) added 7 domain dashboards in `bases/` (index, destinations, sources, products, people, credentials, ops-health) w/ null-guarded formulas; (#8) Phase B frontmatter normalization via `scripts/frontmatter_normalize.py` — added `owner: wiki-llm` + per-type `stale_after_days` (source=90, finance=30, ops=120, else=60) across 97 wiki pages + backfilled `pages_updated` for 35 source pages via reverse-link grep; (#9) fixed orphan source aliases — created umbrella `wiki/sources/backoffice-mysql.md` so the 14 downstream pages citing slug `backoffice-mysql` reach the 8 split files, back-linked the 8 splits, absorbed 7 bases linter rewrites (formatting-only). Orphan source count: 9 → 1. Normalizer idempotent (Files changed: 0).
+**Completed date:** 2026-06-01
+**Next task:** NOT STARTED — awaiting selection. Top 3 immediate candidates: (a) attribute `wiki/sources/3d-route-viewer.md` to absorbing destination pages OR mark auxiliary (final orphan); (b) delete root `BASE.base` stub (superseded by `bases/index.base`); (c) slim `wiki/index.md` (191 lines, ~10 sections replaceable by Bases embeds). Longer wedges still open below.
+**Build status:** — wiki-only (no code build). YAML parse OK on all 7 bases; normalizer idempotent.
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" stale — now 123. Fix in jvto-web (not Trust-Bundle-related).
 - R065 gap #1: verify JVTO website Terms checkbox (Step 15) shows Travel Credit policy text.
 - R065 gap #2: price anomaly IDR 3,350,000 vs SSOT — Sam to verify pax tier / discount (compiler now emits package-pricing.json for cross-check).
+- `3d-route-viewer` last orphan source — needs attribution to destinations (likely mount-bromo + kawah-ijen) or auxiliary mark.
+- Root `BASE.base` stub still present (3-line dead file; superseded but not deleted per prior phase scope).
+- `wiki/index.md` slim deferred — manual catalog still 191 lines; Bases embeds available via `bases/*.base`.
 - Package Readiness residual limits: `instant_book=True` derived from sitemap presence (not per-package checkout probe); PKG-11 count-based; full-repo wording sweep deferred to Global Validator wedge.
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives.
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live PVMBG status source.
@@ -176,7 +179,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 **Next-phase candidates (not started — pick one):** (1) Policy Bundle; (2) WhatsApp Reply Intelligence; (3) Review Proof Index; (4) Finance Quote Helper; (5) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
 
-**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle) — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
+**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle), Obsidian Bases v1 (7 dashboards), Phase B frontmatter normalization (owner / stale_after_days / pages_updated), Backoffice source alias coverage — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
 
 ## Skill routing
 
