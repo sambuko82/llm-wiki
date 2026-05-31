@@ -11,6 +11,25 @@ sources: []
 
 ---
 
+## [2026-05-31] ingest | Tango Workflow — JVTO Website Booking Flow (R065)
+
+**New file:** [[sources/tango-workflow-jvto-website-booking]] — R065. 4-page Tango screenshot PDF of JVTO website self-checkout (Instant Book) flow, 18 steps, recorded by Agung Sambuko.
+
+**Key finding:** This is the website self-checkout path — parallel to and distinct from the WhatsApp-assisted booking flow. First time this path is formally documented in wiki. [[products/packages-overview]] §booking-flow currently describes WA-only path — stale gap flagged.
+
+**Corrections applied:** [[website/booking-platform-analysis]] retitled from "Trip.com Booking Platform Workflow Analysis" to "JVTO Website Booking Flow Analysis". Sources field updated from `tango-workflow-trip-com` → `tango-workflow-jvto-website-booking`.
+
+**Gaps registered (5):**
+1. Terms checkbox content must show JVTO Travel Credit policy — needs UI audit
+2. Price anomaly: IDR 3,350,000 displayed vs SSOT reference
+3. Add-on "Transport to Medewi" not in authorised inclusions list
+4. Health screening not collected in checkout — confirm post-booking trigger
+5. packages-overview §booking-flow stale — Instant Book path undocumented
+
+**Pages updated:** `sources/tango-workflow-jvto-website-booking` (new), `website/booking-platform-analysis` (corrected), `index.md` (source added, booking-platform-analysis entry updated), `_manifest/raw-files-index.csv` (R065), `_manifest/ingest-status.csv` (R065).
+
+---
+
 ## [2026-05-31] analysis | Trip.com Booking Platform Workflow
 
 **New file:** [[website/booking-platform-analysis]] — 18-step Tango workflow on Trip.com mapped to JVTO booking flow across 5 phases (Package Selection, Add-ons, Trip Configuration, Terms & Payment, Post-Payment).

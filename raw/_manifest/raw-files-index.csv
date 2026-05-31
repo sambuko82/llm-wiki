@@ -63,3 +63,4 @@ R061,Operational Safety Management Protocol_ High-Altitude Volcanic Excursions (
 R062,backoffice/schema/full-schema.sql,sql,db-export,operations,internal,sources/backoffice-schema,ingested,Live MariaDB DDL — 210 tables — commit-safe no data
 R063,backoffice/_manifest.md,md,db-export,operations,internal,sources/backoffice-schema,ingested,Backoffice inventory + classification — 210 tables 63k rows
 R064,backoffice/csv/*.csv,csv,db-export,operations,internal_pii,sources/backoffice-finance,ingested,148 table CSVs — gitignored PII layer — feeds 8 wiki/sources/backoffice-* pages
+R065,a28a3c50-ecd0-43e6-9ebd-4d34f0aa1713.pdf,pdf,workflow-screenshot,website,internal,sources/tango-workflow-jvto-website-booking,ingested,Tango workflow screenshots — JVTO website 18-step self-checkout booking flow — image-based PDF — created by Agung Sambuko 2026-05-31
