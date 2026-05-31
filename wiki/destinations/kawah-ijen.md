@@ -2,7 +2,7 @@
 type: destination
 title: Kawah Ijen (Ijen Crater)
 last_updated: 2026-05-26
-sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, ijen-safety-resource-mapping, ijen-tourist-accidents, ijen-safety-protocol]
+sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, ijen-safety-resource-mapping, ijen-tourist-accidents, ijen-safety-protocol, 3d-route-viewer]
 aliases: [Ijen, Ijen Crater, Kawah Ijen]
 schema_type: TouristAttraction
 canonical_url: /destinations/ijen-crater

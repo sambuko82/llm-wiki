@@ -15,7 +15,7 @@ component: src/components/Route3DViewer.tsx
 page: src/app/3d/[slug]/page.tsx
 owner: wiki-llm
 stale_after_days: 90
-pages_updated: []
+pages_updated: [wiki/destinations/kawah-ijen, wiki/destinations/madakaripura, wiki/destinations/mount-bromo, wiki/destinations/papuma-beach, wiki/destinations/tumpak-sewu]
 ---
 
 # 3D Route Viewer — Mapbox Interactive Fly-Through

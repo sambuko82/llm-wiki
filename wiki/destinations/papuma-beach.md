@@ -2,7 +2,7 @@
 type: destination
 title: Papuma Beach (Pantai Papuma)
 last_updated: 2026-05-11
-sources: [ssot-v6, gpx-papuma]
+sources: [ssot-v6, gpx-papuma, 3d-route-viewer]
 aliases: [Papuma, Pantai Papuma, Papuma Beach and Cape, Tanjung Papuma]
 schema_type: TouristAttraction
 canonical_url: /destinations/papuma-beach

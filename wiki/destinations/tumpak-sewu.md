@@ -2,7 +2,7 @@
 type: destination
 title: Tumpak Sewu Waterfall (Air Terjun Tumpak Sewu)
 last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip, gpx-tumpak-sewu]
+sources: [ssot-v6, jvto-homepage-clip, gpx-tumpak-sewu, 3d-route-viewer]
 aliases: [Tumpak Sewu, Coban Sewu, Tumpak Sewu Waterfall]
 schema_type: TouristAttraction
 canonical_url: /destinations/tumpak-sewu-waterfall
