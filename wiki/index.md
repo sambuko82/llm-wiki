@@ -142,6 +142,7 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 - [[ops/compilation-profiles]] — Workflow 5: named output profiles (aeo, website-copy, faq, social, slide-deck, schema)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
 - [[ops/intake-gate]] — Workflow 7: universal raw intake gate
+- [[ops/policy-source-ownership]] — Canonical owner per policy domain (booking, payment, cancellation, inclusions, health, ISIC, police escort, anti-fraud) + deprecated-wording guardrails
 
 ## Internal Ops
 

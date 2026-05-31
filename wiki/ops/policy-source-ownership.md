@@ -1,0 +1,44 @@
+---
+type: ops
+title: Policy Source Ownership — Canonical Map
+last_updated: 2026-05-31
+sources: [jvto-policy-pack-v6, tango-workflow-jvto-website-booking]
+---
+
+# Policy Source Ownership — Canonical Map
+
+A single operating map defining which wiki file is **canonical** for each JVTO policy domain, which files support it, where it is consumed, and the constraints that keep policy wording consistent. Use this before editing any policy text: update the canonical source first, then let derived FAQ/copy follow.
+
+## Ownership Table
+
+| Policy Domain | Canonical Source | Supporting Sources | Consumers | Notes |
+|---|---|---|---|---|
+| Booking Paths | products/packages-overview.md | website/booking-platform-analysis.md, sources/tango-workflow-jvto-website-booking.md | FAQ, website, WhatsApp, checkout | Must include both Instant Book and WhatsApp-assisted flow |
+| Payment Rules | products/packages-overview.md | website/faq-master.md | checkout, invoice, FAQ | 20% deposit standard; close-departure (Day 1 within 14 days) may require full payment |
+| Cancellation / Travel Credit | products/packages-overview.md | website/faq-master.md | policy page, checkout terms, WhatsApp replies | Guest cancellation uses Travel Credit; no cash refund. ≥48h → 100% Lifetime Travel Credit; <48h → forfeited |
+| Inclusions / Exclusions | products/packages-overview.md | website/faq-master.md | package pages, FAQ, quotation | Madakaripura helmets are NOT a JVTO inclusion (local site management) |
+| Ijen Health Screening | website/faq-master.md, people/dr-ahmad-irwandanu.md | destinations/kawah-ijen.md | package pages, FAQ, WhatsApp | Conditional wording only (per BBKSDA SE.1658/KSA.9/2024); never "universally mandatory" |
+| Natural Phenomena | website/brand-voice.md | website/faq-master.md, destinations/kawah-ijen.md | package pages, CS replies | No guarantee for Blue Fire / sunrise |
+| ISIC | credentials/trust-signals.md | website/faq-master.md | student pages, FAQ | ISIC is UNESCO-endorsed; do NOT imply UNESCO endorses JVTO |
+| Police Escort | credentials/trust-signals.md | website/faq-master.md, website/brand-voice.md | group pages, FAQ | Conditional coordination only (large groups ~18+, when approved by Traffic Police) |
+| Anti-Fraud | products/packages-overview.md | website/faq-master.md | checkout, payment instructions | Use only official JVTO channels; never share full card numbers, CVV, passwords, OTP |
+
+## Operating Rules
+
+- **Do not edit generated JSON directly.** (e.g. `output/website/trust-bundle/*.json` and other compiled output — regenerate from canonical source, never hand-edit.)
+- **If policy changes, update the canonical source first, then derived FAQ/copy.** Canonical source is the single point of truth; FAQ, website copy, WhatsApp templates, and compiled output flow downstream.
+- **Do not introduce old refund/deposit wording without marking it legacy.** New copy must match current canonical wording. Legacy variants only appear if a specific dated legacy booking document requires them, and must be labelled as such.
+
+## Deprecated / Do Not Use Wording
+
+| Deprecated / wrong wording | Correct wording / rule |
+|---|---|
+| "Trip.com booking flow" (for R065) | Use "JVTO website self-checkout flow" or "JVTO Website Booking Flow". Historical "Trip.com" mentions in `wiki/log.md` are audit-trail only — not canonical source/policy wording. |
+| "18+ page PDF" | "4 PDF pages, 18 Tango steps" |
+| "Blue Fire guaranteed" | Never use. "Blue Fire is a natural phenomenon subject to weather and gas activity — not guaranteed." |
+| "Sunrise guaranteed" | Never use. Weather and natural conditions are outside JVTO's control. |
+| "Madakaripura helmet included by JVTO" | Never use. Helmets are provided by the local waterfall site management at the canyon entrance — not a JVTO inclusion. |
+| "Police escort included by default" | Never use. JVTO can coordinate an official police escort for eligible large groups / certain segments, subject to Traffic Police approval. |
+| "UNESCO endorses JVTO via ISIC" | Never use. ISIC itself is UNESCO-endorsed; this does not mean UNESCO endorses JVTO. |
+| "Cash refund available for guest-initiated cancellation" | Do not use unless a specific legacy booking document says so. Canonical policy: Travel Credit, no cash refund. |
+| "50% cancellation fee (<48h)" | Never use. Canonical: 100% forfeiture if <48h. Stale "50% fee" survives only in `raw/db_export_raw.json` (read-only source export). |

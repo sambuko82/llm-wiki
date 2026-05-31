@@ -1,8 +1,8 @@
 ---
 type: website
 title: JVTO FAQ Master — 20 Canonical Answers
-last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip]
+last_updated: 2026-05-31
+sources: [ssot-v6, jvto-homepage-clip, tango-workflow-jvto-website-booking]
 faq_count: 20
 schema_ready: yes
 ---
@@ -21,7 +21,7 @@ Voice invariants in effect — health-related FAQs (Q6, Q7) use conditional Ijen
 Before and during your tour, JVTO's official channels are WhatsApp (primary, +62 822 4478 8833) and email (hello@javavolcano-touroperator.com). These details appear on your E-Voucher and Confirmation. WhatsApp is the fastest channel for real-time logistics.
 
 **Q15. How do I book and confirm a tour?**
-The usual steps: (1) send your dates, origin (Surabaya or Bali), group size, and preferred route to JVTO via WhatsApp. (2) JVTO sends a tailored proposal with itinerary and price quotation for your group size. (3) You confirm; JVTO issues a payment link. (4) After deposit (20% standard), you receive an E-Voucher with full trip details and pre-trip guide. (5) Private pick-up at confirmed time on Day 1. See [[products/packages-overview]] §booking-flow.
+There are two official booking paths. **Option 1 — Website Instant Book:** for standard available packages and dates, choose your package on javavolcano-touroperator.com, select date and travelers, click Instant Book, review price and add-ons, accept the Terms & Cancellation Policy, and complete payment; JVTO then follows up with your confirmation / E-Voucher. **Option 2 — WhatsApp-assisted booking:** for custom routes, group arrangements, complex pickup/drop-off, or special requests, send your dates, origin, group size, and requirements to JVTO via WhatsApp; JVTO confirms availability and price, sends a secure payment link, and issues your E-Voucher. Either way, a deposit (20% standard) confirms the booking, and you receive an E-Voucher with full trip details after payment. You can always use WhatsApp if you prefer assisted booking. See [[products/packages-overview]] §booking-flow.
 
 **Q16. How do payments, deposits and deadlines work?**
 Standard deposit is 20% of total booking value (card via secure JVTO link). If Day 1 is within 14 days, up to 100% full payment may be required. Card balance is due no later than 5 days before Day 1; bank wire/Wise balance no later than 3 days before. Cash at JVTO office only if approved in writing. See [[products/packages-overview]] §payment-rules.

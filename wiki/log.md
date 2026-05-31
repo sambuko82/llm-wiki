@@ -11,6 +11,14 @@ sources: []
 
 ---
 
+## [2026-05-31] policy | JVTO Policy Consolidation + Stale Data Cleanup
+Updated policy sources for dual booking paths, all-inclusive/inclusions, payment, Travel Credit, health screening, natural-phenomena guarantee wording, and R065 booking-flow alignment. Added policy-source-ownership map and deprecated wording guardrails.
+
+Pages created (1): wiki/ops/policy-source-ownership.md — canonical owner per policy domain + deprecated-wording table.
+Pages updated (3): wiki/products/packages-overview.md — §booking-flow split into Path A (Website Instant Book) + Path B (WhatsApp-assisted); wiki/website/faq-master.md — Q15 rewritten to dual-path; wiki/index.md — ops reference added.
+
+Audit note: 3-agent sweep confirmed booking-platform-analysis, cash-refund/Travel-Credit, Blue Fire/sunrise, Madakaripura helmet, police-escort, ISIC/UNESCO, INDECON/HPWKI ("HPI" = zero matches), and Ijen health-screening wording all already correct — no edits required. Stale "Trip.com" survives only in this log's history (audit trail, left unchanged per append-only) and a raw/ snapshot; stale "50% fee" only in raw/db_export_raw.json. Both now guarded by the deprecated-wording section. Q14/Q16/Q17 left untouched (already correct).
+
 ## [2026-05-31] ingest | Tango Workflow — JVTO Website Booking Flow (R065)
 
 **New file:** [[sources/tango-workflow-jvto-website-booking]] — R065. 4-page Tango screenshot PDF of JVTO website self-checkout (Instant Book) flow, 18 steps, recorded by Agung Sambuko.

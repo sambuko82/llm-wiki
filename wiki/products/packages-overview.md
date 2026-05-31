@@ -1,8 +1,8 @@
 ---
 type: product
 title: JVTO Tour Packages Overview
-last_updated: 2026-05-26
-sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, google-maps-reviews-api-2026, trustpilot-reviews-2026]
+last_updated: 2026-05-31
+sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, google-maps-reviews-api-2026, trustpilot-reviews-2026, tango-workflow-jvto-website-booking]
 canonical_package_count: 16
 ---
 
@@ -156,14 +156,34 @@ Some packages also have a `1 pax` solo tier (single-occupancy supplement).
 
 **Bromo 4WD Jeep**: max ≈4 guests per jeep for comfort and safety; additional jeeps arranged for larger groups.
 
-## Booking Flow (6 steps)
+## Booking Flow
 
-1. **Inquiry via WhatsApp** — message +6282244788833 with dates, group size, preferred package
-2. **Package confirmation** — confirm package slug, pick-up point, special requirements
-3. **Price quotation** — confirmed per pricing table for your group size
-4. **Deposit payment** — 20% of total, card only via JVTO secure checkout
-5. **Voucher issuance** — e-voucher issued with full trip details; pre-trip guide shared
-6. **Tour execution** — private pick-up at confirmed time; full itinerary per voucher
+JVTO offers **two official booking paths**. Both are direct JVTO channels — see also -> [[website/booking-platform-analysis]] and source -> [[sources/tango-workflow-jvto-website-booking]].
+
+### Booking Path A — Website Instant Book / Self-Checkout
+
+1. Choose package from the website package listing or a package detail page
+2. Select travel date
+3. Select number of travelers
+4. Click **Instant Book** when available
+5. Review package price and available add-ons
+6. Continue to Trip Confirmation
+7. Enter or review traveler / contact details
+8. Review payment
+9. Accept Terms & Conditions / Cancellation Policy
+10. Complete payment
+11. Receive booking / order confirmation; JVTO then follows up with confirmation / e-voucher details
+
+### Booking Path B — WhatsApp-Assisted Booking
+
+1. Send dates, origin, destination/package, group size, and special requirements via official WhatsApp (+6282244788833)
+2. JVTO confirms route, availability, price, pickup/drop-off, and any custom details
+3. JVTO sends a secure payment link or payment instruction
+4. Guest pays the standard deposit or required amount based on departure date (see §Payment Rules)
+5. JVTO issues confirmation / e-voucher
+6. JVTO coordinates final pickup and pre-trip details
+
+> **Which path?** Website Instant Book is best for standard available packages and dates. WhatsApp-assisted booking is best for custom routes, group arrangements, complex pickup/drop-off, or special requests.
 
 ## Payment Rules
 
