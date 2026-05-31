@@ -1,15 +1,13 @@
 filters:
   and:
     - file.inFolder("wiki")
-    - 'file.ext == "md"'
-
+    - file.ext == "md"
 formulas:
-  days_since_update: 'if(last_updated, (today() - date(last_updated)).days, "")'
-  stale_threshold: 'if(stale_after_days, stale_after_days, 60)'
-  is_stale: 'if(last_updated, (today() - date(last_updated)).days > formula.stale_threshold, false)'
-  stale_flag: 'if(formula.is_stale, "⚠️ stale", "✓")'
-  source_count: 'if(sources, sources.length, 0)'
-
+  days_since_update: if(last_updated, (today() - date(last_updated)).days, "")
+  stale_threshold: if(stale_after_days, stale_after_days, 60)
+  is_stale: if(last_updated, (today() - date(last_updated)).days > formula.stale_threshold, false)
+  stale_flag: if(formula.is_stale, "⚠️ stale", "✓")
+  source_count: if(sources, sources.length, 0)
 properties:
   type:
     displayName: Type
@@ -18,15 +16,17 @@ properties:
   last_updated:
     displayName: Updated
   formula.days_since_update:
-    displayName: "Days old"
+    displayName: Days old
   formula.stale_flag:
     displayName: Status
   formula.source_count:
     displayName: "# sources"
-
 views:
   - type: table
-    name: "All wiki pages"
+    name: All wiki pages
+    groupBy:
+      property: type
+      direction: ASC
     order:
       - file.name
       - type
@@ -35,37 +35,31 @@ views:
       - formula.days_since_update
       - formula.stale_flag
       - formula.source_count
-    groupBy:
-      property: type
-      direction: ASC
-
   - type: table
-    name: "Stale queue"
+    name: Stale queue
     filters:
       and:
-        - 'formula.is_stale == true'
+        - formula.is_stale == true
     order:
       - file.name
       - type
       - last_updated
       - formula.days_since_update
-
   - type: cards
-    name: "Gallery by type"
+    name: Gallery by type
+    groupBy:
+      property: type
+      direction: ASC
     order:
       - file.name
       - title
       - type
       - formula.stale_flag
-    groupBy:
-      property: type
-      direction: ASC
-
   - type: table
-    name: "Recently updated (30d)"
+    name: Recently updated (30d)
     filters:
       and:
-        - 'formula.days_since_update <= 30'
+        - formula.days_since_update <= 30
     order:
       - last_updated
       - file.name

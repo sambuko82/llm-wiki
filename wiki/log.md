@@ -13,6 +13,18 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-01] ops | fix backoffice source alias coverage
+Created umbrella source `wiki/sources/backoffice-mysql.md` and back-linked the 8 split files so downstream pages keep the existing `backoffice-mysql` citation while the orphan filter in [[bases/sources.base]] now sees the splits as covered.
+
+Files created (1): `wiki/sources/backoffice-mysql.md` — frontmatter (type=source, slug=backoffice-mysql, owner=wiki-llm, stale_after_days=90, ingested=2026-05-25, format=mysql) + `pages_updated` of 14 (auto-derived: 8 splits + 6 downstream consumers).
+
+Files updated (8): `wiki/sources/backoffice-{bookings-ops,finance,master-data,pricing,schema,staff,vendors,whatsapp}.md` — single-line change, `pages_updated: []` → `pages_updated: [wiki/sources/backoffice-mysql]`. No body edits.
+
+Bases formatting absorbed (7): `bases/{credentials,destinations,index,ops-health,people,products,sources}.base` — pre-existing dirty state from Obsidian canonicalizer (quote stripping + blank-line collapse). Diff was semantic-equivalent; committed to clear working tree.
+
+Orphan count: 9 → 1 (`3d-route-viewer.md` remains, deferred). Idempotency: `python scripts/frontmatter_normalize.py` → `Files changed: 0` still holds (umbrella created with required fields; 8 splits already had owner+stale_after_days, only pages_updated changed value).
+
+
 ## [2026-06-01] ops | Phase B — frontmatter normalization
 Normalized frontmatter across all 97 `wiki/**/*.md` pages via `scripts/frontmatter_normalize.py`. Added `owner: wiki-llm` + `stale_after_days` (per-type defaults: source=90, finance=30, ops=120, else=60) to every page missing them. Backfilled `pages_updated` on all 43 source pages via deterministic reverse-link grep across all `sources:` frontmatter arrays. Body content untouched.
 

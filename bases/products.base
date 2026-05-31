@@ -1,26 +1,23 @@
 filters:
   and:
     - file.inFolder("wiki/products")
-    - 'type == "product"'
-
+    - type == "product"
 formulas:
-  pkg_count_display: 'if(canonical_package_count, canonical_package_count.toString() + " pkg", "—")'
-  days_since_update: 'if(last_updated, (today() - date(last_updated)).days, "")'
-  source_count: 'if(sources, sources.length, 0)'
-
+  pkg_count_display: if(canonical_package_count, canonical_package_count.toString() + " pkg", "—")
+  days_since_update: if(last_updated, (today() - date(last_updated)).days, "")
+  source_count: if(sources, sources.length, 0)
 properties:
   canonical_package_count:
     displayName: "# packages"
   formula.pkg_count_display:
     displayName: Packages
   formula.days_since_update:
-    displayName: "Days old"
+    displayName: Days old
   formula.source_count:
     displayName: "# sources"
-
 views:
   - type: table
-    name: "Product pages"
+    name: Product pages
     order:
       - file.name
       - title
@@ -28,9 +25,8 @@ views:
       - formula.source_count
       - last_updated
       - formula.days_since_update
-
   - type: cards
-    name: "Product cards"
+    name: Product cards
     order:
       - file.name
       - title
