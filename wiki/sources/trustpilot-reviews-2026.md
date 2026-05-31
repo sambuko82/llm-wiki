@@ -6,6 +6,9 @@ slug: trustpilot-reviews-2026
 published: 2026-05-09
 source_url: https://www.trustpilot.com/review/javavolcano-touroperator.com
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index, wiki/people/crew-registry, wiki/products/packages-overview, wiki/reviews/google-tripadvisor-2026, wiki/reviews/review-patterns, wiki/reviews/trustpilot-compilation, wiki/website/query-hero-claim]
 ---
 
 # Trustpilot Review Page Clip — 51 Reviews (May 2026)

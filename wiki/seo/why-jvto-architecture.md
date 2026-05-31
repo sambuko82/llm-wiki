@@ -3,6 +3,8 @@ type: seo
 title: Why JVTO — Hub & Spoke Architecture Reference
 last_updated: 2026-05-24
 sources: [digital-trust-fortress-blueprint, why-jvto-trust-architecture]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Why JVTO — Hub & Spoke Architecture Reference

@@ -4,6 +4,8 @@ title: JVTO Press & Media Coverage
 last_updated: 2026-05-16
 sources: [detik-polpar-2021, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-v6, ssot-image-asset-map]
 claims_supported: [C1, C5, C9]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Press & Media Coverage

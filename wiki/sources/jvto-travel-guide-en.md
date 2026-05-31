@@ -3,6 +3,9 @@ type: source
 title: JVTO Travel Guide — Publishable EN Website Copy (2026-01-19)
 last_updated: 2026-05-12
 sources: [jvto-travel-guide-en]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index, wiki/whatsapp/canned-responses]
 ---
 
 # Source: JVTO Travel Guide — Full English Website Copy

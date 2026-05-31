@@ -3,6 +3,9 @@ type: source
 title: JVTO Rate Cards (Finance)
 last_updated: 2026-05-25
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/finance/custom-tour-builder, wiki/finance/package-costs, wiki/finance/profit-analysis, wiki/finance/rate-cards, wiki/index]
 ---
 
 # Finance Rate Cards

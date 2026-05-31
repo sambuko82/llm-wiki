@@ -3,6 +3,8 @@ type: finance
 title: JVTO Package Cost Breakdown
 last_updated: 2026-05-25
 sources: [finance-rate-cards, db-export-2026-05]
+owner: wiki-llm
+stale_after_days: 30
 ---
 
 # Package Cost Breakdown

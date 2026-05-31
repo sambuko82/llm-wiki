@@ -3,6 +3,9 @@ type: source
 title: Tango Workflow — JVTO Website Booking Flow
 last_updated: 2026-05-31
 sources: [packages-overview, faq-master, ssot-v6]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index, wiki/ops/policy-source-ownership, wiki/products/packages-overview, wiki/website/booking-platform-analysis, wiki/website/faq-master]
 ---
 
 # Tango Workflow — JVTO Website Booking Flow

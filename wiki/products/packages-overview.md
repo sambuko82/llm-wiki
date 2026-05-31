@@ -4,6 +4,8 @@ title: JVTO Tour Packages Overview
 last_updated: 2026-05-31
 sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, google-maps-reviews-api-2026, trustpilot-reviews-2026, tango-workflow-jvto-website-booking]
 canonical_package_count: 16
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Tour Packages Overview

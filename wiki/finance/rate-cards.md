@@ -3,6 +3,8 @@ type: finance
 title: JVTO Rate Cards — Cost Component Reference
 last_updated: 2026-05-26
 sources: [finance-rate-cards, backoffice-mysql]
+owner: wiki-llm
+stale_after_days: 30
 ---
 
 # Rate Cards

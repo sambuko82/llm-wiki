@@ -3,6 +3,8 @@ type: reviews
 title: Review Patterns & Themes
 last_updated: 2026-05-26
 sources: [ssot-v6, jvto-homepage-clip, google-maps-reviews-api-2026, trustpilot-reviews-2026]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Review Patterns & Themes

@@ -3,6 +3,8 @@ type: ops
 title: Universal Raw Intake Gate — Classification & Routing System
 last_updated: 2026-05-26
 sources: []
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Universal Raw Intake Gate

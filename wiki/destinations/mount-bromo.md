@@ -10,6 +10,8 @@ ijen_relevant: no
 health_wording_mode: none
 geo_bbox: { minlat: -7.93998, minlon: 112.95277, maxlat: -7.9217, maxlon: 112.9635 }
 route_viewer_url: /3d/mount-bromo
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Mount Bromo

@@ -7,6 +7,8 @@ platform: Trustpilot
 rating: 4.8
 review_count: 51
 last_verified: 2026-05-18
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Trustpilot Reviews — Full Structured Catalog

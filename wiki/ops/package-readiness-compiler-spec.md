@@ -3,6 +3,8 @@ type: ops
 title: Package Readiness Compiler — Implementation Spec
 last_updated: 2026-05-31
 sources: [db-export-2026-05, sitemap-2026-05, route-data-csv, jvto-policy-pack-v6]
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Package Readiness Compiler — Implementation Spec

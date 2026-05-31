@@ -7,6 +7,9 @@ published: 2021-03-14
 source_url: https://news.detik.com/berita-jawa-timur/d-5492690/suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin
 author: Chuk Shatu Widarsha
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/police-integration, wiki/credentials/press-coverage, wiki/index, wiki/people/agung-sambuko]
 ---
 
 # Detik.com — "Suka Duka Polisi Pariwisata Bondowoso" (March 2021)

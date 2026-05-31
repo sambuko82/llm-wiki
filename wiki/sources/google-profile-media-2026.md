@@ -8,6 +8,9 @@ platform: google-maps
 media_count: 87
 photos: 79
 videos: 8
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index]
 ---
 
 # Google Business Profile Media — 87 Items

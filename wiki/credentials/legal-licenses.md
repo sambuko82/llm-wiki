@@ -3,6 +3,8 @@ type: credential
 title: JVTO Legal Licenses & Verifiable Credentials
 last_updated: 2026-05-26
 sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map, ijen-safety-protocol, jvto-verification-dossier]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Legal Licenses & Verifiable Credentials

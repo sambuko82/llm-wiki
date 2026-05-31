@@ -3,6 +3,8 @@ type: ops
 title: Transformation Map — Domain → Bundle Pipeline
 last_updated: 2026-05-31
 sources: []
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Transformation Map — Domain → Bundle Pipeline

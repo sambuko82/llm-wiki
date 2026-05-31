@@ -3,6 +3,8 @@ type: overview
 title: Operations Log
 last_updated: 2026-05-26
 sources: []
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Wiki Operations Log
@@ -10,6 +12,18 @@ sources: []
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
 
 ---
+
+## [2026-06-01] ops | Phase B — frontmatter normalization
+Normalized frontmatter across all 97 `wiki/**/*.md` pages via `scripts/frontmatter_normalize.py`. Added `owner: wiki-llm` + `stale_after_days` (per-type defaults: source=90, finance=30, ops=120, else=60) to every page missing them. Backfilled `pages_updated` on all 43 source pages via deterministic reverse-link grep across all `sources:` frontmatter arrays. Body content untouched.
+
+Inserts: owner=97, stale_after_days=97, pages_updated=43. Files changed: 97. No frontmatter losses.
+
+Orphan sources surfaced (9 — 0 reverse links): backoffice-bookings-ops, backoffice-finance, backoffice-master-data, backoffice-pricing, backoffice-schema, backoffice-staff, backoffice-vendors, backoffice-whatsapp, 3d-route-viewer. Backoffice batch never referenced by individual slug in downstream pages — backoffice-extraction.md uses meta-slug `backoffice-mysql`. Either rewire `wiki/internal-ops/backoffice-extraction.md` to cite all 8 by slug, or extend reverse-link logic to handle meta-slug aliases. Deferred.
+
+Top reverse-link counts: ssot-v6=28, db-export-2026-05=12, guardian-authority-framework-2026-05=10, seo-audit-2026-05=9, ssot-image-asset-map=8.
+
+Verification: dry-run + apply both ran without write errors; `git diff --stat` = 97 wiki files modified; spot-check ssot-v6.md + transformation-map.md confirms only frontmatter block changed.
+
 
 ## [2026-06-01] ops | add Obsidian Bases domain dashboards
 Added 7 `.base` files in new `bases/` folder (`index`, `destinations`, `sources`, `products`, `people`, `credentials`, `ops-health`). All formulas null-guarded against missing frontmatter — works with current data, no normalization required. Coverage: `wiki/**` only. Root `BASE.base` stub kept untouched. `wiki/index.md` gained a Live Bases section linking the 7 dashboards.

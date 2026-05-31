@@ -11,6 +11,8 @@ health_wording_mode: none
 nickname: Java's Niagara
 geo_bbox: { minlat: -8.23184, minlon: 112.91781, maxlat: -8.23028, maxlon: 112.91997 }
 route_viewer_url: /3d/tumpak-sewu-waterfall
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Tumpak Sewu Waterfall

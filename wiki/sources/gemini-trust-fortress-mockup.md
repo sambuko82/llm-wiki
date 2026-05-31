@@ -3,6 +3,9 @@ type: source
 title: Gemini Code Output — Digital Trust Fortress HTML Mockup
 last_updated: 2026-05-25
 sources: [gemini-code-1779633053483.html]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index]
 ---
 
 # Gemini Code Output — Digital Trust Fortress Mockup

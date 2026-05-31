@@ -3,6 +3,9 @@ type: source
 title: GPX Trail Data — AllTrails Recordings for 5 Destinations
 last_updated: 2026-05-25
 sources: [Kawah_Ijen_Volcano.gpx, Gunung_Bromo.gpx, Air_Terjun_Tumpak_Sewu.gpx, Madakaripura_Waterfalls.gpx, Pantai_dan_Tanjung_Papuma.gpx]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index]
 ---
 
 # GPX Trail Data — AllTrails Recordings

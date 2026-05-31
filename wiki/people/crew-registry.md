@@ -6,6 +6,8 @@ sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, google-maps-revi
 total_crew: 14
 guides: 7
 drivers: 7
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Crew Registry

@@ -7,6 +7,9 @@ raw_files:
   - "raw/JVTO SSOT Image Asset Map.md"
   - "raw/JVTO SSOT Image Inventory.md"
   - raw/jvto_image_asset_map.json
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/legal-licenses, wiki/credentials/medical-screening, wiki/credentials/police-integration, wiki/credentials/press-coverage, wiki/credentials/trust-signals, wiki/index, wiki/people/agung-sambuko, wiki/people/crew-registry]
 ---
 
 # JVTO Image Asset Map — 54 Images Across 14 Groups

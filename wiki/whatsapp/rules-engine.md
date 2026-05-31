@@ -3,6 +3,8 @@ type: whatsapp
 title: JVTO WhatsApp Rules Engine
 last_updated: 2026-05-14
 sources: [2026-05-14-whatsapp-operations-playbook, wa-pro-crm-api]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO WhatsApp Rules Engine

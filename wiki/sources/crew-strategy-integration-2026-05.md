@@ -3,6 +3,9 @@ type: source
 title: Crew HR Integration — Why JVTO Strategy
 last_updated: 2026-05-24
 sources: [db-export-2026-05]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index]
 ---
 
 # Crew HR Integration — Why JVTO Strategy

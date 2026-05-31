@@ -3,6 +3,8 @@ type: seo
 title: SEO Strategy — Keyword Targets & Content Silos
 last_updated: 2026-05-17
 sources: [seo-audit-2026-05, guardian-authority-framework-2026-05]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # SEO Strategy

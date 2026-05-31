@@ -5,6 +5,8 @@ last_updated: 2026-05-31
 sources: [ssot-v6, jvto-homepage-clip, tango-workflow-jvto-website-booking]
 faq_count: 20
 schema_ready: yes
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO FAQ Master

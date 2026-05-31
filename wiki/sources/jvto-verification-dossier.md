@@ -9,6 +9,9 @@ visibility: public
 raw_file: "raw/JVTO_Verification_Dossier.pdf"
 evidence_weight: 8
 claims_supported: [C1, C2, C3, C4, C5, C6, C7, C8, C9]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/legal-licenses, wiki/index]
 ---
 
 # JVTO Verification Dossier

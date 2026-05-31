@@ -3,6 +3,8 @@ type: ops
 title: Ingestion Profiles — Workflow 4
 last_updated: 2026-05-25
 sources: [llm-kb-tooling-guide]
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Ingestion Profiles

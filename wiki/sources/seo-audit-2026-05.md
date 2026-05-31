@@ -3,6 +3,9 @@ type: source
 title: JVTO SEO Audit — May 2026
 last_updated: 2026-05-17
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/permit-requirements, wiki/credentials/trust-signals, wiki/ops/compilation-profiles, wiki/seo/competitors, wiki/seo/geo-aeo-strategy, wiki/seo/redirect-map, wiki/seo/seo-strategy, wiki/website/brand-voice, wiki/website/schema-templates]
 ---
 
 # SEO Audit — May 2026

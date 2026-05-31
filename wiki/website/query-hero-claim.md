@@ -4,6 +4,8 @@ title: Query — Hero Claim for Price-Skeptical Solo Traveler
 last_updated: 2026-05-12
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026]
 query: "What single trust claim should anchor the homepage hero for a price-skeptical first-time solo traveler?"
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Query: Hero Claim for Price-Skeptical Solo Traveler

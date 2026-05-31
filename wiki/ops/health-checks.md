@@ -3,6 +3,8 @@ type: ops
 title: Health Checks — Workflow 6
 last_updated: 2026-05-11
 sources: [llm-kb-tooling-guide]
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Health Checks

@@ -4,6 +4,8 @@ title: JVTO WhatsApp Operations Playbook
 last_updated: 2026-05-14
 sources: [jvto-homepage-clip, ssot-v6, jvto-policy-pack-v6, db-export-2026-05, operational-facts, wa-pro-crm-api]
 companion: 2026-05-14-whatsapp-rules-engine
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO WhatsApp Operations Playbook

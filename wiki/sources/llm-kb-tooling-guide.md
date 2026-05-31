@@ -3,6 +3,9 @@ type: source
 title: LLM Knowledge Base Tooling Guide (Karpathy-Inspired Patterns)
 last_updated: 2026-05-11
 sources: [llm-kb-tooling-guide]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index, wiki/ops/compilation-profiles, wiki/ops/health-checks, wiki/ops/ingestion-profiles]
 ---
 
 # LLM Knowledge Base Tooling Guide

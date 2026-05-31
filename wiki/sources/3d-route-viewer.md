@@ -13,6 +13,9 @@ feature_url_pattern: /3d/{slug}
 branch: design/sam
 component: src/components/Route3DViewer.tsx
 page: src/app/3d/[slug]/page.tsx
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: []
 ---
 
 # 3D Route Viewer — Mapbox Interactive Fly-Through

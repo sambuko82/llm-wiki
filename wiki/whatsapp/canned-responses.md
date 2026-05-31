@@ -4,6 +4,8 @@ title: JVTO Canned Responses — WhatsApp & Email Scripts per Stage
 last_updated: 2026-05-19
 sources: [comm-management-theory, jvto-policy-pack-v6, jvto-travel-guide-en, ssot-v6]
 companion: 2026-05-14-whatsapp-operations-playbook
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Canned Responses

@@ -7,6 +7,8 @@ role: Medical Officer — Ijen Health-Screening Coordination
 schema_id: "/#dr-ahmad-irwandanu"
 schema_type: Person
 health_wording_mode: conditional
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Dr. Ahmad Irwandanu

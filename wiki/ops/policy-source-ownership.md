@@ -3,6 +3,8 @@ type: ops
 title: Policy Source Ownership — Canonical Map
 last_updated: 2026-05-31
 sources: [jvto-policy-pack-v6, tango-workflow-jvto-website-booking]
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Policy Source Ownership — Canonical Map
