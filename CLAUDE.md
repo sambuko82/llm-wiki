@@ -160,16 +160,19 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Closed final source orphan + removed dead root stub (PR #10 merged, master `44e47dc`). Attributed `wiki/sources/3d-route-viewer.md` to the 5 destinations its Mapbox 3D fly-through powers (kawah-ijen, mount-bromo, madakaripura, papuma-beach, tumpak-sewu); single-line `sources:` array append per destination + `pages_updated` populated on the source — no body edits. Deleted root `BASE.base` (3-line dead stub superseded by `bases/index.base`). Orphan source count: **1 → 0**. Normalizer idempotent (`Files changed: 0`). Obsidian Bases arc fully complete: 7 dashboards + frontmatter normalize + alias fix + orphan close.
+**Last completed:** Website Context Consolidation v1 — created `wiki/website/website-context-master.md` (single implementation reference: working values, 10 business logic rules, forbidden/approved wording, schema requirements, trust signal matrix C1–C9 × page section, 7 open gaps), 5 new Extended Trust Bundle JSON exports (`products.json` / `policies.json` / `destinations.json` / `people.json` / `operational.json` covering 22 packages + full policy logic + 5 destinations + 14 crew + 23 hotels), and `bases/website-readiness.base` (type-filtered dashboard with `days_since_update` formula, stale flag, 4 views). Drift discovered: `trust-signals.md §Schema Canonical Values` shows cross-platform reviewCount=164 but real total is **195** (Google moved 92→123 on 2026-05-26) — flagged as GAP-01 in master doc. Commit `c772f82` on master.
 **Completed date:** 2026-06-01
-**Next task:** NOT STARTED — awaiting selection. Top remaining low-touch candidates: (a) slim `wiki/index.md` (still 191 lines manual catalog; ~10 sections replaceable by `![[bases/*.base#view]]` embeds); (b) pick a wedge — Policy Bundle / WhatsApp Reply Intelligence / Review Proof Index / Finance Quote Helper / Global Wiki Validator (priority order in `wiki/ops/transformation-map.md`).
-**Build status:** — wiki-only (no code build). Bases YAML still valid; normalizer idempotent; 0 orphan sources.
+**Next task:** Fix GAP-01 drift — update `wiki/credentials/trust-signals.md §Schema Canonical Values` so `reviewCount (cross-platform total)` = **195** (was 164) and per-row Google math reflects 123 (was 92); regenerate `output/website/schema/homepage-organization-schema.json` and any `output/website/schema/*.json` containing `reviewCount: 164`. Update `output/website/HANDOFF.md` line ~175 (`Google Maps: 4.90 / 92 reviews` → `4.9 / 123 reviews`).
+**Build status:** — wiki-only (no code build). All 5 new JSON files validate as valid JSON; `website-readiness.base` YAML valid (4 views, 4 formulas).
 **Open items:**
-- **URGENT**: Homepage H2 "92 on Google Maps" stale — now 123. Fix in jvto-web (not Trust-Bundle-related).
-- R065 gap #1: verify JVTO website Terms checkbox (Step 15) shows Travel Credit policy text.
-- R065 gap #2: price anomaly IDR 3,350,000 vs SSOT — Sam to verify pax tier / discount (compiler now emits package-pricing.json for cross-check).
-- `wiki/index.md` slim deferred — manual catalog still 191 lines; Bases embeds available via `bases/*.base`.
-- Package Readiness residual limits: `instant_book=True` derived from sitemap presence (not per-package checkout probe); PKG-11 count-based; full-repo wording sweep deferred to Global Validator wedge.
+- **URGENT GAP-01**: `trust-signals.md §Schema Canonical Values` shows stale cross-platform reviewCount=164. Real value = 195 (51+123+21). Update + regenerate Organization schemas + fix HANDOFF.md.
+- **URGENT GAP-05**: Homepage H2 "92 on Google Maps" stale — now 123. Fix in jvto-web.
+- R065 gap: verify JVTO website Terms checkbox (Step 15) shows Travel Credit policy text.
+- R065 gap: price anomaly IDR 3,350,000 — Sam to verify pax tier (possible match: `bali-bromo-ijen-3d2n` 6–7 pax).
+- Health screening trigger missing from self-checkout flow for Ijen-relevant packages.
+- "Transport to Medewi" add-on shown on checkout — not in packages-overview authorized list.
+- `wiki/index.md` slim deferred — manual catalog now 196 lines; Bases embeds available via `bases/*.base`.
+- Package Readiness residual limits: `instant_book=True` derived from sitemap presence; PKG-11 count-based; full-repo wording sweep deferred to Global Validator wedge.
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives.
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live PVMBG status source.
 - Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data.
@@ -177,7 +180,7 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 **Next-phase candidates (not started — pick one):** (1) Policy Bundle; (2) WhatsApp Reply Intelligence; (3) Review Proof Index; (4) Finance Quote Helper; (5) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
 
-**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle), Obsidian Bases v1 (7 dashboards), Phase B frontmatter normalization (owner / stale_after_days / pages_updated), Backoffice source alias coverage, Final source orphan closure + root BASE.base removal — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
+**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle), Obsidian Bases v1 (7 dashboards), Phase B frontmatter normalization (owner / stale_after_days / pages_updated), Backoffice source alias coverage, Final source orphan closure + root BASE.base removal, **Website Context Consolidation v1 (master doc + 5 JSON exports + readiness.base)** — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
 
 ## Skill routing
 
