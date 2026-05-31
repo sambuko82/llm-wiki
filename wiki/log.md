@@ -11,6 +11,22 @@ sources: []
 
 ---
 
+## [2026-05-31] analysis | Trip.com Booking Platform Workflow
+
+**New file:** [[website/booking-platform-analysis]] — 18-step Tango workflow on Trip.com mapped to JVTO booking flow across 5 phases (Package Selection, Add-ons, Trip Configuration, Terms & Payment, Post-Payment).
+
+**Gaps identified:**
+1. Cancellation policy mismatch: JVTO Travel Credit (100% ≥48h, forfeited <48h) vs Trip.com standard OTA terms
+2. Price anomaly: IDR 3,350,000 displayed vs SSOT pricing (IDR 3,570,000 for 2 pax or IDR 6,300,000 solo)
+3. Add-on alignment: Medewi transport upsell not in JVTO standard inclusions
+4. Health screening missing: BBKSDA-required for Ijen routes — no Trip.com workflow step for Dr. Irwandanu coordination
+
+**Owner tasks (Sam):** Verify pricing, audit upsells, confirm cancellation alignment, verify health-screening collection method, test e2e flow.
+
+**Pages updated:** `index.md` (added booking-platform-analysis link to Website section).
+
+---
+
 ## [2026-05-26] health-check | on-demand
 
 **Stale claims fixed:**

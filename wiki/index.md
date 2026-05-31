@@ -119,6 +119,7 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 - [[website/query-hero-claim]] — Query output: C3 (all-inclusive, no surprise costs) is the lead hero claim for price-skeptical solo travelers; C1/C5 justifies the premium. Evidence chain, 2 headline options, ranked secondary claims.
 - [[website/hotels]] — 23 hotel partners registry; organized by itinerary phase (Bondowoso/Banyuwangi, Bromo, Tumpak Sewu, Malang, Surabaya finish)
 - [[website/schema-templates]] — JSON-LD schema reference: page-type → schema map, field rules, BreadcrumbList patterns, numeric verification checklist
+- [[website/booking-platform-analysis]] — Trip.com OTA workflow analysis (18 steps mapped to JVTO booking flow). Identifies 4 critical gaps: cancellation policy alignment, price anomaly (IDR 3,350,000 vs SSOT), add-on validation, missing health-screening coordination. Owner tasks for Sam.
 
 ## SEO & Strategy
 
