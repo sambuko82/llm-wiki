@@ -2208,4 +2208,24 @@ Pages created (18): overview, index, log, destinations/kawah-ijen, destinations/
 
 Known gaps at init: individual guide/driver profiles, pricing details, competitor data, press mentions. Many gaps resolved by 2026-05-11 SSOT ingest above.
 
+## [2026-06-01] consolidate | Website Context Master + Extended Trust Bundle v1
+
+Pages updated:
+- `wiki/website/website-context-master.md` (NEW) — Single implementation reference: working values table (review counts, credential IDs, pricing, contact), 10 business logic rules (Ijen health screening conditional, blue fire language, cancellation/Travel Credit, monthly closure, FOC tiers, vehicle allocation, room allocation, police escort conditional, booking confirmation, micro-customization), approved/forbidden wording, schema requirements per page type, trust signal matrix (C1–C9 × page section), 7 open implementation gaps.
+- `output/website/trust-bundle/products.json` (NEW) — 22 packages with full pax-tier pricing, ijen_relevant flag, health_screening flag, destinations, URLs.
+- `output/website/trust-bundle/policies.json` (NEW) — booking rules, cancellation (48h threshold/Travel Credit), inclusions/exclusions, vehicle allocation, FOC tiers, health screening protocol + conditional wording, forbidden wording inventory.
+- `output/website/trust-bundle/destinations.json` (NEW) — 5 destinations: entity summaries, geo-coordinates, key facts, JVTO package lists, health screening flags, AEO block paths.
+- `output/website/trust-bundle/people.json` (NEW) — Founder, medical officer, 14 crew with KTA status, portrait URLs, review counts, archetypes.
+- `output/website/trust-bundle/operational.json` (NEW) — Temperatures, travel times, Ijen closure schedule, seasonal guide, 23 hotel partners by phase, room allocation rules.
+- `output/website/trust-bundle/_manifest.json` (UPDATED) — Extended bundle section added.
+- `output/website/trust-bundle/extended-bundle-receipt.md` (NEW) — Full verification receipt for all 5 JSON files.
+- `bases/website-readiness.base` (NEW) — Obsidian Base dashboard: type-filtered (destination/product/person/credential/website/seo), `days_since_update` formula, stale flag, 4 views (all pages staleness order, stale-only, Ijen health pages, domain cards).
+- `wiki/index.md` — Updated total_pages (95 → 96), registered new files in Website and Compiled Outputs sections.
+
+Key additions: unified implementation reference for any LLM or developer building the JVTO website; complete structured JSON domain exports covering all wiki areas beyond the original Trust Bundle; active Obsidian readiness dashboard.
+
+Drift found and flagged:
+- `trust-signals.md §Schema Canonical Values` shows cross-platform reviewCount = 164 (stale; was 51+92+21=164). Live Review Platforms table in same file shows Google = 123 (verified 2026-05-26 API), making real total 195. See GAP-01 in website-context-master.md. **Action needed**: update §Schema Canonical Values in trust-signals.md; regenerate Organization schemas.
+- `HANDOFF.md` line ~175 shows Google Maps: 4.90 / 92 reviews — stale. See GAP-01.
+
 ## [2026-05-28] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings
