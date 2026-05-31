@@ -3,6 +3,9 @@ type: source
 title: Guardian Infrastructure & Authority Framework — Strategy Synthesis
 last_updated: 2026-05-26
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/trust-signals, wiki/index, wiki/ops/compilation-profiles, wiki/people/crew-registry, wiki/seo/geo-aeo-strategy, wiki/seo/seo-strategy, wiki/website/aeo-claims, wiki/website/brand-voice, wiki/website/copy-bank, wiki/website/schema-templates]
 ---
 
 # Guardian Infrastructure & Authority Framework — Strategy Synthesis

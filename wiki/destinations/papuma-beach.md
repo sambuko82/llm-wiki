@@ -10,6 +10,8 @@ ijen_relevant: no
 health_wording_mode: none
 geo_bbox: { minlat: -8.43559, minlon: 113.54986, maxlat: -8.42432, maxlon: 113.56033 }
 route_viewer_url: /3d/papuma-beach
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Papuma Beach

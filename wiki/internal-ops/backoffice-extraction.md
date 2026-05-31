@@ -3,6 +3,8 @@ type: ops
 title: Backoffice MySQL Extraction Playbook
 last_updated: 2026-05-25
 sources: [backoffice-mysql]
+owner: wiki-llm
+stale_after_days: 120
 ---
 
 # Backoffice Extraction Playbook

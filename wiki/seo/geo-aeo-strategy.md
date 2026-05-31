@@ -3,6 +3,8 @@ type: seo
 title: GEO/AEO Strategy — Generative & Answer Engine Optimization
 last_updated: 2026-05-26
 sources: [geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-audit-2026-05, guardian-authority-framework-2026-05]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # GEO/AEO Strategy

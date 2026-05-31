@@ -3,6 +3,8 @@ type: product
 title: JVTO Package Itineraries — Day-by-Day (All Canonical Packages)
 last_updated: 2026-05-12
 sources: [db-export-2026-05]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Package Itineraries — Day-by-Day

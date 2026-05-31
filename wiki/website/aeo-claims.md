@@ -4,6 +4,8 @@ title: AEO Claims — 9 Canonical Trust Pillars (C1–C9)
 last_updated: 2026-05-26
 sources: [ssot-v6, jvto-homepage-clip, guardian-authority-framework-2026-05]
 claim_count: 9
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # AEO Claims (C1–C9)

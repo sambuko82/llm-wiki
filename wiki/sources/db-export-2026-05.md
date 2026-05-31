@@ -3,6 +3,9 @@ type: source
 title: DB Export — Live Database Snapshot (2026-05)
 last_updated: 2026-05-12
 sources: [db-export-2026-05]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/finance/package-costs, wiki/finance/profit-analysis, wiki/index, wiki/ops/package-readiness-compiler-spec, wiki/products/packages-full-pricing, wiki/products/packages-itineraries, wiki/reviews/google-tripadvisor-2026, wiki/sources/crew-strategy-integration-2026-05, wiki/sources/route-data-csv, wiki/website/hotels, wiki/website/operational-facts, wiki/whatsapp/operations-playbook]
 ---
 
 # Source: DB Export — Live Database Snapshot

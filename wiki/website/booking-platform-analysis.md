@@ -4,6 +4,8 @@ title: JVTO Website Booking Flow Analysis
 last_updated: 2026-05-31
 sources: [tango-workflow-jvto-website-booking, faq-master, packages-overview]
 creator: Agung Sambuko
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Website Booking Flow Analysis

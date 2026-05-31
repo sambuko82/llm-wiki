@@ -10,6 +10,8 @@ ijen_relevant: yes
 health_wording_mode: conditional
 geo_bbox: { minlat: -8.07316, minlon: 114.22426, maxlat: -8.0539, maxlon: 114.24812 }
 route_viewer_url: /3d/ijen-crater
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Kawah Ijen

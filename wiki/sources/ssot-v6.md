@@ -3,6 +3,9 @@ type: source
 title: JVTO_FINAL_CLEAN_SSOT.json v6.0 — Source Summary
 last_updated: 2026-05-11
 sources: [ssot-v6]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/legal-licenses, wiki/credentials/medical-screening, wiki/credentials/permit-requirements, wiki/credentials/police-integration, wiki/credentials/press-coverage, wiki/credentials/trust-signals, wiki/destinations/kawah-ijen, wiki/destinations/madakaripura, wiki/destinations/mount-bromo, wiki/destinations/papuma-beach, wiki/destinations/tumpak-sewu, wiki/index, wiki/overview, wiki/people/agung-sambuko, wiki/people/crew-registry, wiki/people/dr-ahmad-irwandanu, wiki/products/packages-overview, wiki/reviews/review-patterns, wiki/reviews/trustpilot-compilation, wiki/sources/tango-workflow-jvto-website-booking, wiki/website/aeo-claims, wiki/website/brand-voice, wiki/website/copy-bank, wiki/website/faq-master, wiki/website/query-hero-claim, wiki/website/schema-templates, wiki/whatsapp/canned-responses, wiki/whatsapp/operations-playbook]
 ---
 
 # Source: JVTO_FINAL_CLEAN_SSOT.json v6.0

@@ -3,6 +3,8 @@ type: product
 title: JVTO Package Pricing — Full Tables (All 22 Packages)
 last_updated: 2026-05-25
 sources: [db-export-2026-05, backoffice-mysql]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Package Pricing — Full Tables

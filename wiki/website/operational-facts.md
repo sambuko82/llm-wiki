@@ -3,6 +3,8 @@ type: website
 title: JVTO Operational Facts — Temperatures, Travel Times, Practical Info
 last_updated: 2026-05-26
 sources: [db-export-2026-05, ijen-safety-resource-mapping, ijen-safety-protocol]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Operational Facts

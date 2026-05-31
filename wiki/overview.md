@@ -3,6 +3,8 @@ type: overview
 title: JVTO Master Overview
 last_updated: 2026-05-16
 sources: [ssot-v6, jvto-homepage-clip]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Java Volcano Tour Operator — Master Overview

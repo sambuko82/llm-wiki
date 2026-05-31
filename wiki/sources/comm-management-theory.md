@@ -3,6 +3,9 @@ type: source
 title: Teori & Konsep Manajemen Komunikasi — Tour Operator Framework
 last_updated: 2026-05-19
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/whatsapp/canned-responses]
 ---
 
 # Teori & Konsep Manajemen Komunikasi

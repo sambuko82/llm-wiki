@@ -3,6 +3,9 @@ type: source
 title: Backoffice — Finance Overview
 last_updated: 2026-05-25
 sources: [backoffice-mysql]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: []
 ---
 
 # Backoffice Finance — Live DB Snapshot

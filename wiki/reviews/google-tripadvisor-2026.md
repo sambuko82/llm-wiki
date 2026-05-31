@@ -11,6 +11,8 @@ tripadvisor_count: 21
 tripadvisor_avg: 4.95
 total_reviews: 195
 last_verified: 2026-05-26
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Cross-Platform Review Compilation

@@ -11,6 +11,8 @@ health_wording_mode: none
 distinction: Tallest waterfall in Java
 geo_bbox: { minlat: -7.85401, minlon: 113.00867, maxlat: -7.84388, maxlon: 113.01865 }
 route_viewer_url: /3d/madakaripura-waterfall
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Madakaripura Waterfall

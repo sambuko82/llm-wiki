@@ -9,6 +9,8 @@ format: web-clip (Obsidian Web Clipper)
 location: raw/Tourist Police-Led Private Volcano Tours in East Java.md
 sources: [jvto-homepage-clip]
 pages_updated: [overview, destinations/kawah-ijen, destinations/mount-bromo, destinations/tumpak-sewu, destinations/madakaripura, reviews/trustpilot-compilation, reviews/review-patterns, products/packages-overview, people/agung-sambuko, people/dr-ahmad-irwandanu, credentials/legal-licenses, credentials/trust-signals, content/brand-voice, content/faq-master, content/aeo-claims]
+owner: wiki-llm
+stale_after_days: 90
 ---
 
 # Source: JVTO Homepage Web Clip

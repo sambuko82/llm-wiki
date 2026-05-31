@@ -3,6 +3,8 @@ type: website
 title: JVTO Brand Voice Guide
 last_updated: 2026-05-26
 sources: [ssot-v6, jvto-homepage-clip, seo-audit-2026-05, guardian-authority-framework-2026-05]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Brand Voice Guide

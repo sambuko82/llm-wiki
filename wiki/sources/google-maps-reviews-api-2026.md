@@ -8,6 +8,9 @@ platform: google-maps
 review_count: 123
 computed_avg: 4.89
 date_range: 2018-12-14 to 2026-05-22
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index, wiki/people/crew-registry, wiki/products/packages-overview, wiki/reviews/google-tripadvisor-2026, wiki/reviews/review-patterns]
 ---
 
 # Google Maps Reviews — API Export

@@ -3,6 +3,9 @@ type: source
 title: Backoffice — Pricing (Template vs Realized)
 last_updated: 2026-05-26
 sources: [backoffice-mysql]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: []
 ---
 
 # Backoffice Pricing — Template Rate Card vs Realized Prices

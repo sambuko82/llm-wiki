@@ -4,6 +4,8 @@ title: JVTO Police Integration — Evidence Chain & Operational Reality
 last_updated: 2026-05-16
 sources: [ssot-v6, jvto-homepage-clip, detik-polpar-2021, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, ssot-image-asset-map]
 claims_supported: [C1, C5]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Police Integration

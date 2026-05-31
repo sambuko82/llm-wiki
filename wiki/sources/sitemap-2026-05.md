@@ -3,6 +3,9 @@ type: source
 title: JVTO Website Sitemap — May 2026
 last_updated: 2026-05-12
 sources: []
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/trust-signals, wiki/index, wiki/ops/package-readiness-compiler-spec, wiki/products/packages-overview, wiki/seo/redirect-map, wiki/website/schema-templates]
 ---
 
 # JVTO Website Sitemap — May 2026

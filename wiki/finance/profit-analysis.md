@@ -3,6 +3,8 @@ type: finance
 title: JVTO Profit Analysis
 last_updated: 2026-05-26
 sources: [finance-rate-cards, db-export-2026-05, backoffice-mysql]
+owner: wiki-llm
+stale_after_days: 30
 ---
 
 # Profit Analysis

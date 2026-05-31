@@ -3,6 +3,9 @@ type: source
 title: JVTO Policy Pack — Customer-Facing Policies v2026-01-17 (v5)
 last_updated: 2026-05-12
 sources: [jvto-policy-pack-v6]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/index, wiki/ops/package-readiness-compiler-spec, wiki/ops/policy-source-ownership, wiki/whatsapp/canned-responses, wiki/whatsapp/operations-playbook]
 ---
 
 # Source: JVTO Policy Pack — 3 Customer-Facing Policies

@@ -5,6 +5,8 @@ last_updated: 2026-05-26
 sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map, ijen-tourist-accidents, ijen-safety-resource-mapping]
 health_wording_mode: conditional
 claims_supported: [C1, C4]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Ijen Health-Screening Coordination

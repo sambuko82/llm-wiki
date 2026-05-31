@@ -9,6 +9,9 @@ published: 2021-05-27
 url: https://radarjember.jawapos.com/bondowoso/791103903/tak-seharusnya-bau-menyengat-itu-ada
 access_status: paywalled
 claims_supported: [C1, C9]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/police-integration, wiki/credentials/press-coverage, wiki/index]
 ---
 
 # Source: Radar Jember — Tak Seharusnya Bau Menyengat Itu Ada

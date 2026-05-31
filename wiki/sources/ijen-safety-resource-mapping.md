@@ -8,6 +8,9 @@ primary_domain: credentials
 visibility: public_sensitive
 raw_file: "raw/Mount Ijen Safety and Support Resource Mapping.xlsx"
 claims_supported: [C1, C4]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/medical-screening, wiki/destinations/kawah-ijen, wiki/index, wiki/website/operational-facts]
 ---
 
 # Mount Ijen Safety and Support Resource Mapping

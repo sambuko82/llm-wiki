@@ -3,6 +3,8 @@ type: finance
 title: Custom Tour Cost Builder
 last_updated: 2026-05-25
 sources: [finance-rate-cards]
+owner: wiki-llm
+stale_after_days: 30
 ---
 
 # Custom Tour Cost Builder

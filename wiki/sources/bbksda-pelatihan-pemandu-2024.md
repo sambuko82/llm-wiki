@@ -9,6 +9,9 @@ published: 2024-05-24
 url: https://bbksdajatim.org/pelatihan-pemandu-kawah-ijen/
 access_status: full
 claims_supported: [C1, C4, C5, C8]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/permit-requirements, wiki/credentials/press-coverage, wiki/index]
 ---
 
 # Source: BBKSDA Jatim — Pelatihan Pemandu Kawah Ijen

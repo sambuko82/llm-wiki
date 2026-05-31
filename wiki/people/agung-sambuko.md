@@ -6,6 +6,8 @@ sources: [ssot-v6, jvto-homepage-clip, detik-polpar-2021, ssot-image-asset-map]
 role: Founder & Active Tourist Police Officer
 schema_id: "/#agung-sambuko"
 schema_type: Person
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # Agung "Mr. Sam" Sambuko

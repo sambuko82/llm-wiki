@@ -3,6 +3,8 @@ type: website
 title: JSON-LD Schema Templates — Page Type Reference
 last_updated: 2026-05-26
 sources: [seo-audit-2026-05, ssot-v6, sitemap-2026-05, guardian-authority-framework-2026-05]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JSON-LD Schema Templates

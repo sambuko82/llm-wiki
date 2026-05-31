@@ -9,6 +9,9 @@ visibility: internal
 raw_file: "raw/Operational Safety Management Protocol_ High-Altitude Volcanic Excursions (Kawah Ijen Framework).md"
 evidence_weight: 8
 claims_supported: [C1, C4, C5]
+owner: wiki-llm
+stale_after_days: 90
+pages_updated: [wiki/credentials/legal-licenses, wiki/destinations/kawah-ijen, wiki/index, wiki/website/operational-facts]
 ---
 
 # Operational Safety Management Protocol — Kawah Ijen Framework

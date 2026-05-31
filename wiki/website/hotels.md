@@ -4,6 +4,8 @@ title: JVTO Hotel Partners Registry
 last_updated: 2026-05-12
 sources: [db-export-2026-05]
 total_hotels: 23
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Hotel Partners Registry

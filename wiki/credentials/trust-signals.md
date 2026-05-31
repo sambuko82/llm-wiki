@@ -3,6 +3,8 @@ type: credential
 title: JVTO Trust Signals — Reviews, Press, Partners, Historical
 last_updated: 2026-05-26
 sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map, seo-audit-2026-05, guardian-authority-framework-2026-05]
+owner: wiki-llm
+stale_after_days: 60
 ---
 
 # JVTO Trust Signals
