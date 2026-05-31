@@ -11,6 +11,14 @@ sources: []
 
 ---
 
+## [2026-05-31] ops | Package Readiness Compiler — Spec (no code)
+Wrote the implementation spec for the NEXT (P1) wedge from the transformation map. Spec only — no compiler, no JSON.
+
+Pages created (1): wiki/ops/package-readiness-compiler-spec.md — purpose, 8 source files, canonical 16-package slug list (12 Surabaya + 4 Bali; 16 = 15 standard + 1 specialty; DB 22 = 16 + 6 student), output path `output/products/package-readiness/`, 6 output files (package-registry/pricing/itineraries/booking-compatibility/gap-report/_manifest), 12 validation rules PKG-01–12, compiler architecture (loaders→enricher→validators→renderers→CLI, --dry-run/--strict mirroring compile_trust.py), non-goals, next implementation phase.
+Pages updated (2): wiki/index.md — added [[ops/package-readiness-compiler-spec]] under Workflows (Meta), total_pages 94→95; (this) wiki/log.md.
+
+Grounding: read packages-overview/full-pricing/itineraries, db-export (22 pkgs / 143 prices / 99 itinerary-days), sitemap (16 live /tours/ URLs), route-data-csv (43 routes), policy-source-ownership. Primary deliverable of the future compiler = gap-report.json. Non-goals honored: no scripts, no JSON, no Trust Bundle/jvto-web/DB edits.
+
 ## [2026-05-31] ops | Transformation Map — Domain→Bundle Pipeline
 Created the master transformation map so future compiler/bundle work follows one structure and completed work is not reopened.
 
