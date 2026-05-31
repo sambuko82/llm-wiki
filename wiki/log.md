@@ -11,6 +11,16 @@ sources: []
 
 ---
 
+## [2026-05-31] feat | Package Readiness Compiler v1.1 — tests + PKG-06/11/12
+Hardened the compiler: added a test suite and the three remaining validation rules. Behaviour change → output regenerated; result stayed clean.
+
+Files updated (4): scripts/package_compiler/loader.py (load db-export-2026-05 as a source), validator.py (PKG-06 inclusion/exclusion readiness, PKG-11 DB-export reconciliation, PKG-12 forbidden-wording sweep), renderer.py (manifest source_hashes now include db-export), output/products/package-readiness/_manifest.json (regenerated — new timestamp + db-export hash; registry/gap-report byte-identical).
+Files created (2): tests/package_compiler/__init__.py, tests/package_compiler/test_package_compiler.py (13 tests — loader 16 packages, sitemap 12+4, Bali slug/url normalisation, validator 0-findings on clean source, PKG-12 fires on injected forbidden wording, PKG-11 errors when canonical>DB, renderer registry=16, manifest clean true/false, write emits 3 files, dry-run does not write, --write calls write path).
+
+Verification: `pytest tests/package_compiler/` → 13 passed. `python scripts/compile_packages.py --dry-run --verbose --strict` → 16 packages, 0 findings, manifest.clean=True. `--write --strict` → regenerated, clean, registry=16, 7 source hashes.
+Scope note: PKG-12 scans ACTIVE package source (overview/pricing/itineraries) only; the policy-source-ownership deprecated table and wiki/log.md history are guardrail/audit containers and intentionally not scanned — a full-repo sweep is the Global Validator wedge (transformation-map P6). v1.1 still emits 3 of 6 artifacts (pricing/itineraries/booking-compatibility deferred).
+Non-goals honored: no Trust Bundle / decision-registry / jvto-web / DB / Policy-Bundle / WhatsApp / package-source-content edits.
+
 ## [2026-05-31] data | Package Readiness Compiler v1 — first bundle output
 Ran the compiler with `--write` to generate the first real package-readiness bundle. No compiler logic changed — `--write` succeeded on the existing v1 code.
 

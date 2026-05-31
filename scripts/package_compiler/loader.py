@@ -50,6 +50,7 @@ class Sources:
     sitemap_text: str
     routes_text: str
     policy_text: str
+    db_export_text: str
     packages: list[Package] = field(default_factory=list)
     sitemap_slugs: dict[str, set] = field(default_factory=dict)  # origin -> {norm slug}
 
@@ -139,6 +140,7 @@ def load_sources(wiki_root: str | Path) -> Sources:
         sitemap_text=_read(p / "sources" / "sitemap-2026-05.md"),
         routes_text=_read(p / "sources" / "route-data-csv.md"),
         policy_text=_read(p / "ops" / "policy-source-ownership.md"),
+        db_export_text=_read(p / "sources" / "db-export-2026-05.md"),
     )
     src.packages = parse_registry(src.overview_text)
     src.sitemap_slugs = parse_sitemap(src.sitemap_text)
