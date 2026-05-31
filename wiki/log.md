@@ -11,6 +11,15 @@ sources: []
 
 ---
 
+## [2026-05-31] feat | Package Readiness Compiler v1 — skeleton + dry-run
+Implemented the v1 skeleton of the Package Readiness Compiler per wiki/ops/package-readiness-compiler-spec.md. Dry-run only — no JSON written.
+
+Files created (5): scripts/compile_packages.py (CLI: --dry-run default, --write, --verbose, --strict), scripts/package_compiler/__init__.py, loader.py (pure markdown-table parsing: registry + sitemap, no business logic), validator.py (rules PKG-01–05, 07–10), renderer.py (registry/gap-report/manifest previews + atomic --write path).
+Files updated (1): wiki/log.md.
+
+Dry-run result (`python scripts/compile_packages.py --dry-run --verbose`): PASSED — 16 packages parsed; sitemap matched 12 Surabaya + 4 Bali; 0 findings (0 error, 0 warn); manifest.clean=True; no JSON output written. PKG-03 confirms Bali slugs resolve (`bali/x` → `/tours/from-bali/x`). PKG-06/11/12 deferred to next pass; v1 renders 3 of 6 spec artifacts (registry, gap-report, manifest).
+Non-goals honored: no --write, no output/products/package-readiness/ files, no Trust Bundle / decision-registry / jvto-web / DB edits.
+
 ## [2026-05-31] ops | Package Readiness Compiler — Spec (no code)
 Wrote the implementation spec for the NEXT (P1) wedge from the transformation map. Spec only — no compiler, no JSON.
 
