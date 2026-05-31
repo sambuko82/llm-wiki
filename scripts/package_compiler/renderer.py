@@ -65,6 +65,7 @@ def build_manifest(sources, findings: list[dict], *, dry_run: bool) -> dict:
             "sitemap": _sha(sources.sitemap_text),
             "route-data": _sha(sources.routes_text),
             "policy-source-ownership": _sha(sources.policy_text),
+            "db-export": _sha(sources.db_export_text),
         },
         "findings_by_rule": by_rule,
         "clean": not any(f["severity"] == "error" for f in findings),
