@@ -13,6 +13,14 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-01] ops | close final source orphan and remove base stub
+Attributed `wiki/sources/3d-route-viewer.md` to the 5 destination pages whose data it visualizes (Mapbox 3D fly-through built on the same AllTrails GPX raw data already cited via `gpx-*` slugs). Frontmatter-only change in destinations; no body edits.
+
+Files updated (5 destinations): `wiki/destinations/{kawah-ijen,mount-bromo,madakaripura,papuma-beach,tumpak-sewu}.md` — appended `3d-route-viewer` to `sources:` array. Files updated (1 source): `wiki/sources/3d-route-viewer.md` — populated `pages_updated` with the 5 destination paths. Files deleted (1): root `BASE.base` (3-line dead stub, superseded by [[bases/index.base]]).
+
+Verification: `python scripts/frontmatter_normalize.py` → `Files changed: 0` (idempotent). Orphan source count: **1 → 0**. Bases YAML still valid (untouched this commit). Obsidian Bases v1 + Phase B + alias fix + final orphan close — all DONE.
+
+
 ## [2026-06-01] ops | fix backoffice source alias coverage
 Created umbrella source `wiki/sources/backoffice-mysql.md` and back-linked the 8 split files so downstream pages keep the existing `backoffice-mysql` citation while the orphan filter in [[bases/sources.base]] now sees the splits as covered.
 

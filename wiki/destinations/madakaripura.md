@@ -2,7 +2,7 @@
 type: destination
 title: Madakaripura Waterfall (Air Terjun Madakaripura)
 last_updated: 2026-05-11
-sources: [ssot-v6, jvto-homepage-clip, gpx-madakaripura]
+sources: [ssot-v6, jvto-homepage-clip, gpx-madakaripura, 3d-route-viewer]
 aliases: [Madakaripura, Madakaripura Waterfall, Air Terjun Madakaripura]
 schema_type: TouristAttraction
 canonical_url: /destinations/madakaripura-waterfall

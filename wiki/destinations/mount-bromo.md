@@ -2,7 +2,7 @@
 type: destination
 title: Mount Bromo (Gunung Bromo)
 last_updated: 2026-05-25
-sources: [ssot-v6, jvto-homepage-clip, gpx-bromo]
+sources: [ssot-v6, jvto-homepage-clip, gpx-bromo, 3d-route-viewer]
 aliases: [Bromo, Gunung Bromo, Mount Bromo]
 schema_type: TouristAttraction
 canonical_url: /destinations/mount-bromo
