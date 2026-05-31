@@ -1,0 +1,51 @@
+filters:
+  and:
+    - file.inFolder("wiki/destinations")
+    - 'type == "destination"'
+
+formulas:
+  schema_ok: 'if(schema_type && canonical_url, "✓", "✗ missing")'
+  ijen_badge: 'if(ijen_relevant == "yes", "🌋 Ijen-relevant", "—")'
+  has_bbox: 'if(geo_bbox, "✓", "—")'
+  has_route_viewer: 'if(route_viewer_url, "✓", "—")'
+  days_since_update: 'if(last_updated, (today() - date(last_updated)).days, "")'
+
+properties:
+  schema_type:
+    displayName: "Schema.org type"
+  canonical_url:
+    displayName: "Canonical URL"
+  health_wording_mode:
+    displayName: "Health wording"
+  formula.ijen_badge:
+    displayName: "Ijen"
+  formula.schema_ok:
+    displayName: "Schema OK"
+  formula.has_bbox:
+    displayName: "GPX bbox"
+  formula.has_route_viewer:
+    displayName: "3D viewer"
+
+views:
+  - type: table
+    name: "Destinations registry"
+    order:
+      - file.name
+      - title
+      - schema_type
+      - canonical_url
+      - formula.ijen_badge
+      - health_wording_mode
+      - formula.schema_ok
+      - formula.has_bbox
+      - formula.has_route_viewer
+      - last_updated
+
+  - type: cards
+    name: "Destination cards"
+    order:
+      - file.name
+      - title
+      - formula.ijen_badge
+      - schema_type
+      - formula.schema_ok

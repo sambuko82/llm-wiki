@@ -1,0 +1,51 @@
+filters:
+  and:
+    - file.inFolder("wiki/people")
+    - 'type == "person"'
+
+formulas:
+  has_role: 'if(role, role, "—")'
+  has_schema: 'if(schema_type && schema_id, "✓", "✗")'
+  days_since_update: 'if(last_updated, (today() - date(last_updated)).days, "")'
+  source_count: 'if(sources, sources.length, 0)'
+
+properties:
+  role:
+    displayName: Role
+  schema_type:
+    displayName: "Schema type"
+  schema_id:
+    displayName: "Schema ID"
+  formula.has_schema:
+    displayName: "Schema OK"
+  formula.has_role:
+    displayName: Role
+  formula.days_since_update:
+    displayName: "Days old"
+  total_crew:
+    displayName: "Total crew (registry)"
+  guides:
+    displayName: Guides
+  drivers:
+    displayName: Drivers
+
+views:
+  - type: table
+    name: "People & crew"
+    order:
+      - file.name
+      - title
+      - formula.has_role
+      - schema_type
+      - schema_id
+      - formula.has_schema
+      - last_updated
+      - formula.days_since_update
+
+  - type: cards
+    name: "Crew gallery"
+    order:
+      - file.name
+      - title
+      - formula.has_role
+      - formula.has_schema

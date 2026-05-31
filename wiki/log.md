@@ -11,6 +11,20 @@ sources: []
 
 ---
 
+## [2026-06-01] ops | add Obsidian Bases domain dashboards
+Added 7 `.base` files in new `bases/` folder (`index`, `destinations`, `sources`, `products`, `people`, `credentials`, `ops-health`). All formulas null-guarded against missing frontmatter — works with current data, no normalization required. Coverage: `wiki/**` only. Root `BASE.base` stub kept untouched. `wiki/index.md` gained a Live Bases section linking the 7 dashboards.
+
+Frontmatter gaps surfaced (report only, not fixed this phase):
+- sources missing `slug`: 38/43; missing `ingested`: 43; missing `format`: 43; missing `pages_updated`: 43
+- credentials missing `credential_category`: 6/6
+- pages with empty `sources: []`: 26
+- `wiki/sources/3d-route-viewer.md` missing `sources:` field entirely
+- `wiki/people/crew-registry.md` missing `role`
+
+Pages updated: [wiki/index.md, wiki/log.md, CLAUDE.md]. Files created: [bases/index.base, bases/destinations.base, bases/sources.base, bases/products.base, bases/people.base, bases/credentials.base, bases/ops-health.base]. Verification: all 7 parse as valid YAML.
+
+---
+
 ## [2026-05-31] feat | Package Readiness Compiler v1.2 — detail artifacts (pricing/itineraries/booking)
 Extended the compiler to emit the three deferred artifacts. Bundle now complete at 6 files. Still Package Readiness — no new wedge.
 

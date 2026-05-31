@@ -1,0 +1,95 @@
+filters:
+  and:
+    - file.inFolder("wiki")
+    - 'file.ext == "md"'
+
+formulas:
+  days_old: 'if(last_updated, (today() - date(last_updated)).days, "")'
+  stale_threshold: 'if(stale_after_days, stale_after_days, 90)'
+  is_stale: 'if(last_updated, (today() - date(last_updated)).days > formula.stale_threshold, false)'
+  has_sources: 'if(sources && sources.length > 0, "✓", "✗")'
+  has_title: 'if(title, "✓", "✗")'
+  has_type: 'if(type, "✓", "✗")'
+  has_status: 'if(status, status, "—")'
+  health_score: 'if(title && type && sources && sources.length > 0 && last_updated, "✓ ok", "⚠ gap")'
+
+properties:
+  type:
+    displayName: Type
+  last_updated:
+    displayName: Updated
+  formula.days_old:
+    displayName: "Days old"
+  formula.is_stale:
+    displayName: Stale
+  formula.has_sources:
+    displayName: Sources
+  formula.has_title:
+    displayName: Title
+  formula.has_type:
+    displayName: Type
+  formula.has_status:
+    displayName: Status
+  formula.health_score:
+    displayName: Health
+
+views:
+  - type: table
+    name: "Health overview"
+    order:
+      - file.name
+      - type
+      - formula.has_status
+      - formula.days_old
+      - formula.is_stale
+      - formula.has_sources
+      - formula.health_score
+    groupBy:
+      property: type
+      direction: ASC
+
+  - type: table
+    name: "Stale pages"
+    filters:
+      and:
+        - 'formula.is_stale == true'
+    order:
+      - formula.days_old
+      - file.name
+      - type
+      - last_updated
+
+  - type: table
+    name: "Missing sources"
+    filters:
+      and:
+        - 'formula.has_sources == "✗"'
+        - 'type != "overview"'
+        - 'type != "index"'
+    order:
+      - file.name
+      - type
+      - last_updated
+
+  - type: table
+    name: "Frontmatter gaps"
+    filters:
+      and:
+        - 'formula.health_score == "⚠ gap"'
+    order:
+      - file.name
+      - type
+      - formula.has_title
+      - formula.has_type
+      - formula.has_sources
+      - last_updated
+
+  - type: table
+    name: "Distribution by type"
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - last_updated
