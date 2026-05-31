@@ -159,23 +159,23 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ## Current Sprint
 
-**Last completed:** Package Readiness Compiler — built end to end and merged to master: v1 skeleton+dry-run (PR #3), first output bundle (PR #4), v1.1 tests + PKG-06/11/12 (PR #5, merge ab4053b). PKG-01–12 complete; 13 tests pass; `scripts/compile_packages.py` + `scripts/package_compiler/{loader,validator,renderer}.py`; bundle at `output/products/package-readiness/{package-registry,gap-report,_manifest}.json` clean (16 packages / 0 findings / manifest.clean=True).
+**Last completed:** Package Readiness Compiler v1.2 — emitted the 3 deferred detail artifacts (PR #6 merged, master 775c303). Bundle now complete at 6 files: `output/products/package-readiness/{package-registry,package-pricing,package-itineraries,booking-compatibility,gap-report,_manifest}.json`. 103 pricing tiers + 57 itinerary days across 16 packages; 3 Surabaya/Bali slug collisions resolved by origin-aware section keying. PKG-01–12 complete; 17 tests pass; clean (16 packages / 0 findings / manifest.clean=True). Package Readiness wedge is now fully DONE.
 **Completed date:** 2026-05-31
 **Next task:** NOT STARTED — awaiting selection from candidate wedges (see Next-phase candidates below). No work begun.
-**Build status:** — compiler tested, 13/13 pass; no uncommitted code this session.
+**Build status:** — compiler tested, 17/17 pass; no uncommitted code this session.
 **Open items:**
 - **URGENT**: Homepage H2 "92 on Google Maps" stale — now 123. Fix in jvto-web (not Trust-Bundle-related).
 - R065 gap #1: verify JVTO website Terms checkbox (Step 15) shows Travel Credit policy text.
-- R065 gap #2: price anomaly IDR 3,350,000 vs SSOT — folds into Package Readiness gap-report (PKG-04 pricing); Sam to verify pax tier / discount.
-- Package Readiness compiler limits: 3/6 artifacts deferred (pricing / itineraries / booking-compatibility); PKG-11 count-based only; PKG-12 active-source-only (full-repo sweep = Global Validator wedge).
+- R065 gap #2: price anomaly IDR 3,350,000 vs SSOT — Sam to verify pax tier / discount (compiler now emits package-pricing.json for cross-check).
+- Package Readiness residual limits: `instant_book=True` derived from sitemap presence (not per-package checkout probe); PKG-11 count-based; full-repo wording sweep deferred to Global Validator wedge.
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives.
 - `bromo-ijen-status-today` page — Silo 3 SEO target; blocked on replacement live PVMBG status source.
 - Geographic landing pages (/markets/singapore, /markets/malaysia) — need flight/logistics data.
 - `yadnya-kasada-2026` — need Tengger calendar source.
 
-**Next-phase candidates (not started — pick one):** (1) remaining Package Readiness artifacts — pricing / itineraries / booking-compatibility JSON; (2) Policy Bundle; (3) WhatsApp Reply Intelligence; (4) Review Proof Index; (5) Finance Quote Helper; (6) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
+**Next-phase candidates (not started — pick one):** (1) Policy Bundle; (2) WhatsApp Reply Intelligence; (3) Review Proof Index; (4) Finance Quote Helper; (5) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
 
-**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler v1.1 — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
+**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle) — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated; DQ-001/002/003 resolved via DEC locks. See `wiki/ops/transformation-map.md` §do-not-reopen.
 
 ## Skill routing
 
