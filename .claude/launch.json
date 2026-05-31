@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jvto-web (dev)",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-Command", "Set-Location 'F:\\jvto-web'; npm run dev"],
+      "port": 3000
+    },
+    {
+      "name": "jvto-web (start)",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-Command", "Set-Location 'F:\\jvto-web'; npm run start"],
+      "port": 3000
+    }
+  ]
+}
