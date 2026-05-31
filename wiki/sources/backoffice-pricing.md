@@ -5,7 +5,7 @@ last_updated: 2026-05-26
 sources: [backoffice-mysql]
 owner: wiki-llm
 stale_after_days: 90
-pages_updated: []
+pages_updated: [wiki/sources/backoffice-mysql]
 ---
 
 # Backoffice Pricing — Template Rate Card vs Realized Prices
