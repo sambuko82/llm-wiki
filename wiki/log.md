@@ -13,6 +13,19 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-01] cleanup | Phase A governance — stray file + plugins/ exemption
+
+**Scope:** Phase A safe cleanup. Zero content changes. Zero wiki page moves.
+
+**Deleted:**
+- `output/faq-2026-05-12-bromo.md` — empty 1-line untracked file at wrong path (`output/` root). Violates location rule (slug-mirror files must be in `output/website/faq/`) and naming convention (no date prefix for slug-mirror files). No content lost.
+
+**Updated:**
+- `CLAUDE.md §Naming Rule Exemptions` — added `plugins/llm-wiki/` as named exemption; file names are referenced by Claude Code routing.
+- `CLAUDE.md §Analysis Defaults` — new section; lists `plugins/`, `raw/`, and `output/_archive/` as R-IGNORE scope for routine audit passes.
+
+---
+
 ## [2026-06-01] restructure | Bundle-first restructure Phase 2 — wiki scaffold
 
 **Scope:** Wiki-side scaffold only. Zero output/ changes. Zero content moves.

@@ -176,8 +176,17 @@ Global naming rule: `YYYY-MM-DD-descriptive-name` for new files. The following *
 - All `bases/*.base` — Obsidian dashboard files
 - `CLAUDE.md` — this file
 - `requirements-dev.txt`, `jvto-web.code-workspace` — repo config
+- `plugins/llm-wiki/` and all files within — Claude Code plugin; file names referenced by Claude Code routing system
 
 Files **not** on this list still follow the `YYYY-MM-DD-descriptive-name` rule. When in doubt, ask before naming.
+
+## Analysis Defaults
+
+Exclude from routine content analysis, audit passes, and lint scans:
+
+- `plugins/` — Claude Code plugin infrastructure (commands, skills). Not a content domain.
+- `raw/` — immutable source docs; analyze only files explicitly cited in the current task.
+- `output/_archive/` — superseded files; ignore unless specifically referenced.
 
 ## Content Production Guidelines
 
