@@ -1,0 +1,20 @@
+{
+  "name": "llm-wiki",
+  "version": "0.1.0",
+  "description": "Cleanup, classification, and governance for the JVTO llm-wiki repo. Routes every file through keep / lock / archive / delete / ignore. Keeps Claude reading the right anchors and ignoring noise by default.",
+  "author": {
+    "name": "JVTO — Java Volcano Tour Operator",
+    "email": "hello@javavolcano-touroperator.com"
+  },
+  "homepage": "javavolcano-touroperator.com",
+  "keywords": [
+    "llm-wiki",
+    "jvto",
+    "cleanup",
+    "governance",
+    "classification",
+    "audit"
+  ],
+  "commands": "./commands",
+  "skills": "./skills"
+}
