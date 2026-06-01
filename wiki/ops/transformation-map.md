@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Transformation Map — Domain → Bundle Pipeline
-last_updated: 2026-05-31
+last_updated: 2026-06-01
 sources: []
 owner: wiki-llm
 stale_after_days: 120
@@ -16,6 +16,19 @@ domain → canonical source → compiler/script → output → validator → con
 ```
 
 Purpose: stop random compiler/output sprawl. Before building any new bundle, register it here first. This is the induk (parent) map every future wedge answers to.
+
+## Canonical Bundle Set
+
+Per -> [[ops/bundle-taxonomy]] (added 2026-06-01) the wiki is organised around **6 website-first bundles**. The pipeline tables below list every bundle that has a compiler or planned compiler. The 6 canonical bundles are:
+
+1. **Trust Bundle** — claims, trust signals, evidence, verification mapping
+2. **Website Logic Bundle** — FAQ, AEO, schema, wording rules, page rules
+3. **Package Bundle** — package registry, pricing, itinerary, package readiness
+4. **Review Bundle** — review registry, ratings, crew mentions, review patterns, social proof
+5. **WhatsApp Reply Bundle** — templates, intents, routing, hard rules
+6. **Asset Bundle** — image proof, proof-file usage, page usage, alt text, visual evidence
+
+Policy Source Ownership, R065 Booking Flow, and Global Wiki Validator remain registered as cross-cutting infrastructure, not standalone bundles.
 
 ## Current Architecture
 
@@ -43,17 +56,19 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 
 ## Bundle Status Table
 
-| Bundle | Status | Priority |
-|---|---|---|
-| Trust Bundle v1 | **DONE — DO NOT REOPEN** without explicit user request | — |
-| Policy Source Ownership | **DONE** | — |
-| R065 Booking Flow ingest | **DONE** | — |
-| Package Readiness Compiler | **NEXT** | P1 |
-| Policy Bundle Compiler | FUTURE | P2 |
-| WhatsApp Reply Intelligence | FUTURE | P3 |
-| Review Proof Index | FUTURE | P4 |
-| Finance Quote Helper | FUTURE | P5 |
-| Global Wiki Validator | FUTURE | P6 |
+| Bundle | Canonical name (per bundle-taxonomy) | Status | Priority |
+|---|---|---|---|
+| Trust Bundle v1 | **Trust Bundle** (1) | **DONE — DO NOT REOPEN** without explicit user request | — |
+| Policy Source Ownership | (cross-cutting infra; feeds Website Logic) | **DONE** | — |
+| R065 Booking Flow ingest | (cross-cutting; feeds Website Logic + WhatsApp Reply) | **DONE** | — |
+| Package Readiness Compiler | **Package Bundle** (3) | **DONE (v1.2)** — package-readiness output live | — |
+| Policy Bundle Compiler | (subset of Website Logic Bundle) | FUTURE | P2 |
+| WhatsApp Reply Intelligence | **WhatsApp Reply Bundle** (5) | FUTURE | P3 |
+| Review Proof Index | **Review Bundle** (4) | FUTURE | P4 |
+| Finance Quote Helper | (subset of Package Bundle) | FUTURE | P5 |
+| Website Logic Bundle | **Website Logic Bundle** (2) | PARTIAL — aeo/faq/schema/pages output live, no consolidated compiler | — |
+| Asset Bundle | **Asset Bundle** (6) | FUTURE — sources catalogued in `wiki/sources/`, no compiler, no output | P4-tie |
+| Global Wiki Validator | (cross-cutting infra) | FUTURE | P6 |
 
 ## Per-Bundle Pipeline
 
@@ -68,6 +83,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 | Review proof | reviews/* | package-registry, destinations, crew, claim-registry | (planned) | `output/reviews/review-proof-index/` | (planned) | website proof blocks, schema, AEO | FUTURE (P4) |
 | Finance quote | finance/rate-cards, finance/package-costs | package-pricing, package-itineraries | (planned) | `output/finance/quote-helper/` | (planned) | quote builder, WhatsApp, dashboard | FUTURE (P5) |
 | Global validation | all `wiki/` | all registries | `scripts/validate_wiki.py` (NOT BUILT) | — (report) | self | CI / health-check, all authors | FUTURE (P6) |
+| Asset Bundle | sources/ssot-image-asset-map, sources/google-profile-media-2026, sources/gpx-destination-data | raw image asset map JSON, raw GPX × 5, raw GMB media JSON | (planned) | (no output yet; future `output/asset-bundle/`) | (planned: alt-text + page-usage validators) | jvto-web image refs, schema imageObject, AEO proof blocks | FUTURE (P4-tie) |
 
 ## Do-Not-Reopen
 

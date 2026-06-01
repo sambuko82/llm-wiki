@@ -13,6 +13,44 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-01] restructure | Bundle-first restructure Phase 2 — wiki scaffold
+
+**Scope:** Wiki-side scaffold only. Zero output/ changes. Zero content moves.
+
+**Created:**
+- `wiki/bundles/README.md` — thin index layer README.
+- `wiki/bundles/trust.md` — Trust Bundle stub index.
+- `wiki/bundles/website-logic.md` — Website Logic Bundle stub index.
+- `wiki/bundles/packages.md` — Package Bundle stub index.
+- `wiki/bundles/reviews.md` — Review Bundle stub index.
+- `wiki/bundles/whatsapp.md` — WhatsApp Reply Bundle stub index.
+- `wiki/bundles/assets.md` — Asset Bundle stub index.
+- `wiki/assets/.gitkeep` — Asset Bundle workspace placeholder.
+- `wiki/_shared/.gitkeep` — cross-bundle registries/rules placeholder.
+
+**Not in scope (deferred):** `output/*-bundle/` roots; migration of `output/website/{aeo,faq,schema,pages,blog}` → `output/website-bundle/`; rename of `HANDOFF.md` / `INDEX.md`; deletion of empty `wiki/{analytics,marketing}/`; move of `wiki/internal-ops/backoffice-extraction.md`; move of `wiki/sources/{ssot-image-asset-map,google-profile-media-2026,gpx-destination-data}.md` to `wiki/assets/`; creation of the 8 new index/merge pages.
+
+**Commit:** `restructure | wiki/bundles + wiki/assets + wiki/_shared scaffold (Phase 2)` — to be run by user (sandbox git unable to commit through Windows worktree pointer).
+
+---
+
+## [2026-06-01] restructure | Bundle-first restructure Phase 1 — docs
+
+**Scope:** Documentation-only. Zero file moves. Zero output/ changes.
+
+**Created:**
+- `wiki/ops/bundle-taxonomy.md` — defines 6 website-first bundles (Trust, Website Logic, Package, Review, WhatsApp Reply, Asset); full file→bundle map; cross-bundle shared files; explicit Phase 1–2 non-goals.
+
+**Updated:**
+- `wiki/ops/transformation-map.md` — added "Canonical Bundle Set" intro section; aligned Bundle Status Table to 6-bundle naming; added Asset Bundle row to Per-Bundle Pipeline; promoted Package Readiness Compiler to DONE (v1.2) and Website Logic Bundle to PARTIAL.
+- `CLAUDE.md` (root) — added §Bundle Mapping (6-bundle list + pointers); added §Naming Rule Exemptions listing canonical operational anchors that keep current names (`output/INDEX.md`, `output/website/HANDOFF.md`, all trust-bundle JSONs, all schema/aeo/faq/pages URL-mirrors, all bundle index pages, etc.).
+
+**Not in scope (deferred):** any output/ scaffold, any content move, any rename of HANDOFF.md or INDEX.md, deletion of empty domain folders, creation of the 8 new index/merge pages.
+
+**Commit:** `docs | bundle taxonomy + transformation-map alignment + naming exemptions (Phase 1)` — to be run by user (sandbox git unable to commit through Windows worktree pointer).
+
+---
+
 ## [2026-06-01] ops | close final source orphan and remove base stub
 Attributed `wiki/sources/3d-route-viewer.md` to the 5 destination pages whose data it visualizes (Mapbox 3D fly-through built on the same AllTrails GPX raw data already cited via `gpx-*` slugs). Frontmatter-only change in destinations; no body edits.
 

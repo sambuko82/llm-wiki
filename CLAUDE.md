@@ -142,6 +142,43 @@ Triggers: "Run health check" (on-demand), "Run weekly health check",
 
 ---
 
+## Bundle Mapping
+
+The wiki is organised around **6 website-first bundles**. See -> `wiki/ops/bundle-taxonomy.md` for the file→bundle map and -> `wiki/ops/transformation-map.md` for pipeline status.
+
+1. **Trust Bundle** — claims, trust signals, evidence, verification mapping
+2. **Website Logic Bundle** — FAQ, AEO, schema, wording rules, page rules
+3. **Package Bundle** — package registry, pricing, itinerary, package readiness
+4. **Review Bundle** — review registry, ratings, crew mentions, review patterns, social proof
+5. **WhatsApp Reply Bundle** — templates, intents, routing, hard rules
+6. **Asset Bundle** — image proof, proof-file usage, page usage, alt text, visual evidence
+
+Thin index pages live in `wiki/bundles/<bundle>.md` (scaffolded 2026-06-01, Phase 2). Domain folders (`wiki/destinations/`, `wiki/people/`, etc.) stay at wiki root — files are owned by domain, bundles only index them.
+
+## Naming Rule Exemptions
+
+Global naming rule: `YYYY-MM-DD-descriptive-name` for new files. The following **canonical operational anchors** are exempt because their names are referenced by external systems, scripts, or rendering logic. They keep their current names indefinitely:
+
+- `output/INDEX.md` — master output catalog
+- `output/website/HANDOFF.md` — developer integration anchor
+- `output/website/llms.txt`, `output/website/llms-full.txt` — LLM-crawler fixed filenames
+- `output/website/trust-bundle/_manifest.json`, `aeo-snippets.json`, `claims.json`, `destinations.json`, `extended-bundle-receipt.md`, `faq.json`, `operational.json`, `people.json`, `policies.json`, `products.json` — Trust Bundle v1 canonical outputs
+- `output/website/trust-bundle/schema/*.json` — Trust Bundle schema outputs
+- `output/website/schema/*-schema.json` and matching `*-schema.receipt.md` — per-page schema + receipt pair (slug-mirror)
+- `output/website/aeo/*.md` — AEO snippet files (slug-mirror)
+- `output/website/faq/*.md` — FAQ files (slug-mirror)
+- `output/website/pages/**/*.md` — page copy (URL-mirror, hierarchy mirrors site routes)
+- `output/website/blog/*.md` — blog page copy (URL-mirror)
+- `output/products/package-readiness/*.json` and `_manifest.json` — Package Readiness Bundle outputs
+- `wiki/index.md`, `wiki/overview.md`, `wiki/log.md` — wiki root anchors
+- `wiki/bundles/README.md` and `wiki/bundles/<bundle>.md` — bundle index pages
+- `wiki/ops/*.md` — operational reference pages (transformation-map, bundle-taxonomy, ingestion-profiles, compilation-profiles, health-checks, intake-gate, package-readiness-compiler-spec, policy-source-ownership)
+- All `bases/*.base` — Obsidian dashboard files
+- `CLAUDE.md` — this file
+- `requirements-dev.txt`, `jvto-web.code-workspace` — repo config
+
+Files **not** on this list still follow the `YYYY-MM-DD-descriptive-name` rule. When in doubt, ask before naming.
+
 ## Content Production Guidelines
 
 - **Voice**: Direct, evidence-led. "Tourist Police officer" not "safety-focused guide."
