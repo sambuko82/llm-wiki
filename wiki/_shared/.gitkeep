@@ -1,0 +1,5 @@
+# Cross-bundle shared registries/rules/glossary — scaffold only (created 2026-06-01, Phase 2).
+# Empty until cross-bundle content is identified.
+# Use ONLY for genuinely cross-domain material: reusable rules, registries, helper references, glossary/common logic.
+# Do NOT move destinations/, people/, or other primary content pillars here.
+# See wiki/ops/bundle-taxonomy.md §"What is NOT a bundle".
