@@ -13,6 +13,17 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-02] cleanup-governor Phase B | Archive 3 output/website-root orphans
+
+governance-maintainer D1 (lower-priority residual): 3 orphaned 2026-05-27 files at `output/website/` root (not in a bundle subfolder, zero inbound citations, not on naming-exempt list). git mv → `output/_archive/`:
+- `2026-05-27-evidence-registry-receipt.md` (Cowork generation receipt for jvto-web `evidenceRegistry.ts`)
+- `2026-05-27-llms-files-receipt.md` (generation receipt for llms.txt/llms-full.txt)
+- `2026-05-27-jvto-exposure-board.html` (orphaned gridjs viz artifact)
+
+`output/website/` root now holds only `HANDOFF.md` anchor; all else in subfolders. D1 fully clean across `output/`. Schema `*-schema.receipt.md` pairs + `extended-bundle-receipt.md` untouched (naming-exempt). `pages/**` + `blog/**` dated files are URL-mirror exempt, not drift.
+
+---
+
 ## [2026-06-02] cleanup-governor Phase B | Archive 4 output-root strategy docs
 
 governance-maintainer D1+D3: 4 orphaned strategy/blueprint docs (dated 2026-05-27, zero inbound citations) sat in `output/` root, violating `output/<domain>/<bundle>/` and the no-strategy-in-output rule. Moved (git mv, filenames + content preserved) to `docs/superpowers/specs/` — the D3-designated home for `type: blueprint|synthesis|strategy`:
