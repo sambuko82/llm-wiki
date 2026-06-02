@@ -13,6 +13,18 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-02] cleanup-governor Phase B | Archive 4 output-root strategy docs
+
+governance-maintainer D1+D3: 4 orphaned strategy/blueprint docs (dated 2026-05-27, zero inbound citations) sat in `output/` root, violating `output/<domain>/<bundle>/` and the no-strategy-in-output rule. Moved (git mv, filenames + content preserved) to `docs/superpowers/specs/` — the D3-designated home for `type: blueprint|synthesis|strategy`:
+- `2026-05-27-jvto-agentic-response-system-blueprint.md` (blueprint)
+- `2026-05-27-jvto-knowledge-compiler-blueprint.md` (blueprint)
+- `2026-05-27-jvto-system-holistic-synthesis.md` (synthesis)
+- `2026-05-27-jvto-tooling-ecosystem-analysis.md` (strategy)
+
+Superseded by canonical bundle-taxonomy + transformation-map; kept for provenance (R6 archive-before-delete). `output/` root now D1-clean. Residual lower-priority D1: `output/website/2026-05-27-*` receipts + exposure-board.html (not in this scope).
+
+---
+
 ## [2026-06-02] cleanup-governor Mode B | Phase A safe cleanup
 
 Per /llm-wiki:decision-map audit (Mode A, whole-repo), executed approved Phase A:
