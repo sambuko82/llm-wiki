@@ -34,7 +34,7 @@ Domain dashboards in `/bases/` — open in Obsidian for live queries (this stati
 
 ## Compiled Outputs
 
-- [[output/website/trust-bundle/_manifest|Trust Bundle (compiled)]] — `output/website/trust-bundle/*.json`. Original 7 outputs (claims, aeo-snippets, faq, organization/tourist-trip/faq-page schemas) — **DONE/DO NOT REOPEN.** DEC-001/002/003 locked, F1–F8 pass. See -> [[ops/transformation-map]] §do-not-reopen.
+- [[output/website/trust-bundle/_manifest|Trust Bundle (compiled)]] — `output/website/trust-bundle/*.json`. v1 = 7 outputs (claims, aeo-snippets, faq, _manifest + organization/tourist-trip/faq-page schemas); now **9 root JSON + 3 `schema/`** after the 2026-06-01 extension (next line) — **DONE/DO NOT REOPEN.** DEC-001/002/003 locked, F1–F8 pass. See -> [[ops/transformation-map]] §do-not-reopen.
 - **Extended Trust Bundle (2026-06-01)** — 5 new JSON exports + updated manifest: `products.json` (22 packages, full pricing), `policies.json` (booking rules, cancellation, inclusions, vehicle allocation, FOC, health screening, forbidden wording), `destinations.json` (5 destinations with geo, facts, package lists), `people.json` (founder, medical officer, 14 crew), `operational.json` (travel times, temperatures, closures, 23 hotels). Verification receipt: `output/website/trust-bundle/extended-bundle-receipt.md`.
 - **bases/website-readiness.base** — New Obsidian dashboard for all website-relevant wiki pages: type-filtered (destination/product/person/credential/website/seo), `days_since_update` formula, stale flag, health-wording mode. 4 views: all pages (staleness order), stale-only, Ijen health pages, domain cards.
 
@@ -160,8 +160,8 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
 - [[ops/intake-gate]] — Workflow 7: universal raw intake gate
 - [[ops/policy-source-ownership]] — Canonical owner per policy domain (booking, payment, cancellation, inclusions, health, ISIC, police escort, anti-fraud) + deprecated-wording guardrails
-- [[ops/transformation-map]] — Master domain→bundle pipeline map (canonical source → compiler → output → validator → consumer → status). Output convention `output/<domain>/<bundle>/`. Trust Bundle DONE/do-not-reopen; Package Readiness is next wedge.
-- [[ops/package-readiness-compiler-spec]] — Spec (no code) for the NEXT wedge: compiles 16 canonical packages → `output/products/package-readiness/` (registry, pricing, itineraries, booking-compatibility, gap-report, manifest) with 12 validation rules PKG-01–12. Primary deliverable = gap report.
+- [[ops/transformation-map]] — Master domain→bundle pipeline map (canonical source → compiler → output → validator → consumer → status). Output convention `output/<domain>/<bundle>/`. Trust Bundle + Package Readiness (v1.2) DONE/do-not-reopen; **Policy Bundle (P2) is next wedge**.
+- [[ops/package-readiness-compiler-spec]] — **IMPLEMENTED (v1.2)** spec: `scripts/compile_packages.py` compiles 16 canonical packages → `output/products/package-readiness/` (registry, pricing, itineraries, booking-compatibility, gap-report, manifest — 6 files) with 12 validation rules PKG-01–12. Primary deliverable = gap report.
 - [[ops/whatsapp-reply-intelligence-compiler-spec]] — Spec (no code) for wedge P3 (WhatsApp Reply Bundle): compiles channel × state × intent → action + pre-rendered bilingual template + claim/policy citation, plus a coverage/contradiction gap report over playbook + rules-engine + canned-responses. Deterministic skeleton only; runtime LLM replies stay in WA Pro CRM consumer.
 
 ## Internal Ops

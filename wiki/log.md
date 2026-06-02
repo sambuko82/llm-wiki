@@ -13,6 +13,33 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-03] health-check | weekly
+
+Scope: 110 wiki/*.md. Cutoffs from 2026-06-03 → 30-day = 2026-05-04, 90-day = 2026-03-05.
+
+**On-demand tier**
+
+1. Contradiction scan:
+   - **FIXED this run** — `wiki/index.md` lines 163/164 said Package Readiness "next wedge / NEXT / no code"; contradicted the 2026-06-03 ops reconcile (Package Readiness DONE v1.2). Conformed → "Policy Bundle (P2) next"; spec entry marked IMPLEMENTED (6 files). Line 37 trust-bundle count clarified (v1 7 → now 9 root JSON + 3 `schema/`). This was reconcile fallout — the ops commit `652547a` did not propagate to index.md.
+   - **PRIOR FLAG CLOSED** — KBLI `79120` (trust-signals) vs `79121+79911` (permit-requirements), flagged 2026-05-26. Now reconciled: trust-signals no longer carries 79120; `legal-licenses.md` lists 79121 (Travel Agency) + 79911 (Tour Operator) primary, 79120 (related); permit-requirements 79121+79911. No active conflict.
+   - **OPEN — GAP-01 cluster (wider than tracked)**: stale Google Maps count `92` (current 123, API-verified 2026-05-26) and cross-platform `164` (current 195 = 51+123+21) persist as ACTIVE claims in: `website/copy-bank.md:86` (production copy — HIGH), `reviews/trustpilot-compilation.md:41` (platform table, dated 2026-04-22 — MED), `seo/competitors.md:100` ("164 reviews" — MED), `credentials/trust-signals.md §Schema Canonical Values` (known GAP-01 — HIGH). Historical/snapshot mentions are NOT defects: log.md, db-export-2026-05, google-maps-reviews-api source, website-context-master (documents drift), jvto-homepage-clip/trustpilot-reviews-2026 (47).
+2. Orphan detection (zero inbound `[[link]]`, excl index.md): 4 — `sources/backoffice-mysql.md` (umbrella source; also had no `last_updated`), `internal-ops/2026-06-02-chatbot-llmwiki-integration-audit.md`, `internal-ops/2026-06-02-chatbot-slim-feed-pattern.md`, `bundles/README.md` (nav stub, acceptable).
+3. Stale-claim flags (90-day): **NONE**. Earliest content page 2026-05-11 (23 days).
+4. Gap pages: none new; GAP-01 cluster is the active gap.
+
+**Weekly tier**
+
+1. 30-day stale sweep: **NONE** older than 30 days. Sole anomaly: `sources/backoffice-mysql.md` had no `last_updated` field (used `ingested` only) — **FIXED** (`last_updated: 2026-05-25`).
+2. New-orphan detection (created since last log): 2 internal-ops chatbot docs (2026-06-02) are in the index catalog but have zero inbound `[[links]]` from content pages — standalone audit notes, link or accept.
+3. Index completeness: `ops/bundle-taxonomy.md` not in `index.md` catalog (sibling ops pages are listed); `bundles/website-logic.md` + `bundles/README.md` absent (bundles/ pages generally not path-linked from index — index-slim deferred per CLAUDE.md open item).
+4. Log completeness: raw/ = 222 files vs 29 `ingest` entries. raw is batch-ingested via ~60 `wiki/sources/` summary pages; per-file 1:1 ingest logging not maintained by design — not a defect.
+
+**Actions taken**: fixed index.md 37/163/164 (reconcile fallout); added `last_updated` to backoffice-mysql.md.
+
+**Flag-only (not auto-fixed)**: GAP-01 blast radius (copy-bank/trustpilot-compilation/competitors/trust-signals) → needs review-feed live-verify + schema regen; 2 chatbot docs orphan links; bundle-taxonomy.md → add to index catalog.
+
+---
+
 ## [2026-06-03] lint | wiki/ops contradiction reconcile — force-conform to repo truth
 
 Full read of all 9 `wiki/ops/*.md`; cross-checked every status/count claim against live repo state (scripts/, output/, frontmatter). Fixed every divergence so the ops layer stops contradicting itself ("tidak bolak-balik"). All values below are verified, not assumed.

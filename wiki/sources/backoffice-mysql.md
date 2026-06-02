@@ -5,6 +5,7 @@ slug: backoffice-mysql
 owner: wiki-llm
 stale_after_days: 90
 ingested: 2026-05-25
+last_updated: 2026-05-25
 format: mysql
 location: raw/backoffice/
 sources: [backoffice-mysql]
