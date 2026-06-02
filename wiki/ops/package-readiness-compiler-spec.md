@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Package Readiness Compiler — Implementation Spec
-last_updated: 2026-05-31
+last_updated: 2026-06-03
 sources: [db-export-2026-05, sitemap-2026-05, route-data-csv, jvto-policy-pack-v6]
 owner: wiki-llm
 stale_after_days: 120
@@ -9,7 +9,9 @@ stale_after_days: 120
 
 # Package Readiness Compiler — Implementation Spec
 
-Spec only. **No code in this phase.** Registered as the **NEXT (P1)** wedge in -> [[ops/transformation-map]]. Implementation is a separate, later, explicitly-approved phase.
+> **STATUS: IMPLEMENTED (v1.2).** `scripts/compile_packages.py` + `scripts/package_compiler/` are **built**; 6 artifacts are **live** at `output/products/package-readiness/` (`package-registry`, `package-pricing`, `package-itineraries`, `booking-compatibility`, `gap-report`, `_manifest`). This document is the **historical implementation spec** — the "No code in this phase" / "NEXT (P1)" / "NOT BUILT" framing below describes the spec-writing phase and is superseded. For current status see -> [[ops/transformation-map]] §Bundle Status Table (DONE v1.2). Note: the spec originally planned a 7th artifact (`package-route-map.json`); the shipped bundle is **6 files** (no separate route-map).
+
+Spec only (historical). Registered as a wedge in -> [[ops/transformation-map]]; now **DONE (v1.2)**.
 
 ## 1. Purpose
 

@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Bundle Taxonomy — 6 Website-First Bundles
-last_updated: 2026-06-02
+last_updated: 2026-06-03
 sources: []
 owner: wiki-llm
 stale_after_days: 120
@@ -55,7 +55,8 @@ Each row lists the **as-is location** of an existing file. No file is moved by t
 | `raw/_manifest/entity-registry.yml` | Source registry | Live |
 | `raw/_manifest/decision-registry.yml` | Source registry | Live |
 | `raw/_manifest/conflict-log.md` | Source registry | Live |
-| `output/website/trust-bundle/*.json` (10 files) | Compiled output | Canonical Trust Bundle output |
+| `output/website/trust-bundle/*.json` (9 files) | Compiled output | Canonical Trust Bundle output |
+| `output/website/trust-bundle/schema/*.json` (3 files) | Compiled output | Organization / TouristTrip / FAQPage JSON-LD |
 | `output/website/trust-bundle/extended-bundle-receipt.md` | Receipt | Naming-exempt operational anchor |
 | `output/website/pages/verify-jvto/*` (5 files) | Page copy | URL-mirror; consumes Trust Bundle |
 | `scripts/compile_trust.py` | Compiler | DONE — do not reopen |
@@ -82,7 +83,7 @@ Each row lists the **as-is location** of an existing file. No file is moved by t
 | `wiki/seo/why-jvto-architecture.md` | Source | Hub & spoke arch |
 | `output/website/faq/*.md` (8 files) | Compiled output | FAQ blocks per topic |
 | `output/website/aeo/*.md` (10 files) | Compiled output | AEO snippets |
-| `output/website/schema/*.json` + `*-receipt.md` (~45 + receipts) | Compiled output | JSON-LD per page; receipts naming-exempt |
+| `output/website/schema/*.json` + `*-receipt.md` (28 + receipts) | Compiled output | JSON-LD per page; receipts naming-exempt |
 | `output/website/pages/**/*.md` (~90 files) | Page copy | URL-mirror layout, naming-exempt |
 | `output/website/blog/*.md` | Page copy | URL-mirror |
 | `output/website/llms.txt`, `llms-full.txt` | Compiled output | LLM crawler files |
@@ -95,14 +96,14 @@ Each row lists the **as-is location** of an existing file. No file is moved by t
 | As-is location | Role | Notes |
 |---|---|---|
 | `wiki/products/packages-overview.md` | Source | |
-| `wiki/products/packages-full-pricing.md` | Source | All 22 packages |
+| `wiki/products/packages-full-pricing.md` | Source | All 22 priced packages (16 canonical + 6 student) |
 | `wiki/products/packages-itineraries.md` | Source | Day-by-day |
 | `wiki/finance/rate-cards.md` | Source | Cost component reference |
 | `wiki/finance/package-costs.md` | Source | COGS breakdown |
 | `wiki/finance/profit-analysis.md` | Source | |
 | `wiki/finance/custom-tour-builder.md` | Source | |
 | `wiki/ops/package-readiness-compiler-spec.md` | Spec | |
-| `raw/FINANCE/*.xlsx` (17 files) | Raw source | Per-package cost spreadsheets |
+| `raw/FINANCE/*.xlsx` (15 files) | Raw source | Per-package cost spreadsheets |
 | `raw/FINANCE/rate_cards/*.json` (5 files) | Raw source | Crew, vehicle, accom, activities, other |
 | `output/products/package-readiness/*.json` (6 files) | Compiled output | Live Package Readiness Bundle v1.2 |
 | `output/products/package-readiness/_manifest.json` | Manifest | |

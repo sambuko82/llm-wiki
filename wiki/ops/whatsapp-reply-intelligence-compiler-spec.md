@@ -1,7 +1,7 @@
 ---
 type: ops
 title: WhatsApp Reply Intelligence Compiler — Implementation Spec
-last_updated: 2026-06-02
+last_updated: 2026-06-03
 sources: [whatsapp-operations-playbook, whatsapp-rules-engine, whatsapp-canned-responses, jvto-policy-pack-v6, policy-source-ownership, db-export-2026-05, wa-pro-crm-api]
 owner: wiki-llm
 stale_after_days: 120
@@ -150,12 +150,12 @@ scripts/compile_whatsapp.py        (NOT BUILT — implementation phase)
 │                  slot_variables to source bundles; attach hard_rule_refs
 ├── validators     WA-01…WA-16 + WA-W1…WA-W5 → findings list
 │                  (each yields gap-report rows)
-├── renderers      emit the 11 artifact JSONs + _manifest.json
+├── renderers      emit the 12 artifact JSONs + _manifest.json
 └── CLI orchestrator
     --dry-run      run loaders+validators, print gap-report summary, write nothing
     --strict       exit non-zero if any `error`-severity finding remains
     --verbose      print each violation with file:line where possible
-    (default)      atomic write of all 12 outputs to output/whatsapp/reply-intelligence/
+    (default)      atomic write of all 13 outputs to output/whatsapp/reply-intelligence/
 ```
 
 Write semantics: atomic (temp + rename), all-or-nothing, same as trust and package compilers. `--dry-run` is the safe default for the first real run — it surfaces the gap report without producing artifacts.

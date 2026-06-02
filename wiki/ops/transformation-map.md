@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Transformation Map — Domain → Bundle Pipeline
-last_updated: 2026-06-01
+last_updated: 2026-06-03
 sources: []
 owner: wiki-llm
 stale_after_days: 120
@@ -63,7 +63,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 | R065 Booking Flow ingest | (cross-cutting; feeds Website Logic + WhatsApp Reply) | **DONE** | — |
 | Package Readiness Compiler | **Package Bundle** (3) | **DONE (v1.2)** — package-readiness output live | — |
 | Policy Bundle Compiler | (subset of Website Logic Bundle) | FUTURE | P2 |
-| WhatsApp Reply Intelligence | **WhatsApp Reply Bundle** (5) | FUTURE | P3 |
+| WhatsApp Reply Intelligence | **WhatsApp Reply Bundle** (5) | FUTURE (spec written) | P3 |
 | Review Proof Index | **Review Bundle** (4) | FUTURE | P4 |
 | Finance Quote Helper | (subset of Package Bundle) | FUTURE | P5 |
 | Website Logic Bundle | **Website Logic Bundle** (2) | PARTIAL — aeo/faq/schema/pages output live, no consolidated compiler | — |
@@ -77,7 +77,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 | Trust | claim/evidence/entity/decision registries, conflict-log, aeo-claims | overview, credentials/* | `scripts/compile_trust.py` | `output/website/trust-bundle/` | F1–F8 (built-in) | jvto-web `/trust`, AEO, schema | **DONE — DO NOT REOPEN** |
 | Policy ownership | `wiki/ops/policy-source-ownership.md` | products/packages-overview, website/faq-master | — (doc map, no compiler) | — | deprecated-wording table (manual) | all policy consumers | **DONE** |
 | Booking flow | products/packages-overview §booking-flow | website/booking-platform-analysis, sources/tango-workflow-jvto-website-booking | — | — | — | website, FAQ, checkout, WhatsApp | **DONE** (structured bundle = FUTURE, via Policy/Booking Bundle) |
-| Package readiness | products/packages-overview, products/packages-full-pricing, finance/rate-cards | destinations/*, crew-registry | `scripts/compile_packages.py` (NOT BUILT) | `output/products/package-readiness/` | gap-report (planned) | jvto-web package/checkout, WhatsApp, quotation, finance | **NEXT (P1)** |
+| Package readiness | products/packages-overview, products/packages-full-pricing, finance/rate-cards | destinations/*, crew-registry | `scripts/compile_packages.py` (BUILT) | `output/products/package-readiness/` | `gap-report.json` (live) | jvto-web package/checkout, WhatsApp, quotation, finance | **DONE (v1.2)** |
 | Policy bundle | `wiki/ops/policy-source-ownership.md`, products/packages-overview, website/faq-master | brand-voice | (planned) | `output/website/policy-bundle/` | deprecated-wording validator (planned) | jvto-web checkout microcopy, WhatsApp, FAQ | FUTURE (P2) |
 | WhatsApp reply | whatsapp/playbook, whatsapp/rules-engine, whatsapp/canned-responses | package + policy + FAQ + trust bundles | (planned) | `output/whatsapp/reply-intelligence/` | (planned) | WhatsApp automation / CRM | FUTURE (P3) |
 | Review proof | reviews/* | package-registry, destinations, crew, claim-registry | (planned) | `output/reviews/review-proof-index/` | (planned) | website proof blocks, schema, AEO | FUTURE (P4) |
@@ -89,26 +89,17 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 
 Locked decisions — do not re-litigate without an explicit user request:
 
-- **Trust Bundle v1 is DONE.** DEC-001/002/003 are **locked**; CONF-001/002/003 **resolved**; F1–F8 **pass**; real compile **succeeded**; 7 JSON outputs **written and pushed**; jvto-web `/trust` **integrated**. Do NOT recompile, edit `raw/_manifest/decision-registry.yml`, or reassert "F4 blocked / DQ pending." Any wiki/log text implying Trust Bundle is blocked is **stale** — superseded by this line.
+- **Trust Bundle v1 is DONE.** DEC-001/002/003 are **locked**; CONF-001/002/003 **resolved**; F1–F8 **pass**; real compile **succeeded**; 9 canonical JSON outputs (+ 3 `schema/` files) **written and pushed**; jvto-web `/trust` **integrated**. Do NOT recompile, edit `raw/_manifest/decision-registry.yml`, or reassert "F4 blocked / DQ pending." Any wiki/log text implying Trust Bundle is blocked is **stale** — superseded by this line.
 - **R065 = JVTO website self-checkout (Instant Book) flow**, 18 Tango steps across 4 PDF pages. NOT Trip.com. See -> [[ops/policy-source-ownership]] §deprecated-wording.
 - **Policy deprecated-wording** is owned by -> [[ops/policy-source-ownership]]. Do not duplicate or contradict it elsewhere.
 
 ## Next Recommended Wedge
 
-**Package Readiness Compiler** (P1) — package data is the business spine. The need is not just JSON; it is a **gap report** comparing wiki package knowledge against live website/checkout behaviour. Planned outputs:
+**Package Readiness Compiler (P1) is DONE (v1.2)** — `scripts/compile_packages.py` built; 6 artifacts live at `output/products/package-readiness/` (`package-registry`, `package-pricing`, `package-itineraries`, `booking-compatibility`, `gap-report`, `_manifest`). Do not re-recommend; see do-not-reopen below.
 
-```
-output/products/package-readiness/
-├── package-registry.json
-├── package-pricing.json
-├── package-itineraries.json
-├── package-route-map.json
-├── booking-compatibility.json
-├── gap-report.json
-└── _manifest.json
-```
+**Next wedge: Policy Bundle Compiler (P2)** — subset of the Website Logic Bundle. Compile canonical policy wording (booking paths, payment, cancellation/travel-credit, inclusions/exclusions, health-screening, anti-fraud) from -> [[ops/policy-source-ownership]] + products/packages-overview + website/faq-master into `output/website/policy-bundle/`, with a deprecated-wording validator driven by -> [[ops/policy-source-ownership]] §deprecated.
 
-Must answer: which packages, which slugs, which routes, pricing tiers, itineraries, inclusions/exclusions, booking path; Ijen packages → health wording present; Bali packages → ferry inclusion; Madakaripura helmet caveat intact; Instant Book reflected in package knowledge.
+Other queued wedges (priority order): **P3** WhatsApp Reply Intelligence (spec written → -> [[ops/whatsapp-reply-intelligence-compiler-spec]]), **P4** Review Proof Index / Asset Bundle, **P5** Finance Quote Helper, **P6** Global Wiki Validator.
 
 ## Explicit Non-Goals (this map)
 

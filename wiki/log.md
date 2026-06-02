@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-05-26
+last_updated: 2026-06-03
 sources: []
 owner: wiki-llm
 stale_after_days: 60
@@ -10,6 +10,23 @@ stale_after_days: 60
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-06-03] lint | wiki/ops contradiction reconcile — force-conform to repo truth
+
+Full read of all 9 `wiki/ops/*.md`; cross-checked every status/count claim against live repo state (scripts/, output/, frontmatter). Fixed every divergence so the ops layer stops contradicting itself ("tidak bolak-balik"). All values below are verified, not assumed.
+
+Conformed:
+- **transformation-map.md** — Package Readiness was internally contradictory: Bundle Status Table said "DONE (v1.2)" but the Per-Bundle Pipeline row + the entire "Next Recommended Wedge" section still said `compile_packages.py` "NOT BUILT" / "NEXT (P1)". Verified built (`scripts/compile_packages.py` + `scripts/package_compiler/` + tests + 6 live artifacts). Pipeline row → BUILT / gap-report.json live / DONE (v1.2); rewrote Next-Wedge to **Policy Bundle (P2)** with P3–P6 queue. Trust Bundle "7 JSON outputs" → **9 canonical JSON (+3 schema/)** (manifest confirms). WhatsApp row → "FUTURE (spec written)".
+- **bundle-taxonomy.md** — trust-bundle `*.json (10 files)` → **9** (+ added `schema/*.json (3)` row). `packages-full-pricing` "All 22 packages" → "22 priced (16 canonical + 6 student)". schema output `~45` → **28** (actual). FINANCE xlsx `17` → **15** (actual). aeo=10 / faq=8 / package-readiness=6 / verify-jvto=5 / rate_cards=5 verified correct.
+- **whatsapp-reply-intelligence-compiler-spec.md** — §7 renderer count "11 artifact JSONs / all 12 outputs" → **12 artifacts / 13 outputs** (§5 lists 12 JSON + _manifest). Removed duplicate `last_updated` key.
+- **package-readiness-compiler-spec.md** — added top **STATUS: IMPLEMENTED (v1.2)** banner; flagged shipped bundle is 6 files (spec's planned 7th `package-route-map.json` never shipped).
+- **CLAUDE.md** build status — "7/7 JSON files valid" → "9/9 trust-bundle JSON (+3 schema/)".
+
+No-fix confirmed: WhatsApp canonical files genuinely use `stale_after_days: 60` (WA-W5 "(60)" correct); `compile_whatsapp.py` absent (FUTURE P3 correct); `validate_wiki.py` NOT BUILT correct (P6 future).
+
+Carried forward (out of ops scope): GAP-01 cross-platform reviewCount 164↔195 drift in `trust-signals.md §Schema Canonical Values` — already tracked in website-context-master.md, not re-touched.
 
 ---
 
