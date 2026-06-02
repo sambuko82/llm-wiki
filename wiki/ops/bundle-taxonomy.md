@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Bundle Taxonomy — 6 Website-First Bundles
-last_updated: 2026-06-01
+last_updated: 2026-06-02
 sources: []
 owner: wiki-llm
 stale_after_days: 120

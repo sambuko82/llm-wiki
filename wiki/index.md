@@ -1,7 +1,7 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-06-01
+last_updated: 2026-06-02
 total_pages: 96
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, google-maps-reviews-api-2026, google-profile-media-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup, finance-rate-cards, ijen-safety-resource-mapping, ijen-tourist-accidents, jvto-verification-dossier, ijen-safety-protocol, backoffice-mysql, guardian-authority-framework-2026-05, tango-workflow-jvto-website-booking]
 owner: wiki-llm
