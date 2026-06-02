@@ -94,9 +94,9 @@ evidence:
     claim: C6
     source_file: wiki/reviews/google-tripadvisor-2026.md
     evidence_type: 6  # Customer review
-    description: Google Maps 4.90/5 (92 reviews), TripAdvisor 4.95/5 (21 reviews)
+    description: Google Maps 4.9/5 (123 reviews), TripAdvisor 4.95/5 (21 reviews)
     verification_status: verified
-    last_verified: 2026-05-12
+    last_verified: 2026-05-26
     proof_ids: [google-maps-live-cid, tripadvisor-live-profile]
 
   # C7 — Our Team

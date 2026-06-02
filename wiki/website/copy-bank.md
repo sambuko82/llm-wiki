@@ -83,7 +83,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 1. NIB 1102230032918 + TDUP (OSS-verifiable)
 2. Founder is active Tourist Police officer (Ditpamobvit)
 3. BBKSDA clearance + HPWKI membership (AHU-verified)
-4. Trustpilot 4.8/51 · Google Maps 4.90/92 · TripAdvisor 4.95/21
+4. Trustpilot 4.8/51 · Google Maps 4.9/123 · TripAdvisor 4.95/21 (195 cross-platform)
 5. Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
 6. 4 independent press articles (Detik, Radar Jember ×2, BBKSDA Jatim)
 7. Booking.com 2015 (9.4/10) + Stefan Loose 2016 (p. 287)

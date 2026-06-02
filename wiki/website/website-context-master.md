@@ -1,7 +1,7 @@
 ---
 type: website
 title: JVTO Website Implementation Master
-last_updated: 2026-06-01
+last_updated: 2026-06-03
 sources: [ssot-v6, trust-signals, legal-licenses, packages-full-pricing, jvto-policy-pack-v6, brand-voice, aeo-claims, schema-templates, operational-facts, hotels, agung-sambuko, dr-ahmad-irwandanu, crew-registry]
 owner: wiki-llm
 stale_after_days: 30
@@ -412,6 +412,7 @@ Tips and gratuities are an **explicit exclusion** per `jvto-policy-pack-v6.md` �
 - `output/website/schema/homepage-organization-schema.json`: was `reviewCount: 164` — **regenerated to `reviewCount: 195`**.
 - Receipt updated in `homepage-organization-schema.receipt.md`.
 - **Status**: closed in-repo per source authority (trust-signals.md §Live Review Platforms).
+- **2026-06-03 follow-up**: secondary mentions the 2026-06-01 pass missed were reconciled — `website/copy-bank.md`, `reviews/trustpilot-compilation.md`, `seo/competitors.md` (164→195), `output/website/aeo/why-jvto.md`, `pages/{bali,surabaya}-landing.md`, and `raw/_manifest/evidence-registry.yml` E010 (→ `trust-bundle/claims.json` regenerated via `compile_trust.py`, F1–F8 pass). No active 92/164 review claim remains; `db-export-2026-05` + `seo-audit-2026-05` retain point-in-time snapshot values by design.
 
 ### GAP-02 — IDR 3,350,000 price anomaly (RESOLVED 2026-06-01)
 
@@ -432,11 +433,11 @@ Tips and gratuities are an **explicit exclusion** per `jvto-policy-pack-v6.md` �
 - This is acceptable operationally but the self-checkout UX should inform guests.
 - **Action**: Add a health screening notice on the booking confirmation or in the Ijen package page copy.
 
-### GAP-05 — Homepage H2 "92 Google Maps reviews" is stale
+### GAP-05 — Homepage Google Maps review count (RESOLVED in-repo 2026-06-02)
 
-- The jvto-web homepage currently shows "92 on Google Maps" in an H2 or trust badge.
-- Correct value: **123** (verified 2026-05-26 via API).
-- **Action**: Fix in jvto-web (not a llm-wiki change).
+- In-repo page copy `output/website/pages/homepage.md` fixed `92 → 123` (verified 2026-05-26 via API), commit `63ab1eb`.
+- **Status**: closed in-repo per source authority (trust-signals.md §Live Review Platforms).
+- **Remaining (EXECUTION-OUT-OF-SCOPE)**: the live jvto-web homepage H2 / trust badge must mirror `123` on next deploy — external surface, FLAG ONLY.
 
 ### GAP-06 — `bromo-ijen-status-today` page blocked
 

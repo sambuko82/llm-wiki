@@ -13,6 +13,27 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-03] fix | GAP-01 stale review-count cluster — secondary-file sweep
+
+Closed the GAP-01 blast radius the weekly health check surfaced. SSOT confirmed current (`trust-signals.md §Live Review Platforms` + §Schema Canonical = Google 4.9/123, Trustpilot 4.8/51, TripAdvisor 4.95/21, cross-platform 195). The 2026-06-01 GAP-01 pass fixed only the core anchors (trust-signals, HANDOFF, homepage-org-schema); these secondary mentions still carried Google `92` / cross-platform `164`:
+
+Conformed → 123 / 195:
+- `wiki/website/copy-bank.md` (trust-stack snippet, added "195 cross-platform")
+- `wiki/reviews/trustpilot-compilation.md` (platform table: Google 92→123 + dates 04-22→05-26/05-12)
+- `wiki/seo/competitors.md` (164→195)
+- `output/website/aeo/why-jvto.md` (92→123, Trustpilot date 05-09→05-18)
+- `output/website/pages/{bali,surabaya}-landing.md` (92→123, dates)
+- `output/website/pages/homepage.md` (Trustpilot date 05-09→05-18; count already 123)
+- `raw/_manifest/evidence-registry.yml` E010 (92→123, last_verified→05-26) → **regenerated trust-bundle via `compile_trust.py`** (F1–F8 pass, 7 files) so `claims.json` description now reads 123.
+
+Tracking docs reconciled:
+- `website-context-master.md`: GAP-01 +2026-06-03 follow-up note; GAP-05 reframed to RESOLVED-in-repo (homepage 92→123, commit `63ab1eb`) + live-jvto FLAG ONLY (EXECUTION-OUT-OF-SCOPE).
+- `extended-bundle-receipt.md`: 2 stale ⚠️ drift warnings ("trust-signals still 164", "HANDOFF shows 92") → ✅ resolved.
+
+Schema layer verified clean (no regen needed): `homepage-organization-schema.json` reviewCount=195 ✓; per-tour schemas reviewCount=51 (Trustpilot, correct per SSOT). Snapshots left intact by design: `db-export-2026-05` (DB had 92 at export), `seo-audit-2026-05` (audit-time 164 + drift caveat). Final sweep: zero active 92/164 review claims remain (only the trust-signals "don't-use-92" warning + fix-history receipt reference them).
+
+---
+
 ## [2026-06-03] health-check | weekly
 
 Scope: 110 wiki/*.md. Cutoffs from 2026-06-03 → 30-day = 2026-05-04, 90-day = 2026-03-05.
@@ -2364,3 +2385,5 @@ Drift found and flagged:
 - `HANDOFF.md` line ~175 shows Google Maps: 4.90 / 92 reviews — stale. See GAP-01.
 
 ## [2026-05-28] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings
+
+## [2026-06-02] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings

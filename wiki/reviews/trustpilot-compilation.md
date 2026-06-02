@@ -38,8 +38,8 @@ Category label: **Excellent**. AI summary (Trustpilot, based on 38 text reviews)
 | Platform | Rating | Count | Verified | Schema role |
 |---|---|---|---|---|
 | **Trustpilot** (primary) | **4.8** | 51 | 2026-05-18 | AggregateRating |
-| Google Maps | 4.90 | 92 | 2026-04-22 | Organization `hasMap` (CID 1266403973589689021) |
-| TripAdvisor | 4.95 | 21 | 2026-04-22 | Organization `sameAs` |
+| Google Maps | 4.9 | 123 | 2026-05-26 (API) | Organization `hasMap` (CID 1266403973589689021) |
+| TripAdvisor | 4.95 | 21 | 2026-05-12 (DB) | Organization `sameAs` |
 | GetYourGuide | — | — | candidate | sameAs pending URL confirmation |
 | Booking.com (2015 award) | 9.4 / 10 | — | historical | History-artifact only, not a live profile |
 

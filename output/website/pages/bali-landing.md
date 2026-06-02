@@ -163,8 +163,8 @@ Check us before you book
 
 | Signal | Source |
 |---|---|
-| Trustpilot: 4.8/5 · 51 reviews | Independent (verified 2026-05-09) |
-| Google Maps: 4.90/5 · 92 reviews | Independent |
+| Trustpilot: 4.8/5 · 51 reviews | Independent (verified 2026-05-18) |
+| Google Maps: 4.9/5 · 123 reviews | Independent |
 | TripAdvisor: 4.95/5 · 21 reviews | Independent |
 | NIB 1102230032918 | OSS-verifiable |
 | Founder: active Tourist Police officer | Detik.com press record, 2021 |

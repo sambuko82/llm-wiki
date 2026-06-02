@@ -37,9 +37,9 @@ Generated: 2026-06-01 | Method: jvto-verified-output skill (Steps 1–4)
 
 ⚠��� `reviewCount (Trustpilot) = 51` verified 2026-05-18. More than 14 days ago. Recommend live Trustpilot check before regenerating schemas.
 
-⚠️ `reviewCount (cross-platform) = 195` (used here). The `trust-signals.md §Schema Canonical Values` still shows 164 (calculated from old Google count of 92). This section is STALE — it was not updated when Google moved from 92 → 123 on 2026-05-26. **Flagged as GAP-01 in wiki/website/website-context-master.md.** Action: update §Schema Canonical Values in trust-signals.md.
+✅ `reviewCount (cross-platform) = 195`. `trust-signals.md §Schema Canonical Values` now shows 195 (51+123+21) — GAP-01 closed 2026-06-01; Google 92→123 propagated. (Drift warning above resolved.)
 
-⚠️ `HANDOFF.md` line ~175 shows `Google Maps: 4.90 / 92 reviews` — stale. See GAP-01.
+✅ `HANDOFF.md` now shows `Google Maps: 4.9 / 123 reviews` — GAP-01 closed. Secondary mentions (copy-bank, trustpilot-compilation, competitors, aeo/why-jvto, landing pages, evidence-registry E010 → claims.json) reconciled to 123/195 on 2026-06-03.
 
 ## Files Generated
 

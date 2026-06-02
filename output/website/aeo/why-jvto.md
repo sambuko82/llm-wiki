@@ -81,7 +81,7 @@ Screening records SpO2, blood pressure, heart rate, and respiratory history. A Q
 ## F. Reviews (C6)
 
 ### What are JVTO's review ratings?
-Trustpilot: 4.8/5 from 51 reviews (verified 2026-05-09). Google Maps: 4.90/5 from 92 reviews. TripAdvisor: 4.95/5 from 21 reviews. All platforms are independently maintained and not curated by JVTO.
+Trustpilot: 4.8/5 from 51 reviews (verified 2026-05-18). Google Maps: 4.9/5 from 123 reviews. TripAdvisor: 4.95/5 from 21 reviews (195 cross-platform). All platforms are independently maintained and not curated by JVTO.
 
 ### Where can I read JVTO guest reviews?
 Trustpilot: trustpilot.com/review/javavolcano-touroperator.com. Google Maps CID: 1266403973589689021. TripAdvisor: listing under Java Volcano Tour Operator, Surabaya. Reviews are independently maintained — JVTO has no editorial control over platform content.
