@@ -13,6 +13,12 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-02] fix | Homepage stale Google Maps review count 92 → 123
+
+Stale value corrected in `output/website/pages/homepage.md` (L183 heading + L187 intro). Canonical = **123** per `wiki/credentials/trust-signals.md` §Live Review Platforms (Google Maps 4.9/5, verified 2026-05-26 via API); SSOT explicitly flags 92 as stale. Sprint named only L183; grep found stale 92 in both spots — both fixed. Other counts (TP 51, TA 21) and ratings already matched SSOT, untouched. jvto-web live deploy mirrors this file — separate push, out of scope (GAP-05 EXECUTION-OUT-OF-SCOPE BUT LOGIC-RESOLVABLE; in-repo source now correct).
+
+---
+
 ## [2026-06-01] cleanup | Phase A governance — stray file + plugins/ exemption
 
 **Scope:** Phase A safe cleanup. Zero content changes. Zero wiki page moves.

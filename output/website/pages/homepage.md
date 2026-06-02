@@ -180,11 +180,11 @@ All Bali-origin packages cross the Bali Strait and finish in Surabaya. They do n
 ## REVIEWS SECTION
 
 ### Section Heading
-51 reviews on Trustpilot. 92 on Google Maps. 21 on TripAdvisor.
+51 reviews on Trustpilot. 123 on Google Maps. 21 on TripAdvisor.
 
 ### Section Intro
 
-Trustpilot rating: **4.8 / 5** (51 reviews, verified 2026-05-09). Google Maps: **4.90 / 5** (92 reviews). TripAdvisor: **4.95 / 5** (21 reviews). All platforms link to the live profiles — not screenshots.
+Trustpilot rating: **4.8 / 5** (51 reviews, verified 2026-05-09). Google Maps: **4.90 / 5** (123 reviews). TripAdvisor: **4.95 / 5** (21 reviews). All platforms link to the live profiles — not screenshots.
 
 These are not cherry-picked quotes. Browse by platform, browse by pattern. The themes that appear across guides, drivers, and logistics tell you more than any single testimonial.
 
