@@ -13,6 +13,17 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-02] cleanup-governor Mode B | Phase A safe cleanup
+
+Per /llm-wiki:decision-map audit (Mode A, whole-repo), executed approved Phase A:
+- **Deleted** `policy/inclusions-exclusions.md` — 0-byte empty file; inclusions policy owned by `wiki/ops/policy-source-ownership.md` (R-LOCK). `policy/` dir now empty/removed.
+- **Removed** empty `templates/` dir — 3 Obsidian templates relocated to `tests/templates/` in commit `10f6f28` (intentional, committed). Doc drift: `CLAUDE.md` §Directory Structure + `bundle-taxonomy.md` §"not a bundle" still list `templates/` — flagged, not edited this pass.
+- **Indexed** 3 previously-uncatalogued pages in `wiki/index.md`: `ops/whatsapp-reply-intelligence-compiler-spec` (§Workflows), `internal-ops/2026-06-02-chatbot-llmwiki-integration-audit` + `…-slim-feed-pattern` (§Internal Ops).
+
+No LOCK files touched. No bundle migration. No jvto-web/chatbot runtime drift.
+
+---
+
 ## [2026-06-02] fix | Homepage stale Google Maps review count 92 → 123
 
 Stale value corrected in `output/website/pages/homepage.md` (L183 heading + L187 intro). Canonical = **123** per `wiki/credentials/trust-signals.md` §Live Review Platforms (Google Maps 4.9/5, verified 2026-05-26 via API); SSOT explicitly flags 92 as stale. Sprint named only L183; grep found stale 92 in both spots — both fixed. Other counts (TP 51, TA 21) and ratings already matched SSOT, untouched. jvto-web live deploy mirrors this file — separate push, out of scope (GAP-05 EXECUTION-OUT-OF-SCOPE BUT LOGIC-RESOLVABLE; in-repo source now correct).

@@ -162,10 +162,13 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 - [[ops/policy-source-ownership]] — Canonical owner per policy domain (booking, payment, cancellation, inclusions, health, ISIC, police escort, anti-fraud) + deprecated-wording guardrails
 - [[ops/transformation-map]] — Master domain→bundle pipeline map (canonical source → compiler → output → validator → consumer → status). Output convention `output/<domain>/<bundle>/`. Trust Bundle DONE/do-not-reopen; Package Readiness is next wedge.
 - [[ops/package-readiness-compiler-spec]] — Spec (no code) for the NEXT wedge: compiles 16 canonical packages → `output/products/package-readiness/` (registry, pricing, itineraries, booking-compatibility, gap-report, manifest) with 12 validation rules PKG-01–12. Primary deliverable = gap report.
+- [[ops/whatsapp-reply-intelligence-compiler-spec]] — Spec (no code) for wedge P3 (WhatsApp Reply Bundle): compiles channel × state × intent → action + pre-rendered bilingual template + claim/policy citation, plus a coverage/contradiction gap report over playbook + rules-engine + canned-responses. Deterministic skeleton only; runtime LLM replies stay in WA Pro CRM consumer.
 
 ## Internal Ops
 
 - [[internal-ops/backoffice-extraction]] — How to re-run the MySQL → CSV → wiki pipeline. PII rules, scripts, connection fallback. End-to-end runtime ~3 min for 63k rows.
+- [[internal-ops/2026-06-02-chatbot-llmwiki-integration-audit]] — Integration audit of `chatbot-web-jvto` (live admin UI + WA webhook + chat API) against llm-wiki SSOT/bundles. 10 critical findings + 3-phase consolidation roadmap. Phase 1/2/3 preserved as long-term ambition (§5 superseded by slim-feed doc below).
+- [[internal-ops/2026-06-02-chatbot-slim-feed-pattern]] — Near-term slim path distilled from the audit: minimal feed pattern covering main risks while respecting the chatbot as a running production system. Supersedes audit §5 planning.
 
 ## Finance
 

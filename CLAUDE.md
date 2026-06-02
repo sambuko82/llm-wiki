@@ -38,7 +38,7 @@ The LLM writes and maintains all `wiki/` files. You source and explore; the LLM 
       FINANCE/            # Tour package cost spreadsheets + rate card JSONs
       _manifest/          # Intake governance: 13 tracking/registry files (LLM-maintained exception to raw/ immutability)
     Clippings/            # Web clips from Obsidian Web Clipper. Treat as sources.
-    templates/            # Obsidian page templates
+    tests/templates/      # Obsidian page templates (relocated from root templates/ 2026-06-02)
     bases/                # Obsidian Bases (.base) — auto-updating domain dashboards (read-only views over wiki/ frontmatter)
     output/               # LLM-generated artifacts, organized by domain.
       website/            # All website artifacts

@@ -186,7 +186,7 @@ For clarity — these are domain folders or operational areas, not bundles:
 - `wiki/_shared/` — cross-bundle registries/rules/glossary (empty scaffold in Phase 2)
 - `raw/` and `raw/_manifest/` — immutable source; bundles consume, never restructure
 - `bases/` — Obsidian dashboards over wiki frontmatter
-- `templates/`, `scripts/`, `tests/`, `docs/`, `Clippings/`, `policy/` — infrastructure / source / docs
+- `scripts/`, `tests/` (incl. `tests/templates/` Obsidian page templates), `docs/`, `Clippings/` — infrastructure / source / docs
 
 ## How bundles relate to `output/`
 
