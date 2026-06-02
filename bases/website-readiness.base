@@ -1,18 +1,16 @@
 filters:
   or:
-    - 'type == "destination"'
-    - 'type == "product"'
-    - 'type == "person"'
-    - 'type == "credential"'
-    - 'type == "website"'
-    - 'type == "seo"'
-
+    - type == "destination"
+    - type == "product"
+    - type == "person"
+    - type == "credential"
+    - type == "website"
+    - type == "seo"
 formulas:
-  days_since_update: 'if(last_updated, (today() - date(last_updated)).days, "")'
-  source_count: 'if(sources, sources.length, 0)'
-  stale_flag: 'if(stale_after_days && last_updated, if((today() - date(last_updated)).days > stale_after_days, "⚠️ stale", "✅ fresh"), "—")'
-  health_wording: 'if(health_wording_mode, health_wording_mode, "—")'
-
+  days_since_update: if(last_updated, (today() - date(last_updated)).days, "")
+  source_count: if(sources, sources.length, 0)
+  stale_flag: if(stale_after_days && last_updated, if((today() - date(last_updated)).days > stale_after_days, "⚠️ stale", "✅ fresh"), "—")
+  health_wording: if(health_wording_mode, health_wording_mode, "—")
 properties:
   type:
     displayName: Type
@@ -32,7 +30,6 @@ properties:
     displayName: Status
   formula.health_wording:
     displayName: Health wording
-
 views:
   - type: table
     name: All website-relevant pages (staleness order)
@@ -47,14 +44,13 @@ views:
       - formula.source_count
     summaries:
       formula.days_since_update: Average
-
   - type: table
     name: Stale pages
     filters:
       and:
-        - 'stale_after_days'
-        - 'last_updated'
-        - '(today() - date(last_updated)).days > stale_after_days'
+        - stale_after_days
+        - last_updated
+        - (today() - date(last_updated)).days > stale_after_days
     order:
       - file.name
       - title
@@ -62,12 +58,11 @@ views:
       - last_updated
       - formula.days_since_update
       - stale_after_days
-
   - type: table
     name: Ijen health-wording pages
     filters:
       and:
-        - 'health_wording_mode == "conditional"'
+        - health_wording_mode == "conditional"
     order:
       - file.name
       - title
@@ -75,7 +70,6 @@ views:
       - formula.health_wording
       - last_updated
       - formula.stale_flag
-
   - type: cards
     name: Domain cards
     order:

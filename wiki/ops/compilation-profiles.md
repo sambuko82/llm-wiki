@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Compilation Profiles — Workflow 5
-last_updated: 2026-05-26
+last_updated: 2026-06-01
 sources: [llm-kb-tooling-guide, seo-audit-2026-05, guardian-authority-framework-2026-05]
 owner: wiki-llm
 stale_after_days: 120

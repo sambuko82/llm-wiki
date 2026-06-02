@@ -112,7 +112,19 @@
       "Bash(findstr \":3000\")",
       "Bash(tasklist /FI \"PID eq 39168\" /FO LIST)",
       "PowerShell(Get-Process -Id 39168)",
-      "PowerShell(Get-Process -Id 39168 | Select-Object Name, Id, CommandLine -ErrorAction SilentlyContinue; \\(Get-WmiObject Win32_Process -Filter \"ProcessId=39168\"\\).CommandLine)"
+      "PowerShell(Get-Process -Id 39168 | Select-Object Name, Id, CommandLine -ErrorAction SilentlyContinue; \\(Get-WmiObject Win32_Process -Filter \"ProcessId=39168\"\\).CommandLine)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/frontmatter_normalize.py --apply)",
+      "Bash(gh pr create --title 'ops | Phase B — frontmatter normalization' --body ' *)",
+      "Bash(gh pr *)",
+      "Bash(grep -vE '^\\(wiki/.*\\\\.md|scripts/frontmatter_normalize\\\\.py\\)$')",
+      "Bash(PYTHONIOENCODING=utf-8 python3 scripts/frontmatter_normalize.py)",
+      "Bash(grep -vE '^\\(wiki/sources/backoffice-.*\\\\.md|bases/.*\\\\.base|wiki/log\\\\.md\\)$')",
+      "Bash(cd \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\" && rm BASE.base && ls BASE.base 2>&1 || echo \"BASE.base deleted ✓\")",
+      "Bash(grep -vE '^\\(BASE\\\\.base|wiki/destinations/\\(kawah-ijen|mount-bromo|madakaripura|papuma-beach|tumpak-sewu\\)\\\\.md|wiki/sources/3d-route-viewer\\\\.md|wiki/log\\\\.md\\)$')",
+      "Skill(autoplan)",
+      "Skill(autoplan:*)",
+      "mcp__Windows-MCP__FileSystem",
+      "Bash(Remove-Item \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\\\\output\\\\faq-2026-05-12-bromo.md\")"
     ]
   }
 }
