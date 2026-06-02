@@ -124,7 +124,12 @@
       "Skill(autoplan)",
       "Skill(autoplan:*)",
       "mcp__Windows-MCP__FileSystem",
-      "Bash(Remove-Item \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\\\\output\\\\faq-2026-05-12-bromo.md\")"
+      "Bash(Remove-Item \"E:\\\\Users\\\\JAVA VOLCANO\\\\llm-wiki\\\\output\\\\faq-2026-05-12-bromo.md\")",
+      "Bash(ls -1A templates/)",
+      "Bash(git log *)",
+      "Bash(rmdir templates/)",
+      "Bash(echo \"templates rmdir exit: $?\")",
+      "Bash(ls -1d policy templates)"
     ]
   }
 }
