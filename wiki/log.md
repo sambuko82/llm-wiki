@@ -13,6 +13,19 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-07] fix | Package Readiness — Surabaya public_url prefix (PKG compiler)
+
+Fixed `scripts/package_compiler/loader.py` `Package.public_url`: Surabaya packages
+derived bare `/tours/<slug>` while jvto-web routes them under `/tours/from-surabaya/<slug>`
+(bare form 404s — no `/tours/[slug]` route exists; matches jvto-web's 2026-05-02 slug fix).
+Now derives `/tours/from-surabaya/<slug>`, symmetric with the Bali branch. Recompiled
+(`--write`): only the 12 Surabaya `public_url` values in `package-registry.json` changed;
+pricing/itineraries/booking/gap-report unchanged; PKG-03 still clean (it validates
+`norm_slug` against the prefix-stripped sitemap set, not the full URL). Re-synced to jvto-web.
+Surfaced by Codex review on jvto-web PR #10.
+
+---
+
 ## [2026-06-07] integrate | Package Readiness Bundle consumer sync (jvto-web)
 
 Pages updated: wiki/ops/transformation-map.md (package-readiness pipeline row + status anchor).
