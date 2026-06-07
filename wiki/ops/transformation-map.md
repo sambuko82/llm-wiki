@@ -1,7 +1,7 @@
 ---
 type: ops
 title: Transformation Map — Domain → Bundle Pipeline
-last_updated: 2026-06-03
+last_updated: 2026-06-07
 sources: []
 owner: wiki-llm
 stale_after_days: 120
@@ -77,7 +77,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 | Trust | claim/evidence/entity/decision registries, conflict-log, aeo-claims | overview, credentials/* | `scripts/compile_trust.py` | `output/website/trust-bundle/` | F1–F8 (built-in) | jvto-web `/trust`, AEO, schema | **DONE — DO NOT REOPEN** |
 | Policy ownership | `wiki/ops/policy-source-ownership.md` | products/packages-overview, website/faq-master | — (doc map, no compiler) | — | deprecated-wording table (manual) | all policy consumers | **DONE** |
 | Booking flow | products/packages-overview §booking-flow | website/booking-platform-analysis, sources/tango-workflow-jvto-website-booking | — | — | — | website, FAQ, checkout, WhatsApp | **DONE** (structured bundle = FUTURE, via Policy/Booking Bundle) |
-| Package readiness | products/packages-overview, products/packages-full-pricing, finance/rate-cards | destinations/*, crew-registry | `scripts/compile_packages.py` (BUILT) | `output/products/package-readiness/` | `gap-report.json` (live) | jvto-web package/checkout, WhatsApp, quotation, finance | **DONE (v1.2)** |
+| Package readiness | products/packages-overview, products/packages-full-pricing, finance/rate-cards | destinations/*, crew-registry | `scripts/compile_packages.py` (BUILT) | `output/products/package-readiness/` | `gap-report.json` (live) | jvto-web (`npm run sync:packages` → `src/data/package-readiness/`), WhatsApp, quotation, finance | **DONE (v1.2)** |
 | Policy bundle | `wiki/ops/policy-source-ownership.md`, products/packages-overview, website/faq-master | brand-voice | (planned) | `output/website/policy-bundle/` | deprecated-wording validator (planned) | jvto-web checkout microcopy, WhatsApp, FAQ | FUTURE (P2) |
 | WhatsApp reply | whatsapp/playbook, whatsapp/rules-engine, whatsapp/canned-responses | package + policy + FAQ + trust bundles | (planned) | `output/whatsapp/reply-intelligence/` | (planned) | WhatsApp automation / CRM | FUTURE (P3) |
 | Review proof | reviews/* | package-registry, destinations, crew, claim-registry | (planned) | `output/reviews/review-proof-index/` | (planned) | website proof blocks, schema, AEO | FUTURE (P4) |
@@ -95,7 +95,7 @@ Locked decisions — do not re-litigate without an explicit user request:
 
 ## Next Recommended Wedge
 
-**Package Readiness Compiler (P1) is DONE (v1.2)** — `scripts/compile_packages.py` built; 6 artifacts live at `output/products/package-readiness/` (`package-registry`, `package-pricing`, `package-itineraries`, `booking-compatibility`, `gap-report`, `_manifest`). Do not re-recommend; see do-not-reopen below.
+**Package Readiness Compiler (P1) is DONE (v1.2)** — `scripts/compile_packages.py` built; 6 artifacts live at `output/products/package-readiness/` (`package-registry`, `package-pricing`, `package-itineraries`, `booking-compatibility`, `gap-report`, `_manifest`). Do not re-recommend; see do-not-reopen below. **Consumer sync live (2026-06-07):** jvto-web pulls all 6 artifacts via `scripts/sync-package-readiness.mjs` / `npm run sync:packages` → `src/data/package-readiness/`, gated on `_manifest.clean === true` + `schema_version` prefix + positive `canonical_package_count` (the package-readiness manifest has no F1–F8 block). Mirrors the existing trust-bundle sync.
 
 **Next wedge: Policy Bundle Compiler (P2)** — subset of the Website Logic Bundle. Compile canonical policy wording (booking paths, payment, cancellation/travel-credit, inclusions/exclusions, health-screening, anti-fraud) from -> [[ops/policy-source-ownership]] + products/packages-overview + website/faq-master into `output/website/policy-bundle/`, with a deprecated-wording validator driven by -> [[ops/policy-source-ownership]] §deprecated.
 
