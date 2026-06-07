@@ -13,6 +13,20 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-07] integrate | Package Readiness Bundle consumer sync (jvto-web)
+
+Pages updated: wiki/ops/transformation-map.md (package-readiness pipeline row + status anchor).
+
+Key additions: jvto-web now consumes the clean Package Readiness Bundle v1.2 via a new
+`scripts/sync-package-readiness.mjs` / `npm run sync:packages`, copying all 6 artifacts
+(`_manifest`, `package-registry`, `package-pricing`, `package-itineraries`,
+`booking-compatibility`, `gap-report`) to `src/data/package-readiness/`. Manifest-gated on
+`clean === true` + `schema_version` "package-readiness/*" prefix + positive
+`canonical_package_count` (no F1–F8 block on this manifest, unlike trust-bundle). Mirrors the
+existing trust-bundle sync; producer artifacts unchanged. Runtime page/DB wiring deferred.
+
+---
+
 ## [2026-06-03] fix | GAP-01 stale review-count cluster — secondary-file sweep
 
 Closed the GAP-01 blast radius the weekly health check surfaced. SSOT confirmed current (`trust-signals.md §Live Review Platforms` + §Schema Canonical = Google 4.9/123, Trustpilot 4.8/51, TripAdvisor 4.95/21, cross-platform 195). The 2026-06-01 GAP-01 pass fixed only the core anchors (trust-signals, HANDOFF, homepage-org-schema); these secondary mentions still carried Google `92` / cross-platform `164`:
@@ -2387,13 +2401,3 @@ Drift found and flagged:
 ## [2026-05-28] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings
 
 ## [2026-06-02] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings
-
-## [2026-06-07] integrate | Package Readiness Bundle consumer sync (jvto-web)
-Pages updated: wiki/ops/transformation-map.md (package-readiness pipeline row + status anchor).
-Key additions: jvto-web now consumes the clean Package Readiness Bundle v1.2 via a new
-`scripts/sync-package-readiness.mjs` / `npm run sync:packages`, copying all 6 artifacts
-(`_manifest`, `package-registry`, `package-pricing`, `package-itineraries`,
-`booking-compatibility`, `gap-report`) to `src/data/package-readiness/`. Manifest-gated on
-`clean === true` + `schema_version` "package-readiness/*" prefix + positive
-`canonical_package_count` (no F1–F8 block on this manifest, unlike trust-bundle). Mirrors the
-existing trust-bundle sync; producer artifacts unchanged. Runtime page/DB wiring deferred.
