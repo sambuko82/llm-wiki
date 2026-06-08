@@ -31,7 +31,7 @@ class Package:
     def public_url(self) -> str:
         if self.origin == "bali":
             return f"/tours/from-bali/{self.norm_slug}"
-        return f"/tours/{self.norm_slug}"
+        return f"/tours/from-surabaya/{self.norm_slug}"
 
     @property
     def visits_madakaripura(self) -> bool:

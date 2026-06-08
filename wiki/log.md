@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-06-03
+last_updated: 2026-06-07
 sources: []
 owner: wiki-llm
 stale_after_days: 60
@@ -10,6 +10,33 @@ stale_after_days: 60
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-06-07] fix | Package Readiness — Surabaya public_url prefix (PKG compiler)
+
+Fixed `scripts/package_compiler/loader.py` `Package.public_url`: Surabaya packages
+derived bare `/tours/<slug>` while jvto-web routes them under `/tours/from-surabaya/<slug>`
+(bare form 404s — no `/tours/[slug]` route exists; matches jvto-web's 2026-05-02 slug fix).
+Now derives `/tours/from-surabaya/<slug>`, symmetric with the Bali branch. Recompiled
+(`--write`): only the 12 Surabaya `public_url` values in `package-registry.json` changed;
+pricing/itineraries/booking/gap-report unchanged; PKG-03 still clean (it validates
+`norm_slug` against the prefix-stripped sitemap set, not the full URL). Re-synced to jvto-web.
+Surfaced by Codex review on jvto-web PR #10.
+
+---
+
+## [2026-06-07] integrate | Package Readiness Bundle consumer sync (jvto-web)
+
+Pages updated: wiki/ops/transformation-map.md (package-readiness pipeline row + status anchor).
+
+Key additions: jvto-web now consumes the clean Package Readiness Bundle v1.2 via a new
+`scripts/sync-package-readiness.mjs` / `npm run sync:packages`, copying all 6 artifacts
+(`_manifest`, `package-registry`, `package-pricing`, `package-itineraries`,
+`booking-compatibility`, `gap-report`) to `src/data/package-readiness/`. Manifest-gated on
+`clean === true` + `schema_version` "package-readiness/*" prefix + positive
+`canonical_package_count` (no F1–F8 block on this manifest, unlike trust-bundle). Mirrors the
+existing trust-bundle sync; producer artifacts unchanged. Runtime page/DB wiring deferred.
 
 ---
 
