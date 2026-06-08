@@ -1,0 +1,29 @@
+name: CI
+
+# Validates the SSOT compilers stay clean. No artifacts are written (dry-run only);
+# this guards against committing a wiki state that the compilers would reject.
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Package Readiness compiler (strict)
+        run: python scripts/compile_packages.py --dry-run --verbose --strict
+
+      - name: Trust Bundle compiler (validate)
+        run: python scripts/compile_trust.py --dry-run --verbose
