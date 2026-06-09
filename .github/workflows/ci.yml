@@ -27,3 +27,15 @@ jobs:
 
       - name: Trust Bundle compiler (validate)
         run: python scripts/compile_trust.py --dry-run --verbose
+
+      # Phase 1.9 — only after a merge to master AND the compilers above pass,
+      # notify jvto-web to sync the freshly-validated artifacts. Token is read
+      # from a secret and never printed.
+      - name: Notify jvto-web (repository_dispatch)
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ secrets.JVTO_WEB_DISPATCH_TOKEN }}
+        run: |
+          gh api -X POST repos/jvto-devteam/jvto-web/dispatches \
+            -f event_type=llm-wiki-master-updated \
+            -f "client_payload[sha]=${GITHUB_SHA}"
