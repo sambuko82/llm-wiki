@@ -13,12 +13,14 @@ Invoke the `llm-wiki:blog-publisher` skill, Phase 1 — CREATE.
 2. Read `output/website/blog/_manifest.json` to check existing slugs (avoid duplicates).
 3. If the user passed a topic argument, use it. If not, offer the suggested topics list from the skill.
 
-## Action protocol
+## Action protocol (one-shot — user cukup command ini saja)
 
 1. Select sources (Step 1 of CREATE phase) — list them and wait for confirmation.
-2. On confirmation, draft the post and write both files (post `.md` + manifest update).
-3. Display the full draft in chat after writing.
-4. End with: "Preview dengan `/llm-wiki:blog-preview <slug>` atau beritahu apa yang ingin diubah."
+2. On confirmation, draft the post and write both files (post `.md` + manifest update + log).
+3. Display the full draft in chat.
+4. Kirim file output dengan `SendUserFile` (`output/website/blog/<slug>.md`).
+5. Tanyakan via `AskUserQuestion`: **Publish sekarang** / **Edit dulu** / **Simpan sebagai draft**.
+6. Jika user pilih "Publish sekarang" → langsung jalankan Phase 3 PUBLISH (commit + push). User TIDAK perlu mengetik command publish.
 
 ## Hard refusals
 
