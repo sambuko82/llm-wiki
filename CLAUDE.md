@@ -241,3 +241,6 @@ Key routing rules:
 - Ship/deploy/PR → invoke /ship or /land-and-deploy
 - Save progress → invoke /context-save
 - Resume context → invoke /context-restore
+- Write/draft a blog post → invoke /llm-wiki:blog-create
+- Preview a blog draft → invoke /llm-wiki:blog-preview
+- Publish a blog post → invoke /llm-wiki:blog-publish
