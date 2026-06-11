@@ -2,7 +2,7 @@
 title: "Why Ijen Trekking Requires a Medical Checkup — And What Actually Happens"
 slug: "2026-06-11-ijen-medical-checkup-requirement"
 date: "2026-06-11"
-status: "draft"
+status: "published"
 tags: [ijen, health-screening, safety, travel-guide, medical]
 seo_title: "Ijen Medical Checkup Requirement 2026 | What Trekkers Need to Know"
 seo_description: "Before you hike Kawah Ijen, BBKSDA regulations can require a local health certificate. Here's what the screening involves, who issues it, and what happens if you don't pass."
