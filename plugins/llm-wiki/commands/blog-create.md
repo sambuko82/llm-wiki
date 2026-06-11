@@ -18,7 +18,7 @@ Invoke the `llm-wiki:blog-publisher` skill, Phase 1 — CREATE.
 1. Select sources (Step 1 of CREATE phase) — list them and wait for confirmation.
 2. On confirmation, draft the post, write both files (post `.md` + manifest update + log entry), and **commit the draft to the current branch** (`git add … && git commit -m "blog | draft | <title>"`). Draft is now in the local repo.
 3. Display the full draft in chat.
-4. Kirim file output dengan `SendUserFile` (`output/website/blog/<slug>.md`).
+4. Beritahu lokasi file: `output/website/blog/<slug>.md` sudah tersimpan di repo — dapat dipreview langsung dari filesystem. Tidak perlu SendUserFile.
 5. Tanyakan via `AskUserQuestion` (2 pilihan, header "Publish?"):
    - **Publish sekarang** — langsung jalankan Phase 3 PUBLISH (update status → published, push ke master, sync ke jvto-web)
    - **Tidak sekarang** — draft sudah tersimpan di repo lokal; publish nanti via `/llm-wiki:blog-publish <slug>`

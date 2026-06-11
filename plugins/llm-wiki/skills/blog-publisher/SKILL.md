@@ -104,7 +104,7 @@ Brand voice rules (from `wiki/website/brand-voice.md`):
 Tujuan: user cukup satu command (`/llm-wiki:blog-create`). Setelah draft berhasil di-commit:
 
 1. Tampilkan seluruh post di chat untuk dibaca langsung.
-2. Kirim file output dengan tool `SendUserFile` (path: `output/website/blog/<slug>.md`, status: `normal`, caption: judul post).
+2. Beritahu lokasi file: `output/website/blog/<slug>.md` sudah tersimpan di repo dan dapat dipreview langsung dari filesystem. Tidak perlu SendUserFile.
 3. Tanyakan dengan tool `AskUserQuestion` (1 pertanyaan, header "Publish?"):
    - **Publish sekarang** — update status ke published, push ke master, sync ke jvto-web
    - **Tidak sekarang** — draft sudah tersimpan di repo lokal; publish nanti via `/llm-wiki:blog-publish <slug>`
