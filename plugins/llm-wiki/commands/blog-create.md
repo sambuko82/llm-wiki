@@ -1,5 +1,5 @@
 ---
-description: Start a new JVTO blog post draft. Reads wiki sources, proposes a slug/title/tags, drafts the post, and writes to output/website/blog/.
+description: Start a new JVTO blog post draft. Reads wiki sources, proposes a slug/title/tags, drafts the post, commits the draft to the current branch, then asks whether to publish.
 argument-hint: "[optional: topic or keyword, e.g. 'kawah ijen guide' or 'bromo closure']"
 ---
 
@@ -13,14 +13,15 @@ Invoke the `llm-wiki:blog-publisher` skill, Phase 1 — CREATE.
 2. Read `output/website/blog/_manifest.json` to check existing slugs (avoid duplicates).
 3. If the user passed a topic argument, use it. If not, offer the suggested topics list from the skill.
 
-## Action protocol (one-shot — user cukup command ini saja)
+## Action protocol
 
 1. Select sources (Step 1 of CREATE phase) — list them and wait for confirmation.
-2. On confirmation, draft the post and write both files (post `.md` + manifest update + log).
+2. On confirmation, draft the post, write both files (post `.md` + manifest update + log entry), and **commit the draft to the current branch** (`git add … && git commit -m "blog | draft | <title>"`). Draft is now in the local repo.
 3. Display the full draft in chat.
 4. Kirim file output dengan `SendUserFile` (`output/website/blog/<slug>.md`).
-5. Tanyakan via `AskUserQuestion`: **Publish sekarang** / **Edit dulu** / **Simpan sebagai draft**.
-6. Jika user pilih "Publish sekarang" → langsung jalankan Phase 3 PUBLISH (commit + push). User TIDAK perlu mengetik command publish.
+5. Tanyakan via `AskUserQuestion` (2 pilihan, header "Publish?"):
+   - **Publish sekarang** — langsung jalankan Phase 3 PUBLISH (update status → published, push ke master, sync ke jvto-web)
+   - **Tidak sekarang** — draft sudah tersimpan di repo lokal; publish nanti via `/llm-wiki:blog-publish <slug>`
 
 ## Hard refusals
 

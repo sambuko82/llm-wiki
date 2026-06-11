@@ -5,7 +5,7 @@ description: Manages the full JVTO blog lifecycle — draft, preview, publish. U
 
 # JVTO Blog Publisher
 
-Three phases: CREATE → PREVIEW → PUBLISH. **One-shot flow preferred**: `/llm-wiki:blog-create <topik>` membuat draft, mengirim file output, lalu menanyakan publish lewat tombol (`AskUserQuestion`) — user tidak perlu mengetik command publish yang panjang. PREVIEW dan PUBLISH tetap tersedia sebagai command terpisah untuk draft lama. You never auto-publish without an explicit user choice (tombol "Publish sekarang" dihitung sebagai pilihan eksplisit).
+Three phases: CREATE → PREVIEW → PUBLISH. **One-shot flow preferred**: `/llm-wiki:blog-create <topik>` membuat draft, commit ke branch saat ini, kirim file, lalu tanya publish lewat tombol (`AskUserQuestion`) — user tidak perlu mengetik command publish yang panjang. PREVIEW dan PUBLISH tetap tersedia sebagai command terpisah untuk draft lama. You never auto-publish without an explicit user choice (tombol "Publish sekarang" dihitung sebagai pilihan eksplisit).
 
 ## Activation guard
 
@@ -83,7 +83,7 @@ Brand voice rules (from `wiki/website/brand-voice.md`):
 - "Tourist Police officer" bukan "safety-focused guide"
 - "100% Private" bukan "private tours"
 
-### Step 3: Write files
+### Step 3: Write + commit draft
 
 1. Write `output/website/blog/<slug>.md` (frontmatter + body)
 2. Add/update entry di `output/website/blog/_manifest.json` (status: "draft")
@@ -92,22 +92,26 @@ Brand voice rules (from `wiki/website/brand-voice.md`):
    ## [YYYY-MM-DD] blog-draft | <title>
    Slug: <slug>. Sources: <list>. Status: draft.
    ```
+4. **Auto-commit ke branch saat ini** (bukan push — hanya commit lokal):
+   ```
+   git add output/website/blog/<slug>.md output/website/blog/_manifest.json wiki/log.md
+   git commit -m "blog | draft | <title>"
+   ```
+   Draft sekarang tersimpan di repo lokal dan dapat dipreview langsung dari filesystem.
 
 ### Step 4: Deliver + ask publish (one-shot handoff)
 
-Tujuan: user cukup satu command (`/llm-wiki:blog-create`). Setelah draft jadi, JANGAN minta user mengetik command publish yang panjang. Sebagai gantinya:
+Tujuan: user cukup satu command (`/llm-wiki:blog-create`). Setelah draft berhasil di-commit:
 
 1. Tampilkan seluruh post di chat untuk dibaca langsung.
 2. Kirim file output dengan tool `SendUserFile` (path: `output/website/blog/<slug>.md`, status: `normal`, caption: judul post).
-3. Tanyakan dengan tool `AskUserQuestion` (1 pertanyaan, header "Blog Draft"):
-   - **Publish sekarang (Recommended)** — commit + push ke master, sync ke jvto-web
-   - **Edit dulu** — user akan beritahu perubahan; tetap draft
-   - **Simpan sebagai draft** — biarkan draft, jangan publish
+3. Tanyakan dengan tool `AskUserQuestion` (1 pertanyaan, header "Publish?"):
+   - **Publish sekarang** — update status ke published, push ke master, sync ke jvto-web
+   - **Tidak sekarang** — draft sudah tersimpan di repo lokal; publish nanti via `/llm-wiki:blog-publish <slug>`
 
 4. Routing jawaban:
-   - "Publish sekarang" → langsung jalankan **Phase 3 — PUBLISH** (lewati pre-publish konfirmasi tambahan; checklist tetap dijalankan). User tidak perlu mengetik command apa pun.
-   - "Edit dulu" → tunggu instruksi edit, terapkan, lalu ulangi Step 4.
-   - "Simpan sebagai draft" → konfirmasi tersimpan, beri tahu cara publish nanti (`/llm-wiki:blog-publish <slug>` atau jalankan create lagi).
+   - "Publish sekarang" → langsung jalankan **Phase 3 — PUBLISH** (lewati pre-publish konfirmasi tambahan; checklist tetap dijalankan).
+   - "Tidak sekarang" → konfirmasi draft tersimpan, beri tahu path file + cara publish nanti.
 
 ---
 
