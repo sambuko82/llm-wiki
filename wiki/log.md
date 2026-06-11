@@ -13,6 +13,12 @@ stale_after_days: 60
 
 ---
 
+## [2026-06-11] blog | draft | Why Ijen Trekking Requires a Medical Checkup — And What Actually Happens
+
+Pages created: output/website/blog/2026-06-11-ijen-medical-checkup-requirement.md. Key additions: BBKSDA SE.1658/KSA.9/2024 regulatory basis, 4-metric screening protocol, Dr. Ahmad Irwandanu credential chain, failure/individual-cancellation protocol, incident data (50% fatalities fitness-related). Status: draft.
+
+---
+
 ## [2026-06-07] fix | Package Readiness — Surabaya public_url prefix (PKG compiler)
 
 Fixed `scripts/package_compiler/loader.py` `Package.public_url`: Surabaya packages
