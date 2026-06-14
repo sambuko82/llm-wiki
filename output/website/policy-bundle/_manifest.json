@@ -1,0 +1,25 @@
+{
+  "schema_version": "policy-bundle/v1.0",
+  "generated_by": "scripts/compile_policy_bundle.py",
+  "generated_at": "2026-06-14T04:48:14.405262+00:00",
+  "dry_run": false,
+  "source_hashes": {
+    "policy-source-ownership": "fb3a6e84deb5",
+    "packages-overview": "c27b40068df6",
+    "faq-master": "9bb010c9fbe1"
+  },
+  "policy_domains": 9,
+  "deprecated_checks": 9,
+  "consumers_checked": [
+    "checkout",
+    "invoice",
+    "whatsapp"
+  ],
+  "artifacts": [
+    "policy-bundle.json",
+    "consumer-bundles.json",
+    "deprecated-wording-report.json",
+    "gap-report.json"
+  ],
+  "clean": true
+}
