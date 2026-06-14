@@ -221,6 +221,23 @@ def build_manifest(sources, gap_report: dict, *, dry_run: bool) -> dict:
         "deprecated_checks": len(sources.deprecated_rules),
         "consumers_checked": list(CONSUMERS),
         "artifacts": [name for name in OUTPUTS if name != "_manifest.json"],
+        "sync_contract": {
+            "recommended_consumer": "jvto-web",
+            "source_path": "output/website/policy-bundle/",
+            "target_path": "src/data/policy-bundle/",
+            "required_gate": {
+                "schema_version": SCHEMA_VERSION,
+                "clean": True,
+            },
+            "required_files": list(OUTPUTS),
+            "consumer_entrypoint": "consumer-bundles.json",
+            "consumer_keys": list(CONSUMERS),
+            "validation_files": [
+                "deprecated-wording-report.json",
+                "gap-report.json",
+            ],
+            "failure_rule": "Refuse sync if schema_version mismatches, clean is not true, any required file is missing, or any requested consumer is not present.",
+        },
         "clean": gap_report["summary"]["errors"] == 0,
     }
 
@@ -243,4 +260,3 @@ def write_outputs(out_dir: str | Path, artifacts: dict) -> list[str]:
     for name, data in artifacts.items():
         _atomic_write_json(out / name, data)
     return list(artifacts)
-

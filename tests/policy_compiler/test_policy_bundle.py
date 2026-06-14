@@ -72,12 +72,16 @@ class RendererTests(unittest.TestCase):
 
     def test_write_outputs_emits_expected_files(self):
         gap = renderer.build_gap_report(self.policy_bundle, self.deprecated)
+        manifest = renderer.build_manifest(self.src, gap, dry_run=False)
+        self.assertEqual(manifest["sync_contract"]["required_gate"]["schema_version"], "policy-bundle/v1.0")
+        self.assertTrue(manifest["sync_contract"]["required_gate"]["clean"])
+        self.assertEqual(manifest["sync_contract"]["target_path"], "src/data/policy-bundle/")
         artifacts = {
             "policy-bundle.json": self.policy_bundle,
             "consumer-bundles.json": self.consumer_bundles,
             "deprecated-wording-report.json": self.deprecated,
             "gap-report.json": gap,
-            "_manifest.json": renderer.build_manifest(self.src, gap, dry_run=False),
+            "_manifest.json": manifest,
         }
         self.assertEqual(sorted(artifacts), sorted(renderer.OUTPUTS))
         with tempfile.TemporaryDirectory() as d:
@@ -119,6 +123,16 @@ class StatusDriftTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             for phrase in stale_phrases:
                 self.assertNotIn(phrase, text, msg=f"{path} reopens shipped Policy Bundle: {phrase}")
+
+    def test_jvto_web_sync_handoff_exists_with_gate(self):
+        handoff = ROOT / "output" / "website" / "policy-bundle" / "JVTO_WEB_SYNC_HANDOFF.md"
+        template = ROOT / "docs" / "templates" / "sync-policy-bundle.mjs"
+        handoff_text = handoff.read_text(encoding="utf-8")
+        template_text = template.read_text(encoding="utf-8")
+        self.assertIn('manifest.schema_version === "policy-bundle/v1.0"', handoff_text)
+        self.assertIn("manifest.clean === true", handoff_text)
+        self.assertIn('const REQUIRED_SCHEMA = "policy-bundle/v1.0";', template_text)
+        self.assertIn('const REQUIRED_CONSUMERS = ["checkout", "invoice", "whatsapp"];', template_text)
 
 
 if __name__ == "__main__":

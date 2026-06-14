@@ -22,6 +22,7 @@
 | `website/policy-bundle/deprecated-wording-report.json` | checkout, invoice, WhatsApp validation | 2026-06-14 | reviewed | policy-source-ownership §deprecated |
 | `website/policy-bundle/gap-report.json` | policy compiler health check | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
 | `website/policy-bundle/_manifest.json` | sync/version gate | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
+| `website/policy-bundle/JVTO_WEB_SYNC_HANDOFF.md` | jvto-web implementation handoff | 2026-06-14 | reviewed | policy-bundle manifest + consumer bundle |
 
 ---
 

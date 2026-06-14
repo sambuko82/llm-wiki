@@ -29,6 +29,28 @@ JSON-LD schemas in `output/website/schema/` inject via `<script type="applicatio
 
 ---
 
+## Policy Bundle Sync
+
+The Policy Bundle is the machine-readable source for checkout, invoice, and WhatsApp policy wording. Use it before editing any policy copy in jvto-web.
+
+| Producer file | jvto-web target | Purpose |
+|---|---|---|
+| `output/website/policy-bundle/_manifest.json` | `src/data/policy-bundle/_manifest.json` | Sync/version gate |
+| `output/website/policy-bundle/policy-bundle.json` | `src/data/policy-bundle/policy-bundle.json` | Full policy registry |
+| `output/website/policy-bundle/consumer-bundles.json` | `src/data/policy-bundle/consumer-bundles.json` | Checkout, invoice, WhatsApp entrypoint |
+| `output/website/policy-bundle/deprecated-wording-report.json` | `src/data/policy-bundle/deprecated-wording-report.json` | Deprecated wording validation |
+| `output/website/policy-bundle/gap-report.json` | `src/data/policy-bundle/gap-report.json` | Compiler health check |
+
+jvto-web sync gate:
+
+```js
+manifest.schema_version === "policy-bundle/v1.0" && manifest.clean === true
+```
+
+Implementation handoff: `output/website/policy-bundle/JVTO_WEB_SYNC_HANDOFF.md`. Script template: `docs/templates/sync-policy-bundle.mjs`.
+
+---
+
 ## Route → Output → Schema Map
 
 ### Sitewide
