@@ -1,7 +1,7 @@
 {
   "schema_version": "policy-bundle/v1.0",
   "generated_by": "scripts/compile_policy_bundle.py",
-  "generated_at": "2026-06-14T04:48:14.405262+00:00",
+  "generated_at": "2026-06-14T04:58:32.771308+00:00",
   "dry_run": false,
   "source_hashes": {
     "policy-source-ownership": "fb3a6e84deb5",

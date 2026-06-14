@@ -160,7 +160,7 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 - [[ops/health-checks]] — Workflow 6: on-demand, weekly, and monthly audit checklists
 - [[ops/intake-gate]] — Workflow 7: universal raw intake gate
 - [[ops/policy-source-ownership]] — Canonical owner per policy domain (booking, payment, cancellation, inclusions, health, ISIC, police escort, anti-fraud) + deprecated-wording guardrails
-- [[ops/transformation-map]] — Master domain→bundle pipeline map (canonical source → compiler → output → validator → consumer → status). Output convention `output/<domain>/<bundle>/`. Trust Bundle + Package Readiness (v1.2) DONE/do-not-reopen; **Policy Bundle (P2) is next wedge**.
+- [[ops/transformation-map]] — Master domain→bundle pipeline map (canonical source → compiler → output → validator → consumer → status). Output convention `output/<domain>/<bundle>/`. Trust Bundle, Package Readiness (v1.2), and Policy Bundle (v1.0) DONE/do-not-reopen; **WhatsApp Reply Intelligence (P3) is next wedge**.
 - [[ops/package-readiness-compiler-spec]] — **IMPLEMENTED (v1.2)** spec: `scripts/compile_packages.py` compiles 16 canonical packages → `output/products/package-readiness/` (registry, pricing, itineraries, booking-compatibility, gap-report, manifest — 6 files) with 12 validation rules PKG-01–12. Primary deliverable = gap report.
 - [[ops/whatsapp-reply-intelligence-compiler-spec]] — Spec (no code) for wedge P3 (WhatsApp Reply Bundle): compiles channel × state × intent → action + pre-rendered bilingual template + claim/policy citation, plus a coverage/contradiction gap report over playbook + rules-engine + canned-responses. Deterministic skeleton only; runtime LLM replies stay in WA Pro CRM consumer.
 

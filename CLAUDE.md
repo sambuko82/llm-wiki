@@ -169,6 +169,7 @@ Global naming rule: `YYYY-MM-DD-descriptive-name` for new files. The following *
 - `output/website/faq/*.md` — FAQ files (slug-mirror)
 - `output/website/pages/**/*.md` — page copy (URL-mirror, hierarchy mirrors site routes)
 - `output/website/blog/*.md` — blog page copy (URL-mirror)
+- `output/website/policy-bundle/*.json` and `_manifest.json` — Policy Bundle outputs
 - `output/products/package-readiness/*.json` and `_manifest.json` — Package Readiness Bundle outputs
 - `wiki/index.md`, `wiki/overview.md`, `wiki/log.md` — wiki root anchors
 - `wiki/bundles/README.md` and `wiki/bundles/<bundle>.md` — bundle index pages
@@ -220,9 +221,9 @@ Exclude from routine content analysis, audit passes, and lint scans:
 - Package Readiness residual limits: `instant_book=True` derived from sitemap presence; PKG-11 count-based; full-repo wording sweep deferred to Global Validator wedge.
 - robots.txt Cloudflare/custom conflict — contradictory AI crawler directives.
 
-**Next-phase candidates (not started — pick one):** (1) Policy Bundle; (2) WhatsApp Reply Intelligence; (3) Review Proof Index; (4) Finance Quote Helper; (5) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
+**Next-phase candidates (not started — pick one):** (1) WhatsApp Reply Intelligence; (2) Review Proof Index; (3) Finance Quote Helper; (4) Global Wiki Validator. Priority order in `wiki/ops/transformation-map.md`.
 
-**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle), Obsidian Bases v1 (7 dashboards), Phase B frontmatter normalization, Backoffice source alias coverage, Final source orphan closure + root BASE.base removal, Website Context Consolidation v1 (master doc + 5 JSON exports + readiness.base), **Website Context Consolidation Phase 2 (GAP-01/02/07 closure + strengthen + canonical count reconciliation)**, **Gap Reclassification (zero true blockers remain)**, **GAP-05 Homepage Google Maps count (RESOLVED in-repo 2026-06-02, commit `63ab1eb` — homepage.md 92→123 per `trust-signals.md`; only jvto-web live deploy mirrors separately)**, **Repo Governance Pass 2026-06-02 (cleanup-governor Phase A/B + governance-maintainer 9/9 clean — output/ root + output/website/ root D1-clean, orphans archived, doc drift fixed, 3 pages indexed)** — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated. See `wiki/ops/transformation-map.md` §do-not-reopen.
+**Resolved (do not reopen):** Trust Bundle v1, Policy Source Ownership, R065 Booking Flow, Transformation Map, Package Readiness Compiler (v1 → v1.2, full 6-artifact bundle), Policy Bundle Compiler (v1.0, full 5-artifact bundle with checkout/invoice/WhatsApp deprecated-wording checks), Obsidian Bases v1 (7 dashboards), Phase B frontmatter normalization, Backoffice source alias coverage, Final source orphan closure + root BASE.base removal, Website Context Consolidation v1 (master doc + 5 JSON exports + readiness.base), **Website Context Consolidation Phase 2 (GAP-01/02/07 closure + strengthen + canonical count reconciliation)**, **Gap Reclassification (zero true blockers remain)**, **GAP-05 Homepage Google Maps count (RESOLVED in-repo 2026-06-02, commit `63ab1eb` — homepage.md 92→123 per `trust-signals.md`; only jvto-web live deploy mirrors separately)**, **Repo Governance Pass 2026-06-02 (cleanup-governor Phase A/B + governance-maintainer 9/9 clean — output/ root + output/website/ root D1-clean, orphans archived, doc drift fixed, 3 pages indexed)** — all DONE. Trust Bundle: DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web `/trust` integrated. See `wiki/ops/transformation-map.md` §do-not-reopen.
 
 ## Skill routing
 

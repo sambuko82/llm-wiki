@@ -13,6 +13,16 @@
 - Check `status` before using in production — `draft` means unreviewed
 - After a wiki update, compare `output_date` against wiki `last_updated`; flag as `stale` if output is older
 
+## Machine-Readable Bundles
+
+| File | Consumer target | Output date | Status | Key sources |
+|---|---|---|---|---|
+| `website/policy-bundle/policy-bundle.json` | checkout, invoice, WhatsApp, FAQ | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
+| `website/policy-bundle/consumer-bundles.json` | checkout, invoice, WhatsApp | 2026-06-14 | reviewed | policy-bundle |
+| `website/policy-bundle/deprecated-wording-report.json` | checkout, invoice, WhatsApp validation | 2026-06-14 | reviewed | policy-source-ownership §deprecated |
+| `website/policy-bundle/gap-report.json` | policy compiler health check | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
+| `website/policy-bundle/_manifest.json` | sync/version gate | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
+
 ---
 
 ## AEO Blocks

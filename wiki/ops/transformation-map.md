@@ -45,8 +45,8 @@ Policy Source Ownership, R065 Booking Flow, and Global Wiki Validator remain reg
 
 ```
 output/website/trust-bundle/        ← live, proven
-output/website/policy-bundle/       ← FUTURE
-output/products/package-readiness/  ← NEXT
+output/website/policy-bundle/       ← live, P2 done
+output/products/package-readiness/  ← live, P1 done
 output/whatsapp/reply-intelligence/ ← FUTURE
 output/reviews/review-proof-index/  ← FUTURE
 output/finance/quote-helper/        ← FUTURE
@@ -62,7 +62,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 | Policy Source Ownership | (cross-cutting infra; feeds Website Logic) | **DONE** | — |
 | R065 Booking Flow ingest | (cross-cutting; feeds Website Logic + WhatsApp Reply) | **DONE** | — |
 | Package Readiness Compiler | **Package Bundle** (3) | **DONE (v1.2)** — package-readiness output live | — |
-| Policy Bundle Compiler | (subset of Website Logic Bundle) | FUTURE | P2 |
+| Policy Bundle Compiler | (subset of Website Logic Bundle) | **DONE (v1.0)** — policy-bundle output live | — |
 | WhatsApp Reply Intelligence | **WhatsApp Reply Bundle** (5) | FUTURE (spec written) | P3 |
 | Review Proof Index | **Review Bundle** (4) | FUTURE | P4 |
 | Finance Quote Helper | (subset of Package Bundle) | FUTURE | P5 |
@@ -78,7 +78,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 | Policy ownership | `wiki/ops/policy-source-ownership.md` | products/packages-overview, website/faq-master | — (doc map, no compiler) | — | deprecated-wording table (manual) | all policy consumers | **DONE** |
 | Booking flow | products/packages-overview §booking-flow | website/booking-platform-analysis, sources/tango-workflow-jvto-website-booking | — | — | — | website, FAQ, checkout, WhatsApp | **DONE** (structured bundle = FUTURE, via Policy/Booking Bundle) |
 | Package readiness | products/packages-overview, products/packages-full-pricing, finance/rate-cards | destinations/*, crew-registry | `scripts/compile_packages.py` (BUILT) | `output/products/package-readiness/` | `gap-report.json` (live) | jvto-web (`npm run sync:packages` → `src/data/package-readiness/`), WhatsApp, quotation, finance | **DONE (v1.2)** |
-| Policy bundle | `wiki/ops/policy-source-ownership.md`, products/packages-overview, website/faq-master | brand-voice | (planned) | `output/website/policy-bundle/` | deprecated-wording validator (planned) | jvto-web checkout microcopy, WhatsApp, FAQ | FUTURE (P2) |
+| Policy bundle | `wiki/ops/policy-source-ownership.md`, products/packages-overview, website/faq-master | brand-voice | `scripts/compile_policy_bundle.py` (BUILT) | `output/website/policy-bundle/` | `deprecated-wording-report.json` + `gap-report.json` (live) | jvto-web checkout microcopy, invoice, WhatsApp, FAQ | **DONE (v1.0)** |
 | WhatsApp reply | whatsapp/playbook, whatsapp/rules-engine, whatsapp/canned-responses | package + policy + FAQ + trust bundles | (planned) | `output/whatsapp/reply-intelligence/` | (planned) | WhatsApp automation / CRM | FUTURE (P3) |
 | Review proof | reviews/* | package-registry, destinations, crew, claim-registry | (planned) | `output/reviews/review-proof-index/` | (planned) | website proof blocks, schema, AEO | FUTURE (P4) |
 | Finance quote | finance/rate-cards, finance/package-costs | package-pricing, package-itineraries | (planned) | `output/finance/quote-helper/` | (planned) | quote builder, WhatsApp, dashboard | FUTURE (P5) |
@@ -90,6 +90,7 @@ Do **NOT** introduce a top-level `compiled/` directory. `output/` is the only ar
 Locked decisions — do not re-litigate without an explicit user request:
 
 - **Trust Bundle v1 is DONE.** DEC-001/002/003 are **locked**; CONF-001/002/003 **resolved**; F1–F8 **pass**; real compile **succeeded**; 9 canonical JSON outputs (+ 3 `schema/` files) **written and pushed**; jvto-web `/trust` **integrated**. Do NOT recompile, edit `raw/_manifest/decision-registry.yml`, or reassert "F4 blocked / DQ pending." Any wiki/log text implying Trust Bundle is blocked is **stale** — superseded by this line.
+- **Policy Bundle Compiler v1.0 is DONE.** `scripts/compile_policy_bundle.py` compiles `wiki/ops/policy-source-ownership.md`, `wiki/products/packages-overview.md`, and `wiki/website/faq-master.md` into 5 JSON artifacts at `output/website/policy-bundle/`. Checkout, invoice, and WhatsApp deprecated-wording checks are live and must be read from `deprecated-wording-report.json` / `gap-report.json`. Do NOT re-recommend P2 as future work.
 - **R065 = JVTO website self-checkout (Instant Book) flow**, 18 Tango steps across 4 PDF pages. NOT Trip.com. See -> [[ops/policy-source-ownership]] §deprecated-wording.
 - **Policy deprecated-wording** is owned by -> [[ops/policy-source-ownership]]. Do not duplicate or contradict it elsewhere.
 
@@ -97,16 +98,16 @@ Locked decisions — do not re-litigate without an explicit user request:
 
 **Package Readiness Compiler (P1) is DONE (v1.2)** — `scripts/compile_packages.py` built; 6 artifacts live at `output/products/package-readiness/` (`package-registry`, `package-pricing`, `package-itineraries`, `booking-compatibility`, `gap-report`, `_manifest`). Do not re-recommend; see do-not-reopen below. **Consumer sync live (2026-06-07):** jvto-web pulls all 6 artifacts via `scripts/sync-package-readiness.mjs` / `npm run sync:packages` → `src/data/package-readiness/`, gated on `_manifest.clean === true` + `schema_version` prefix + positive `canonical_package_count` (the package-readiness manifest has no F1–F8 block). Mirrors the existing trust-bundle sync.
 
-**Next wedge: Policy Bundle Compiler (P2)** — subset of the Website Logic Bundle. Compile canonical policy wording (booking paths, payment, cancellation/travel-credit, inclusions/exclusions, health-screening, anti-fraud) from -> [[ops/policy-source-ownership]] + products/packages-overview + website/faq-master into `output/website/policy-bundle/`, with a deprecated-wording validator driven by -> [[ops/policy-source-ownership]] §deprecated.
+**Policy Bundle Compiler (P2) is DONE (v1.0)** — `scripts/compile_policy_bundle.py` built; 5 artifacts live at `output/website/policy-bundle/` (`policy-bundle`, `consumer-bundles`, `deprecated-wording-report`, `gap-report`, `_manifest`). Do not re-recommend; checkout, invoice, and WhatsApp consumers should read this bundle instead of copying policy wording manually.
 
-Other queued wedges (priority order): **P3** WhatsApp Reply Intelligence (spec written → -> [[ops/whatsapp-reply-intelligence-compiler-spec]]), **P4** Review Proof Index / Asset Bundle, **P5** Finance Quote Helper, **P6** Global Wiki Validator.
+Next queued wedges (priority order): **P3** WhatsApp Reply Intelligence (spec written → -> [[ops/whatsapp-reply-intelligence-compiler-spec]]), **P4** Review Proof Index / Asset Bundle, **P5** Finance Quote Helper, **P6** Global Wiki Validator.
 
 ## Explicit Non-Goals (this map)
 
 This page is **documentation only**. It does NOT:
 
-- create any compiler script
-- generate any JSON
+- create any compiler script by itself
+- generate any JSON by itself
 - edit the Trust Bundle or its registries
 - edit jvto-web
 - create any DB / API / server work

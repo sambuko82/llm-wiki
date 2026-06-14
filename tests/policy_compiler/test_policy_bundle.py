@@ -101,5 +101,25 @@ class CliBehaviourTests(unittest.TestCase):
         w.assert_called_once()
 
 
+class StatusDriftTests(unittest.TestCase):
+    def test_active_docs_do_not_reopen_policy_bundle(self):
+        active_docs = [
+            ROOT / "wiki" / "ops" / "transformation-map.md",
+            ROOT / "wiki" / "index.md",
+            ROOT / "CLAUDE.md",
+        ]
+        stale_phrases = [
+            "Policy Bundle (P2) is next wedge",
+            "Next wedge: Policy Bundle",
+            "(1) Policy Bundle",
+            "| Policy Bundle Compiler | (subset of Website Logic Bundle) | FUTURE | P2 |",
+            "| Policy bundle | `wiki/ops/policy-source-ownership.md`, products/packages-overview, website/faq-master | brand-voice | (planned)",
+        ]
+        for path in active_docs:
+            text = path.read_text(encoding="utf-8")
+            for phrase in stale_phrases:
+                self.assertNotIn(phrase, text, msg=f"{path} reopens shipped Policy Bundle: {phrase}")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

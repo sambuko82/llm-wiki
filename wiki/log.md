@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Operations Log
-last_updated: 2026-06-07
+last_updated: 2026-06-14
 sources: []
 owner: wiki-llm
 stale_after_days: 60
@@ -10,6 +10,12 @@ stale_after_days: 60
 # JVTO Wiki Operations Log
 
 *Append-only. Format: ## [YYYY-MM-DD] type | title. Most recent on top.*
+
+---
+
+## [2026-06-14] ops | Policy Bundle Compiler status reconcile
+
+Built and recorded Policy Bundle Compiler v1.0 as DONE. Active source of truth now says `scripts/compile_policy_bundle.py` compiles `wiki/ops/policy-source-ownership.md`, `wiki/products/packages-overview.md`, and `wiki/website/faq-master.md` into `output/website/policy-bundle/` with checkout, invoice, and WhatsApp deprecated-wording checks. Updated `wiki/ops/transformation-map.md`, `wiki/index.md`, `CLAUDE.md`, and `output/INDEX.md` so P2 is no longer listed as future work. Historical log entries from 2026-05-31 and 2026-06-03 that mention Policy Bundle as NEXT/FUTURE are superseded by this entry and by `wiki/ops/transformation-map.md` §Do-Not-Reopen.
 
 ---
 
@@ -99,7 +105,7 @@ Scope: 110 wiki/*.md. Cutoffs from 2026-06-03 → 30-day = 2026-05-04, 90-day = 
 Full read of all 9 `wiki/ops/*.md`; cross-checked every status/count claim against live repo state (scripts/, output/, frontmatter). Fixed every divergence so the ops layer stops contradicting itself ("tidak bolak-balik"). All values below are verified, not assumed.
 
 Conformed:
-- **transformation-map.md** — Package Readiness was internally contradictory: Bundle Status Table said "DONE (v1.2)" but the Per-Bundle Pipeline row + the entire "Next Recommended Wedge" section still said `compile_packages.py` "NOT BUILT" / "NEXT (P1)". Verified built (`scripts/compile_packages.py` + `scripts/package_compiler/` + tests + 6 live artifacts). Pipeline row → BUILT / gap-report.json live / DONE (v1.2); rewrote Next-Wedge to **Policy Bundle (P2)** with P3–P6 queue. Trust Bundle "7 JSON outputs" → **9 canonical JSON (+3 schema/)** (manifest confirms). WhatsApp row → "FUTURE (spec written)".
+- **transformation-map.md** — Package Readiness was internally contradictory: Bundle Status Table said "DONE (v1.2)" but the Per-Bundle Pipeline row + the entire "Next Recommended Wedge" section still said `compile_packages.py` "NOT BUILT" / "NEXT (P1)". Verified built (`scripts/compile_packages.py` + `scripts/package_compiler/` + tests + 6 live artifacts). Pipeline row → BUILT / gap-report.json live / DONE (v1.2); rewrote Next-Wedge to **Policy Bundle (P2)** with P3–P6 queue. Trust Bundle "7 JSON outputs" → **9 canonical JSON (+3 schema/)** (manifest confirms). WhatsApp row → "FUTURE (spec written)". **Historical note:** Policy Bundle became DONE on 2026-06-14; see current transformation map.
 - **bundle-taxonomy.md** — trust-bundle `*.json (10 files)` → **9** (+ added `schema/*.json (3)` row). `packages-full-pricing` "All 22 packages" → "22 priced (16 canonical + 6 student)". schema output `~45` → **28** (actual). FINANCE xlsx `17` → **15** (actual). aeo=10 / faq=8 / package-readiness=6 / verify-jvto=5 / rate_cards=5 verified correct.
 - **whatsapp-reply-intelligence-compiler-spec.md** — §7 renderer count "11 artifact JSONs / all 12 outputs" → **12 artifacts / 13 outputs** (§5 lists 12 JSON + _manifest). Removed duplicate `last_updated` key.
 - **package-readiness-compiler-spec.md** — added top **STATUS: IMPLEMENTED (v1.2)** banner; flagged shipped bundle is 6 files (spec's planned 7th `package-route-map.json` never shipped).
@@ -300,7 +306,7 @@ Created the master transformation map so future compiler/bundle work follows one
 Pages created (1): wiki/ops/transformation-map.md — per-domain chain (canonical source → script → output → validator → consumer → status), bundle status table, output convention `output/<domain>/<bundle>/` (no `compiled/`), do-not-reopen section, next-wedge spec.
 Pages updated (2): wiki/index.md — added [[ops/transformation-map]] under Workflows (Meta), corrected stale Trust Bundle "blocked" status to DONE/do-not-reopen, total_pages 93→94; (this) wiki/log.md.
 
-Status recorded: Trust Bundle v1 DONE (DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web integrated) — DO NOT REOPEN. Policy Source Ownership DONE. R065 Booking Flow DONE. Package Readiness Compiler = NEXT (P1). Policy Bundle, WhatsApp Reply Intelligence, Review Proof Index, Finance Quote Helper, Global Wiki Validator = FUTURE.
+Status recorded at that time: Trust Bundle v1 DONE (DEC-001/002/003 locked, CONF-001/002/003 resolved, F1–F8 pass, outputs pushed, jvto-web integrated) — DO NOT REOPEN. Policy Source Ownership DONE. R065 Booking Flow DONE. Package Readiness Compiler = NEXT (P1). Policy Bundle, WhatsApp Reply Intelligence, Review Proof Index, Finance Quote Helper, Global Wiki Validator = FUTURE. **Historical note:** Package Readiness and Policy Bundle are now DONE; see current transformation map.
 Non-goals honored: no compiler scripts, no JSON, no Trust Bundle/registry/jvto-web/DB edits.
 
 ## [2026-05-31] policy | JVTO Policy Consolidation + Stale Data Cleanup
