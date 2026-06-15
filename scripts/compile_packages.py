@@ -50,21 +50,32 @@ def main(argv=None) -> int:
     registry = renderer.build_registry(src)
     pricing = renderer.build_pricing(src)
     itineraries = renderer.build_itineraries(src)
+    operational_days = renderer.build_operational_days(src)
     booking = renderer.build_booking_compatibility(src)
     gap = renderer.build_gap_report(findings)
-    manifest = renderer.build_manifest(src, findings, dry_run=dry_run)
+
+    op_problems = validator.validate_operational_days(operational_days, itineraries)
+    counts = {
+        "registry": len(registry),
+        "pricing": len(pricing),
+        "itineraries": len(itineraries),
+        "operational_days": len(operational_days),
+        "booking_compatibility": len(booking),
+    }
+    manifest = renderer.build_manifest(src, findings, dry_run=dry_run, counts=counts)
 
     artifacts = {
         "package-registry.json": registry,
         "package-pricing.json": pricing,
         "package-itineraries.json": itineraries,
+        "package-operational-days.json": operational_days,
         "booking-compatibility.json": booking,
         "gap-report.json": gap,
         "_manifest.json": manifest,
     }
 
     mode = "DRY-RUN" if dry_run else "WRITE"
-    print(f"Package Readiness Compiler v1.2 — {mode}")
+    print(f"Package Readiness Compiler v1.3 — {mode}")
     print(f"  packages parsed : {len(src.packages)}")
     print("  sitemap slugs   : "
           f"surabaya={len(src.sitemap_slugs.get('surabaya', ()))} "
@@ -74,6 +85,10 @@ def main(argv=None) -> int:
     print(f"  manifest.clean  : {manifest['clean']}")
     print(f"  pricing tiers   : {sum(len(p['pax_tiers']) for p in pricing)} across {len(pricing)} packages")
     print(f"  itinerary days  : {sum(len(it['days']) for it in itineraries)} across {len(itineraries)} packages")
+    print(f"  operational days: {len(operational_days)} across {len(itineraries)} packages")
+    print(f"  op-day problems : {len(op_problems)}")
+    for p in op_problems:
+        print(f"    ! {p}")
 
     if args.verbose:
         print("\n  registry:")

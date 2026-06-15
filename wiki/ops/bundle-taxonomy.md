@@ -105,7 +105,7 @@ Each row lists the **as-is location** of an existing file. No file is moved by t
 | `wiki/ops/package-readiness-compiler-spec.md` | Spec | |
 | `raw/FINANCE/*.xlsx` (15 files) | Raw source | Per-package cost spreadsheets |
 | `raw/FINANCE/rate_cards/*.json` (5 files) | Raw source | Crew, vehicle, accom, activities, other |
-| `output/products/package-readiness/*.json` (6 files) | Compiled output | Live Package Readiness Bundle v1.2 |
+| `output/products/package-readiness/*.json` (7 files) | Compiled output | Live Package Readiness Bundle v1.3 |
 | `output/products/package-readiness/_manifest.json` | Manifest | |
 | `output/products/package-readiness/gap-report.json` | Validation output | |
 | `scripts/compile_packages.py` | Compiler | |

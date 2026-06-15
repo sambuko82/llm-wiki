@@ -2426,3 +2426,6 @@ Drift found and flagged:
 ## [2026-05-28] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings
 
 ## [2026-06-02] compile | trust-bundle v0.1.0 — 9 claims, 0 errors, 0 warnings
+
+## [2026-06-15] compile | package-readiness v1.3 — +package-operational-days.json
+Added 7th artifact `output/products/package-readiness/package-operational-days.json` (57 records / 16 packages) for downstream jvto-itinerary-core Phase 6. Explicit conservative overnight/meal/hotel semantics (overnight_status enum; no cost/room/area/node/PII). Source-backed from package-itineraries; bumped bundle v1.2→v1.3. Pages updated: package_compiler (renderer/validator/compile_packages), tests, bundles/packages.md, ops/bundle-taxonomy.md, ops/package-readiness-compiler-spec.md §5.1. Byte-identical across reruns; 0 op-day problems; all tests pass.

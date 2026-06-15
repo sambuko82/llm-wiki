@@ -17,14 +17,27 @@ from pathlib import Path
 
 from . import loader
 
-SCHEMA_VERSION = "package-readiness/v1.2"
+SCHEMA_VERSION = "package-readiness/v1.3"
 OUTPUTS = (
     "package-registry.json",
     "package-pricing.json",
     "package-itineraries.json",
+    "package-operational-days.json",
     "booking-compatibility.json",
     "gap-report.json",
     "_manifest.json",
+)
+
+# overnight_status controlled vocabulary (spec §5, v1.3)
+OVERNIGHT_STATUSES = (
+    "hotel", "no_overnight", "overnight_in_vehicle", "return_same_day", "unknown",
+)
+# title keywords that source-back a final-day "no_overnight" classification
+_TRIP_END_KEYWORDS = ("return", "finish", "airport", "drop", "handoff", "departure")
+# exact key set every operational-day record must carry (no more, no less)
+OPERATIONAL_DAY_KEYS = (
+    "package_id", "slug", "day", "title", "meal_codes", "hotel_label",
+    "overnight_status", "source_basis", "missing_fields", "notes",
 )
 
 
@@ -119,6 +132,64 @@ def build_itineraries(sources) -> list[dict]:
     return out
 
 
+def build_operational_days(sources) -> list[dict]:
+    """Explicit, conservative operational-day artifact (spec §5, v1.3).
+
+    Derived from build_itineraries() — makes overnight / meal / hotel semantics
+    explicit so downstream consumers never infer them. llm-wiki is the canonical
+    public itinerary/day source ONLY: no area / node / cost / room / time fields.
+    Records preserve registry order (per package) then day ascending; consumers
+    MUST join by package_id + day, never by array index.
+    """
+    out: list[dict] = []
+    for it in build_itineraries(sources):
+        days = it["days"]
+        last_day = days[-1]["day"] if days else None
+        for d in days:
+            hotel = d["hotel"]
+            title = d["title"]
+            meal_codes = [m for m in d["meals"] if m in ("B", "L", "D")]
+            missing_fields: list[str] = []
+            notes = ""
+
+            if hotel and "vehicle" in hotel.lower():
+                overnight_status = "overnight_in_vehicle"
+                hotel_label = None  # never invent a hotel name
+                source_basis = "package-itineraries.days.hotel"
+                notes = hotel  # preserve original source text verbatim
+            elif hotel:
+                overnight_status = "hotel"
+                hotel_label = hotel  # source-backed name, verbatim
+                source_basis = "package-itineraries.days.hotel"
+            elif d["day"] == last_day and any(
+                k in title.lower() for k in _TRIP_END_KEYWORDS
+            ):
+                overnight_status = "no_overnight"
+                hotel_label = None
+                source_basis = "package-itineraries.days.hotel+title"
+                notes = "Final day; title indicates trip end/return."
+            else:
+                overnight_status = "unknown"
+                hotel_label = None
+                source_basis = "package-itineraries.days.hotel"
+                missing_fields = ["hotel_label", "overnight_status"]
+                notes = "Hotel empty; source does not clearly prove no overnight."
+
+            out.append({
+                "package_id": it["package_id"],
+                "slug": it["slug"],
+                "day": d["day"],
+                "title": title,
+                "meal_codes": meal_codes,
+                "hotel_label": hotel_label,
+                "overnight_status": overnight_status,
+                "source_basis": source_basis,
+                "missing_fields": missing_fields,
+                "notes": notes,
+            })
+    return out
+
+
 def build_booking_compatibility(sources) -> list[dict]:
     # All 16 canonical packages are live website tour pages (Instant Book path)
     # and bookable via WhatsApp-assisted flow. See packages-overview §booking-flow.
@@ -147,11 +218,12 @@ def _sha(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
 
 
-def build_manifest(sources, findings: list[dict], *, dry_run: bool) -> dict:
+def build_manifest(sources, findings: list[dict], *, dry_run: bool,
+                   counts: dict | None = None) -> dict:
     by_rule: dict[str, int] = {}
     for f in findings:
         by_rule[f["rule_id"]] = by_rule.get(f["rule_id"], 0) + 1
-    return {
+    manifest = {
         "schema_version": SCHEMA_VERSION,
         "generated_by": "scripts/compile_packages.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -170,6 +242,9 @@ def build_manifest(sources, findings: list[dict], *, dry_run: bool) -> dict:
         "artifacts": [n for n in OUTPUTS if n != "_manifest.json"],
         "clean": not any(f["severity"] == "error" for f in findings),
     }
+    if counts is not None:
+        manifest["record_counts"] = counts
+    return manifest
 
 
 def _atomic_write_json(path: Path, data) -> None:

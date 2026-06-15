@@ -147,6 +147,81 @@ _FORBIDDEN = (
 )
 
 
+_OPERATIONAL_DAY_KEYS = (
+    "package_id", "slug", "day", "title", "meal_codes", "hotel_label",
+    "overnight_status", "source_basis", "missing_fields", "notes",
+)
+_OVERNIGHT_STATUSES = (
+    "hotel", "no_overnight", "overnight_in_vehicle", "return_same_day", "unknown",
+)
+# substrings that would signal a PII or cost/room key leaked into the artifact
+_FORBIDDEN_KEY_SUBSTR = (
+    "email", "phone", "whatsapp", "guest", "passenger", "name",
+    "cost", "price", "rate", "room", "area", "node",
+)
+
+
+def validate_operational_days(records: list[dict], itineraries: list[dict]) -> list[str]:
+    """Integrity checks for package-operational-days.json (spec §5, v1.3).
+
+    Returns a list of problem strings (empty == artifact is sound). Asserts:
+    every canonical package + every itinerary day appears; meal_codes ⊆ {B,L,D};
+    overnight_status ∈ enum; hotel_label is None or a verbatim itinerary hotel
+    (no invented labels); record keys are exactly the 10 allowed (no cost/room/
+    PII keys leaked).
+    """
+    problems: list[str] = []
+
+    # index source itinerary days by (package_id, day) for cross-checks
+    src_days: dict[tuple, dict] = {}
+    src_pkgs: set = set()
+    for it in itineraries:
+        src_pkgs.add(it["package_id"])
+        for d in it["days"]:
+            src_days[(it["package_id"], d["day"])] = d
+
+    rec_pkgs = {r["package_id"] for r in records}
+    for missing in sorted(src_pkgs - rec_pkgs):
+        problems.append(f"package missing from operational-days: {missing}")
+
+    seen: set = set()
+    for r in records:
+        rid = f"{r.get('package_id')}:{r.get('day')}"
+
+        keys = set(r.keys())
+        if keys != set(_OPERATIONAL_DAY_KEYS):
+            problems.append(f"{rid}: key set {sorted(keys)} != allowed 10")
+        for k in keys:
+            low = k.lower()
+            if any(sub in low for sub in _FORBIDDEN_KEY_SUBSTR):
+                problems.append(f"{rid}: forbidden key '{k}' (cost/room/PII)")
+
+        key = (r["package_id"], r["day"])
+        seen.add(key)
+        src = src_days.get(key)
+        if src is None:
+            problems.append(f"{rid}: day not present in itineraries source")
+            continue
+
+        for m in r["meal_codes"]:
+            if m not in ("B", "L", "D"):
+                problems.append(f"{rid}: invalid meal code '{m}'")
+
+        if r["overnight_status"] not in _OVERNIGHT_STATUSES:
+            problems.append(f"{rid}: invalid overnight_status '{r['overnight_status']}'")
+
+        label = r["hotel_label"]
+        if label is not None and label != src["hotel"]:
+            problems.append(
+                f"{rid}: hotel_label '{label}' not verbatim from itinerary "
+                f"hotel '{src['hotel']}'")
+
+    for key in sorted(set(src_days) - seen):
+        problems.append(f"itinerary day missing from operational-days: {key}")
+
+    return problems
+
+
 def _pkg06_inclusions(sources) -> list[dict]:
     """PKG-06 — inclusion/exclusion readiness (doc-level)."""
     out: list[dict] = []

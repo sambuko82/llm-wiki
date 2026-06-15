@@ -43,6 +43,7 @@ Thin navigation page. File ownership in -> [[ops/bundle-taxonomy]] §3. Pipeline
 - `output/products/package-readiness/package-registry.json`
 - `output/products/package-readiness/package-pricing.json`
 - `output/products/package-readiness/package-itineraries.json`
+- `output/products/package-readiness/package-operational-days.json`
 - `output/products/package-readiness/booking-compatibility.json`
 - `output/products/package-readiness/gap-report.json`
 

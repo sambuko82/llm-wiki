@@ -92,11 +92,12 @@ class RendererTests(unittest.TestCase):
         man = renderer.build_manifest(self.src, err, dry_run=True)
         self.assertFalse(man["clean"])
 
-    def test_write_outputs_emits_six_v1_2_files(self):
+    def test_write_outputs_emits_seven_v1_3_files(self):
         artifacts = {
             "package-registry.json": renderer.build_registry(self.src),
             "package-pricing.json": renderer.build_pricing(self.src),
             "package-itineraries.json": renderer.build_itineraries(self.src),
+            "package-operational-days.json": renderer.build_operational_days(self.src),
             "booking-compatibility.json": renderer.build_booking_compatibility(self.src),
             "gap-report.json": renderer.build_gap_report([]),
             "_manifest.json": renderer.build_manifest(self.src, [], dry_run=False),
@@ -140,6 +141,94 @@ class RendererTests(unittest.TestCase):
         rows = {p.origin: loader.detail_for(self.src.pricing_tables, p) for p in shared}
         self.assertIsNotNone(rows["surabaya"])
         self.assertIsNotNone(rows["bali"])
+
+
+class OperationalDaysTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.src = loader.load_sources(WIKI)
+        cls.itins = renderer.build_itineraries(cls.src)
+        cls.recs = renderer.build_operational_days(cls.src)
+
+    def _rec(self, package_id, day):
+        return next(r for r in self.recs
+                    if r["package_id"] == package_id and r["day"] == day)
+
+    def test_covers_all_16_packages(self):
+        pkgs = {r["package_id"] for r in self.recs}
+        self.assertEqual(len(pkgs), 16)
+
+    def test_day_counts_match_itineraries(self):
+        for it in self.itins:
+            n = len([r for r in self.recs if r["package_id"] == it["package_id"]])
+            self.assertEqual(n, len(it["days"]),
+                             msg=f"{it['package_id']} day-count mismatch")
+
+    def test_total_days_equals_sum_of_itinerary_days(self):
+        self.assertEqual(len(self.recs), sum(len(it["days"]) for it in self.itins))
+
+    def test_every_record_has_exactly_ten_keys(self):
+        allowed = set(renderer.OPERATIONAL_DAY_KEYS)
+        for r in self.recs:
+            self.assertEqual(set(r.keys()), allowed)
+
+    def test_meal_codes_only_bld(self):
+        for r in self.recs:
+            for m in r["meal_codes"]:
+                self.assertIn(m, ("B", "L", "D"))
+
+    def test_overnight_status_in_enum(self):
+        for r in self.recs:
+            self.assertIn(r["overnight_status"], renderer.OVERNIGHT_STATUSES)
+
+    def test_no_invented_hotel_labels(self):
+        by_key = {(it["package_id"], d["day"]): d["hotel"]
+                  for it in self.itins for d in it["days"]}
+        for r in self.recs:
+            label = r["hotel_label"]
+            if label is not None:
+                self.assertEqual(label, by_key[(r["package_id"], r["day"])])
+
+    def test_bromo_1d1n_overnight_in_vehicle(self):
+        r = self._rec("bromo-1d1n", 1)
+        self.assertEqual(r["overnight_status"], "overnight_in_vehicle")
+        self.assertIsNone(r["hotel_label"])
+        self.assertIn("vehicle", r["notes"].lower())  # original text preserved
+
+    def test_real_hotel_day_classified_hotel(self):
+        r = self._rec("bromo-2d1n", 1)
+        self.assertEqual(r["overnight_status"], "hotel")
+        self.assertEqual(r["hotel_label"], "Joglo Kecombrang Bromo")
+
+    def test_final_null_day_no_overnight(self):
+        r = self._rec("bromo-2d1n", 2)
+        self.assertEqual(r["overnight_status"], "no_overnight")
+        self.assertIsNone(r["hotel_label"])
+
+    def test_no_cost_or_pii_keys(self):
+        forbidden = ("cost", "price", "rate", "room", "area", "node",
+                     "email", "phone", "whatsapp", "guest", "passenger", "name")
+        for r in self.recs:
+            for k in r:
+                self.assertFalse(any(s in k.lower() for s in forbidden),
+                                 msg=f"forbidden key {k}")
+
+    def test_validate_operational_days_clean(self):
+        problems = validator.validate_operational_days(self.recs, self.itins)
+        self.assertEqual(problems, [], msg=f"unexpected problems: {problems}")
+
+    def test_validator_flags_invented_hotel(self):
+        bad = [dict(r) for r in self.recs]
+        bad[0]["hotel_label"] = "Totally Invented Resort"
+        problems = validator.validate_operational_days(bad, self.itins)
+        self.assertTrue(any("not verbatim" in p for p in problems))
+
+    def test_deterministic_bytes(self):
+        a = json.dumps(renderer.build_operational_days(self.src),
+                       indent=2, ensure_ascii=False)
+        b = json.dumps(renderer.build_operational_days(self.src),
+                       indent=2, ensure_ascii=False)
+        self.assertEqual(a, b)
 
 
 class CliBehaviourTests(unittest.TestCase):

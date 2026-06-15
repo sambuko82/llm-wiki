@@ -83,9 +83,37 @@ Per the `output/<domain>/<bundle>/` convention in -> [[ops/transformation-map]].
 | `package-registry.json` | One record per canonical package: `package_id`, `slug`, `origin` (surabaya/bali), `title`, `duration` (days/nights), `public_url`, `destinations[]`, `route_codes[]`, `is_specialty` flag |
 | `package-pricing.json` | Per package: `pax_tiers[]` each `{min_pax, max_pax, idr_per_person}`, `currency: "IDR"`, `ferry_included` (bool, Bali only) |
 | `package-itineraries.json` | Per package: `days[]` each `{day, title, meals[], hotel}`; meal codes B/L/D normalised |
+| `package-operational-days.json` | **(v1.3)** One record per package-day: `package_id, slug, day, title, meal_codes, hotel_label, overnight_status, source_basis, missing_fields, notes`. Explicit, conservative operational semantics for downstream `jvto-itinerary-core` Phase 6 — see §5.1 |
 | `booking-compatibility.json` | Per package: `instant_book` (bool), `whatsapp_assisted` (bool, always true), `booking_paths[]`, notes on add-ons / health-screening collection requirement |
 | `gap-report.json` | All findings: `{rule_id, severity, package_id, field, wiki_value, reference_value, message}`. The primary deliverable. |
 | `_manifest.json` | Compile metadata: source file hashes, canonical count asserted, counts emitted per file, rule pass/fail summary, generated-by, schema_version. Mirrors trust-bundle `_manifest.json` shape. |
+
+### 5.1 Package Operational Days (v1.3)
+
+`package-operational-days.json` is derived from the itinerary days and makes
+overnight / meal / hotel semantics **explicit and conservative** so downstream
+`jvto-itinerary-core` Phase 6 never re-implements JVTO domain rules. llm-wiki is
+the canonical public itinerary/day source ONLY: no `hotel_area`, `destination_id`,
+`route_node_id`, `room_type`, cost, or time fields — area/node/cost mapping
+belongs to `jvto-itinerary-core` / backoffice. Records preserve registry order
+then day ascending; **consumers MUST join by `package_id` + `day`, never by array
+index.**
+
+`overnight_status` controlled vocabulary:
+
+| value | when |
+|---|---|
+| `hotel` | itinerary `hotel` is a real hotel name → `hotel_label` = that name verbatim |
+| `overnight_in_vehicle` | `hotel` text explicitly says overnight in vehicle → `hotel_label` null, original text kept in `notes` |
+| `no_overnight` | `hotel` null AND final day AND title indicates return/finish/airport/drop/handoff/departure |
+| `unknown` | `hotel` null but source does not clearly prove no overnight → `missing_fields` set |
+| `return_same_day` | allowed but UNUSED unless source explicitly states same-day return |
+
+Hotel labels are never invented; `hotel_label` is either a verbatim itinerary
+hotel name or null. Validation (`validator.validate_operational_days`): all 16
+packages + every itinerary day present, day-count parity with
+`package-itineraries.json`, `meal_codes ⊆ {B,L,D}`, `overnight_status ∈` enum, no
+invented hotel labels, exactly the 10 allowed keys (no cost/room/area/node/PII).
 
 ## 6. Validation Rules
 
