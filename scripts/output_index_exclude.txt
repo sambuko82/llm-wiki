@@ -1,0 +1,12 @@
+# Output markdown files intentionally NOT listed as catalog entries in output/INDEX.md.
+# Globs are relative to output/ (output/INDEX.md itself is always excluded).
+# Keep this list small and explicit — anything not here must appear in the index.
+
+# Per-page JSON-LD schema verification receipts (slug-mirror artifacts, paired with *-schema.json)
+website/schema/*.receipt.md
+
+# Trust Bundle receipt artifact (canonical Trust Bundle output, not catalog content)
+website/trust-bundle/*.md
+
+# Superseded files — ignored per CLAUDE.md "Analysis Defaults"
+_archive/**
