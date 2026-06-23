@@ -70,6 +70,14 @@
 
 ---
 
+## Website — Markets
+
+| File | URL | Output date | Status |
+|---|---|---|---|
+| `website/pages/markets/taiwan.md` | `/markets/taiwan` | 2026-06-11 | reviewed |
+
+---
+
 ## Website — Destinations
 
 | File | URL | Output date | Status |
@@ -148,6 +156,8 @@
 | `website/pages/why-jvto/our-team.md` | `/why-jvto/our-team` | 2026-05-25 | reviewed |
 | `website/pages/why-jvto/reviews.md` | `/why-jvto/reviews` | 2026-05-25 | reviewed |
 | `website/pages/why-jvto/the-jvto-difference.md` | `/why-jvto/the-jvto-difference` | 2026-05-25 | reviewed |
+| `website/pages/why-jvto/2026-05-27-all-inclusive-narrative-page.md` | `/why-jvto/all-inclusive` | 2026-05-27 | draft |
+| `website/pages/why-jvto/2026-05-27-lifetime-travel-credit-page.md` | `/why-jvto/lifetime-travel-credit` | 2026-05-27 | draft |
 
 ---
 
@@ -247,6 +257,16 @@ Verification receipt: `website/schema/student-schemas.receipt.md`
 | File | Topics | Output date | Status |
 |---|---|---|---|
 | `social/batch-2026-05-18.md` | C1–C9 differentiators: police, medical screening, reviews, Ijen, Bromo, pricing, founding story, private tours, Tumpak Sewu, Madakaripura | 2026-05-18 | reviewed |
+
+---
+
+## Blog Posts
+
+| File | URL | Output date | Status |
+|---|---|---|---|
+| `website/blog/2026-05-27-why-not-unlicensed-ijen-operator.md` | `/blog/why-not-unlicensed-ijen-operator` | 2026-05-27 | published |
+| `website/blog/2026-06-11-ijen-medical-checkup-requirement.md` | `/blog/ijen-medical-checkup-requirement` | 2026-06-11 | published |
+| `website/blog/2026-06-11-kawah-ijen-guide.md` | `/blog/kawah-ijen-guide` | 2026-06-11 | published |
 
 ---
 
