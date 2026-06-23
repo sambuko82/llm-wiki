@@ -124,38 +124,51 @@ def load_exclude_patterns() -> list[str]:
     return patterns
 
 
-def collect_existing() -> set[str]:
-    return {
-        p.relative_to(OUTPUT_DIR).as_posix()
-        for p in OUTPUT_DIR.rglob("*")
-        if p.is_file()
-    }
+def _git(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", "-C", str(REPO_ROOT), *args], capture_output=True, text=True)
 
 
-def collect_tracked_md() -> set[str]:
-    result = subprocess.run(
-        ["git", "-C", str(REPO_ROOT), "ls-files", "--", "output"],
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    tracked = set()
-    for line in result.stdout.splitlines():
-        line = line.strip()
-        if line.endswith(".md") and line.startswith("output/"):
-            tracked.add(line[len("output/"):])
-    return tracked
+def _split_output_paths(lines: list[str]) -> tuple[set[str], set[str]]:
+    """Split `git ls-files` output into (all output files, output *.md), relative to output/."""
+    existing: set[str] = set()
+    tracked_md: set[str] = set()
+    for raw in lines:
+        line = raw.strip()
+        if not line.startswith("output/"):
+            continue
+        rel = line[len("output/"):]
+        existing.add(rel)
+        if rel.endswith(".md"):
+            tracked_md.add(rel)
+    return existing, tracked_md
 
 
-def validate() -> list[str]:
-    if not INDEX_PATH.exists():
-        return [f"[stale] catalog missing: {INDEX_PATH.relative_to(REPO_ROOT)}"]
-    indexed = parse_indexed_paths(INDEX_PATH.read_text(encoding="utf-8"))
-    return find_problems(indexed, collect_existing(), collect_tracked_md(), load_exclude_patterns())
+def collect_worktree() -> tuple[str | None, set[str], set[str]]:
+    """Source from the working tree — used by manual runs and by CI on a clean checkout."""
+    index_text = INDEX_PATH.read_text(encoding="utf-8") if INDEX_PATH.exists() else None
+    existing = {p.relative_to(OUTPUT_DIR).as_posix() for p in OUTPUT_DIR.rglob("*") if p.is_file()}
+    _, tracked_md = _split_output_paths(_git("ls-files", "--", "output").stdout.splitlines())
+    return index_text, existing, tracked_md
+
+
+def collect_staged() -> tuple[str | None, set[str], set[str]]:
+    """Source from the git index — what the commit will actually record, not the worktree."""
+    existing, tracked_md = _split_output_paths(_git("ls-files", "--", "output").stdout.splitlines())
+    show = _git("show", ":output/INDEX.md")
+    index_text = show.stdout if show.returncode == 0 else None
+    return index_text, existing, tracked_md
+
+
+def validate(source: str = "worktree") -> list[str]:
+    index_text, existing, tracked_md = collect_staged() if source == "staged" else collect_worktree()
+    if index_text is None:
+        return ["[stale] catalog missing: output/INDEX.md -> restore or stage the file"]
+    indexed = parse_indexed_paths(index_text)
+    return find_problems(indexed, existing, tracked_md, load_exclude_patterns())
 
 
 def run_cli(quiet: bool) -> int:
-    problems = validate()
+    problems = validate("worktree")
     if problems:
         print(f"output/INDEX.md is out of sync ({len(problems)} problem(s)):", file=sys.stderr)
         for problem in problems:
@@ -167,7 +180,7 @@ def run_cli(quiet: bool) -> int:
 
 
 def run_hook() -> int:
-    """Claude Code PreToolUse gate: block a git commit when the index is stale."""
+    """Claude Code PreToolUse gate: block a git commit when the *staged* index is stale."""
     try:
         payload = json.load(sys.stdin)
     except Exception:
@@ -177,12 +190,13 @@ def run_hook() -> int:
     command = str(payload.get("tool_input", {}).get("command", ""))
     if not re.search(r"\bgit\b.*\bcommit\b", command):
         return 0
-    problems = validate()
+    problems = validate("staged")
     if not problems:
         return 0
     print(
-        "Blocked: output/INDEX.md is out of sync with output/. "
-        "Run `python scripts/verify_output_index.py` and fix before committing:",
+        "Blocked: the staged output/INDEX.md is out of sync with the staged output/ tree. "
+        "Stage the index fix (git add output/INDEX.md), then re-run "
+        "`python scripts/verify_output_index.py`:",
         file=sys.stderr,
     )
     for problem in problems:

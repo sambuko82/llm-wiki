@@ -265,8 +265,8 @@ Verification receipt: `website/schema/student-schemas.receipt.md`
 | File | URL | Output date | Status |
 |---|---|---|---|
 | `website/blog/2026-05-27-why-not-unlicensed-ijen-operator.md` | `/blog/why-not-unlicensed-ijen-operator` | 2026-05-27 | published |
-| `website/blog/2026-06-11-ijen-medical-checkup-requirement.md` | `/blog/ijen-medical-checkup-requirement` | 2026-06-11 | published |
-| `website/blog/2026-06-11-kawah-ijen-guide.md` | `/blog/kawah-ijen-guide` | 2026-06-11 | published |
+| `website/blog/2026-06-11-ijen-medical-checkup-requirement.md` | `/blog/2026-06-11-ijen-medical-checkup-requirement` | 2026-06-11 | published |
+| `website/blog/2026-06-11-kawah-ijen-guide.md` | `/blog/2026-06-11-kawah-ijen-guide` | 2026-06-11 | published |
 
 ---
 
