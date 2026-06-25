@@ -56,7 +56,9 @@ These are third-party records that establish operational continuity at the same 
 - **PT Java Volcano Rendezvous incorporation** — 2016-01-01. NIB 1102230032918.
 - **TDUP formalization** — 2023. Verifiable at /verify-jvto/legal.
 
-All of this is the same person, the same location, the same operation — documented across commercial platforms, independent press, government registration, and a European travel publisher over an eleven-year span.
+These third-party and official records support a historical continuity narrative linking Agung Sambuko, Ijen Bondowoso Homestay, Bondowoso address records, and the later PT Java Volcano Rendezvous registration.
+
+Together, these sources provide historical context across the guesthouse era, later company registration, and tourism-license formalization. They do not replace AHU, OSS, or TDUP records as authority for legal identity or legal succession.
 
 ---
 
