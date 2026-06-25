@@ -38,12 +38,6 @@ Domain dashboards in `/bases/` — open in Obsidian for live queries (this stati
 - **Extended Trust Bundle (2026-06-01)** — 5 new JSON exports + updated manifest: `products.json` (22 packages, full pricing), `policies.json` (booking rules, cancellation, inclusions, vehicle allocation, FOC, health screening, forbidden wording), `destinations.json` (5 destinations with geo, facts, package lists), `people.json` (founder, medical officer, 14 crew), `operational.json` (travel times, temperatures, closures, 23 hotels). Verification receipt: `output/website/trust-bundle/extended-bundle-receipt.md`.
 - **bases/website-readiness.base** — New Obsidian dashboard for all website-relevant wiki pages: type-filtered (destination/product/person/credential/website/seo), `days_since_update` formula, stale flag, health-wording mode. 4 views: all pages (staleness order), stale-only, Ijen health pages, domain cards.
 
-## OKF Concepts (Knowledge Catalog)
-
-Structured concept records (Open Knowledge Framework) — typed entities with `id`, `type`, `resource`, `status`, `visibility`. See `okf/README.md`.
-
-- `okf/references/stefan-loose-indonesien-guidebook` — **Reference** concept. Historical independent guidebook identifying "Agung" in connection with Ijen Bondowoso Homestay and tour arrangements. ISBN-10 3770167651 · ISBN-13 9783770167654 · p. 287 · ref: amazon.de/dp/3770167651. CONF-001 resolved 2026-06-25. Not a Partner/Credential/current endorsement.
-
 ## Sources
 
 - [[sources/ssot-v6]] — `JVTO_FINAL_CLEAN_SSOT.json` v6.0 (canonical, 13 domains, dated 2026-04-22). **Authority for all structured facts.**

@@ -114,7 +114,7 @@ Consolidated record of all third-party press, guidebook, and institutional media
 
 ### Stefan Loose Reiseführer Indonesien: mit Reiseatlas (p. 287)
 
-> **CONF-001 resolved (owner decision 2026-06-25).** The canonical bibliographic reference is the Amazon product listing for ISBN-10 `3770167651`. The prior `978-3-7701-7881-0` / 2018 / DuMont Reiseverlag values came from internal strategy documents only and are no longer used. Year, publisher, and edition are not asserted without a physical imprint/copyright page. See `okf/references/stefan-loose-indonesien-guidebook` for the structured reference concept.
+> **CONF-001 resolved (owner decision 2026-06-25).** The canonical bibliographic reference is the Amazon product listing for ISBN-10 `3770167651`. The prior `978-3-7701-7881-0` / 2018 / DuMont Reiseverlag values came from internal strategy documents only and are no longer used. Year, publisher, and edition are not asserted without a physical imprint/copyright page.
 
 | Field | Value |
 |---|---|

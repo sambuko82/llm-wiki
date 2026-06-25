@@ -29,7 +29,7 @@ He was already an active officer in the Indonesian National Police, assigned to 
 
 ### 2016 — PT Java Volcano Rendezvous
 
-Mr. Sam incorporated PT Java Volcano Rendezvous on 2016-01-01 — formalizing the operation that had been running as the Ijen Bondowoso Homestay at the same address. (The independent Stefan Loose guidebook reference, which also names "Agung" at this address, is undated and is listed separately under The Evidence Chain below — it is not tied to the 2016 incorporation.)
+PT Java Volcano Rendezvous was incorporated on 2016-01-01. Historical Booking.com and guidebook records connect Agung Sambuko with Ijen Bondowoso Homestay and a Bondowoso address context before the later company registration. (The independent Stefan Loose guidebook reference, which also names "Agung" at this address, is undated and is listed separately under The Evidence Chain below — it is not tied to the 2016 incorporation.)
 
 ### 2023 — TDUP Formalization
 

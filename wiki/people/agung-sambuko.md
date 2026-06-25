@@ -71,7 +71,7 @@ See [[credentials/trust-signals]] for full press table.
 ### Proof 3 — Historical / guidebook continuity (2015–2016)
 
 - **Booking.com 2015** — award shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso" — continuity anchor (same address as PT Java Volcano Rendezvous office today)
-- **Stefan Loose Reiseführer Indonesien: mit Reiseatlas** (ISBN-10 3770167651 · ISBN-13 9783770167654 · **p. 287** · ref: amazon.de/dp/3770167651) — "Agung" identified in connection with Ijen Bondowoso Homestay and tour arrangements. Independent historical reference, not a current endorsement. CONF-001 resolved 2026-06-25; see [[credentials/press-coverage]] and `okf/references/stefan-loose-indonesien-guidebook`.
+- **Stefan Loose Reiseführer Indonesien: mit Reiseatlas** (ISBN-10 3770167651 · ISBN-13 9783770167654 · **p. 287** · ref: amazon.de/dp/3770167651) — "Agung" identified in connection with Ijen Bondowoso Homestay and tour arrangements. Independent historical reference, not a current endorsement. CONF-001 resolved 2026-06-25; see [[credentials/press-coverage]].
 
 ### Proof 4 — Visual / physical
 

@@ -59,7 +59,9 @@ Bibliographic reference: https://www.amazon.de/-/en/Stefan-Loose-Reisef%C3%BChre
 
 ## What the Record Proves
 
-The three independent record types — a logistics artifact (Booking.com award shipping), an AHU corporate registry entry, and a third-party guidebook citation — each resolve to the same operator at the same address across an 11-year period (2015 → 2026).
+Together, these records support a historical continuity narrative connecting Agung Sambuko, Ijen Bondowoso Homestay, Bondowoso address records, and the later PT Java Volcano Rendezvous registration.
+
+They provide historical context and do not replace AHU, OSS, or TDUP records as authority for legal identity.
 
 No gap in the record is self-reported. Each proof layer is independently issued:
 
@@ -68,6 +70,6 @@ No gap in the record is self-reported. Each proof layer is independently issued:
 - Stefan Loose: published by an independent European travel publisher
 - TDUP: issued by Dinas Pariwisata via OSS
 
-Same operator. Same location. Documented from 2015 guesthouse era through 2016 PT incorporation and 2023 TDUP formalization.
+Together they document a consistent name and Bondowoso address from the 2015 guesthouse era through the 2016 PT incorporation and the 2023 TDUP formalization — historical continuity, not a claim of legal succession.
 
 Source: -> [[people/agung-sambuko]] §proof-3-historical | -> [[credentials/trust-signals]] §institutional-recognition | -> [[credentials/legal-licenses]] §address-continuity

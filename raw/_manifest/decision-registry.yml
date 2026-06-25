@@ -34,7 +34,8 @@ decisions:
       is its valid normalization. Year, publisher, and edition are NOT asserted without a
       physical imprint/copyright page. Model only as an independent historical reference
       (founding history / historical recognition) — never a Partner, Credential, or current
-      endorsement. See okf/references/stefan-loose-indonesien-guidebook.
+      endorsement. The structured Reference concept lives in the public OKF bundle
+      (knowledge-catalog-jvto-bootstrap), not in this repo.
 
   - decision_id: DEC-002
     topic: founding_year_canonical
