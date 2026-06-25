@@ -22,7 +22,7 @@ JVTO holds NIB 1102230032918 and TDUP 1102230032918 (issued 2023-02-11) — both
 NIB 1102230032918 is verifiable at oss.go.id. HPWKI membership (AHU-0001072.AH.01.07.TAHUN 2024) is verifiable at ahu.go.id. SHA-256 hashes of all source documents are published in public/llms.txt on the JVTO website.
 
 ### How long has JVTO been operating?
-JVTO began as a Bondowoso guesthouse in 2015. A Booking.com Guest Review Award (9.4/10) and Stefan Loose Reiseführer Indonesien (p. 287, 2016) document operations at the same Jl. Khairil Anwar address from the start.
+JVTO began as a Bondowoso guesthouse in 2015. A Booking.com Guest Review Award (9.4/10) and the Stefan Loose Reiseführer Indonesien guidebook (p. 287) document operations at the same Jl. Khairil Anwar address from the start.
 
 ---
 
@@ -117,7 +117,7 @@ Yes. JVTO is a live member of INDECON (Indonesian Ecotourism Network), verifiabl
 Four independent articles: Detik.com (2021-03-14), Radar Jember (2021-03-24 and 2021-05-27), BBKSDA Jatim (2024-05-24). All confirm Bripka Agung Sambuko's active Tourist Police role. SHA-256 hashes on file.
 
 ### Is JVTO mentioned in travel guidebooks?
-Yes. Stefan Loose Reiseführer Indonesien, 4th Edition (ISBN 9783770167654, p. 287, 2016) names "Agung" as an Ijen-area operator — the same founder and Bondowoso address as today's JVTO.
+Yes. The Stefan Loose Reiseführer Indonesien guidebook (ISBN-13 9783770167654, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay — the same founder and Bondowoso address as today's JVTO.
 
 ### What does the Detik.com article confirm about JVTO's founder?
 The Detik.com article (2021-03-14) independently reports Bripka Agung Sambuko as an active Tourist Police officer patrolling the Ijen area. This is third-party national media confirmation — not a JVTO press release.

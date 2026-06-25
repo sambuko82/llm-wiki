@@ -1,7 +1,7 @@
 ---
 type: index
 title: JVTO Wiki Content Index — AI Entry Point
-last_updated: 2026-06-02
+last_updated: 2026-06-25
 total_pages: 96
 sources: [ssot-v6, jvto-homepage-clip, trustpilot-reviews-2026, google-maps-reviews-api-2026, google-profile-media-2026, detik-polpar-2021, llm-kb-tooling-guide, jvto-policy-pack-v6, jvto-travel-guide-en, db-export-2026-05, sitemap-2026-05, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-image-asset-map, geo-aeo-strategy-2026-05, eav-ai-optimization-2026-05, seo-ux-integration-2026-05, why-jvto-trust-architecture, digital-trust-fortress-blueprint, crew-strategy-integration-2026-05, competitor-design-analysis-2026-05, wa-pro-crm-api, gpx-destination-data, gemini-trust-fortress-mockup, finance-rate-cards, ijen-safety-resource-mapping, ijen-tourist-accidents, jvto-verification-dossier, ijen-safety-protocol, backoffice-mysql, guardian-authority-framework-2026-05, tango-workflow-jvto-website-booking]
 owner: wiki-llm
@@ -38,6 +38,12 @@ Domain dashboards in `/bases/` — open in Obsidian for live queries (this stati
 - **Extended Trust Bundle (2026-06-01)** — 5 new JSON exports + updated manifest: `products.json` (22 packages, full pricing), `policies.json` (booking rules, cancellation, inclusions, vehicle allocation, FOC, health screening, forbidden wording), `destinations.json` (5 destinations with geo, facts, package lists), `people.json` (founder, medical officer, 14 crew), `operational.json` (travel times, temperatures, closures, 23 hotels). Verification receipt: `output/website/trust-bundle/extended-bundle-receipt.md`.
 - **bases/website-readiness.base** — New Obsidian dashboard for all website-relevant wiki pages: type-filtered (destination/product/person/credential/website/seo), `days_since_update` formula, stale flag, health-wording mode. 4 views: all pages (staleness order), stale-only, Ijen health pages, domain cards.
 
+## OKF Concepts (Knowledge Catalog)
+
+Structured concept records (Open Knowledge Framework) — typed entities with `id`, `type`, `resource`, `status`, `visibility`. See `okf/README.md`.
+
+- `okf/references/stefan-loose-indonesien-guidebook` — **Reference** concept. Historical independent guidebook identifying "Agung" in connection with Ijen Bondowoso Homestay and tour arrangements. ISBN-10 3770167651 · ISBN-13 9783770167654 · p. 287 · ref: amazon.de/dp/3770167651. CONF-001 resolved 2026-06-25. Not a Partner/Credential/current endorsement.
+
 ## Sources
 
 - [[sources/ssot-v6]] — `JVTO_FINAL_CLEAN_SSOT.json` v6.0 (canonical, 13 domains, dated 2026-04-22). **Authority for all structured facts.**
@@ -60,7 +66,7 @@ Domain dashboards in `/bases/` — open in Obsidian for live queries (this stati
 - [[sources/geo-aeo-strategy-2026-05]] — GEO/AEO exhaustive audit (2026-05-24, from 4 raw files). Digital Trust Fortress 5-component model, AEO per-page targets, confirmed #1 rankings, TL;DR HTML block + Organization JSON-LD + FAQPage code, llms.txt rec, OTA optimization.
 - [[sources/eav-ai-optimization-2026-05]] — EAV/AI optimization audit (2026-05-24, from 3 raw files). EAV entity framework (Organization/TourPackage/HealthScreening/TravelCredit), 8-layer SSOT→JSON-LD map, NLP sharpening before/after table, StartLocation as primary discriminator.
 - [[sources/seo-ux-integration-2026-05]] — SEO+UX integration analysis (2026-05-24). URL governance comparison (MBA/GA/JVTO), SSOT→DOM integration, WCAG, keyword cannibalization gaps, WAF/crawler conflict, off-page backlink opportunities.
-- [[sources/why-jvto-trust-architecture]] — Why JVTO trust architecture (2026-05-24, from 4 raw files). Hub & spoke URL sitemap, Trust Asset Registry (LEG-001–HIST-002), new facts (Stefan Loose ISBN contradiction, second NIB 0220001393513), Guardian Archetype framing, HPWKI/INDECON/ISIC institutional triad.
+- [[sources/why-jvto-trust-architecture]] — Why JVTO trust architecture (2026-05-24, from 4 raw files). Hub & spoke URL sitemap, Trust Asset Registry (LEG-001–HIST-002), new facts (Stefan Loose ISBN — CONF-001 resolved 2026-06-25, second NIB 0220001393513), Guardian Archetype framing, HPWKI/INDECON/ISIC institutional triad.
 - [[sources/digital-trust-fortress-blueprint]] — Digital Trust Fortress Next.js blueprint (2026-05-24). Full file tree, component registry (AuthorityShield/ForensicGallery/CrewCard), API endpoints, evidence asset structure, Costly Signals principle for police docs.
 - [[sources/crew-strategy-integration-2026-05]] — Crew→trust-pillar strategy (2026-05-24). 7-pillar crew mapping table, crew archetypes with IDs (Joyo/Yandi/Fredi/Gufron/Anjas), 4-zone team page structure, Guardian Mindset principle.
 - [[sources/competitor-design-analysis-2026-05]] — MBA + G Adventures design benchmark (2026-05-24). MBA Level 1-7 difficulty, 67% CAC reduction / 50% RPB increase 2018-2020, URL persistence `/[locale]/adventures/[slug]/`. GA REST API SSOT, `/trips/[name]/[id]/` ID persistence, looptail brand system.
@@ -114,7 +120,7 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 
 - [[credentials/legal-licenses]] — NIB 1102230032918, TDUP, KBLI codes, HPWKI, BBKSDA, ISIC, SHA-256 hashes
 - [[credentials/trust-signals]] — Trustpilot 4.8/51, INDECON, ISIC live provider, press, third-party recognition
-- [[credentials/press-coverage]] — 4 independent press items (Detik, Radar Jember ×2, BBKSDA) + Stefan Loose guidebook 2016 p. 287; entity linking analysis; AEO snippets for C9
+- [[credentials/press-coverage]] — 4 independent press items (Detik, Radar Jember ×2, BBKSDA) + Stefan Loose guidebook p. 287 (ISBN-13 9783770167654, CONF-001 resolved); entity linking analysis; AEO snippets for C9
 - [[credentials/medical-screening]] — Ijen health-screening system: BBKSDA SE.1658 regulatory basis, 4-step protocol, Dr. Irwandanu (SIP-verifiable), partner facilities, 5 screening photos + BBKSDA terms screenshot; AEO snippets for C4
 - [[credentials/police-integration]] — Full evidence chain: SPRIN POLPAR + SPRIN WAL-TRAVEL (SHA-256), 3 police escort photos + Geopark briefing, 3-article press corroboration, Ditpamobvit unit details, Traffic Police escort mechanics; AEO snippets for C1/C5
 - [[credentials/permit-requirements]] — Operator permits (NIB, TDUP, KBLI, BBKSDA, HPWKI) + visitor entry requirements per destination (Ijen, Bromo, Tumpak Sewu, Madakaripura, Papuma) with costs. Backs Silo 3 permit-requirements output.

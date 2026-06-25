@@ -1,7 +1,7 @@
 ---
 type: person
 title: Agung "Mr. Sam" Sambuko — Founder
-last_updated: 2026-05-16
+last_updated: 2026-06-25
 sources: [ssot-v6, jvto-homepage-clip, detik-polpar-2021, ssot-image-asset-map]
 role: Founder & Active Tourist Police Officer
 schema_id: "/#agung-sambuko"
@@ -71,7 +71,7 @@ See [[credentials/trust-signals]] for full press table.
 ### Proof 3 — Historical / guidebook continuity (2015–2016)
 
 - **Booking.com 2015** — award shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso" — continuity anchor (same address as PT Java Volcano Rendezvous office today)
-- **Stefan Loose Indonesia Travel Guidebook 4th Edition** (year/ISBN disputed — existing wiki: 2016, ISBN 9783770167654; raw audit docs: 2018, ISBN 978-3-7701-7881-0, DuMont Reiseverlag, **p. 287**) — "Agung" named as operator of Ijen Bondowoso Homestay. See [[credentials/press-coverage]] for full contradiction callout and verification instructions.
+- **Stefan Loose Reiseführer Indonesien: mit Reiseatlas** (ISBN-10 3770167651 · ISBN-13 9783770167654 · **p. 287** · ref: amazon.de/dp/3770167651) — "Agung" identified in connection with Ijen Bondowoso Homestay and tour arrangements. Independent historical reference, not a current endorsement. CONF-001 resolved 2026-06-25; see [[credentials/press-coverage]] and `okf/references/stefan-loose-indonesien-guidebook`.
 
 ### Proof 4 — Visual / physical
 
