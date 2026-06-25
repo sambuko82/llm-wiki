@@ -28,8 +28,8 @@
     "claim-registry.yml": "sha256:f3323f36bcd48b7f",
     "evidence-registry.yml": "sha256:29f779912fbbe35d",
     "entity-registry.yml": "sha256:5d123c0437b898ba",
-    "decision-registry.yml": "sha256:c871869b42bd56c8",
-    "conflict-log.md": "sha256:ab33cd0595289d9c",
+    "decision-registry.yml": "sha256:7d0c7645156ed1a8",
+    "conflict-log.md": "sha256:39ba3060c091ecb1",
     "aeo-claims.md": "sha256:723540f5e6ae30f6"
   }
 }
