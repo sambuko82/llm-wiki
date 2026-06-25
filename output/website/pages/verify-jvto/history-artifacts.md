@@ -18,8 +18,9 @@ Eleven years of documented operational presence at the same Bondowoso address. R
 | Year | Event | Evidence |
 |---|---|---|
 | **2015** | Agung Sambuko operates Ijen Bondowoso Homestay at Jl. Khairil Anwar No.102, Bondowoso. Receives Booking.com Guest Review Award: 9.4 / 10. | Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
-| **2016** | PT Java Volcano Rendezvous incorporated at AHU on 2016-01-01. The Stefan Loose Reiseführer Indonesien guidebook (ISBN-13 9783770167654, ISBN-10 3770167651, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements. | AHU registry: https://ahu.go.id/pencarian/perseroan · Guidebook page: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Cropped view: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
+| **2016** | PT Java Volcano Rendezvous incorporated at AHU on 2016-01-01. | AHU registry: https://ahu.go.id/pencarian/perseroan |
 | **2023** | TDUP 1102230032918 formalized via OSS on 2023-02-11. | oss.go.id — Dinas Pariwisata record, SHA-256: `27252d512ddfa74de22a3e3ec10aa3dd40ef88da3eb57349fcd2137411551ee3` |
+| **historical (undated)** | Stefan Loose Reiseführer Indonesien: mit Reiseatlas (ISBN-13 9783770167654, ISBN-10 3770167651, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements. Year not asserted — see Stefan Loose Citation below. | Guidebook page: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Cropped view: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
 
 ---
 

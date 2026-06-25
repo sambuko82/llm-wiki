@@ -29,7 +29,7 @@ He was already an active officer in the Indonesian National Police, assigned to 
 
 ### 2016 — PT Java Volcano Rendezvous
 
-Mr. Sam incorporated PT Java Volcano Rendezvous on 2016-01-01. The Stefan Loose Reiseführer Indonesien guidebook (ISBN-13 9783770167654, ISBN-10 3770167651, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements — an independent German travel publisher, not a JVTO-authored reference, naming the same operator at the same address.
+Mr. Sam incorporated PT Java Volcano Rendezvous on 2016-01-01 — formalizing the operation that had been running as the Ijen Bondowoso Homestay at the same address. (The independent Stefan Loose guidebook reference, which also names "Agung" at this address, is undated and is listed separately under The Evidence Chain below — it is not tied to the 2016 incorporation.)
 
 ### 2023 — TDUP Formalization
 
