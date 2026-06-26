@@ -56,7 +56,7 @@ The founder is a verifiable public entity — not a self-reported figure. Active
 
 ### Proof 2 — Independent press coverage
 
-- **Detik.com 2021-03-14** — "Bripka Agung Sambuko" at Ijen tourist police duties (`press-detik-polisi-pariwisata-2021-03-14`) — **source now ingested**: [[sources/detik-polpar-2021]]
+- **Detik.com 2021-03-14** — "Bripka Agung Sambuko" in Bondowoso-area tourist police duties (`press-detik-polisi-pariwisata-2021-03-14`) — **source now ingested**: [[sources/detik-polpar-2021]]
 
   Direct quotes (verbatim, Bahasa Indonesia):
   > "Sejak libur hari Kamis kemarin, saya tak pernah pulang. Stand by dan nginap di sini terus."

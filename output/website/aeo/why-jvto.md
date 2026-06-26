@@ -120,7 +120,7 @@ Four independent articles: Detik.com (2021-03-14), Radar Jember (2021-03-24 and 
 Yes. The Stefan Loose Reiseführer Indonesien guidebook (ISBN-13 9783770167654, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements. It is historical operator evidence — not a claim of the current office address or address continuity.
 
 ### What does the Detik.com article confirm about JVTO's founder?
-The Detik.com article (2021-03-14) independently reports Bripka Agung Sambuko as an active Tourist Police officer patrolling the Ijen area. This is third-party national media confirmation — not a JVTO press release.
+The Detik.com article (2021-03-14) independently reports Bripka Agung Sambuko as an active Tourist Police officer patrolling the Bondowoso area. This is third-party national media confirmation — not a JVTO press release.
 
 ---
 

@@ -93,7 +93,7 @@ The narrative MUST explicitly link:
 ## Strategic Framing: "Guardian Archetype"
 
 The police-founder narrative must avoid "police = rigid authority" and instead frame as "police = protector":
-- Key quote source: Detik.com "Suka Duka Polisi Pariwisata" article — Mr. Sam stays overnight at Ijen in 10°C weather to enforce health protocols
+- Key quote source: Detik.com "Suka Duka Polisi Pariwisata" article — Mr. Sam stays overnight at Kawah Wurung (Bondowoso) in 10°C weather to enforce health protocols
 - This humanizes the brand: the rule isn't bureaucratic, it's from a man who literally sleeps on the mountain to protect you
 
 ---

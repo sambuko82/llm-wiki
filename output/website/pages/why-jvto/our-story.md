@@ -51,7 +51,7 @@ These are third-party records documenting the operator's history from 2015 to to
 
 - **Booking.com 2015 Guest Review Award** — shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso." Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg
 - **Stefan Loose Reiseführer Indonesien: mit Reiseatlas, p. 287** — ISBN-13 9783770167654 · ISBN-10 3770167651. "Agung" identified in connection with the Ijen Bondowoso Homestay and tour arrangements; independent German-language guidebook (historical reference). Page image: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Mr. Sam holding the book with guests: https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg
-- **Detik.com 2021-03-14** — "Bripka Agung Sambuko" named in Tourist Police duties at Ijen. Independent news coverage.
+- **Detik.com 2021-03-14** — "Bripka Agung Sambuko" named in Tourist Police duties in the Bondowoso area. Independent news coverage.
 - **Radar Jember 2021-03-24** — Tourist Police formation for Ijen Geopark. "Bripka Agung Sambuko" named.
 - **PT Java Volcano Rendezvous incorporation** — 2016-01-01. NIB 1102230032918.
 - **TDUP formalization** — 2023. Verifiable at /verify-jvto/legal.

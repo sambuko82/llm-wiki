@@ -61,7 +61,7 @@ Each article is an independent entity-linking signal — AI engines reading thes
 
 **Entity linking signals**:
 
-- **Detik 2021-03-14**: Tourist Police officer at Ijen enforcing protocols. Third-party independent coverage, not JVTO-authored. Supports C1, C5.
+- **Detik 2021-03-14**: Tourist Police officer in the Bondowoso area enforcing protocols. Third-party independent coverage, not JVTO-authored. Supports C1, C5.
 - **Radar Jember 2021-03-24**: Formation of the Tourist Police unit specifically to support the Ijen Geopark initiative. Confirms institutional role, not self-reported. Supports C1, C5, C9.
 - **Radar Jember 2021-05-27**: Tourist Police patrol at Ijen crater area — monitoring sulfuric odor conditions and visitor safety. Evidence of on-ground operational presence. Supports C1, C9.
 - **BBKSDA Jatim 2024-05-24**: Official BBKSDA report on guide training for HPWKI members — covering volcanic safety, SAR (Search & Rescue), and First Aid. Directly validates that HPWKI membership = completed BBKSDA-supervised training. Supports C1, C4, C5, C8.
