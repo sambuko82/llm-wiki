@@ -1,0 +1,94 @@
+# Claim-boundary denylist + canonical values for scripts/verify_claims.py.
+#
+# Mirrors the locked SSOT — keep in sync when those change:
+#   raw/_manifest/decision-registry.yml   DEC-001 (Stefan canonical: ISBN-13 9783770167654, no year/edition)
+#   wiki/credentials/trust-signals.md     canonical review counts (Google 123, Trustpilot 51, ...)
+#   CLAUDE.md                             identity (NIB, office No.102A, dates)
+#
+# The linter scans a TARGET (a draft, stdin, or named files) — NOT the canonical sources,
+# which legitimately quote superseded/stale strings as historical/resolution notes.
+
+# Governance / dispute records are never scanned for boundary violations (they record the
+# superseded values on purpose).
+exclude_globs:
+  - "wiki/log.md"
+  - "raw/_manifest/**"
+  - "output/_archive/**"
+  - "wiki/sources/*dossier*"
+  - "wiki/sources/guardian-authority-framework*"
+  - "plugins/**"
+  - "scripts/**"
+
+# A line containing any marker is treated as context/resolution (a note ABOUT a superseded
+# value), not an active assertion, and is skipped.
+context_markers:
+  - "supersed"
+  - "dropped"
+  - "disputed"
+  - "conf-"
+  - "dec-"
+  - "do not publish"
+  - "do not use"
+  - "[stale?]"
+  - "contradiction"
+  - "raw audit"
+  - "no longer"
+  - "not asserted"
+  - "superseded-by"
+  - "fixed to"
+  - "was `"
+
+# Deliberate, owner-locked exceptions (R2 decision: these Booking-evidence lines stay).
+# An entry suppresses one rule on lines of one path that contain `text`.
+allow:
+  - {rule: BOOKING-CONTINUITY, path: "wiki/credentials/legal-licenses.md", text: "confirming operational continuity"}
+  - {rule: BOOKING-CONTINUITY, path: "wiki/credentials/legal-licenses.md", text: "demonstrating continuous operational presence"}
+
+# Boundary rules — an affirmative match on an active line fails the content.
+boundaries:
+  - id: STEFAN-EDITION
+    # Target the DROPPED metadata only. The dropped ISBN-13 (978-3-7701-7881-0) and the
+    # canonical (978-3-770-16765-4) share the "9783770" prefix, so match the unique "7701-7881"
+    # segment, never the bare "978-3-7701".
+    pattern: "(?i)stefan.{0,80}?(4th edition|2016 edition|\\b2018\\b|dumont|7701[- ]?7881|9783770178810)"
+    message: "Stefan Loose year/edition/publisher asserted (superseded by DEC-001 / CONF-001)."
+    fix: "Use only: identifies 'Agung' re Ijen Bondowoso Homestay; ISBN-13 9783770167654, p. 287. No year/edition/publisher."
+  - id: BOOKING-CONTINUITY
+    pattern: "(?i)(same address where jvto operates|confirming operational continuity|demonstrating continuous operational presence|address[- ]continuity evidence|'a' suffix was added after|suffix was added after the pt)"
+    message: "Booking framed as address continuity / legal succession."
+    fix: "Booking is historical address context only (No.102 homestay / No.102A office, same street); not continuity or legal succession."
+  - id: DETIK-IJEN
+    pattern: "(?i)detik.{0,45}?(at ijen|kawah ijen|patrolling the ijen|duties at ijen|officer at ijen)"
+    message: "Detik attributed to Kawah-Ijen-specific duty (Detik is general Bondowoso duty)."
+    fix: "Detik -> 'Bondowoso area'. (Collective lines grouping Detik with BBKSDA/Radar, which are genuinely Ijen, are fine.)"
+  - id: BBKSDA-CERTIFIED
+    pattern: "(?i)bbksda[- ]?certified"
+    message: "Over-claim: 'BBKSDA certified'."
+    fix: "BBKSDA supervises HPWKI guide training; never 'BBKSDA certified JVTO'."
+  - id: MEDICAL-UNIVERSAL
+    pattern: "(?i)(mandatory and non-negotiable|no valid qr.{0,12}no access)"
+    # Safe when the same line attributes the rule to BBKSDA / access rules rather than to JVTO.
+    unless: ["bbksda", "not ours", "access rule", "that rule is", "se.1658"]
+    message: "Medical screening stated as a universal JVTO rule rather than the conditional BBKSDA rule."
+    fix: "Conditional: screening is included; BBKSDA access rules may require/verify completion under current rules."
+  - id: ISIC-PARTNER
+    pattern: "(?i)isic.{0,40}?(official provider listing|as a partner|is a partner)"
+    message: "ISIC asserted as partner / official provider listing without direct provider evidence."
+    fix: "Gate ISIC until the provider page directly identifies JVTO."
+
+# Stale review counts — a count that must never appear within ~40 chars of its platform name.
+stale_review_claims:
+  - {platform: google, count: "92"}
+  - {platform: trustpilot, count: "47"}
+
+# Canonical values (documentation for source-backing; the active numeric check is the stale
+# list above).
+canonical:
+  google_reviews: "123"
+  trustpilot_reviews: "51"
+  tripadvisor_reviews: "21"
+  total_reviews: "195"
+  nib: "1102230032918"
+  office: "No.102A"
+  stefan_isbn13: "9783770167654"
+  stefan_page: "287"

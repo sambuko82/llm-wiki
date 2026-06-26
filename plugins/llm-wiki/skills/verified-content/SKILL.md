@@ -44,10 +44,16 @@ is not allowed to ship — either source it or cut it. Match the voice in
 `wiki/website/brand-voice.md` (direct, evidence-led).
 
 ## Step 2 — Verify (the step that replaces manual checking)
-Run all four checks and build a **claim ledger**. Until `scripts/verify_claims.py` exists
-(see Tools), do 2a–2c with `grep` over the draft + the canonical sources.
+Run `python scripts/verify_claims.py --stdin` on the **generated draft** (pipe the draft
+text in). It returns the boundary/stale violations deterministically — rules live in
+`scripts/claim_boundaries.yml`. **Scan the draft only, never the canonical sources**: pages
+like `trust-signals.md` and `press-coverage.md` legitimately quote stale/superseded strings
+(the `92`/`47` warning, the dropped Stefan ISBN) as historical notes, so grepping the
+denylist over the sources would false-positive. Use the sources only for canonical lookups
+(2b) and source-backing (2c). Then build the **claim ledger**. (2a documents what the script
+enforces against the draft.)
 
-**2a. Evidence-boundary denylist** — fail the draft if any pattern appears:
+**2a. Evidence-boundary denylist** (enforced by `verify_claims.py` on the draft) — fail if:
 - **Stefan**: any `year / edition / 2016 / 2018 / 4th Edition / DuMont / 978-3-7701`, or
   Stefan tied to `Khairil Anwar / same address / address continuity / current office /
   legal succession`. Allowed: identifies "Agung" re Ijen Bondowoso Homestay + tour
@@ -77,6 +83,10 @@ actually supports it. Unsourced or AI-only claim → fail.
 guards: `python scripts/compile_trust.py --dry-run`, `python scripts/compile_packages.py
 --dry-run --strict`, `python scripts/verify_output_index.py`. Any non-zero → fail.
 
+> The denylist scans the **draft**, not the canonical sources. To audit a saved file later,
+> `python scripts/verify_claims.py <path>`; to sweep the active public copy on demand,
+> `python scripts/verify_claims.py --all` (an audit, not yet a blocking CI gate — see Tools).
+
 ## Step 3 — Verdict + ledger
 Emit a compact ledger and a decision; **never return polished copy without it**:
 
@@ -99,19 +109,23 @@ Qualifiers applied: <e.g. medical wording made conditional; Booking → historic
 exact strings. 4. (If it touches `output/`) the index/log entries needed. No publish step —
 hand off to `blog-publisher` / the normal commit flow only after `approved`.
 
-## Tools needed (to make verification deterministic, not grep-by-hand)
-1. **`scripts/verify_claims.py` (NEW — the key enabler).** A content-claim linter that loads
-   the boundary denylist + canonical values from `raw/_manifest/{decision-registry,
-   claim-registry}.yml` + `wiki/credentials/trust-signals.md` and scans a target file (or
-   stdin), emitting the ledger + non-zero exit on any boundary/canonical/stale violation.
-   This is the llm-wiki analog of the bootstrap `validate_okf.py` JVTO-05/JVTO-11 checks, and
-   should be wired into CI so the boundaries can never regress silently. **Build this first.**
+## Tools
+1. **`scripts/verify_claims.py` (BUILT — the key enabler).** Deterministic claim-boundary
+   linter; rules + canonical values in `scripts/claim_boundaries.yml` (mirrors the locked
+   SSOT: `decision-registry.yml` DEC-001, `trust-signals.md`, `CLAUDE.md`). Scans a draft via
+   `--stdin`, named files, or `--all`; emits the ledger + non-zero exit on any
+   boundary/stale violation. The llm-wiki analog of the bootstrap `validate_okf.py`
+   boundary checks. Tests in `tests/test_verify_claims.py`.
+   - **Follow-up (not yet done):** wiring `--all` into CI as a blocking gate needs a one-time
+     baseline cleanup — a current `--all` run flags genuine pre-existing stale `Google 92`
+     counts (e.g. `pages/why-jvto/reviews.md`, `verify-jvto/hub.md`) that must be corrected to
+     `123` first. Until then `--all` is an on-demand audit, and the skill enforces on drafts.
 2. **Existing, reuse as-is:** `scripts/compile_trust.py --dry-run`,
    `scripts/compile_packages.py --dry-run --strict`, `scripts/verify_output_index.py`, and
    the `raw/_manifest/*.yml` registries + `trust-signals.md` as the canonical SSOT.
-3. **`Grep` (built-in):** the fallback denylist scanner until #1 exists.
-4. **`Read`:** the canonical wiki sources for source-backing (Step 2c).
-5. **`WebFetch` (optional, non-blocking):** live source-health for dynamic external claims
+3. **`Read`:** the canonical wiki sources for source-backing (Step 2c). `Grep` only as a quick
+   manual cross-check — `verify_claims.py` is the source of truth for the denylist.
+4. **`WebFetch` (optional, non-blocking):** live source-health for dynamic external claims
    (review counts, registry URLs). Per the OKF/source-health contract, a blocked/CAPTCHA/403
    read is a warning that retains the last observation — it must never invalidate a claim or
    block the draft; record the attempt only.
