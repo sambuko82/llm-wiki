@@ -2429,3 +2429,13 @@ Drift found and flagged:
 
 ## [2026-06-15] compile | package-readiness v1.3 — +package-operational-days.json
 Added 7th artifact `output/products/package-readiness/package-operational-days.json` (57 records / 16 packages) for downstream jvto-itinerary-core Phase 6. Explicit conservative overnight/meal/hotel semantics (overnight_status enum; no cost/room/area/node/PII). Source-backed from package-itineraries; bumped bundle v1.2→v1.3. Pages updated: package_compiler (renderer/validator/compile_packages), tests, bundles/packages.md, ops/bundle-taxonomy.md, ops/package-readiness-compiler-spec.md §5.1. Byte-identical across reruns; 0 op-day problems; all tests pass.
+
+## [2026-06-25] resolve | Stefan Loose bibliographic reference canonicalized (CONF-001 closed)
+
+Owner decision: treat the Amazon product listing (ISBN-10 `3770167651` → ISBN-13 `9783770167654`, title "Stefan Loose Reiseführer Indonesien: mit Reiseatlas", p. 287) as the single canonical bibliographic reference. Dropped the prior `978-3-7701-7881-0` / 2018 / DuMont Reiseverlag values (internal-strategy-doc origin only) unless a physical imprint/copyright page supports them. Year, publisher, and edition are no longer asserted. Modeled strictly as an **independent historical reference** — never a Partner, Credential, or current endorsement.
+
+Pages updated: wiki/credentials/press-coverage.md, wiki/credentials/trust-signals.md, wiki/sources/why-jvto-trust-architecture.md, wiki/sources/gemini-trust-fortress-mockup.md, wiki/people/agung-sambuko.md, wiki/overview.md, wiki/index.md, output/website/pages/why-jvto/our-story.md, output/website/pages/why-jvto/hub.md, output/website/pages/verify-jvto/history-artifacts.md, output/website/pages/verify-jvto/press-recognition.md, output/website/pages/verify-jvto/hub.md, output/website/aeo/why-jvto.md, output/website/llms.txt, output/website/llms-full.txt, output/website/blog/2026-05-27-why-not-unlicensed-ijen-operator.md, output/website/trust-bundle/claims.json (DEC-001), output/website/trust-bundle/_manifest.json (input_hashes + compiled_at).
+
+Governance: raw/_manifest/conflict-log.md CONF-001 → resolved 2026-06-25; raw/_manifest/decision-registry.yml DEC-001 → canonicalized (topic stefan_loose_bibliographic_reference, supersedes block recorded). Structured Reference concept deferred to the public OKF bundle (knowledge-catalog-jvto-bootstrap, okf/jvto/curation/approved/references.yaml) rather than a parallel okf/ in this repo.
+
+Out of scope (separate repo): jvto-web `src/lib/schemas/entityGraph.ts` still publishes the old `978-3-7701-7881-0` / `2018-07-05` — should be updated to mirror ISBN-13 `9783770167654` with no asserted year/publisher.

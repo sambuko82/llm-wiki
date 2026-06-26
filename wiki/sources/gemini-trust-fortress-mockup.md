@@ -1,7 +1,7 @@
 ---
 type: source
 title: Gemini Code Output — Digital Trust Fortress HTML Mockup
-last_updated: 2026-05-25
+last_updated: 2026-06-25
 sources: [gemini-code-1779633053483.html]
 owner: wiki-llm
 stale_after_days: 90
@@ -44,7 +44,7 @@ A complete single-file HTML page implementing the "Digital Trust Fortress" visua
 
 ### Embedded Schema
 - Organization JSON-LD with founder (Agung Sambuko, Tourist Police)
-- `subjectOf` → Stefan Loose book (ISBN 978-3-7701-7881-0)
+- `subjectOf` → Stefan Loose book (canonical ISBN-13 9783770167654 · ISBN-10 3770167651 — the mockup's original `978-3-7701-7881-0` is superseded; CONF-001 resolved 2026-06-25)
 - WebPage for `/why-jvto`
 
 ---

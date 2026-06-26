@@ -1,7 +1,7 @@
 ---
 type: overview
 title: JVTO Master Overview
-last_updated: 2026-05-16
+last_updated: 2026-06-25
 sources: [ssot-v6, jvto-homepage-clip]
 owner: wiki-llm
 stale_after_days: 60
@@ -149,7 +149,7 @@ See [[credentials/trust-signals]].
 - **Radar Jember / Jawa Pos** (2021-03-24) — Polpar + Ijen Geopark
 - **Radar Jember / Jawa Pos** (2021-05-27) — Tourist Police role coverage
 - **BBKSDA Jatim** (2024-05-24) — Ijen guide training coverage
-- **Stefan Loose Indonesia Travel Guidebook 4th Edition** (ISBN 9783770167654, p. 287) — lists Agung Sambuko
+- **Stefan Loose Reiseführer Indonesien: mit Reiseatlas** (ISBN-10 3770167651 · ISBN-13 9783770167654, p. 287) — identifies Agung Sambuko in connection with Ijen Bondowoso Homestay (independent historical reference)
 
 See [[credentials/press-coverage]] for full analysis (entity linking, content angles, AEO snippets). Summary also in [[credentials/trust-signals]].
 

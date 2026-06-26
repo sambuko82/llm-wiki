@@ -1,7 +1,7 @@
 ---
 type: source
 title: Why JVTO Trust Architecture — Strategy & Registry
-last_updated: 2026-05-24
+last_updated: 2026-06-25
 sources: []
 owner: wiki-llm
 stale_after_days: 90
@@ -48,7 +48,7 @@ pages_updated: [wiki/index, wiki/seo/why-jvto-architecture]
 | Asset ID | Description | Data | Display location |
 |---|---|---|---|
 | HIST-001-BOOKING2015 | Booking.com Guest Review Award 2015 physical plaque | **Score: 9.4/10** · Address: Ijen Bondowoso Homestay, Jl. Khairil Anwar 102 A (same as current HQ) | /why-jvto/our-story + /why-jvto/reviews |
-| HIST-002-STEFANLOOSE | Stefan Loose Reiseführer Indonesien mention | **ISBN: 978-3-7701-7881-0** · Publisher: DuMont Reiseverlag · **4th edition, 2018** · Page 287 | /why-jvto/our-story |
+| HIST-002-STEFANLOOSE | Stefan Loose Reiseführer Indonesien: mit Reiseatlas mention | ISBN-10 3770167651 · ISBN-13 9783770167654 · Page 287 · ref: amazon.de/dp/3770167651 | /why-jvto/our-story |
 
 ### C. Medical & Innovation
 
@@ -67,12 +67,13 @@ pages_updated: [wiki/index, wiki/seo/why-jvto-architecture]
 - This is the key forensic link proving Ijen Bondowoso Homestay → JVTO entity continuity
 
 ### Stefan Loose Guidebook
-- **ISBN: 978-3-7701-7881-0**
-- Publisher: DuMont Reiseverlag
-- **Edition: 4th edition, 2018** — note: existing wiki/credentials/press-coverage says "2016". Flag contradiction.
+- **Title: Stefan Loose Reiseführer Indonesien: mit Reiseatlas**
+- **ISBN-10: 3770167651**
+- **ISBN-13: 9783770167654**
 - Page 287
+- Canonical bibliographic reference: https://www.amazon.de/-/en/Stefan-Loose-Reisef%C3%BChrer-Indonesien-Reiseatlas/dp/3770167651
 
-> Contradiction with [[credentials/press-coverage]]: raw source says 4th edition 2018 (ISBN 978-3-7701-7881-0, DuMont Reiseverlag). Existing wiki entry says "2016". Verify actual publication date before resolving.
+> CONF-001 resolved (owner decision 2026-06-25): the Amazon product listing (ISBN-10 3770167651) is the canonical bibliographic reference. The earlier `978-3-7701-7881-0` / 2018 / DuMont Reiseverlag values came from internal strategy documents only and are dropped unless a physical imprint/copyright page supports them. Year, publisher, and edition are not asserted. This is an independent historical reference, not a current endorsement.
 
 ### Second NIB entry
 - **Active NIB**: 1102230032918 (confirmed active 2025)
@@ -92,7 +93,7 @@ The narrative MUST explicitly link:
 ## Strategic Framing: "Guardian Archetype"
 
 The police-founder narrative must avoid "police = rigid authority" and instead frame as "police = protector":
-- Key quote source: Detik.com "Suka Duka Polisi Pariwisata" article — Mr. Sam stays overnight at Ijen in 10°C weather to enforce health protocols
+- Key quote source: Detik.com "Suka Duka Polisi Pariwisata" article — Mr. Sam stays overnight at Kawah Wurung (Bondowoso) in 10°C weather to enforce health protocols
 - This humanizes the brand: the rule isn't bureaucratic, it's from a man who literally sleeps on the mountain to protect you
 
 ---

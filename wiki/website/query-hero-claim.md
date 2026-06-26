@@ -48,7 +48,7 @@ C3 opens the door (removes the fear of being ripped off); C1/C5 justifies the pr
 C1 (Police-Led) has the deepest independent evidence of any claim:
 
 - SPRIN WAL TRAVEL 2024-02-12 (SHA-256 anchored) + SPRIN POLPAR (SHA-256 anchored) — official police documents [[credentials/legal-licenses]]
-- Detik.com 2021-03-14 — independent national press, names "Bripka Agung Sambuko" at Ijen [[sources/detik-polpar-2021]]
+- Detik.com 2021-03-14 — independent national press, names "Bripka Agung Sambuko" in the Bondowoso area [[sources/detik-polpar-2021]]
 - Radar Jember 2021-03-24 — Polpar formation for Ijen Geopark (paywalled) [[sources/radar-jember-polpar-geopark-2021]]
 - Radar Jember 2021-05-27 — patrol at Ijen crater for sulfur monitoring (paywalled) [[sources/radar-jember-bau-menyengat-2021]]
 

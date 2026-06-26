@@ -8,28 +8,34 @@
 
 decisions:
   - decision_id: DEC-001
-    topic: stefan_loose_year_isbn
+    topic: stefan_loose_bibliographic_reference
     final_value:
-      year: 2018
-      isbn: "978-3-7701-7881-0"
-      title: "Stefan Loose Reiseführer Indonesien"
-      publisher: "DuMont Reiseverlag"
-      edition: "4th edition"
-      date_published: "2018-07-05"
-      language: "de"
-      number_of_pages: 772
+      title: "Stefan Loose Reiseführer Indonesien: mit Reiseatlas"
+      isbn_10: "3770167651"
+      isbn_13: "9783770167654"
+      bibliographic_url: "https://www.amazon.de/-/en/Stefan-Loose-Reisef%C3%BChrer-Indonesien-Reiseatlas/dp/3770167651"
+      page: 287
     status: locked
     decided_by: Sam
-    decided_at: 2026-05-28
+    decided_at: 2026-06-25
+    supersedes:
+      year: 2018
+      isbn: "978-3-7701-7881-0"
+      publisher: "DuMont Reiseverlag"
+      note: "Earlier values came from internal strategy docs only; dropped unless a physical imprint/copyright page supports them."
     source_basis:
-      - sam_internal_decision
+      - owner_specified_amazon_product_listing
     applies_to_claims: [C9]
     resolves_conflicts: [CONF-001]
     resolves_dq: [DQ-001]
     notes: >-
-      Use this Stefan Loose bibliographic metadata as JVTO internal canonical value
-      for Trust Bundle v1. No further physical scan or additional proof is required
-      for this compiler phase.
+      Canonical Stefan Loose bibliographic reference for JVTO. The Amazon product URL
+      (ISBN-10 3770167651) is the user-specified canonical source; ISBN-13 9783770167654
+      is its valid normalization. Year, publisher, and edition are NOT asserted without a
+      physical imprint/copyright page. Model only as an independent historical reference
+      (founding history / historical recognition) — never a Partner, Credential, or current
+      endorsement. The structured Reference concept lives in the public OKF bundle
+      (knowledge-catalog-jvto-bootstrap), not in this repo.
 
   - decision_id: DEC-002
     topic: founding_year_canonical

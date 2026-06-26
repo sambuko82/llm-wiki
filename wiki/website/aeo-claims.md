@@ -196,7 +196,7 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 
 **CS reply**: *"If you want third-party context on JVTO, see the Press & Recognition section in /verify-jvto/press-recognition."*
 
-**Press inventory**: Detik.com 2021-03-14 · Radar Jember 2021-03-24 · Radar Jember 2021-05-27 · BBKSDA Jatim 2024-05-24 · Stefan Loose Guidebook 2016 p.287 · Booking.com 2015 award.
+**Press inventory**: Detik.com 2021-03-14 · Radar Jember 2021-03-24 · Radar Jember 2021-05-27 · BBKSDA Jatim 2024-05-24 · Stefan Loose Guidebook p.287 · Booking.com 2015 award.
 
 **Evidence**: `press-detik-polisi-pariwisata-2021-03-14`, `press-radarjember-polpar-ijen-geopark-2021-03-24`, `press-bbksda-ijen-guide-training`. See [[credentials/trust-signals]] §press-coverage.
 

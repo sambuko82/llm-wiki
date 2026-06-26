@@ -50,10 +50,10 @@ Source: -> [[sources/bbksda-pelatihan-pemandu-2024]]
 |---|---|---|---|
 | Booking.com Guest Review Award — plaque + letter | 2015 | 9.4 / 10, Ijen Bondowoso Homestay | https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg |
 | Booking.com 2015 — shipping label (address continuity proof) | 2015 | Shipped to Jl. Khairil Anwar No.102, Bondowoso — same address as today's PT office | https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
-| Stefan Loose Reiseführer Indonesien, 4th Edition, p. 287, ISBN 9783770167654 | 2016 | "Agung" named as operator of Ijen Bondowoso Homestay — guidebook page | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
-| Stefan Loose — cropped/enhanced view of p. 287 | 2016 | Clearer reading of the same German travel guide entry | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
-| Mr. Sam + guests holding the Stefan Loose guidebook | 2016–2018 | Founder holding the book, guest pointing to the entry | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
+| Stefan Loose Reiseführer Indonesien: mit Reiseatlas, p. 287 — ISBN-10 3770167651 · ISBN-13 9783770167654 | historical | "Agung" identified in connection with the Ijen Bondowoso Homestay and tour arrangements — guidebook page | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
+| Stefan Loose — cropped/enhanced view of p. 287 | historical | Clearer reading of the same German travel guide entry | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
+| Mr. Sam + guests holding the Stefan Loose guidebook | historical | Founder holding the book, guest pointing to the entry | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
 
-The Booking.com shipping label address ("Agung, Jl. Khairil Anwar No.102, Bondowoso") is the same street address as PT Java Volcano Rendezvous today — a decade of continuous operational presence at the same Bondowoso location, pre-dating the PT incorporation by a year.
+The Booking.com shipping label address ("Agung, Jl. Khairil Anwar No.102, Bondowoso") shares the same street address line as PT Java Volcano Rendezvous today (current office No.102A) — historical address context pre-dating the PT incorporation by a year, not proof of legal succession.
 
 Source: -> [[credentials/trust-signals]] §institutional-recognition | -> [[people/agung-sambuko]] §proof-3-historical | -> [[credentials/press-coverage]] | -> [[sources/ssot-image-asset-map]]

@@ -86,7 +86,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 4. Trustpilot 4.8/51 · Google Maps 4.9/123 · TripAdvisor 4.95/21 (195 cross-platform)
 5. Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
 6. 4 independent press articles (Detik, Radar Jember ×2, BBKSDA Jatim)
-7. Booking.com 2015 (9.4/10) + Stefan Loose 2016 (p. 287)
+7. Booking.com 2015 (9.4/10) + Stefan Loose guidebook (p. 287)
 
 ## Why JVTO Hub Copy Angles
 
