@@ -90,7 +90,7 @@ We do not market on price. East Java has plenty of operators who will be cheaper
 - The founder, Bripka Agung Sambuko, is an active officer of the Indonesian Tourist Police (Ditpamobvit, East Java). Independent press coverage of his tourist-police duties has been published by Detik.com (2021), Radar Jember (2021, twice), and BBKSDA Jawa Timur (2024). The police credentials are not promotional claims; the SPRIN documents are SHA-256 anchored on our verification page.
 - Our 14-member crew (7 guides + 7 drivers) are KTA-credentialed (2024 issuance), with HPWKI-trained Ijen specialists among them. Crew members are named across 195 independent reviews on Google (123, 4.9/5), Trustpilot (51, 4.8/5), and TripAdvisor (21, 4.95/5).
 - Ijen-route packages include the BBKSDA-coordinated health-screening workflow where access rules require it, supervised by Dr. Ahmad Irwandanu (STR verifiable through Kemenkes).
-- Stefan Loose Reiseführer Indonesien (4th Edition, ISBN 978-3-7701-7881-0, published 2018 by DuMont Reiseverlag) lists the founder on page 287 — an editorial reference, not a paid placement.
+- Stefan Loose Reiseführer Indonesien: mit Reiseatlas (ISBN-13 9783770167654, ISBN-10 3770167651) lists the founder on page 287 — an independent editorial reference, not a paid placement or current endorsement.
 
 You can verify all of these claims at our [Verify JVTO page](/verify-jvto). Every credential links to a public registry. The verification system is designed so a skeptical traveler can audit the entire trust chain in about ten minutes.
 

@@ -9,7 +9,7 @@ voice: Style A
 
 # Verify JVTO — History & Artifacts
 
-Eleven years of documented operational presence at the same Bondowoso address. Records span guesthouse operation, PT incorporation, and TDUP formalization — each stage verified by an independent third-party source.
+Eleven years of documented operational presence in Bondowoso. The Booking.com 2015 shipping label and the PT incorporation share the same street address line (Jl. Khairil Anwar No.102 → current office No.102A); records span guesthouse operation, PT incorporation, and TDUP formalization, each supported by an independent third-party source. This is historical address context, not legal succession.
 
 ---
 
@@ -18,8 +18,9 @@ Eleven years of documented operational presence at the same Bondowoso address. R
 | Year | Event | Evidence |
 |---|---|---|
 | **2015** | Agung Sambuko operates Ijen Bondowoso Homestay at Jl. Khairil Anwar No.102, Bondowoso. Receives Booking.com Guest Review Award: 9.4 / 10. | Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
-| **2016** | PT Java Volcano Rendezvous incorporated at AHU on 2016-01-01. Stefan Loose Reiseführer Indonesien, 4th Edition, p. 287 (ISBN 9783770167654) names "Agung" as operator of Ijen Bondowoso Homestay with tour arrangement referenced. | AHU registry: https://ahu.go.id/pencarian/perseroan · Guidebook page: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Cropped view: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
+| **2016** | PT Java Volcano Rendezvous incorporated at AHU on 2016-01-01. | AHU registry: https://ahu.go.id/pencarian/perseroan |
 | **2023** | TDUP 1102230032918 formalized via OSS on 2023-02-11. | oss.go.id — Dinas Pariwisata record, SHA-256: `27252d512ddfa74de22a3e3ec10aa3dd40ef88da3eb57349fcd2137411551ee3` |
+| **historical (undated)** | Stefan Loose Reiseführer Indonesien: mit Reiseatlas (ISBN-13 9783770167654, ISBN-10 3770167651, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements. Year not asserted — see Stefan Loose Citation below. | Guidebook page: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Cropped view: https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
 
 ---
 
@@ -41,12 +42,13 @@ The address appears on the 2015 Booking.com shipping record, the 2016 PT AHU reg
 
 ## Stefan Loose Citation
 
-**Stefan Loose Reiseführer Indonesien, 4th Edition**
-Published: 2016
-ISBN: 9783770167654
+**Stefan Loose Reiseführer Indonesien: mit Reiseatlas**
+ISBN-10: 3770167651
+ISBN-13: 9783770167654
 Page: 287
+Bibliographic reference: https://www.amazon.de/-/en/Stefan-Loose-Reisef%C3%BChrer-Indonesien-Reiseatlas/dp/3770167651
 
-"Agung" is named as the operator of Ijen Bondowoso Homestay, with tour arrangement referenced. Stefan Loose is an independent German travel publisher — no commercial relationship to JVTO. Publication in 2016 confirms the operator was sufficiently established by that date to be cited in a major international travel guide.
+"Agung" is identified in connection with the Ijen Bondowoso Homestay and tour arrangements. Stefan Loose is an independent German travel publisher — no commercial relationship to JVTO. This is an independent historical reference, not a current endorsement, rating, partnership, or certification.
 
 **Image assets**:
 - Guidebook page (full): https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png
@@ -57,7 +59,9 @@ Page: 287
 
 ## What the Record Proves
 
-The three independent record types — a logistics artifact (Booking.com award shipping), an AHU corporate registry entry, and a third-party guidebook citation — each resolve to the same operator at the same address across an 11-year period (2015 → 2026).
+Together, these records support a historical continuity narrative connecting Agung Sambuko, Ijen Bondowoso Homestay, Bondowoso address records, and the later PT Java Volcano Rendezvous registration.
+
+They provide historical context and do not replace AHU, OSS, or TDUP records as authority for legal identity.
 
 No gap in the record is self-reported. Each proof layer is independently issued:
 
@@ -66,6 +70,6 @@ No gap in the record is self-reported. Each proof layer is independently issued:
 - Stefan Loose: published by an independent European travel publisher
 - TDUP: issued by Dinas Pariwisata via OSS
 
-Same operator. Same location. Documented from 2015 guesthouse era through 2016 PT incorporation and 2023 TDUP formalization.
+Together they document a consistent name and Bondowoso address from the 2015 guesthouse era through the 2016 PT incorporation and the 2023 TDUP formalization — historical continuity, not a claim of legal succession.
 
 Source: -> [[people/agung-sambuko]] §proof-3-historical | -> [[credentials/trust-signals]] §institutional-recognition | -> [[credentials/legal-licenses]] §address-continuity

@@ -33,7 +33,7 @@ Four independent articles — published by Detik.com (national), Radar Jember / 
 
 ### History & Artifacts
 
-Operational continuity is documented from 2015 to the present. Ijen Bondowoso Homestay — run by Agung Sambuko at Jl. Khairil Anwar No.102, Bondowoso — received a Booking.com Guest Review Award (9.4 / 10) in 2015. Stefan Loose Reiseführer Indonesien, 4th Edition (2016, ISBN 9783770167654, p. 287) names "Agung" as the operator of Ijen Bondowoso Homestay. PT Java Volcano Rendezvous was incorporated at AHU on 2016-01-01 at the same address. TDUP was formalized in 2023. Same operator, same address — 11 years of documented operational presence.
+Operational continuity of the operator is documented from 2015 to the present. The Booking.com 2015 Guest Review Award (9.4 / 10) shipping label was addressed to Agung at Jl. Khairil Anwar No.102, Bondowoso; PT Java Volcano Rendezvous was later incorporated at AHU on 2016-01-01, and the current office uses No.102A on the same address line — this is historical address context only, not proof of address continuity or legal succession. Separately, the Stefan Loose Reiseführer Indonesien guidebook (ISBN-13 9783770167654, p. 287) identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements — historical operator evidence at a different Bondowoso address, not address continuity. TDUP was formalized in 2023. These records provide historical context, not legal succession.
 
 [→ /verify-jvto/history-artifacts]
 

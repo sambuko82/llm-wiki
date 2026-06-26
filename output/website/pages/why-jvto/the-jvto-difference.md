@@ -17,7 +17,7 @@ Six things that make JVTO operationally different from other East Java volcano t
 
 JVTO's founder, Bripka Agung Sambuko, is an active officer in Ditpamobvit — the Indonesian National Police directorate responsible for security at designated vital objects, including the Ijen Crater area. Tourist safety at Ijen is his professional jurisdiction, not a personal interest.
 
-No other East Java volcano tour operator is led by an active Tourist Police officer. Three independent press articles (Detik.com 2021-03-14, Radar Jember 2021-03-24, Radar Jember 2021-05-27) name Bripka Agung Sambuko in operational Tourist Police duties at Ijen — this is not self-reported.
+No other East Java volcano tour operator is led by an active Tourist Police officer. Three independent press articles (Detik.com 2021-03-14, Radar Jember 2021-03-24, Radar Jember 2021-05-27) name Bripka Agung Sambuko in operational Tourist Police duties across the Ijen and Bondowoso area — this is not self-reported.
 
 **Verifiable credential**: SPRIN WAL TRAVEL 2024-02-12 (SHA256: 179b061a…) [image](https://javavolcano-touroperator.com/legal/SPRIN-WAL-TRAVEL-2024-02-12.png) · SPRIN POLPAR (SHA256: 03c8578d…) [image](https://javavolcano-touroperator.com/legal/SPRIN-POLPAR.png) · Press archive + field photos at /verify-jvto/police-safety
 

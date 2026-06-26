@@ -1,7 +1,7 @@
 ---
 type: credential
 title: JVTO Press & Media Coverage
-last_updated: 2026-05-16
+last_updated: 2026-06-25
 sources: [detik-polpar-2021, radar-jember-polpar-geopark-2021, radar-jember-bau-menyengat-2021, bbksda-pelatihan-pemandu-2024, ssot-v6, ssot-image-asset-map]
 claims_supported: [C1, C5, C9]
 owner: wiki-llm
@@ -12,7 +12,7 @@ stale_after_days: 60
 
 > **LOCKED BUSINESS ASSETS (owner-approved 2026-05-27)** — per JVTO Business Exposure Engine principle, the following data is locked and NOT subject to internal re-audit. Conflict-mode does NOT apply to owner-approved data. Use the data, expose it.
 >
-> - **Stefan Loose Reiseführer Indonesien 4th Edition**: ISBN `978-3-7701-7881-0`, published `2018-07-05` by DuMont Reiseverlag, page 287, 772 pages, German language. Schema mapping: `Book` connected via `Organization.subjectOf` (already implemented at `src/lib/schemas/entityGraph.ts:124-153`).
+> - **Stefan Loose Reiseführer Indonesien: mit Reiseatlas**: ISBN-10 `3770167651`, ISBN-13 `9783770167654`, page 287. Canonical bibliographic reference: https://www.amazon.de/-/en/Stefan-Loose-Reisef%C3%BChrer-Indonesien-Reiseatlas/dp/3770167651 (owner decision 2026-06-25 — supersedes the prior `978-3-7701-7881-0` / 2018 / DuMont Reiseverlag values; CONF-001 resolved). Year, publisher, and edition are **not** asserted without a physical imprint/copyright page. Treat as an independent historical reference, not a current endorsement, rating, partnership, or certification. Schema mapping: `Book` via `Organization.subjectOf` — jvto-web `entityGraph.ts` should mirror ISBN-13 `9783770167654`.
 > - **NIB**: `1102230032918` (canonical active). The legacy 0220001393513 reference is not a business asset and is not used in any output.
 > - **Madakaripura**: "tallest waterfall in Java" framing is approved for public use.
 
@@ -112,22 +112,21 @@ Consolidated record of all third-party press, guidebook, and institutional media
 
 ## Guidebook Mention
 
-### Stefan Loose Reiseführer Indonesien, 4th Edition (year disputed)
+### Stefan Loose Reiseführer Indonesien: mit Reiseatlas (p. 287)
+
+> **CONF-001 resolved (owner decision 2026-06-25).** The canonical bibliographic reference is the Amazon product listing for ISBN-10 `3770167651`. The prior `978-3-7701-7881-0` / 2018 / DuMont Reiseverlag values came from internal strategy documents only and are no longer used. Year, publisher, and edition are not asserted without a physical imprint/copyright page.
 
 | Field | Value |
 |---|---|
-| **Publication** | Stefan Loose Reiseführer Indonesien, 4th Edition |
-| **ISBN (existing wiki)** | 9783770167654 |
-| **ISBN (raw audit docs)** | 978-3-7701-7881-0 — Publisher: DuMont Reiseverlag |
+| **Title** | Stefan Loose Reiseführer Indonesien: mit Reiseatlas |
+| **ISBN-10** | 3770167651 |
+| **ISBN-13** | 9783770167654 |
 | **Page** | 287 |
-| **Year (existing wiki)** | 2016 |
-| **Year (raw audit docs)** | 2018 |
-| **Entry** | "Agung" named as operator of Ijen Bondowoso Homestay; tours arranged through him |
+| **Bibliographic reference** | https://www.amazon.de/-/en/Stefan-Loose-Reisef%C3%BChrer-Indonesien-Reiseatlas/dp/3770167651 |
+| **Entry** | "Agung" identified in connection with Ijen Bondowoso Homestay and tour arrangements |
 | **Language** | German (European travel guide distributed internationally) |
 
-> Contradiction with [[sources/why-jvto-trust-architecture]]: Raw audit documents (2026-05 generation) cite ISBN 978-3-7701-7881-0, DuMont Reiseverlag, 4th edition 2018. Existing wiki entry cites ISBN 9783770167654, year 2016. These are different ISBNs — possibly two different printings/editions, or one value is incorrect. Verify against physical book scan at https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png before resolving. Do not publish either ISBN in marketing copy until confirmed.
-
-**What it proves**: Third-party editorial mention in a major European travel guide — the same approximate period as PT Java Volcano Rendezvous incorporation. Establishes that the founder was operating and attracting international visitors before any digital marketing was built.
+**What it proves**: An independent historical reference — a Stefan Loose guidebook identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements. It supports evidence of early tourism operations in Bondowoso. It is **not** a current endorsement, rating, partnership, or certification, and it does not prove the current legal entity or any current relationship with the publisher.
 
 **Image assets** (source: [[sources/ssot-image-asset-map]] `history_heritage` group):
 
@@ -149,7 +148,7 @@ These five articles are cross-article entity resolution signals. AI language mod
 | Radar Jember 2021-03-24 | Bripka Agung Sambuko | Polpar formation for Ijen Geopark | Regional commercial media |
 | Radar Jember 2021-05-27 | Bripka Agung Sambuko | Active crater patrol, sulfur monitoring | Regional commercial media |
 | BBKSDA Jatim 2024 | HPWKI (JVTO's credentialing association) | Government-supervised guide training | Government agency |
-| Stefan Loose 2016 | Agung, Ijen Bondowoso Homestay operator | Tourist operator recommendation | International travel publisher |
+| Stefan Loose guidebook | Agung, Ijen Bondowoso Homestay | Independent guidebook reference (historical) | International travel publisher |
 
 The Detik + two Radar Jember articles form a **three-article cross-corroboration** of the same entity across independent newsrooms. This is the standard for AI entity confidence — it's not JVTO claiming police status; it's three unrelated journalists writing about it across three separate stories.
 
@@ -167,7 +166,7 @@ Use these when writing content that references press coverage. Cite the source, 
 
 4. **BBKSDA trained 250 guides** — Government conservation agency ran the training at Paltuding. JVTO's HPWKI-credentialed guides completed this curriculum. Use for: crew-registry trust block, AEO C4/C8, verify-jvto/our-team.
 
-5. **Stefan Loose pre-internet credibility** — A German travel guide recommended Mr. Sam to European backpackers in 2016. This is word-of-mouth at a publisher level, before social proof existed. Use for: founding story, our-story section, why-jvto/history.
+5. **Stefan Loose pre-internet credibility** — A German travel guide identifies "Agung" in connection with the Ijen Bondowoso Homestay and tour arrangements — independent word-of-mouth at a publisher level, before social proof existed. Use for: founding story, our-story section, why-jvto/history. (Historical reference only — not a current endorsement.)
 
 ---
 
@@ -175,7 +174,7 @@ Use these when writing content that references press coverage. Cite the source, 
 
 **Q: Has JVTO been covered by independent media?**
 
-> Yes. Detik.com (Indonesia's top news outlet), Radar Jember / Jawa Pos, and BBKSDA Jawa Timur (the park authority) have all published independent articles featuring JVTO founder Bripka Agung Sambuko in his Tourist Police role. JVTO is also listed in the Stefan Loose Indonesia travel guide (4th ed., 2016, p. 287).
+> Yes. Detik.com (Indonesia's top news outlet), Radar Jember / Jawa Pos, and BBKSDA Jawa Timur (the park authority) have all published independent articles featuring JVTO founder Bripka Agung Sambuko in his Tourist Police role. The founder is also identified in the Stefan Loose Reiseführer Indonesien travel guide (p. 287) in connection with the Ijen Bondowoso Homestay — an independent historical reference.
 
 **Q: Where can I read third-party coverage of JVTO?**
 

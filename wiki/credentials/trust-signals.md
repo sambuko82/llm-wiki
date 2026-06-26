@@ -1,7 +1,7 @@
 ---
 type: credential
 title: JVTO Trust Signals — Reviews, Press, Partners, Historical
-last_updated: 2026-05-26
+last_updated: 2026-06-25
 sources: [ssot-v6, jvto-homepage-clip, sitemap-2026-05, ssot-image-asset-map, seo-audit-2026-05, guardian-authority-framework-2026-05]
 owner: wiki-llm
 stale_after_days: 60
@@ -61,7 +61,7 @@ Each article is an independent entity-linking signal — AI engines reading thes
 
 **Entity linking signals**:
 
-- **Detik 2021-03-14**: Tourist Police officer at Ijen enforcing protocols. Third-party independent coverage, not JVTO-authored. Supports C1, C5.
+- **Detik 2021-03-14**: Tourist Police officer in the Bondowoso area enforcing protocols. Third-party independent coverage, not JVTO-authored. Supports C1, C5.
 - **Radar Jember 2021-03-24**: Formation of the Tourist Police unit specifically to support the Ijen Geopark initiative. Confirms institutional role, not self-reported. Supports C1, C5, C9.
 - **Radar Jember 2021-05-27**: Tourist Police patrol at Ijen crater area — monitoring sulfuric odor conditions and visitor safety. Evidence of on-ground operational presence. Supports C1, C9.
 - **BBKSDA Jatim 2024-05-24**: Official BBKSDA report on guide training for HPWKI members — covering volcanic safety, SAR (Search & Rescue), and First Aid. Directly validates that HPWKI membership = completed BBKSDA-supervised training. Supports C1, C4, C5, C8.
@@ -72,9 +72,9 @@ Each article is an independent entity-linking signal — AI engines reading thes
 |---|---|---|---|
 | Booking.com Guest Review Award (Ijen Bondowoso Homestay) — plaque | 2015 | 9.4 / 10 | https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg |
 | Booking.com 2015 — shipping label (address continuity proof) | 2015 | Jl. Khairil Anwar No.102, Bondowoso | https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg |
-| Stefan Loose Reiseführer Indonesien, 4th Ed. p. 287 — guidebook page | 2016 ⚠ | ISBN 9783770167654 (existing) / 978-3-7701-7881-0 (raw audit) — "Agung" named as operator. **Year + ISBN disputed — see [[credentials/press-coverage]] for details.** | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
-| Stefan Loose — cropped/enhanced for readability | 2016 | Same page, clearer view | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
-| Mr. Sam + guests with Stefan Loose guidebook (visual confirmation) | 2016–2018 | Founder holding book, guest pointing to the page | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
+| Stefan Loose Reiseführer Indonesien: mit Reiseatlas, p. 287 — guidebook page | historical | ISBN-10 3770167651 · ISBN-13 9783770167654 — "Agung" identified in connection with Ijen Bondowoso Homestay and tour arrangements. Independent historical reference (not a current endorsement). CONF-001 resolved 2026-06-25; see [[credentials/press-coverage]]. | https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png |
+| Stefan Loose — cropped/enhanced for readability | historical | Same page, clearer view | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
+| Mr. Sam + guests with Stefan Loose guidebook (visual confirmation) | historical | Founder holding book, guest pointing to the page | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
 
 These items establish operational continuity at the Bondowoso location (Jl. Khairil Anwar No.102 A) from 2015 through the PT incorporation (2016) and TDUP formalization (2023). See [[overview]] founding-date reconciliation note.
 
@@ -141,7 +141,7 @@ When answering "Is JVTO legitimate?" cite in this order:
 4. **Independent reviews**: Trustpilot 4.8/5 from 51 verified reviews (also Google Maps 4.9/123, TripAdvisor 4.95/21, total 195 cross-platform)
 5. **Medical**: Dr. Ahmad Irwandanu SIP (Kemenkes/KKI verifiable)
 6. **Press**: 4 independent articles (Detik, Radar Jember ×2, BBKSDA Jatim)
-7. **Historical**: Booking.com 2015 + Stefan Loose 2016 — operational continuity at same address
+7. **Historical**: Booking.com 2015 shipping label — historical address context (No.102 → current No.102A). Stefan Loose guidebook — historical operator/homestay evidence (different Bondowoso address), not address continuity
 
 ## Costly Signal Theory
 

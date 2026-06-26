@@ -160,7 +160,7 @@ Check us before you book
 | NIB 1102230032918 | OSS-verifiable |
 | Founder: active Tourist Police officer | Detik.com press record, 2021 |
 | ISIC Student Tours | Provider ID 259268 (isic.org verifiable) |
-| Founded: 2015 | Booking.com 2015 award, Stefan Loose 2016 p. 287 |
+| Founded: 2015 | Booking.com 2015 award, Stefan Loose guidebook p. 287 |
 
 JVTO does not ask for CVV codes, OTP codes, or online banking passwords via chat or email. Pay only via the official JVTO website, listed bank accounts, or confirmed WhatsApp +62 822 4478 8833.
 

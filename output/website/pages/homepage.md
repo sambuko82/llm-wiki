@@ -220,7 +220,7 @@ HPWKI membership AHU-0001072.AH.01.07.TAHUN 2024 — Ijen specialist guide assoc
 Dr. Ahmad Irwandanu — SIP license issued by Kemenkes RI. Verifiable at satusehat.kemkes.go.id/sdmk and KKI (kki.go.id).
 
 **5. Third-party recognition**
-ISIC Provider 259268 (UNESCO-endorsed student identification). INDECON live member (Indonesian Ecotourism Network). Stefan Loose Indonesia guidebook 2016, p. 287. Booking.com 2015 award (Ijen Bondowoso Homestay, 9.4/10).
+ISIC Provider 259268 (UNESCO-endorsed student identification). INDECON live member (Indonesian Ecotourism Network). Stefan Loose Indonesia guidebook, p. 287. Booking.com 2015 award (Ijen Bondowoso Homestay, 9.4/10).
 
 *Source: [[website/copy-bank]] §trust-stack · [[credentials/legal-licenses]] · [[credentials/trust-signals]] · [[people/agung-sambuko]]*
 

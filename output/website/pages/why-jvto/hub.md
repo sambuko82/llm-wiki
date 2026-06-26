@@ -37,7 +37,7 @@ Trustpilot, Google Maps, and TripAdvisor reviews organized by theme — not a qu
 
 ### Our Story
 
-How a homestay in Bondowoso became a licensed tour operator. Mr. Sam started with a guesthouse in 2015, saw safety gaps in East Java volcano tourism first-hand, and built something different. The evidence chain — Booking.com 2015, Stefan Loose 2016, PT incorporation 2016, TDUP formalization 2023 — is all documented.
+How a homestay in Bondowoso became a licensed tour operator. Mr. Sam started with a guesthouse in 2015, saw safety gaps in East Java volcano tourism first-hand, and built something different. The evidence chain — Booking.com 2015, the Stefan Loose guidebook, PT incorporation 2016, TDUP formalization 2023 — is all documented.
 
 → [Our Story](/why-jvto/our-story)
 
