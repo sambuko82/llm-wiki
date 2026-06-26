@@ -29,7 +29,7 @@ He was already an active officer in the Indonesian National Police, assigned to 
 
 ### 2016 — PT Java Volcano Rendezvous
 
-PT Java Volcano Rendezvous was incorporated on 2016-01-01. Historical Booking.com and guidebook records connect Agung Sambuko with Ijen Bondowoso Homestay and a Bondowoso address context before the later company registration. (The independent Stefan Loose guidebook reference, which also names "Agung" at this address, is undated and is listed separately under The Evidence Chain below — it is not tied to the 2016 incorporation.)
+PT Java Volcano Rendezvous was incorporated on 2016-01-01. The Booking.com 2015 award shipment provides historical Bondowoso address context predating the company registration. (The independent Stefan Loose guidebook separately identifies "Agung" in connection with Ijen Bondowoso Homestay and tour arrangements; it is undated, reflects a different Bondowoso address, and is listed under The Evidence Chain below — it is not tied to the 2016 incorporation or to address continuity.)
 
 ### 2023 — TDUP Formalization
 
@@ -47,7 +47,7 @@ Private structure removes the coordination failures that come with mixed groups.
 
 ## The Evidence Chain
 
-These are third-party records that establish operational continuity at the same Bondowoso address from 2015 to today:
+These are third-party records documenting the operator's history from 2015 to today. Only the Booking.com 2015 shipping label speaks to address continuity (Jl. Khairil Anwar No.102 → current office No.102A on the same line); the Stefan Loose guidebook is historical operator and homestay evidence at a different Bondowoso address, not address continuity:
 
 - **Booking.com 2015 Guest Review Award** — shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso." Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg
 - **Stefan Loose Reiseführer Indonesien: mit Reiseatlas, p. 287** — ISBN-13 9783770167654 · ISBN-10 3770167651. "Agung" identified in connection with the Ijen Bondowoso Homestay and tour arrangements; independent German-language guidebook (historical reference). Page image: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Mr. Sam holding the book with guests: https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg

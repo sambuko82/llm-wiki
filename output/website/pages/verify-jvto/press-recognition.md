@@ -54,6 +54,6 @@ Source: -> [[sources/bbksda-pelatihan-pemandu-2024]]
 | Stefan Loose — cropped/enhanced view of p. 287 | historical | Clearer reading of the same German travel guide entry | https://javavolcano-touroperator.com/history/stefan_loose_crop_enh.jpg |
 | Mr. Sam + guests holding the Stefan Loose guidebook | historical | Founder holding the book, guest pointing to the entry | https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg |
 
-The Booking.com shipping label address ("Agung, Jl. Khairil Anwar No.102, Bondowoso") is the same street address as PT Java Volcano Rendezvous today — a decade of continuous operational presence at the same Bondowoso location, pre-dating the PT incorporation by a year.
+The Booking.com shipping label address ("Agung, Jl. Khairil Anwar No.102, Bondowoso") shares the same street address line as PT Java Volcano Rendezvous today (current office No.102A) — historical address context pre-dating the PT incorporation by a year, not proof of legal succession.
 
 Source: -> [[credentials/trust-signals]] §institutional-recognition | -> [[people/agung-sambuko]] §proof-3-historical | -> [[credentials/press-coverage]] | -> [[sources/ssot-image-asset-map]]

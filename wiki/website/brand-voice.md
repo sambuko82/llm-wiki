@@ -102,7 +102,7 @@ These rules are **non-negotiable** across all JVTO content. Any generated copy m
 | Legal / brand / formal documents | Agung Sambuko |
 | Operational / guest-facing | Mr. Sam |
 | Press / police rank references | Bripka Agung Sambuko |
-| Historical (2015–2016 era) | Agung (e.g., as cited in Booking.com 2015 shipping label, Stefan Loose 2016 p.287) |
+| Historical (2015–2016 era) | Agung (e.g., as cited in Booking.com 2015 shipping label, Stefan Loose guidebook p.287) |
 
 See [[people/agung-sambuko]] for full entity-resolution table.
 

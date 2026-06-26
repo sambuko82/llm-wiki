@@ -9,7 +9,7 @@ voice: Style A
 
 # Verify JVTO — History & Artifacts
 
-Eleven years of documented operational presence at the same Bondowoso address. Records span guesthouse operation, PT incorporation, and TDUP formalization — each stage verified by an independent third-party source.
+Eleven years of documented operational presence in Bondowoso. The Booking.com 2015 shipping label and the PT incorporation share the same street address line (Jl. Khairil Anwar No.102 → current office No.102A); records span guesthouse operation, PT incorporation, and TDUP formalization, each supported by an independent third-party source. This is historical address context, not legal succession.
 
 ---
 
