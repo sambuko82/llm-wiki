@@ -74,7 +74,7 @@ This is the navigation file for AI search engines (ChatGPT, Perplexity, Gemini, 
 - **GetYourGuide**: Listed supplier — https://www.getyourguide.com/java-volcano-tour-operator-s260697/
 
 ## Press Coverage (independent third-party)
-- Detik.com (2021-03-14) — Tourist Police coverage at Ijen — https://news.detik.com/berita-jawa-timur/d-5492690/suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin
+- Detik.com (2021-03-14) — Tourist Police coverage in the Bondowoso area — https://news.detik.com/berita-jawa-timur/d-5492690/suka-duka-polisi-pariwisata-bondowoso-tegakkan-prokes-sambil-lawan-dingin
 - Radar Jember / Jawa Pos (2021-03-24) — Polpar formation for Ijen Geopark
 - Radar Jember / Jawa Pos (2021-05-27) — Ijen crater patrol on sulfuric conditions
 - BBKSDA Jawa Timur (2024-05-24) — HPWKI guide training report — https://bbksdajatim.org/pelatihan-pemandu-kawah-ijen/

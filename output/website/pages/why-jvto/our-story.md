@@ -23,7 +23,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 ### 2015 — The Guesthouse
 
-Agung Sambuko — Mr. Sam — grew up in Bondowoso, the town closest to Kawah Ijen. In 2015 he opened the Ijen Bondowoso Homestay on Jl. Khairil Anwar No.102 (the current office address is No.102A — the 'A' suffix was added after the PT registration in 2016), the same address where JVTO operates today. Booking.com guests rated the property 9.4 / 10 — an award that was shipped to the Bondowoso address that year.
+Agung Sambuko — Mr. Sam — grew up in Bondowoso, the town closest to Kawah Ijen. In 2015 he opened the Ijen Bondowoso Homestay on Jl. Khairil Anwar No.102, Bondowoso. JVTO's current office is documented separately as No.102A on the same street, with adjacent numbering — historical address context only, not legal succession. Booking.com guests rated the property 9.4 / 10 — an award that was shipped to the Bondowoso address that year.
 
 He was already an active officer in the Indonesian National Police, assigned to Ditpamobvit — the directorate responsible for security at vital tourist objects including the Ijen Crater area. Managing the guesthouse meant he saw both sides of East Java volcano tourism: the visitor experience and the operational safety gaps.
 
@@ -47,7 +47,7 @@ Private structure removes the coordination failures that come with mixed groups.
 
 ## The Evidence Chain
 
-These are third-party records documenting the operator's history from 2015 to today. Only the Booking.com 2015 shipping label speaks to address continuity (Jl. Khairil Anwar No.102 → current office No.102A on the same line); the Stefan Loose guidebook is historical operator and homestay evidence at a different Bondowoso address, not address continuity:
+These are third-party records documenting the operator's history from 2015 to today. Only the Booking.com 2015 shipping label speaks to the address — it was sent to Jl. Khairil Anwar No.102, and the current office is No.102A on the same street; this is historical address context only, not legal succession. The Stefan Loose guidebook is historical operator and homestay evidence at a different Bondowoso address, not address continuity:
 
 - **Booking.com 2015 Guest Review Award** — shipped to "Agung, Jl. Khairil Anwar No.102, Bondowoso." Plaque: https://javavolcano-touroperator.com/history/booking-2015-plaque.jpg · Shipping label: https://javavolcano-touroperator.com/history/booking-2015-shipping-label.jpg
 - **Stefan Loose Reiseführer Indonesien: mit Reiseatlas, p. 287** — ISBN-13 9783770167654 · ISBN-10 3770167651. "Agung" identified in connection with the Ijen Bondowoso Homestay and tour arrangements; independent German-language guidebook (historical reference). Page image: https://javavolcano-touroperator.com/history/stefan-loose-ijen-bondowoso-page.png · Mr. Sam holding the book with guests: https://javavolcano-touroperator.com/history/guest-visit-ijen-bondowoso-homestay-stefan-loose-inspired.jpg
