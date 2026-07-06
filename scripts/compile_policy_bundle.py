@@ -8,11 +8,11 @@ Reads canonical policy sources and emits consumer-ready policy JSON:
 """
 from __future__ import annotations
 
-import argparse
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from compiler_common.cli import build_dry_run_write_parser  # noqa: E402
 from policy_compiler import loader, renderer, validator  # noqa: E402
 
 
@@ -25,15 +25,11 @@ def find_wiki_root(start: str | Path) -> Path:
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(description="Policy Bundle Compiler v1")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="run + report, write nothing (default behaviour)")
-    ap.add_argument("--write", action="store_true",
-                    help="write JSON outputs to output/website/policy-bundle/")
-    ap.add_argument("--verbose", action="store_true",
-                    help="print consumer coverage and findings")
-    ap.add_argument("--strict", action="store_true",
-                    help="exit non-zero if any error-severity finding remains")
+    ap = build_dry_run_write_parser(
+        description="Policy Bundle Compiler v1",
+        write_help="write JSON outputs to output/website/policy-bundle/",
+        verbose_help="print consumer coverage and findings",
+    )
     args = ap.parse_args(argv)
 
     dry_run = not args.write
