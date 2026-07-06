@@ -1,9 +1,9 @@
 ---
 type: credential
 title: Ijen Health-Screening Coordination — Protocol, Personnel, Evidence
-last_updated: 2026-05-26
+last_updated: 2026-07-06
 sources: [ssot-v6, jvto-homepage-clip, ssot-image-asset-map, ijen-tourist-accidents, ijen-safety-resource-mapping]
-health_wording_mode: conditional
+health_wording_mode: mandatory
 claims_supported: [C1, C4]
 owner: wiki-llm
 stale_after_days: 60
@@ -15,7 +15,7 @@ Consolidated page for everything about JVTO's Ijen health-screening system: regu
 
 > This page was a tracked Open Gap — content previously split between [[people/dr-ahmad-irwandanu]] (protocol + personnel) and [[destinations/kawah-ijen]] (approved language + regulatory basis). Promoted to its own page because content producers and the `/travel-guide/ijen-health-screening` page need a single reference.
 
-> **Voice invariant in effect**: The phrase "mandatory health screening" without conditional qualifier is **forbidden** across all content. The screening is triggered by BBKSDA regulation, not unilaterally by JVTO. See §Approved Language below.
+> **Voice invariant in effect (adjudicated 2026-07-06, supersedes the 2026-07-05 conditional decision)**: A health certificate is **mandatory for every guest** before Kawah Ijen crater entry. BBKSDA SE.1658/KSA.9/2024 is cited as supporting regulatory authority/evidence, not as a conditional trigger. See §Approved Language below.
 
 ---
 
@@ -25,7 +25,7 @@ The screening is not a JVTO rule — it is a **regulatory requirement set by BBK
 
 | Document | Reference |
 |---|---|
-| **BBKSDA SE.1658/KSA.9/2024** | Surat Edaran from Balai Besar Konservasi Sumber Daya Alam Jawa Timur — the government conservation authority for Kawah Ijen. Sets the health-certificate requirement for crater access when conditions meet the threshold. |
+| **BBKSDA SE.1658/KSA.9/2024** | Surat Edaran from Balai Besar Konservasi Sumber Daya Alam Jawa Timur — the government conservation authority for Kawah Ijen. Cited as the supporting authority for the mandatory health-certificate requirement for every guest before crater access. |
 | **BBKSDA ticket terms** | tiket.bbksdajatim.org — public-facing crater-access terms require a health certificate from a doctor. Screenshot: https://javavolcano-touroperator.com/screening/bbksda/bbksda-ticket-terms-screenshot.jpeg |
 
 JVTO's role: **coordinate** the clinic workflow so guests can satisfy the BBKSDA requirement. JVTO does not set the rule; BBKSDA does.
@@ -38,10 +38,10 @@ Per [[sources/ssot-v6]] §2_4 and [[website/brand-voice]]:
 
 | ✅ Use | ❌ Avoid |
 |---|---|
-| "Ijen access rules can require a recent local health certificate." | "Mandatory health screening" (without conditional qualifier) |
-| "JVTO coordinates clinic workflow when access rules require it." | "Required by JVTO" |
-| "Health-certificate screening coordination for Ijen routes when current access rules require it." | "Health screening is included" (implies unconditional) |
-| "Health screening is required when crater conditions meet BBKSDA threshold." | Any phrasing suggesting JVTO enforces the rule unilaterally |
+| "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024." | "Ijen access rules can require a recent local health certificate" (conditional framing — superseded 2026-07-06) |
+| "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024." | "JVTO coordinates clinic workflow when access rules require it" (implies optional) |
+| "Health-certificate screening coordination is required for every Ijen guest." | "Health screening is included" (blurs regulatory basis vs. package inclusion) |
+| "Health screening is mandatory under BBKSDA SE.1658/KSA.9/2024, cited here as supporting authority." | Any phrasing that reduces the requirement to a threshold-conditional trigger |
 
 ---
 
@@ -163,7 +163,7 @@ Source: [[sources/ijen-tourist-accidents]] (6 media references, evidence weight 
 
 **Q: Is Ijen health screening mandatory with JVTO?**
 
-> Ijen crater access can require a recent local health certificate when BBKSDA rules apply — this is a regulatory requirement, not a JVTO policy. When screening is required, JVTO coordinates the clinic workflow with Dr. Ahmad Irwandanu (SIP-licensed, Kemenkes-verifiable). The surat sehat carries a QR code checked at the BBKSDA gate.
+> Yes. A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024 — this is a regulatory requirement, not a JVTO policy. JVTO coordinates the clinic workflow with Dr. Ahmad Irwandanu (SIP-licensed, Kemenkes-verifiable). The surat sehat carries a QR code checked at the BBKSDA gate.
 
 **Q: Who does the health screening for JVTO Ijen tours?**
 

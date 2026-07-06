@@ -111,9 +111,10 @@ See [[website/brand-voice]] §voice-invariants for enforcement examples.
 4. No support page may accumulate proof items that belong to /verify-jvto.
 5. No package page may have trust_mode = `forensic-proof` — package pages are not proof-owners.
 6. `health_wording_mode = conditional` must be set on all Ijen-relevant pages.
+   > Superseded 2026-07-06 — owner adjudication flipped Ijen health-screening wording to **mandatory** (BBKSDA SE.1658/KSA.9/2024 cited as supporting evidence, not a conditional trigger). This SSOT source text is kept verbatim as the historical record; see [[ops/policy-source-ownership]] and [[credentials/medical-screening]] for the current canonical rule.
 7. Proof items listed in `visible_on_pages` must not exceed owner-page proof allocation.
 
-These rules also apply to wiki pages: any wiki content production that emits trust claims should respect anti-drift rule 6 (conditional wording for Ijen) and rule 3 (don't cite deferred-schema proofs as live).
+These rules also apply to wiki pages: any wiki content production that emits trust claims should respect anti-drift rule 3 (don't cite deferred-schema proofs as live). Rule 6 (conditional wording for Ijen) is superseded 2026-07-06 — see above.
 
 ## Content Angles This Source Unlocks
 
