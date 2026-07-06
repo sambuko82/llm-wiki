@@ -65,12 +65,13 @@ boundaries:
     pattern: "(?i)bbksda[- ]?certified"
     message: "Over-claim: 'BBKSDA certified'."
     fix: "BBKSDA supervises HPWKI guide training; never 'BBKSDA certified JVTO'."
-  - id: MEDICAL-UNIVERSAL
-    pattern: "(?i)(mandatory and non-negotiable|no valid qr.{0,12}no access)"
-    # Safe when the same line attributes the rule to BBKSDA / access rules rather than to JVTO.
-    unless: ["bbksda", "not ours", "access rule", "that rule is", "se.1658"]
-    message: "Medical screening stated as a universal JVTO rule rather than the conditional BBKSDA rule."
-    fix: "Conditional: screening is included; BBKSDA access rules may require/verify completion under current rules."
+  # MEDICAL-UNIVERSAL (banned "no valid QR = no access" / "mandatory and non-negotiable" as a
+  # universal-JVTO-rule over-claim) removed 2026-07-06: the owner adjudication that day flipped
+  # Ijen health screening to MANDATORY for every guest (BBKSDA SE.1658/KSA.9/2024 cited as
+  # supporting evidence, not a conditional trigger), superseding the 2026-07-05 conditional
+  # decision — see wiki/ops/policy-source-ownership.md and wiki/credentials/medical-screening.md.
+  # The rule was banning exactly the wording now required. Mirrors the equivalent fix in
+  # jvto-web (commit d3b4d11, scripts/validate-content-drift.mjs).
   - id: ISIC-PARTNER
     pattern: "(?i)isic.{0,40}?(official provider listing|as a partner|is a partner)"
     message: "ISIC asserted as partner / official provider listing without direct provider evidence."

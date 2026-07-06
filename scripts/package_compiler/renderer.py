@@ -7,13 +7,13 @@ scripts/compile_trust.py.
 """
 from __future__ import annotations
 
-import hashlib
-import json
-import os
 import re
-import tempfile
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from compiler_common.io import sha_text as _sha, atomic_write_json as _atomic_write_json, write_outputs  # noqa: E402
 
 from . import loader
 
@@ -214,10 +214,6 @@ def build_gap_report(findings: list[dict]) -> dict:
     }
 
 
-def _sha(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
-
-
 def build_manifest(sources, findings: list[dict], *, dry_run: bool,
                    counts: dict | None = None) -> dict:
     by_rule: dict[str, int] = {}
@@ -245,25 +241,3 @@ def build_manifest(sources, findings: list[dict], *, dry_run: bool,
     if counts is not None:
         manifest["record_counts"] = counts
     return manifest
-
-
-def _atomic_write_json(path: Path, data) -> None:
-    text = json.dumps(data, indent=2, ensure_ascii=False)
-    fd, tmp = tempfile.mkstemp(dir=str(path.parent), suffix=".tmp")
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8") as fh:
-            fh.write(text)
-        os.replace(tmp, path)
-    finally:
-        if os.path.exists(tmp):
-            os.remove(tmp)
-
-
-def write_outputs(out_dir: str | Path, artifacts: dict) -> list[str]:
-    """Atomically write each {filename: data} pair. Caller controls the set;
-    OUTPUTS defines the canonical v1.2 six."""
-    out = Path(out_dir)
-    out.mkdir(parents=True, exist_ok=True)
-    for name, data in artifacts.items():
-        _atomic_write_json(out / name, data)
-    return list(artifacts)

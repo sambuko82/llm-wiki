@@ -40,7 +40,6 @@ def test_each_boundary_fails():
         "BOOKING-CONTINUITY": "This is the address-continuity evidence.",
         "DETIK-IJEN": "Detik names him in duties at Ijen.",
         "STALE-REVIEW": "Google Maps 4.90 / 92 reviews.",
-        "MEDICAL-UNIVERSAL": "Screening is mandatory and non-negotiable.",
     }
     for rule, text in cases.items():
         r = _run_stdin(text + "\n")

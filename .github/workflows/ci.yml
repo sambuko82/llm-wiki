@@ -28,8 +28,17 @@ jobs:
       - name: Trust Bundle compiler (validate)
         run: python scripts/compile_trust.py --dry-run --verbose
 
+      - name: Policy Bundle compiler (strict)
+        run: python scripts/compile_policy_bundle.py --dry-run --strict --verbose
+
       - name: Output index integrity
         run: python scripts/verify_output_index.py
+
+      - name: Claim-boundary linter
+        run: python scripts/verify_claims.py --all --quiet
+
+      - name: Unit tests
+        run: pytest -q
 
       # Phase 1.9 — only after a merge to master AND the compilers above pass,
       # notify jvto-web to sync the freshly-validated artifacts. Token is read
