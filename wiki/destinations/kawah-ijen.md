@@ -1,13 +1,13 @@
 ---
 type: destination
 title: Kawah Ijen (Ijen Crater)
-last_updated: 2026-05-26
+last_updated: 2026-07-06
 sources: [ssot-v6, jvto-homepage-clip, gpx-ijen, ijen-safety-resource-mapping, ijen-tourist-accidents, ijen-safety-protocol, 3d-route-viewer]
 aliases: [Ijen, Ijen Crater, Kawah Ijen]
 schema_type: TouristAttraction
 canonical_url: /destinations/ijen-crater
 ijen_relevant: yes
-health_wording_mode: conditional
+health_wording_mode: mandatory
 geo_bbox: { minlat: -8.07316, minlon: 114.22426, maxlat: -8.0539, maxlon: 114.24812 }
 route_viewer_url: /3d/ijen-crater
 owner: wiki-llm
@@ -18,7 +18,7 @@ stale_after_days: 60
 
 ## Entity Summary (50-word, SSOT §9_4)
 
-Kawah Ijen is an active volcano at 2,386 m with the world's highest-volume acidic crater lake. Famous for the pre-dawn "blue fire" sulfuric-gas phenomenon — visible only in suitable weather and gas conditions. Access from Paltuding trailhead via a steep ~3 km night hike. BBKSDA East Java is the regulatory authority. Health-certificate coordination is required when BBKSDA SE.1658/KSA.9/2024 thresholds apply.
+Kawah Ijen is an active volcano at 2,386 m with the world's highest-volume acidic crater lake. Famous for the pre-dawn "blue fire" sulfuric-gas phenomenon — visible only in suitable weather and gas conditions. Access from Paltuding trailhead via a steep ~3 km night hike. BBKSDA East Java is the regulatory authority. Health-certificate coordination is mandatory for every guest, per BBKSDA SE.1658/KSA.9/2024.
 
 ## Quick Facts
 
@@ -33,7 +33,7 @@ Kawah Ijen is an active volcano at 2,386 m with the world's highest-volume acidi
 | Access mode | Night hike from Paltuding trailhead (~3 km, ~90 min ascent) |
 | Regulatory authority | BBKSDA East Java — https://bbksdajatim.org |
 | Schema.org type | TouristAttraction |
-| Wording mode | conditional (per SSOT §11.entity_anchors.ijen_screening) |
+| Wording mode | mandatory (adjudicated 2026-07-06, supersedes SSOT §11.entity_anchors.ijen_screening) |
 
 ## The Blue Fire — Approved Language
 
@@ -45,15 +45,15 @@ Visible pre-dawn in suitable conditions only. **Not guaranteed.** Originates fro
 
 ## Health-Screening Coordination — Approved Language
 
-Per **BBKSDA SE.1658/KSA.9/2024** (Surat Edaran), Ijen crater access can require a recent local health certificate when crater conditions meet the regulatory threshold. JVTO coordinates the screening workflow for guests on Ijen-relevant packages.
+Adjudicated 2026-07-06 (supersedes the 2026-07-05 conditional decision): a health certificate is **mandatory for every guest** before Kawah Ijen crater entry. **BBKSDA SE.1658/KSA.9/2024** (Surat Edaran) is cited as the supporting regulatory authority/evidence, not as a conditional trigger. JVTO coordinates the screening workflow for guests on Ijen-relevant packages.
 
-Approved framings (per SSOT §2_4):
+Approved framings:
 
-- ✅ "Ijen access rules can require a recent local health certificate."
-- ✅ "JVTO coordinates clinic workflow when access rules require it."
-- ✅ "Health-certificate screening coordination for Ijen routes when current access rules require it."
+- ✅ "A health certificate is mandatory for every guest before Kawah Ijen crater entry."
+- ✅ "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024."
+- ✅ "Health-certificate screening coordination is required for every Ijen guest."
 
-❌ Forbidden: "mandatory health screening" without conditional qualifier. The screening is **conditional on BBKSDA rules**, not unilaterally imposed by JVTO.
+❌ Forbidden: "Ijen access rules can require a recent local health certificate" or any phrasing that reduces the requirement to a threshold-conditional trigger. The screening is **mandatory**, with BBKSDA authority cited as supporting evidence — not unilaterally imposed by JVTO, but not conditional either.
 
 For protocol details see [[people/dr-ahmad-irwandanu]] and [[credentials/trust-signals]].
 
@@ -139,7 +139,7 @@ See [[products/packages-overview]].
 ## Content Angles
 
 - "Blue Fire is a natural phenomenon subject to weather and gas activity — we plan around the window, not the promise."
-- "Health-certificate screening is coordinated by JVTO when BBKSDA rules apply — Dr. Irwandanu's SIP is publicly verifiable."
+- "A health certificate is mandatory for every guest — JVTO coordinates the screening under BBKSDA SE.1658/KSA.9/2024, and Dr. Irwandanu's SIP is publicly verifiable."
 - "Highest-volume acidic crater lake on Earth — pH near 0, turquoise color, visible from the rim."
 - "Sulfur miners share the trail with you. Our guides brief the etiquette before departure."
 

@@ -1,7 +1,7 @@
 ---
 type: website
 title: JVTO FAQ Master — 20 Canonical Answers
-last_updated: 2026-05-31
+last_updated: 2026-07-06
 sources: [ssot-v6, jvto-homepage-clip, tango-workflow-jvto-website-booking]
 faq_count: 20
 schema_ready: yes
@@ -52,12 +52,12 @@ Key principles: layering, grip, simplicity. Layered clothing for cold pre-dawn s
 
 ---
 
-## C. Ijen Health-Screening (Conditional — BBKSDA SE.1658/KSA.9/2024)
+## C. Ijen Health-Screening (Mandatory — BBKSDA SE.1658/KSA.9/2024)
 
 **Q6. How does the Ijen health screening work?**
-> ⚠ health_wording_mode: **conditional** — BBKSDA authority governs this answer. Never state as universally mandatory.
+> ⚠ health_wording_mode: **mandatory** — a health certificate is required for every guest before Kawah Ijen crater entry. BBKSDA SE.1658/KSA.9/2024 is cited as supporting regulatory authority/evidence, not as a conditional trigger. Adjudicated 2026-07-06, supersedes the 2026-07-05 conditional decision.
 
-For tours that include the Ijen night hike, JVTO arranges health-screening coordination — conducted by licensed medical staff — as required under BBKSDA access regulations for the Ijen crater zone (Surat Edaran SE.1658/KSA.9/2024). The aim is to reduce the risk of sending unfit guests into a demanding environment with sulphur gas and steep trails. Vitals measured digitally include SpO2, blood pressure, heart rate, and respiratory history. The certificate carries a QR code verified by BBKSDA at the crater access gate. **No Valid QR Code = No Access to Crater Zone.** See [[people/dr-ahmad-irwandanu]] for the full protocol.
+For tours that include the Ijen night hike, a health certificate is mandatory for every guest before crater entry — JVTO arranges the health-screening coordination, conducted by licensed medical staff, per BBKSDA Surat Edaran SE.1658/KSA.9/2024 for the Ijen crater zone. The aim is to reduce the risk of sending unfit guests into a demanding environment with sulphur gas and steep trails. Vitals measured digitally include SpO2, blood pressure, heart rate, and respiratory history. The certificate carries a QR code verified by BBKSDA at the crater access gate. **No Valid QR Code = No Access to Crater Zone.** See [[people/dr-ahmad-irwandanu]] for the full protocol.
 
 **Q7. What happens if I do not pass the Ijen health screening?**
 If screening staff or the JVTO team advise that you should not attempt the hike, JVTO follows that decision — it protects your safety and others on the trail. The climb is cancelled for that individual (not the group); alternatives include waiting at base camp or a safe zone. The screening session cost is non-refundable. The group continues.
@@ -115,7 +115,7 @@ Yes. JVTO direct bookings (website + WhatsApp only) receive FOC (Free of Charge)
 ## Schema Generation Notes
 
 - All 20 questions are eligible for `FAQPage` schema with `@type: Question + acceptedAnswer`
-- Q6 + Q7 carry `health_wording_mode: conditional` flag — must include BBKSDA reference
+- Q6 + Q7 carry `health_wording_mode: mandatory` flag — must include BBKSDA reference as supporting evidence, not as a conditional trigger
 - Q11 connects to `ISIC` schema; Q14 / Q17 connect to `Offer` and `OfferCatalog`
 - Cross-reference: [[sources/ssot-v6]] §6_5_1_faq_id_registry for canonical FAQ IDs and §6_5_2_faq_route_map for route-to-FAQ assignment
 

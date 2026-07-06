@@ -1,12 +1,12 @@
 ---
 type: person
 title: Dr. Ahmad Irwandanu — Medical Officer (Ijen Health-Screening Coordination)
-last_updated: 2026-05-11
+last_updated: 2026-07-06
 sources: [ssot-v6, jvto-homepage-clip]
 role: Medical Officer — Ijen Health-Screening Coordination
 schema_id: "/#dr-ahmad-irwandanu"
 schema_type: Person
-health_wording_mode: conditional
+health_wording_mode: mandatory
 owner: wiki-llm
 stale_after_days: 60
 ---
@@ -27,19 +27,19 @@ stale_after_days: 60
 
 Guests can verify the license independently before booking.
 
-## Why "Coordination," Not "Mandatory Screening"
+## Why "Mandatory," Not "Conditional"
 
-> **Voice invariant — critical**: per [[sources/ssot-v6]] §2_4, the phrase "mandatory health screening" without conditional qualifier is **forbidden**. The screening is triggered by **BBKSDA regulation**, not unilaterally by JVTO. JVTO **coordinates** the screening workflow when access rules require it.
+> **Voice invariant — critical (adjudicated 2026-07-06, supersedes the 2026-07-05 conditional decision and the [[sources/ssot-v6]] §2_4 conditional framing)**: a health certificate is **mandatory for every guest** before Kawah Ijen crater entry. BBKSDA SE.1658/KSA.9/2024 is cited as supporting regulatory authority/evidence, not as a conditional trigger. JVTO **coordinates** the mandatory screening workflow — it does not unilaterally impose the rule, but the rule applies to every guest, not conditionally.
 
 Approved phrasings:
 
-- ✅ "Ijen access rules can require a recent local health certificate."
-- ✅ "JVTO coordinates clinic workflow when access rules require it."
-- ✅ "Health screening is required when crater conditions meet BBKSDA threshold."
+- ✅ "A health certificate is mandatory for every guest before Kawah Ijen crater entry."
+- ✅ "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024."
+- ✅ "Health screening is mandatory under BBKSDA SE.1658/KSA.9/2024, cited here as supporting authority."
 
 Forbidden:
 
-- ❌ "Mandatory health screening" (without conditional qualifier)
+- ❌ "Ijen access rules can require a recent local health certificate" (conditional framing — superseded 2026-07-06)
 - ❌ "Required by JVTO" (the rule is regulatory, not operator-imposed)
 
 ## Regulatory Basis
@@ -51,7 +51,7 @@ See [[credentials/trust-signals]] for full BBKSDA proof chain.
 
 ## Screening Protocol
 
-When BBKSDA rules apply, JVTO coordinates the protocol per **Ijen Digital Health Security System** (https://health.mountijen.com).
+JVTO coordinates the mandatory protocol per **Ijen Digital Health Security System** (https://health.mountijen.com), under BBKSDA SE.1658/KSA.9/2024.
 
 ### Process (4 steps)
 
