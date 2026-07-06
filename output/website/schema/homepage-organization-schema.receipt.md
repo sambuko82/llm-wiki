@@ -24,7 +24,7 @@ profile: schema (Organization + TravelAgency)
 
 ## Drift status
 
-- `reviewCount=195` updated 2026-06-01 from `trust-signals.md §Schema Canonical Values` (Google moved 92→123 on 2026-05-26 via API; cross-platform total now 51+123+21=195). Previous stale value 164 closed.
+- `reviewCount=195` updated 2026-06-01 from `trust-signals.md §Schema Canonical Values` (Google's superseded value of 92 was replaced by 123 on 2026-05-26 via API; cross-platform total now 51+123+21=195). Previous stale value 164 closed.
 - Next recommended live check: before **2026-06-26**.
 
 ## Omissions (not invented)

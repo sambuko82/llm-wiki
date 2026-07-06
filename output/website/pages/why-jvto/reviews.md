@@ -18,7 +18,7 @@ We don't curate a quote wall. Below are reviews organized by platform and by the
 | Platform | Rating | Reviews | Verified |
 |---|---|---|---|
 | **Trustpilot** | 4.8 / 5 | 51 | 2026-05-09 |
-| **Google Maps** | 4.90 / 5 | 92 | 2026-04-22 |
+| **Google Maps** | 4.9 / 5 | 123 | 2026-05-26 |
 | **TripAdvisor** | 4.95 / 5 | 21 | 2026-04-22 |
 
 Live profiles:

@@ -8,7 +8,6 @@ material claim breaks its evidence boundary or uses stale/forbidden wording:
   BOOKING-CONTINUITY Booking framed as address continuity / legal succession
   DETIK-IJEN        Detik attributed to Kawah-Ijen-specific duty (it is Bondowoso-area)
   BBKSDA-CERTIFIED  "BBKSDA certified JVTO" over-claim
-  MEDICAL-UNIVERSAL screening stated as a universal rule, not the conditional BBKSDA rule
   ISIC-PARTNER      ISIC asserted as partner / official provider listing
   STALE-REVIEW      a retired review count near its platform name (Google 92 / Trustpilot 47)
 
