@@ -47,7 +47,7 @@ Mount Ijen (2,386 m) is a stark, rugged environment. The climb is conducted in t
 ### The Experience
 The climb begins at 02:00 WIB from the Paltuding trailhead. The path is a steep, unpaved 3 km dirt track that takes roughly 90 minutes to ascend. To see the Blue Fire, you must descend a steep, rocky, single-file path 700 meters into the crater. Here, you will wear professional chemical gas masks to filter out dense sulfur dioxide fumes. At sunrise, you see the turquoise-colored acidic lake (pH ≈ 0) and meet the local sulfur miners carrying 80 kg loads up the crater wall.
 
-> **Safety & Regulatory Note**: Blue Fire is a natural phenomenon subject to weather and gas activity; sightings are never guaranteed. Additionally, Ijen access rules can require a recent local health certificate. JVTO coordinates the clinic screening workflow with our licensed medical officer when BBKSDA SE.1658/KSA.9/2024 regulations require it.
+> **Safety & Regulatory Note**: Blue Fire is a natural phenomenon subject to weather and gas activity; sightings are never guaranteed. Additionally, A health certificate is mandatory for every guest before Kawah Ijen crater entry (BBKSDA SE.1658/KSA.9/2024). JVTO coordinates the clinic screening workflow with our licensed medical officer when BBKSDA SE.1658/KSA.9/2024 regulations require it.
 
 ### Who is it for?
 Ijen is suited for active travelers with good physical conditioning, stable footing, and no history of severe cardiovascular or respiratory issues (such as asthma).

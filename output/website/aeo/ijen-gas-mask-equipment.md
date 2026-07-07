@@ -15,4 +15,4 @@ A gas mask is required to protect your respiratory system from highly toxic sulf
 
 ### What equipment is included in a JVTO Ijen tour?
 
-Every JVTO Ijen private tour includes an AC transport vehicle, an English-speaking guide, entrance fees, health-screening coordination (where required), a professional half-face gas mask, a headlamp, trekking poles, bottled water, and a JVTO travel T-shirt.
+Every JVTO Ijen private tour includes an AC transport vehicle, an English-speaking guide, entrance fees, the mandatory health-screening coordination, a professional half-face gas mask, a headlamp, trekking poles, bottled water, and a JVTO travel T-shirt.

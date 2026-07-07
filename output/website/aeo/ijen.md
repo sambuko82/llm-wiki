@@ -36,7 +36,7 @@ All JVTO tours are 100% private. Your group receives a dedicated vehicle, driver
 ---
 
 **Q: Does the JVTO Ijen tour require a health certificate?**
-Ijen access rules can require a recent local health certificate when BBKSDA SE.1658/KSA.9/2024 thresholds apply. JVTO coordinates health-screening clinic workflow when current access rules require it. The screening is conducted by Dr. Ahmad Irwandanu, whose SIP license is verifiable via Kemenkes/KKI.
+Yes. A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024. JVTO coordinates the mandatory clinic workflow. The screening is conducted by Dr. Ahmad Irwandanu, whose SIP license is verifiable via Kemenkes/KKI.
 
 ---
 
@@ -46,7 +46,7 @@ If screening staff advise against the hike, JVTO follows that decision to protec
 ---
 
 **Q: What is included in the JVTO Ijen tour price?**
-Ijen-route inclusions: private transport (AC MPV or Hiace), dedicated driver and guide, all entrance fees, mineral water, gas masks and trekking poles for the Ijen hike, health-screening coordination when access rules require it, meals as stated (minimum breakfast), and a JVTO travel T-shirt.
+Ijen-route inclusions: private transport (AC MPV or Hiace), dedicated driver and guide, all entrance fees, mineral water, gas masks and trekking poles for the Ijen hike, the mandatory health-screening coordination, meals as stated (minimum breakfast), and a JVTO travel T-shirt.
 
 ---
 

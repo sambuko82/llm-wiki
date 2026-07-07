@@ -93,5 +93,5 @@ Leave jewellery (particularly silver, as noted above), extra cash, and valuables
 | Headlamps | All Ijen-relevant packages |
 | Trekking poles | All Ijen-relevant packages |
 | Private 4WD jeep | All Bromo-relevant packages |
-| Health-screening coordination | Ijen-relevant packages, when access rules require it |
+| Health-screening coordination | Ijen-relevant packages — mandatory for every guest |
 | Daily bottled mineral water | All packages |

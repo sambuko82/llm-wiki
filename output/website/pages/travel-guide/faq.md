@@ -29,7 +29,7 @@ JVTO uses a Travel Credit system rather than cash refunds for guest-initiated ca
 Cash refunds are not available for guest-initiated cancellations. Travel Credit is the standard outcome. For closures caused by volcanic activity, government restrictions, or force majeure, we may offer reasonable alternatives, Travel Credit for unused portions, or partial/full cash refund net of non-recoverable expenses — assessed case by case.
 
 ### What is included in the price?
-All JVTO packages include: private air-conditioned vehicle, dedicated crew (driver-guide or driver + escort guide), all entrance fees and park permits, mineral water daily, hotel accommodation with breakfast, a JVTO travel T-shirt, and full pick-up to drop-off service. Bromo-inclusive packages add a private 4WD jeep. Ijen-relevant packages add gas masks, trekking poles, and health-screening coordination where BBKSDA rules require it. Bali-origin packages add Java-Bali ferry tickets. Helmets at Madakaripura and Tumpak Sewu are provided by local site management, not JVTO.
+All JVTO packages include: private air-conditioned vehicle, dedicated crew (driver-guide or driver + escort guide), all entrance fees and park permits, mineral water daily, hotel accommodation with breakfast, a JVTO travel T-shirt, and full pick-up to drop-off service. Bromo-inclusive packages add a private 4WD jeep. Ijen-relevant packages add gas masks, trekking poles, and the mandatory health-screening coordination (BBKSDA SE.1658/KSA.9/2024). Bali-origin packages add Java-Bali ferry tickets. Helmets at Madakaripura and Tumpak Sewu are provided by local site management, not JVTO.
 
 ---
 
@@ -39,7 +39,7 @@ All JVTO packages include: private air-conditioned vehicle, dedicated crew (driv
 For tours that include the Ijen night hike, JVTO coordinates health-screening with licensed medical staff as required under BBKSDA access regulations (Surat Edaran SE.1658/KSA.9/2024). The aim is to reduce the risk of sending unfit guests into a demanding environment with sulphur gas and steep trails. Vitals measured include SpO2, blood pressure, heart rate, and respiratory history. The result carries a QR code verified by BBKSDA checkpoint staff at the crater access gate. No valid QR code means no crater zone access.
 
 ### Is the health screening mandatory?
-Ijen access rules can require a recent local health certificate under BBKSDA SE.1658/KSA.9/2024. JVTO coordinates the clinic workflow when access rules require it. The requirement is regulatory — set by BBKSDA East Java — not unilaterally imposed by JVTO. The nurse visits your hotel the evening before the hike for the screening session.
+A health certificate is mandatory for every guest under BBKSDA SE.1658/KSA.9/2024. JVTO coordinates the mandatory clinic workflow. The requirement is regulatory — set by BBKSDA East Java — not unilaterally imposed by JVTO. The nurse visits your hotel the evening before the hike for the screening session.
 
 ### What happens if I do not pass the Ijen health screening?
 If screening staff or the JVTO team advise that you should not attempt the hike, that decision is followed — it protects your safety and others on the trail. The climb is cancelled for that individual, not the group. Alternatives include waiting at base camp or a safe viewpoint area. The screening session cost is non-refundable. The rest of the group continues as planned.

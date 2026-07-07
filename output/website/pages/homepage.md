@@ -68,9 +68,9 @@ Entrance fees, the Bromo 4WD jeep, accommodation, breakfast, gas masks, and tran
 
 **4. Ijen Health-Screening Coordination**
 
-Ijen access rules can require a recent local health certificate. JVTO coordinates the clinic workflow when current BBKSDA rules require it — before the hike, not as an afterthought. Dr. Ahmad Irwandanu holds a verified SIP license (Kemenkes RI, checkable at satusehat.kemkes.go.id).
+A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024. JVTO coordinates the mandatory clinic workflow — before the hike, not as an afterthought. Dr. Ahmad Irwandanu holds a verified SIP license (Kemenkes RI, checkable at satusehat.kemkes.go.id).
 
-*Source: [[website/aeo-claims]] C4 · [[destinations/kawah-ijen]] §health-screening · [[people/dr-ahmad-irwandanu]] · Voice invariant: conditional framing per [[website/brand-voice]]*
+*Source: [[website/aeo-claims]] C4 · [[destinations/kawah-ijen]] §health-screening · [[people/dr-ahmad-irwandanu]] · Voice invariant: mandatory framing (adjudicated 2026-07-06) per [[website/brand-voice]]*
 
 ---
 
@@ -271,7 +271,7 @@ WhatsApp: +62 822 4478 8833 · hello@javavolcano-touroperator.com
 
 ## PRODUCTION NOTES
 
-- **Voice invariants in effect**: Blue Fire uses conditional language throughout. Health screening uses "coordinates / when access rules require it" framing. No forbidden phrases used.
+- **Voice invariants in effect**: Blue Fire uses conditional language throughout. Health screening uses mandatory framing — a health certificate is mandatory for every guest, BBKSDA SE.1658/KSA.9/2024 cited as supporting authority (adjudicated 2026-07-06). No forbidden phrases used.
 - **Package count**: 16 packages (confirmed via [[sources/sitemap-2026-05]]). Taman Safari Prigen package omitted from the tours table — pricing and itinerary not yet ingested. Add when [[products/packages-full-pricing]] is updated.
 - **Bali finish note**: the "does not loop back to Bali" warning is sourced from [[sources/ssot-v6]] §6_1 itinerary termination points. Confirm this is still accurate before publishing.
 - **Review counts**: verified 2026-05-09 per [[reviews/trustpilot-compilation]]. Re-verify before publish if more than 30 days have elapsed.

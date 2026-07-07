@@ -141,16 +141,15 @@
     "health_screening": {
       "regulatory_basis": "BBKSDA Surat Edaran SE.1658/KSA.9/2024",
       "applies_to": "Ijen-relevant packages only",
-      "wording_rule": "CONDITIONAL — never describe as mandatory without referencing BBKSDA SE.1658/KSA.9/2024",
+      "wording_rule": "MANDATORY (adjudicated 2026-07-06, supersedes the conditional decision) — a health certificate is mandatory for every guest before Kawah Ijen crater entry; cite BBKSDA SE.1658/KSA.9/2024 as supporting authority, never as a conditional trigger",
       "approved_phrases": [
-        "Ijen access rules can require a recent local health certificate.",
-        "JVTO coordinates clinic workflow when access rules require it.",
-        "Health-certificate screening coordination for Ijen routes when current access rules require it.",
-        "Health-screening is required when crater conditions meet BBKSDA SE.1658/KSA.9/2024 threshold.",
-        "On routes that include Mount Ijen, JVTO integrates health screening as a practical safety step when BBKSDA rules apply."
+        "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024.",
+        "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024.",
+        "Health-certificate screening coordination is required for every Ijen guest.",
+        "Health screening is mandatory under BBKSDA SE.1658/KSA.9/2024, cited here as supporting authority."
       ],
       "forbidden_phrases": [
-        "Mandatory health screening (without conditional qualifier)",
+        "Ijen access rules can require a recent local health certificate (or any threshold-conditional framing — superseded 2026-07-06)",
         "Required by JVTO"
       ],
       "medical_officer": "Dr. Ahmad Irwandanu SIP",

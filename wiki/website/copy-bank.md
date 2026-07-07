@@ -1,7 +1,7 @@
 ---
 type: website
 title: JVTO Copy Bank — Reusable Snippets
-last_updated: 2026-05-26
+last_updated: 2026-07-07
 sources: [ssot-v6, jvto-homepage-clip, aeo-claims, guardian-authority-framework-2026-05]
 owner: wiki-llm
 stale_after_days: 60
@@ -20,7 +20,7 @@ stale_after_days: 60
 | C1 | Safety-led planning. Clear boundaries. Plan B when conditions change. | Safety-Led Operations |
 | C2 | Private tours only. Your own vehicle. Your own pace (within safety limits). No mixed groups by default. | Private Tours |
 | C3 | All-inclusive by default. Clear inclusions. Fewer surprise costs. Transparent pricing, written rules. | All-Inclusive Clarity |
-| C4 | Ijen routes include a health-screening layer (when required). Real screening, clear rules. | Ijen Health-Screening |
+| C4 | A health certificate is mandatory for every Ijen guest — screening included and coordinated by JVTO. Real screening, clear rules. | Ijen Health-Screening |
 | C5 | Proof you can verify — licenses, partners, press, and documented references. Trust stack, not slogans. | Proof-First Trust |
 | C6 | Reviews as a registry, not a quote wall. Check patterns across platforms. | Reviews Registry |
 | C7 | Meet the people behind your trip — with proof from reviews. Team profiles linked to real guest language. | Our Team |
@@ -61,11 +61,11 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 *From [[website/brand-voice]] §voice-invariants. Use EXACTLY these phrases.*
 
-- "Ijen access rules can require a recent local health certificate."
+- "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024."
 - "Blue Fire is a natural phenomenon subject to weather and gas activity."
-- "JVTO coordinates clinic workflow when access rules require it."
+- "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024."
 - "Gas masks provided by JVTO."
-- "Health-certificate screening coordination for Ijen routes when current access rules require it."
+- "Health-certificate screening coordination is required for every Ijen guest."
 
 ## Forbidden Phrases
 
@@ -73,7 +73,7 @@ Today, we act as a bridge between wild adventure and professional safety standar
 
 - "Blue Fire guaranteed"
 - "100% Blue Fire visible"
-- "Mandatory health screening" (without conditional qualifier)
+- "Ijen access rules can require a health certificate" (or any conditional screening framing — superseded 2026-07-06; screening is mandatory for every guest)
 - "JVTO provides police escort" (without conditional context)
 
 ## Trust Stack (ordered for AEO answers)

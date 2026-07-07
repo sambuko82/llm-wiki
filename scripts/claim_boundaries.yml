@@ -43,6 +43,8 @@ context_markers:
 allow:
   - {rule: BOOKING-CONTINUITY, path: "wiki/credentials/legal-licenses.md", text: "confirming operational continuity"}
   - {rule: BOOKING-CONTINUITY, path: "wiki/credentials/legal-licenses.md", text: "demonstrating continuous operational presence"}
+  # The medical-screening Avoid column deliberately quotes the superseded conditional phrase.
+  - {rule: MEDICAL-CONDITIONAL, path: "wiki/credentials/medical-screening.md", text: "implies optional"}
 
 # Boundary rules — an affirmative match on an active line fails the content.
 boundaries:
@@ -72,6 +74,13 @@ boundaries:
   # decision — see wiki/ops/policy-source-ownership.md and wiki/credentials/medical-screening.md.
   # The rule was banning exactly the wording now required. Mirrors the equivalent fix in
   # jvto-web (commit d3b4d11, scripts/validate-content-drift.mjs).
+  - id: MEDICAL-CONDITIONAL
+    # Inverse guard added 2026-07-07 after the C4 reconciliation sweep: the superseded
+    # threshold-conditional screening framing must not re-enter content. Screening is
+    # mandatory for every guest (adjudicated 2026-07-06).
+    pattern: "(?i)(access rules can require|when (?:current )?access rules require|when crater conditions meet|when bbksda rules (?:apply|require)|where bbksda rules require|screening[^\\n.]{0,50}\\((?:when|where) required\\)|coordination \\((?:when|where) required\\))"
+    message: "Threshold-conditional Ijen screening framing (superseded 2026-07-06; screening is mandatory for every guest)."
+    fix: "Use medical-screening.md approved language: 'A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024.'"
   - id: ISIC-PARTNER
     pattern: "(?i)isic.{0,40}?(official provider listing|as a partner|is a partner)"
     message: "ISIC asserted as partner / official provider listing without direct provider evidence."

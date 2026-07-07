@@ -166,7 +166,7 @@ Every relevant Taiwan-market package includes:
 - **Accommodation and breakfast** for overnight routes.
 - **Private Bromo 4WD Jeep** when Bromo is included.
 - **Gas mask and trekking poles** for Ijen routes.
-- **Ijen health-certificate coordination** when current access rules require screening.
+- **Ijen health-certificate coordination** — mandatory for every guest (BBKSDA SE.1658/KSA.9/2024).
 - **Java–Bali ferry ticket** when a Bali crossing is part of the itinerary.
 - **Daily bottled mineral water** in the vehicle.
 - **Official e-voucher / invoice PDF** after confirmed payment.

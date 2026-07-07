@@ -21,7 +21,7 @@ We are a licensed private tour operator led by an active Tourist Police officer 
 
 ### The JVTO Difference
 
-Six differentiators that define how we operate: police-led safety authority, private-only tours, all-inclusive pricing, Ijen health-screening coordination (when access rules require it), verifiable licenses, and a written Plan B framework. Each one is backed by a credential you can check.
+Six differentiators that define how we operate: police-led safety authority, private-only tours, all-inclusive pricing, mandatory Ijen health-screening coordination, verifiable licenses, and a written Plan B framework. Each one is backed by a credential you can check.
 
 → [The JVTO Difference](/why-jvto/the-jvto-difference)
 
