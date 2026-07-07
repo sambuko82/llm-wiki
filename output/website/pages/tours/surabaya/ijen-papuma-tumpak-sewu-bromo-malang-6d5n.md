@@ -52,7 +52,7 @@ Rendered as a summary table.
 | Duration | DB → `tours.duration` | "6 Days / 5 Nights" |
 | Destinations | DB → `tours.destinations[]` | Listed |
 | Group Type | Static | "100% Private — dedicated vehicle, driver, guide" |
-| Health Screening | Static | "Ijen health screening coordinated by JVTO when access rules require it" |
+| Health Screening | Static | "Health certificate mandatory for every guest (BBKSDA SE.1658/KSA.9/2024); screening coordinated by JVTO" |
 
 ---
 
@@ -116,7 +116,7 @@ Rendered as a summary table.
 > CONDITIONAL: show only when `ijen_relevant: true`
 
 **Approved display text:**
-"Ijen access rules can require a recent local health certificate. JVTO coordinates clinic workflow when access rules require it. Gas masks are provided by JVTO."
+"A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024. JVTO coordinates the mandatory clinic workflow. Gas masks are provided by JVTO."
 
 ---
 

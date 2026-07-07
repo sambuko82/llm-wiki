@@ -1,7 +1,7 @@
 ---
 type: website
 title: JVTO Website Implementation Master
-last_updated: 2026-06-03
+last_updated: 2026-07-07
 sources: [ssot-v6, trust-signals, legal-licenses, packages-full-pricing, jvto-policy-pack-v6, brand-voice, aeo-claims, schema-templates, operational-facts, hotels, agung-sambuko, dr-ahmad-irwandanu, crew-registry]
 owner: wiki-llm
 stale_after_days: 30
@@ -121,29 +121,28 @@ Single reference for website implementation. Does not duplicate `output/website/
 
 *All conditional logic enforced across the website. Reference before writing or reviewing any page.*
 
-### 3.1 Ijen Health Screening — Conditional Rule
+### 3.1 Ijen Health Screening — Mandatory Rule
 
-**Trigger**: BBKSDA Surat Edaran SE.1658/KSA.9/2024.
+**Regulatory basis**: BBKSDA Surat Edaran SE.1658/KSA.9/2024 (cited as supporting authority, not a conditional trigger).
 
-The screening is **not JVTO-imposed**. It is regulatory. JVTO **coordinates** the workflow when access rules require it.
+The screening is **not JVTO-imposed**. It is regulatory, and it is **mandatory for every guest**: JVTO **coordinates** the clinic workflow so guests can satisfy the BBKSDA requirement.
 
-> **Canonical trigger sentence**: While BBKSDA SE.1658/KSA.9/2024 is in force, all Ijen-relevant packages trigger screening coordination. Wording must remain conditional because the regulation itself is conditional on crater state.
+> **Canonical sentence** (adjudicated 2026-07-06, supersedes the 2026-07-05 conditional decision and SSOT §2_4 — see [[credentials/medical-screening]]): A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024.
 
 **When to apply**: Any content mentioning Ijen health certificate, health check, or medical screening.
 
-**Approved conditional wording:**
-- ✅ "Ijen access rules can require a recent local health certificate."
-- ✅ "JVTO coordinates clinic workflow when access rules require it."
-- ✅ "Health-certificate screening coordination for Ijen routes when current access rules require it."
-- ✅ "Health-screening is required when crater conditions meet BBKSDA SE.1658/KSA.9/2024 threshold."
-- ✅ "On routes that include Mount Ijen, JVTO integrates health screening as a practical safety step when BBKSDA rules apply."
+**Approved wording:**
+- ✅ "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024."
+- ✅ "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024."
+- ✅ "Health-certificate screening coordination is required for every Ijen guest."
+- ✅ "Health screening is mandatory under BBKSDA SE.1658/KSA.9/2024, cited here as supporting authority."
 
-**Forbidden wording** (per SSOT §2_4):
-- ❌ "Mandatory health screening" (without conditional qualifier + BBKSDA reference)
-- ❌ "Required by JVTO" (the rule is regulatory, not operator-imposed)
-- ❌ "All Ijen guests must undergo health screening" (without the conditional)
+**Forbidden wording** (adjudicated 2026-07-06):
+- ❌ "Ijen access rules can require a recent local health certificate" (or any threshold-conditional framing — superseded 2026-07-06)
+- ❌ "Required by JVTO" / "JVTO-imposed rule" (the rule is regulatory; BBKSDA sets it, JVTO coordinates)
+- ❌ Any phrasing that reduces the requirement to a crater-state or access-rules trigger
 
-**Ijen-relevant packages** (health screening conditional applies):
+**Ijen-relevant packages** (mandatory health screening applies):
 - Surabaya origin: `ijen-2d1n`, `ijen-bromo-madakaripura-3d2n`, `bromo-madakaripura-ijen-3d2n`, `ijen-papuma-tumpak-sewu-bromo-4d3n`, `ijen-bromo-madakaripura-4d3n`, `tumpak-sewu-bromo-ijen-4d3n`, `ijen-papuma-tumpak-sewu-bromo-5d4n`, `ijen-bromo-madakaripura-malang-5d4n`, `ijen-papuma-tumpak-sewu-bromo-malang-6d5n`
 - Bali origin: `bali/bromo-ijen-3d2n`, `bali/ijen-bromo-madakaripura-3d2n`, `bali/ijen-papuma-tumpak-sewu-bromo-4d3n`, `bali/ijen-papuma-tumpak-sewu-bromo-5d4n`
 - **Not Ijen-relevant (no health rule)**: `bromo-1d1n`, `bromo-2d1n` — Bromo does NOT have a health-certificate requirement.
@@ -313,8 +312,8 @@ Tips and gratuities are an **explicit exclusion** per `jvto-policy-pack-v6.md` �
 |---|---|---|
 | "Blue Fire guaranteed" | Weather-dependent, cannot be promised | "Blue Fire is a natural phenomenon subject to weather and gas activity." |
 | "100% Blue Fire visible" | Same | Same |
-| "Mandatory health screening" (without conditional) | Regulatory, not JVTO-imposed | "Ijen access rules can require a recent local health certificate." |
-| "Required by JVTO" (for health screening) | Wrong — BBKSDA rule | "JVTO coordinates clinic workflow when access rules require it." |
+| "Ijen access rules can require a health certificate" (threshold-conditional framing — superseded 2026-07-06) | Screening is mandatory for every guest; BBKSDA sets the rule | "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024." |
+| "Required by JVTO" (for health screening) | Wrong — BBKSDA rule, JVTO coordinates | "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024." |
 | "JVTO provides police escort" (unconditional) | Conditional on group size and approval | Approved police escort wording (§3.8) |
 | "Flexible cancellation available" | Too vague — misleads on policy | State the 48h threshold explicitly |
 | "Full refund" | Not cash — Travel Credit | "100% Travel Credit (non-expiring)" |

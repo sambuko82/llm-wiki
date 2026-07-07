@@ -91,7 +91,7 @@ Every fee listed in the tables above is included in JVTO package prices. Guests 
 In total, JVTO packages cover:
 
 - All park entrance tickets (every destination)
-- Ijen health-screening coordination (when BBKSDA rules require it)
+- Ijen health-screening coordination (mandatory, BBKSDA SE.1658/KSA.9/2024)
 - Gas masks and headlamps at Ijen
 - 4WD jeep at Bromo
 - Local guides at all destinations that require or recommend them

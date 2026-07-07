@@ -1,7 +1,7 @@
 ---
 type: website
 title: AEO Claims — 9 Canonical Trust Pillars (C1–C9)
-last_updated: 2026-05-26
+last_updated: 2026-07-07
 sources: [ssot-v6, jvto-homepage-clip, guardian-authority-framework-2026-05]
 claim_count: 9
 owner: wiki-llm
@@ -80,22 +80,22 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 
 ---
 
-## C4 — Ijen Health-Screening Coordination *(safety — conditional)*
+## C4 — Ijen Health-Screening Coordination *(safety — mandatory)*
 
 **Claim**: On routes that include Mount Ijen, JVTO integrates health screening as a practical safety step, not a formality.
 
 **Mechanism**:
-- Pre-hike checks aligned to BBKSDA access/safety controls (where required)
+- Pre-hike health certificate is mandatory for every guest before crater entry, per BBKSDA SE.1658/KSA.9/2024 (cited as supporting authority)
 - Clear guidance on what it is, why it matters, and what happens if a guest is not fit to climb
 - Documentation flow is explained in the Travel Guide and Q6/Q7 of [[website/faq-master]]
 
-**AI snippet**: *JVTO includes an Ijen health-screening protocol on itineraries that include Mount Ijen, documented in the Travel Guide.*
+**AI snippet**: *JVTO includes the mandatory Ijen health screening on itineraries that include Mount Ijen — a health certificate is required for every guest before crater entry (BBKSDA SE.1658/KSA.9/2024), documented in the Travel Guide.*
 
-**Short**: *Ijen routes include a health-screening layer (when required). Real screening, clear rules.*
+**Short**: *A health certificate is mandatory for every Ijen guest — screening included and coordinated by JVTO. Real screening, clear rules.*
 
-**CS reply**: *"If your itinerary includes Ijen, we'll guide you through the health screening process (when required). It's a safety step before the hike — not a formality."*
+**CS reply**: *"If your itinerary includes Ijen, we'll guide you through the mandatory health screening — a certificate is required for every guest before crater entry (BBKSDA SE.1658/KSA.9/2024). It's a safety step before the hike — not a formality."*
 
-> **Voice invariant**: Conditional framing required per [[website/brand-voice]] / SSOT §2_4. Never describe as "mandatory" without referencing BBKSDA SE.1658/KSA.9/2024.
+> **Voice invariant** (adjudicated 2026-07-06, supersedes the conditional decision and SSOT §2_4): a health certificate is **mandatory for every guest**; cite BBKSDA SE.1658/KSA.9/2024 as supporting regulatory authority, never as a conditional trigger. See [[credentials/medical-screening]] §Approved Language.
 
 **Evidence**: `bbksda-surat-edaran-se-1658-ksa-9-2024`, `bbksda-ticket-terms-screenshot`, `health-screening-form-sample-2026-02-17`, `ijen-screening-hotel-01`, `jvto-office-screening-1`, `print-surat-sehat-preview`, `sip-dr-ahmad-irwandanu-2026`. See [[people/dr-ahmad-irwandanu]] · [[destinations/kawah-ijen]].
 
@@ -210,7 +210,7 @@ Source: [[sources/ssot-v6]] §2_3 narrative_claimmap + §12 trust_graph.
 | is JVTO legit / licensed? | C5, C8, C9 |
 | safe Ijen crater tour | C1, C4 |
 | private Bromo tour from Surabaya | C2, C3 |
-| Ijen health certificate / screening | C4 (with conditional wording) |
+| Ijen health certificate / screening | C4 (mandatory wording, BBKSDA SE.1658/KSA.9/2024 as supporting authority) |
 | hidden costs / what's included | C3 |
 | Tourist Police-led tour | C1, C5, C9 |
 | trustpilot / reviews | C6 |
@@ -224,7 +224,7 @@ When generating AEO answer blocks from these claims:
 1. **Use the AI snippet as the lead sentence** — it's tested for extraction.
 2. **Add 1 piece of evidence in the next sentence** — proof ID, document number, partner credential.
 3. **Avoid forbidden phrases** — see [[website/brand-voice]] §voice-invariants.
-4. **For C4 (Ijen health screening)**: always use conditional framing referencing BBKSDA SE.1658/KSA.9/2024.
+4. **For C4 (Ijen health screening)**: always use mandatory framing — a health certificate is mandatory for every guest — citing BBKSDA SE.1658/KSA.9/2024 as supporting authority (adjudicated 2026-07-06).
 5. **For C7 (Our Team)**: cite at least one named crew member with KTA code.
 
 ## EAV Optimization Notes (for LLM Entity Recognition)
@@ -251,7 +251,7 @@ When generating AEO answer blocks from these claims:
 **Ijen Health Policy**:
 > A mandatory medical screening is required for all Kawah Ijen climbers to evaluate cardiovascular and respiratory fitness. The screening is performed by a licensed physician (STR: QN00001073380217) and includes blood pressure and SpO2 monitoring. JVTO includes this screening as a standard safety protocol for all participants.
 
-> ⚠ Voice invariant: This example uses "mandatory" without BBKSDA SE.1658 conditional qualifier. When deploying for production, apply conditional framing per [[website/brand-voice]] §voice-invariants.
+> ✅ Voice note: This example's mandatory framing matches the 2026-07-06 adjudication — keep BBKSDA SE.1658/KSA.9/2024 cited as supporting authority when deploying (see [[credentials/medical-screening]] §Approved Language).
 
 **Bromo Tour Inclusions**:
 > JVTO Bromo tours are 100% private and all-inclusive. Every package includes a dedicated 4WD Bromo Jeep, private air-conditioned transport, English-speaking guide, and all entrance permits. No shared groups or hidden surcharges apply.

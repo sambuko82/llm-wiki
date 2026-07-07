@@ -46,7 +46,7 @@ All costs above are included in JVTO package prices. Guests do not pay separatel
 
 ## Health Certificate (Surat Sehat) — SE.1658/KSA.9/2024
 
-The health certificate requirement is set by **BBKSDA**, not by tour operators. Under Surat Edaran SE.1658/KSA.9/2024, Ijen crater access can require a recent local health certificate when crater conditions meet the regulatory threshold.
+The health certificate requirement is set by **BBKSDA**, not by tour operators. Under Surat Edaran SE.1658/KSA.9/2024, a recent local health certificate is required for every guest before Ijen crater access.
 
 **How it works:**
 

@@ -64,7 +64,7 @@ JVTO is an official ISIC provider (ID 259268). Verified international students w
 
 ## Ijen Routes — Health Screening
 
-12 of 16 JVTO packages include Kawah Ijen. Ijen access rules can require a recent local health certificate. JVTO coordinates the clinic workflow when rules apply. Gas masks are provided by JVTO on all Ijen routes.
+12 of 16 JVTO packages include Kawah Ijen. A health certificate is mandatory for every guest before Kawah Ijen crater entry (BBKSDA SE.1658/KSA.9/2024). JVTO coordinates the mandatory clinic workflow. Gas masks are provided by JVTO on all Ijen routes.
 
 This section is shown on individual tour pages only when the package includes Ijen.
 

@@ -66,7 +66,7 @@ The only Bali-return package. Cross to East Java on Day 1, reach Bromo side for 
 **3 Day Ijen, Bromo & Madakaripura — Bali to Surabaya**
 Ijen first, Bromo second. Cross to Banyuwangi on Day 1 for Ijen staging. Day 2: Ijen night hike, transfer west to Bromo side. Day 3: Bromo crater sunrise, Madakaripura Waterfall, finish in Surabaya. Solo pricing available.
 
-Blue Fire is a natural phenomenon subject to weather and gas activity. Gas masks provided by JVTO. Ijen access rules can require a recent local health certificate; JVTO coordinates clinic workflow when access rules require it.
+Blue Fire is a natural phenomenon subject to weather and gas activity. Gas masks provided by JVTO. A health certificate is mandatory for every guest before Kawah Ijen crater entry (BBKSDA SE.1658/KSA.9/2024); JVTO coordinates the mandatory clinic workflow.
 
 *Day-by-day:*
 | Day | Summary | Hotel |
@@ -126,7 +126,7 @@ Every Bali package includes — in writing
 - **Accommodation + breakfast** (all nights, per itinerary).
 - **Private 4WD Jeep** for Bromo crater area. One jeep per ≤4 guests; additional jeeps arranged for larger groups.
 - **Gas masks and trekking poles** for Ijen crater hike.
-- **Health-certificate screening coordination** for Ijen routes when current access rules require it.
+- **Health-certificate screening coordination** for every guest on Ijen routes (mandatory under BBKSDA SE.1658/KSA.9/2024).
 - **Daily mineral water supply**.
 - **Full pick-up to drop-off assistance** from your Bali hotel or address.
 - **JVTO travel T-shirt** (1 per participant).

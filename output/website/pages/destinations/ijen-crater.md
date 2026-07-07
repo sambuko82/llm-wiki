@@ -84,7 +84,7 @@ Display as: icon-labelled key-value list or compact table. 6 rows max.
 |---|---|---|---|
 | Section heading | Static: "Health Certificate Coordination" | H2 | YES — render only if `destinations.ijen_relevant = true` |
 | Regulatory reference | `destinations.health_reg_reference` | Plain text: "BBKSDA SE.1658/KSA.9/2024" | YES — same condition |
-| Approved framing copy | `destinations.health_screening_copy` | Paragraph. Must use conditional framing: "Ijen access rules can require a recent local health certificate. JVTO coordinates clinic workflow when access rules require it." | YES — same condition |
+| Approved framing copy | `destinations.health_screening_copy` | Paragraph. Must use mandatory framing (adjudicated 2026-07-06): "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024. JVTO coordinates the mandatory clinic workflow." | YES — same condition |
 | Doctor reference | `people.dr_irwandanu_display_name` + `people.sip_number` | Inline text link to /travel-guide/ijen-health-screening for full protocol details | YES — same condition |
 | Full screening details | Static | "See: [How Ijen Health Screening Works →](/travel-guide/ijen-health-screening)" | YES — same condition |
 

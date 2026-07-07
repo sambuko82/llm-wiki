@@ -53,7 +53,7 @@ JVTO coordinates your safety equipment so you don't have to carry heavy gear acr
 - **Sunscreen & Lip Balm**: High-altitude sun is intense, and dry volcanic wind quickly cracks lips.
 - **Rain Poncho**: A lightweight raincoat is essential. For Madakaripura Waterfall, you will walk through heavy canyon spray and *will* get wet.
 - **Personal Medications**: Bring your own prescription medicines. 
-  > *Note: Ijen access rules can require a recent local health certificate. JVTO coordinates the clinic screening workflow with our medical officer when BBKSDA SE.1658 regulations are active. If you have a history of asthma or heart conditions, consult a physician before booking.*
+  > *Note: A health certificate is mandatory for every guest before Kawah Ijen crater entry (BBKSDA SE.1658/KSA.9/2024). JVTO coordinates the mandatory clinic screening workflow with our medical officer (BBKSDA SE.1658/KSA.9/2024). If you have a history of asthma or heart conditions, consult a physician before booking.*
 
 ---
 

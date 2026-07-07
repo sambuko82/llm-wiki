@@ -1,7 +1,7 @@
 ---
 type: website
 title: JVTO Brand Voice Guide
-last_updated: 2026-05-26
+last_updated: 2026-07-07
 sources: [ssot-v6, jvto-homepage-clip, seo-audit-2026-05, guardian-authority-framework-2026-05]
 owner: wiki-llm
 stale_after_days: 60
@@ -54,16 +54,16 @@ These rules are **non-negotiable** across all JVTO content. Any generated copy m
 
 ❌ **"Blue Fire guaranteed"** — Blue fire is weather-dependent
 ❌ **"100% Blue Fire visible"** — Same as above; over-promise
-❌ **"Mandatory health screening"** (without conditional qualifier) — The rule is regulatory (BBKSDA SE.1658/KSA.9/2024), not unilaterally imposed by JVTO
+❌ **"Ijen access rules can require a health certificate"** (or any threshold-conditional screening framing) — superseded 2026-07-06: the health certificate is **mandatory for every guest**; BBKSDA SE.1658/KSA.9/2024 is cited as supporting authority, not a conditional trigger (see [[credentials/medical-screening]])
 ❌ **"JVTO provides police escort"** (without conditional context) — Police escort is a coordination service for qualifying group sizes, not a default inclusion
 
 ### Approved language — Ijen content
 
-✅ "Ijen access rules can require a recent local health certificate."
+✅ "A health certificate is mandatory for every guest before Kawah Ijen crater entry, per BBKSDA SE.1658/KSA.9/2024."
 ✅ "Blue Fire is a natural phenomenon subject to weather and gas activity."
-✅ "JVTO coordinates clinic workflow when access rules require it."
+✅ "JVTO coordinates the mandatory clinic workflow under BBKSDA SE.1658/KSA.9/2024."
 ✅ "Gas masks provided by JVTO."
-✅ "Health-certificate screening coordination for Ijen routes when current access rules require it."
+✅ "Health-certificate screening coordination is required for every Ijen guest."
 
 ### Approved language — Police escort
 

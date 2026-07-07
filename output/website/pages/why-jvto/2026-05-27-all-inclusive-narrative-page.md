@@ -116,7 +116,7 @@ Foreign travelers comparing options in East Java face three real categories of o
 | Bromo 4WD Jeep | Included on Bromo routes | Often charged separately | Charged separately |
 | Ijen gas masks | Included on Ijen routes | Rare | Rented at the trailhead by the guest |
 | Hotel with breakfast | Included | Some packages | Rare — guest books separately |
-| Ijen health-screening coordination (when required) | Included | Not coordinated by the platform | Not coordinated; guest must arrange |
+| Ijen health-screening coordination (mandatory for every guest) | Included | Not coordinated by the platform | Not coordinated; guest must arrange |
 | Trekking poles | Included on Ijen routes | Rare | Rare |
 | Written policy pack (booking, payment, cancellation) | Published | Platform policy applies | None |
 | Cancellation recourse | 100% Lifetime Travel Credit if ≥48h before Day 1 | Platform's standard refund window | Discretionary — usually deposit forfeited |

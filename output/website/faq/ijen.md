@@ -100,7 +100,7 @@ Yes. Dr. Ahmad Irwandanu's medical credentials are publicly auditable. STR looku
 
 ### What is the starting price for an Ijen tour from Surabaya?
 
-The entry-level Ijen package from Surabaya is the 2 Day Ijen Blue Fire Expedition, priced from IDR 2,300,000/person (2 pax) to IDR 1,550,000/person (11+ pax). All prices include private transport, dedicated English-speaking crew, gas masks, trekking poles, health-screening coordination (when required), accommodation and breakfast, entrance fees, and a JVTO travel T-shirt. No hidden local payments. Licensed operator NIB 1102230032918.
+The entry-level Ijen package from Surabaya is the 2 Day Ijen Blue Fire Expedition, priced from IDR 2,300,000/person (2 pax) to IDR 1,550,000/person (11+ pax). All prices include private transport, dedicated English-speaking crew, gas masks, trekking poles, the mandatory health-screening coordination, accommodation and breakfast, entrance fees, and a JVTO travel T-shirt. No hidden local payments. Licensed operator NIB 1102230032918.
 
 ### What is the starting price for an Ijen tour from Bali?
 

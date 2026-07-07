@@ -53,7 +53,7 @@ Penanjakan sunrise, Bromo crater, Madakaripura Waterfall — the tallest waterfa
 *From IDR 2,800,000/person (2 pax) · IDR 1,750,000/person (11+ pax)*
 
 **2 Day Ijen Blue Fire Expedition**
-Night hike to Kawah Ijen Crater. Blue Fire is a natural phenomenon subject to weather and gas activity — visibility depends on conditions at the time of your hike. Gas masks and trekking poles provided by JVTO. Ijen access rules can require a recent local health certificate; JVTO coordinates clinic workflow when access rules require it.
+Night hike to Kawah Ijen Crater. Blue Fire is a natural phenomenon subject to weather and gas activity — visibility depends on conditions at the time of your hike. Gas masks and trekking poles provided by JVTO. A health certificate is mandatory for every guest before Kawah Ijen crater entry (BBKSDA SE.1658/KSA.9/2024); JVTO coordinates the mandatory clinic workflow.
 *From IDR 2,300,000/person (2 pax) · IDR 1,550,000/person (11+ pax)*
 
 ---
@@ -119,7 +119,7 @@ All 11 packages include the following. No surprise local payments.
 - **Accommodation + breakfast** (all overnight packages, per itinerary).
 - **Private 4WD Jeep** for Bromo crater area (Bromo-inclusive packages). One jeep per ≤4 guests; additional jeeps arranged for larger groups.
 - **Gas masks and trekking poles** (Ijen-inclusive packages).
-- **Health-certificate screening coordination** for Ijen routes when current access rules require it.
+- **Health-certificate screening coordination** for every guest on Ijen routes (mandatory under BBKSDA SE.1658/KSA.9/2024).
 - **Daily mineral water supply**.
 - **Full pick-up to drop-off assistance** from your Surabaya hotel or address.
 - **JVTO travel T-shirt** (1 per participant).

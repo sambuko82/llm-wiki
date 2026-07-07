@@ -23,7 +23,7 @@ No sponsored content. No tour-aggregator rewrites. Just operational information 
 
 ### 1. Kawah Ijen — Conditions, Access Rules & the Blue Fire
 
-Blue Fire is a natural phenomenon driven by volcanic gas combustion. It is not guaranteed on any single visit — weather, gas levels, and BBKSDA access conditions all affect what you see. We cover: how BBKSDA SE.1658/KSA.9/2024 governs crater-zone access, what a valid QR code means and why it matters, the monthly closure schedule (first Friday of every month), and how health-certificate screening coordination works when current access rules require it.
+Blue Fire is a natural phenomenon driven by volcanic gas combustion. It is not guaranteed on any single visit — weather, gas levels, and BBKSDA access conditions all affect what you see. We cover: how BBKSDA SE.1658/KSA.9/2024 governs crater-zone access, what a valid QR code means and why it matters, the monthly closure schedule (first Friday of every month), and how the mandatory health-certificate screening works (required for every guest, per BBKSDA SE.1658/KSA.9/2024).
 
 ### 2. Mount Bromo — Sunrise, the Tengger Caldera & the Yadnya Kasada Festival
 
