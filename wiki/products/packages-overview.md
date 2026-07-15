@@ -160,32 +160,22 @@ Some packages also have a `1 pax` solo tier (single-occupancy supplement).
 
 ## Booking Flow
 
-JVTO offers **two official booking paths**. Both are direct JVTO channels — see also -> [[website/booking-platform-analysis]] and source -> [[sources/tango-workflow-jvto-website-booking]].
+JVTO accepts bookings **exclusively through the official website checkout**. WhatsApp and email provide customer assistance but do not create, confirm, modify, cancel, or transfer bookings — every booking action is completed on the website and recorded under a valid JVTO Booking ID. See also -> [[website/booking-platform-analysis]] and source -> [[sources/tango-workflow-jvto-website-booking]].
 
-### Booking Path A — Website Instant Book / Self-Checkout
+### Official JVTO Website Booking
 
 1. Choose package from the website package listing or a package detail page
 2. Select travel date
 3. Select number of travelers
-4. Click **Instant Book** when available
-5. Review package price and available add-ons
-6. Continue to Trip Confirmation
-7. Enter or review traveler / contact details
-8. Review payment
-9. Accept Terms & Conditions / Cancellation Policy
-10. Complete payment
-11. Receive booking / order confirmation; JVTO then follows up with confirmation / e-voucher details
+4. Review package price and available add-ons
+5. Continue to Trip Confirmation
+6. Enter or review traveler / contact details
+7. Review payment
+8. Accept Terms & Conditions / Cancellation Policy (a specific policy version is recorded with the booking)
+9. Complete payment
+10. Receive booking / order confirmation; JVTO then follows up with confirmation / e-voucher details
 
-### Booking Path B — WhatsApp-Assisted Booking
-
-1. Send dates, origin, destination/package, group size, and special requirements via official WhatsApp (+6282244788833)
-2. JVTO confirms route, availability, price, pickup/drop-off, and any custom details
-3. JVTO sends a secure payment link or payment instruction
-4. Guest pays the standard deposit or required amount based on departure date (see §Payment Rules)
-5. JVTO issues confirmation / e-voucher
-6. JVTO coordinates final pickup and pre-trip details
-
-> **Which path?** Website Instant Book is best for standard available packages and dates. WhatsApp-assisted booking is best for custom routes, group arrangements, complex pickup/drop-off, or special requests.
+> **Need help before booking?** WhatsApp (+6282244788833) and email are available for questions about custom routes, group arrangements, or complex pickup/drop-off — but the booking itself is always completed on the website.
 
 ## Payment Rules
 
@@ -197,14 +187,32 @@ JVTO offers **two official booking paths**. Both are direct JVTO channels — se
 
 ## Cancellation Policy
 
+> Canonical logic: -> [[policies/cancellation-package-credit]] (`wiki/policies/cancellation-package-credit.yml`). This section is supporting human-readable copy; the YAML governs. "Lifetime Package Credit" supersedes the former "Travel Credit" naming.
+
+**Full cancellation of the entire booking** (voluntary):
+
 | Window | Outcome |
 |---|---|
-| **≥ 48h before Day 1** | 100% of eligible booking value → Lifetime Travel Credit (no expiry, transferable, may be gifted/sold) |
-| **< 48h before Day 1** | Fully forfeited. No Travel Credit. |
+| **≥ 48h before Day 1** | 100% of eligible booking value → **Lifetime Package Credit** (no expiry; same package, original pax, and original confirmed price preserved) |
+| **< 48h before Day 1** | Fully forfeited. No Package Credit. |
 
-**Cash refund is not available for guest-initiated cancellation.** The Travel Credit mechanism replaces it.
+Cash refund is not available for full guest-initiated cancellation. The Lifetime Package Credit replaces it, and **Package Credit is not cash and cannot be exchanged for cash.**
 
-**Closure policy**: If an official closure or route restriction affects the trip, JVTO offers a safe alternative route, reschedule option, or destination-fee adjustment per the confirmed booking context. See [[sources/ssot-v6]] §7_3 weather closures + [[destinations/mount-bromo]] Plan-B framework.
+**Partial cancellation** (one or more travellers drop, booking continues) — refund is cash on the confirmed per-person price of the cancelled travellers:
+
+| Window | Cash refund of cancelled pax |
+|---|---|
+| **≥ 48h before Day 1** | 100% |
+| **< 48h before Day 1** | 50% |
+| **After Day 1 / no-show** | 0% |
+
+At least 2 paying travellers (and ≥ 50% of the original paying pax) must remain, otherwise the request is treated as a full cancellation. Continuing travellers keep their confirmed per-person price. Free-of-charge (FOC) guests carry no refundable value.
+
+**Lifetime Package Credit** is locked to the same package, original pax entitlement, and original confirmed price; it never expires; it cannot be split or moved to a different package; and it may be transferred **once** (one complete transfer, then locked).
+
+**Flight disruption** (verified natural transport disruption, e.g. volcanic ash): the package can be reactivated for a **50% Recovery Fee** of the original confirmed package price, usable once.
+
+**Closure policy**: If an official closure or route restriction affects the trip, JVTO offers a safe alternative route, reschedule option, or destination-fee adjustment per the confirmed booking context. Verified destination force majeure follows -> [[policies/cancellation-package-credit]]. See [[sources/ssot-v6]] §7_3 weather closures + [[destinations/mount-bromo]] Plan-B framework.
 
 ## Rescheduling
 

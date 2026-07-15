@@ -104,6 +104,10 @@ Live extraction from JVTO backoffice MariaDB (`u1805424_jvto_clone` @ Hostinger)
 - [[products/packages-full-pricing]] — Complete pricing tables for all 22 priced packages (15 canonical + 1 specialty + 6 student), all pax tiers
 - [[products/packages-itineraries]] — Day-by-day itineraries for all canonical packages; recurring patterns; hotel allocation per phase
 
+## Policies
+
+- [[policies/cancellation-package-credit]] — **Canonical machine-readable SSOT** (`wiki/policies/cancellation-package-credit.yml`, `cancellation-policy/v2.0`) for the Lifetime Package Guarantee: website-only booking, 48h cutoff, full-cancellation → Package Credit / forfeit, partial passenger cash refunds (100%/50%/0%), Package Credit locks (no expiry/split/package-change, one transfer), flight-disruption 50% Recovery Fee, destination force majeure. Compiled by `scripts/compile_policy_bundle.py` (policy-bundle v2).
+
 ## People
 
 - [[people/agung-sambuko]] — Mr. Sam, founder, active Tourist Police officer (Ditpamobvit East Java) — full evidence chain (police docs SHA-256, press, historical)
