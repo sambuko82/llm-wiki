@@ -5,6 +5,28 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import yaml
+
+# Canonical machine-readable source for the cancellation / Package Credit domain.
+CANCELLATION_POLICY_REL = "policies/cancellation-package-credit.yml"
+
+# Enum whitelists — the YAML may not contain a value outside these sets.
+_ALLOWED_SOURCE_VALUES = {"website", "whatsapp", "email", "manual", "ota"}
+_FULL_OUTCOME_VALUES = {"lifetime_package_credit", "forfeited"}
+_REQUIRED_POLICY_KEYS = (
+    "schema_version",
+    "policy_version",
+    "effective_from",
+    "booking_scope",
+    "cutoff",
+    "full_cancellation",
+    "partial_cancellation",
+    "package_credit",
+    "flight_disruption",
+    "force_majeure",
+    "consumers",
+)
+
 
 @dataclass
 class OwnershipRow:
@@ -26,6 +48,8 @@ class Sources:
     policy_text: str
     packages_text: str
     faq_text: str
+    cancellation_policy_text: str = ""
+    cancellation_policy: dict = field(default_factory=dict)
     ownership_rows: list[OwnershipRow] = field(default_factory=list)
     deprecated_rules: list[DeprecatedRule] = field(default_factory=list)
     package_sections: dict[str, str] = field(default_factory=dict)
@@ -136,12 +160,53 @@ def parse_faq_answers(text: str) -> dict[str, str]:
     return out
 
 
+def load_cancellation_policy(wiki_root: str | Path) -> tuple[str, dict]:
+    """Read + structurally validate the canonical cancellation YAML.
+
+    Returns (raw_text, parsed_dict). Raises ValueError on missing required
+    fields or unknown enum values so a malformed SSOT fails the compiler loudly
+    instead of silently producing an incomplete bundle.
+    """
+    path = Path(wiki_root) / CANCELLATION_POLICY_REL
+    if not path.exists():
+        raise ValueError(f"canonical cancellation policy not found: {path}")
+    text = path.read_text(encoding="utf-8")
+    data = yaml.safe_load(text) or {}
+    if not isinstance(data, dict):
+        raise ValueError("cancellation policy YAML must be a mapping")
+
+    missing = [k for k in _REQUIRED_POLICY_KEYS if k not in data]
+    if missing:
+        raise ValueError(f"cancellation policy missing required fields: {missing}")
+
+    allowed = set(data["booking_scope"].get("allowed_sources", []))
+    disallowed = set(data["booking_scope"].get("disallowed_sources", []))
+    unknown_sources = (allowed | disallowed) - _ALLOWED_SOURCE_VALUES
+    if unknown_sources:
+        raise ValueError(f"cancellation policy unknown booking source enum: {sorted(unknown_sources)}")
+
+    for phase in ("before_cutoff", "after_cutoff"):
+        outcome = data["full_cancellation"].get(phase, {}).get("outcome")
+        if outcome not in _FULL_OUTCOME_VALUES:
+            raise ValueError(
+                f"cancellation policy full_cancellation.{phase}.outcome invalid: {outcome!r}"
+            )
+
+    if not isinstance(data["consumers"], list) or not data["consumers"]:
+        raise ValueError("cancellation policy consumers must be a non-empty list")
+
+    return text, data
+
+
 def load_sources(wiki_root: str | Path) -> Sources:
     p = Path(wiki_root)
+    cancellation_text, cancellation_policy = load_cancellation_policy(p)
     src = Sources(
         policy_text=_read(p / "ops" / "policy-source-ownership.md"),
         packages_text=_read(p / "products" / "packages-overview.md"),
         faq_text=_read(p / "website" / "faq-master.md"),
+        cancellation_policy_text=cancellation_text,
+        cancellation_policy=cancellation_policy,
     )
     src.ownership_rows = parse_ownership(src.policy_text)
     src.deprecated_rules = parse_deprecated(src.policy_text)

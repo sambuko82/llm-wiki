@@ -191,15 +191,16 @@ def build_operational_days(sources) -> list[dict]:
 
 
 def build_booking_compatibility(sources) -> list[dict]:
-    # All 16 canonical packages are live website tour pages (Instant Book path)
-    # and bookable via WhatsApp-assisted flow. See packages-overview §booking-flow.
+    # Website-only booking: all 16 canonical packages are booked exclusively through
+    # the official website checkout. WhatsApp/email are support-only and never create,
+    # confirm, modify, cancel, or transfer a booking. See packages-overview §booking-flow.
     return [
         {
             "package_id": pk.slug,
             "slug": pk.norm_slug,
             "instant_book": True,
-            "whatsapp_assisted": True,
-            "booking_paths": ["website_instant_book", "whatsapp_assisted"],
+            "whatsapp_assisted": False,
+            "booking_paths": ["website"],
         }
         for pk in sources.packages
     ]

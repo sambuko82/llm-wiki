@@ -23,7 +23,7 @@ Voice invariants in effect — health-related FAQs (Q6, Q7) use conditional Ijen
 Before and during your tour, JVTO's official channels are WhatsApp (primary, +62 822 4478 8833) and email (hello@javavolcano-touroperator.com). These details appear on your E-Voucher and Confirmation. WhatsApp is the fastest channel for real-time logistics.
 
 **Q15. How do I book and confirm a tour?**
-There are two official booking paths. **Option 1 — Website Instant Book:** for standard available packages and dates, choose your package on javavolcano-touroperator.com, select date and travelers, click Instant Book, review price and add-ons, accept the Terms & Cancellation Policy, and complete payment; JVTO then follows up with your confirmation / E-Voucher. **Option 2 — WhatsApp-assisted booking:** for custom routes, group arrangements, complex pickup/drop-off, or special requests, send your dates, origin, group size, and requirements to JVTO via WhatsApp; JVTO confirms availability and price, sends a secure payment link, and issues your E-Voucher. Either way, a deposit (20% standard) confirms the booking, and you receive an E-Voucher with full trip details after payment. You can always use WhatsApp if you prefer assisted booking. See [[products/packages-overview]] §booking-flow.
+You book exclusively on the official JVTO website. Choose your package on javavolcano-touroperator.com, select date and travellers, review price and add-ons, accept the Terms & Cancellation Policy, and complete payment; JVTO then follows up with your confirmation / E-Voucher. A deposit (20% standard) confirms the booking, and you receive an E-Voucher with full trip details after payment. WhatsApp (+62 822 4478 8833) and email are available for help before you book — custom routes, group arrangements, complex pickup/drop-off — but the booking itself is always completed on the website under your JVTO Booking ID; WhatsApp and email never create, confirm, modify, cancel, or transfer a booking. See [[products/packages-overview]] §booking-flow.
 
 **Q16. How do payments, deposits and deadlines work?**
 Standard deposit is 20% of total booking value (card via secure JVTO link). If Day 1 is within 14 days, up to 100% full payment may be required. Card balance is due no later than 5 days before Day 1; bank wire/Wise balance no later than 3 days before. Cash at JVTO office only if approved in writing. See [[products/packages-overview]] §payment-rules.
@@ -93,10 +93,10 @@ No. Weather, cloud, volcanic gas, and other natural factors are outside JVTO's c
 
 ---
 
-## F. Cancellation & Travel Credit
+## F. Cancellation & Package Credit
 
-**Q17. What is Travel Credit and do you offer cash refunds?**
-JVTO uses a Travel Credit system instead of standard cash refunds for guest-initiated cancellations. If cancelled ≥ 48h before Day 1, 100% of eligible booking value converts to Lifetime Travel Credit (no expiry, transferable — may be gifted or sold). If cancelled < 48h before Day 1, payment is fully forfeited and no Travel Credit is created. JVTO offers one free reschedule if requested ≥ 48h before Day 1. Cash refund is not available for guest-initiated cancellation. For closures, see Q18 / [[products/packages-overview]] §cancellation.
+**Q17. What is Lifetime Package Credit and do you offer cash refunds?**
+If you cancel your **entire** booking ≥ 48h before Day 1, 100% of eligible booking value converts to **Lifetime Package Credit** — it never expires and preserves the same package, your original number of travellers, and your original confirmed package price. Package Credit is not cash and cannot be exchanged for cash; it stays on the same package (no split, no swap to a different package) and may be transferred once. If you cancel the entire booking < 48h before Day 1, payment is fully forfeited and no Package Credit is created. **Partial cancellation** — where one or more travellers drop but the tour continues — is different: you get a cash refund of the cancelled travellers' confirmed price, 100% if ≥ 48h before Day 1 and 50% if < 48h (0% after Day 1), provided at least 2 paying travellers remain. JVTO offers one free reschedule if requested ≥ 48h before Day 1. Canonical rules: [[policies/cancellation-package-credit]]. For closures, see Q18 / [[products/packages-overview]] §cancellation.
 
 ---
 

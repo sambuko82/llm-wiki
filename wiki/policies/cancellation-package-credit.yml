@@ -1,0 +1,142 @@
+# JVTO Lifetime Package Guarantee — canonical cancellation / Package Credit rules.
+#
+# This YAML is the SINGLE SOURCE OF LOGIC for the cancellation, Package Credit,
+# transfer, redemption, flight-disruption, and destination-force-majeure domains.
+# Markdown (products/packages-overview.md, website/faq-master.md) explains this
+# policy to humans and MUST NOT state any number or outcome that differs from here.
+#
+# Consumed by the policy compiler v2 (scripts/compile_policy_bundle.py), which emits
+# output/website/policy-bundle/{decision-matrix,customer-copy,consumer-bundles}.json.
+# Do not hand-edit compiled output — edit this file and recompile.
+#
+# NOTE ON NAMING: "Lifetime Package Credit" (a.k.a. "Package Credit") supersedes the
+# former "Travel Credit" naming. The two refer to the same instrument during the
+# transition; new copy uses "Lifetime Package Credit".
+#
+# NOTE ON EFFECTIVE DATE: effective_from is the policy publication date. Live
+# enforcement at checkout is gated on backend deployment (rollout Phase 12), which
+# is out of scope for the three in-repo deliverables. Legacy bookings keep legacy
+# policy (see migration handoff).
+
+schema_version: cancellation-policy/v2.0
+policy_version: "2026-07"
+effective_from: "2026-07-15"
+status: active
+
+# ---------------------------------------------------------------------------
+# Booking channel — website is the only booking source.
+# ---------------------------------------------------------------------------
+booking_scope:
+  allowed_sources:
+    - website
+  disallowed_sources:
+    - whatsapp
+    - email
+    - manual
+    - ota
+  # WhatsApp/email are SUPPORT channels only. They never create, confirm, modify,
+  # cancel, or transfer a booking. All booking actions run through the official
+  # website checkout under a valid JVTO Booking ID.
+  support_channels:
+    - whatsapp
+    - email
+
+# ---------------------------------------------------------------------------
+# Cutoff — the 48-hour boundary, measured against Day 1 start.
+# ---------------------------------------------------------------------------
+cutoff:
+  hours: 48
+  comparison: inclusive        # exactly 48h counts as "before cutoff"
+  based_on: day_1_start_at     # local Indonesia time (WIB)
+
+# ---------------------------------------------------------------------------
+# Full voluntary cancellation of the entire booking.
+# ---------------------------------------------------------------------------
+full_cancellation:
+  before_cutoff:
+    outcome: lifetime_package_credit   # no cash; same package preserved
+  after_cutoff:
+    outcome: forfeited                 # no credit, no cash
+  no_show:
+    outcome: forfeited
+
+# ---------------------------------------------------------------------------
+# Partial cancellation — one or more travellers drop, booking continues.
+# Refund is CASH, computed on the confirmed per-person price of cancelled pax.
+# ---------------------------------------------------------------------------
+partial_cancellation:
+  before_cutoff:
+    cash_refund_percent: 100
+  after_cutoff:
+    cash_refund_percent: 50
+  after_day_1:
+    cash_refund_percent: 0
+  minimum_remaining_pax: 2             # below this the booking is no longer viable
+  minimum_remaining_percent: 50        # remaining paying pax must be >= 50% of original
+  reprice_remaining_guests: false      # continuing guests keep their confirmed per-person price
+  threshold_fail_behaviour: reclassify_as_full_cancellation
+  foc_passenger_refund_percent: 0      # free-of-charge guests carry no refundable value
+
+# ---------------------------------------------------------------------------
+# Lifetime Package Credit — the instrument issued on full before-cutoff cancel.
+# ---------------------------------------------------------------------------
+package_credit:
+  expires: false
+  cash_value: false
+  package_change_allowed: false        # same package only
+  split_allowed: false
+  transfer_allowed: true
+  maximum_transfers: 1                  # one complete transfer, then locked
+  original_package_locked: true
+  original_pax_locked: true            # original pax entitlement preserved
+  original_price_locked: true          # original confirmed package price preserved
+  redemption:
+    fewer_pax_refund: false            # redeeming with fewer pax yields NO refund
+    more_pax: incremental_website_charge
+
+# ---------------------------------------------------------------------------
+# Flight disruption (natural transport force majeure, e.g. volcanic ash).
+# Verified cancellation reactivates the package for a 50% Recovery Fee.
+# ---------------------------------------------------------------------------
+flight_disruption:
+  recovery_fee_percent: 50             # of original confirmed package price
+  maximum_uses: 1
+  evidence_required: true
+  unverified_outcome: voluntary_late_cancellation
+
+# ---------------------------------------------------------------------------
+# Destination force majeure — verified official event affecting the destination.
+# ---------------------------------------------------------------------------
+force_majeure:
+  full_tour:
+    options:
+      - lifetime_package_credit
+      - cash_refund_less_nonrecoverable_vendor_cost
+  partial_tour:
+    first_remedy: alternative_route
+    second_remedy: affected_component_refund
+  evidence_required: true
+
+# ---------------------------------------------------------------------------
+# JVTO-caused (operational) cancellation.
+# ---------------------------------------------------------------------------
+jvto_operational:
+  options:
+    - accepted_alternative
+    - full_cash_refund
+
+# ---------------------------------------------------------------------------
+# Controlled consumer IDs — the ONLY identifiers a compiled consumer bundle may
+# use for this domain. Free-text aliases are rejected by the compiler (POL2-14).
+# whatsapp is intentionally absent as a booking consumer; customer_support is
+# read-only.
+# ---------------------------------------------------------------------------
+consumers:
+  - website_checkout
+  - booking_portal
+  - policy_page
+  - booking_confirmation
+  - e_voucher
+  - invoice
+  - customer_support        # read-only; renders website deep links, never books
+  - faq
