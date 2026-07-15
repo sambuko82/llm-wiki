@@ -1,19 +1,25 @@
-# JVTO Web Policy Bundle Sync Handoff
+# JVTO Web Policy Bundle Sync Handoff (v2)
 
 **Status**: ready for jvto-web implementation
 **Producer repo**: `E:\Users\JAVA VOLCANO\llm-wiki`
 **Producer output**: `output/website/policy-bundle/`
 **Recommended jvto-web target**: `src/data/policy-bundle/`
+**Schema**: `policy-bundle/v2.0`
 
 ---
 
 ## Purpose
 
-Use this bundle as the canonical policy source for jvto-web checkout, invoice, and WhatsApp consumers. Do not copy policy wording manually into UI components, invoice templates, or WhatsApp reply code if the same wording exists in this bundle.
+Use this bundle as the canonical policy source for all jvto-web policy surfaces. Do not copy
+policy wording manually into UI components, invoice/e-voucher templates, or customer-support reply
+code if the same wording exists in this bundle. v2 adds the **Lifetime Package Guarantee**
+cancellation domain (YAML-canonical), plus two machine-facing artifacts: `decision-matrix.json`
+(rule-engine-ready outcomes) and `customer-copy.json` (canonical copy blocks).
 
 ## Source Flow
 
 ```text
+wiki/policies/cancellation-package-credit.yml   (canonical cancellation logic)
 wiki/ops/policy-source-ownership.md
 wiki/products/packages-overview.md
 wiki/website/faq-master.md
@@ -31,7 +37,7 @@ jvto-web/scripts/sync-policy-bundle.mjs
 jvto-web/src/data/policy-bundle/
         |
         v
-checkout / invoice / WhatsApp consumers
+policy page / checkout / booking portal / e-voucher / invoice / FAQ / customer support
 ```
 
 ## Required Gate
@@ -41,17 +47,18 @@ jvto-web sync must read `_manifest.json` before copying files.
 Required:
 
 ```js
-manifest.schema_version === "policy-bundle/v1.0"
+manifest.schema_version === "policy-bundle/v2.0"
 manifest.clean === true
 ```
 
 Refuse sync if:
 
 - `_manifest.json` is missing.
-- `schema_version` is not exactly `policy-bundle/v1.0`.
+- `schema_version` is not exactly `policy-bundle/v2.0`.
 - `clean` is not `true`.
 - Any required JSON file is missing.
-- `consumer-bundles.json` does not contain `checkout`, `invoice`, and `whatsapp`.
+- `consumer-bundles.json` does not contain the required consumers (`website_checkout`,
+  `booking_portal`, `e_voucher`, `invoice`, `policy_page`, `faq`, `customer_support`).
 - `deprecated-wording-report.json.summary.total_findings !== 0`.
 - `gap-report.json.summary.errors !== 0`.
 
@@ -59,19 +66,28 @@ Refuse sync if:
 
 | File | Use in jvto-web |
 |---|---|
-| `_manifest.json` | Sync/version gate |
-| `policy-bundle.json` | Full policy domain map |
-| `consumer-bundles.json` | Primary app entrypoint for checkout, invoice, WhatsApp |
+| `_manifest.json` | Sync/version gate; carries `cancellation_policy_version` + `cancellation_policy_hash` |
+| `policy-bundle.json` | Full policy domain map (cancellation domain also carries `canonical_policy` + `customer_copy`) |
+| `consumer-bundles.json` | Per-surface entrypoint (grouped by controlled consumer ID) |
+| `decision-matrix.json` | Rule-engine-ready outcomes — consumed by the cancellation engine; never recomputed in the UI |
+| `customer-copy.json` | Canonical customer-facing copy blocks for all policy surfaces |
 | `deprecated-wording-report.json` | Fails deprecated policy wording before consumer use |
 | `gap-report.json` | Fails compiler policy errors before consumer use |
 
-## Consumer Mapping
+## Consumer Mapping (controlled IDs)
 
-| jvto-web consumer | JSON path | Expected use |
+| jvto-web surface | JSON path | Expected use |
 |---|---|---|
-| Checkout | `consumer-bundles.json.checkout` | Terms, booking path, payment, anti-fraud microcopy |
-| Invoice | `consumer-bundles.json.invoice` | Payment rules and deadline wording |
-| WhatsApp | `consumer-bundles.json.whatsapp` | Booking path and Ijen health-screening reply source |
+| Policy page | `consumer-bundles.json.policy_page` | Full binding cancellation/Package-Credit rules |
+| Checkout | `consumer-bundles.json.website_checkout` | Terms, website-only booking, payment, cancellation summary, anti-fraud |
+| Booking portal | `consumer-bundles.json.booking_portal` | Personalized eligibility + cancellation rules |
+| E-Voucher | `consumer-bundles.json.e_voucher` | Package entitlement summary + policy version |
+| Invoice | `consumer-bundles.json.invoice` | Payment rules + cancellation reference |
+| FAQ | `consumer-bundles.json.faq` | Plain-language examples |
+| Customer support | `consumer-bundles.json.customer_support` | **Read-only** reply source (never books) |
+
+> WhatsApp is intentionally not a booking consumer. WhatsApp/email are support channels only;
+> the `customer_support` bundle is read-only.
 
 ## Recommended Commands
 
@@ -87,20 +103,11 @@ From jvto-web, after implementing the sync script:
 npm run sync:policy-bundle
 ```
 
-Suggested `package.json` script:
-
-```json
-{
-  "scripts": {
-    "sync:policy-bundle": "node scripts/sync-policy-bundle.mjs"
-  }
-}
-```
-
 ## Implementation Notes
 
-- Keep this separate from Package Readiness sync: `src/data/package-readiness/` and `src/data/policy-bundle/` should be sibling folders.
-- Treat `consumer-bundles.json` as the app-facing file. `policy-bundle.json` is the full registry for debugging, admin UI, and audits.
-- If checkout/invoice/WhatsApp need shorter copy, derive it inside jvto-web from the consumer bundle, but keep the compiled evidence text as the source.
-- If sync fails, fix llm-wiki source or compiler output first. Do not bypass by hardcoding replacement policy text in jvto-web.
-
+- Treat `consumer-bundles.json` + `customer-copy.json` as the app-facing files. `policy-bundle.json`
+  is the full registry for debugging/admin/audits.
+- `decision-matrix.json` is the single source of cancellation outcomes. The website (and the Laravel
+  backend) must consume it and never recompute refund/credit outcomes independently.
+- If sync fails, fix llm-wiki source or compiler output first. Do not bypass by hardcoding
+  replacement policy text in jvto-web.

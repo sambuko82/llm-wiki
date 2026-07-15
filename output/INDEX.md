@@ -17,12 +17,14 @@
 
 | File | Consumer target | Output date | Status | Key sources |
 |---|---|---|---|---|
-| `website/policy-bundle/policy-bundle.json` | checkout, invoice, WhatsApp, FAQ | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
-| `website/policy-bundle/consumer-bundles.json` | checkout, invoice, WhatsApp | 2026-06-14 | reviewed | policy-bundle |
-| `website/policy-bundle/deprecated-wording-report.json` | checkout, invoice, WhatsApp validation | 2026-06-14 | reviewed | policy-source-ownership §deprecated |
-| `website/policy-bundle/gap-report.json` | policy compiler health check | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
-| `website/policy-bundle/_manifest.json` | sync/version gate | 2026-06-14 | reviewed | policy-source-ownership, packages-overview, faq-master |
-| `website/policy-bundle/JVTO_WEB_SYNC_HANDOFF.md` | jvto-web implementation handoff | 2026-06-14 | reviewed | policy-bundle manifest + consumer bundle |
+| `website/policy-bundle/policy-bundle.json` | policy_page, checkout, booking_portal, e_voucher, invoice, faq | 2026-07-15 | reviewed | cancellation-package-credit.yml, policy-source-ownership, packages-overview, faq-master |
+| `website/policy-bundle/consumer-bundles.json` | website_checkout, booking_portal, e_voucher, invoice, policy_page, faq, customer_support | 2026-07-15 | reviewed | policy-bundle |
+| `website/policy-bundle/decision-matrix.json` | cancellation rule engine (jvto-itinerary-core, backend) | 2026-07-15 | reviewed | cancellation-package-credit.yml |
+| `website/policy-bundle/customer-copy.json` | policy_page, checkout, booking_portal, e_voucher, faq, customer_support | 2026-07-15 | reviewed | cancellation-package-credit.yml |
+| `website/policy-bundle/deprecated-wording-report.json` | consumer-bundle wording validation | 2026-07-15 | reviewed | policy-source-ownership §deprecated |
+| `website/policy-bundle/gap-report.json` | policy compiler health check | 2026-07-15 | reviewed | cancellation-package-credit.yml, policy-source-ownership, packages-overview, faq-master |
+| `website/policy-bundle/_manifest.json` | sync/version gate | 2026-07-15 | reviewed | cancellation-package-credit.yml, policy-source-ownership, packages-overview, faq-master |
+| `website/policy-bundle/JVTO_WEB_SYNC_HANDOFF.md` | jvto-web implementation handoff | 2026-07-15 | reviewed | policy-bundle manifest + consumer bundle |
 
 ---
 

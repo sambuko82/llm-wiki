@@ -6,12 +6,22 @@ import { copyFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const REQUIRED_SCHEMA = "policy-bundle/v1.0";
-const REQUIRED_CONSUMERS = ["checkout", "invoice", "whatsapp"];
+const REQUIRED_SCHEMA = "policy-bundle/v2.0";
+const REQUIRED_CONSUMERS = [
+  "website_checkout",
+  "booking_portal",
+  "e_voucher",
+  "invoice",
+  "policy_page",
+  "faq",
+  "customer_support",
+];
 const REQUIRED_FILES = [
   "_manifest.json",
   "policy-bundle.json",
   "consumer-bundles.json",
+  "decision-matrix.json",
+  "customer-copy.json",
   "deprecated-wording-report.json",
   "gap-report.json",
 ];

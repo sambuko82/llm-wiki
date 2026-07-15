@@ -58,8 +58,7 @@ def validate(sources) -> list[dict]:
         re.search(r"jvto[^.\n]{0,40}provides?[^.\n]{0,20}helmet", ov, re.I)
         or re.search(r"helmet[s]?[^.\n]{0,30}included\s+(by|as)[^.\n]{0,20}jvto", ov, re.I)
     )
-    booking_instant = _has(ov, "instant book")
-    booking_whatsapp = _has(ov, "whatsapp")
+    booking_website_only = _has(ov, "exclusively through the official website")
 
     for pk in sources.packages:
         pid = pk.slug
@@ -112,11 +111,12 @@ def validate(sources) -> list[dict]:
                 "Madakaripura package: helmet caveat missing or helmet implied "
                 "as a JVTO inclusion"))
 
-        # PKG-10 booking path compatibility documented
-        if not (booking_instant and booking_whatsapp):
+        # PKG-10 website-only booking documented
+        if not booking_website_only:
             findings.append(_finding(
                 "PKG-10", ERROR, pid, "booking_paths",
-                "booking paths must mention both Instant Book and WhatsApp-assisted"))
+                "booking flow must state website-only booking "
+                "(bookings accepted exclusively through the official website)"))
 
     # --- document-level rules (PKG-06 / PKG-11 / PKG-12) ---
     findings.extend(_pkg06_inclusions(sources))

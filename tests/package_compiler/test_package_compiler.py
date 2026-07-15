@@ -128,10 +128,11 @@ class RendererTests(unittest.TestCase):
         self.assertTrue(all(len(it["days"]) >= 1 for it in itins),
                         msg="every package must have >=1 parsed itinerary day")
 
-    def test_booking_compatibility_all_dual_path(self):
+    def test_booking_compatibility_website_only(self):
         bc = renderer.build_booking_compatibility(self.src)
         self.assertEqual(len(bc), 16)
-        self.assertTrue(all(b["instant_book"] and b["whatsapp_assisted"] for b in bc))
+        self.assertTrue(all(b["instant_book"] and not b["whatsapp_assisted"] for b in bc))
+        self.assertTrue(all(b["booking_paths"] == ["website"] for b in bc))
 
     def test_collision_slug_resolved_by_origin(self):
         # two packages share norm_slug ijen-bromo-madakaripura-3d2n (Surabaya + Bali)
